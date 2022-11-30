@@ -6556,3 +6556,172 @@ Replaced by a unified angle conversion input which can switch modes for more fle
 [2022.11.30-19.36.09:607][804]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
 [2022.11.30-19.36.09:637][804]LogWorld: UWorld::CleanupWorld for World_47, bSessionEnded=true, bCleanupResources=true
 [2022.11.30-19.36.09:637][804]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.36.58:907][ 68]LogUObjectHash: Compacting FUObjectHashTables data took   1.02ms
+[2022.11.30-19.37.00:057][ 68]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Sword_and_Shield/Demo/Maps/Demo_Map.Demo_Map
+[2022.11.30-19.37.00:057][ 68]LightingResults: New page: 라이팅 빌드
+[2022.11.30-19.37.00:057][ 68]LoadErrors: New page: 맵 로드 중: Demo_Map.umap
+[2022.11.30-19.37.00:059][ 68]LogWorld: UWorld::CleanupWorld for Overview, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.37.00:059][ 68]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.37.00:060][ 68]MapCheck: New page: 맵 체크
+[2022.11.30-19.37.00:060][ 68]LightingResults: New page: 라이팅 빌드
+[2022.11.30-19.37.00:068][ 68]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.11.30-19.37.00:072][ 68]LogUObjectHash: Compacting FUObjectHashTables data took   1.26ms
+[2022.11.30-19.37.00:073][ 68]LogAudio: Display: Audio Device (ID: 1) registered with world 'Demo_Map'.
+[2022.11.30-19.37.00:181][ 68]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.11.30-19.37.00:181][ 68]LogAIModule: Creating AISystem for world Demo_Map
+[2022.11.30-19.37.00:219][ 68]LogUObjectHash: Compacting FUObjectHashTables data took   1.29ms
+[2022.11.30-19.37.00:222][ 68]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.11.30-19.37.00:222][ 68]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.101ms.
+[2022.11.30-19.37.00:222][ 68]LogFileHelpers: Loading map 'Demo_Map' took 0.165
+[2022.11.30-19.37.01:934][259]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2022.11.30-19.37.02:720][348]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.11.30-19.37.02:724][348]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.11.30-19.37.02:724][348]PIE: New page: PIE 세션: Demo_Map (2022. 12. 1. 오후 1:37:02)
+[2022.11.30-19.37.02:754][348]LogPlayLevel: Creating play world package: /Game/Sword_and_Shield/Demo/Maps/UEDPIE_0_Demo_Map
+[2022.11.30-19.37.02:782][348]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028260s)
+[2022.11.30-19.37.02:783][348]LogAIModule: Creating AISystem for world Demo_Map
+[2022.11.30-19.37.02:783][348]LogPlayLevel: PIE: World Init took: (0.000712s)
+[2022.11.30-19.37.02:783][348]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Sword_and_Shield/Demo/Maps/Demo_Map.Demo_Map to /Game/Sword_and_Shield/Demo/Maps/UEDPIE_0_Demo_Map.Demo_Map (0.029125s)
+[2022.11.30-19.37.02:789][348]LogUObjectHash: Compacting FUObjectHashTables data took   1.02ms
+[2022.11.30-19.37.02:790][348]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2022.11.30-19.37.02:790][348]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.11.30-19.37.02:790][348]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.11.30-19.37.02:790][348]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.11.30-19.37.02:790][348]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.11.30-19.37.02:790][348]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.11.30-19.37.02:790][348]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.11.30-19.37.02:790][348]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.11.30-19.37.02:790][348]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.11.30-19.37.02:790][348]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.11.30-19.37.02:790][348]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.11.30-19.37.02:790][348]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.11.30-19.37.02:790][348]LogAudioMixer: Display: Initializing audio mixer.
+[2022.11.30-19.37.02:794][348]LogAudioMixer: Display: 0: FrontLeft
+[2022.11.30-19.37.02:794][348]LogAudioMixer: Display: 1: FrontRight
+[2022.11.30-19.37.02:819][348]LogAudioMixer: Display: Using Audio Device 스피커(Realtek(R) Audio)
+[2022.11.30-19.37.02:819][348]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.11.30-19.37.02:819][348]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.11.30-19.37.02:819][348]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.11.30-19.37.02:820][348]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.11.30-19.37.02:820][348]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.11.30-19.37.02:820][348]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.11.30-19.37.02:821][348]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.11.30-19.37.02:821][348]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.11.30-19.37.02:821][348]LogInit: FAudioDevice initialized.
+[2022.11.30-19.37.02:821][348]LogAudio: Display: Audio Device (ID: 7) registered with world 'Demo_Map'.
+[2022.11.30-19.37.02:827][348]LogLoad: Game class is 'UE4_Portfolio2_SLGameMode'
+[2022.11.30-19.37.02:907][348]LogWorld: Bringing World /Game/Sword_and_Shield/Demo/Maps/UEDPIE_0_Demo_Map.Demo_Map up for play (max tick rate 0) at 2022.12.01-04.37.02
+[2022.11.30-19.37.02:921][348]LogWorld: Bringing up level for play took: 0.093710
+[2022.11.30-19.37.02:921][348]LogOnline: OSS: Creating online subsystem instance for: :Context_55
+[2022.11.30-19.37.02:962][348]PIE: 서버가 로그인했습니다.
+[2022.11.30-19.37.02:963][348]PIE: 에디터에서 플레이 총 시작 시간 0.241초입니다.
+[2022.11.30-19.37.11:334][783]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.11.30-19.37.11:334][783]LogWorld: BeginTearingDown for /Game/Sword_and_Shield/Demo/Maps/UEDPIE_0_Demo_Map
+[2022.11.30-19.37.11:335][783]LogWorld: UWorld::CleanupWorld for Demo_Map, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.37.11:357][783]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.37.11:368][783]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.11.30-19.37.11:372][783]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.37.11:381][783]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.11.30-19.37.11:381][783]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.11.30-19.37.11:382][783]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.11.30-19.37.11:391][783]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2022.11.30-19.37.11:413][784]LogPlayLevel: Display: Destroying online subsystem :Context_55
+[2022.11.30-19.37.20:424][715]LogAssetEditorSubsystem: Opening Asset editor for PhysicsAsset /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset
+[2022.11.30-19.37.20:444][715]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.37.20:444][715]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.37.20:445][715]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.37.20:445][715]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.37.20:446][715]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_49:PersistentLevel.AnimationEditorPreviewActor_0.PhysicsAssetEditorSkeletalMeshComponent_0) Already registered. Aborting.
+[2022.11.30-19.37.20:629][715]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.20:629][715]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.20:629][715]LogPhysics: Warning: Failed to cook convex: /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset 0 (FlipX:0). The remaining elements will not get cooked.
+[2022.11.30-19.37.20:629][715]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.20:629][715]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.20:629][715]LogPhysics: Warning: Failed to cook convex: /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset 0 (FlipX:1). The remaining elements will not get cooked.
+[2022.11.30-19.37.20:629][715]LogPhysics: Warning: Attempt to build physics data for /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset:SkeletalBodySetup_391 when we are unable to.
+[2022.11.30-19.37.20:629][715]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.37.20:629][715]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.37.27:639][855]LogSlate: Window 'SK_Knight_PhysicsAsset' being destroyed
+[2022.11.30-19.37.27:684][855]LogWorld: UWorld::CleanupWorld for World_49, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.37.27:684][855]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.37.29:214][988]LogAssetEditorSubsystem: Opening Asset editor for Skeleton /Game/Knight/Mesh/SK_Knight_Skeleton.SK_Knight_Skeleton
+[2022.11.30-19.37.29:230][988]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_50:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.11.30-19.37.29:408][988]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.29:408][988]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.29:408][988]LogPhysics: Warning: Failed to cook convex: /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset 0 (FlipX:0). The remaining elements will not get cooked.
+[2022.11.30-19.37.29:408][988]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.29:408][988]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.29:408][988]LogPhysics: Warning: Failed to cook convex: /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset 0 (FlipX:1). The remaining elements will not get cooked.
+[2022.11.30-19.37.29:408][988]LogPhysics: Warning: Attempt to build physics data for /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset:SkeletalBodySetup_391 when we are unable to.
+[2022.11.30-19.37.29:408][988]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.37.29:408][988]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.37.32:730][270]LogSlate: Window 'SK_Knight_Skeleton' being destroyed
+[2022.11.30-19.37.32:775][270]LogWorld: UWorld::CleanupWorld for World_50, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.37.32:775][270]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.37.35:830][508]LogAssetEditorSubsystem: Opening Asset editor for Skeleton /Game/Knight/Mesh/SK_Knight_Skeleton.SK_Knight_Skeleton
+[2022.11.30-19.37.35:846][508]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_51:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.11.30-19.37.36:022][508]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.36:022][508]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.36:022][508]LogPhysics: Warning: Failed to cook convex: /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset 0 (FlipX:0). The remaining elements will not get cooked.
+[2022.11.30-19.37.36:022][508]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.36:022][508]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.36:022][508]LogPhysics: Warning: Failed to cook convex: /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset 0 (FlipX:1). The remaining elements will not get cooked.
+[2022.11.30-19.37.36:022][508]LogPhysics: Warning: Attempt to build physics data for /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset:SkeletalBodySetup_391 when we are unable to.
+[2022.11.30-19.37.36:022][508]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.37.36:022][508]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.37.37:523][632]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Knight/Animation/Anim_Knight_attack1.Anim_Knight_attack1
+[2022.11.30-19.37.37:534][632]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_52:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.11.30-19.37.37:667][632]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.37:667][632]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.37:667][632]LogPhysics: Warning: Failed to cook convex: /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset 0 (FlipX:0). The remaining elements will not get cooked.
+[2022.11.30-19.37.37:667][632]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.37:667][632]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.37.37:667][632]LogPhysics: Warning: Failed to cook convex: /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset 0 (FlipX:1). The remaining elements will not get cooked.
+[2022.11.30-19.37.37:667][632]LogPhysics: Warning: Attempt to build physics data for /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset:SkeletalBodySetup_391 when we are unable to.
+[2022.11.30-19.37.37:667][632]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.37.37:667][632]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.37.37:899][632]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.11.30-19.38.06:908][248]LogWorld: UWorld::CleanupWorld for World_54, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.06:909][248]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.08:669][416]LogWorld: UWorld::CleanupWorld for World_55, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.08:669][416]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.10:259][569]LogWorld: UWorld::CleanupWorld for World_56, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.10:259][569]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.11:232][662]LogWorld: UWorld::CleanupWorld for World_57, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.11:232][662]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.12:946][830]LogWorld: UWorld::CleanupWorld for World_58, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.12:947][830]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.13:461][876]LogWorld: UWorld::CleanupWorld for World_59, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.13:461][876]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.14:541][978]LogWorld: UWorld::CleanupWorld for World_60, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.14:541][978]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.15:414][ 56]LogWorld: UWorld::CleanupWorld for World_61, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.15:414][ 56]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.16:504][157]LogWorld: UWorld::CleanupWorld for World_62, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.16:504][157]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.17:813][284]LogWorld: UWorld::CleanupWorld for World_63, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.17:813][284]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.19:123][407]LogWorld: UWorld::CleanupWorld for World_64, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.19:123][407]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.19:684][454]LogWorld: UWorld::CleanupWorld for World_65, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.19:684][454]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.20:754][556]LogWorld: UWorld::CleanupWorld for World_66, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.20:754][556]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.23:134][786]LogWorld: UWorld::CleanupWorld for World_67, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.23:134][786]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.24:256][893]LogWorld: UWorld::CleanupWorld for World_68, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.24:256][893]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.25:574][ 15]LogWorld: UWorld::CleanupWorld for World_69, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.25:574][ 15]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.26:502][101]LogWorld: UWorld::CleanupWorld for World_70, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.26:502][101]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.28:664][300]LogWorld: UWorld::CleanupWorld for World_52, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.28:665][300]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.28:670][300]LogWorld: UWorld::CleanupWorld for World_71, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.28:670][300]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.28:699][300]LogWorld: UWorld::CleanupWorld for World_53, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.28:699][300]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.30:592][471]LogSlate: Window 'SK_Knight_Skeleton' being destroyed
+[2022.11.30-19.38.30:644][471]LogWorld: UWorld::CleanupWorld for World_51, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.38.30:644][471]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.38.31:888][593]LogUObjectHash: Compacting FUObjectHashTables data took   1.05ms
