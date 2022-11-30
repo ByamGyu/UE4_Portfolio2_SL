@@ -6062,3 +6062,497 @@ Replaced by a unified angle conversion input which can switch modes for more fle
 [2022.11.30-19.32.35:864][755]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2022.11.30-19.32.35:867][755]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
 [2022.11.30-19.32.35:962][757]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2022.11.30-19.33.08:711][839]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_2 (OODLE_AutoDXT, 64X64)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_2 (OODLE_AutoDXT, 64X64)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_1 (OODLE_AutoDXT, 256X256)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_2 (OODLE_DXT1, 64X64)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_2 (OODLE_AutoDXT, 64X32)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: SkyOcclusion0_1 (OODLE_AutoDXT, 256X128)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_2 (BGRA8, 64X32)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_3 (G8, 64X32)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_1 (OODLE_AutoDXT, 256X256)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_0 (G8, 256X128)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_1 (OODLE_DXT1, 256X256)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_1 (BGRA8, 256X128)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: UE4Man_Logo_N (OODLE_BC5, 512X512)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: UE4_Mannequin_occlusion_Mobile (OODLE_DXT1, 512X512)
+[2022.11.30-19.33.08:816][839]LogTexture: Display: 텍스처 빌드: T_ML_Aluminum01 (OODLE_DXT1, 512X512)
+[2022.11.30-19.33.08:816][839]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Attack_Sp_RL.Sword_Attack_Sp_RL
+[2022.11.30-19.33.08:816][839]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Attack_Sp_R.Sword_Attack_Sp_R
+[2022.11.30-19.33.08:816][839]LogSkeletalMesh: Building Skeletal Mesh SK_Mannequin...
+[2022.11.30-19.33.08:867][839]LogTexture: Display: 텍스처 빌드: T_ML_Rubber_Blue_01_D (OODLE_DXT1, 512X512)
+[2022.11.30-19.33.08:867][839]LogTexture: Display: 텍스처 빌드: T_ML_Rubber_Blue_01_N (OODLE_BC5, 512X512)
+[2022.11.30-19.33.08:867][839]LogTexture: Display: 텍스처 빌드: UE4_Mannequin_MAT_MASKA (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.33.08:867][839]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.33.08:867][839]LogSkeletalMesh: Built Skeletal Mesh [0.05s] /Game/SnSAnimsetPro/UE4_Mannequin/Mesh/SK_Mannequin.SK_Mannequin
+[2022.11.30-19.33.08:975][839]LogTexture: Display: 텍스처 빌드: T_ML_Aluminum01_N (OODLE_BC5, 512X512)
+[2022.11.30-19.33.08:975][839]LogTexture: Display: 텍스처 빌드: UE4_Mannequin__normals (OODLE_BC5, 2048X2048)
+[2022.11.30-19.33.08:975][839]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.33.08:975][839]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.33.08:975][839]LogMaterial: Display: Missing cached shadermap for M_UE4Man_Body in PCD3D_SM5, Default, SM5 (DDC key hash: 98F62F570888EA2AAD649D3A52E86914B759EB4E), compiling. 
+[2022.11.30-19.33.09:018][839]LogTexture: Display: 텍스처 빌드: Sword_S (OODLE_AutoDXT, 4096X4096)
+[2022.11.30-19.33.09:018][839]LogShaderCompilers: Display: Submitted 88 shader compile jobs with 'Low' priority
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 88
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 83
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 78
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 73
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 68
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 63
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 58
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 53
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 48
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 43
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 38
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 33
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 28
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 23
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 18
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 13
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 8
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 3
+[2022.11.30-19.33.10:152][839]LogShaderCompilers: Display: Started 88 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.10:152][839]LogTexture: Display: 텍스처 빌드: Shield_S (OODLE_AutoDXT, 4096X4096)
+[2022.11.30-19.33.10:152][839]LogTexture: Display: 텍스처 빌드: Sword_D (OODLE_AutoDXT, 4096X4096)
+[2022.11.30-19.33.10:152][839]LogTexture: Display: 텍스처 빌드: Sword_N (OODLE_BC5, 4096X4096)
+[2022.11.30-19.33.10:152][839]LogTexture: Display: 텍스처 빌드: shield_N (OODLE_BC5, 4096X4096)
+[2022.11.30-19.33.10:152][839]LogTexture: Display: 텍스처 빌드: shield_D (OODLE_AutoDXT, 4096X4096)
+[2022.11.30-19.33.10:152][839]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.33.10:152][839]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.33.10:152][839]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.33.10:152][839]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.33.10:152][839]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.33.10:152][839]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.33.10:152][839]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.33.10:152][839]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.33.10:152][839]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.33.10:152][839]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.33.10:152][839]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.33.10:152][839]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.33.10:152][839]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.33.10:153][839]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.33.10:153][839]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.33.10:153][839]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.33.10:153][839]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.33.10:153][839]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.33.10:153][839]LogMaterial: Display: Missing cached shadermap for M_UE4Man_ChestLogo in PCD3D_SM5, Default, SM5 (DDC key hash: B2B116A4FA40C1B21A8FB72F194106206D1E385C), compiling. 
+[2022.11.30-19.33.10:201][839]LogShaderCompilers: Display: Submitted 88 shader compile jobs with 'Low' priority
+[2022.11.30-19.33.10:209][839]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 88
+[2022.11.30-19.33.10:209][839]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 83
+[2022.11.30-19.33.10:209][839]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.10:209][839]LogStaticMesh: Shield 스태틱 메시 빌드중...
+[2022.11.30-19.33.10:216][839]LogStaticMesh: Built static mesh [0.01s] /Game/SnSAnimsetPro/Models/Shield/Shield.Shield
+[2022.11.30-19.33.10:223][839]LogStaticMesh: Sword 스태틱 메시 빌드중...
+[2022.11.30-19.33.10:232][839]LogStaticMesh: Built static mesh [0.01s] /Game/SnSAnimsetPro/Models/Sword/Sword.Sword
+[2022.11.30-19.33.10:250][839]LogMaterial: Display: Missing cached shadermap for Sword2 in PCD3D_SM5, Default, SM5 (DDC key hash: FC8835EEBB22156E730D5D496CED38A2FCE9E664), compiling. 
+[2022.11.30-19.33.10:263][839]LogShaderCompilers: Display: Submitted 16 shader compile jobs with 'Low' priority
+[2022.11.30-19.33.10:272][839]LogMaterial: Display: Missing cached shadermap for Sheild in PCD3D_SM5, Default, SM5 (DDC key hash: F0673F7F89C24DE90129A33FA238E14A6CB6ABDE), compiling. 
+[2022.11.30-19.33.10:285][839]LogShaderCompilers: Display: Submitted 16 shader compile jobs with 'Low' priority
+[2022.11.30-19.33.10:296][839]LogActorComponent: RegisterComponentWithWorld: (/Game/SnSAnimsetPro/Maps/Overview.Overview:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
+[2022.11.30-19.33.10:302][839]LogAssetEditorSubsystem: Opening Asset editor for World /Game/SnSAnimsetPro/Maps/Overview.Overview
+[2022.11.30-19.33.10:302][839]Cmd: MAP LOAD FILE="../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/SnSAnimsetPro/Maps/Overview.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.11.30-19.33.10:302][839]LightingResults: New page: 라이팅 빌드
+[2022.11.30-19.33.10:302][839]LoadErrors: New page: 맵 로드 중: Overview.umap
+[2022.11.30-19.33.10:346][839]LogWorld: UWorld::CleanupWorld for Skeleton_Animations, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.33.10:346][839]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.33.10:346][839]MapCheck: New page: 맵 체크
+[2022.11.30-19.33.10:346][839]LightingResults: New page: 라이팅 빌드
+[2022.11.30-19.33.10:356][839]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.11.30-19.33.10:366][839]LogUObjectHash: Compacting FUObjectHashTables data took   4.01ms
+[2022.11.30-19.33.10:399][839]LogAudio: Display: Audio Device (ID: 1) registered with world 'Overview'.
+[2022.11.30-19.33.10:541][839]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.11.30-19.33.10:541][839]LogAIModule: Creating AISystem for world Overview
+[2022.11.30-19.33.10:560][839]LogUObjectHash: Compacting FUObjectHashTables data took   2.52ms
+[2022.11.30-19.33.10:565][839]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.11.30-19.33.10:566][839]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.129ms.
+[2022.11.30-19.33.10:566][839]LogFileHelpers: Loading map 'Overview' took 0.264
+[2022.11.30-19.33.10:627][840]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Attack_R_Whirlwind.Sword_Attack_R_Whirlwind
+[2022.11.30-19.33.10:627][840]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Attack_Ld2.Sword_Attack_Ld2
+[2022.11.30-19.33.10:807][850]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Attack_R.Sword_Attack_R
+[2022.11.30-19.33.10:825][851]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 12
+[2022.11.30-19.33.10:825][851]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.33.10:837][851]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2022.11.30-19.33.10:837][851]LogShaderCompilers: Display: Total job queries 6467, among them cache hits 398 (6.15%)
+[2022.11.30-19.33.10:837][851]LogShaderCompilers: Display: Tracking 5781 distinct input hashes that result in 1580 distinct outputs (27.33%)
+[2022.11.30-19.33.10:837][851]LogShaderCompilers: Display: RAM used: 11.67 MB (0.01 GB) of 3276.80 MB (3.20 GB) budget. Usage: 0.36%
+[2022.11.30-19.33.10:837][851]LogShaderCompilers: Display: ================================================
+[2022.11.30-19.33.10:853][853]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Attack_Ld3_quick.Sword_Attack_Ld3_quick
+[2022.11.30-19.33.11:001][857]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 11
+[2022.11.30-19.33.11:001][857]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.33.11:015][858]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Attack_RLL.Sword_Attack_RLL
+[2022.11.30-19.33.11:025][858]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 10
+[2022.11.30-19.33.11:025][858]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.33.11:066][860]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_KnockdownFront2.Sword_KnockdownFront2
+[2022.11.30-19.33.11:202][864]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_WalkFwd.Sword_WalkFwd
+[2022.11.30-19.33.11:247][867]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 9
+[2022.11.30-19.33.11:247][867]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 8
+[2022.11.30-19.33.11:248][867]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.33.11:280][869]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 7
+[2022.11.30-19.33.11:280][869]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 6
+[2022.11.30-19.33.11:280][869]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 5
+[2022.11.30-19.33.11:280][869]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.33.11:285][870]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_StrafeLeftStart.Sword_StrafeLeftStart
+[2022.11.30-19.33.11:288][870]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 4
+[2022.11.30-19.33.11:288][870]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 3
+[2022.11.30-19.33.11:289][870]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.33.11:304][871]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 2
+[2022.11.30-19.33.11:304][871]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 1
+[2022.11.30-19.33.11:304][871]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.33.11:359][877]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_WalkBwd.Sword_WalkBwd
+[2022.11.30-19.33.11:359][877]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_StrafeRight45.Sword_StrafeRight45
+[2022.11.30-19.33.11:413][879]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_TurnR_90.Sword_TurnR_90
+[2022.11.30-19.33.11:421][879]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 28
+[2022.11.30-19.33.11:421][879]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.11:453][879]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 26
+[2022.11.30-19.33.11:453][879]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.11:473][880]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 24
+[2022.11.30-19.33.11:473][880]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.11:488][881]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_StrafeRunLeft.Sword_StrafeRunLeft
+[2022.11.30-19.33.11:577][886]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Block_Right4.Sword_Block_Right4
+[2022.11.30-19.33.11:577][886]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Block_Left_Shield.Sword_Block_Left_Shield
+[2022.11.30-19.33.11:708][887]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 22
+[2022.11.30-19.33.11:708][887]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.11:708][887]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 20
+[2022.11.30-19.33.11:708][887]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.11:775][888]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Block_Left3.Sword_Block_Left3
+[2022.11.30-19.33.11:775][888]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 18
+[2022.11.30-19.33.11:775][888]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.11:775][888]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 17
+[2022.11.30-19.33.11:775][888]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.11:799][888]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 16
+[2022.11.30-19.33.11:799][888]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.11:893][889]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 15
+[2022.11.30-19.33.11:893][889]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.11:900][889]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Counter_Sheildbash.Sword_Counter_Sheildbash
+[2022.11.30-19.33.11:900][889]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Attack_Sp_RRound.Sword_Attack_Sp_RRound
+[2022.11.30-19.33.11:934][889]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 14
+[2022.11.30-19.33.11:934][889]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.11:988][889]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 13
+[2022.11.30-19.33.11:988][889]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.12:140][890]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 12
+[2022.11.30-19.33.12:140][890]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.12:140][890]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 11
+[2022.11.30-19.33.12:140][890]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 10
+[2022.11.30-19.33.12:140][890]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.12:157][891]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_JumpLoop.Sword_JumpLoop
+[2022.11.30-19.33.12:157][891]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sowrd_Attack_Combo_CL_Heavy_fast.Sowrd_Attack_Combo_CL_Heavy_fast
+[2022.11.30-19.33.12:227][892]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 9
+[2022.11.30-19.33.12:227][892]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 8
+[2022.11.30-19.33.12:227][892]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.12:269][895]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 7
+[2022.11.30-19.33.12:269][895]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.12:279][896]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Death_R.Sword_Death_R
+[2022.11.30-19.33.12:279][896]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 6
+[2022.11.30-19.33.12:279][896]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 5
+[2022.11.30-19.33.12:279][896]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.12:316][898]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 4
+[2022.11.30-19.33.12:316][898]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.12:382][902]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 3
+[2022.11.30-19.33.12:382][902]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.12:422][904]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Dodge_Fwd.Sword_Dodge_Fwd
+[2022.11.30-19.33.12:422][904]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 2
+[2022.11.30-19.33.12:422][904]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 1
+[2022.11.30-19.33.12:422][904]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Normal' priority
+[2022.11.30-19.33.12:455][905]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 70
+[2022.11.30-19.33.12:455][905]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.12:522][908]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 66
+[2022.11.30-19.33.12:522][908]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.12:558][911]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 62
+[2022.11.30-19.33.12:558][911]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.12:579][912]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Attack_Sp_RL2.Sword_Attack_Sp_RL2
+[2022.11.30-19.33.12:626][915]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 58
+[2022.11.30-19.33.12:626][915]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.12:651][916]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 55
+[2022.11.30-19.33.12:651][916]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.12:664][916]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 52
+[2022.11.30-19.33.12:664][916]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.12:731][919]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 49
+[2022.11.30-19.33.12:731][919]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.12:763][921]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 46
+[2022.11.30-19.33.12:763][921]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 43
+[2022.11.30-19.33.12:763][921]LogShaderCompilers: Display: Started 6 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.12:850][924]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 40
+[2022.11.30-19.33.12:850][924]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.12:873][926]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 37
+[2022.11.30-19.33.12:873][926]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.12:889][926]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 35
+[2022.11.30-19.33.12:889][926]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.12:900][926]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 33
+[2022.11.30-19.33.12:900][926]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.12:945][927]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 31
+[2022.11.30-19.33.12:945][927]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.12:981][928]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 29
+[2022.11.30-19.33.12:981][928]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 27
+[2022.11.30-19.33.12:981][928]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:027][929]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 25
+[2022.11.30-19.33.13:028][929]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:062][930]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 23
+[2022.11.30-19.33.13:062][930]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:113][932]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 21
+[2022.11.30-19.33.13:113][932]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:153][935]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 19
+[2022.11.30-19.33.13:154][935]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:277][940]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 18
+[2022.11.30-19.33.13:277][940]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:306][942]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 17
+[2022.11.30-19.33.13:306][942]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:374][946]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 16
+[2022.11.30-19.33.13:374][946]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:388][947]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 15
+[2022.11.30-19.33.13:388][947]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:470][951]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 14
+[2022.11.30-19.33.13:470][951]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:493][952]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 13
+[2022.11.30-19.33.13:493][952]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:516][953]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 12
+[2022.11.30-19.33.13:516][953]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:533][954]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 11
+[2022.11.30-19.33.13:533][954]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:606][957]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 10
+[2022.11.30-19.33.13:606][957]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:607][957]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 9
+[2022.11.30-19.33.13:607][957]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:668][960]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 8
+[2022.11.30-19.33.13:668][960]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:672][960]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 7
+[2022.11.30-19.33.13:672][960]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:693][961]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 6
+[2022.11.30-19.33.13:693][961]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:712][962]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 5
+[2022.11.30-19.33.13:713][962]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:731][963]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 4
+[2022.11.30-19.33.13:731][963]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:736][963]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 3
+[2022.11.30-19.33.13:736][963]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:772][965]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 2
+[2022.11.30-19.33.13:772][965]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.13:793][966]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 1
+[2022.11.30-19.33.13:793][966]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.33.14:949][ 85]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.11.30-19.33.14:952][ 85]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.11.30-19.33.14:952][ 85]PIE: New page: PIE 세션: Overview (2022. 12. 1. 오후 1:33:14)
+[2022.11.30-19.33.14:973][ 85]LogPlayLevel: Creating play world package: /Game/SnSAnimsetPro/Maps/UEDPIE_0_Overview
+[2022.11.30-19.33.14:976][ 85]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002946s)
+[2022.11.30-19.33.14:977][ 85]LogAIModule: Creating AISystem for world Overview
+[2022.11.30-19.33.14:977][ 85]LogPlayLevel: PIE: World Init took: (0.000654s)
+[2022.11.30-19.33.14:977][ 85]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SnSAnimsetPro/Maps/Overview.Overview to /Game/SnSAnimsetPro/Maps/UEDPIE_0_Overview.Overview (0.003707s)
+[2022.11.30-19.33.14:983][ 85]LogUObjectHash: Compacting FUObjectHashTables data took   0.97ms
+[2022.11.30-19.33.14:985][ 85]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2022.11.30-19.33.14:985][ 85]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.11.30-19.33.14:985][ 85]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.11.30-19.33.14:985][ 85]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.11.30-19.33.14:985][ 85]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.11.30-19.33.14:985][ 85]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.11.30-19.33.14:985][ 85]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.11.30-19.33.14:985][ 85]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.11.30-19.33.14:985][ 85]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.11.30-19.33.14:986][ 85]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.11.30-19.33.14:986][ 85]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.11.30-19.33.14:986][ 85]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.11.30-19.33.14:986][ 85]LogAudioMixer: Display: Initializing audio mixer.
+[2022.11.30-19.33.14:989][ 85]LogAudioMixer: Display: 0: FrontLeft
+[2022.11.30-19.33.14:989][ 85]LogAudioMixer: Display: 1: FrontRight
+[2022.11.30-19.33.15:013][ 85]LogAudioMixer: Display: Using Audio Device 스피커(Realtek(R) Audio)
+[2022.11.30-19.33.15:013][ 85]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.11.30-19.33.15:013][ 85]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.11.30-19.33.15:013][ 85]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.11.30-19.33.15:014][ 85]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.11.30-19.33.15:014][ 85]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.11.30-19.33.15:014][ 85]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.11.30-19.33.15:015][ 85]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.11.30-19.33.15:015][ 85]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.11.30-19.33.15:015][ 85]LogInit: FAudioDevice initialized.
+[2022.11.30-19.33.15:015][ 85]LogAudio: Display: Audio Device (ID: 5) registered with world 'Overview'.
+[2022.11.30-19.33.15:023][ 85]LogLoad: Game class is 'UE4_Portfolio2_SLGameMode'
+[2022.11.30-19.33.15:030][ 85]LogWorld: Bringing World /Game/SnSAnimsetPro/Maps/UEDPIE_0_Overview.Overview up for play (max tick rate 0) at 2022.12.01-04.33.15
+[2022.11.30-19.33.15:031][ 85]LogWorld: Bringing up level for play took: 0.007077
+[2022.11.30-19.33.15:031][ 85]LogOnline: OSS: Creating online subsystem instance for: :Context_24
+[2022.11.30-19.33.15:032][ 85]PIE: 서버가 로그인했습니다.
+[2022.11.30-19.33.15:033][ 85]PIE: 에디터에서 플레이 총 시작 시간 0.081초입니다.
+[2022.11.30-19.33.15:974][188]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.11.30-19.33.15:974][188]LogWorld: BeginTearingDown for /Game/SnSAnimsetPro/Maps/UEDPIE_0_Overview
+[2022.11.30-19.33.15:974][188]LogWorld: UWorld::CleanupWorld for Overview, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.33.15:975][188]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.33.15:984][188]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.11.30-19.33.15:987][188]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.33.15:992][188]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.11.30-19.33.15:992][188]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.11.30-19.33.15:993][188]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.11.30-19.33.15:996][188]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.11.30-19.33.15:998][188]LogUObjectHash: Compacting FUObjectHashTables data took   0.97ms
+[2022.11.30-19.33.16:059][191]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2022.11.30-19.33.18:200][414]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2022.11.30-19.33.18:602][447]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.11.30-19.33.28:330][343]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2022.11.30-19.33.29:076][343]LogSlate: Window '콘텐츠 저장' being destroyed
+[2022.11.30-19.33.29:107][343]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+[2022.11.30-19.33.29:125][343]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Overview6541B02D49FBE50DD5D41F98624056E4.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/SnSAnimsetPro/Maps/Overview.umap'
+[2022.11.30-19.33.29:128][343]LogFileHelpers: Saving map 'Overview' took 0.027
+[2022.11.30-19.33.29:137][343]AssetCheck: New page: 에셋 저장:  Overview
+[2022.11.30-19.33.29:137][343]LogContentValidation: Display: World /Game/SnSAnimsetPro/Maps/Overview.Overview 유효성 검사 중
+[2022.11.30-19.33.29:611][395]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.11.30-19.33.29:614][395]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.11.30-19.33.29:614][395]PIE: New page: PIE 세션: Overview (2022. 12. 1. 오후 1:33:29)
+[2022.11.30-19.33.29:614][395]LogPlayLevel: Creating play world package: /Game/SnSAnimsetPro/Maps/UEDPIE_0_Overview
+[2022.11.30-19.33.29:617][395]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002485s)
+[2022.11.30-19.33.29:617][395]LogAIModule: Creating AISystem for world Overview
+[2022.11.30-19.33.29:618][395]LogPlayLevel: PIE: World Init took: (0.000661s)
+[2022.11.30-19.33.29:618][395]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SnSAnimsetPro/Maps/Overview.Overview to /Game/SnSAnimsetPro/Maps/UEDPIE_0_Overview.Overview (0.003220s)
+[2022.11.30-19.33.29:624][395]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2022.11.30-19.33.29:624][395]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2022.11.30-19.33.29:624][395]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.11.30-19.33.29:624][395]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.11.30-19.33.29:625][395]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.11.30-19.33.29:625][395]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.11.30-19.33.29:625][395]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.11.30-19.33.29:625][395]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.11.30-19.33.29:625][395]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.11.30-19.33.29:625][395]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.11.30-19.33.29:625][395]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.11.30-19.33.29:625][395]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.11.30-19.33.29:625][395]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.11.30-19.33.29:625][395]LogAudioMixer: Display: Initializing audio mixer.
+[2022.11.30-19.33.29:628][395]LogAudioMixer: Display: 0: FrontLeft
+[2022.11.30-19.33.29:628][395]LogAudioMixer: Display: 1: FrontRight
+[2022.11.30-19.33.29:652][395]LogAudioMixer: Display: Using Audio Device 스피커(Realtek(R) Audio)
+[2022.11.30-19.33.29:652][395]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.11.30-19.33.29:652][395]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.11.30-19.33.29:652][395]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.11.30-19.33.29:653][395]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.11.30-19.33.29:653][395]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.11.30-19.33.29:653][395]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.11.30-19.33.29:653][395]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.11.30-19.33.29:653][395]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.11.30-19.33.29:653][395]LogInit: FAudioDevice initialized.
+[2022.11.30-19.33.29:653][395]LogAudio: Display: Audio Device (ID: 6) registered with world 'Overview'.
+[2022.11.30-19.33.29:660][395]LogLoad: Game class is 'UE4_Portfolio2_SLGameMode'
+[2022.11.30-19.33.29:667][395]LogWorld: Bringing World /Game/SnSAnimsetPro/Maps/UEDPIE_0_Overview.Overview up for play (max tick rate 0) at 2022.12.01-04.33.29
+[2022.11.30-19.33.29:668][395]LogWorld: Bringing up level for play took: 0.007108
+[2022.11.30-19.33.29:668][395]LogOnline: OSS: Creating online subsystem instance for: :Context_26
+[2022.11.30-19.33.29:670][395]PIE: 서버가 로그인했습니다.
+[2022.11.30-19.33.29:670][395]PIE: 에디터에서 플레이 총 시작 시간 0.057초입니다.
+[2022.11.30-19.33.45:374][270]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.11.30-19.33.45:375][270]LogWorld: BeginTearingDown for /Game/SnSAnimsetPro/Maps/UEDPIE_0_Overview
+[2022.11.30-19.33.45:375][270]LogWorld: UWorld::CleanupWorld for Overview, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.33.45:376][270]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.33.45:382][270]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.11.30-19.33.45:393][270]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.33.45:399][270]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.11.30-19.33.45:399][270]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.11.30-19.33.45:400][270]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.11.30-19.33.45:405][270]LogUObjectHash: Compacting FUObjectHashTables data took   0.95ms
+[2022.11.30-19.33.45:512][272]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2022.11.30-19.34.39:892][671]AssetReimport: New page: 처리중인 소스 콘텐츠 변경사항 오후 1:34:39
+[2022.11.30-19.34.39:896][671]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/SnSAnimsetPro/SourceFiles/SourceFiles/EXPORT/AimOffsets/Sword_LookC_Add.fbx)
+[2022.11.30-19.34.39:905][671]LogFbx: Loading FBX Scene from G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/SnSAnimsetPro/SourceFiles/SourceFiles/EXPORT/AimOffsets/Sword_LookC_Add.fbx
+[2022.11.30-19.34.39:952][671]LogFbx: FBX Scene Loaded Succesfully
+[2022.11.30-19.34.42:994][671]LogSlate: Window 'FBX 임포트 옵션' being destroyed
+[2022.11.30-19.34.43:007][671]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2022.11.30-19.34.43:011][671]LogUObjectGlobals: Force Deleting 0 Package(s):
+[2022.11.30-19.34.45:863][671]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+[2022.11.30-19.34.45:867][671]FBXImport: 임포트가 취소되었습니다. 
+[2022.11.30-19.34.47:972][850]LogSlate: Window '메시지 로그' being destroyed
+[2022.11.30-19.34.47:985][850]LogSlate: Window '메시지 로그' being destroyed
+[2022.11.30-19.34.48:991][943]AssetReimport: /Game/SnSAnimsetPro/SourceFiles/SourceFiles/EXPORT/AimOffsets/Sword_LookC_Add 새 에셋 임포트 중.
+[2022.11.30-19.34.58:403][460]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (SK_Mannequin3)
+[2022.11.30-19.35.10:831][656]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/RootMotion/Sword_Attack_R_Whirlwind.Sword_Attack_R_Whirlwind
+[2022.11.30-19.35.10:858][656]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SnSAnimsetPro/Animations/RootMotion/Sword_Attack_R_Whirlwind.Sword_Attack_R_Whirlwind
+[2022.11.30-19.35.10:879][656]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_22:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.11.30-19.35.11:166][656]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.11.30-19.35.15:474][ 21]LogSlate: Window 'Sword_Attack_R_Whirlwind' being destroyed
+[2022.11.30-19.35.15:514][ 21]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.15:514][ 21]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.15:520][ 21]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.15:520][ 21]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.15:550][ 21]LogWorld: UWorld::CleanupWorld for World_23, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.15:550][ 21]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.17:466][193]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/RootMotion/Sword_Block_Left_Shield.Sword_Block_Left_Shield
+[2022.11.30-19.35.17:488][193]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SnSAnimsetPro/Animations/RootMotion/Sword_Block_Left_Shield.Sword_Block_Left_Shield
+[2022.11.30-19.35.17:501][193]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_25:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.11.30-19.35.17:772][193]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.11.30-19.35.19:475][347]LogSlate: Window 'Sword_Block_Left_Shield' being destroyed
+[2022.11.30-19.35.19:489][347]LogWorld: UWorld::CleanupWorld for World_25, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.19:489][347]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.19:494][347]LogWorld: UWorld::CleanupWorld for World_27, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.19:494][347]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.19:522][347]LogWorld: UWorld::CleanupWorld for World_26, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.19:522][347]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.34:155][764]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2022.11.30-19.35.38:044][186]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/RootMotion/Sword_Attack_U2_fast.Sword_Attack_U2_fast
+[2022.11.30-19.35.38:067][186]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SnSAnimsetPro/Animations/RootMotion/Sword_Attack_U2_fast.Sword_Attack_U2_fast
+[2022.11.30-19.35.38:078][186]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_28:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.11.30-19.35.38:345][186]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.11.30-19.35.44:191][654]LogSlate: Window 'Sword_Attack_U2_fast' being destroyed
+[2022.11.30-19.35.44:244][654]LogWorld: UWorld::CleanupWorld for World_28, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.44:244][654]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.44:251][654]LogWorld: UWorld::CleanupWorld for World_30, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.44:251][654]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.44:281][654]LogWorld: UWorld::CleanupWorld for World_29, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.44:281][654]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.48:906][122]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Attack_Combo_LL.Sword_Attack_Combo_LL
+[2022.11.30-19.35.48:925][122]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SnSAnimsetPro/Animations/InPlace/Sword_Attack_Combo_LL.Sword_Attack_Combo_LL
+[2022.11.30-19.35.48:934][122]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_31:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.11.30-19.35.49:195][122]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.11.30-19.35.52:686][421]LogSlate: Window 'Sword_Attack_Combo_LL' being destroyed
+[2022.11.30-19.35.52:734][421]LogWorld: UWorld::CleanupWorld for World_31, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.52:734][421]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.52:739][421]LogWorld: UWorld::CleanupWorld for World_33, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.52:739][421]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.52:770][421]LogWorld: UWorld::CleanupWorld for World_32, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.52:770][421]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.55:202][665]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/RootMotion/Sword_Attack_Combo_LL.Sword_Attack_Combo_LL
+[2022.11.30-19.35.55:220][665]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SnSAnimsetPro/Animations/RootMotion/Sword_Attack_Combo_LL.Sword_Attack_Combo_LL
+[2022.11.30-19.35.55:234][665]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_34:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.11.30-19.35.55:496][665]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.11.30-19.35.57:484][842]LogSlate: Window 'Sword_Attack_Combo_LL' being destroyed
+[2022.11.30-19.35.57:533][842]LogWorld: UWorld::CleanupWorld for World_34, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.57:533][842]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.57:539][842]LogWorld: UWorld::CleanupWorld for World_36, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.57:539][842]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.35.57:567][842]LogWorld: UWorld::CleanupWorld for World_35, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.35.57:567][842]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.36.00:526][143]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/AimOffsets/Sword_LookC_Add.Sword_LookC_Add
+[2022.11.30-19.36.00:542][143]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SnSAnimsetPro/Animations/AimOffsets/Sword_LookC_Add.Sword_LookC_Add
+[2022.11.30-19.36.00:556][143]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_37:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.11.30-19.36.00:828][143]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.11.30-19.36.02:263][266]LogSlate: Window 'Sword_LookC_Add' being destroyed
+[2022.11.30-19.36.02:313][266]LogWorld: UWorld::CleanupWorld for World_37, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.36.02:313][266]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.36.02:319][266]LogWorld: UWorld::CleanupWorld for World_39, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.36.02:319][266]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.36.02:350][266]LogWorld: UWorld::CleanupWorld for World_38, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.36.02:350][266]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.36.03:123][337]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/AimOffsets/Sword_LookR_Add.Sword_LookR_Add
+[2022.11.30-19.36.03:143][337]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SnSAnimsetPro/Animations/AimOffsets/Sword_LookR_Add.Sword_LookR_Add
+[2022.11.30-19.36.03:154][337]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_40:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.11.30-19.36.03:433][337]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.11.30-19.36.04:686][443]LogSlate: Window 'Sword_LookR_Add' being destroyed
+[2022.11.30-19.36.04:724][443]LogWorld: UWorld::CleanupWorld for World_40, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.36.04:724][443]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.36.04:730][443]LogWorld: UWorld::CleanupWorld for World_42, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.36.04:730][443]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.36.04:757][443]LogWorld: UWorld::CleanupWorld for World_41, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.36.04:757][443]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.36.05:830][551]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/AimOffsets/Sword_RiseWeapons_Add.Sword_RiseWeapons_Add
+[2022.11.30-19.36.05:830][551]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/RootMotion/Sword_Idle.Sword_Idle
+[2022.11.30-19.36.05:852][551]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SnSAnimsetPro/Animations/AimOffsets/Sword_RiseWeapons_Add.Sword_RiseWeapons_Add
+[2022.11.30-19.36.05:864][551]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_43:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.11.30-19.36.06:144][551]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.11.30-19.36.07:268][646]LogSlate: Window 'Sword_RiseWeapons_Add' being destroyed
+[2022.11.30-19.36.07:285][646]LogWorld: UWorld::CleanupWorld for World_43, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.36.07:285][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.36.07:291][646]LogWorld: UWorld::CleanupWorld for World_45, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.36.07:291][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.36.07:324][646]LogWorld: UWorld::CleanupWorld for World_44, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.36.07:324][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.36.08:173][726]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/AimOffsets/Sword_LowerWeapons_Add.Sword_LowerWeapons_Add
+[2022.11.30-19.36.08:198][726]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SnSAnimsetPro/Animations/AimOffsets/Sword_LowerWeapons_Add.Sword_LowerWeapons_Add
+[2022.11.30-19.36.08:208][726]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_46:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.11.30-19.36.08:495][726]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.11.30-19.36.09:584][804]LogSlate: Window 'Sword_LowerWeapons_Add' being destroyed
+[2022.11.30-19.36.09:601][804]LogWorld: UWorld::CleanupWorld for World_46, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.36.09:601][804]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.36.09:607][804]LogWorld: UWorld::CleanupWorld for World_48, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.36.09:607][804]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.36.09:637][804]LogWorld: UWorld::CleanupWorld for World_47, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.36.09:637][804]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
