@@ -5811,3 +5811,254 @@ Replaced by a unified angle conversion input which can switch modes for more fle
 [2022.11.30-19.31.45:237][224]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
 [2022.11.30-19.31.45:242][224]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
 [2022.11.30-19.31.45:370][226]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2022.11.30-19.32.19:538][328]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
+[2022.11.30-19.32.19:669][328]LogTexture: Display: 텍스처 빌드: T_skeleton_Emissive (OODLE_AutoDXT, 4096X4096)
+[2022.11.30-19.32.19:670][328]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_walkR.Anim_walkR
+[2022.11.30-19.32.19:670][328]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_2 (OODLE_DXT1, 64X64)
+[2022.11.30-19.32.19:670][328]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_1 (G8, 32X32)
+[2022.11.30-19.32.19:670][328]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_0 (G8, 512X128)
+[2022.11.30-19.32.19:670][328]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_2 (OODLE_AutoDXT, 64X64)
+[2022.11.30-19.32.19:670][328]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_walk_fast.Anim_walk_fast
+[2022.11.30-19.32.19:670][328]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_0_1 (OODLE_DXT1, 512X512)
+[2022.11.30-19.32.21:182][328]LogTexture: Display: 텍스처 빌드: HQ_Lightmap0_1 (OODLE_AutoDXT, 512X512)
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTexture: Display: 텍스처 빌드: T_skeleton_BaseColor (OODLE_AutoDXT, 4096X4096)
+[2022.11.30-19.32.21:182][328]LogTexture: Display: 텍스처 빌드: T_skeleton_OcclusionRoughnessMetallic (OODLE_AutoDXT, 4096X4096)
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTexture: Display: 텍스처 빌드: T_skeleton_Normal (OODLE_BC5, 4096X4096)
+[2022.11.30-19.32.21:182][328]LogTexture: Display: 텍스처 빌드: T_curva_dirt_dirt2 (OODLE_AutoDXT, 4096X4096)
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.32.21:182][328]LogMaterial: Display: Missing cached shadermap for M_scene in PCD3D_SM5, Default, SM5 (DDC key hash: 57CA48F0037B512FDC022059CC6C3FF8BE633421), compiling. 
+[2022.11.30-19.32.21:209][328]LogShaderCompilers: Display: Submitted 41 shader compile jobs with 'Low' priority
+[2022.11.30-19.32.21:212][328]LogSkeletalMesh: Building Skeletal Mesh SK_Mannequin...
+[2022.11.30-19.32.21:244][328]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 41
+[2022.11.30-19.32.21:244][328]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 38
+[2022.11.30-19.32.21:244][328]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 35
+[2022.11.30-19.32.21:244][328]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 32
+[2022.11.30-19.32.21:244][328]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 29
+[2022.11.30-19.32.21:244][328]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 26
+[2022.11.30-19.32.21:245][328]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 23
+[2022.11.30-19.32.21:245][328]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 20
+[2022.11.30-19.32.21:245][328]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 17
+[2022.11.30-19.32.21:245][328]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 14
+[2022.11.30-19.32.21:245][328]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 11
+[2022.11.30-19.32.21:245][328]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 8
+[2022.11.30-19.32.21:245][328]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 5
+[2022.11.30-19.32.21:245][328]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 2
+[2022.11.30-19.32.21:245][328]LogShaderCompilers: Display: Started 41 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.21:245][328]LogSkeletalMesh: Built Skeletal Mesh [0.03s] /Game/Skeleton_Animations/demo/mesh/SK_Mannequin.SK_Mannequin
+[2022.11.30-19.32.21:245][328]LogMaterial: Display: Missing cached shadermap for M_body in PCD3D_SM5, Default, SM5 (DDC key hash: 5CFBFBDABCD7F8FE6F173A6BBCD70402F829FF7E), compiling. 
+[2022.11.30-19.32.21:259][328]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.32.21:262][328]LogMaterial: Display: Missing cached shadermap for M_Skeleton in PCD3D_SM5, Default, SM5 (DDC key hash: 362609822F0F9B762C4129210F63B157FD74A714), compiling. 
+[2022.11.30-19.32.21:315][328]LogShaderCompilers: Display: Submitted 125 shader compile jobs with 'Low' priority
+[2022.11.30-19.32.21:318][328]LogSkeletalMesh: Display: [AssetLog] G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Content\Skeleton_Animations\mesh\SK_Skeleton.uasset: Find and fix some bad tangent! please re-import this skeletal mesh asset to fix the issue. The shading of the skeletal mesh will be bad and faceted.
+[2022.11.30-19.32.21:318][328]LogSkeletalMesh: Building Skeletal Mesh SK_Skeleton...
+[2022.11.30-19.32.21:357][328]LogSkeletalMesh: Built Skeletal Mesh [0.04s] /Game/Skeleton_Animations/mesh/SK_Skeleton.SK_Skeleton
+[2022.11.30-19.32.21:363][328]LogTexture: Display: 텍스처 빌드: DeprecatedTextureEB9CBE3C423008B5E8E130901E171C89 (BGRA8, 128X128)
+[2022.11.30-19.32.21:381][328]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 157
+[2022.11.30-19.32.21:381][328]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 149
+[2022.11.30-19.32.21:381][328]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 141
+[2022.11.30-19.32.21:381][328]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 133
+[2022.11.30-19.32.21:381][328]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 125
+[2022.11.30-19.32.21:381][328]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 117
+[2022.11.30-19.32.21:381][328]LogShaderCompilers: Display: Started 48 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.21:381][328]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Skeleton_Animations/map/Skeleton_Animations.Skeleton_Animations
+[2022.11.30-19.32.21:382][328]LightingResults: New page: 라이팅 빌드
+[2022.11.30-19.32.21:382][328]LoadErrors: New page: 맵 로드 중: Skeleton_Animations.umap
+[2022.11.30-19.32.21:389][328]LogWorld: UWorld::CleanupWorld for Knight, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.32.21:390][328]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.32.21:390][328]MapCheck: New page: 맵 체크
+[2022.11.30-19.32.21:390][328]LightingResults: New page: 라이팅 빌드
+[2022.11.30-19.32.21:396][328]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.11.30-19.32.21:413][328]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2022.11.30-19.32.21:417][328]LogAudio: Display: Audio Device (ID: 1) registered with world 'Skeleton_Animations'.
+[2022.11.30-19.32.21:545][328]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.11.30-19.32.21:545][328]LogAIModule: Creating AISystem for world Skeleton_Animations
+[2022.11.30-19.32.21:566][328]LogUObjectHash: Compacting FUObjectHashTables data took   4.33ms
+[2022.11.30-19.32.21:573][328]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.11.30-19.32.21:573][328]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.18ms.
+[2022.11.30-19.32.21:573][328]LogFileHelpers: Loading map 'Skeleton_Animations' took 0.192
+[2022.11.30-19.32.21:610][329]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_defend_down.Anim_defend_down
+[2022.11.30-19.32.21:610][329]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_Defend.Anim_Defend
+[2022.11.30-19.32.21:749][331]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_death_02.Anim_death_02
+[2022.11.30-19.32.21:749][331]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_defend_hit.Anim_defend_hit
+[2022.11.30-19.32.21:777][333]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_attack_08.Anim_attack_08
+[2022.11.30-19.32.21:806][334]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_attack_07.Anim_attack_07
+[2022.11.30-19.32.21:806][334]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_death_01.Anim_death_01
+[2022.11.30-19.32.21:842][335]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_attack_04.Anim_attack_04
+[2022.11.30-19.32.21:867][336]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_attack_05.Anim_attack_05
+[2022.11.30-19.32.21:926][339]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_attack_03.Anim_attack_03
+[2022.11.30-19.32.21:926][339]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_attack_06.Anim_attack_06
+[2022.11.30-19.32.21:981][341]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_defend_hit_02.Anim_defend_hit_02
+[2022.11.30-19.32.21:982][341]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_defend_hit_03.Anim_defend_hit_03
+[2022.11.30-19.32.22:020][342]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_defend_power.Anim_defend_power
+[2022.11.30-19.32.22:020][342]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_turn_180.Anim_turn_180
+[2022.11.30-19.32.22:049][343]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_Idle_sleep.Anim_Idle_sleep
+[2022.11.30-19.32.22:070][344]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_stand_up.Anim_stand_up
+[2022.11.30-19.32.22:118][345]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_hit_02.Anim_hit_02
+[2022.11.30-19.32.22:140][346]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 4
+[2022.11.30-19.32.22:140][346]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.32.22:163][348]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_hit.Anim_hit
+[2022.11.30-19.32.22:178][349]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_hit_03.Anim_hit_03
+[2022.11.30-19.32.22:190][350]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_TurnR.Anim_TurnR
+[2022.11.30-19.32.22:222][351]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_walk.Anim_walk
+[2022.11.30-19.32.22:222][351]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_TurnL.Anim_TurnL
+[2022.11.30-19.32.22:250][352]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_hitBack.Anim_hitBack
+[2022.11.30-19.32.22:268][353]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_Idle_look.Anim_Idle_look
+[2022.11.30-19.32.22:290][354]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_Idle.Anim_Idle
+[2022.11.30-19.32.22:312][355]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 3
+[2022.11.30-19.32.22:312][355]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.32.22:346][357]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_attack_01.Anim_attack_01
+[2022.11.30-19.32.22:346][357]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_attack_02.Anim_attack_02
+[2022.11.30-19.32.22:398][360]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 2
+[2022.11.30-19.32.22:398][360]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 1
+[2022.11.30-19.32.22:398][360]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.32.22:426][361]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Skeleton_Animations/animations/Anim_walkL.Anim_walkL
+[2022.11.30-19.32.22:426][361]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 105
+[2022.11.30-19.32.22:426][361]LogShaderCompilers: Display: Started 6 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.22:545][368]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 99
+[2022.11.30-19.32.22:545][368]LogShaderCompilers: Display: Started 5 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.22:571][370]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 94
+[2022.11.30-19.32.22:571][370]LogShaderCompilers: Display: Started 5 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.22:601][371]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 89
+[2022.11.30-19.32.22:601][371]LogShaderCompilers: Display: Started 5 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.22:664][372]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 84
+[2022.11.30-19.32.22:665][372]LogShaderCompilers: Display: Started 5 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.22:730][373]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 79
+[2022.11.30-19.32.22:731][373]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.22:746][373]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 75
+[2022.11.30-19.32.22:746][373]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.22:785][374]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 71
+[2022.11.30-19.32.22:785][374]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.22:798][374]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 67
+[2022.11.30-19.32.22:798][374]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 63
+[2022.11.30-19.32.22:798][374]LogShaderCompilers: Display: Started 8 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.22:839][374]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 59
+[2022.11.30-19.32.22:839][374]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.22:929][376]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 56
+[2022.11.30-19.32.22:929][376]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.22:976][376]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 53
+[2022.11.30-19.32.22:976][376]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.23:050][378]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 50
+[2022.11.30-19.32.23:050][378]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.23:170][381]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 47
+[2022.11.30-19.32.23:170][381]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.23:306][389]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 44
+[2022.11.30-19.32.23:306][389]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 41
+[2022.11.30-19.32.23:306][389]LogShaderCompilers: Display: Started 6 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.23:407][394]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 38
+[2022.11.30-19.32.23:407][394]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.23:460][397]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 36
+[2022.11.30-19.32.23:460][397]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.23:645][406]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 34
+[2022.11.30-19.32.23:645][406]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.23:706][410]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 32
+[2022.11.30-19.32.23:706][410]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 30
+[2022.11.30-19.32.23:706][410]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.23:731][411]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 28
+[2022.11.30-19.32.23:731][411]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.23:810][415]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 26
+[2022.11.30-19.32.23:810][415]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 24
+[2022.11.30-19.32.23:810][415]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.23:905][420]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 22
+[2022.11.30-19.32.23:905][420]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.23:984][424]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 20
+[2022.11.30-19.32.23:984][424]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:013][425]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 18
+[2022.11.30-19.32.24:013][425]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:031][426]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 17
+[2022.11.30-19.32.24:031][426]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 16
+[2022.11.30-19.32.24:031][426]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:085][427]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 15
+[2022.11.30-19.32.24:085][427]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:121][430]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 14
+[2022.11.30-19.32.24:121][430]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:232][434]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 13
+[2022.11.30-19.32.24:232][434]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:259][435]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 12
+[2022.11.30-19.32.24:259][435]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:259][435]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 11
+[2022.11.30-19.32.24:259][435]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:287][436]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 10
+[2022.11.30-19.32.24:287][436]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:395][441]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 9
+[2022.11.30-19.32.24:395][441]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:434][443]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 8
+[2022.11.30-19.32.24:434][443]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:456][444]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 7
+[2022.11.30-19.32.24:456][444]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 6
+[2022.11.30-19.32.24:456][444]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 5
+[2022.11.30-19.32.24:456][444]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:473][445]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 4
+[2022.11.30-19.32.24:473][445]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 3
+[2022.11.30-19.32.24:473][445]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:500][446]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 2
+[2022.11.30-19.32.24:500][446]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.24:522][447]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 1
+[2022.11.30-19.32.24:522][447]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.32.27:419][765]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.11.30-19.32.27:422][765]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.11.30-19.32.27:422][765]PIE: New page: PIE 세션: Skeleton_Animations (2022. 12. 1. 오후 1:32:27)
+[2022.11.30-19.32.27:443][765]LogPlayLevel: Creating play world package: /Game/Skeleton_Animations/map/UEDPIE_0_Skeleton_Animations
+[2022.11.30-19.32.27:447][765]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003512s)
+[2022.11.30-19.32.27:447][765]LogAIModule: Creating AISystem for world Skeleton_Animations
+[2022.11.30-19.32.27:447][765]LogPlayLevel: PIE: World Init took: (0.000655s)
+[2022.11.30-19.32.27:447][765]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Skeleton_Animations/map/Skeleton_Animations.Skeleton_Animations to /Game/Skeleton_Animations/map/UEDPIE_0_Skeleton_Animations.Skeleton_Animations (0.004275s)
+[2022.11.30-19.32.27:453][765]LogUObjectHash: Compacting FUObjectHashTables data took   1.03ms
+[2022.11.30-19.32.27:456][765]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2022.11.30-19.32.27:456][765]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.11.30-19.32.27:456][765]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.11.30-19.32.27:456][765]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.11.30-19.32.27:456][765]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.11.30-19.32.27:456][765]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.11.30-19.32.27:456][765]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.11.30-19.32.27:456][765]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.11.30-19.32.27:456][765]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.11.30-19.32.27:456][765]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.11.30-19.32.27:456][765]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.11.30-19.32.27:456][765]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.11.30-19.32.27:456][765]LogAudioMixer: Display: Initializing audio mixer.
+[2022.11.30-19.32.27:459][765]LogAudioMixer: Display: 0: FrontLeft
+[2022.11.30-19.32.27:459][765]LogAudioMixer: Display: 1: FrontRight
+[2022.11.30-19.32.27:499][765]LogAudioMixer: Display: Using Audio Device 스피커(Realtek(R) Audio)
+[2022.11.30-19.32.27:499][765]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.11.30-19.32.27:499][765]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.11.30-19.32.27:499][765]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.11.30-19.32.27:500][765]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.11.30-19.32.27:500][765]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.11.30-19.32.27:500][765]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.11.30-19.32.27:501][765]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.11.30-19.32.27:501][765]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.11.30-19.32.27:501][765]LogInit: FAudioDevice initialized.
+[2022.11.30-19.32.27:501][765]LogAudio: Display: Audio Device (ID: 4) registered with world 'Skeleton_Animations'.
+[2022.11.30-19.32.27:507][765]LogLoad: Game class is 'UE4_Portfolio2_SLGameMode'
+[2022.11.30-19.32.27:521][765]LogWorld: Bringing World /Game/Skeleton_Animations/map/UEDPIE_0_Skeleton_Animations.Skeleton_Animations up for play (max tick rate 0) at 2022.12.01-04.32.27
+[2022.11.30-19.32.27:523][765]LogWorld: Bringing up level for play took: 0.015450
+[2022.11.30-19.32.27:523][765]LogOnline: OSS: Creating online subsystem instance for: :Context_23
+[2022.11.30-19.32.27:525][765]PIE: 서버가 로그인했습니다.
+[2022.11.30-19.32.27:526][765]PIE: 에디터에서 플레이 총 시작 시간 0.104초입니다.
+[2022.11.30-19.32.29:864][ 42]LogCharacterMovement: ThirdPersonCharacter_C_0 is stuck and failed to move! Velocity: X=-107.73 Y=-590.25 Z=0.00 Location: X=-89.53 Y=-163.55 Z=118.15 Normal: X=0.08 Y=1.00 Z=0.00 PenetrationDepth:2.153 Actor:Anim_attack_06_20 Component:SkeletalMeshComponent0 BoneName:hand_l (0 other events since notify)
+[2022.11.30-19.32.35:844][755]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.11.30-19.32.35:844][755]LogWorld: BeginTearingDown for /Game/Skeleton_Animations/map/UEDPIE_0_Skeleton_Animations
+[2022.11.30-19.32.35:844][755]LogWorld: UWorld::CleanupWorld for Skeleton_Animations, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.32.35:848][755]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.32.35:852][755]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.11.30-19.32.35:855][755]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.32.35:860][755]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.11.30-19.32.35:860][755]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.11.30-19.32.35:861][755]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.11.30-19.32.35:864][755]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.11.30-19.32.35:867][755]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2022.11.30-19.32.35:962][757]LogPlayLevel: Display: Destroying online subsystem :Context_23
