@@ -4889,3 +4889,925 @@ Replaced by a unified angle conversion input which can switch modes for more fle
 [2022.11.30-19.30.29:159][202]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
 [2022.11.30-19.30.29:188][204]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 1
 [2022.11.30-19.30.29:188][204]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.30.58:407][778]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Helm2_Metallic (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Helm1_Metallic (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Helm1_Roughness (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Helm1_Metallic (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Dark_Sword_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Gold_Sword_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Shield_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Sheath_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Sheath_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_BodyArmor_Roughness (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Helm1_Normal (OODLE_BC5, 1024X1024)
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Gold_HandsArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_HandsArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Gold_BodyArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: T_Knight_Gold_UpperArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:980][778]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_1 (OODLE_AutoDXT, 256X256)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_LowerArmor_Roughness (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_LowerArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: HQ_Lightmap1_2 (OODLE_AutoDXT, 64X64)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_1 (OODLE_DXT1, 256X256)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: LQ_Lightmap_1_2 (OODLE_DXT1, 64X64)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_0 (BGRA8, 128X128)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: ShadowMapTexture2D_1 (BGRA8, 32X32)
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Gold_Helm2_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Eye_Specular (OODLE_AutoDXT, 512X512)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Sword_Roughness (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Fur_Opacity (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Sword_Metallic (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Eye_Roughness (OODLE_AutoDXT, 512X512)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Sword_Normal (OODLE_BC5, 1024X1024)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Dark_UpperArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Head_Specular (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_BodyArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_BodyArmor_Normal (OODLE_BC5, 2048X2048)
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_BodyArmor_Metallic (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_BodyArmor_Roughness (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Sheath_Metallic (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Gold_Sheath_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Sheath_Roughness (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_HandsArmor_Roughness (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_UpperArmor_Roughness (OODLE_AutoDXT, 4096X4096)
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_HandsArmor_Metallic (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Head_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Helm2_Roughness (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Helm2_Normal (OODLE_BC5, 1024X1024)
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Gold_LowerArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.30.59:981][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_HandsArmor_Metallic (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.00:114][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Shield_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.00:114][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Head_Normal (OODLE_BC5, 2048X2048)
+[2022.11.30-19.31.00:114][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.31.00:114][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:114][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:114][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:114][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Head_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.00:114][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:114][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.31.00:114][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:114][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:210][778]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:210][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_LowerArmor_Metallic (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.00:210][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Head_Roughness (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.00:210][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Sword_Metallic (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.00:210][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Sword_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.00:210][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.31.00:210][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTexture: Display: 텍스처 빌드: T_Knight_Dark_Shield_Roughness (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.00:913][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_HandsArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.00:913][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Shield_Normal (OODLE_BC5, 1024X1024)
+[2022.11.30-19.31.00:913][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_BodyArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.00:913][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_UpperArmor_Metallic (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.00:913][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Shield_Metallic (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.00:913][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_UpperArmor_Roughness (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.00:913][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_UpperArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_HandsArmor_Normal (OODLE_BC5, 2048X2048)
+[2022.11.30-19.31.00:913][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_HandsArmor_Roughness (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.00:913][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_UpperArmor_Metallic (OODLE_AutoDXT, 4096X4096)
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:913][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.00:914][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.31.00:914][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:997][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Shield_Metallic (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Shield_Roughness (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Shield_Roughness (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Dark_Shield_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Gold_Shield_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Helm1_Roughness (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Dark_HandsArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Dark_Helm1_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_LowerArmor_Metallic (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Dark_Eye_Emissive (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Eye_Normal (OODLE_BC5, 512X512)
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Eye_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_LowerArmor_Roughness (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Dark_LowerArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_LowerArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_LowerArmor_Normal (OODLE_BC5, 2048X2048)
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Helm2_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_UpperArmor_Normal (OODLE_BC5, 4096X4096)
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Sheath_Roughness (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.01:998][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Sheath_Normal (OODLE_BC5, 1024X1024)
+[2022.11.30-19.31.01:998][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.01:998][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Gold_HandsArmor in PCD3D_SM5, Default, SM5 (DDC key hash: 195E498A1FB96F8952D42AD8775914D840A564E7), compiling. 
+[2022.11.30-19.31.02:020][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:021][778]LogTexture: Display: 텍스처 빌드: T_Knight_Dark_Sheath_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.02:021][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Dark_Sword in PCD3D_SM5, Default, SM5 (DDC key hash: 5C399E5D5B8F96F8788C3E01C96F344B8397610A), compiling. 
+[2022.11.30-19.31.02:060][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.31.02:060][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 32
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 30
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 28
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 26
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 24
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 22
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 20
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 18
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 16
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 14
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 12
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 10
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 8
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 6
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 4
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 2
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Started 32 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:060][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.02:060][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.31.02:060][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Sheath_Metallic (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.02:060][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:180][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.02:180][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.02:180][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Eye_Emissive (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.02:180][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Sword_Roughness (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.02:180][778]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.31.02:180][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.31.02:180][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.02:180][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_BodyArmor_Metallic (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.02:180][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.02:180][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.02:180][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Dark_Eye in PCD3D_SM5, Default, SM5 (DDC key hash: 82DC3C8C90C68FEC8BC336094A1C5F048E5288DE), compiling. 
+[2022.11.30-19.31.02:204][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:207][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_Sword_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.02:207][778]LogTexture: Display: 텍스처 빌드: T_Knight_Immortal_Helm1_Albedo (OODLE_AutoDXT, 1024X1024)
+[2022.11.30-19.31.02:207][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Gold_Sword in PCD3D_SM5, Default, SM5 (DDC key hash: 597939CC9F18B568262EA77EC6736DAA53578209), compiling. 
+[2022.11.30-19.31.02:230][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:232][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Immortal_HandsArmor in PCD3D_SM5, Default, SM5 (DDC key hash: D651316540F2EA01B91B36F10AEB97A8A8BE751D), compiling. 
+[2022.11.30-19.31.02:261][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.31.02:261][778]LogTexture: Display: 텍스처 빌드: T_Knight_Dark_BodyArmor_Albedo (OODLE_AutoDXT, 2048X2048)
+[2022.11.30-19.31.02:261][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.02:261][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:397][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.31.02:397][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_BC5 (Oodle OodleTex_BC5U) lambda=0 effort=20 
+[2022.11.30-19.31.02:397][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.02:397][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.02:397][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.02:397][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.02:397][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.31.02:397][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC3) lambda=0 effort=20 
+[2022.11.30-19.31.02:397][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Dark_UpperArmor in PCD3D_SM5, Default, SM5 (DDC key hash: 9B5BE665967BE60AAC8F144F81505B3C8981EAEE), compiling. 
+[2022.11.30-19.31.02:431][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:432][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Main_Shield in PCD3D_SM5, Default, SM5 (DDC key hash: D047AC8B1FABF402ED8D495A62C561C9E3820685), compiling. 
+[2022.11.30-19.31.02:458][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:480][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Main_Sword in PCD3D_SM5, Default, SM5 (DDC key hash: 73BAF8866AC1E58EDAFE7D09B67A00F30E3760F0), compiling. 
+[2022.11.30-19.31.02:500][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:501][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Main_Eye in PCD3D_SM5, Default, SM5 (DDC key hash: 18FE3A2A65CBC9F2ABF96D2D311EA495F9205704), compiling. 
+[2022.11.30-19.31.02:518][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:520][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Main_BodyArmor in PCD3D_SM5, Default, SM5 (DDC key hash: C2476092EE627E256A8D723DFF97875D06FFA751), compiling. 
+[2022.11.30-19.31.02:553][778]LogShaderCompilers: Display: Submitted 74 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:558][778]LogSkeletalMesh: Building Skeletal Mesh SK_Knight_Main...
+[2022.11.30-19.31.02:685][778]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 330
+[2022.11.30-19.31.02:685][778]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 320
+[2022.11.30-19.31.02:685][778]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 310
+[2022.11.30-19.31.02:685][778]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 300
+[2022.11.30-19.31.02:685][778]LogShaderCompilers: Display: Started 40 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:685][778]LogSkeletalMesh: Built Skeletal Mesh [0.13s] /Game/Knight/Mesh/SK_Knight_Main.SK_Knight_Main
+[2022.11.30-19.31.02:687][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Immortal_LowerArmor in PCD3D_SM5, Default, SM5 (DDC key hash: AF5F73199424B3494E493FBA6BDAC0F399AA1498), compiling. 
+[2022.11.30-19.31.02:708][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:710][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Immortal_Sheath in PCD3D_SM5, Default, SM5 (DDC key hash: 76FF0FFD534D86411D9BC938E605614BC9D5C1C9), compiling. 
+[2022.11.30-19.31.02:732][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:740][778]LogSkeletalMesh: Building Skeletal Mesh SK_Knight_Dark...
+[2022.11.30-19.31.02:870][778]LogSkeletalMesh: Built Skeletal Mesh [0.13s] /Game/Knight/Mesh/SK_Knight_Dark.SK_Knight_Dark
+[2022.11.30-19.31.02:876][778]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Knight/Animation/Anim_Knight_run_01.Anim_Knight_run_01
+[2022.11.30-19.31.02:876][778]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Knight/Animation/Anim_Knight_walkBack.Anim_Knight_walkBack
+[2022.11.30-19.31.02:876][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Gold_Helm2 in PCD3D_SM5, Default, SM5 (DDC key hash: FDC81B8B458460599A2759EE2AD306AE4AE7B51C), compiling. 
+[2022.11.30-19.31.02:920][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:922][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Main_Fur in PCD3D_SM5, Default, SM5 (DDC key hash: 397F542123E9EA88C70589A9EB6C7B119DD839A2), compiling. 
+[2022.11.30-19.31.02:981][778]LogShaderCompilers: Display: Submitted 74 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.02:983][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Main_Head in PCD3D_SM5, Default, SM5 (DDC key hash: 62F19E5E18B36633885E220FDCDD86AD138E7604), compiling. 
+[2022.11.30-19.31.03:007][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:009][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Immortal_BodyArmor in PCD3D_SM5, Default, SM5 (DDC key hash: 2D69F00BE35D952000F08AA3B721EF09B1F0746F), compiling. 
+[2022.11.30-19.31.03:062][778]LogShaderCompilers: Display: Submitted 74 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:065][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Main_Opacity in PCD3D_SM5, Default, SM5 (DDC key hash: 6A6589027068EAAECFCE8E0E9286FA6FE8C35BE8), compiling. 
+[2022.11.30-19.31.03:144][778]LogTexture: Display: 텍스처 빌드: T_Knight_Main_UpperArmor_Albedo (OODLE_AutoDXT, 4096X4096)
+[2022.11.30-19.31.03:144][778]LogShaderCompilers: Display: Submitted 64 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:385][778]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 630
+[2022.11.30-19.31.03:386][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:386][778]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 620
+[2022.11.30-19.31.03:386][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:386][778]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 610
+[2022.11.30-19.31.03:386][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:386][778]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 600
+[2022.11.30-19.31.03:386][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:386][778]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 590
+[2022.11.30-19.31.03:386][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:386][778]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.31.03:386][778]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.31.03:386][778]LogPhysics: Warning: Failed to cook convex: /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset 0 (FlipX:0). The remaining elements will not get cooked.
+[2022.11.30-19.31.03:386][778]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.31.03:386][778]LogPhysicsCore: Warning: PHYSX: (D:\Build\++Fortnite\Sync\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Source\PhysXCooking\src\convex\QuickHullConvexHullLib.cpp 937) eINTERNAL_ERROR : QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
+[2022.11.30-19.31.03:386][778]LogPhysics: Warning: Failed to cook convex: /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset 0 (FlipX:1). The remaining elements will not get cooked.
+[2022.11.30-19.31.03:386][778]LogPhysics: Warning: Attempt to build physics data for /Game/Knight/Mesh/SK_Knight_PhysicsAsset.SK_Knight_PhysicsAsset:SkeletalBodySetup_391 when we are unable to.
+[2022.11.30-19.31.03:418][778]LogSkeletalMesh: Building Skeletal Mesh SK_Knight_Gold...
+[2022.11.30-19.31.03:572][778]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 580
+[2022.11.30-19.31.03:572][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:572][778]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 570
+[2022.11.30-19.31.03:572][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:572][778]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 560
+[2022.11.30-19.31.03:572][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:572][778]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 550
+[2022.11.30-19.31.03:572][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:572][778]LogSkeletalMesh: Built Skeletal Mesh [0.15s] /Game/Knight/Mesh/SK_Knight_Gold.SK_Knight_Gold
+[2022.11.30-19.31.03:574][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Gold_BodyArmor in PCD3D_SM5, Default, SM5 (DDC key hash: F7D261E28E27108EC4E3B891D68A5F4CB3FA1601), compiling. 
+[2022.11.30-19.31.03:622][778]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 540
+[2022.11.30-19.31.03:622][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:622][778]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 530
+[2022.11.30-19.31.03:622][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:622][778]LogShaderCompilers: Display: Submitted 74 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:623][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Immortal_Shield in PCD3D_SM5, Default, SM5 (DDC key hash: 31C9F81966765FC574658158008C63FE4089D298), compiling. 
+[2022.11.30-19.31.03:649][778]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 594
+[2022.11.30-19.31.03:649][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:649][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:651][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Gold_Shield in PCD3D_SM5, Default, SM5 (DDC key hash: E0E0F8B29618E2C437141626AA1E9E821FCCCB27), compiling. 
+[2022.11.30-19.31.03:677][778]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 616
+[2022.11.30-19.31.03:677][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:677][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:679][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Immortal_Head in PCD3D_SM5, Default, SM5 (DDC key hash: CE5A415CC913C77F580BB297583D303A375869CE), compiling. 
+[2022.11.30-19.31.03:703][778]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 638
+[2022.11.30-19.31.03:704][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:704][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:706][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Gold_LowerArmor in PCD3D_SM5, Default, SM5 (DDC key hash: 985C51E6004F6C7E7A31B5BD75D000B71046BE9C), compiling. 
+[2022.11.30-19.31.03:731][778]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 660
+[2022.11.30-19.31.03:731][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:731][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:733][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Gold_Sheath in PCD3D_SM5, Default, SM5 (DDC key hash: 62F8B3C749BE0F2CC4A54F52EAEC0432DA5AB2DE), compiling. 
+[2022.11.30-19.31.03:763][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:765][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Immortal_UpperArmor in PCD3D_SM5, Default, SM5 (DDC key hash: C76872227567B44BBB1B5B7CBAA3F06DEDA50086), compiling. 
+[2022.11.30-19.31.03:789][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:794][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Main_Helm2 in PCD3D_SM5, Default, SM5 (DDC key hash: FC6064F33DA8AB65EB940C18EF929FBF866DEAD2), compiling. 
+[2022.11.30-19.31.03:819][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:821][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Main_HandsArmor in PCD3D_SM5, Default, SM5 (DDC key hash: 37A47D36F2B07501AFCBE1D1FBFCAF426EE88CF4), compiling. 
+[2022.11.30-19.31.03:846][778]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 778
+[2022.11.30-19.31.03:846][778]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:846][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:849][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Dark_Helm1 in PCD3D_SM5, Default, SM5 (DDC key hash: 260CBA54476214E3952FC44B0D8EEE3C1B017A7E), compiling. 
+[2022.11.30-19.31.03:874][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:875][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Immortal_Sword in PCD3D_SM5, Default, SM5 (DDC key hash: 94BA78B507519CEBB1AB7EE5DD386649875C7B90), compiling. 
+[2022.11.30-19.31.03:901][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:903][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Dark_HandsArmor in PCD3D_SM5, Default, SM5 (DDC key hash: 3C849A5525D9A52C3FBEF16909B44BFF0E622337), compiling. 
+[2022.11.30-19.31.03:929][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:930][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Dark_Shield in PCD3D_SM5, Default, SM5 (DDC key hash: 6E779D3FB9D69152F4E28D2FDDF769C724E5156C), compiling. 
+[2022.11.30-19.31.03:956][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:958][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Immortal_Eye in PCD3D_SM5, Default, SM5 (DDC key hash: 1B0E4206BA570C9FAD9E70B1A37EF1D1D511385A), compiling. 
+[2022.11.30-19.31.03:985][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.03:993][778]LogSkeletalMesh: Building Skeletal Mesh SK_Knight_Immortal...
+[2022.11.30-19.31.04:154][778]LogSkeletalMesh: Built Skeletal Mesh [0.16s] /Game/Knight/Mesh/SK_Knight_Immortal.SK_Knight_Immortal
+[2022.11.30-19.31.04:156][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Gold_UpperArmor in PCD3D_SM5, Default, SM5 (DDC key hash: 3233B6AB1D49C724BDBFF0474A20DCE14B649210), compiling. 
+[2022.11.30-19.31.04:182][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.04:184][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Dark_LowerArmor in PCD3D_SM5, Default, SM5 (DDC key hash: 41A66A0704E8707D3706FE2A3A38EE4EA10AB46C), compiling. 
+[2022.11.30-19.31.04:210][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.04:212][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Dark_Sheath in PCD3D_SM5, Default, SM5 (DDC key hash: B6475A7E827A54F36FD8619BB0714F6E3A1E3C76), compiling. 
+[2022.11.30-19.31.04:238][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.04:240][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Main_Sheath in PCD3D_SM5, Default, SM5 (DDC key hash: 7B08C7D2E7E24D0DC423E2405E1CB3DDB8706E35), compiling. 
+[2022.11.30-19.31.04:263][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.04:265][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Main_LowerArmor in PCD3D_SM5, Default, SM5 (DDC key hash: 4590E56206E9D494140C363E0F3C2B1749425C38), compiling. 
+[2022.11.30-19.31.04:290][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.04:292][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Dark_BodyArmor in PCD3D_SM5, Default, SM5 (DDC key hash: CD3B54C8447316D7184194805B52B5A85C635D9C), compiling. 
+[2022.11.30-19.31.04:339][778]LogShaderCompilers: Display: Submitted 74 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.04:341][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Immortal_Helm1 in PCD3D_SM5, Default, SM5 (DDC key hash: 35B33A4C17D94C619C6CE8E5D48D68BC75BC5B4D), compiling. 
+[2022.11.30-19.31.04:367][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.05:093][778]LogTextureFormatOodle: Display: non-RDO encode 4096 x 4096 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.05:093][778]LogTextureFormatOodle: Display: non-RDO encode 2048 x 2048 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.05:093][778]LogTextureFormatOodle: Display: non-RDO encode 1024 x 1024 x 1 to format OODLE_AutoDXT (Oodle OodleTex_BC1_WithTransparency) lambda=0 effort=20 
+[2022.11.30-19.31.05:093][778]LogMaterial: Display: Missing cached shadermap for Mat_Knight_Main_UpperArmor in PCD3D_SM5, Default, SM5 (DDC key hash: C1F991929A89814911DA65ECF4BCCBC7F5834C45), compiling. 
+[2022.11.30-19.31.05:119][778]LogShaderCompilers: Display: Submitted 32 shader compile jobs with 'Low' priority
+[2022.11.30-19.31.05:168][778]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Knight/Maps/Knight.Knight
+[2022.11.30-19.31.05:168][778]Cmd: MAP LOAD FILE="../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/Knight/Maps/Knight.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.11.30-19.31.05:168][778]LightingResults: New page: 라이팅 빌드
+[2022.11.30-19.31.05:169][778]LoadErrors: New page: 맵 로드 중: Knight.umap
+[2022.11.30-19.31.05:181][778]LogWorld: UWorld::CleanupWorld for Fallen_Knight, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.31.05:181][778]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.31.05:182][778]MapCheck: New page: 맵 체크
+[2022.11.30-19.31.05:182][778]LightingResults: New page: 라이팅 빌드
+[2022.11.30-19.31.05:191][778]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.11.30-19.31.05:219][778]LogUObjectHash: Compacting FUObjectHashTables data took   2.43ms
+[2022.11.30-19.31.05:256][778]LogAudio: Display: Audio Device (ID: 1) registered with world 'Knight'.
+[2022.11.30-19.31.05:261][778]LogTexture: Display: 텍스처 빌드: DeprecatedTexture71B7E5624CCD0DC75078B3A45365EC74 (BGRA8, 128X128)
+[2022.11.30-19.31.05:274][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:274][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:277][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:277][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:281][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:281][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:284][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:285][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:289][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:289][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:293][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:293][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:296][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:296][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:300][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:300][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:304][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:304][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:308][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:308][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:312][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:312][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:316][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:316][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:320][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:320][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:324][778]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.05:324][778]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.05:466][778]LogEditorServer: Finished looking for orphan Actors (0.001 secs)
+[2022.11.30-19.31.05:466][778]LogAIModule: Creating AISystem for world Knight
+[2022.11.30-19.31.05:495][778]LogUObjectHash: Compacting FUObjectHashTables data took   3.79ms
+[2022.11.30-19.31.05:500][778]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.11.30-19.31.05:500][778]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.165ms.
+[2022.11.30-19.31.05:500][778]LogFileHelpers: Loading map 'Knight' took 0.332
+[2022.11.30-19.31.05:550][778]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Knight/Animation/Anim_Knight_powerUp.Anim_Knight_powerUp
+[2022.11.30-19.31.05:551][778]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Knight/Animation/Anim_Knight_attack3.Anim_Knight_attack3
+[2022.11.30-19.31.05:688][782]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Knight/Animation/Anim_Knight_attack1.Anim_Knight_attack1
+[2022.11.30-19.31.05:716][784]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Knight/Animation/Anim_Knight_attack2.Anim_Knight_attack2
+[2022.11.30-19.31.05:814][787]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Knight/Animation/Anim_Knight_death.Anim_Knight_death
+[2022.11.30-19.31.05:845][789]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Knight/Animation/Anim_Knight_idle1.Anim_Knight_idle1
+[2022.11.30-19.31.06:014][795]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Knight/Animation/Anim_Knight_strafe.Anim_Knight_strafe
+[2022.11.30-19.31.06:092][799]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Knight/Animation/Anim_Knight_walk1.Anim_Knight_walk1
+[2022.11.30-19.31.06:496][821]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 49
+[2022.11.30-19.31.06:497][821]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.06:571][823]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 46
+[2022.11.30-19.31.06:571][823]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.06:719][826]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 43
+[2022.11.30-19.31.06:719][826]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.06:826][827]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 40
+[2022.11.30-19.31.06:826][827]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.06:945][830]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 37
+[2022.11.30-19.31.06:945][830]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:085][837]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 35
+[2022.11.30-19.31.07:085][837]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:123][839]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 33
+[2022.11.30-19.31.07:124][839]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:245][844]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 31
+[2022.11.30-19.31.07:245][844]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:301][846]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 29
+[2022.11.30-19.31.07:301][846]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:340][847]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 27
+[2022.11.30-19.31.07:340][847]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:340][847]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 25
+[2022.11.30-19.31.07:340][847]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:354][847]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 23
+[2022.11.30-19.31.07:354][847]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:421][849]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 21
+[2022.11.30-19.31.07:421][849]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:458][850]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 19
+[2022.11.30-19.31.07:458][850]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:470][850]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 18
+[2022.11.30-19.31.07:471][850]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:505][852]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 17
+[2022.11.30-19.31.07:505][852]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:610][857]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 16
+[2022.11.30-19.31.07:610][857]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:693][859]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 15
+[2022.11.30-19.31.07:693][859]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:707][860]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 14
+[2022.11.30-19.31.07:707][860]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:726][861]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 13
+[2022.11.30-19.31.07:726][861]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:776][864]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 12
+[2022.11.30-19.31.07:776][864]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:841][867]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 11
+[2022.11.30-19.31.07:841][867]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:880][869]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 10
+[2022.11.30-19.31.07:880][869]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:907][870]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 9
+[2022.11.30-19.31.07:907][870]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:907][870]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 8
+[2022.11.30-19.31.07:907][870]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:929][871]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 7
+[2022.11.30-19.31.07:929][871]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.07:960][872]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 6
+[2022.11.30-19.31.07:960][872]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.08:002][872]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 5
+[2022.11.30-19.31.08:002][872]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.08:047][873]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 4
+[2022.11.30-19.31.08:047][873]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.08:075][874]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 3
+[2022.11.30-19.31.08:075][874]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.08:091][874]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 2
+[2022.11.30-19.31.08:091][874]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.08:119][875]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 1
+[2022.11.30-19.31.08:119][875]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.08:145][875]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 1209
+[2022.11.30-19.31.08:145][875]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:181][876]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 1199
+[2022.11.30-19.31.08:181][876]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:207][877]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 1189
+[2022.11.30-19.31.08:207][877]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:220][877]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 1179
+[2022.11.30-19.31.08:220][877]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:238][878]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 1169
+[2022.11.30-19.31.08:238][878]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:256][878]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 1159
+[2022.11.30-19.31.08:256][878]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:289][879]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 1149
+[2022.11.30-19.31.08:289][879]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:289][879]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 1139
+[2022.11.30-19.31.08:289][879]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:309][880]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 1129
+[2022.11.30-19.31.08:309][880]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:346][883]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 1119
+[2022.11.30-19.31.08:346][883]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:376][884]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 1109
+[2022.11.30-19.31.08:376][884]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 1099
+[2022.11.30-19.31.08:376][884]LogShaderCompilers: Display: Started 20 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:399][884]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 1089
+[2022.11.30-19.31.08:399][884]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 1079
+[2022.11.30-19.31.08:399][884]LogShaderCompilers: Display: Started 20 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:480][886]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 1069
+[2022.11.30-19.31.08:480][886]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:501][886]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 1059
+[2022.11.30-19.31.08:501][886]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:572][888]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 1049
+[2022.11.30-19.31.08:572][888]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:747][894]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 1039
+[2022.11.30-19.31.08:747][894]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:786][895]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 1029
+[2022.11.30-19.31.08:786][895]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.08:964][904]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 1019
+[2022.11.30-19.31.08:964][904]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.11:288][993]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 54
+[2022.11.30-19.31.11:288][993]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.11:352][995]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 51
+[2022.11.30-19.31.11:352][995]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.11:585][  4]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 48
+[2022.11.30-19.31.11:585][  4]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.11:884][ 13]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 45
+[2022.11.30-19.31.11:884][ 13]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.11:930][ 15]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 42
+[2022.11.30-19.31.11:930][ 15]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.11:989][ 17]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 39
+[2022.11.30-19.31.11:989][ 17]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 37
+[2022.11.30-19.31.11:989][ 17]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:031][ 18]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 35
+[2022.11.30-19.31.12:031][ 18]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:124][ 22]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 33
+[2022.11.30-19.31.12:125][ 22]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:168][ 23]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 31
+[2022.11.30-19.31.12:168][ 23]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:168][ 23]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 29
+[2022.11.30-19.31.12:168][ 23]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:304][ 27]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 27
+[2022.11.30-19.31.12:304][ 27]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:374][ 30]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 25
+[2022.11.30-19.31.12:376][ 30]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:384][ 30]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 23
+[2022.11.30-19.31.12:384][ 30]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:482][ 33]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 21
+[2022.11.30-19.31.12:482][ 33]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 19
+[2022.11.30-19.31.12:482][ 33]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 17
+[2022.11.30-19.31.12:482][ 33]LogShaderCompilers: Display: Started 6 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:521][ 34]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 15
+[2022.11.30-19.31.12:521][ 34]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:704][ 41]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 14
+[2022.11.30-19.31.12:704][ 41]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:750][ 43]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 13
+[2022.11.30-19.31.12:751][ 43]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:764][ 43]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 12
+[2022.11.30-19.31.12:764][ 43]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:776][ 44]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 11
+[2022.11.30-19.31.12:777][ 44]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:816][ 45]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 10
+[2022.11.30-19.31.12:816][ 45]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:834][ 46]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 9
+[2022.11.30-19.31.12:834][ 46]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:840][ 46]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 8
+[2022.11.30-19.31.12:840][ 46]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:870][ 47]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 7
+[2022.11.30-19.31.12:870][ 47]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:886][ 48]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 6
+[2022.11.30-19.31.12:886][ 48]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:886][ 48]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 5
+[2022.11.30-19.31.12:886][ 48]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.12:911][ 49]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 4
+[2022.11.30-19.31.12:911][ 49]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.13:069][ 52]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 3
+[2022.11.30-19.31.13:069][ 52]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.13:140][ 53]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 2
+[2022.11.30-19.31.13:140][ 53]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 1
+[2022.11.30-19.31.13:140][ 53]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 955
+[2022.11.30-19.31.13:140][ 53]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 945
+[2022.11.30-19.31.13:140][ 53]LogShaderCompilers: Display: Started 20 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.13:140][ 53]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
+[2022.11.30-19.31.13:175][ 53]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 935
+[2022.11.30-19.31.13:175][ 53]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.13:206][ 55]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 925
+[2022.11.30-19.31.13:206][ 55]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 915
+[2022.11.30-19.31.13:206][ 55]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 905
+[2022.11.30-19.31.13:206][ 55]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 895
+[2022.11.30-19.31.13:206][ 55]LogShaderCompilers: Display: Started 40 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.13:222][ 57]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 885
+[2022.11.30-19.31.13:222][ 57]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 875
+[2022.11.30-19.31.13:222][ 57]LogShaderCompilers: Display: Started 20 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.13:248][ 58]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 865
+[2022.11.30-19.31.13:248][ 58]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 855
+[2022.11.30-19.31.13:248][ 58]LogShaderCompilers: Display: Started 20 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.13:273][ 59]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 845
+[2022.11.30-19.31.13:273][ 59]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 835
+[2022.11.30-19.31.13:273][ 59]LogShaderCompilers: Display: Started 20 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.13:296][ 60]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 825
+[2022.11.30-19.31.13:296][ 60]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.13:336][ 61]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 815
+[2022.11.30-19.31.13:336][ 61]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.13:348][ 62]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 805
+[2022.11.30-19.31.13:349][ 62]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.13:361][ 62]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 795
+[2022.11.30-19.31.13:361][ 62]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.13:377][ 63]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 785
+[2022.11.30-19.31.13:377][ 63]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.13:742][ 75]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 775
+[2022.11.30-19.31.13:742][ 75]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.13:756][ 75]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 765
+[2022.11.30-19.31.13:756][ 75]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.16:477][172]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 755
+[2022.11.30-19.31.16:477][172]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.16:478][172]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 745
+[2022.11.30-19.31.16:478][172]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.16:520][174]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 735
+[2022.11.30-19.31.16:520][174]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.16:588][176]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 725
+[2022.11.30-19.31.16:588][176]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 715
+[2022.11.30-19.31.16:588][176]LogShaderCompilers: Display: Started 20 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.16:702][180]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 705
+[2022.11.30-19.31.16:702][180]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.17:070][192]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 695
+[2022.11.30-19.31.17:070][192]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.17:088][193]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 685
+[2022.11.30-19.31.17:088][193]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.17:143][195]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 675
+[2022.11.30-19.31.17:143][195]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.17:206][198]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 665
+[2022.11.30-19.31.17:206][198]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.17:253][200]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 655
+[2022.11.30-19.31.17:255][200]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.17:330][203]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 645
+[2022.11.30-19.31.17:330][203]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.17:419][206]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 635
+[2022.11.30-19.31.17:419][206]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.17:526][210]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 625
+[2022.11.30-19.31.17:526][210]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.17:664][215]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 615
+[2022.11.30-19.31.17:664][215]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.17:688][216]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 605
+[2022.11.30-19.31.17:688][216]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.17:779][220]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 595
+[2022.11.30-19.31.17:779][220]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.17:790][220]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 585
+[2022.11.30-19.31.17:790][220]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.17:818][221]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 575
+[2022.11.30-19.31.17:818][221]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.18:251][237]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 565
+[2022.11.30-19.31.18:251][237]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.19:843][294]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 555
+[2022.11.30-19.31.19:843][294]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.20:014][299]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 545
+[2022.11.30-19.31.20:014][299]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.20:380][311]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 535
+[2022.11.30-19.31.20:380][311]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.20:491][315]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 525
+[2022.11.30-19.31.20:491][315]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.20:577][318]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 515
+[2022.11.30-19.31.20:577][318]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.20:651][320]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 505
+[2022.11.30-19.31.20:651][320]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.20:930][330]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 495
+[2022.11.30-19.31.20:957][331]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.20:957][331]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 485
+[2022.11.30-19.31.20:957][331]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.21:034][334]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 475
+[2022.11.30-19.31.21:034][334]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.21:186][339]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 465
+[2022.11.30-19.31.21:186][339]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.21:210][340]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 455
+[2022.11.30-19.31.21:210][340]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.21:235][341]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 445
+[2022.11.30-19.31.21:235][341]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.21:340][345]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 435
+[2022.11.30-19.31.21:341][345]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.21:341][345]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 425
+[2022.11.30-19.31.21:341][345]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.21:636][356]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 415
+[2022.11.30-19.31.21:636][356]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.21:752][360]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 405
+[2022.11.30-19.31.21:752][360]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.21:775][361]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 395
+[2022.11.30-19.31.21:775][361]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.22:103][373]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 385
+[2022.11.30-19.31.22:104][373]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.22:330][382]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 375
+[2022.11.30-19.31.22:330][382]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.22:489][388]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 365
+[2022.11.30-19.31.22:489][388]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.23:292][417]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 355
+[2022.11.30-19.31.23:292][417]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.23:547][425]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 345
+[2022.11.30-19.31.23:547][425]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.23:683][430]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 335
+[2022.11.30-19.31.23:683][430]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.23:768][433]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 325
+[2022.11.30-19.31.23:768][433]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.23:823][435]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 315
+[2022.11.30-19.31.23:823][435]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.24:040][442]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 305
+[2022.11.30-19.31.24:040][442]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.24:187][448]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 295
+[2022.11.30-19.31.24:187][448]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.24:230][449]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 285
+[2022.11.30-19.31.24:230][449]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.24:241][450]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 275
+[2022.11.30-19.31.24:242][450]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.24:256][450]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 265
+[2022.11.30-19.31.24:256][450]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.24:553][461]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 255
+[2022.11.30-19.31.24:553][461]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.24:680][464]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 245
+[2022.11.30-19.31.24:680][464]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.24:890][472]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 235
+[2022.11.30-19.31.24:890][472]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.25:048][477]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 225
+[2022.11.30-19.31.25:049][477]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.25:147][480]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 215
+[2022.11.30-19.31.25:147][480]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.25:205][482]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 205
+[2022.11.30-19.31.25:205][482]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.25:273][484]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 195
+[2022.11.30-19.31.25:274][484]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.25:517][492]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 185
+[2022.11.30-19.31.25:518][492]LogShaderCompilers: Display: Started 10 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.25:885][504]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 175
+[2022.11.30-19.31.25:885][504]LogShaderCompilers: Display: Started 9 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.26:436][523]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 166
+[2022.11.30-19.31.26:437][523]LogShaderCompilers: Display: Started 9 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.26:878][539]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 157
+[2022.11.30-19.31.26:878][539]LogShaderCompilers: Display: Started 8 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.27:328][556]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 149
+[2022.11.30-19.31.27:328][556]LogShaderCompilers: Display: Started 8 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.27:435][560]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 141
+[2022.11.30-19.31.27:435][560]LogShaderCompilers: Display: Started 8 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.27:504][562]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 133
+[2022.11.30-19.31.27:504][562]LogShaderCompilers: Display: Started 7 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.27:552][563]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 126
+[2022.11.30-19.31.27:552][563]LogShaderCompilers: Display: Started 7 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.27:678][568]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 119
+[2022.11.30-19.31.27:678][568]LogShaderCompilers: Display: Started 6 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.27:711][569]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 113
+[2022.11.30-19.31.27:711][569]LogShaderCompilers: Display: Started 6 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.27:873][575]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 107
+[2022.11.30-19.31.27:873][575]LogShaderCompilers: Display: Started 6 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.27:963][578]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 101
+[2022.11.30-19.31.27:963][578]LogShaderCompilers: Display: Started 6 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.28:064][582]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 95
+[2022.11.30-19.31.28:065][582]LogShaderCompilers: Display: Started 5 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.28:147][584]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 90
+[2022.11.30-19.31.28:147][584]LogShaderCompilers: Display: Started 5 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.28:367][592]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 85
+[2022.11.30-19.31.28:367][592]LogShaderCompilers: Display: Started 5 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.28:422][594]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 80
+[2022.11.30-19.31.28:422][594]LogShaderCompilers: Display: Started 5 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.28:602][600]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 75
+[2022.11.30-19.31.28:602][600]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.28:876][609]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 71
+[2022.11.30-19.31.28:876][609]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.29:285][624]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 67
+[2022.11.30-19.31.29:285][624]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.29:494][630]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 63
+[2022.11.30-19.31.29:494][630]LogShaderCompilers: Display: Started 4 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.29:532][632]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 59
+[2022.11.30-19.31.29:532][632]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.29:604][635]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 56
+[2022.11.30-19.31.29:604][635]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.29:660][635]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 53
+[2022.11.30-19.31.29:660][635]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.29:937][644]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 50
+[2022.11.30-19.31.29:937][644]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.29:953][645]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 47
+[2022.11.30-19.31.29:953][645]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.29:987][645]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 44
+[2022.11.30-19.31.29:987][645]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:001][645]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 41
+[2022.11.30-19.31.30:001][645]LogShaderCompilers: Display: Started 3 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:053][647]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 38
+[2022.11.30-19.31.30:053][647]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:176][651]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 36
+[2022.11.30-19.31.30:177][651]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:306][655]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 34
+[2022.11.30-19.31.30:306][655]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:357][656]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 32
+[2022.11.30-19.31.30:357][656]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:485][661]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 30
+[2022.11.30-19.31.30:485][661]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 28
+[2022.11.30-19.31.30:485][661]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 26
+[2022.11.30-19.31.30:485][661]LogShaderCompilers: Display: Started 6 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:628][665]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 24
+[2022.11.30-19.31.30:628][665]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:665][667]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 22
+[2022.11.30-19.31.30:665][667]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:720][669]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 20
+[2022.11.30-19.31.30:720][669]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:734][670]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 18
+[2022.11.30-19.31.30:734][670]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:837][674]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 17
+[2022.11.30-19.31.30:837][674]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:896][676]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 16
+[2022.11.30-19.31.30:896][676]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:934][677]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 15
+[2022.11.30-19.31.30:934][677]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:940][677]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 14
+[2022.11.30-19.31.30:940][677]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.30:973][678]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 13
+[2022.11.30-19.31.30:973][678]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.31:054][680]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 12
+[2022.11.30-19.31.31:054][680]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.31:119][683]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 11
+[2022.11.30-19.31.31:119][683]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.31:155][684]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 10
+[2022.11.30-19.31.31:155][684]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.31:179][685]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 9
+[2022.11.30-19.31.31:179][685]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.31:202][686]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 8
+[2022.11.30-19.31.31:202][686]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.31:203][686]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 7
+[2022.11.30-19.31.31:203][686]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 6
+[2022.11.30-19.31.31:203][686]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.31:231][687]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 5
+[2022.11.30-19.31.31:231][687]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.31:247][688]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 4
+[2022.11.30-19.31.31:247][688]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.31:271][689]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 3
+[2022.11.30-19.31.31:271][689]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 2
+[2022.11.30-19.31.31:271][689]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.31:278][689]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 1
+[2022.11.30-19.31.31:278][689]LogShaderCompilers: Display: Started 1 'Local' shader compile jobs with 'Low' priority
+[2022.11.30-19.31.37:042][300]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.11.30-19.31.37:046][300]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.11.30-19.31.37:046][300]PIE: New page: PIE 세션: Knight (2022. 12. 1. 오후 1:31:37)
+[2022.11.30-19.31.37:084][300]LogPlayLevel: Creating play world package: /Game/Knight/Maps/UEDPIE_0_Knight
+[2022.11.30-19.31.37:087][300]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002551s)
+[2022.11.30-19.31.37:087][300]LogAIModule: Creating AISystem for world Knight
+[2022.11.30-19.31.37:087][300]LogPlayLevel: PIE: World Init took: (0.000667s)
+[2022.11.30-19.31.37:087][300]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Knight/Maps/Knight.Knight to /Game/Knight/Maps/UEDPIE_0_Knight.Knight (0.003320s)
+[2022.11.30-19.31.37:094][300]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2022.11.30-19.31.37:100][300]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2022.11.30-19.31.37:100][300]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.11.30-19.31.37:100][300]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.11.30-19.31.37:100][300]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.11.30-19.31.37:100][300]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.11.30-19.31.37:100][300]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.11.30-19.31.37:100][300]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.11.30-19.31.37:100][300]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.11.30-19.31.37:100][300]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.11.30-19.31.37:100][300]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.11.30-19.31.37:100][300]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.11.30-19.31.37:100][300]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.11.30-19.31.37:100][300]LogAudioMixer: Display: Initializing audio mixer.
+[2022.11.30-19.31.37:104][300]LogAudioMixer: Display: 0: FrontLeft
+[2022.11.30-19.31.37:104][300]LogAudioMixer: Display: 1: FrontRight
+[2022.11.30-19.31.37:129][300]LogAudioMixer: Display: Using Audio Device 스피커(Realtek(R) Audio)
+[2022.11.30-19.31.37:129][300]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.11.30-19.31.37:129][300]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.11.30-19.31.37:129][300]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.11.30-19.31.37:129][300]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.11.30-19.31.37:129][300]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.11.30-19.31.37:129][300]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.11.30-19.31.37:130][300]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.11.30-19.31.37:130][300]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.11.30-19.31.37:130][300]LogInit: FAudioDevice initialized.
+[2022.11.30-19.31.37:130][300]LogAudio: Display: Audio Device (ID: 3) registered with world 'Knight'.
+[2022.11.30-19.31.37:136][300]LogLoad: Game class is 'UE4_Portfolio2_SLGameMode'
+[2022.11.30-19.31.37:138][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:138][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:139][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:139][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:140][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:140][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:141][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:141][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:143][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:143][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:144][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:144][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:145][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:145][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:146][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:146][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:147][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:147][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:149][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:149][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:150][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:150][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:151][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:151][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:152][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:152][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:153][300]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2022.11.30-19.31.37:153][300]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2022.11.30-19.31.37:154][300]LogWorld: Bringing World /Game/Knight/Maps/UEDPIE_0_Knight.Knight up for play (max tick rate 0) at 2022.12.01-04.31.37
+[2022.11.30-19.31.37:155][300]LogWorld: Bringing up level for play took: 0.018334
+[2022.11.30-19.31.37:155][300]LogOnline: OSS: Creating online subsystem instance for: :Context_22
+[2022.11.30-19.31.37:158][300]PIE: 서버가 로그인했습니다.
+[2022.11.30-19.31.37:159][300]PIE: 에디터에서 플레이 총 시작 시간 0.113초입니다.
+[2022.11.30-19.31.45:214][224]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.11.30-19.31.45:214][224]LogWorld: BeginTearingDown for /Game/Knight/Maps/UEDPIE_0_Knight
+[2022.11.30-19.31.45:214][224]LogWorld: UWorld::CleanupWorld for Knight, bSessionEnded=true, bCleanupResources=true
+[2022.11.30-19.31.45:223][224]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.31.45:228][224]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.11.30-19.31.45:231][224]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.11.30-19.31.45:236][224]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.11.30-19.31.45:236][224]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.11.30-19.31.45:237][224]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.11.30-19.31.45:242][224]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2022.11.30-19.31.45:370][226]LogPlayLevel: Display: Destroying online subsystem :Context_22
