@@ -1,6 +1,18 @@
 # Visual Studio 2015 user specific files
 .vs/
 
+
+# 내가 추가한 파일 및 폴더 제외
+# 내가 원하는 확장자를 무시하는 방법은 *.확장자이름
+# 지정한 폴더를 무시하는 방법은 /.폴더명/
+*.uasset
+/.Fallen_Knight/
+/.Knight/
+/.MedievalCastle/
+/.Skeleton_Animations/
+/.SnSAnimsetPro/
+/.Sword_and_Shield/
+
 # Compiled Object files
 *.slo
 *.lo

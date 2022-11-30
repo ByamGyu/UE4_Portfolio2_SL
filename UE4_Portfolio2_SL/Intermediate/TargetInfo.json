@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "UE4_Portfolio2_SL",
+			"Path": "G:\\Git_Horizontally Scrolling Shooter Repository\\UE4_Portfolio2_SL\\UE4_Portfolio2_SL\\Source\\UE4_Portfolio2_SL.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "UE4_Portfolio2_SLEditor",
+			"Path": "G:\\Git_Horizontally Scrolling Shooter Repository\\UE4_Portfolio2_SL\\UE4_Portfolio2_SL\\Source\\UE4_Portfolio2_SLEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

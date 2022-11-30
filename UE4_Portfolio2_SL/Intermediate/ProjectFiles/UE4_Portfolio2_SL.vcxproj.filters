@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\UE4_Portfolio2_SL.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{DD5CED46-3696-439D-801D-D54DFC9FF178}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\UE4_Portfolio2_SLEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{3D53348B-DD57-4DAC-9171-695649506333}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\UE4_Portfolio2_SL">
+      <UniqueIdentifier>{B116B504-C229-41C8-AD89-4AC7039C9717}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\UE4_Portfolio2_SL\UE4_Portfolio2_SL.Build.cs">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\UE4_Portfolio2_SL.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\UE4_Portfolio2_SL.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\UE4_Portfolio2_SLCharacter.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\UE4_Portfolio2_SLCharacter.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\UE4_Portfolio2_SLGameMode.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\UE4_Portfolio2_SLGameMode.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
