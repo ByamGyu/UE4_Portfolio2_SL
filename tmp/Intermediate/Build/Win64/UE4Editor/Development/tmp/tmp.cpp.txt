@@ -1,0 +1,2 @@
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Intermediate\Build\Win64\UE4Editor\Development\tmp\Definitions.tmp.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Source\tmp\tmp.h

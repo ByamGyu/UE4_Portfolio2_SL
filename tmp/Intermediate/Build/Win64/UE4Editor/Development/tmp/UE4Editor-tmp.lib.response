@@ -1,0 +1,17 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-tmp.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Intermediate\Build\Win64\tmpEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Intermediate\Build\Win64\UE4Editor\Development\tmp\tmp.cpp.obj"
+"G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Intermediate\Build\Win64\UE4Editor\Development\tmp\tmpCharacter.cpp.obj"
+"G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Intermediate\Build\Win64\UE4Editor\Development\tmp\tmpGameMode.cpp.obj"
+"G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Intermediate\Build\Win64\UE4Editor\Development\tmp\tmp.init.gen.cpp.obj"
+"G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Intermediate\Build\Win64\UE4Editor\Development\tmp\tmpCharacter.gen.cpp.obj"
+"G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Intermediate\Build\Win64\UE4Editor\Development\tmp\tmpGameMode.gen.cpp.obj"
+"G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Intermediate\Build\Win64\UE4Editor\Development\tmp\Default.rc2.res"
+/OUT:"G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Intermediate\Build\Win64\UE4Editor\Development\tmp\UE4Editor-tmp.lib"

@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeUE4_Portfolio2_SLCharacter() {}
 	UPackage* Z_Construct_UPackage__Script_UE4_Portfolio2_SL();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	UE4_PORTFOLIO2_SL_API UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE();
 // End Cross Module References
 	void AUE4_Portfolio2_SLCharacter::StaticRegisterNativesAUE4_Portfolio2_SLCharacter()
 	{
@@ -34,21 +35,42 @@ void EmptyLinkFunctionForGeneratedCodeUE4_Portfolio2_SLCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CameraBoom_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_CameraArm_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_CameraArm;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FollowCamera_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_Camera_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_Camera;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_Cur_State_Underlying;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseTurnRate_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Cur_State_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseTurnRate;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_Cur_State;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseLookUpRate_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxHP_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseLookUpRate;
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_MaxHP;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurHP_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_CurHP;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HPRatio_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_HPRatio;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxStamina_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_MaxStamina;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurStamina_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_CurStamina;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StaminaRatio_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_StaminaRatio;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -65,50 +87,91 @@ void EmptyLinkFunctionForGeneratedCodeUE4_Portfolio2_SLCharacter() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CameraBoom_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_m_CameraArm_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Camera" },
-		{ "Comment", "/** Camera boom positioning the camera behind the character */" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "UE4_Portfolio2_SLCharacter.h" },
-		{ "ToolTip", "Camera boom positioning the camera behind the character" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CameraBoom = { "CameraBoom", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, CameraBoom), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CameraBoom_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CameraBoom_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_m_CameraArm = { "m_CameraArm", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, m_CameraArm), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_m_CameraArm_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_m_CameraArm_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_FollowCamera_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_m_Camera_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Camera" },
-		{ "Comment", "/** Follow camera */" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "UE4_Portfolio2_SLCharacter.h" },
-		{ "ToolTip", "Follow camera" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_FollowCamera = { "FollowCamera", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, FollowCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_FollowCamera_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_FollowCamera_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_m_Camera = { "m_Camera", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, m_Camera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_m_Camera_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_m_Camera_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_Cur_State_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_BaseTurnRate_MetaData[] = {
-		{ "Category", "Camera" },
-		{ "Comment", "/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_Cur_State_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Info" },
 		{ "ModuleRelativePath", "UE4_Portfolio2_SLCharacter.h" },
-		{ "ToolTip", "Base turn rate, in deg/sec. Other scaling may affect final turn rate." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_BaseTurnRate = { "BaseTurnRate", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, BaseTurnRate), METADATA_PARAMS(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_BaseTurnRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_BaseTurnRate_MetaData)) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_Cur_State = { "Cur_State", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, Cur_State), Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE, METADATA_PARAMS(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_Cur_State_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_Cur_State_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_BaseLookUpRate_MetaData[] = {
-		{ "Category", "Camera" },
-		{ "Comment", "/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_MaxHP_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Info" },
 		{ "ModuleRelativePath", "UE4_Portfolio2_SLCharacter.h" },
-		{ "ToolTip", "Base look up/down rate, in deg/sec. Other scaling may affect final rate." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_BaseLookUpRate = { "BaseLookUpRate", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, BaseLookUpRate), METADATA_PARAMS(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_BaseLookUpRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_BaseLookUpRate_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_MaxHP = { "MaxHP", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, MaxHP), METADATA_PARAMS(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_MaxHP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_MaxHP_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CurHP_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Info" },
+		{ "ModuleRelativePath", "UE4_Portfolio2_SLCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CurHP = { "CurHP", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, CurHP), METADATA_PARAMS(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CurHP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CurHP_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_HPRatio_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Info" },
+		{ "ModuleRelativePath", "UE4_Portfolio2_SLCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_HPRatio = { "HPRatio", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, HPRatio), METADATA_PARAMS(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_HPRatio_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_HPRatio_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_MaxStamina_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Info" },
+		{ "ModuleRelativePath", "UE4_Portfolio2_SLCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_MaxStamina = { "MaxStamina", nullptr, (EPropertyFlags)0x0040000000020005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, MaxStamina), METADATA_PARAMS(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_MaxStamina_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_MaxStamina_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CurStamina_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Info" },
+		{ "ModuleRelativePath", "UE4_Portfolio2_SLCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CurStamina = { "CurStamina", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, CurStamina), METADATA_PARAMS(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CurStamina_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CurStamina_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_StaminaRatio_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Info" },
+		{ "ModuleRelativePath", "UE4_Portfolio2_SLCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_StaminaRatio = { "StaminaRatio", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, StaminaRatio), METADATA_PARAMS(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_StaminaRatio_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_StaminaRatio_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CameraBoom,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_FollowCamera,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_BaseTurnRate,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_BaseLookUpRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_m_CameraArm,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_m_Camera,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_Cur_State_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_Cur_State,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_MaxHP,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CurHP,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_HPRatio,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_MaxStamina,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_CurStamina,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::NewProp_StaminaRatio,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AUE4_Portfolio2_SLCharacter>::IsAbstract,
@@ -137,7 +200,7 @@ void EmptyLinkFunctionForGeneratedCodeUE4_Portfolio2_SLCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AUE4_Portfolio2_SLCharacter, 1502959062);
+	IMPLEMENT_CLASS(AUE4_Portfolio2_SLCharacter, 2514743858);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<AUE4_Portfolio2_SLCharacter>()
 	{
 		return AUE4_Portfolio2_SLCharacter::StaticClass();

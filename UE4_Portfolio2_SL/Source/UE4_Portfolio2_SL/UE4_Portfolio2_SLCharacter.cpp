@@ -1,124 +1,66 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 #include "UE4_Portfolio2_SLCharacter.h"
-#include "HeadMountedDisplayFunctionLibrary.h"
-#include "Camera/CameraComponent.h"
-#include "Components/CapsuleComponent.h"
-#include "Components/InputComponent.h"
-#include "GameFramework/CharacterMovementComponent.h"
-#include "GameFramework/Controller.h"
-#include "GameFramework/SpringArmComponent.h"
 
-//////////////////////////////////////////////////////////////////////////
-// AUE4_Portfolio2_SLCharacter
+
 
 AUE4_Portfolio2_SLCharacter::AUE4_Portfolio2_SLCharacter()
 {
-	// Set size for collision capsule
+	PrimaryActorTick.bCanEverTick = true;
+
+
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
-	// set our turn rates for input
-	BaseTurnRate = 45.f;
-	BaseLookUpRate = 45.f;
 
-	// Don't rotate when the controller rotates. Let that just affect the camera.
+	// 카메라에 따라서 캐릭터가 움직이지 않게 해줌
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
 
-	// Configure character movement
-	GetCharacterMovement()->bOrientRotationToMovement = true; // Character moves in the direction of input...	
-	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f); // ...at this rotation rate
-	GetCharacterMovement()->JumpZVelocity = 600.f;
+	GetCharacterMovement()->bOrientRotationToMovement = true; // 캐릭터가 입력 방향을 앞으로 움직이게 함	
+	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f);
+	GetCharacterMovement()->JumpZVelocity = 300.0f; // 기본값(420)
 	GetCharacterMovement()->AirControl = 0.2f;
 
-	// Create a camera boom (pulls in towards the player if there is a collision)
-	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
-	CameraBoom->SetupAttachment(RootComponent);
-	CameraBoom->TargetArmLength = 300.0f; // The camera follows at this distance behind the character	
-	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
+	m_CameraArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraArm"));
+	m_CameraArm->SetupAttachment(RootComponent);
+	m_CameraArm->TargetArmLength = 300.0f;
+	m_CameraArm->bUsePawnControlRotation = true; // 마우스 움직임에 따라서 카메라 봉을 회전한다
 
-	// Create a follow camera
-	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
-	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
-	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
-
-	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
-	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+	m_Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
+	m_Camera->SetupAttachment(m_CameraArm, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
+	m_Camera->bUsePawnControlRotation = false; // 카메라 봉의 움직임에 따라 카메라가 움직이지 않는다.
 }
 
-//////////////////////////////////////////////////////////////////////////
-// Input
+void AUE4_Portfolio2_SLCharacter::Tick(float DeltaTime)
+{
+
+}
 
 void AUE4_Portfolio2_SLCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
-	// Set up gameplay key bindings
 	check(PlayerInputComponent);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &AUE4_Portfolio2_SLCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AUE4_Portfolio2_SLCharacter::MoveRight);
 
-	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
-	// "turn" handles devices that provide an absolute delta, such as a mouse.
-	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("TurnRate", this, &AUE4_Portfolio2_SLCharacter::TurnAtRate);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
-	PlayerInputComponent->BindAxis("LookUpRate", this, &AUE4_Portfolio2_SLCharacter::LookUpAtRate);
-
-	// handle touch devices
-	PlayerInputComponent->BindTouch(IE_Pressed, this, &AUE4_Portfolio2_SLCharacter::TouchStarted);
-	PlayerInputComponent->BindTouch(IE_Released, this, &AUE4_Portfolio2_SLCharacter::TouchStopped);
-
-	// VR headset functionality
-	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AUE4_Portfolio2_SLCharacter::OnResetVR);
+	PlayerInputComponent->BindAxis("Turn", this, &AUE4_Portfolio2_SLCharacter::CameraRotationYaw);
+	PlayerInputComponent->BindAxis("LookUp", this, &AUE4_Portfolio2_SLCharacter::CameraRotationPitch);
 }
 
-
-void AUE4_Portfolio2_SLCharacter::OnResetVR()
+void AUE4_Portfolio2_SLCharacter::BeginPlay()
 {
-	// If UE4_Portfolio2_SL is added to a project via 'Add Feature' in the Unreal Editor the dependency on HeadMountedDisplay in UE4_Portfolio2_SL.Build.cs is not automatically propagated
-	// and a linker error will result.
-	// You will need to either:
-	//		Add "HeadMountedDisplay" to [YourProject].Build.cs PublicDependencyModuleNames in order to build successfully (appropriate if supporting VR).
-	// or:
-	//		Comment or delete the call to ResetOrientationAndPosition below (appropriate if not supporting VR)
-	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
-}
 
-void AUE4_Portfolio2_SLCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
-{
-		Jump();
-}
-
-void AUE4_Portfolio2_SLCharacter::TouchStopped(ETouchIndex::Type FingerIndex, FVector Location)
-{
-		StopJumping();
-}
-
-void AUE4_Portfolio2_SLCharacter::TurnAtRate(float Rate)
-{
-	// calculate delta for this frame from the rate information
-	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
-}
-
-void AUE4_Portfolio2_SLCharacter::LookUpAtRate(float Rate)
-{
-	// calculate delta for this frame from the rate information
-	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
 void AUE4_Portfolio2_SLCharacter::MoveForward(float Value)
 {
 	if ((Controller != nullptr) && (Value != 0.0f))
 	{
-		// find out which way is forward
+		// 어느 방향이 앞인지 찾는다.
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 
-		// get forward vector
+		// 앞 방향을 벡터로 만든다.
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		AddMovementInput(Direction, Value);
 	}
@@ -128,13 +70,32 @@ void AUE4_Portfolio2_SLCharacter::MoveRight(float Value)
 {
 	if ( (Controller != nullptr) && (Value != 0.0f) )
 	{
-		// find out which way is right
+		// 어느 방향이 오른쪽인지 찾는다.
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 	
-		// get right vector 
+		// 오른쪽 방향 벡터를 만든다.
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
-		// add movement in that direction
 		AddMovementInput(Direction, Value);
 	}
+}
+
+void AUE4_Portfolio2_SLCharacter::CameraRotationYaw(float _Value)
+{
+	AddControllerYawInput(_Value);
+}
+
+void AUE4_Portfolio2_SLCharacter::CameraRotationPitch(float _Value)
+{
+	float DeltaSecond = GetWorld()->GetDeltaSeconds();
+	FRotator Rotation = m_Camera->GetRelativeRotation();
+
+	Rotation.Pitch += _Value;
+
+	// 카메라 상하 각도 제한
+	if (Rotation.Pitch > 45.0f) Rotation.Pitch = 45.0f;
+	else if (Rotation.Pitch < -45.0f) Rotation.Pitch = -45.0f;
+
+	// 카메라를 회전시킴
+	m_Camera->SetRelativeRotation(Rotation);
 }

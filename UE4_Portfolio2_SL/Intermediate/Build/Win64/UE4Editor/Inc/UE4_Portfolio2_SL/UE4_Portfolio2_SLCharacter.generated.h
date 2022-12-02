@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define UE4_PORTFOLIO2_SL_UE4_Portfolio2_SLCharacter_generated_h
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_SPARSE_DATA
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_RPC_WRAPPERS
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_INCLASS_NO_PURE_DECLS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_SPARSE_DATA
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_RPC_WRAPPERS
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_RPC_WRAPPERS_NO_PURE_DECLS
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAUE4_Portfolio2_SLCharacter(); \
 	friend struct Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AUE4_Portfolio2_SLCharacter)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_INCLASS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_INCLASS \
 private: \
 	static void StaticRegisterNativesAUE4_Portfolio2_SLCharacter(); \
 	friend struct Z_Construct_UClass_AUE4_Portfolio2_SLCharacter_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AUE4_Portfolio2_SLCharacter)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_STANDARD_CONSTRUCTORS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AUE4_Portfolio2_SLCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AUE4_Portfolio2_SLCharacter) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_ENHANCED_CONSTRUCTORS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AUE4_Portfolio2_SLCharacter(AUE4_Portfolio2_SLCharacter&&); \
@@ -58,32 +58,39 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AUE4_Portfolio2_SLCharacter)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, CameraBoom); } \
-	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, FollowCamera); }
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__m_CameraArm() { return STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, m_CameraArm); } \
+	FORCEINLINE static uint32 __PPO__m_Camera() { return STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, m_Camera); } \
+	FORCEINLINE static uint32 __PPO__Cur_State() { return STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, Cur_State); } \
+	FORCEINLINE static uint32 __PPO__MaxHP() { return STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, MaxHP); } \
+	FORCEINLINE static uint32 __PPO__CurHP() { return STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, CurHP); } \
+	FORCEINLINE static uint32 __PPO__HPRatio() { return STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, HPRatio); } \
+	FORCEINLINE static uint32 __PPO__MaxStamina() { return STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, MaxStamina); } \
+	FORCEINLINE static uint32 __PPO__CurStamina() { return STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, CurStamina); } \
+	FORCEINLINE static uint32 __PPO__StaminaRatio() { return STRUCT_OFFSET(AUE4_Portfolio2_SLCharacter, StaminaRatio); }
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_9_PROLOG
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_GENERATED_BODY_LEGACY \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_8_PROLOG
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_SPARSE_DATA \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_RPC_WRAPPERS \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_INCLASS \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_STANDARD_CONSTRUCTORS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_PRIVATE_PROPERTY_OFFSET \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_SPARSE_DATA \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_RPC_WRAPPERS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_INCLASS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_GENERATED_BODY \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_SPARSE_DATA \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_INCLASS_NO_PURE_DECLS \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_12_ENHANCED_CONSTRUCTORS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_PRIVATE_PROPERTY_OFFSET \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_SPARSE_DATA \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_INCLASS_NO_PURE_DECLS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_UE4_Portfolio2_SLCharacter_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
