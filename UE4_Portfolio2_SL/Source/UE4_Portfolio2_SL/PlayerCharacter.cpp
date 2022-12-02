@@ -3,7 +3,9 @@
 
 APlayerCharacter::APlayerCharacter()
 	: Cur_State(EPLAYER_STATE::IDLE),
+	MaxHP(100),
 	CurHP(MaxHP),
+	MaxStamina(100),
 	CurStamina(MaxStamina),
 	HPRatio(1.0f),
 	StaminaRatio(1.0f),
@@ -173,23 +175,22 @@ void APlayerCharacter::CameraRotationPitch(float _Value)
 
 void APlayerCharacter::Walk(float _Value)
 {
-	//if (_Value == 1)
-	//{
-	//	GetCharacterMovement()->MaxWalkSpeed = 300.0f;
-	//}
-	//else
-	//{
-	//	// 가드 움직임 상태면 return;
-	//	if (Cur_State == EPLAYER_STATE::GUARD)
-	//	{
-	//		GetCharacterMovement()->MaxWalkSpeed = 300.0f;
-	//	}
-	//	else
-	//	{
-	//		GetCharacterMovement()->MaxWalkSpeed = 600.0f;
-	//	}
-
-	//}
+	if (_Value == 1)
+	{
+		GetCharacterMovement()->MaxWalkSpeed = 300.0f;
+	}
+	else
+	{
+		// 가드 움직임 상태면 return;
+		if (Cur_State == EPLAYER_STATE::GUARD)
+		{
+			GetCharacterMovement()->MaxWalkSpeed = 300.0f;
+		}
+		else
+		{
+			GetCharacterMovement()->MaxWalkSpeed = 600.0f;
+		}
+	}
 }
 
 void APlayerCharacter::Jump()
@@ -210,11 +211,9 @@ void APlayerCharacter::Jump()
 
 void APlayerCharacter::Guard(float _Value)
 {
-	/*if (Cur_State == EPLAYER_STATE::JUMP
+	if (Cur_State == EPLAYER_STATE::JUMP
 		|| Cur_State == EPLAYER_STATE::FALL
 		|| Cur_State == EPLAYER_STATE::ROLL
-		|| Cur_State == EPLAYER_STATE::CROUCH
-		|| Cur_State == EPLAYER_STATE::CROUCH_MOVE
 		|| Cur_State == EPLAYER_STATE::ATTACK
 		|| Cur_State == EPLAYER_STATE::SPELL
 		|| Cur_State == EPLAYER_STATE::IMPACT_STRONG
@@ -229,13 +228,22 @@ void APlayerCharacter::Guard(float _Value)
 	{
 		if (_Value == 1.0f)
 		{
-			ChangeState(EPLAYER_STATE::GUARD);
+			if (CurStamina <= 0.0f)
+			{
+				auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+				if (AnimInst != nullptr)
+				{
+					ChangeState(EPLAYER_STATE::GUARD_BREAK);
+					AnimInst->PlayGuardBreakMontage();
+				}				
+			}
+			else ChangeState(EPLAYER_STATE::GUARD);
 		}
 		else if (_Value == 0.0f && Cur_State == EPLAYER_STATE::GUARD)
 		{
 			ChangeState(EPLAYER_STATE::IDLE);
 		}
-	}*/
+	}
 }
 
 void APlayerCharacter::Roll()
@@ -262,26 +270,29 @@ void APlayerCharacter::Roll()
 
 void APlayerCharacter::Spell()
 {
-	/*if (Cur_State == EPLAYER_STATE::IDLE
+	if (Cur_State == EPLAYER_STATE::IDLE
 		|| Cur_State == EPLAYER_STATE::MOVE
-		|| Cur_State == EPLAYER_STATE::GUARD
-		|| Cur_State == EPLAYER_STATE::GUARD_MOVE)
+		|| Cur_State == EPLAYER_STATE::GUARD)
 	{
 		ChangeState(EPLAYER_STATE::SPELL);
 	}
-	else return;*/
+	else return;
 }
 
 void APlayerCharacter::Parry()
 {
-	/*if (Cur_State == EPLAYER_STATE::IDLE
+	if (Cur_State == EPLAYER_STATE::IDLE
 		|| Cur_State == EPLAYER_STATE::MOVE
-		|| Cur_State == EPLAYER_STATE::GUARD
-		|| Cur_State == EPLAYER_STATE::GUARD_MOVE)
+		|| Cur_State == EPLAYER_STATE::GUARD)
 	{
-		ChangeState(EPLAYER_STATE::PARRY);
+		auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+		if (AnimInst != nullptr)
+		{
+			ChangeState(EPLAYER_STATE::PARRY);
+			AnimInst->PlayParryMontage();
+		}
 	}
-	else return;*/
+	else return;
 }
 
 void APlayerCharacter::LightAttack()

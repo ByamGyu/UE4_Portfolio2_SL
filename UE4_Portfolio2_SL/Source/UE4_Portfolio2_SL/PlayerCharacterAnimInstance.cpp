@@ -15,6 +15,12 @@ UPlayerCharacterAnimInstance::UPlayerCharacterAnimInstance()
 	if (AM_RollCombat.Succeeded()) RollCombatMontage = AM_RollCombat.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_LightAttack(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Sword_Attack_Combo_LL_Montage.Sword_Attack_Combo_LL_Montage'"));
 	if (AM_LightAttack.Succeeded()) LightAttackMontage = AM_LightAttack.Object;
+
+
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_GuardBreak(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Block_Hit_Break_Seq_Montage.Block_Hit_Break_Seq_Montage'"));
+	if (AM_GuardBreak.Succeeded()) GuardBreakMontage = AM_GuardBreak.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Parry(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Parry_Counter_Attack_Seq_Montage.Parry_Counter_Attack_Seq_Montage'"));
+	if (AM_Parry.Succeeded()) ParryMontage = AM_Parry.Object;
 }
 
 void UPlayerCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
@@ -33,6 +39,8 @@ void UPlayerCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		IsFalling = Pawn->GetIsFall();
 		Cur_State = Pawn->GetState();
 		IsFight = Pawn->GetIsFight();
+		CurHP = Pawn->GetCurHP();
+		CurStamina = Pawn->GetCurStamina();
 		//KnockDown_Time = Pawn->GetKnockDownTime();
 	}
 }
@@ -55,6 +63,16 @@ void UPlayerCharacterAnimInstance::PlayLightAttackMontage()
 void UPlayerCharacterAnimInstance::PlayHeavyAttackMontage()
 {
 	Montage_Play(HeavyAttackMontage, 1.0f);
+}
+
+void UPlayerCharacterAnimInstance::PlayGuardBreakMontage()
+{
+	Montage_Play(GuardBreakMontage, 1.0f);
+}
+
+void UPlayerCharacterAnimInstance::PlayParryMontage()
+{
+	Montage_Play(ParryMontage, 1.0f);
 }
 
 void UPlayerCharacterAnimInstance::AnimNotify_InitState()

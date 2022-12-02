@@ -89,6 +89,8 @@ public:
 	bool GetIsFall() { return IsFall; }
 	void SetIsFall(bool _Value) { IsFall = _Value; }
 	void IsFalling();
+	float GetCurHP() { return CurHP; }
+	float GetCurStamina() { return CurStamina; }
 
 	// 기타 필요한 요소들
 private:

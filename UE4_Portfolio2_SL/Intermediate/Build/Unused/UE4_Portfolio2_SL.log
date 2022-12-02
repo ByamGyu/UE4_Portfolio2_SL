@@ -4,21 +4,21 @@
   Parsing headers for UE4_Portfolio2_SLEditor
     Running UnrealHeaderTool "G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\UE4_Portfolio2_SL.uproject" "G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4_Portfolio2_SLEditor\Development\UE4_Portfolio2_SLEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\decja\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
   LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for UE4_Portfolio2_SLEditor in 3.5446034 seconds
+  Reflection code generated for UE4_Portfolio2_SLEditor in 3.5211747 seconds
   Building UE4_Portfolio2_SLEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 17 actions with 24 processes...
     [1/17] Default.rc2
     [2/17] SharedPCH.Engine.ShadowErrors.cpp
-    [3/17] define.cpp
-    [4/17] UE4_Portfolio2_SL.cpp
+    [3/17] UE4_Portfolio2_SL.cpp
+    [4/17] define.cpp
     [5/17] UE4_Portfolio2_SL.init.gen.cpp
     [6/17] define.gen.cpp
-    [7/17] UE4_Portfolio2_SLGameMode.cpp
-    [8/17] PlayerCharacterAnimInstance.cpp
-    [9/17] PlayerCharacterAnimInstance.gen.cpp
-    [10/17] UE4_Portfolio2_SLGameMode.gen.cpp
-    [11/17] UE4_Portfolio2_SLCharacter.gen.cpp
+    [7/17] UE4_Portfolio2_SLCharacter.gen.cpp
+    [8/17] PlayerCharacterAnimInstance.gen.cpp
+    [9/17] UE4_Portfolio2_SLGameMode.cpp
+    [10/17] PlayerCharacterAnimInstance.cpp
+    [11/17] UE4_Portfolio2_SLGameMode.gen.cpp
     [12/17] PlayerCharacter.gen.cpp
     [13/17] UE4_Portfolio2_SLCharacter.cpp
     [14/17] PlayerCharacter.cpp
@@ -29,5 +29,5 @@ G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio
     [16/17] UE4Editor-UE4_Portfolio2_SL.dll
        G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.suppressed.exp 개체를 생성하고 있습니다.
     [17/17] UE4_Portfolio2_SLEditor.target
-  Total time in Parallel executor: 18.37 seconds
-  Total execution time: 24.18 seconds
+  Total time in Parallel executor: 18.59 seconds
+  Total execution time: 24.44 seconds

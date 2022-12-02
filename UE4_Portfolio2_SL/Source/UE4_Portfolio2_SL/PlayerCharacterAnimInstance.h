@@ -33,6 +33,10 @@ private:
 	bool IsFight;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	float KnockDown_Time;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
+	float CurHP;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
+	float CurStamina;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Character, Meta = (AllowPrivateAccess = true))
 	EPLAYER_STATE Cur_State;
 
@@ -47,6 +51,10 @@ private:
 	class UAnimMontage* LightAttackMontage;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* HeavyAttackMontage;
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* GuardBreakMontage;
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* ParryMontage;
 
 
 public:
@@ -54,6 +62,8 @@ public:
 	void PlayRollCombatMontage();
 	void PlayLightAttackMontage();
 	void PlayHeavyAttackMontage();
+	void PlayGuardBreakMontage();
+	void PlayParryMontage();
 
 
 

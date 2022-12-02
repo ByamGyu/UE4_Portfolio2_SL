@@ -86,11 +86,15 @@ public: \
 	FORCEINLINE static uint32 __PPO__IsFalling() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, IsFalling); } \
 	FORCEINLINE static uint32 __PPO__IsFight() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, IsFight); } \
 	FORCEINLINE static uint32 __PPO__KnockDown_Time() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, KnockDown_Time); } \
+	FORCEINLINE static uint32 __PPO__CurHP() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurHP); } \
+	FORCEINLINE static uint32 __PPO__CurStamina() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurStamina); } \
 	FORCEINLINE static uint32 __PPO__Cur_State() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, Cur_State); } \
 	FORCEINLINE static uint32 __PPO__RollIdleMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollIdleMontage); } \
 	FORCEINLINE static uint32 __PPO__RollCombatMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollCombatMontage); } \
 	FORCEINLINE static uint32 __PPO__LightAttackMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, LightAttackMontage); } \
-	FORCEINLINE static uint32 __PPO__HeavyAttackMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, HeavyAttackMontage); }
+	FORCEINLINE static uint32 __PPO__HeavyAttackMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, HeavyAttackMontage); } \
+	FORCEINLINE static uint32 __PPO__GuardBreakMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, GuardBreakMontage); } \
+	FORCEINLINE static uint32 __PPO__ParryMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ParryMontage); }
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_9_PROLOG
