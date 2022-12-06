@@ -21,6 +21,20 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 	UE4_PORTFOLIO2_SL_API UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UPlayerCharacterAnimInstance::execAnimNotify_AttackInputCheck)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AnimNotify_AttackInputCheck();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UPlayerCharacterAnimInstance::execAnimNotify_AttackEnd)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AnimNotify_AttackEnd();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UPlayerCharacterAnimInstance::execAnimNotify_GuardStart)
 	{
 		P_FINISH;
@@ -74,6 +88,8 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 	{
 		UClass* Class = UPlayerCharacterAnimInstance::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "AnimNotify_AttackEnd", &UPlayerCharacterAnimInstance::execAnimNotify_AttackEnd },
+			{ "AnimNotify_AttackInputCheck", &UPlayerCharacterAnimInstance::execAnimNotify_AttackInputCheck },
 			{ "AnimNotify_GuardStart", &UPlayerCharacterAnimInstance::execAnimNotify_GuardStart },
 			{ "AnimNotify_InitState", &UPlayerCharacterAnimInstance::execAnimNotify_InitState },
 			{ "AnimNotify_JumpEnd", &UPlayerCharacterAnimInstance::execAnimNotify_JumpEnd },
@@ -83,6 +99,50 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 			{ "AnimNotify_SpellEnd", &UPlayerCharacterAnimInstance::execAnimNotify_SpellEnd },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackEnd_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackEnd_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerCharacterAnimInstance, nullptr, "AnimNotify_AttackEnd", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackEnd_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackEnd_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackEnd()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackEnd_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackInputCheck_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackInputCheck_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackInputCheck_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerCharacterAnimInstance, nullptr, "AnimNotify_AttackInputCheck", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackInputCheck_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackInputCheck_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackInputCheck()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackInputCheck_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_GuardStart_Statics
 	{
@@ -277,6 +337,20 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		static void NewProp_IsFight_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsFight;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IsAttacking_MetaData[];
+#endif
+		static void NewProp_IsAttacking_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsAttacking;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IsAttackButtonWhenAttack_MetaData[];
+#endif
+		static void NewProp_IsAttackButtonWhenAttack_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsAttackButtonWhenAttack;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ComboCnt_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_ComboCnt;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_KnockDown_Time_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_KnockDown_Time;
@@ -326,6 +400,8 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_UE4_Portfolio2_SL,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackEnd, "AnimNotify_AttackEnd" }, // 816944370
+		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackInputCheck, "AnimNotify_AttackInputCheck" }, // 1040418465
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_GuardStart, "AnimNotify_GuardStart" }, // 625723640
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InitState, "AnimNotify_InitState" }, // 3696852591
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_JumpEnd, "AnimNotify_JumpEnd" }, // 2070447448
@@ -411,6 +487,38 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		((UPlayerCharacterAnimInstance*)Obj)->IsFight = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsFight = { "IsFight", nullptr, (EPropertyFlags)0x0040000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UPlayerCharacterAnimInstance), &Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsFight_SetBit, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsFight_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsFight_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttacking_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "Character" },
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	void Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttacking_SetBit(void* Obj)
+	{
+		((UPlayerCharacterAnimInstance*)Obj)->IsAttacking = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttacking = { "IsAttacking", nullptr, (EPropertyFlags)0x0040000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UPlayerCharacterAnimInstance), &Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttacking_SetBit, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttacking_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttacking_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttackButtonWhenAttack_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "Character" },
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	void Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttackButtonWhenAttack_SetBit(void* Obj)
+	{
+		((UPlayerCharacterAnimInstance*)Obj)->IsAttackButtonWhenAttack = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttackButtonWhenAttack = { "IsAttackButtonWhenAttack", nullptr, (EPropertyFlags)0x0040000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UPlayerCharacterAnimInstance), &Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttackButtonWhenAttack_SetBit, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttackButtonWhenAttack_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttackButtonWhenAttack_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ComboCnt_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "Character" },
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ComboCnt = { "ComboCnt", nullptr, (EPropertyFlags)0x0040000000000015, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerCharacterAnimInstance, ComboCnt), METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ComboCnt_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ComboCnt_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_KnockDown_Time_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -501,6 +609,9 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsGround,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsFalling,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsFight,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttacking,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttackButtonWhenAttack,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ComboCnt,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_KnockDown_Time,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_CurHP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_CurStamina,
@@ -540,7 +651,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerCharacterAnimInstance, 2214436860);
+	IMPLEMENT_CLASS(UPlayerCharacterAnimInstance, 3595474310);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UPlayerCharacterAnimInstance>()
 	{
 		return UPlayerCharacterAnimInstance::StaticClass();

@@ -32,6 +32,12 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	bool IsFight;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
+	bool IsAttacking;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
+	bool IsAttackButtonWhenAttack;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
+	int ComboCnt;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	float KnockDown_Time;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	float CurHP;
@@ -39,7 +45,6 @@ private:
 	float CurStamina;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Character, Meta = (AllowPrivateAccess = true))
 	EPLAYER_STATE Cur_State;
-
 
 	// ¸ùÅ¸ÁÖµé
 private:
@@ -83,5 +88,9 @@ private:
 	void AnimNotify_NockDownRecover();
 	UFUNCTION()
 	void AnimNotify_GuardStart();
+	UFUNCTION()
+	void AnimNotify_AttackEnd();
+	UFUNCTION()
+	void AnimNotify_AttackInputCheck();
 
 };

@@ -79,6 +79,17 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	float StaminaRatio;
 
+	// 공격 중 관련
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	bool IsAttacking; // 공격 도중인지
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	bool IsAttackButtonWhenAttack; // 공격 도중 다시 공격 입력이 들어왔는지
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	int ComboCnt; // 공격몽타주 애니메이션 점프용도
+
+	// 공격 중 관련
+public:
+
 
 public:
 	EPLAYER_STATE GetState() { return Cur_State; }
@@ -91,6 +102,14 @@ public:
 	void IsFalling();
 	float GetCurHP() { return CurHP; }
 	float GetCurStamina() { return CurStamina; }
+
+	bool GetIsAttacking() { return IsAttacking; }
+	void SetIsAttacking(bool _Value) { IsAttacking = _Value; }
+	bool GetIsAttackButtonWhenAttack() { return IsAttackButtonWhenAttack; }
+	void SetIsAttackButtonWhenAttack(bool _Value) { IsAttackButtonWhenAttack = _Value; }
+
+	int GetComboCnt() { return ComboCnt; }
+	void SetComboCnt(int _Value) { ComboCnt = _Value; }
 
 	// 기타 필요한 요소들
 private:

@@ -6,14 +6,18 @@ UPlayerCharacterAnimInstance::UPlayerCharacterAnimInstance()
 {
 	CurrentSpeed = 0.0f;
 	IsGround = true;
-	IsFight = false;
+	IsFight = false; // 전투 상태인지 Idle 상태인지	
+	IsAttacking = false;
+	IsAttackButtonWhenAttack = false;
+	ComboCnt = 0;	
 	KnockDown_Time = 0.0f;
+
 
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_F_0_Seq_Montage.Roll_F_0_Seq_Montage'"));
 	if (AM_RollIdle.Succeeded()) RollIdleMontage = AM_RollIdle.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollCombat(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_Combat_F_0_Seq_Montage.Roll_Combat_F_0_Seq_Montage'"));
 	if (AM_RollCombat.Succeeded()) RollCombatMontage = AM_RollCombat.Object;
-	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_LightAttack(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Sword_Attack_Combo_LL_Montage.Sword_Attack_Combo_LL_Montage'"));
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_LightAttack(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/AM_PlayerAttackCombo1.AM_PlayerAttackCombo1'"));
 	if (AM_LightAttack.Succeeded()) LightAttackMontage = AM_LightAttack.Object;
 
 
@@ -41,6 +45,9 @@ void UPlayerCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		IsFight = Pawn->GetIsFight();
 		CurHP = Pawn->GetCurHP();
 		CurStamina = Pawn->GetCurStamina();
+		IsAttacking = Pawn->GetIsAttacking();		
+		IsAttackButtonWhenAttack = Pawn->GetIsAttackButtonWhenAttack();
+		ComboCnt = Pawn->GetComboCnt();
 		//KnockDown_Time = Pawn->GetKnockDownTime();
 	}
 }
@@ -57,7 +64,20 @@ void UPlayerCharacterAnimInstance::PlayRollCombatMontage()
 
 void UPlayerCharacterAnimInstance::PlayLightAttackMontage()
 {
-	Montage_Play(LightAttackMontage, 1.0f);
+	const char* LightAttackComboList[] = { "Combo1", "Combo2", "Combo3", "Combo4" };
+
+	// 약공격 애니메이션이 실행중이지 않으면
+	if (!Montage_IsPlaying(LightAttackMontage))
+	{
+		Montage_Play(LightAttackMontage, 1.0f);
+	}
+	// 약공격 애니메이션이 실행중이면 (연속 공격)
+	else if (Montage_IsPlaying(LightAttackMontage))
+	{
+		Montage_Play(LightAttackMontage, 1.0f);
+		Montage_JumpToSection(FName(LightAttackComboList[ComboCnt]), LightAttackMontage);
+	}
+	
 }
 
 void UPlayerCharacterAnimInstance::PlayHeavyAttackMontage()
@@ -83,68 +103,68 @@ void UPlayerCharacterAnimInstance::AnimNotify_InitState()
 
 void UPlayerCharacterAnimInstance::AnimNotify_JumpEnd()
 {
-	/*auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
-	if (Character != nullptr)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("AnimNotify_JumpEnd"));
-
-		Character->ChangeState(EPLAYER_STATE::IDLE);
-	}*/
+	
 }
 
 void UPlayerCharacterAnimInstance::AnimNotify_RollEnd()
 {
-	/*auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
-	if (Character != nullptr)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("AnimNotify_RollEnd"));
-
-		Character->ChangeState(EPLAYER_STATE::IDLE);
-	}*/
+	
 }
 
 void UPlayerCharacterAnimInstance::AnimNotify_SpellEnd()
 {
-	/*auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
-	if (Character != nullptr)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("AnimNotify_SpellEnd"));
-
-		Character->ChangeState(EPLAYER_STATE::IDLE);
-	}*/
+	
 }
 
 void UPlayerCharacterAnimInstance::AnimNotify_ParryEnd()
 {
-	/*auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
-	if (Character != nullptr)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("AnimNotify_ParryEnd"));
-
-		Character->ChangeState(EPLAYER_STATE::IDLE);
-	}*/
+	
 }
 
 void UPlayerCharacterAnimInstance::AnimNotify_NockDownRecover()
 {
-	/*auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
-	if (Character != nullptr)
-	{
-		if (Character->GetKnockDownTime() >= 3.5f)
-		{
-			Character->SetKnockDownTime(0.0f);
-		}
-
-		Character->ChangeState(EPLAYER_STATE::IDLE);
-	}*/
+	
 }
 
 void UPlayerCharacterAnimInstance::AnimNotify_GuardStart()
 {
-	/*auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
+	
+}
+
+void UPlayerCharacterAnimInstance::AnimNotify_AttackEnd()
+{
+	auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
 	if (Character != nullptr)
 	{
-		Character->GetCharacterMovement()->MaxWalkSpeed = 300.0f;
-		Character->ChangeState(EPLAYER_STATE::GUARD);
-	}*/
+		// 공격 애니메이션(섹션)이 끝나면
+		Character->SetIsAttacking(false); // 공격상태 false로 바꾸고,
+		Character->SetComboCnt(0); // 콤보Cnt를 0으로 바꾸고
+		Character->SetIsAttackButtonWhenAttack(false); // 연속 공격 입력 상태 false로 바꾸고,
+
+		Character->ChangeState(EPLAYER_STATE::IDLE); // 캐릭터 상태를 IDLE로 전환
+	}
+}
+
+void UPlayerCharacterAnimInstance::AnimNotify_AttackInputCheck()
+{
+	if (IsAttackButtonWhenAttack == true)
+	{
+		auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
+		if (Character != nullptr)
+		{
+			if (ComboCnt >= 3) ComboCnt = 0;
+			else ComboCnt++;
+
+
+
+			Character->SetIsAttackButtonWhenAttack(false);
+			Character->SetComboCnt(ComboCnt);
+
+			PlayLightAttackMontage();
+		}
+	}
+	else
+	{
+		return;
+	}
 }

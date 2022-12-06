@@ -16,6 +16,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_12_SPARSE_DATA
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execAnimNotify_AttackInputCheck); \
+	DECLARE_FUNCTION(execAnimNotify_AttackEnd); \
 	DECLARE_FUNCTION(execAnimNotify_GuardStart); \
 	DECLARE_FUNCTION(execAnimNotify_NockDownRecover); \
 	DECLARE_FUNCTION(execAnimNotify_ParryEnd); \
@@ -27,6 +29,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execAnimNotify_AttackInputCheck); \
+	DECLARE_FUNCTION(execAnimNotify_AttackEnd); \
 	DECLARE_FUNCTION(execAnimNotify_GuardStart); \
 	DECLARE_FUNCTION(execAnimNotify_NockDownRecover); \
 	DECLARE_FUNCTION(execAnimNotify_ParryEnd); \
@@ -85,6 +89,9 @@ public: \
 	FORCEINLINE static uint32 __PPO__IsGround() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, IsGround); } \
 	FORCEINLINE static uint32 __PPO__IsFalling() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, IsFalling); } \
 	FORCEINLINE static uint32 __PPO__IsFight() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, IsFight); } \
+	FORCEINLINE static uint32 __PPO__IsAttacking() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, IsAttacking); } \
+	FORCEINLINE static uint32 __PPO__IsAttackButtonWhenAttack() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, IsAttackButtonWhenAttack); } \
+	FORCEINLINE static uint32 __PPO__ComboCnt() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ComboCnt); } \
 	FORCEINLINE static uint32 __PPO__KnockDown_Time() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, KnockDown_Time); } \
 	FORCEINLINE static uint32 __PPO__CurHP() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurHP); } \
 	FORCEINLINE static uint32 __PPO__CurStamina() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurStamina); } \

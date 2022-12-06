@@ -10,6 +10,9 @@ APlayerCharacter::APlayerCharacter()
 	HPRatio(1.0f),
 	StaminaRatio(1.0f),
 	IsFight(false),
+	IsAttacking(false),
+	IsAttackButtonWhenAttack(false),
+	ComboCnt(0),
 	IsFall(false)
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -297,11 +300,35 @@ void APlayerCharacter::Parry()
 
 void APlayerCharacter::LightAttack()
 {
+	if (Cur_State == EPLAYER_STATE::DEAD
+		|| Cur_State == EPLAYER_STATE::FALL
+		|| Cur_State == EPLAYER_STATE::GUARD_BREAK
+		|| Cur_State == EPLAYER_STATE::GUARD_IMPACT_STRONG
+		|| Cur_State == EPLAYER_STATE::GUARD_IMPACT_WEAK
+		|| Cur_State == EPLAYER_STATE::IMPACT_STRONG
+		|| Cur_State == EPLAYER_STATE::IMPACT_WEAK
+		|| Cur_State == EPLAYER_STATE::JUMP
+		|| Cur_State == EPLAYER_STATE::KNOCK_DOWN
+		|| Cur_State == EPLAYER_STATE::PARRY
+		|| Cur_State == EPLAYER_STATE::ROLL
+		|| Cur_State == EPLAYER_STATE::SPELL) return;
+
 	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
-	if (AnimInst != nullptr)
+	if (AnimInst == nullptr)
 	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter::LightAttack(): AnimInst is Null"));
+		return;
+	}
+
+	if (IsAttacking == false)
+	{
+		IsAttacking = true; // 공격중으로 전환
 		ChangeState(EPLAYER_STATE::ATTACK);
 		AnimInst->PlayLightAttackMontage();
+	}
+	else if (IsAttacking == true)
+	{
+		IsAttackButtonWhenAttack = true;
 	}
 }
 
