@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{064DFED0-B276-45E1-A464-A54104281F35}</UniqueIdentifier>
+      <UniqueIdentifier>{0D53AFDC-9F18-4181-9AB2-4577D313A4F5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{8E26001A-D167-4077-A06A-780D8D57E616}</UniqueIdentifier>
+      <UniqueIdentifier>{F09087D5-C84D-44F5-A1BF-AC6543198E98}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{2AD746BD-36BA-4DC4-BC91-AF60580E06BC}</UniqueIdentifier>
+      <UniqueIdentifier>{9F5C08F5-688B-42D7-9F2E-FED5FF452730}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\define.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
@@ -56,6 +56,18 @@
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\PlayerCharacterAnimInstance.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Shield_Common.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\Shield_Common.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Shield_Default.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\Shield_Default.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
     <None Include="..\..\Source\UE4_Portfolio2_SL\UE4_Portfolio2_SL.Build.cs">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </None>
@@ -75,6 +87,18 @@
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\UE4_Portfolio2_SLGameMode.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Weapon_Common.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\Weapon_Common.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Weapon_Default.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\Weapon_Default.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
   </ItemGroup>

@@ -58,6 +58,9 @@ APlayerCharacter::APlayerCharacter()
 	m_Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	m_Camera->SetupAttachment(m_CameraArm, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	m_Camera->bUsePawnControlRotation = false; // 카메라 봉의 움직임에 따라 카메라가 움직이지 않는다.
+
+
+	
 }
 
 void APlayerCharacter::BeginPlay()
@@ -336,6 +339,26 @@ void APlayerCharacter::HeavyAttack()
 {
 
 }
+
+//void APlayerCharacter::SetWeaponLeft()
+//{
+//	FName WeaponSocket(TEXT("LeftArm_Weapon"));
+//	if (GetMesh()->DoesSocketExist(WeaponSocket))
+//	{
+//
+//	}
+//	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Socket is Not Exist"));
+//}
+//
+//void APlayerCharacter::SetWeaponRight()
+//{
+//	FName WeaponSocket(TEXT("RightArm_Weapon"));
+//	if (GetMesh()->DoesSocketExist(WeaponSocket))
+//	{
+//
+//	}
+//	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Socket is Not Exist"));
+//}
 
 void APlayerCharacter::ChangeState(EPLAYER_STATE _NextState)
 {

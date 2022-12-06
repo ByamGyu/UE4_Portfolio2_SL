@@ -1,9 +1,44 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
+﻿  Cleaning UE4_Portfolio2_SLEditor and UnrealHeaderTool binaries...
+  Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
+  Creating makefile for UE4_Portfolio2_SLEditor (no existing makefile)
+  Parsing headers for UE4_Portfolio2_SLEditor
+    Running UnrealHeaderTool "G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\UE4_Portfolio2_SL.uproject" "G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4_Portfolio2_SLEditor\Development\UE4_Portfolio2_SLEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\decja\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  LogInit: Display: Loading text-based GConfig....
+  Reflection code generated for UE4_Portfolio2_SLEditor in 3.5385845 seconds
   Building UE4_Portfolio2_SLEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 24 processes...
-    [1/4] PlayerCharacter.cpp
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(13): error C2614: 'APlayerCharacter': 멤버 초기화가 잘못되었습니다. 'bLMBDown'이(가) 기본 또는 멤버가 아닙니다.
+  Building 27 actions with 24 processes...
+    [1/27] Default.rc2
+    [2/27] SharedPCH.Engine.ShadowErrors.cpp
+    [3/27] UE4_Portfolio2_SL.cpp
+    [4/27] define.cpp
+    [5/27] define.gen.cpp
+    [6/27] UE4_Portfolio2_SL.init.gen.cpp
+    [7/27] Weapon_Common.gen.cpp
+    [8/27] Weapon_Default.cpp
+    [9/27] PlayerCharacterAnimInstance.gen.cpp
+    [10/27] Shield_Default.cpp
+    [11/27] UE4_Portfolio2_SLCharacter.cpp
+    [12/27] UE4_Portfolio2_SLCharacter.gen.cpp
+    [13/27] PlayerCharacter.gen.cpp
+    [14/27] UE4_Portfolio2_SLGameMode.cpp
+    [15/27] Weapon_Common.cpp
+    [16/27] Shield_Common.cpp
+    [17/27] MyAttackNotifyState.gen.cpp
+    [18/27] MyAttackNotifyState.cpp
+    [19/27] Shield_Default.gen.cpp
+    [20/27] Weapon_Default.gen.cpp
+    [21/27] Shield_Common.gen.cpp
+    [22/27] PlayerCharacterAnimInstance.cpp
+    [23/27] UE4_Portfolio2_SLGameMode.gen.cpp
+    [24/27] PlayerCharacter.cpp
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(9): warning C5038: 데이터 멤버 'APlayerCharacter::CurStamina'은(는) 데이터 멤버 'APlayerCharacter::HPRatio' 이후에 초기화됩니다.
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(11): warning C5038: 데이터 멤버 'APlayerCharacter::StaminaRatio'은(는) 데이터 멤버 'APlayerCharacter::IsFight' 이후에 초기화됩니다.
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(45,5): error MSB3073: ""G:\Unreal Engine\UE_4.27\Engine\Build\BatchFiles\Build.bat" UE4_Portfolio2_SLEditor Win64 Development -Project="G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\UE4_Portfolio2_SL.uproject" -WaitMutex -FromMsBuild" 명령이 종료되었습니다(코드: 6).
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(15): warning C5038: 데이터 멤버 'APlayerCharacter::ComboCnt'은(는) 데이터 멤버 'APlayerCharacter::IsFall' 이후에 초기화됩니다.
+    [25/27] UE4Editor-UE4_Portfolio2_SL.lib
+       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.exp 개체를 생성하고 있습니다.
+    [26/27] UE4Editor-UE4_Portfolio2_SL.dll
+       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.suppressed.exp 개체를 생성하고 있습니다.
+    [27/27] UE4_Portfolio2_SLEditor.target
+  Total time in Parallel executor: 20.84 seconds
+  Total execution time: 26.53 seconds

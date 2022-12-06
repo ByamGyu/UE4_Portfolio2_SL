@@ -4,6 +4,8 @@
 #include "GameFramework/Character.h"
 #include "define.h"
 #include "PlayerCharacterAnimInstance.h"
+#include "Weapon_Default.h"
+#include "Shield_Default.h"
 #include "PlayerCharacter.generated.h"
 
 UCLASS()
@@ -49,14 +51,6 @@ protected:
 	void HeavyAttack();
 
 
-
-private:
-	//UPROPERTY()
-	// class UPlayerCharacterAnimInstance* AnimInst;
-	//UPROPERTY()
-	//UParticleSystemComponent* ParticleSystem;
-
-
 	// 능력치 정보
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
@@ -87,8 +81,13 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	int ComboCnt; // 공격몽타주 애니메이션 점프용도
 
-	// 공격 중 관련
-public:
+
+	// 장비 액터 선언
+private:
+
+	// 장비 액터 관련 함수
+
+
 
 
 public:
@@ -111,21 +110,8 @@ public:
 	int GetComboCnt() { return ComboCnt; }
 	void SetComboCnt(int _Value) { ComboCnt = _Value; }
 
-	// 기타 필요한 요소들
-private:
-	//UPROPERTY() ↓ 현재 MyPlayerController 클래스가 없음
-	//class AMyPlayerController* MyPlayerController;
-
-
 
 public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return m_CameraArm; }
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return m_Camera; }
-
-
-
-
-
-
-
 };
