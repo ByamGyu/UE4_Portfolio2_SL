@@ -59,7 +59,7 @@ public: \
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_MyAttackNotifyState_h_11_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__arrHitResults() { return STRUCT_OFFSET(UMyAttackNotifyState, arrHitResults); }
+	FORCEINLINE static uint32 __PPO__arrHittedResults() { return STRUCT_OFFSET(UMyAttackNotifyState, arrHittedResults); }
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_MyAttackNotifyState_h_8_PROLOG

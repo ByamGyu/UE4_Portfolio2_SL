@@ -21,5 +21,5 @@ public:
 
 private:
 	UPROPERTY()
-		TArray<FHitResult> arrHitResults;
+	TArray<AActor*> arrHittedResults; // 맞은 액터 중복 방지를 위한 배열
 };

@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeMyAttackNotifyState() {}
 	UE4_PORTFOLIO2_SL_API UClass* Z_Construct_UClass_UMyAttackNotifyState();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimNotifyState();
 	UPackage* Z_Construct_UPackage__Script_UE4_Portfolio2_SL();
-	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
 	void UMyAttackNotifyState::StaticRegisterNativesUMyAttackNotifyState()
 	{
@@ -32,11 +32,11 @@ void EmptyLinkFunctionForGeneratedCodeMyAttackNotifyState() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_arrHitResults_Inner;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_arrHittedResults_Inner;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_arrHitResults_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_arrHittedResults_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_arrHitResults;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_arrHittedResults;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -52,16 +52,16 @@ void EmptyLinkFunctionForGeneratedCodeMyAttackNotifyState() {}
 		{ "ModuleRelativePath", "MyAttackNotifyState.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHitResults_Inner = { "arrHitResults", nullptr, (EPropertyFlags)0x0000008000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHittedResults_Inner = { "arrHittedResults", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHitResults_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHittedResults_MetaData[] = {
 		{ "ModuleRelativePath", "MyAttackNotifyState.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHitResults = { "arrHitResults", nullptr, (EPropertyFlags)0x0040008000000010, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMyAttackNotifyState, arrHitResults), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHitResults_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHitResults_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHittedResults = { "arrHittedResults", nullptr, (EPropertyFlags)0x0040000000000010, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMyAttackNotifyState, arrHittedResults), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHittedResults_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHittedResults_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMyAttackNotifyState_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHitResults_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHitResults,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHittedResults_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMyAttackNotifyState_Statics::NewProp_arrHittedResults,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UMyAttackNotifyState_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UMyAttackNotifyState>::IsAbstract,
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeMyAttackNotifyState() {}
 		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_UMyAttackNotifyState_Statics::PropPointers),
 		0,
-		0x009130A0u,
+		0x001130A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UMyAttackNotifyState_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UMyAttackNotifyState_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UMyAttackNotifyState()
@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeMyAttackNotifyState() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMyAttackNotifyState, 2252084570);
+	IMPLEMENT_CLASS(UMyAttackNotifyState, 1648870925);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UMyAttackNotifyState>()
 	{
 		return UMyAttackNotifyState::StaticClass();

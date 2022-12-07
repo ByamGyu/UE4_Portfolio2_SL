@@ -38,6 +38,11 @@ public:
 	void SetWeaponStaminaDamage(float _Value);
 	float GetWeaponStaminaDamage();
 
+	//FVector GetWeaponSocketStartLocation() { return WeaponSocketStart.; }
+	//FVector GetWeaponSocketEndLocation() { return WeaponSocketEnd; }
+
+	UStaticMeshComponent* GetMesh() { return Body; }
+
 
 public:
 	virtual void Tick(float DeltaTime) override;

@@ -41,6 +41,8 @@ public:
 	void SetShieldStaminaDamageRatio();
 	float GetShieldStaminaDamageRatio();
 
+	UStaticMeshComponent* GetMesh() { return Body; }
+
 
 public:
 	virtual void Tick(float DeltaTime) override;
