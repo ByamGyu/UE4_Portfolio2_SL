@@ -82,12 +82,27 @@ private:
 	int ComboCnt; // 공격몽타주 애니메이션 점프용도
 
 
-	// 장비 액터 선언
 private:
+	// 장비로 쓰일 액터 클래스 정보 저장 변수 선언(틀린거 없음)
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<class AWeapon_Default> RightWeaponClass;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<class AShield_Default> LeftWeaponClass;
 
-	// 장비 액터 관련 함수
+	// 장비 액터 선언(틀린거 없음)
+private:
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	class AWeapon_Default* RightWeapon;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	class AShield_Default* LeftWeapon;
 
+	// 장비 액터 관련 함수(틀린거 없음)
+public:
+	AWeapon_Default* GetRightWeapon();
+	void SetRightWeapon(class AWeapon_Default* _NewWeapon);
 
+	AShield_Default* GetLeftWeapon();
+	void SetLeftWeapon(class AShield_Default* _NewWeapon);
 
 
 public:

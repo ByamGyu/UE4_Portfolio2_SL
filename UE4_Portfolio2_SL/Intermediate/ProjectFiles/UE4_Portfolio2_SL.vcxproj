@@ -51,7 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E7270C5F-4698-4F12-8260-450405F67431}</ProjectGuid>
+    <ProjectGuid>{DCC8E898-B3EC-42E8-BAD3-920EF7175211}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>UE4_Portfolio2_SL</RootNamespace>
     <PlatformToolset>v142</PlatformToolset>

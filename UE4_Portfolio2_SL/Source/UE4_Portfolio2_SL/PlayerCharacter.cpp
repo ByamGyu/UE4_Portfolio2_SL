@@ -13,7 +13,9 @@ APlayerCharacter::APlayerCharacter()
 	IsAttacking(false),
 	IsAttackButtonWhenAttack(false),
 	ComboCnt(0),
-	IsFall(false)
+	IsFall(false),
+	RightWeapon(nullptr),
+	LeftWeapon(nullptr)
 {
 	PrimaryActorTick.bCanEverTick = true;
 
@@ -59,14 +61,40 @@ APlayerCharacter::APlayerCharacter()
 	m_Camera->SetupAttachment(m_CameraArm, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	m_Camera->bUsePawnControlRotation = false; // 카메라 봉의 움직임에 따라 카메라가 움직이지 않는다.
 
-
-	
+	// 시작 장비 클래스 정보 저장하기
+	RightWeaponClass = AWeapon_Default::StaticClass();
+	LeftWeaponClass = AShield_Default::StaticClass();	
 }
 
 void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	// 디폴트 장비(오른손) 들고있기
+	FName RightArmWeaponSocket(TEXT("RightArm_Weapon"));
+	if (GetMesh()->DoesSocketExist(RightArmWeaponSocket))
+	{
+		auto NewWeapon = GetWorld()->SpawnActor<AWeapon_Default>(RightWeaponClass, FVector::ZeroVector, FRotator::ZeroRotator);
+		if (NewWeapon != nullptr)
+		{
+			RightWeapon = NewWeapon;
+			NewWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, RightArmWeaponSocket);
+			NewWeapon->SetOwner(this);
+		}
+	}
+
+	// 디폴트 장비(왼손) 들고있기
+	FName LeftArmWeaponSocket(TEXT("LeftArm_Weapon"));
+	if (GetMesh()->DoesSocketExist(LeftArmWeaponSocket))
+	{
+		auto NewWeapon = GetWorld()->SpawnActor<AShield_Default>(LeftWeaponClass, FVector::ZeroVector, FRotator::ZeroRotator);
+		if (NewWeapon != nullptr)
+		{
+			LeftWeapon = NewWeapon;
+			NewWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, LeftArmWeaponSocket);
+			NewWeapon->SetOwner(this);
+		}
+	}
 }
 
 void APlayerCharacter::Tick(float DeltaTime)
@@ -359,6 +387,54 @@ void APlayerCharacter::HeavyAttack()
 //	}
 //	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Socket is Not Exist"));
 //}
+
+AWeapon_Default* APlayerCharacter::GetRightWeapon()
+{
+	if (RightWeapon == nullptr)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("RightWeapon is Nullptr"));
+		return nullptr;
+	}
+	else return RightWeapon;
+}
+
+void APlayerCharacter::SetRightWeapon(AWeapon_Default* _NewWeapon)
+{
+	FName RightArmWeaponSocket(TEXT("RightArm_Weapon"));
+
+	if (_NewWeapon != nullptr)
+	{
+		RightWeapon = _NewWeapon;
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("_NewRightWeapon is Nullptr"));
+	}
+}
+
+AShield_Default* APlayerCharacter::GetLeftWeapon()
+{
+	if (LeftWeapon == nullptr)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("RightWeapon is Nullptr"));
+		return nullptr;
+	}
+	else return LeftWeapon;
+}
+
+void APlayerCharacter::SetLeftWeapon(AShield_Default* _NewWeapon)
+{
+	FName RightArmWeaponSocket(TEXT("LeftArm_Weapon"));
+
+	if (_NewWeapon != nullptr)
+	{
+		LeftWeapon = _NewWeapon;
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("_NewLeftWeapon is Nullptr"));
+	}
+}
 
 void APlayerCharacter::ChangeState(EPLAYER_STATE _NextState)
 {

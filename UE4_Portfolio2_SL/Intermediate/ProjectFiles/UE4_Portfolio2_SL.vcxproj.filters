@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{0D53AFDC-9F18-4181-9AB2-4577D313A4F5}</UniqueIdentifier>
+      <UniqueIdentifier>{5BE252A9-4ED7-40E1-BE15-419ADFB1C35C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{F09087D5-C84D-44F5-A1BF-AC6543198E98}</UniqueIdentifier>
+      <UniqueIdentifier>{9B12FDB6-B0B8-41F1-A11D-E1AB08C9F5D9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{9F5C08F5-688B-42D7-9F2E-FED5FF452730}</UniqueIdentifier>
+      <UniqueIdentifier>{5CEE3FF7-80A3-4A68-8EC4-65F6BA73D706}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\define.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
