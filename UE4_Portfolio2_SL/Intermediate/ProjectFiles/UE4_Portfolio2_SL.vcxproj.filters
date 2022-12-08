@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5BE252A9-4ED7-40E1-BE15-419ADFB1C35C}</UniqueIdentifier>
+      <UniqueIdentifier>{D85A1B84-608D-41BF-9D40-EF99122F819A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{9B12FDB6-B0B8-41F1-A11D-E1AB08C9F5D9}</UniqueIdentifier>
+      <UniqueIdentifier>{D6892F2B-01C1-477D-8843-E560616AF9EC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{5CEE3FF7-80A3-4A68-8EC4-65F6BA73D706}</UniqueIdentifier>
+      <UniqueIdentifier>{4EE97D55-475F-473F-9490-B194F1234CF5}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\define.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
@@ -42,6 +42,12 @@
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\MyAttackNotifyState.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\MyHeavyAttackNotifyState.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\MyHeavyAttackNotifyState.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp">

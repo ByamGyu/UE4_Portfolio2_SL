@@ -51,6 +51,8 @@ protected:
 	void HeavyAttack();
 
 
+
+
 	// 능력치 정보
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
@@ -72,6 +74,10 @@ private:
 	int CurStamina;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	float StaminaRatio;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	float AttackDamage;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	float DefaultDamage;
 
 	// 공격 중 관련
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
@@ -79,7 +85,7 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	bool IsAttackButtonWhenAttack; // 공격 도중 다시 공격 입력이 들어왔는지
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	int ComboCnt; // 공격몽타주 애니메이션 점프용도
+	int ComboCnt; // 공격몽타주 애니메이션 섹션 점프 용도
 
 
 private:
@@ -114,8 +120,18 @@ public:
 	bool GetIsFall() { return IsFall; }
 	void SetIsFall(bool _Value) { IsFall = _Value; }
 	void IsFalling();
+
+
 	float GetCurHP() { return CurHP; }
+	void SetCurHP(float _Value);
+	void PlayImpactAnimation();
 	float GetCurStamina() { return CurStamina; }
+
+
+	void SetAttackDamage();
+	float GetAttackDamage() { return AttackDamage; }
+	float GetAttackDamage(float _Value) { return AttackDamage * _Value; }
+
 
 	bool GetIsAttacking() { return IsAttacking; }
 	void SetIsAttacking(bool _Value) { IsAttacking = _Value; }
@@ -124,6 +140,9 @@ public:
 
 	int GetComboCnt() { return ComboCnt; }
 	void SetComboCnt(int _Value) { ComboCnt = _Value; }
+
+	// 대미지 받기 프레임워크
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
 
 public:

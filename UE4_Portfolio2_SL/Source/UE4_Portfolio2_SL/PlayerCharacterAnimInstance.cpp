@@ -19,12 +19,19 @@ UPlayerCharacterAnimInstance::UPlayerCharacterAnimInstance()
 	if (AM_RollCombat.Succeeded()) RollCombatMontage = AM_RollCombat.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_LightAttack(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/AM_PlayerAttackCombo1.AM_PlayerAttackCombo1'"));
 	if (AM_LightAttack.Succeeded()) LightAttackMontage = AM_LightAttack.Object;
-
-
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_HeavyAttack(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Sowrd_Attack_Combo_CL_Heavy_Montage.Sowrd_Attack_Combo_CL_Heavy_Montage'"));
+	if (AM_HeavyAttack.Succeeded()) HeavyAttackMontage = AM_HeavyAttack.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_GuardBreak(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Block_Hit_Break_Seq_Montage.Block_Hit_Break_Seq_Montage'"));
 	if (AM_GuardBreak.Succeeded()) GuardBreakMontage = AM_GuardBreak.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Parry(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Parry_Counter_Attack_Seq_Montage.Parry_Counter_Attack_Seq_Montage'"));
 	if (AM_Parry.Succeeded()) ParryMontage = AM_Parry.Object;
+
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_ImpactStrong1(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Hit_Combat_Large_F_Seq_Montage.Hit_Combat_Large_F_Seq_Montage'"));
+	if (AM_ImpactStrong1.Succeeded()) ImpactStrong1 = AM_ImpactStrong1.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_ImpactStrong2(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Sword_Shield_Hit_L_1_Montage.Sword_Shield_Hit_L_1_Montage'"));
+	if (AM_ImpactStrong2.Succeeded()) ImpactStrong2 = AM_ImpactStrong2.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_ImpactStrong3(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Sword_Shield_Hit_R_2_Montage.Sword_Shield_Hit_R_2_Montage'"));
+	if (AM_ImpactStrong3.Succeeded()) ImpactStrong3 = AM_ImpactStrong3.Object;
 }
 
 void UPlayerCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
@@ -93,6 +100,15 @@ void UPlayerCharacterAnimInstance::PlayGuardBreakMontage()
 void UPlayerCharacterAnimInstance::PlayParryMontage()
 {
 	Montage_Play(ParryMontage, 1.0f);
+}
+
+void UPlayerCharacterAnimInstance::PlayImpactStrongMontage()
+{
+	int32 tmp = FMath::RandRange(0, 2);
+
+	if (tmp == 0) Montage_Play(ImpactStrong1, 1.0f);
+	else if(tmp == 1) Montage_Play(ImpactStrong2, 1.0f);
+	else if(tmp == 2) Montage_Play(ImpactStrong3, 1.0f);
 }
 
 void UPlayerCharacterAnimInstance::AnimNotify_InitState()

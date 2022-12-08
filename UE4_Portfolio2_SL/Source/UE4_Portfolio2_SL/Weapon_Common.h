@@ -21,8 +21,8 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* Body;
 
-	float WeaponDamage;
-	float WeaponStaminaDamage;
+	float DefaultDamage;
+	float FinalWeaponDamage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	const UStaticMeshSocket* WeaponSocketStart;
@@ -33,13 +33,8 @@ protected:
 
 public:
 	void SetWeaponDamage(float _Value);
+	void SetWeaponDamage();
 	float GetWeaponDamage();
-
-	void SetWeaponStaminaDamage(float _Value);
-	float GetWeaponStaminaDamage();
-
-	//FVector GetWeaponSocketStartLocation() { return WeaponSocketStart.; }
-	//FVector GetWeaponSocketEndLocation() { return WeaponSocketEnd; }
 
 	UStaticMeshComponent* GetMesh() { return Body; }
 

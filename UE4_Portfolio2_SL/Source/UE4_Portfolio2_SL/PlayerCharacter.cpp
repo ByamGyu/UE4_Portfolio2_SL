@@ -15,7 +15,9 @@ APlayerCharacter::APlayerCharacter()
 	ComboCnt(0),
 	IsFall(false),
 	RightWeapon(nullptr),
-	LeftWeapon(nullptr)
+	LeftWeapon(nullptr),
+	AttackDamage(0.0f),
+	DefaultDamage(10.0f)
 {
 	PrimaryActorTick.bCanEverTick = true;
 
@@ -70,6 +72,7 @@ void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+
 	// 디폴트 장비(오른손) 들고있기
 	FName RightArmWeaponSocket(TEXT("RightArm_Weapon"));
 	if (GetMesh()->DoesSocketExist(RightArmWeaponSocket))
@@ -102,6 +105,7 @@ void APlayerCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	
 	IsFalling();
+	SetAttackDamage(); // 틱마다 공격 대미지를 계산함.
 }
 
 void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -124,6 +128,7 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAction(TEXT("Spell"), EInputEvent::IE_Pressed, this, &APlayerCharacter::Spell);
 	PlayerInputComponent->BindAction(TEXT("Parry"), EInputEvent::IE_Pressed, this, &APlayerCharacter::Parry);
 	PlayerInputComponent->BindAction(TEXT("LightAttack"), EInputEvent::IE_Pressed, this, &APlayerCharacter::LightAttack);
+	PlayerInputComponent->BindAction(TEXT("HeavyAttack"), EInputEvent::IE_Pressed, this, &APlayerCharacter::HeavyAttack);
 }
 
 void APlayerCharacter::MoveForward(float _Value)
@@ -232,7 +237,10 @@ void APlayerCharacter::Jump()
 	if (Cur_State == EPLAYER_STATE::JUMP
 		|| Cur_State == EPLAYER_STATE::FALL
 		|| Cur_State == EPLAYER_STATE::ROLL
-		|| Cur_State == EPLAYER_STATE::ATTACK)
+		|| Cur_State == EPLAYER_STATE::ATTACK_LIGHT
+		|| Cur_State == EPLAYER_STATE::ATTACK_HEAVY
+		|| Cur_State == EPLAYER_STATE::ATTACK_KICK
+		|| Cur_State == EPLAYER_STATE::ATTACK_GUARDBREAK)
 	{
 		return;
 	}
@@ -248,7 +256,10 @@ void APlayerCharacter::Guard(float _Value)
 	if (Cur_State == EPLAYER_STATE::JUMP
 		|| Cur_State == EPLAYER_STATE::FALL
 		|| Cur_State == EPLAYER_STATE::ROLL
-		|| Cur_State == EPLAYER_STATE::ATTACK
+		|| Cur_State == EPLAYER_STATE::ATTACK_LIGHT
+		|| Cur_State == EPLAYER_STATE::ATTACK_HEAVY
+		|| Cur_State == EPLAYER_STATE::ATTACK_KICK
+		|| Cur_State == EPLAYER_STATE::ATTACK_GUARDBREAK
 		|| Cur_State == EPLAYER_STATE::SPELL
 		|| Cur_State == EPLAYER_STATE::IMPACT_STRONG
 		|| Cur_State == EPLAYER_STATE::GUARD_BREAK
@@ -354,7 +365,7 @@ void APlayerCharacter::LightAttack()
 	if (IsAttacking == false)
 	{
 		IsAttacking = true; // 공격중으로 전환
-		ChangeState(EPLAYER_STATE::ATTACK);
+		ChangeState(EPLAYER_STATE::ATTACK_LIGHT);
 		AnimInst->PlayLightAttackMontage();
 	}
 	else if (IsAttacking == true)
@@ -365,28 +376,44 @@ void APlayerCharacter::LightAttack()
 
 void APlayerCharacter::HeavyAttack()
 {
+	if (Cur_State == EPLAYER_STATE::DEAD
+		|| Cur_State == EPLAYER_STATE::FALL
+		|| Cur_State == EPLAYER_STATE::GUARD_BREAK
+		|| Cur_State == EPLAYER_STATE::GUARD_IMPACT_STRONG
+		|| Cur_State == EPLAYER_STATE::GUARD_IMPACT_WEAK
+		|| Cur_State == EPLAYER_STATE::IMPACT_STRONG
+		|| Cur_State == EPLAYER_STATE::IMPACT_WEAK
+		|| Cur_State == EPLAYER_STATE::JUMP
+		|| Cur_State == EPLAYER_STATE::KNOCK_DOWN
+		|| Cur_State == EPLAYER_STATE::PARRY
+		|| Cur_State == EPLAYER_STATE::ROLL
+		|| Cur_State == EPLAYER_STATE::SPELL)
+	{
+		return;
+	}
 
+	
+
+	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+	if (AnimInst == nullptr)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter::LightAttack(): AnimInst is Null"));
+		return;
+	}
+
+	if (IsAttacking == false)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter::HeavyAttack()"));
+
+		IsAttacking = true; // 공격중으로 전환
+		ChangeState(EPLAYER_STATE::ATTACK_HEAVY);
+		AnimInst->PlayHeavyAttackMontage();
+	}
+	else if (IsAttacking == true)
+	{
+		IsAttackButtonWhenAttack = true;
+	}
 }
-
-//void APlayerCharacter::SetWeaponLeft()
-//{
-//	FName WeaponSocket(TEXT("LeftArm_Weapon"));
-//	if (GetMesh()->DoesSocketExist(WeaponSocket))
-//	{
-//
-//	}
-//	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Socket is Not Exist"));
-//}
-//
-//void APlayerCharacter::SetWeaponRight()
-//{
-//	FName WeaponSocket(TEXT("RightArm_Weapon"));
-//	if (GetMesh()->DoesSocketExist(WeaponSocket))
-//	{
-//
-//	}
-//	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Socket is Not Exist"));
-//}
 
 AWeapon_Default* APlayerCharacter::GetRightWeapon()
 {
@@ -455,4 +482,66 @@ void APlayerCharacter::IsFalling()
 		}
 	}
 	else IsFall = false;
+}
+
+void APlayerCharacter::SetCurHP(float _Value)
+{
+	if (_Value > 0) // +는 회복 관련
+	{
+		CurHP += _Value;
+
+		if (CurHP >= MaxHP) CurHP = MaxHP;
+	}
+	else if (_Value < 0) // -는 입은 피해
+	{
+		CurHP += _Value;
+
+		if (CurHP <= 0.0f)
+		{
+			CurHP = 0;
+			ChangeState(EPLAYER_STATE::DEAD);
+		}
+	}
+
+	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(CurHP));
+}
+
+void APlayerCharacter::PlayImpactAnimation()
+{
+	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+	if (AnimInst == nullptr)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter::LightAttack(): AnimInst is Null"));
+		return;
+	}
+	else
+	{
+		ChangeState(EPLAYER_STATE::IMPACT_STRONG);
+		AnimInst->PlayImpactStrongMontage();
+	}
+}
+
+void APlayerCharacter::SetAttackDamage()
+{
+	if (RightWeapon != nullptr) // 오른쪽 장비가 있으면
+	{
+		AttackDamage = DefaultDamage + RightWeapon->GetWeaponDamage();
+	}
+}
+
+float APlayerCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	float Damage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+
+	SetCurHP(-Damage);
+
+	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Damage Amount: ") + FString::SanitizeFloat(DamageAmount));
+
+	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Attacker Name: ") + EventInstigator->GetPawn()->GetName());
+
+	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Used Tool: ") + DamageCauser->GetName());
+
+	
+
+	return Damage;
 }

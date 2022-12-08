@@ -22,4 +22,11 @@ public:
 private:
 	UPROPERTY()
 	TArray<AActor*> arrHittedResults; // 맞은 액터 중복 방지를 위한 배열
+	UPROPERTY()
+	float AttackDamage;
+
+
+private:
+	UFUNCTION()
+	void GiveDamage(APlayerCharacter* _Attacker, APlayerCharacter* _DamageTo);
 };

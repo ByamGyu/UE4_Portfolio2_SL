@@ -107,7 +107,7 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 		return EPLAYER_STATE_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EPLAYER_STATE(EPLAYER_STATE_StaticEnum, TEXT("/Script/UE4_Portfolio2_SL"), TEXT("EPLAYER_STATE"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE_Hash() { return 978676828U; }
+	uint32 Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE_Hash() { return 1741691929U; }
 	UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE()
 	{
 #if WITH_HOT_RELOAD
@@ -125,7 +125,10 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 				{ "EPLAYER_STATE::FALL", (int64)EPLAYER_STATE::FALL },
 				{ "EPLAYER_STATE::ROLL", (int64)EPLAYER_STATE::ROLL },
 				{ "EPLAYER_STATE::GUARD", (int64)EPLAYER_STATE::GUARD },
-				{ "EPLAYER_STATE::ATTACK", (int64)EPLAYER_STATE::ATTACK },
+				{ "EPLAYER_STATE::ATTACK_LIGHT", (int64)EPLAYER_STATE::ATTACK_LIGHT },
+				{ "EPLAYER_STATE::ATTACK_HEAVY", (int64)EPLAYER_STATE::ATTACK_HEAVY },
+				{ "EPLAYER_STATE::ATTACK_KICK", (int64)EPLAYER_STATE::ATTACK_KICK },
+				{ "EPLAYER_STATE::ATTACK_GUARDBREAK", (int64)EPLAYER_STATE::ATTACK_GUARDBREAK },
 				{ "EPLAYER_STATE::SPELL", (int64)EPLAYER_STATE::SPELL },
 				{ "EPLAYER_STATE::IMPACT_WEAK", (int64)EPLAYER_STATE::IMPACT_WEAK },
 				{ "EPLAYER_STATE::IMPACT_STRONG", (int64)EPLAYER_STATE::IMPACT_STRONG },
@@ -138,7 +141,10 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-				{ "ATTACK.Name", "EPLAYER_STATE::ATTACK" },
+				{ "ATTACK_GUARDBREAK.Name", "EPLAYER_STATE::ATTACK_GUARDBREAK" },
+				{ "ATTACK_HEAVY.Name", "EPLAYER_STATE::ATTACK_HEAVY" },
+				{ "ATTACK_KICK.Name", "EPLAYER_STATE::ATTACK_KICK" },
+				{ "ATTACK_LIGHT.Name", "EPLAYER_STATE::ATTACK_LIGHT" },
 				{ "BlueprintType", "true" },
 				{ "DEAD.Name", "EPLAYER_STATE::DEAD" },
 				{ "FALL.Name", "EPLAYER_STATE::FALL" },

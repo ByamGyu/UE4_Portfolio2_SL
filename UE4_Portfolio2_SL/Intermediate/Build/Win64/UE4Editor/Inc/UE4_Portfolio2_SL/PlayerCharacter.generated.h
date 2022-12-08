@@ -70,6 +70,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__MaxStamina() { return STRUCT_OFFSET(APlayerCharacter, MaxStamina); } \
 	FORCEINLINE static uint32 __PPO__CurStamina() { return STRUCT_OFFSET(APlayerCharacter, CurStamina); } \
 	FORCEINLINE static uint32 __PPO__StaminaRatio() { return STRUCT_OFFSET(APlayerCharacter, StaminaRatio); } \
+	FORCEINLINE static uint32 __PPO__AttackDamage() { return STRUCT_OFFSET(APlayerCharacter, AttackDamage); } \
+	FORCEINLINE static uint32 __PPO__DefaultDamage() { return STRUCT_OFFSET(APlayerCharacter, DefaultDamage); } \
 	FORCEINLINE static uint32 __PPO__IsAttacking() { return STRUCT_OFFSET(APlayerCharacter, IsAttacking); } \
 	FORCEINLINE static uint32 __PPO__IsAttackButtonWhenAttack() { return STRUCT_OFFSET(APlayerCharacter, IsAttackButtonWhenAttack); } \
 	FORCEINLINE static uint32 __PPO__ComboCnt() { return STRUCT_OFFSET(APlayerCharacter, ComboCnt); } \

@@ -8,14 +8,23 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class APlayerCharacter;
 #ifdef UE4_PORTFOLIO2_SL_MyAttackNotifyState_generated_h
 #error "MyAttackNotifyState.generated.h already included, missing '#pragma once' in MyAttackNotifyState.h"
 #endif
 #define UE4_PORTFOLIO2_SL_MyAttackNotifyState_generated_h
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_MyAttackNotifyState_h_11_SPARSE_DATA
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_MyAttackNotifyState_h_11_RPC_WRAPPERS
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_MyAttackNotifyState_h_11_RPC_WRAPPERS_NO_PURE_DECLS
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_MyAttackNotifyState_h_11_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGiveDamage);
+
+
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_MyAttackNotifyState_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGiveDamage);
+
+
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_MyAttackNotifyState_h_11_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMyAttackNotifyState(); \
@@ -59,7 +68,8 @@ public: \
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_MyAttackNotifyState_h_11_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__arrHittedResults() { return STRUCT_OFFSET(UMyAttackNotifyState, arrHittedResults); }
+	FORCEINLINE static uint32 __PPO__arrHittedResults() { return STRUCT_OFFSET(UMyAttackNotifyState, arrHittedResults); } \
+	FORCEINLINE static uint32 __PPO__AttackDamage() { return STRUCT_OFFSET(UMyAttackNotifyState, AttackDamage); }
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_MyAttackNotifyState_h_8_PROLOG
