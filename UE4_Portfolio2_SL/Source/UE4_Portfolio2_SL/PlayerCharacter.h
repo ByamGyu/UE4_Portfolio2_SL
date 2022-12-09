@@ -125,6 +125,8 @@ public:
 	float GetCurHP() { return CurHP; }
 	void SetCurHP(float _Value);
 	void PlayImpactAnimation();
+	void PlayShieldBlockWeakAnimation();
+	void PlayShieldBlockStrongAnimation();
 	float GetCurStamina() { return CurStamina; }
 
 

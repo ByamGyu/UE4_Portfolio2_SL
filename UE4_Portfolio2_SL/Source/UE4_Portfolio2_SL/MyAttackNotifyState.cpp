@@ -69,8 +69,32 @@ void UMyAttackNotifyState::NotifyTick(USkeletalMeshComponent* MeshComp, UAnimSeq
 						{
 							GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, hittedActor->GetName());
 							arrHittedResults.Add(hittedActor); // 중복 방지를 위해 추가하기
-							hittedActor->PlayImpactAnimation();
-							GiveDamage(Character, hittedActor);
+
+							// 내적 계산하기
+							FVector OwnerForward = Character->GetActorForwardVector();
+							FVector HittedActorForward = hittedActor->GetActorForwardVector();
+							float Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
+							float AcosAngle = FMath::Acos(Dot);
+							float AngleDegree = FMath::RadiansToDegrees(AcosAngle);
+
+							// 좌우각 60도까지 방어
+							if (AngleDegree >= 120.0f)
+							{
+								if (hittedActor->GetState() == EPLAYER_STATE::GUARD)
+								{
+									hittedActor->PlayShieldBlockWeakAnimation();
+								}
+								else
+								{
+									hittedActor->PlayImpactAnimation();
+									GiveDamage(Character, hittedActor);
+								}
+							}
+							else
+							{
+								hittedActor->PlayImpactAnimation();
+								GiveDamage(Character, hittedActor);
+							}
 						}
 					}
 				}

@@ -511,13 +511,43 @@ void APlayerCharacter::PlayImpactAnimation()
 	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
 	if (AnimInst == nullptr)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter::LightAttack(): AnimInst is Null"));
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter AnimInst is Null"));
 		return;
 	}
 	else
 	{
 		ChangeState(EPLAYER_STATE::IMPACT_STRONG);
 		AnimInst->PlayImpactStrongMontage();
+	}
+}
+
+void APlayerCharacter::PlayShieldBlockWeakAnimation()
+{
+	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+	if (AnimInst == nullptr)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter AnimInst is Null"));
+		return;
+	}
+	else
+	{
+		ChangeState(EPLAYER_STATE::GUARD_IMPACT_WEAK);
+		AnimInst->PlayShieldBlockWeak();
+	}
+}
+
+void APlayerCharacter::PlayShieldBlockStrongAnimation()
+{
+	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+	if (AnimInst == nullptr)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter AnimInst is Null"));
+		return;
+	}
+	else
+	{
+		ChangeState(EPLAYER_STATE::GUARD_IMPACT_STRONG);
+		AnimInst->PlayShieldBlockStrong();
 	}
 }
 

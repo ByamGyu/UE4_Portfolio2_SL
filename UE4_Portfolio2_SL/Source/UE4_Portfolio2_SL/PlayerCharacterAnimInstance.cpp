@@ -32,6 +32,11 @@ UPlayerCharacterAnimInstance::UPlayerCharacterAnimInstance()
 	if (AM_ImpactStrong2.Succeeded()) ImpactStrong2 = AM_ImpactStrong2.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_ImpactStrong3(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Sword_Shield_Hit_R_2_Montage.Sword_Shield_Hit_R_2_Montage'"));
 	if (AM_ImpactStrong3.Succeeded()) ImpactStrong3 = AM_ImpactStrong3.Object;
+
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_ShieldBlockWeak(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Block_Hit_Seq_Montage.Block_Hit_Seq_Montage'"));
+	if (AM_ShieldBlockWeak.Succeeded()) ShieldBlockWeak = AM_ShieldBlockWeak.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_ShieldBlockStrong(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Sword_Block_Right_Shield_Montage.Sword_Block_Right_Shield_Montage'"));
+	if (AM_ShieldBlockStrong.Succeeded()) ShieldBlockStrong = AM_ShieldBlockStrong.Object;
 }
 
 void UPlayerCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
@@ -111,6 +116,16 @@ void UPlayerCharacterAnimInstance::PlayImpactStrongMontage()
 	else if(tmp == 2) Montage_Play(ImpactStrong3, 1.0f);
 }
 
+void UPlayerCharacterAnimInstance::PlayShieldBlockWeak()
+{
+	Montage_Play(ShieldBlockWeak, 1.0f);
+}
+
+void UPlayerCharacterAnimInstance::PlayShieldBlockStrong()
+{
+	Montage_Play(ShieldBlockStrong, 1.0f);
+}
+
 void UPlayerCharacterAnimInstance::AnimNotify_InitState()
 {
 	auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
@@ -170,8 +185,6 @@ void UPlayerCharacterAnimInstance::AnimNotify_AttackInputCheck()
 		{
 			if (ComboCnt >= 3) ComboCnt = 0;
 			else ComboCnt++;
-
-
 
 			Character->SetIsAttackButtonWhenAttack(false);
 			Character->SetComboCnt(ComboCnt);

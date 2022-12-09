@@ -66,6 +66,10 @@ private:
 	class UAnimMontage* ImpactStrong2;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* ImpactStrong3;
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* ShieldBlockWeak;
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* ShieldBlockStrong;
 
 
 public:
@@ -76,6 +80,8 @@ public:
 	void PlayGuardBreakMontage();
 	void PlayParryMontage();
 	void PlayImpactStrongMontage();
+	void PlayShieldBlockWeak();
+	void PlayShieldBlockStrong();
 
 
 

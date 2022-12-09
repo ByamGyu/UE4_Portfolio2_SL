@@ -104,7 +104,9 @@ public: \
 	FORCEINLINE static uint32 __PPO__ParryMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ParryMontage); } \
 	FORCEINLINE static uint32 __PPO__ImpactStrong1() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactStrong1); } \
 	FORCEINLINE static uint32 __PPO__ImpactStrong2() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactStrong2); } \
-	FORCEINLINE static uint32 __PPO__ImpactStrong3() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactStrong3); }
+	FORCEINLINE static uint32 __PPO__ImpactStrong3() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactStrong3); } \
+	FORCEINLINE static uint32 __PPO__ShieldBlockWeak() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ShieldBlockWeak); } \
+	FORCEINLINE static uint32 __PPO__ShieldBlockStrong() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ShieldBlockStrong); }
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_9_PROLOG
