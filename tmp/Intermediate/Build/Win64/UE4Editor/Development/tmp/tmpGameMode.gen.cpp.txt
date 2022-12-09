@@ -1,9 +1,0 @@
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Intermediate\Build\Win64\UE4Editor\Development\tmp\Definitions.tmp.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Source\tmp/tmpGameMode.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\tmp\Intermediate\Build\Win64\UE4Editor\Inc\tmp\tmpGameMode.generated.h
