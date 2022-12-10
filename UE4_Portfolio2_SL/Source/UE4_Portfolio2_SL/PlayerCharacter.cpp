@@ -1,4 +1,5 @@
 #include "PlayerCharacter.h"
+#include "Kismet/KismetMathLibrary.h"
 
 
 APlayerCharacter::APlayerCharacter()
@@ -17,7 +18,8 @@ APlayerCharacter::APlayerCharacter()
 	RightWeapon(nullptr),
 	LeftWeapon(nullptr),
 	AttackDamage(0.0f),
-	DefaultDamage(10.0f)
+	DefaultDamage(10.0f),
+	IsLockTargetExist(false)
 {
 	PrimaryActorTick.bCanEverTick = true;
 
@@ -106,6 +108,7 @@ void APlayerCharacter::Tick(float DeltaTime)
 	
 	IsFalling();
 	SetAttackDamage(); // 틱마다 공격 대미지를 계산함.
+	LookAtTarget(DeltaTime);
 }
 
 void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -129,6 +132,7 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAction(TEXT("Parry"), EInputEvent::IE_Pressed, this, &APlayerCharacter::Parry);
 	PlayerInputComponent->BindAction(TEXT("LightAttack"), EInputEvent::IE_Pressed, this, &APlayerCharacter::LightAttack);
 	PlayerInputComponent->BindAction(TEXT("HeavyAttack"), EInputEvent::IE_Pressed, this, &APlayerCharacter::HeavyAttack);
+	PlayerInputComponent->BindAction(TEXT("LockOn"), EInputEvent::IE_Pressed, this, &APlayerCharacter::LockOn);
 }
 
 void APlayerCharacter::MoveForward(float _Value)
@@ -194,22 +198,32 @@ void APlayerCharacter::MoveRight(float _Value)
 
 void APlayerCharacter::CameraRotationYaw(float _Value)
 {
-	AddControllerYawInput(_Value);
+	// 락온된 대상이 있으면 마우스 회전을 막는다.
+	if (IsLockTargetExist == true) return;
+	else
+	{
+		AddControllerYawInput(_Value);
+	}	
 }
 
 void APlayerCharacter::CameraRotationPitch(float _Value)
 {
-	float DeltaSecond = GetWorld()->GetDeltaSeconds();
-	FRotator Rotation = m_Camera->GetRelativeRotation();
+	// 락온된 대상이 있으면 마우스 회전을 막는다.
+	if (IsLockTargetExist == true) return;
+	else
+	{
+		float DeltaSecond = GetWorld()->GetDeltaSeconds();
+		FRotator Rotation = m_Camera->GetRelativeRotation();
 
-	Rotation.Pitch += _Value;
+		Rotation.Pitch += _Value;
 
-	// 카메라 상하 각도 제한
-	if (Rotation.Pitch > 45.0f) Rotation.Pitch = 45.0f;
-	else if (Rotation.Pitch < -45.0f) Rotation.Pitch = -45.0f;
+		// 카메라 상하 각도 제한
+		if (Rotation.Pitch > 45.0f) Rotation.Pitch = 45.0f;
+		else if (Rotation.Pitch < -45.0f) Rotation.Pitch = -45.0f;
 
-	// 카메라를 회전시킴
-	m_Camera->SetRelativeRotation(Rotation);
+		// 카메라를 회전시킴
+		m_Camera->SetRelativeRotation(Rotation);
+	}
 }
 
 void APlayerCharacter::Walk(float _Value)
@@ -413,6 +427,111 @@ void APlayerCharacter::HeavyAttack()
 	{
 		IsAttackButtonWhenAttack = true;
 	}
+}
+
+void APlayerCharacter::LockOn()
+{
+	if (IsLockTargetExist == false)
+	{
+		// 카메라 앞 방향(플레이어 시점)을 가져옴, 위 방향으로 0도 보정
+		FVector CameraForwardVector = GetFollowCamera()->GetForwardVector().RotateAngleAxis(0.0f, FVector::LeftVector);
+		// 카메라 시점 기준으로 왼쪽 방향으로 60도 보정
+		FVector LeftEndVector = CameraForwardVector.RotateAngleAxis(-60.0f, FVector::UpVector);
+		// 레이 트레이싱 출발 지점은 카메라
+		FVector StartPoint = GetFollowCamera()->GetComponentLocation();
+
+		// 락온 가능한 오브젝트 유형들
+		TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypeToLock;
+		// 락온 가능한 오브젝트 유형에 ObjectTypeQuery3를 추가
+		ObjectTypeToLock.Add(EObjectTypeQuery::ObjectTypeQuery3);
+
+		// 락온 하지 않을 대상들
+		TArray<AActor*> ActorsToNotTargeting;
+		// 락온 하지 않을 대상에 자신을 넣는다.
+		ActorsToNotTargeting.Add(this);
+
+		// FCollisionQueryParams-> 탐색 방법에 대한 설정 값을 모은 구조체
+		FCollisionQueryParams QueryParams(NAME_None);		
+
+		// 탐지된 액터 가장 가까운 지점 디폴트값 설정
+		float ClosestDist = 1500.0f;
+		// 탐지된 액터중 가장 가까운 액터
+		AActor* ClosestHitActor = nullptr;
+
+		FHitResult HitResult;
+		// 0도 ~ 120도 까지 5도 씩 레이 발사
+		for (int i = 0; i < 120; i += 5)
+		{
+			FVector Direction = LeftEndVector.RotateAngleAxis(i, FVector::UpVector);
+			FVector EndPoint = StartPoint + Direction * 1500.0f;
+			bool bIsHit = UKismetSystemLibrary::SphereTraceSingleForObjects(
+				GetWorld(),
+				StartPoint,
+				EndPoint,
+				200.0f, // 구체의 두께(너무 두꺼우면 내 뒤에 있는 대상도 탐지됨)
+				ObjectTypeToLock, // 탐지된 대상들 저장할 배열
+				false, // 복잡한 충돌 판정 여부
+				ActorsToNotTargeting, // 무시할 대상들
+				EDrawDebugTrace::ForDuration,
+				HitResult,
+				true, // 자신은 무시할지 여부
+				FLinearColor::Green, // 감지X
+				FLinearColor::Red, // 감지O
+				2.0f // 디버그 그리기 지속 시간
+			);
+
+			// 새롭게 탐지된 대상이 있고, 대상이 기존 대상보다 가까우면
+			if (bIsHit == true && HitResult.Distance < ClosestDist)
+			{
+				// 최단 거리 갱신
+				ClosestDist = HitResult.Distance;
+				// 탐지된 대상 가져오기
+				ClosestHitActor = HitResult.Actor.Get();
+			}
+		}
+
+		if (ClosestHitActor != nullptr) // 탐지된 대상이 있으면
+		{
+			IsLockTargetExist = true;
+			LockedOnTarget = ClosestHitActor;
+		}
+	}
+	else
+	{
+		IsLockTargetExist = false;
+		LockedOnTarget = nullptr;
+	}
+
+	if (LockedOnTarget != nullptr)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, LockedOnTarget->GetName());
+	}
+}
+
+// 락온 된 대상 보기
+void APlayerCharacter::LookAtTarget(float DeltaSeconds)
+{
+	if (LockedOnTarget != nullptr)
+	{
+		float PlayerToTargetDist = UKismetMathLibrary::Vector_Distance(this->GetActorLocation(), LockedOnTarget->GetActorLocation());
+		// 일정 거리(1500.0f, 현재 락온 범위와 동일) 이상 벗어나면 락온 해제
+		if (PlayerToTargetDist > 1500.0f)
+		{
+			IsLockTargetExist = false;
+			LockedOnTarget = nullptr;
+			return;
+		}
+
+		FVector LockedOnLocation = LockedOnTarget->GetActorLocation();
+		LockedOnLocation.Z -= 50.0f; // 대상이 잘 보이게 시점 살짝 높여주기
+		// 대상을 바라보는 회전값
+		FRotator LookAtRotation = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), LockedOnLocation);
+		// 현재 시점에서 대상을 바라보는 시점으로 회전보간
+		FRotator InterpRotation = UKismetMathLibrary::RInterpTo(GetController()->GetControlRotation(), LookAtRotation, DeltaSeconds, 10.0f);
+		// 보간 값을 기준으로 현재 카메라 회전값 수정하기
+		GetController()->SetControlRotation(FRotator(InterpRotation.Pitch, InterpRotation.Yaw, GetController()->GetControlRotation().Roll));
+	}
+	else return;
 }
 
 AWeapon_Default* APlayerCharacter::GetRightWeapon()

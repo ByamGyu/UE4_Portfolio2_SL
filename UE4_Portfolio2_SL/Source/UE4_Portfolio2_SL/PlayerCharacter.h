@@ -51,6 +51,15 @@ protected:
 	void HeavyAttack();
 
 
+	// 락온 관련
+protected:
+	bool IsLockTargetExist;
+	AActor* LockedOnTarget = nullptr;
+
+	void LockOn();
+	void LookAtTarget(float DeltaSeconds); // Tick에서 실행
+
+
 
 
 	// 능력치 정보
