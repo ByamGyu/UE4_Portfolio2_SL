@@ -342,7 +342,7 @@ void APlayerCharacter::Roll()
 		{
 			ChangeState(EPLAYER_STATE::ROLL);
 
-			// 여기서 8방향 구르기 몽타주 재생시키기
+
 			if (IsFight == true) AnimInst->PlayRollCombatMontage();
 			else AnimInst->PlayRollIdleMontage();
 		}

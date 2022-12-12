@@ -13,11 +13,48 @@ UPlayerCharacterAnimInstance::UPlayerCharacterAnimInstance()
 	KnockDown_Time = 0.0f;
 	IsLockOn = false;
 
+	
+	// 일반 구르기 모음
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle_F0(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_F_0_Seq_Montage.Roll_F_0_Seq_Montage'"));
+	if (AM_RollIdle_F0.Succeeded()) RollIdle_F0_Montage = AM_RollIdle_F0.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle_FL45(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_F_L_45_Seq_Montage.Roll_F_L_45_Seq_Montage'"));
+	if (AM_RollIdle_FL45.Succeeded()) RollIdle_FL45_Montage = AM_RollIdle_FL45.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle_FL90(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_L_90_Seq_Montage.Roll_L_90_Seq_Montage'"));
+	if (AM_RollIdle_FL90.Succeeded()) RollIdle_FL90_Montage = AM_RollIdle_FL90.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle_FR45(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_F_R_45_Seq_Montage.Roll_F_R_45_Seq_Montage'"));
+	if (AM_RollIdle_FR45.Succeeded()) RollIdle_FR45_Montage = AM_RollIdle_FR45.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle_FR90(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_R_90_Seq_Montage.Roll_R_90_Seq_Montage'"));
+	if (AM_RollIdle_FR90.Succeeded()) RollIdle_FR90_Montage = AM_RollIdle_FR90.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle_B180(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_Combat_B_180_Seq_Montage.Roll_Combat_B_180_Seq_Montage'"));
+	if (AM_RollIdle_B180.Succeeded()) RollIdle_B180_Montage = AM_RollIdle_B180.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle_BL45(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_B_L_45_Seq_Montage.Roll_B_L_45_Seq_Montage'"));
+	if (AM_RollIdle_BL45.Succeeded()) RollIdle_BL45_Montage = AM_RollIdle_BL45.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle_BR45(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_B_R_45_Seq_Montage.Roll_B_R_45_Seq_Montage'"));
+	if (AM_RollIdle_BR45.Succeeded()) RollIdle_BR45_Montage = AM_RollIdle_BR45.Object;
 
-	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_F_0_Seq_Montage.Roll_F_0_Seq_Montage'"));
-	if (AM_RollIdle.Succeeded()) RollIdleMontage = AM_RollIdle.Object;
-	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollCombat(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_Combat_F_0_Seq_Montage.Roll_Combat_F_0_Seq_Montage'"));
-	if (AM_RollCombat.Succeeded()) RollCombatMontage = AM_RollCombat.Object;
+	// 전투 구르기 모음
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollCombat_F0(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_Combat_F_0_Seq_Montage.Roll_Combat_F_0_Seq_Montage'"));
+	if (AM_RollCombat_F0.Succeeded()) RollCombat_F0_Montage = AM_RollCombat_F0.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollCombat_FL45(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_Combat_F_L_45_Seq_Montage.Roll_Combat_F_L_45_Seq_Montage'"));
+	if (AM_RollCombat_FL45.Succeeded()) RollCombat_FL45_Montage = AM_RollCombat_FL45.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollCombat_FL90(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_Combat_L_90_Seq_Montage.Roll_Combat_L_90_Seq_Montage'"));
+	if (AM_RollCombat_FL90.Succeeded()) RollCombat_FL90_Montage = AM_RollCombat_FL90.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollCombat_FR45(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_Combat_F_R_45_Seq_Montage.Roll_Combat_F_R_45_Seq_Montage'"));
+	if (AM_RollCombat_FR45.Succeeded()) RollCombat_FR45_Montage = AM_RollCombat_FR45.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollCombat_FR90(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_Combat_R_90_Seq_Montage.Roll_Combat_R_90_Seq_Montage'"));
+	if (AM_RollCombat_FR90.Succeeded()) RollCombat_FR90_Montage = AM_RollCombat_FR90.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollCombat_B180(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_Combat_B_180_Seq_Montage.Roll_Combat_B_180_Seq_Montage'"));
+	if (AM_RollCombat_B180.Succeeded()) RollCombat_B180_Montage = AM_RollCombat_B180.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollCombat_BL45(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_Combat_B_L_45_Seq_Montage.Roll_Combat_B_L_45_Seq_Montage'"));
+	if (AM_RollCombat_BL45.Succeeded()) RollCombat_BL45_Montage = AM_RollCombat_BL45.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollCombat_BR45(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_Combat_B_R_45_Seq_Montage.Roll_Combat_B_R_45_Seq_Montage'"));
+	if (AM_RollCombat_BR45.Succeeded()) RollCombat_BR45_Montage = AM_RollCombat_BR45.Object;
+
+	// 백스텝
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_BackStep(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Sword_Dodge_Montage.Sword_Dodge_Montage'"));
+	if (AM_BackStep.Succeeded()) BackStep_Montage = AM_BackStep.Object;
+
+
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_LightAttack(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/AM_PlayerAttackCombo1.AM_PlayerAttackCombo1'"));
 	if (AM_LightAttack.Succeeded()) LightAttackMontage = AM_LightAttack.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_HeavyAttack(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Sowrd_Attack_Combo_CL_Heavy_Montage.Sowrd_Attack_Combo_CL_Heavy_Montage'"));
@@ -64,18 +101,52 @@ void UPlayerCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		IsLockOn = Pawn->GetIsLockOn();
 		//KnockDown_Time = Pawn->GetKnockDownTime();
 
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(CurrentDirection));
+		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(CurrentDirection));
 	}
 }
 
 void UPlayerCharacterAnimInstance::PlayRollIdleMontage()
 {
-	Montage_Play(RollIdleMontage, 1.0f);
+	// 8방향 구르기 구체화 하기(CurrentDirection 사용)
+	if (IsLockOn == true)
+	{
+		if (CurrentSpeed == 0.0f && CurrentDirection == 0.0f) Montage_Play(BackStep_Montage, 1.0f);
+		else if (CurrentSpeed > 0 && CurrentDirection == 0.0f) Montage_Play(RollIdle_F0_Montage, 1.0f);
+		else if (CurrentSpeed > 0 && CurrentDirection == 0.5f) Montage_Play(RollIdle_FR45_Montage, 1.0f);
+		else if (CurrentSpeed > 0 && CurrentDirection == 1.0f) Montage_Play(RollIdle_FR90_Montage, 1.0f);
+		else if (CurrentSpeed > 0 && CurrentDirection == -0.5f) Montage_Play(RollIdle_FL45_Montage, 1.0f);
+		else if (CurrentSpeed > 0 && CurrentDirection == -1.0f) Montage_Play(RollIdle_FL90_Montage, 1.0f);
+		else if (CurrentSpeed < 0 && CurrentDirection == 0.0f) Montage_Play(RollIdle_B180_Montage, 1.0f);
+		else if (CurrentSpeed < 0 && CurrentDirection == 0.5f) Montage_Play(RollIdle_BR45_Montage, 1.0f);
+		else if (CurrentSpeed < 0 && CurrentDirection == -0.5f) Montage_Play(RollIdle_BL45_Montage, 1.0f);
+	}
+	else if (IsLockOn == false)
+	{
+		if (CurrentSpeed == 0.0f) Montage_Play(BackStep_Montage, 1.0f);
+		else if (CurrentSpeed > 0) Montage_Play(RollIdle_F0_Montage, 1.0f);
+	}
 }
 
 void UPlayerCharacterAnimInstance::PlayRollCombatMontage()
 {
-	Montage_Play(RollCombatMontage, 1.0f);
+	// 8방향 구르기 구체화 하기(CurrentDirection 사용)
+	if (IsLockOn == true)
+	{
+		if (CurrentSpeed == 0.0f && CurrentDirection == 0.0f) Montage_Play(BackStep_Montage, 1.0f);
+		else if (CurrentSpeed > 0 && CurrentDirection == 0.0f) Montage_Play(RollCombat_F0_Montage, 1.0f);
+		else if (CurrentSpeed > 0 && CurrentDirection == 0.5f) Montage_Play(RollCombat_FR45_Montage, 1.0f);
+		else if (CurrentSpeed > 0 && CurrentDirection == 1.0f) Montage_Play(RollCombat_FR90_Montage, 1.0f);
+		else if (CurrentSpeed > 0 && CurrentDirection == -0.5f) Montage_Play(RollCombat_FL45_Montage, 1.0f);
+		else if (CurrentSpeed > 0 && CurrentDirection == -1.0f) Montage_Play(RollCombat_FL90_Montage, 1.0f);
+		else if (CurrentSpeed < 0 && CurrentDirection == 0.0f) Montage_Play(RollCombat_B180_Montage, 1.0f);
+		else if (CurrentSpeed < 0 && CurrentDirection == 0.5f) Montage_Play(RollCombat_BR45_Montage, 1.0f);
+		else if (CurrentSpeed < 0 && CurrentDirection == -0.5f) Montage_Play(RollCombat_BL45_Montage, 1.0f);
+	}
+	else if (IsLockOn == false)
+	{
+		if (CurrentSpeed == 0.0f) Montage_Play(BackStep_Montage, 1.0f);
+		else if (CurrentSpeed > 0) Montage_Play(RollCombat_F0_Montage, 1.0f);
+	}
 }
 
 void UPlayerCharacterAnimInstance::PlayLightAttackMontage()

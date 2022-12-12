@@ -97,8 +97,23 @@ public: \
 	FORCEINLINE static uint32 __PPO__CurHP() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurHP); } \
 	FORCEINLINE static uint32 __PPO__CurStamina() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurStamina); } \
 	FORCEINLINE static uint32 __PPO__Cur_State() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, Cur_State); } \
-	FORCEINLINE static uint32 __PPO__RollIdleMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollIdleMontage); } \
-	FORCEINLINE static uint32 __PPO__RollCombatMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollCombatMontage); } \
+	FORCEINLINE static uint32 __PPO__RollIdle_F0_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollIdle_F0_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollIdle_FL45_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollIdle_FL45_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollIdle_FL90_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollIdle_FL90_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollIdle_FR45_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollIdle_FR45_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollIdle_FR90_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollIdle_FR90_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollIdle_B180_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollIdle_B180_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollIdle_BL45_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollIdle_BL45_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollIdle_BR45_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollIdle_BR45_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollCombat_F0_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollCombat_F0_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollCombat_FL45_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollCombat_FL45_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollCombat_FL90_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollCombat_FL90_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollCombat_FR45_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollCombat_FR45_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollCombat_FR90_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollCombat_FR90_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollCombat_B180_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollCombat_B180_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollCombat_BL45_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollCombat_BL45_Montage); } \
+	FORCEINLINE static uint32 __PPO__RollCombat_BR45_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollCombat_BR45_Montage); } \
+	FORCEINLINE static uint32 __PPO__BackStep_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, BackStep_Montage); } \
 	FORCEINLINE static uint32 __PPO__LightAttackMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, LightAttackMontage); } \
 	FORCEINLINE static uint32 __PPO__HeavyAttackMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, HeavyAttackMontage); } \
 	FORCEINLINE static uint32 __PPO__GuardBreakMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, GuardBreakMontage); } \
