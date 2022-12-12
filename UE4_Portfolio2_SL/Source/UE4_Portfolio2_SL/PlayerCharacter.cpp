@@ -19,7 +19,9 @@ APlayerCharacter::APlayerCharacter()
 	LeftWeapon(nullptr),
 	AttackDamage(0.0f),
 	DefaultDamage(10.0f),
-	IsLockTargetExist(false)
+	IsLockTargetExist(false),
+	LeftRightInputValue(0.0f),
+	CurrentSpeed(0.0f)
 {
 	PrimaryActorTick.bCanEverTick = true;
 
@@ -43,7 +45,7 @@ APlayerCharacter::APlayerCharacter()
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
 
-	GetCharacterMovement()->bOrientRotationToMovement = true; // 캐릭터가 입력 방향을 앞으로 움직이게 함	
+	GetCharacterMovement()->bOrientRotationToMovement = true; // 캐릭터가 입력 방향으로 회전 보간하게 함	
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f);
 	GetCharacterMovement()->JumpZVelocity = 300.0f; // 기본값(420)
 	GetCharacterMovement()->AirControl = 0.2f;
@@ -62,8 +64,9 @@ APlayerCharacter::APlayerCharacter()
 	m_CameraArm->bUsePawnControlRotation = true; // 마우스 움직임에 따라서 카메라 봉을 회전한다
 
 	m_Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
-	m_Camera->SetupAttachment(m_CameraArm, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
+	m_Camera->SetupAttachment(m_CameraArm);
 	m_Camera->bUsePawnControlRotation = false; // 카메라 봉의 움직임에 따라 카메라가 움직이지 않는다.
+
 
 	// 시작 장비 클래스 정보 저장하기
 	RightWeaponClass = AWeapon_Default::StaticClass();
@@ -108,7 +111,7 @@ void APlayerCharacter::Tick(float DeltaTime)
 	
 	IsFalling();
 	SetAttackDamage(); // 틱마다 공격 대미지를 계산함.
-	LookAtTarget(DeltaTime);
+	LookLockOnTarget(DeltaTime);
 }
 
 void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -162,7 +165,11 @@ void APlayerCharacter::MoveForward(float _Value)
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		AddMovementInput(Direction, _Value);
 
-		// MoveForwardValue = _Value; // 애님인스턴스에서 사용
+		ForwardBackInputValue = _Value; // LeftRightInputValue 값 조절용
+	}
+	else if ((Controller != nullptr) && (_Value == 0.0f))
+	{
+		ForwardBackInputValue = 0.0f;
 	}
 }
 
@@ -192,7 +199,17 @@ void APlayerCharacter::MoveRight(float _Value)
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		AddMovementInput(Direction, _Value);
 
-		// MoveLeftRightValue = _Value; // 애님인스턴스에서 사용
+		// 애님인스턴스에서 Strafe Movement에 사용
+		// 락온 상태에서 앞뒤 입력이 있을 경우 (대각선 이동)
+		if ((ForwardBackInputValue >= 1.0f || ForwardBackInputValue <= -1.0f) && IsLockTargetExist == true)
+		{
+			LeftRightInputValue = _Value * 0.5f;
+		}
+		else LeftRightInputValue = _Value;
+	}
+	else if ((Controller != nullptr) && (_Value == 0.0f))
+	{
+		LeftRightInputValue = 0.0f;
 	}
 }
 
@@ -228,6 +245,8 @@ void APlayerCharacter::CameraRotationPitch(float _Value)
 
 void APlayerCharacter::Walk(float _Value)
 {
+	// 단순 최대 속도 제한
+
 	if (_Value == 1)
 	{
 		GetCharacterMovement()->MaxWalkSpeed = 300.0f;
@@ -308,7 +327,9 @@ void APlayerCharacter::Guard(float _Value)
 void APlayerCharacter::Roll()
 {
 	if (Cur_State == EPLAYER_STATE::ROLL
-		|| Cur_State == EPLAYER_STATE::FALL)
+		|| Cur_State == EPLAYER_STATE::FALL
+		|| Cur_State == EPLAYER_STATE::JUMP
+		|| Cur_State == EPLAYER_STATE::SPELL)
 	{
 		return;
 	}
@@ -321,6 +342,7 @@ void APlayerCharacter::Roll()
 		{
 			ChangeState(EPLAYER_STATE::ROLL);
 
+			// 여기서 8방향 구르기 몽타주 재생시키기
 			if (IsFight == true) AnimInst->PlayRollCombatMontage();
 			else AnimInst->PlayRollIdleMontage();
 		}
@@ -472,7 +494,7 @@ void APlayerCharacter::LockOn()
 				ObjectTypeToLock, // 탐지된 대상들 저장할 배열
 				false, // 복잡한 충돌 판정 여부
 				ActorsToNotTargeting, // 무시할 대상들
-				EDrawDebugTrace::ForDuration,
+				EDrawDebugTrace::None, // EDrawDebugTrace::ForDuration
 				HitResult,
 				true, // 자신은 무시할지 여부
 				FLinearColor::Green, // 감지X
@@ -509,7 +531,7 @@ void APlayerCharacter::LockOn()
 }
 
 // 락온 된 대상 보기
-void APlayerCharacter::LookAtTarget(float DeltaSeconds)
+void APlayerCharacter::LookLockOnTarget(float DeltaSeconds)
 {
 	if (LockedOnTarget != nullptr)
 	{
@@ -530,8 +552,54 @@ void APlayerCharacter::LookAtTarget(float DeltaSeconds)
 		FRotator InterpRotation = UKismetMathLibrary::RInterpTo(GetController()->GetControlRotation(), LookAtRotation, DeltaSeconds, 10.0f);
 		// 보간 값을 기준으로 현재 카메라 회전값 수정하기
 		GetController()->SetControlRotation(FRotator(InterpRotation.Pitch, InterpRotation.Yaw, GetController()->GetControlRotation().Roll));
+
+		// 자동 회전 보간 꺼주기
+		GetCharacterMovement()->bOrientRotationToMovement = false;
+
+		// 락온 대상을 주시하면서 걷기(Strafe Movement)를 위한 캐릭터 회전
+		FRotator CharacterInterpRotation = UKismetMathLibrary::RInterpTo(GetActorRotation(), FRotator(GetActorRotation().Pitch, GetControlRotation().Yaw, GetActorRotation().Roll), DeltaSeconds, 10.0f);
+		GetController()->GetPawn()->SetActorRotation(CharacterInterpRotation);
 	}
-	else return;
+	else
+	{
+		GetCharacterMovement()->bOrientRotationToMovement = true;
+		return;
+	}
+}
+
+bool APlayerCharacter::GetIsLockOn()
+{
+	return IsLockTargetExist;
+}
+
+float APlayerCharacter::GetLeftRightInputValue()
+{
+	return LeftRightInputValue;
+}
+
+float APlayerCharacter::GetCurrentSpeed()
+{
+	// 락온 상태가 아니면
+	if (IsLockTargetExist == false)
+	{
+		return GetVelocity().Size(); // 일반적인 속도 계산
+	}
+	// 락온 상태면
+	else if(IsLockTargetExist == true)
+	{
+		// 앞으로 가면 속도는 + 값
+		if (ForwardBackInputValue > 0.0f)
+		{
+			return GetVelocity().Size();
+		}
+		// 뒤로 가면 속도는 - 값
+		else if (ForwardBackInputValue < 0.0f)
+		{
+			return GetVelocity().Size() * (-1.0f);
+		}
+	}
+	
+	return GetVelocity().Size();
 }
 
 AWeapon_Default* APlayerCharacter::GetRightWeapon()

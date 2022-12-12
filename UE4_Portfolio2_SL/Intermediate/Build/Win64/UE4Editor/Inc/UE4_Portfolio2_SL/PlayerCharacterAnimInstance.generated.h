@@ -92,6 +92,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__IsAttacking() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, IsAttacking); } \
 	FORCEINLINE static uint32 __PPO__IsAttackButtonWhenAttack() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, IsAttackButtonWhenAttack); } \
 	FORCEINLINE static uint32 __PPO__ComboCnt() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ComboCnt); } \
+	FORCEINLINE static uint32 __PPO__IsLockOn() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, IsLockOn); } \
 	FORCEINLINE static uint32 __PPO__KnockDown_Time() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, KnockDown_Time); } \
 	FORCEINLINE static uint32 __PPO__CurHP() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurHP); } \
 	FORCEINLINE static uint32 __PPO__CurStamina() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurStamina); } \

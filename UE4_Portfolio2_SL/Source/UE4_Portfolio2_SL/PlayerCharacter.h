@@ -51,13 +51,21 @@ protected:
 	void HeavyAttack();
 
 
-	// 락온 관련
-protected:
+	// 락온과 락온 움직임 관련
+public:
 	bool IsLockTargetExist;
 	AActor* LockedOnTarget = nullptr;
+	float ForwardBackInputValue;
+	float LeftRightInputValue;
+	float CurrentSpeed; // GetVelocity().Size()
+
 
 	void LockOn();
-	void LookAtTarget(float DeltaSeconds); // Tick에서 실행
+	void LookLockOnTarget(float DeltaSeconds); // Tick에서 실행
+
+	bool GetIsLockOn();
+	float GetLeftRightInputValue();
+	float GetCurrentSpeed();
 
 
 
@@ -98,20 +106,20 @@ private:
 
 
 private:
-	// 장비로 쓰일 액터 클래스 정보 저장 변수 선언(틀린거 없음)
+	// 장비로 쓰일 액터 클래스 정보 저장 변수 선언
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	TSubclassOf<class AWeapon_Default> RightWeaponClass;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	TSubclassOf<class AShield_Default> LeftWeaponClass;
 
-	// 장비 액터 선언(틀린거 없음)
+	// 장비 액터 선언
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	class AWeapon_Default* RightWeapon;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	class AShield_Default* LeftWeapon;
 
-	// 장비 액터 관련 함수(틀린거 없음)
+	// 장비 액터 관련 함수
 public:
 	AWeapon_Default* GetRightWeapon();
 	void SetRightWeapon(class AWeapon_Default* _NewWeapon);

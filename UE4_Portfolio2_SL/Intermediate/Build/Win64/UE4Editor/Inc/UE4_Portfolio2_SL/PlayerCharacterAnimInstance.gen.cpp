@@ -351,6 +351,11 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_ComboCnt;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IsLockOn_MetaData[];
+#endif
+		static void NewProp_IsLockOn_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsLockOn;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_KnockDown_Time_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_KnockDown_Time;
@@ -540,6 +545,18 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ComboCnt = { "ComboCnt", nullptr, (EPropertyFlags)0x0040000000000015, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerCharacterAnimInstance, ComboCnt), METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ComboCnt_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ComboCnt_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsLockOn_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "Character" },
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	void Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsLockOn_SetBit(void* Obj)
+	{
+		((UPlayerCharacterAnimInstance*)Obj)->IsLockOn = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsLockOn = { "IsLockOn", nullptr, (EPropertyFlags)0x0040000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UPlayerCharacterAnimInstance), &Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsLockOn_SetBit, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsLockOn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsLockOn_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_KnockDown_Time_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "Character" },
@@ -672,6 +689,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttacking,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsAttackButtonWhenAttack,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ComboCnt,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_IsLockOn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_KnockDown_Time,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_CurHP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_CurStamina,
@@ -716,7 +734,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerCharacterAnimInstance, 1836588811);
+	IMPLEMENT_CLASS(UPlayerCharacterAnimInstance, 1609390349);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UPlayerCharacterAnimInstance>()
 	{
 		return UPlayerCharacterAnimInstance::StaticClass();

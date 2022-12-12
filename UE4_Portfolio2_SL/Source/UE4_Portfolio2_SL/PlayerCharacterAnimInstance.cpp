@@ -11,6 +11,7 @@ UPlayerCharacterAnimInstance::UPlayerCharacterAnimInstance()
 	IsAttackButtonWhenAttack = false;
 	ComboCnt = 0;	
 	KnockDown_Time = 0.0f;
+	IsLockOn = false;
 
 
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_F_0_Seq_Montage.Roll_F_0_Seq_Montage'"));
@@ -48,8 +49,8 @@ void UPlayerCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 	if (IsValid(Pawn))
 	{
 		//CurrentSpeedAndDirection = (Pawn->GetVelocity().Size()) * (Pawn->GetMoveForwardValue()); // 현재 속도 계산하기
-		CurrentSpeed = (Pawn->GetVelocity().Size()); // 현재 속도 계산하기
-		//CurrentDirection = Pawn->GetMoveLeftRightValue(); // 오른쪽 왼쪽 이동 수치(-1 ~ 1) 가져오기
+		CurrentSpeed = (Pawn->GetCurrentSpeed()); // 현재 속도 계산하기
+		CurrentDirection = Pawn->GetLeftRightInputValue(); // 오른쪽 왼쪽 이동 수치(-1 ~ 1) 가져오기
 
 		IsGround = Pawn->GetMovementComponent()->IsMovingOnGround();
 		IsFalling = Pawn->GetIsFall();
@@ -60,7 +61,10 @@ void UPlayerCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		IsAttacking = Pawn->GetIsAttacking();		
 		IsAttackButtonWhenAttack = Pawn->GetIsAttackButtonWhenAttack();
 		ComboCnt = Pawn->GetComboCnt();
+		IsLockOn = Pawn->GetIsLockOn();
 		//KnockDown_Time = Pawn->GetKnockDownTime();
+
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(CurrentDirection));
 	}
 }
 
