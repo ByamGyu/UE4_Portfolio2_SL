@@ -124,8 +124,6 @@ void UEnemy_SkeletonWarrior_AnimInst::PlayDeadMontage()
 {
 	int32 tmp = FMath::RandRange(0, 1);
 
-	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Play Dead Animation"));
-
 	if (tmp == 0) Montage_Play(Dead1, 1.0f);
 	else if (tmp == 1) Montage_Play(Dead2, 1.0f);	
 }
@@ -162,4 +160,25 @@ void UEnemy_SkeletonWarrior_AnimInst::AnimNotify_InitState()
 {
 	auto Character = Cast<AEnemy_SkeletonWarrior>(TryGetPawnOwner());
 	if (Character != nullptr) Character->ChangeState(EMONSTER_STATE::IDLE);
+}
+
+void UEnemy_SkeletonWarrior_AnimInst::AnimNotify_PauseDeadMontage()
+{
+	auto Character = Cast<AEnemy_SkeletonWarrior>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		if (Montage_IsPlaying(Dead1))
+		{
+			Montage_Pause(Dead1);
+
+			// TODO
+		}
+		else if (Montage_IsPlaying(Dead2))
+		{
+			Montage_Pause(Dead2);
+
+			// TODO
+		}
+	}
+	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("asdf"));
 }

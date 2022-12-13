@@ -109,4 +109,6 @@ public:
 public:
 	UFUNCTION()
 	void AnimNotify_InitState();
+	UFUNCTION()
+	void AnimNotify_PauseDeadMontage();
 };

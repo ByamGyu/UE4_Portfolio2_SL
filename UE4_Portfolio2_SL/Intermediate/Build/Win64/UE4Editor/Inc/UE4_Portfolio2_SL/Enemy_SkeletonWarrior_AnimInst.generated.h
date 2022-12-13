@@ -16,11 +16,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_AnimInst_h_12_SPARSE_DATA
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_AnimInst_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execAnimNotify_PauseDeadMontage); \
 	DECLARE_FUNCTION(execAnimNotify_InitState);
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_AnimInst_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execAnimNotify_PauseDeadMontage); \
 	DECLARE_FUNCTION(execAnimNotify_InitState);
 
 

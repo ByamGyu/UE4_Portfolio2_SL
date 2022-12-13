@@ -35,7 +35,6 @@ AEnemy_SkeletonWarrior::AEnemy_SkeletonWarrior()
 void AEnemy_SkeletonWarrior::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 void AEnemy_SkeletonWarrior::Tick(float DeltaTime)

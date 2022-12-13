@@ -21,6 +21,13 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 	UE4_PORTFOLIO2_SL_API UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_PauseDeadMontage)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AnimNotify_PauseDeadMontage();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_InitState)
 	{
 		P_FINISH;
@@ -33,6 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 		UClass* Class = UEnemy_SkeletonWarrior_AnimInst::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AnimNotify_InitState", &UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_InitState },
+			{ "AnimNotify_PauseDeadMontage", &UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_PauseDeadMontage },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -55,6 +63,28 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_InitState_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Enemy_SkeletonWarrior_AnimInst.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst, nullptr, "AnimNotify_PauseDeadMontage", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -178,6 +208,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_InitState, "AnimNotify_InitState" }, // 2263863201
+		{ &Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage, "AnimNotify_PauseDeadMontage" }, // 4167258273
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::Class_MetaDataParams[] = {
@@ -454,7 +485,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEnemy_SkeletonWarrior_AnimInst, 2507539922);
+	IMPLEMENT_CLASS(UEnemy_SkeletonWarrior_AnimInst, 2018369680);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UEnemy_SkeletonWarrior_AnimInst>()
 	{
 		return UEnemy_SkeletonWarrior_AnimInst::StaticClass();
