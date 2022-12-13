@@ -141,6 +141,9 @@ public:
 
 	float GetCurHP() { return CurHP; }
 	void SetCurHP(float _Value);
+
+	void Dead();
+
 	void PlayImpactAnimation();
 	void PlayShieldBlockWeakAnimation();
 	void PlayShieldBlockStrongAnimation();

@@ -686,11 +686,26 @@ void APlayerCharacter::SetCurHP(float _Value)
 		if (CurHP <= 0.0f)
 		{
 			CurHP = 0;
-			ChangeState(EPLAYER_STATE::DEAD);
+			Dead();
 		}
 	}
 
 	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(CurHP));
+}
+
+void APlayerCharacter::Dead()
+{
+	if (GetCurHP() <= 0.0f)
+	{
+		auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+		if (AnimInst != nullptr)
+		{
+			ChangeState(EPLAYER_STATE::DEAD);
+			GetMesh()->SetCollisionProfileName("NoCollision");
+		}
+		else return;
+	}
+	else return;
 }
 
 void APlayerCharacter::PlayImpactAnimation()
