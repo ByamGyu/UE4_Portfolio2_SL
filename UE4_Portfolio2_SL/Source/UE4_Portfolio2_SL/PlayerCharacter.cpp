@@ -249,18 +249,18 @@ void APlayerCharacter::Walk(float _Value)
 
 	if (_Value == 1)
 	{
-		GetCharacterMovement()->MaxWalkSpeed = 300.0f;
+		GetCharacterMovement()->MaxWalkSpeed = 200.0f;
 	}
 	else
 	{
 		// 가드 움직임 상태면 return;
 		if (Cur_State == EPLAYER_STATE::GUARD)
 		{
-			GetCharacterMovement()->MaxWalkSpeed = 300.0f;
+			GetCharacterMovement()->MaxWalkSpeed = 200.0f;
 		}
 		else
 		{
-			GetCharacterMovement()->MaxWalkSpeed = 600.0f;
+			GetCharacterMovement()->MaxWalkSpeed = 400.0f;
 		}
 	}
 }

@@ -46,7 +46,7 @@ private:
 
 
 public:
-
+	virtual void PossessedBy(AController* NewController) override;
 
 public:
 	EMONSTER_STATE GetState() { return Cur_State; }
@@ -64,6 +64,7 @@ public:
 
 
 public:
+	void RandomAttackAll();
 	void ComboAttack01();
 	void ComboAttack02();
 	void ComboAttack03();

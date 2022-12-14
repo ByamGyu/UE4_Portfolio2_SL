@@ -159,7 +159,11 @@ void UEnemy_SkeletonWarrior_AnimInst::PlayStandupMontage()
 void UEnemy_SkeletonWarrior_AnimInst::AnimNotify_InitState()
 {
 	auto Character = Cast<AEnemy_SkeletonWarrior>(TryGetPawnOwner());
-	if (Character != nullptr) Character->ChangeState(EMONSTER_STATE::IDLE);
+	if (Character != nullptr)
+	{
+		Character->ChangeState(EMONSTER_STATE::IDLE);
+		Character->SetIsAttacking(false);
+	}
 }
 
 void UEnemy_SkeletonWarrior_AnimInst::AnimNotify_PauseDeadMontage()

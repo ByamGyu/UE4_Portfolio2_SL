@@ -1,7 +1,3 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
-  Building UE4_Portfolio2_SLEditor...
-  Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 1 action with 24 processes...
-    [1/1] UE4_Portfolio2_SLEditor.target
-  Total time in Parallel executor: 0.17 seconds
-  Total execution time: 0.79 seconds
+  Target is up to date
+  Total execution time: 0.72 seconds

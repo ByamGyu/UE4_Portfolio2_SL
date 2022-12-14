@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{AA19B9E1-4A1E-4C92-A02C-66B0AD060C51}</UniqueIdentifier>
+      <UniqueIdentifier>{447BA041-35B1-42D1-AC0E-B040AA11D50F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{C8D207B5-1554-4698-8525-802AF2B804F7}</UniqueIdentifier>
+      <UniqueIdentifier>{A96AE404-ECB3-4850-9D20-B1C6F3FB52D5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +30,38 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{3BEEBD00-5222-46EE-A358-19D8AA34EE1C}</UniqueIdentifier>
+      <UniqueIdentifier>{F3B0D407-D89C-4129-AD36-D11B9F19F237}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\AI_SkeletonWarrior.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\AI_SkeletonWarrior.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTDecorator_IsInAttackRange.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTDecorator_IsInAttackRange.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTService_DetectPlayer.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTService_DetectPlayer.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTTask_Attack.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTTask_Attack.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTTask_FindPatrolPos.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTTask_FindPatrolPos.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\define.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>

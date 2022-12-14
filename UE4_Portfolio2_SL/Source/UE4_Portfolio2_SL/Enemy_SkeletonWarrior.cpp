@@ -25,6 +25,7 @@ AEnemy_SkeletonWarrior::AEnemy_SkeletonWarrior()
 	if (ABP_SkeletonWarrior.Succeeded()) GetMesh()->SetAnimInstanceClass(ABP_SkeletonWarrior.Class);
 
 	GetCharacterMovement()->bOrientRotationToMovement = true;
+	GetCharacterMovement()->MaxWalkSpeed = 200.0f;
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 270.0f, 0.0f);
 	//GetCharacterMovement()->JumpZVelocity = 300.0f; // 기본값(420)
 	GetCharacterMovement()->AirControl = 0.1f;
@@ -41,7 +42,32 @@ void AEnemy_SkeletonWarrior::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (GetVelocity().Size() > 0.0f)
+	{
+		// 조건 조절 필요
+		if (Cur_State == EMONSTER_STATE::ATTACK
+			|| Cur_State == EMONSTER_STATE::DEAD
+			|| Cur_State == EMONSTER_STATE::FALL
+			|| Cur_State == EMONSTER_STATE::GUARD_BREAK
+			|| Cur_State == EMONSTER_STATE::KNOCK_DOWN)
+		{
+			return;
+		}
+		ChangeState(EMONSTER_STATE::MOVE);
+	}
+}
 
+void AEnemy_SkeletonWarrior::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	if (!IsPlayerControlled())
+	{
+		//GetCharacterMovement()->bUseControllerDesiredRotation = false;
+		bUseControllerRotationYaw = false;
+		GetCharacterMovement()->bOrientRotationToMovement = true;
+		GetCharacterMovement()->RotationRate = FRotator(0.0f, 480.0f, 0.0f);
+	}
 }
 
 void AEnemy_SkeletonWarrior::ChangeState(EMONSTER_STATE _NextState)
@@ -78,6 +104,31 @@ void AEnemy_SkeletonWarrior::SetCurHP(float _Value)
 	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString("SkeletonHP: ") + FString::SanitizeFloat(CurHP));
 }
 
+void AEnemy_SkeletonWarrior::RandomAttackAll()
+{
+	if (Cur_State == EMONSTER_STATE::IDLE
+		|| Cur_State == EMONSTER_STATE::MOVE)
+	{
+		auto AnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
+		if (AnimInst != nullptr)
+		{
+			IsAttacking = true;
+
+			int32 tmp = FMath::RandRange(0, 8);
+			if(tmp == 0) ComboAttack01();
+			else if(tmp == 1) ComboAttack02();
+			else if(tmp == 2) ComboAttack03();
+			else if(tmp == 3) SingleAttackStand01();
+			else if(tmp == 4) SingleAttackStand02();
+			else if(tmp == 5) SingleAttackStand03();
+			else if(tmp == 6) SingleAttackMove01();
+			else if(tmp == 7) SingleAttackMove02();
+			else if(tmp == 8) SingleAttackMove03();
+		}
+		else return;
+	}
+}
+
 void AEnemy_SkeletonWarrior::ComboAttack01()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
@@ -88,6 +139,9 @@ void AEnemy_SkeletonWarrior::ComboAttack01()
 		{
 			ChangeState(EMONSTER_STATE::ATTACK);
 
+			IsAttacking = true;
+
+			AnimInst->PlayCombo01StandMontage();
 		}
 		else return;
 	}
@@ -103,6 +157,9 @@ void AEnemy_SkeletonWarrior::ComboAttack02()
 		{
 			ChangeState(EMONSTER_STATE::ATTACK);
 
+			IsAttacking = true;
+
+			AnimInst->PlayCombo02MoveMontage();
 		}
 		else return;
 	}
@@ -118,6 +175,9 @@ void AEnemy_SkeletonWarrior::ComboAttack03()
 		{
 			ChangeState(EMONSTER_STATE::ATTACK);
 
+			IsAttacking = true;
+
+			AnimInst->PlayCombo03MixMontage();
 		}
 		else return;
 	}
@@ -132,7 +192,13 @@ void AEnemy_SkeletonWarrior::ComboAttackRandom()
 		if (AnimInst != nullptr)
 		{
 			ChangeState(EMONSTER_STATE::ATTACK);
+			
+			IsAttacking = true;
 
+			int32 tmp = FMath::RandRange(0, 2);
+			if (tmp == 0) ComboAttack01();
+			else if (tmp == 1) ComboAttack02();
+			else if (tmp == 2) ComboAttack03();
 		}
 		else return;
 	}
@@ -148,6 +214,9 @@ void AEnemy_SkeletonWarrior::SingleAttackStand01()
 		{
 			ChangeState(EMONSTER_STATE::ATTACK);
 
+			IsAttacking = true;
+
+			AnimInst->PlayAttackSlashStandMontage();
 		}
 		else return;
 	}
@@ -163,6 +232,9 @@ void AEnemy_SkeletonWarrior::SingleAttackStand02()
 		{
 			ChangeState(EMONSTER_STATE::ATTACK);
 
+			IsAttacking = true;
+
+			AnimInst->PlayAttackStrikeStandMontage();
 		}
 		else return;
 	}
@@ -178,6 +250,9 @@ void AEnemy_SkeletonWarrior::SingleAttackStand03()
 		{
 			ChangeState(EMONSTER_STATE::ATTACK);
 
+			IsAttacking = true;
+
+			AnimInst->PlayAttackThrustStandMontage();
 		}
 		else return;
 	}
@@ -193,6 +268,9 @@ void AEnemy_SkeletonWarrior::SingleAttackMove01()
 		{
 			ChangeState(EMONSTER_STATE::ATTACK);
 
+			IsAttacking = true;
+
+			AnimInst->PlayAttackSlashMoveMontage();
 		}
 		else return;
 	}
@@ -208,6 +286,9 @@ void AEnemy_SkeletonWarrior::SingleAttackMove02()
 		{
 			ChangeState(EMONSTER_STATE::ATTACK);
 
+			IsAttacking = true;
+
+			AnimInst->PlayAttackStrikeMoveMontage();
 		}
 		else return;
 	}
@@ -223,6 +304,9 @@ void AEnemy_SkeletonWarrior::SingleAttackMove03()
 		{
 			ChangeState(EMONSTER_STATE::ATTACK);
 
+			IsAttacking = true;
+
+			AnimInst->PlayAttackThrustMoveMontage();
 		}
 		else return;
 	}
@@ -236,7 +320,17 @@ void AEnemy_SkeletonWarrior::SingleAttackRandom()
 		auto AnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 		if (AnimInst != nullptr)
 		{
-			ChangeState(EMONSTER_STATE::ATTACK);			
+			ChangeState(EMONSTER_STATE::ATTACK);
+
+			IsAttacking = true;
+
+			int32 tmp = FMath::RandRange(0, 6);
+			if (tmp == 0) SingleAttackStand01();
+			else if (tmp == 1) SingleAttackStand02();
+			else if (tmp == 2) SingleAttackStand03();
+			else if (tmp == 3) SingleAttackMove01();
+			else if (tmp == 4) SingleAttackMove02();
+			else if (tmp == 5) SingleAttackMove03();
 		}
 		else return;
 	}
