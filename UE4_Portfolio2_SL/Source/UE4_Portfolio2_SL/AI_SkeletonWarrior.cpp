@@ -4,10 +4,13 @@
 #include "BehaviorTree/BlackboardComponent.h"
 
 
+// 이 클래스의 이름 변수와 BB의 변수를 연결
 // 다른 코드에서 관련 값을 참조하기가 편하지만, 하드코딩으로 값을 변경해야 한다.
 const FName AAI_SkeletonWarrior::HomePosKey(TEXT("HomePos"));
 const FName AAI_SkeletonWarrior::PatrolPosKey(TEXT("PatrolPos"));
 const FName AAI_SkeletonWarrior::TargetKey(TEXT("Target"));
+const FName AAI_SkeletonWarrior::PercentKey(TEXT("Percent"));
+const FName AAI_SkeletonWarrior::BackwardPosKey(TEXT("BackwardPos"));
 
 
 AAI_SkeletonWarrior::AAI_SkeletonWarrior()

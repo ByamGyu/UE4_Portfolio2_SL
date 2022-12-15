@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{447BA041-35B1-42D1-AC0E-B040AA11D50F}</UniqueIdentifier>
+      <UniqueIdentifier>{9A9A3B3D-9DBA-4081-8731-C6EDBB206D34}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{A96AE404-ECB3-4850-9D20-B1C6F3FB52D5}</UniqueIdentifier>
+      <UniqueIdentifier>{BB5A22C0-7159-4797-A386-B05D4F99B4AF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{F3B0D407-D89C-4129-AD36-D11B9F19F237}</UniqueIdentifier>
+      <UniqueIdentifier>{E8478D19-2280-455D-A54C-4C23C5ABDF6A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\AI_SkeletonWarrior.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
@@ -44,10 +44,28 @@
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTDecorator_IsInAttackRange.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTDeco_HasTargetAndInDefensDist.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTDeco_HasTargetAndInDefensDist.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTDe_HasTargetAndInOffensDist.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTDe_HasTargetAndInOffensDist.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTService_DetectPlayer.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTService_DetectPlayer.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTService_UpdateBackwardLocation.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTService_UpdateBackwardLocation.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTTask_Attack.cpp">
@@ -60,6 +78,12 @@
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTTask_FindPatrolPos.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTTask_TurntoTarget.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTTask_TurntoTarget.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\define.cpp">

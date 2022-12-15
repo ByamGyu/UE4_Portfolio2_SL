@@ -23,8 +23,9 @@ bool UBTDecorator_IsInAttackRange::CalculateRawConditionValue(UBehaviorTreeCompo
 
 	// 거리 계산
 	float Dist = ControllingPawn->GetDistanceTo(Target);
-	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(Dist));
+	//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(Dist));
 
-	if (Dist > 200.0f) return false;
-	else return true;
+	// 2m 이상 거리는 false 2m 미만 거리는 true
+	if (Dist <= 200.0f) return true;
+	else return false;
 }

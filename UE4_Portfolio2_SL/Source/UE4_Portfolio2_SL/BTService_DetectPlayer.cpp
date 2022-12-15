@@ -35,7 +35,7 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 	// 탐지 중심부
 	FVector Center = ControllingPawn->GetActorLocation();
 	// 탐지 범위
-	float DetectRadius = 500.0f;
+	float DetectRadius = 600.0f;
 
 	TArray<FOverlapResult> OverlapResults;
 	// 제외사항(AI가 조종하는 캐릭터 본인)
@@ -65,6 +65,10 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 				IsPlayerDetect = true;
 
 				OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_SkeletonWarrior::TargetKey, pPlayerCharacter);
+
+				// 앞으로의 행동을 결정할 확률값을 지정한다.
+				float tmp = FMath::FRandRange(0.0f, 1.0f);
+				OwnerComp.GetBlackboardComponent()->SetValueAsFloat(AAI_SkeletonWarrior::PercentKey, tmp);
 				DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Red, false, 0.2f);
 				DrawDebugPoint(World, pPlayerCharacter->GetActorLocation(), 50.0f, FColor::Red, false, 0.2f);
 				DrawDebugLine(World, ControllingPawn->GetActorLocation(), pPlayerCharacter->GetActorLocation(), FColor::Red, false, 0.2f);
@@ -78,6 +82,7 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 	if (IsPlayerDetect == false)
 	{
 		OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_SkeletonWarrior::TargetKey, nullptr);
+		OwnerComp.GetBlackboardComponent()->SetValueAsFloat(AAI_SkeletonWarrior::PercentKey, 0.0f);
 	}
 
 	DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Green, false, 0.2f);
