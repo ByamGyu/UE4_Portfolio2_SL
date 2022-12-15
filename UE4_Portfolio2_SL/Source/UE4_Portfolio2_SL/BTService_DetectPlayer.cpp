@@ -6,10 +6,12 @@
 // 헤더파일 주의!
 
 
+
 UBTService_DetectPlayer::UBTService_DetectPlayer()
 {
 	NodeName = TEXT("DetectPlayer");
 	Interval = 0.5f;
+	RandomDeviation = 0.0f;
 }
 
 void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
@@ -50,28 +52,32 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 		CollisionQueryParam
 	);	
 
-	if (OverlapResults.Num() > 0)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Target is Exist"));
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::FromInt(OverlapResults.Num()));
+	bool IsPlayerDetect = false; // 플레이어가 감지됐는지
 
-		for (int i = 0; i < OverlapResults.Num(); i++)
+	if (bResult == true) // 감지된 것이 있는지
+	{
+		for (int i = 0; i < OverlapResults.Num(); i++) // 감지된 목록들 순회
 		{
 			APlayerCharacter* pPlayerCharacter = Cast<APlayerCharacter>(OverlapResults[i].GetActor());
+			// 감지된 목록이 플레이어 클래스고, 플레이어가 조종하고 있다면
 			if (pPlayerCharacter != nullptr && pPlayerCharacter->GetController()->IsPlayerController() == true)
 			{
+				IsPlayerDetect = true;
+
 				OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_SkeletonWarrior::TargetKey, pPlayerCharacter);
 				DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Red, false, 0.2f);
 				DrawDebugPoint(World, pPlayerCharacter->GetActorLocation(), 50.0f, FColor::Red, false, 0.2f);
 				DrawDebugLine(World, ControllingPawn->GetActorLocation(), pPlayerCharacter->GetActorLocation(), FColor::Red, false, 0.2f);
+				
 				return;
 			}
 		}
 	}
-	else
+
+	// 플레이어가 감지됐다면
+	if (IsPlayerDetect == false)
 	{
 		OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_SkeletonWarrior::TargetKey, nullptr);
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("bResult is false"));
 	}
 
 	DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Green, false, 0.2f);
