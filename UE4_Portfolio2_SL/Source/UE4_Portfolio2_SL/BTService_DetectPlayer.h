@@ -10,7 +10,7 @@ UCLASS()
 class UE4_PORTFOLIO2_SL_API UBTService_DetectPlayer : public UBTService
 {
 	GENERATED_BODY()
-	
+
 
 public:
 	UBTService_DetectPlayer();

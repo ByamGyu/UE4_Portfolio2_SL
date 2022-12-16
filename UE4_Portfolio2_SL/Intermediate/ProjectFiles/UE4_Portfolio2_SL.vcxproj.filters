@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{9A9A3B3D-9DBA-4081-8731-C6EDBB206D34}</UniqueIdentifier>
+      <UniqueIdentifier>{0AB1EF64-2139-4B39-8F71-3AA0BC4AD0C1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{BB5A22C0-7159-4797-A386-B05D4F99B4AF}</UniqueIdentifier>
+      <UniqueIdentifier>{745019BB-94A3-4D57-8739-BF2AC63CF26F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{E8478D19-2280-455D-A54C-4C23C5ABDF6A}</UniqueIdentifier>
+      <UniqueIdentifier>{70ECDDAB-39FB-41A5-803F-B4610D37B05C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\AI_SkeletonWarrior.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>

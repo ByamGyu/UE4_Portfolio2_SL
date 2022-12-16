@@ -1,4 +1,5 @@
 #include "AI_SkeletonWarrior.h"
+#include "Enemy_SkeletonWarrior.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "BehaviorTree/BlackboardData.h"
 #include "BehaviorTree/BlackboardComponent.h"

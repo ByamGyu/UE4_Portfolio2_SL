@@ -30,11 +30,26 @@ void UBTService_UpdateBackwardLocation::TickNode(UBehaviorTreeComponent& OwnerCo
 		return;
 	}
 
+	// BackwarLocation 결정하는 부분(대각선 방향을 추가할까?)
 	FVector CurLoc = ControllingPawn->GetActorLocation();
-	FVector BackwardDirection = ControllingPawn->GetActorForwardVector() * (-1);
-	FVector BackwardLocation = CurLoc + (BackwardDirection * 300);
-	
-	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Set Backward Value"));
-	OwnerComp.GetBlackboardComponent()->SetValueAsVector(AAI_SkeletonWarrior::BackwardPosKey, BackwardLocation);
+	FVector RightDir = ControllingPawn->GetActorRightVector();
+	FVector BackwardDir = ControllingPawn->GetActorForwardVector() * (-1);
+	FVector NextLocation;
 
+	int32 tmp = FMath::RandRange(0, 2);
+	if (tmp == 0) // 오른쪽
+	{
+		NextLocation = CurLoc + (RightDir) * 250.0f + BackwardDir * 25.0f;
+	}
+	else if(tmp == 1) // 왼쪽
+	{
+		NextLocation = CurLoc - (RightDir) * 250.0f + BackwardDir * 25.0f;
+	}
+	else if (tmp == 2) // 뒤
+	{
+		NextLocation = CurLoc + (BackwardDir * 250);
+	}
+
+	// BB에 다음 위치 저장하기
+	OwnerComp.GetBlackboardComponent()->SetValueAsVector(AAI_SkeletonWarrior::BackwardPosKey, NextLocation);
 }

@@ -72,60 +72,60 @@ void UEnemy_SkeletonWarrior_AnimInst::NativeUpdateAnimation(float DeltaSeconds)
 
 void UEnemy_SkeletonWarrior_AnimInst::PlayCombo01StandMontage()
 {
-	Montage_Play(Attack_Combo_01_Stand, 1.0f);
+	Montage_Play(Attack_Combo_01_Stand, 0.8f);
 }
 
 void UEnemy_SkeletonWarrior_AnimInst::PlayCombo02MoveMontage()
 {
-	Montage_Play(Attack_Combo_02_Move, 1.0f);
+	Montage_Play(Attack_Combo_02_Move, 0.8f);
 }
 
 void UEnemy_SkeletonWarrior_AnimInst::PlayCombo03MixMontage()
 {
-	Montage_Play(Attack_Combo_03_Mix, 1.0f);
+	Montage_Play(Attack_Combo_03_Mix, 0.8f);
 }
 
 void UEnemy_SkeletonWarrior_AnimInst::PlayAttackSlashStandMontage()
 {
-	Montage_Play(Attack_Slash_Stand, 1.0f);
+	Montage_Play(Attack_Slash_Stand, 0.8f);
 }
 
 void UEnemy_SkeletonWarrior_AnimInst::PlayAttackStrikeStandMontage()
 {
-	Montage_Play(Attack_Strike_Stand, 1.0f);
+	Montage_Play(Attack_Strike_Stand, 0.8f);
 }
 
 void UEnemy_SkeletonWarrior_AnimInst::PlayAttackThrustStandMontage()
 {
-	Montage_Play(Attack_Thrust_Stand, 1.0f);
+	Montage_Play(Attack_Thrust_Stand, 0.8f);
 }
 
 void UEnemy_SkeletonWarrior_AnimInst::PlayAttackSlashMoveMontage()
 {
-	Montage_Play(Attack_Slash_Move, 1.0f);
+	Montage_Play(Attack_Slash_Move, 0.8f);
 }
 
 void UEnemy_SkeletonWarrior_AnimInst::PlayAttackStrikeMoveMontage()
 {
-	Montage_Play(Attack_Strike_Move, 1.0f);
+	Montage_Play(Attack_Strike_Move, 0.8f);
 }
 
 void UEnemy_SkeletonWarrior_AnimInst::PlayAttackThrustMoveMontage()
 {
-	Montage_Play(Attack_Thrust_Move, 1.0f);
+	Montage_Play(Attack_Thrust_Move, 0.8f);
 }
 
 void UEnemy_SkeletonWarrior_AnimInst::PlayGuardBreakMontage()
 {
-	Montage_Play(GuardBreak, 1.0f);
+	Montage_Play(GuardBreak, 0.8f);
 }
 
 void UEnemy_SkeletonWarrior_AnimInst::PlayDeadMontage()
 {
 	int32 tmp = FMath::RandRange(0, 1);
 
-	if (tmp == 0) Montage_Play(Dead1, 1.0f);
-	else if (tmp == 1) Montage_Play(Dead2, 1.0f);	
+	if (tmp == 0) Montage_Play(Dead1, 0.8f);
+	else if (tmp == 1) Montage_Play(Dead2, 0.8f);
 }
 
 void UEnemy_SkeletonWarrior_AnimInst::PlayImpactMontage()

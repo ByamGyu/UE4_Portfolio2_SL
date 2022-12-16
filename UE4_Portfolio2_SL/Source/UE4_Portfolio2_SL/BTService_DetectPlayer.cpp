@@ -18,7 +18,7 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 {
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 
-	auto ControllingPawn = OwnerComp.GetAIOwner()->GetPawn();
+	auto ControllingPawn = Cast<ACharacter>(OwnerComp.GetAIOwner()->GetPawn());
 	if (ControllingPawn == nullptr)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("AI Owner is Missing"));
@@ -31,6 +31,10 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("World is Missing"));
 		return;
 	}
+
+	// 앞으로의 행동을 결정할 확률값을 지정한다.
+	float tmp = FMath::FRandRange(0.0f, 1.0f);
+	OwnerComp.GetBlackboardComponent()->SetValueAsFloat(AAI_SkeletonWarrior::PercentKey, tmp);
 
 	// 탐지 중심부
 	FVector Center = ControllingPawn->GetActorLocation();
@@ -50,9 +54,9 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 		ECollisionChannel::ECC_GameTraceChannel4, // DetectPlayer
 		FCollisionShape::MakeSphere(DetectRadius),
 		CollisionQueryParam
-	);	
+	);
 
-	bool IsPlayerDetect = false; // 플레이어가 감지됐는지
+	bool IsTargetFind = false;
 
 	if (bResult == true) // 감지된 것이 있는지
 	{
@@ -62,27 +66,46 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 			// 감지된 목록이 플레이어 클래스고, 플레이어가 조종하고 있다면
 			if (pPlayerCharacter != nullptr && pPlayerCharacter->GetController()->IsPlayerController() == true)
 			{
-				IsPlayerDetect = true;
+				FVector OwnerForward = OwnerComp.GetAIOwner()->GetPawn()->GetActorForwardVector();
+				FVector TargetForward = pPlayerCharacter->GetActorForwardVector();
+				float Dot = FVector::DotProduct(OwnerForward, TargetForward);
+				float AcosAngle = FMath::Acos(Dot);
+				float AngleDegree = FMath::RadiansToDegrees(AcosAngle);
 
-				OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_SkeletonWarrior::TargetKey, pPlayerCharacter);
+				GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(AngleDegree));
 
-				// 앞으로의 행동을 결정할 확률값을 지정한다.
-				float tmp = FMath::FRandRange(0.0f, 1.0f);
-				OwnerComp.GetBlackboardComponent()->SetValueAsFloat(AAI_SkeletonWarrior::PercentKey, tmp);
-				DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Red, false, 0.2f);
-				DrawDebugPoint(World, pPlayerCharacter->GetActorLocation(), 50.0f, FColor::Red, false, 0.2f);
-				DrawDebugLine(World, ControllingPawn->GetActorLocation(), pPlayerCharacter->GetActorLocation(), FColor::Red, false, 0.2f);
-				
-				return;
+				// 시야각 160도에 있으면 감지
+				if (AngleDegree >= 100.0f)
+				{
+					OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_SkeletonWarrior::TargetKey, pPlayerCharacter);
+
+					DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Red, false, 0.2f);
+					DrawDebugPoint(World, pPlayerCharacter->GetActorLocation(), 50.0f, FColor::Red, false, 0.2f);
+					DrawDebugLine(World, ControllingPawn->GetActorLocation(), pPlayerCharacter->GetActorLocation(), FColor::Red, false, 0.2f);
+
+					IsTargetFind = true;
+				}
 			}
 		}
 	}
 
-	// 플레이어가 감지됐다면
-	if (IsPlayerDetect == false)
+	// 플레이어가 감지되지 않았다면
+	if (IsTargetFind == false)
 	{
 		OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_SkeletonWarrior::TargetKey, nullptr);
-		OwnerComp.GetBlackboardComponent()->SetValueAsFloat(AAI_SkeletonWarrior::PercentKey, 0.0f);
+		
+		ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = true;
+		ControllingPawn->GetCharacterMovement()->MaxWalkSpeed = 200.0f;
+
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Target Is Not Exist"));
+	}
+	// 플레이어가 감지됐다면
+	else if (IsTargetFind == true)
+	{
+		ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = false;
+		ControllingPawn->GetCharacterMovement()->MaxWalkSpeed = 75.0f;
+
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Target Is Exist"));
 	}
 
 	DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Green, false, 0.2f);
