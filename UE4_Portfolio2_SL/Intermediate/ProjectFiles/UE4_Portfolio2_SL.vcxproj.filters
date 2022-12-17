@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{0AB1EF64-2139-4B39-8F71-3AA0BC4AD0C1}</UniqueIdentifier>
+      <UniqueIdentifier>{CB5BA93A-1707-48D4-B35B-71E869711561}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{745019BB-94A3-4D57-8739-BF2AC63CF26F}</UniqueIdentifier>
+      <UniqueIdentifier>{BC666CE1-9B54-4BA5-9A5D-A6B2B6096BA1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{70ECDDAB-39FB-41A5-803F-B4610D37B05C}</UniqueIdentifier>
+      <UniqueIdentifier>{94A547ED-6CC3-4AD2-A4F6-9BA9A2DCBC6E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\AI_SkeletonWarrior.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
@@ -90,6 +90,12 @@
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\define.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Enemy_Base.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\Enemy_Base.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Enemy_SkeletonWarrior.cpp">

@@ -1,15 +1,15 @@
 #pragma once
 
-
-#include "EngineMinimal.h"
-#include "GameFramework/Character.h"
+#include "CoreMinimal.h"
+#include "Enemy_Base.h"
 #include "define.h"
 #include "Enemy_SkeletonWarrior_AnimInst.h"
 #include "Enemy_SkeletonWarrior.generated.h"
 
 
+
 UCLASS()
-class UE4_PORTFOLIO2_SL_API AEnemy_SkeletonWarrior : public ACharacter
+class UE4_PORTFOLIO2_SL_API AEnemy_SkeletonWarrior : public AEnemy_Base
 {
 	GENERATED_BODY()
 
@@ -23,30 +23,9 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 
-	// 능력치 정보
-private:
-	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	EMONSTER_STATE Cur_State;
-	
-
-	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	float MaxHP;
-	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	float CurHP;
-	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	float HPRatio;
-
-	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	float AttackDamage;
-
-	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	bool IsAttacking;
-	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	bool IsFight;
-
-
 public:
 	virtual void PossessedBy(AController* NewController) override;
+
 
 public:
 	EMONSTER_STATE GetState() { return Cur_State; }
@@ -78,10 +57,4 @@ public:
 	void SingleAttackRandom();
 
 	void Dead();
-
-
-
-
-	// 대미지 받기 프레임워크
-	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 };

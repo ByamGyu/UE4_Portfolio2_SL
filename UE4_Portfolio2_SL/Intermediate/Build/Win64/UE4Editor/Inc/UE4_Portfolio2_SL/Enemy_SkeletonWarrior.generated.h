@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesAEnemy_SkeletonWarrior(); \
 	friend struct Z_Construct_UClass_AEnemy_SkeletonWarrior_Statics; \
 public: \
-	DECLARE_CLASS(AEnemy_SkeletonWarrior, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UE4_Portfolio2_SL"), NO_API) \
+	DECLARE_CLASS(AEnemy_SkeletonWarrior, AEnemy_Base, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UE4_Portfolio2_SL"), NO_API) \
 	DECLARE_SERIALIZER(AEnemy_SkeletonWarrior)
 
 
@@ -30,7 +30,7 @@ private: \
 	static void StaticRegisterNativesAEnemy_SkeletonWarrior(); \
 	friend struct Z_Construct_UClass_AEnemy_SkeletonWarrior_Statics; \
 public: \
-	DECLARE_CLASS(AEnemy_SkeletonWarrior, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UE4_Portfolio2_SL"), NO_API) \
+	DECLARE_CLASS(AEnemy_SkeletonWarrior, AEnemy_Base, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UE4_Portfolio2_SL"), NO_API) \
 	DECLARE_SERIALIZER(AEnemy_SkeletonWarrior)
 
 
@@ -58,16 +58,7 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AEnemy_SkeletonWarrior)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_h_14_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__Cur_State() { return STRUCT_OFFSET(AEnemy_SkeletonWarrior, Cur_State); } \
-	FORCEINLINE static uint32 __PPO__MaxHP() { return STRUCT_OFFSET(AEnemy_SkeletonWarrior, MaxHP); } \
-	FORCEINLINE static uint32 __PPO__CurHP() { return STRUCT_OFFSET(AEnemy_SkeletonWarrior, CurHP); } \
-	FORCEINLINE static uint32 __PPO__HPRatio() { return STRUCT_OFFSET(AEnemy_SkeletonWarrior, HPRatio); } \
-	FORCEINLINE static uint32 __PPO__AttackDamage() { return STRUCT_OFFSET(AEnemy_SkeletonWarrior, AttackDamage); } \
-	FORCEINLINE static uint32 __PPO__IsAttacking() { return STRUCT_OFFSET(AEnemy_SkeletonWarrior, IsAttacking); } \
-	FORCEINLINE static uint32 __PPO__IsFight() { return STRUCT_OFFSET(AEnemy_SkeletonWarrior, IsFight); }
-
-
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_h_14_PRIVATE_PROPERTY_OFFSET
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_h_11_PROLOG
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

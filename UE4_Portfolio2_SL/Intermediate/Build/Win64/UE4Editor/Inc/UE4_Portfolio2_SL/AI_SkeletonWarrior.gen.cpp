@@ -51,6 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeAI_SkeletonWarrior() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAI_SkeletonWarrior_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "AI_SkeletonWarrior.h" },
 		{ "ModuleRelativePath", "AI_SkeletonWarrior.h" },
@@ -99,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeAI_SkeletonWarrior() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AAI_SkeletonWarrior, 1837577439);
+	IMPLEMENT_CLASS(AAI_SkeletonWarrior, 2265292423);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<AAI_SkeletonWarrior>()
 	{
 		return AAI_SkeletonWarrior::StaticClass();

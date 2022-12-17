@@ -4,12 +4,14 @@
 #include "AIController.h"
 #include "AI_SkeletonWarrior.generated.h"
 
-
+/**
+ * 
+ */
 UCLASS()
 class UE4_PORTFOLIO2_SL_API AAI_SkeletonWarrior : public AAIController
 {
 	GENERATED_BODY()
-	
+
 
 public:
 	AAI_SkeletonWarrior();
@@ -18,9 +20,9 @@ public:
 
 private:
 	UPROPERTY()
-	class UBehaviorTree* BT;
+		class UBehaviorTree* BT;
 	UPROPERTY()
-	class UBlackboardData* BB;
+		class UBlackboardData* BB;
 
 
 public:
