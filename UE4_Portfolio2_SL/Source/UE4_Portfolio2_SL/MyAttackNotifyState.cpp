@@ -63,38 +63,47 @@ void UMyAttackNotifyState::NotifyTick(USkeletalMeshComponent* MeshComp, UAnimSeq
 				{
 					if (hit[i].GetActor()->IsA(AActor::StaticClass()))
 					{
-						// 플레이어 캐릭터 종류일 경우
-						APlayerCharacter* hittedActor = Cast<APlayerCharacter>(hit[i].GetActor());
-						if (!arrHittedResults.Contains(hittedActor) && hittedActor != nullptr) // 중복 방지 배열에 없으면
+						//// 플레이어 캐릭터 종류일 경우
+						//APlayerCharacter* hittedActor = Cast<APlayerCharacter>(hit[i].GetActor());
+						//if (!arrHittedResults.Contains(hittedActor) && hittedActor != nullptr) // 중복 방지 배열에 없으면
+						//{
+						//	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, hittedActor->GetName());
+						//	arrHittedResults.Add(hittedActor); // 중복 방지를 위해 추가하기
+
+						//	// 내적 계산하기
+						//	FVector OwnerForward = Character->GetActorForwardVector();
+						//	FVector HittedActorForward = hittedActor->GetActorForwardVector();
+						//	float Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
+						//	float AcosAngle = FMath::Acos(Dot);
+						//	float AngleDegree = FMath::RadiansToDegrees(AcosAngle);
+
+						//	// 좌우각 60도까지 방어
+						//	if (AngleDegree >= 120.0f)
+						//	{
+						//		if (hittedActor->GetState() == EPLAYER_STATE::GUARD)
+						//		{
+						//			hittedActor->PlayShieldBlockWeakAnimation();
+						//		}
+						//		else
+						//		{
+						//			hittedActor->PlayImpactAnimation();
+						//			GiveDamage(Character, hittedActor);
+						//		}
+						//	}
+						//	else
+						//	{
+						//		hittedActor->PlayImpactAnimation();
+						//		GiveDamage(Character, hittedActor);
+						//	}
+						//}
+
+						ACharacter* hittedCharacter = Cast<ACharacter>(hit[i].GetActor());
+						if (!arrHittedResults.Contains(hittedCharacter) && hittedCharacter != nullptr)
 						{
-							GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, hittedActor->GetName());
-							arrHittedResults.Add(hittedActor); // 중복 방지를 위해 추가하기
+							GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, hittedCharacter->GetName());
+							arrHittedResults.Add(hittedCharacter);
 
-							// 내적 계산하기
-							FVector OwnerForward = Character->GetActorForwardVector();
-							FVector HittedActorForward = hittedActor->GetActorForwardVector();
-							float Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
-							float AcosAngle = FMath::Acos(Dot);
-							float AngleDegree = FMath::RadiansToDegrees(AcosAngle);
-
-							// 좌우각 60도까지 방어
-							if (AngleDegree >= 120.0f)
-							{
-								if (hittedActor->GetState() == EPLAYER_STATE::GUARD)
-								{
-									hittedActor->PlayShieldBlockWeakAnimation();
-								}
-								else
-								{
-									hittedActor->PlayImpactAnimation();
-									GiveDamage(Character, hittedActor);
-								}
-							}
-							else
-							{
-								hittedActor->PlayImpactAnimation();
-								GiveDamage(Character, hittedActor);
-							}
+							//hittedCharacter->
 						}
 					}
 				}

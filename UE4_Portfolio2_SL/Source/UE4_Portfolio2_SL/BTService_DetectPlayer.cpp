@@ -67,15 +67,15 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 			if (pPlayerCharacter != nullptr && pPlayerCharacter->GetController()->IsPlayerController() == true)
 			{
 				FVector OwnerForward = OwnerComp.GetAIOwner()->GetPawn()->GetActorForwardVector();
-				FVector TargetForward = pPlayerCharacter->GetActorForwardVector();
-				float Dot = FVector::DotProduct(OwnerForward, TargetForward);
+				FVector TargetDir = OwnerComp.GetAIOwner()->GetPawn()->GetActorLocation() - pPlayerCharacter->GetActorLocation();
+				float Dot = FVector::DotProduct(OwnerForward, TargetDir);
 				float AcosAngle = FMath::Acos(Dot);
 				float AngleDegree = FMath::RadiansToDegrees(AcosAngle);
 
-				GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(AngleDegree));
+				//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Dot: ") + FString::SanitizeFloat(AngleDegree));
 
-				// 시야각 160도에 있으면 감지
-				if (AngleDegree >= 100.0f)
+				// 시야각 140도에 있으면 감지
+				if (AngleDegree >= 140.0f)
 				{
 					OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_SkeletonWarrior::TargetKey, pPlayerCharacter);
 
