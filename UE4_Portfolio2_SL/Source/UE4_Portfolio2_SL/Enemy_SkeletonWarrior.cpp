@@ -1,4 +1,5 @@
 #include "Enemy_SkeletonWarrior.h"
+#include "AI_Base.h"
 
 
 AEnemy_SkeletonWarrior::AEnemy_SkeletonWarrior()
@@ -42,17 +43,23 @@ void AEnemy_SkeletonWarrior::Tick(float DeltaTime)
 			|| Cur_State == EMONSTER_STATE::DEAD
 			|| Cur_State == EMONSTER_STATE::FALL
 			|| Cur_State == EMONSTER_STATE::GUARD_BREAK
-			|| Cur_State == EMONSTER_STATE::KNOCK_DOWN)
+			|| Cur_State == EMONSTER_STATE::KNOCK_DOWN
+			|| Cur_State == EMONSTER_STATE::IMPACT_WEAK
+			|| Cur_State == EMONSTER_STATE::IMPACT_STRONG
+			|| Cur_State == EMONSTER_STATE::GUARD_IMPACT_WEAK
+			|| Cur_State == EMONSTER_STATE::GUARD_IMPACT_STRONG
+			)
 		{
 			return;
 		}
-		ChangeState(EMONSTER_STATE::MOVE);
+		else ChangeState(EMONSTER_STATE::MOVE);
 	}
 }
 
 void AEnemy_SkeletonWarrior::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
+
 
 	if (!IsPlayerControlled())
 	{
@@ -75,29 +82,19 @@ float AEnemy_SkeletonWarrior::GetCurrentSpeed()
 	return GetVelocity().Size();
 }
 
+float AEnemy_SkeletonWarrior::GetCurHP()
+{
+	return CurHP;
+}
+
 void AEnemy_SkeletonWarrior::SetCurHP(float _Value)
 {
-	if (_Value > 0) // +는 회복 관련
-	{
-		CurHP += _Value;
-
-		if (CurHP >= MaxHP) CurHP = MaxHP;
-	}
-	else if (_Value < 0) // -는 입은 피해
-	{
-		CurHP += _Value;
-
-		if (CurHP <= 0.0f)
-		{
-			CurHP = 0;
-			Dead();
-		}
-	}
+	Super::SetCurHP(_Value);
 
 	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString("SkeletonHP: ") + FString::SanitizeFloat(CurHP));
 }
 
-void AEnemy_SkeletonWarrior::RandomAttackAll()
+void AEnemy_SkeletonWarrior::RandomAttackAll1()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
 		|| Cur_State == EMONSTER_STATE::MOVE)
@@ -329,14 +326,42 @@ void AEnemy_SkeletonWarrior::SingleAttackRandom()
 	}
 }
 
+void AEnemy_SkeletonWarrior::PlayHitAniamtion(float _Degree)
+{
+	Super::PlayHitAniamtion(_Degree);
+
+	auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::IMPACT_WEAK);
+		
+		if (_Degree >= 90.0f)
+		{
+			pAnimInst->PlayImpactMontage();
+		}
+		else if (_Degree < 90.0f)
+		{
+			pAnimInst->PlayHitBackMontage();
+		}
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
 void AEnemy_SkeletonWarrior::Dead()
 {
+	Super::Dead();
+
 	auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 	if (pAnimInst != nullptr)
 	{
 		ChangeState(EMONSTER_STATE::DEAD);
 		pAnimInst->PlayDeadMontage();
-		GetMesh()->SetCollisionProfileName("NoCollision");
+		
+		
+
+		// TODO (효과음?)
 	}
 	else return;
 }

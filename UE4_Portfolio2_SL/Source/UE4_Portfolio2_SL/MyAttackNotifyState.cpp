@@ -16,15 +16,12 @@ void UMyAttackNotifyState::NotifyBegin(USkeletalMeshComponent* MeshComp, UAnimSe
 	arrHittedResults.Empty();
 
 	// 노티파이 주인으로부터 대미지 정보 가져와 저장하기
-	if (MeshComp->GetOwner() != nullptr)
+	AActor* Owner = MeshComp->GetOwner();
+	if (Owner != nullptr)
 	{
-		AActor* Owner = MeshComp->GetOwner();
-		if (Owner != nullptr)
-		{
-			APlayerCharacter* Character = Cast<APlayerCharacter>(Owner);
-			if (Character != nullptr) AttackDamage = Character->GetAttackDamage();
-			else return;
-		}
+		APlayerCharacter* Character = Cast<APlayerCharacter>(Owner);
+		if (Character != nullptr) AttackDamage = Character->GetAttackDamage();
+		else return;
 	}
 }
 
@@ -39,7 +36,7 @@ void UMyAttackNotifyState::NotifyTick(USkeletalMeshComponent* MeshComp, UAnimSeq
 		APlayerCharacter* Character = Cast<APlayerCharacter>(Owner);
 		if (Character != nullptr && Character->GetRightWeapon() != nullptr) // 캐릭터에 오른쪽 무기가 있으면
 		{
-			// 오른쪽 무기 캐스팅해서 저장하기
+			// 오른쪽 무기 저장하기
 			AWeapon_Default* RightWeapon = Character->GetRightWeapon();
 
 			// 무기의 소켓 위치 가져오기
@@ -57,57 +54,39 @@ void UMyAttackNotifyState::NotifyTick(USkeletalMeshComponent* MeshComp, UAnimSeq
 				ECollisionChannel::ECC_GameTraceChannel2 // PlayerAttack
 			);
 
-			if (hit.IsValidIndex(0)) // 맞은 대상들이 있으면
+			// 맞은 대상들이 있으면
+			if (hit.IsValidIndex(0)) 
 			{
 				for (int i = 0; i < hit.Num(); i++)
 				{
 					if (hit[i].GetActor()->IsA(AActor::StaticClass()))
 					{
-						//// 플레이어 캐릭터 종류일 경우
-						//APlayerCharacter* hittedActor = Cast<APlayerCharacter>(hit[i].GetActor());
-						//if (!arrHittedResults.Contains(hittedActor) && hittedActor != nullptr) // 중복 방지 배열에 없으면
-						//{
-						//	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, hittedActor->GetName());
-						//	arrHittedResults.Add(hittedActor); // 중복 방지를 위해 추가하기
-
-						//	// 내적 계산하기
-						//	FVector OwnerForward = Character->GetActorForwardVector();
-						//	FVector HittedActorForward = hittedActor->GetActorForwardVector();
-						//	float Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
-						//	float AcosAngle = FMath::Acos(Dot);
-						//	float AngleDegree = FMath::RadiansToDegrees(AcosAngle);
-
-						//	// 좌우각 60도까지 방어
-						//	if (AngleDegree >= 120.0f)
-						//	{
-						//		if (hittedActor->GetState() == EPLAYER_STATE::GUARD)
-						//		{
-						//			hittedActor->PlayShieldBlockWeakAnimation();
-						//		}
-						//		else
-						//		{
-						//			hittedActor->PlayImpactAnimation();
-						//			GiveDamage(Character, hittedActor);
-						//		}
-						//	}
-						//	else
-						//	{
-						//		hittedActor->PlayImpactAnimation();
-						//		GiveDamage(Character, hittedActor);
-						//	}
-						//}
-
-						ACharacter* hittedCharacter = Cast<ACharacter>(hit[i].GetActor());
+						// 적이 Enemy_Base 타입이면
+						AEnemy_Base* hittedCharacter = Cast<AEnemy_Base>(hit[i].GetActor());
+						// 중복 체크 및 null 체크 (적 Mesh 콜리전은 EnemyPhysicsActor!!!)
 						if (!arrHittedResults.Contains(hittedCharacter) && hittedCharacter != nullptr)
 						{
 							GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, hittedCharacter->GetName());
 							arrHittedResults.Add(hittedCharacter);
 
-							//hittedCharacter->
+							// 내적 계산하기(현재 사용하지 않음)
+							FVector OwnerForward = Character->GetActorForwardVector();
+							FVector HittedActorForward = hittedCharacter->GetActorForwardVector();
+							float Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
+							float AcosAngle = FMath::Acos(Dot);
+							float AngleDegree = FMath::RadiansToDegrees(AcosAngle);
+							hittedCharacter->PlayHitAniamtion(AngleDegree);
+
+							GiveDamage(Character, hittedCharacter);
 						}
 					}
 				}
 			}
+		}
+		// 캐릭터는 있는데 오른손 장비가 없으면
+		else if (Character != nullptr && Character->GetRightWeapon() == nullptr)
+		{
+			// 구현할 계획이면 TODO
 		}
 		else return;
 	}
@@ -118,7 +97,7 @@ void UMyAttackNotifyState::NotifyEnd(USkeletalMeshComponent* MeshComp, UAnimSequ
 	
 }
 
-void UMyAttackNotifyState::GiveDamage(APlayerCharacter* _Attacker, APlayerCharacter* _DamageTo)
+void UMyAttackNotifyState::GiveDamage(APlayerCharacter* _Attacker, AEnemy_Base* _DamageTo)
 {
 	FDamageEvent DamageEvent;
 

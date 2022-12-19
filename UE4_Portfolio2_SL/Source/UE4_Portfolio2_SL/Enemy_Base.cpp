@@ -1,5 +1,7 @@
 #include "Enemy_Base.h"
-
+#include "AI_Base.h"
+#include "BehaviorTree/BlackboardData.h"
+#include "BehaviorTree/BlackboardComponent.h"
 
 
 AEnemy_Base::AEnemy_Base()
@@ -17,7 +19,6 @@ void AEnemy_Base::BeginPlay()
 void AEnemy_Base::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 void AEnemy_Base::ChangeState(EMONSTER_STATE _NextState)
@@ -47,10 +48,9 @@ void AEnemy_Base::SetCurHP(float _Value)
 		if (CurHP <= 0.0f)
 		{
 			CurHP = 0;
+			Dead();
 		}
 	}
-
-	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString("EnemyBase HP: ") + FString::SanitizeFloat(CurHP));
 }
 
 float AEnemy_Base::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
@@ -65,12 +65,10 @@ float AEnemy_Base::TakeDamage(float DamageAmount, FDamageEvent const& DamageEven
 
 	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Used Tool: ") + DamageCauser->GetName());
 
-
-
 	return Damage;
 }
 
-void AEnemy_Base::RandomAttackAll()
+void AEnemy_Base::RandomAttackAll1()
 {
 }
 
@@ -118,6 +116,20 @@ void AEnemy_Base::SingleAttackRandom()
 {
 }
 
+void AEnemy_Base::PlayHitAniamtion(float _Degree)
+{	
+}
+
 void AEnemy_Base::Dead()
 {
+	// 피직스 애셋과 캡슐 콜리전 변경
+	GetMesh()->SetCollisionProfileName("NoCollision");
+	GetCapsuleComponent()->SetCollisionProfileName("OverlapAllObjectsIgnoreAllTrace");
+
+	// 빙의 해제
+	auto AIController = Cast<AAI_Base>(GetController());
+	if (AIController != nullptr)
+	{
+		AIController->OnUnPossess();
+	}	
 }

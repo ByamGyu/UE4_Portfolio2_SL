@@ -18,12 +18,13 @@ void EmptyLinkFunctionForGeneratedCodeMyHeavyAttackNotifyState() {}
 	ENGINE_API UClass* Z_Construct_UClass_UAnimNotifyState();
 	UPackage* Z_Construct_UPackage__Script_UE4_Portfolio2_SL();
 	UE4_PORTFOLIO2_SL_API UClass* Z_Construct_UClass_APlayerCharacter_NoRegister();
+	UE4_PORTFOLIO2_SL_API UClass* Z_Construct_UClass_AEnemy_Base_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(UMyHeavyAttackNotifyState::execGiveDamage)
 	{
 		P_GET_OBJECT(APlayerCharacter,Z_Param__Attacker);
-		P_GET_OBJECT(APlayerCharacter,Z_Param__DamageTo);
+		P_GET_OBJECT(AEnemy_Base,Z_Param__DamageTo);
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		P_THIS->GiveDamage(Z_Param__Attacker,Z_Param__DamageTo);
@@ -42,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeMyHeavyAttackNotifyState() {}
 		struct MyHeavyAttackNotifyState_eventGiveDamage_Parms
 		{
 			APlayerCharacter* _Attacker;
-			APlayerCharacter* _DamageTo;
+			AEnemy_Base* _DamageTo;
 		};
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__Attacker;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__DamageTo;
@@ -53,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeMyHeavyAttackNotifyState() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMyHeavyAttackNotifyState_GiveDamage_Statics::NewProp__Attacker = { "_Attacker", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MyHeavyAttackNotifyState_eventGiveDamage_Parms, _Attacker), Z_Construct_UClass_APlayerCharacter_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMyHeavyAttackNotifyState_GiveDamage_Statics::NewProp__DamageTo = { "_DamageTo", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MyHeavyAttackNotifyState_eventGiveDamage_Parms, _DamageTo), Z_Construct_UClass_APlayerCharacter_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMyHeavyAttackNotifyState_GiveDamage_Statics::NewProp__DamageTo = { "_DamageTo", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MyHeavyAttackNotifyState_eventGiveDamage_Parms, _DamageTo), Z_Construct_UClass_AEnemy_Base_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMyHeavyAttackNotifyState_GiveDamage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMyHeavyAttackNotifyState_GiveDamage_Statics::NewProp__Attacker,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMyHeavyAttackNotifyState_GiveDamage_Statics::NewProp__DamageTo,
@@ -102,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeMyHeavyAttackNotifyState() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_UE4_Portfolio2_SL,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UMyHeavyAttackNotifyState_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMyHeavyAttackNotifyState_GiveDamage, "GiveDamage" }, // 844387839
+		{ &Z_Construct_UFunction_UMyHeavyAttackNotifyState_GiveDamage, "GiveDamage" }, // 179834315
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMyHeavyAttackNotifyState_Statics::Class_MetaDataParams[] = {
@@ -158,7 +159,7 @@ void EmptyLinkFunctionForGeneratedCodeMyHeavyAttackNotifyState() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMyHeavyAttackNotifyState, 1110429634);
+	IMPLEMENT_CLASS(UMyHeavyAttackNotifyState, 3844364758);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UMyHeavyAttackNotifyState>()
 	{
 		return UMyHeavyAttackNotifyState::StaticClass();

@@ -1,4 +1,5 @@
 #include "PlayerCharacter.h"
+#include "Enemy_Base.h"
 #include "Kismet/KismetMathLibrary.h"
 
 
@@ -544,21 +545,48 @@ void APlayerCharacter::LookLockOnTarget(float DeltaSeconds)
 			return;
 		}
 
-		FVector LockedOnLocation = LockedOnTarget->GetActorLocation();
-		LockedOnLocation.Z -= 50.0f; // 대상이 잘 보이게 시점 살짝 높여주기
-		// 대상을 바라보는 회전값
-		FRotator LookAtRotation = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), LockedOnLocation);
-		// 현재 시점에서 대상을 바라보는 시점으로 회전보간
-		FRotator InterpRotation = UKismetMathLibrary::RInterpTo(GetController()->GetControlRotation(), LookAtRotation, DeltaSeconds, 10.0f);
-		// 보간 값을 기준으로 현재 카메라 회전값 수정하기
-		GetController()->SetControlRotation(FRotator(InterpRotation.Pitch, InterpRotation.Yaw, GetController()->GetControlRotation().Roll));
+		// 대상이 몬스터고 체력 확인
+		auto IsMonster = Cast<AEnemy_Base>(LockedOnTarget);
+		if (IsMonster != nullptr)
+		{
+			// 체력이 없으면(죽었으면) 락온 해제
+			if (IsMonster->GetCurHP() <= 0.0f)
+			{
+				IsLockTargetExist = false;
+				LockedOnTarget = nullptr;
+			}
+		}
+		// 대상이 플레이어고 체력 확인
+		auto IsPlayer = Cast<APlayerCharacter>(LockedOnTarget);
+		if (IsPlayer != nullptr)
+		{
+			// 체력이 없으면(죽었으면) 락온 해제
+			if (IsPlayer->GetCurHP() <= 0.0f)
+			{
+				IsLockTargetExist = false;
+				LockedOnTarget = nullptr;
+			}
+		}
 
-		// 자동 회전 보간 꺼주기
-		GetCharacterMovement()->bOrientRotationToMovement = false;
+		if (LockedOnTarget != nullptr)
+		{
+			FVector LockedOnLocation = LockedOnTarget->GetActorLocation();
+			LockedOnLocation.Z -= 50.0f; // 대상이 잘 보이게 시점 살짝 높여주기
+			// 대상을 바라보는 회전값
+			FRotator LookAtRotation = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), LockedOnLocation);
+			// 현재 시점에서 대상을 바라보는 시점으로 회전보간
+			FRotator InterpRotation = UKismetMathLibrary::RInterpTo(GetController()->GetControlRotation(), LookAtRotation, DeltaSeconds, 10.0f);
+			// 보간 값을 기준으로 현재 카메라 회전값 수정하기
+			GetController()->SetControlRotation(FRotator(InterpRotation.Pitch, InterpRotation.Yaw, GetController()->GetControlRotation().Roll));
 
-		// 락온 대상을 주시하면서 걷기(Strafe Movement)를 위한 캐릭터 회전
-		FRotator CharacterInterpRotation = UKismetMathLibrary::RInterpTo(GetActorRotation(), FRotator(GetActorRotation().Pitch, GetControlRotation().Yaw, GetActorRotation().Roll), DeltaSeconds, 10.0f);
-		GetController()->GetPawn()->SetActorRotation(CharacterInterpRotation);
+			// 자동 회전 보간 꺼주기
+			GetCharacterMovement()->bOrientRotationToMovement = false;
+
+			// 락온 대상을 주시하면서 걷기(Strafe Movement)를 위한 캐릭터 회전
+			FRotator CharacterInterpRotation = UKismetMathLibrary::RInterpTo(GetActorRotation(), FRotator(GetActorRotation().Pitch, GetControlRotation().Yaw, GetActorRotation().Roll), DeltaSeconds, 10.0f);
+			GetController()->GetPawn()->SetActorRotation(CharacterInterpRotation);
+		}
+		
 	}
 	else
 	{

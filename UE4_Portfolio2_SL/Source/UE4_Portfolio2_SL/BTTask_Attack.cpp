@@ -16,7 +16,13 @@ EBTNodeResult::Type UBTTask_Attack::ExecuteTask(UBehaviorTreeComponent& OwnerCom
 	auto pCharacter = Cast<AEnemy_Base>(OwnerComp.GetAIOwner()->GetPawn());
 	if (pCharacter == nullptr) return EBTNodeResult::Failed;
 	
-	pCharacter->RandomAttackAll();
+	if (pCharacter->GetState() == EMONSTER_STATE::IMPACT_WEAK
+		|| pCharacter->GetState() == EMONSTER_STATE::IMPACT_STRONG)
+	{
+		return EBTNodeResult::Failed;
+	}
+
+	pCharacter->RandomAttackAll1();
 
 	// Task가 실행되면
 	// 일단 현재 작업이 진행중임을 알림

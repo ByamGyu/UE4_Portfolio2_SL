@@ -2,6 +2,7 @@
 
 #include "EngineMinimal.h"
 #include "Animation/AnimNotifies/AnimNotifyState.h"
+#include "Enemy_Base.h"
 #include "MyAttackNotifyState.generated.h"
 
 
@@ -28,5 +29,5 @@ private:
 
 private:
 	UFUNCTION()
-	void GiveDamage(APlayerCharacter* _Attacker, APlayerCharacter* _DamageTo);
+	void GiveDamage(APlayerCharacter* _Attacker, AEnemy_Base* _DamageTo);
 };

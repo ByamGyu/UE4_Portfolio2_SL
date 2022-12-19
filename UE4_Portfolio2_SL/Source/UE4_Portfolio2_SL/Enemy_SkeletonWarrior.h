@@ -38,12 +38,12 @@ public:
 	bool GetIsFight() { return IsFight; }
 	void SetIsFight(bool _Value) { IsFight = _Value; }
 
-	float GetCurHP() { return CurHP; }
-	void SetCurHP(float _Value);
+	float GetCurHP() override;
+	void SetCurHP(float _Value) override;
 
 
 public:
-	void RandomAttackAll() override;
+	void RandomAttackAll1() override;
 	void ComboAttack01() override;
 	void ComboAttack02() override;
 	void ComboAttack03() override;
@@ -56,5 +56,7 @@ public:
 	void SingleAttackMove03() override;
 	void SingleAttackRandom() override;
 
+	void PlayHitAniamtion(float _Degree) override;
+	
 	void Dead() override;
 };

@@ -15,12 +15,18 @@ class UE4_PORTFOLIO2_SL_API AAI_Base : public AAIController
 public:
 	AAI_Base();
 	// virtual void OnPossess(APawn* InPawn) override;
+	virtual void OnUnPossess() override;
+
 
 protected:
 	UPROPERTY()
-		class UBehaviorTree* BT;
+	class UBehaviorTree* BT;
 	UPROPERTY()
-		class UBlackboardData* BB;
+	class UBlackboardData* BB;
+
+
+public:
+	UBlackboardData* GetBB() { return BB; }
 
 
 public:
@@ -29,4 +35,8 @@ public:
 	static const FName TargetKey;
 	static const FName PercentKey;
 	static const FName BackwardPosKey;
+	static const FName CurStateKey;
+
+
+
 };

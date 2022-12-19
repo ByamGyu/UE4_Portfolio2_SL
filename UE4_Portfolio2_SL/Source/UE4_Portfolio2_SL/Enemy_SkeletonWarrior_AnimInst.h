@@ -19,70 +19,70 @@ public:
 
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
-		float CurrentSpeed;
+	float CurrentSpeed;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
-		float CurrentDirection;
+	float CurrentDirection;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
-		bool IsFight;
+	bool IsFight;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
-		bool IsAttacking;
+	bool IsAttacking;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
-		float KnockDown_Time;
+	float KnockDown_Time;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
-		EMONSTER_STATE Cur_State;
+	EMONSTER_STATE Cur_State;
 
 
 	// 몽타주들
 private:
 	// 2연속 공격
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Attack_Combo_01_Stand;
+	class UAnimMontage* Attack_Combo_01_Stand;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Attack_Combo_02_Move;
+	class UAnimMontage* Attack_Combo_02_Move;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Attack_Combo_03_Mix;
+	class UAnimMontage* Attack_Combo_03_Mix;
 
 	// 단발성 공격(제자리)
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Attack_Slash_Stand;
+	class UAnimMontage* Attack_Slash_Stand;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Attack_Strike_Stand;
+	class UAnimMontage* Attack_Strike_Stand;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Attack_Thrust_Stand;
+	class UAnimMontage* Attack_Thrust_Stand;
 
 	// 단발성 공격(움직임)
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Attack_Slash_Move;
+	class UAnimMontage* Attack_Slash_Move;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Attack_Strike_Move;
+	class UAnimMontage* Attack_Strike_Move;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Attack_Thrust_Move;
+	class UAnimMontage* Attack_Thrust_Move;
 
 	// 가드 브레이크
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* GuardBreak;
+	class UAnimMontage* GuardBreak;
 
 	// 죽음
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Dead1;
+	class UAnimMontage* Dead1;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Dead2;
+	class UAnimMontage* Dead2;
 
 	// 피격
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Hit01;
+	class UAnimMontage* Hit01;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Hit02;
+	class UAnimMontage* Hit02;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* HitBack;
+	class UAnimMontage* HitBack;
 
 	// 휴면 상태
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* SleepStand;
+	class UAnimMontage* SleepStand;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* SleepSitdown;
+	class UAnimMontage* SleepSitdown;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
-		class UAnimMontage* Standup;
+	class UAnimMontage* Standup;
 
 
 	// 몽타주 재생 함수들

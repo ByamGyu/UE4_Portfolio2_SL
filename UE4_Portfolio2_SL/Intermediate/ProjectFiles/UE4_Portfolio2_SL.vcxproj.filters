@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{DA2F6ECE-8CFA-4141-9D0D-0C61F4A17FD0}</UniqueIdentifier>
+      <UniqueIdentifier>{C74ADDCB-211A-4ACB-862D-EBBD9A4986E2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{8A675A86-543A-4F6F-8BAD-7ED943562BB0}</UniqueIdentifier>
+      <UniqueIdentifier>{0CAB84ED-FF2A-4BF9-AAC8-77651689B84F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{D87203C0-0609-47AF-BE03-02B762F1310E}</UniqueIdentifier>
+      <UniqueIdentifier>{0E80F13D-288F-4A8A-8757-06F05D12E9B6}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\AI_Base.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
@@ -74,6 +74,12 @@
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTService_UpdateBackwardLocation.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTService_UpdateInfo.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTService_UpdateInfo.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTTask_Attack.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
@@ -96,6 +102,12 @@
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\define.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\EnemyAttackNotifyState.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\EnemyAttackNotifyState.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Enemy_Base.cpp">

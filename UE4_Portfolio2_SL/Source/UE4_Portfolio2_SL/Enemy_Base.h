@@ -61,8 +61,9 @@ public:
 	bool GetIsFight() { return IsFight; }
 	void SetIsFight(bool _Value) { IsFight = _Value; }
 
-	float GetCurHP() { return CurHP; }
-	void SetCurHP(float _Value);
+	// 현재 자식 클래스에 구현되어있음 virtual로 바꿀 필요가???
+	virtual float GetCurHP() { return CurHP; }
+	virtual void SetCurHP(float _Value);
 
 
 	// 대미지 받기 프레임워크
@@ -71,7 +72,7 @@ public:
 
 	// 공격 함수
 public:
-	virtual void RandomAttackAll();
+	virtual void RandomAttackAll1();
 	virtual void ComboAttack01();
 	virtual void ComboAttack02();
 	virtual void ComboAttack03();
@@ -83,6 +84,8 @@ public:
 	virtual void SingleAttackMove02();
 	virtual void SingleAttackMove03();
 	virtual void SingleAttackRandom();
+
+	virtual void PlayHitAniamtion(float _Degree);
 
 	virtual void Dead();
 };

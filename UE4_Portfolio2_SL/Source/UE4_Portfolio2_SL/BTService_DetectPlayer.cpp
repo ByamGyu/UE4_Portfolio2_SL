@@ -3,6 +3,7 @@
 #include "PlayerCharacter.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "DrawDebugHelpers.h"
+#include "define.h"
 // 헤더파일 주의!
 
 
