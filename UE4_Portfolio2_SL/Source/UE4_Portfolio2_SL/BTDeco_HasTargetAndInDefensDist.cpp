@@ -1,5 +1,5 @@
 #include "BTDeco_HasTargetAndInDefensDist.h"
-#include "AI_SkeletonWarrior.h"
+#include "AI_Base.h"
 #include "PlayerCharacter.h"
 #include "BehaviorTree/BlackboardComponent.h"
 // 헤더파일 주의!
@@ -14,10 +14,11 @@ bool UBTDeco_HasTargetAndInDefensDist::CalculateRawConditionValue(UBehaviorTreeC
 {
 	bool bResult = Super::CalculateRawConditionValue(OwnerComp, NodeMemory);
 
+
 	auto ControllingPawn = OwnerComp.GetAIOwner()->GetPawn();
 	if (ControllingPawn == nullptr) return false;
 
-	auto Target = Cast<APlayerCharacter>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(AAI_SkeletonWarrior::TargetKey));
+	auto Target = Cast<APlayerCharacter>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(AAI_Base::TargetKey));
 	// 목표물이 없으면
 	if (Target == nullptr) return false;
 

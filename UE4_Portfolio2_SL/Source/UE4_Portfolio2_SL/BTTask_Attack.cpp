@@ -1,6 +1,6 @@
 #include "BTTask_Attack.h"
-#include "AI_SkeletonWarrior.h"
-#include "Enemy_SkeletonWarrior.h"
+#include "Enemy_Base.h"
+#include "AI_Base.h"
 
 
 UBTTask_Attack::UBTTask_Attack()
@@ -12,8 +12,8 @@ EBTNodeResult::Type UBTTask_Attack::ExecuteTask(UBehaviorTreeComponent& OwnerCom
 {
 	EBTNodeResult::Type Result = Super::ExecuteTask(OwnerComp, NodeMemory);
 
-
-	auto pCharacter = Cast<AEnemy_SkeletonWarrior>(OwnerComp.GetAIOwner()->GetPawn());
+		
+	auto pCharacter = Cast<AEnemy_Base>(OwnerComp.GetAIOwner()->GetPawn());
 	if (pCharacter == nullptr) return EBTNodeResult::Failed;
 	
 	pCharacter->RandomAttackAll();
@@ -27,7 +27,7 @@ void UBTTask_Attack::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemo
 {
 	Super::TickTask(OwnerComp, NodeMemory, DeltaSeconds);
 
-	auto pCharacter = Cast<AEnemy_SkeletonWarrior>(OwnerComp.GetAIOwner()->GetPawn());
+	auto pCharacter = Cast<AEnemy_Base>(OwnerComp.GetAIOwner()->GetPawn());
 	if (pCharacter == nullptr) FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
 
 	if (pCharacter->GetIsAttacking() == false) FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);

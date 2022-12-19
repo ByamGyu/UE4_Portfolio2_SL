@@ -1,6 +1,7 @@
 #include "Enemy_Base.h"
 
 
+
 AEnemy_Base::AEnemy_Base()
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -67,4 +68,56 @@ float AEnemy_Base::TakeDamage(float DamageAmount, FDamageEvent const& DamageEven
 
 
 	return Damage;
+}
+
+void AEnemy_Base::RandomAttackAll()
+{
+}
+
+void AEnemy_Base::ComboAttack01()
+{
+}
+
+void AEnemy_Base::ComboAttack02()
+{
+}
+
+void AEnemy_Base::ComboAttack03()
+{
+}
+
+void AEnemy_Base::ComboAttackRandom()
+{
+}
+
+void AEnemy_Base::SingleAttackStand01()
+{
+}
+
+void AEnemy_Base::SingleAttackStand02()
+{
+}
+
+void AEnemy_Base::SingleAttackStand03()
+{
+}
+
+void AEnemy_Base::SingleAttackMove01()
+{
+}
+
+void AEnemy_Base::SingleAttackMove02()
+{
+}
+
+void AEnemy_Base::SingleAttackMove03()
+{
+}
+
+void AEnemy_Base::SingleAttackRandom()
+{
+}
+
+void AEnemy_Base::Dead()
+{
 }

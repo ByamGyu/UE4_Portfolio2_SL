@@ -43,18 +43,18 @@ public:
 
 
 public:
-	void RandomAttackAll();
-	void ComboAttack01();
-	void ComboAttack02();
-	void ComboAttack03();
-	void ComboAttackRandom();
-	void SingleAttackStand01();
-	void SingleAttackStand02();
-	void SingleAttackStand03();
-	void SingleAttackMove01();
-	void SingleAttackMove02();
-	void SingleAttackMove03();
-	void SingleAttackRandom();
+	void RandomAttackAll() override;
+	void ComboAttack01() override;
+	void ComboAttack02() override;
+	void ComboAttack03() override;
+	void ComboAttackRandom() override;
+	void SingleAttackStand01() override;
+	void SingleAttackStand02() override;
+	void SingleAttackStand03() override;
+	void SingleAttackMove01() override;
+	void SingleAttackMove02() override;
+	void SingleAttackMove03() override;
+	void SingleAttackRandom() override;
 
-	void Dead();
+	void Dead() override;
 };

@@ -1,8 +1,8 @@
 #include "BTService_UpdateBackwardLocation.h"
-#include "AI_SkeletonWarrior.h"
+#include "AI_Base.h"
 #include "PlayerCharacter.h"
 #include "BehaviorTree/BlackboardComponent.h"
-// 헤더파일 주의!
+
 
 
 UBTService_UpdateBackwardLocation::UBTService_UpdateBackwardLocation()
@@ -15,6 +15,7 @@ UBTService_UpdateBackwardLocation::UBTService_UpdateBackwardLocation()
 void UBTService_UpdateBackwardLocation::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
 {
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
+
 
 	auto ControllingPawn = OwnerComp.GetAIOwner()->GetPawn();
 	if (ControllingPawn == nullptr)
@@ -30,7 +31,7 @@ void UBTService_UpdateBackwardLocation::TickNode(UBehaviorTreeComponent& OwnerCo
 		return;
 	}
 
-	// BackwarLocation 결정하는 부분(대각선 방향을 추가할까?)
+	// BackwarLocation 결정하는 부분
 	FVector CurLoc = ControllingPawn->GetActorLocation();
 	FVector RightDir = ControllingPawn->GetActorRightVector();
 	FVector BackwardDir = ControllingPawn->GetActorForwardVector() * (-1);
@@ -51,5 +52,6 @@ void UBTService_UpdateBackwardLocation::TickNode(UBehaviorTreeComponent& OwnerCo
 	}
 
 	// BB에 다음 위치 저장하기
-	OwnerComp.GetBlackboardComponent()->SetValueAsVector(AAI_SkeletonWarrior::BackwardPosKey, NextLocation);
+	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Set Backward Pos"));
+	OwnerComp.GetBlackboardComponent()->SetValueAsVector(AAI_Base::BackwardPosKey, NextLocation);
 }

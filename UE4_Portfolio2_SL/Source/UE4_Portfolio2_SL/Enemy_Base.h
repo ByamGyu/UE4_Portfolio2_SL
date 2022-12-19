@@ -67,4 +67,22 @@ public:
 
 	// 대미지 받기 프레임워크
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
+
+
+	// 공격 함수
+public:
+	virtual void RandomAttackAll();
+	virtual void ComboAttack01();
+	virtual void ComboAttack02();
+	virtual void ComboAttack03();
+	virtual void ComboAttackRandom();
+	virtual void SingleAttackStand01();
+	virtual void SingleAttackStand02();
+	virtual void SingleAttackStand03();
+	virtual void SingleAttackMove01();
+	virtual void SingleAttackMove02();
+	virtual void SingleAttackMove03();
+	virtual void SingleAttackRandom();
+
+	virtual void Dead();
 };

@@ -1,5 +1,5 @@
 #include "BTService_DetectPlayer.h"
-#include "AI_SkeletonWarrior.h"
+#include "AI_Base.h"
 #include "PlayerCharacter.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "DrawDebugHelpers.h"
@@ -18,6 +18,7 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 {
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 
+
 	auto ControllingPawn = Cast<ACharacter>(OwnerComp.GetAIOwner()->GetPawn());
 	if (ControllingPawn == nullptr)
 	{
@@ -34,7 +35,7 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 
 	// 앞으로의 행동을 결정할 확률값을 지정한다.
 	float tmp = FMath::FRandRange(0.0f, 1.0f);
-	OwnerComp.GetBlackboardComponent()->SetValueAsFloat(AAI_SkeletonWarrior::PercentKey, tmp);
+	OwnerComp.GetBlackboardComponent()->SetValueAsFloat(AAI_Base::PercentKey, tmp);
 
 	// 탐지 중심부
 	FVector Center = ControllingPawn->GetActorLocation();
@@ -43,8 +44,8 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 
 	TArray<FOverlapResult> OverlapResults;
 	// 제외사항(AI가 조종하는 캐릭터 본인)
-	// FCollisionQueryParams CollisionQueryParam(NAME_None, false, ControllingPawn);
-	FCollisionQueryParams CollisionQueryParam = FCollisionQueryParams::DefaultQueryParam;
+	FCollisionQueryParams CollisionQueryParam(NAME_None, false, ControllingPawn);
+	//FCollisionQueryParams CollisionQueryParam = FCollisionQueryParams::DefaultQueryParam;
 
 	CollisionQueryParam.AddIgnoredActor(ControllingPawn);
 	bool bResult = World->OverlapMultiByChannel(
@@ -77,7 +78,7 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 				// 시야각 140도에 있으면 감지
 				if (AngleDegree >= 140.0f)
 				{
-					OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_SkeletonWarrior::TargetKey, pPlayerCharacter);
+					OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_Base::TargetKey, pPlayerCharacter);
 
 					DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Red, false, 0.2f);
 					DrawDebugPoint(World, pPlayerCharacter->GetActorLocation(), 50.0f, FColor::Red, false, 0.2f);
@@ -92,7 +93,7 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 	// 플레이어가 감지되지 않았다면
 	if (IsTargetFind == false)
 	{
-		OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_SkeletonWarrior::TargetKey, nullptr);
+		OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_Base::TargetKey, nullptr);
 		
 		ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = true;
 		ControllingPawn->GetCharacterMovement()->MaxWalkSpeed = 200.0f;
