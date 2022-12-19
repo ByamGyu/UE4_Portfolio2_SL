@@ -1,12 +1,334 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
+  Parsing headers for UE4_Portfolio2_SLEditor
+    Running UnrealHeaderTool "G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\UE4_Portfolio2_SL.uproject" "G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4_Portfolio2_SLEditor\Development\UE4_Portfolio2_SLEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\decja\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  LogInit: Display: Loading text-based GConfig....
+  Reflection code generated for UE4_Portfolio2_SLEditor in 3.0903059 seconds
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0001.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0001.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0007.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0007.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0013.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0013.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0015.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0015.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0024.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0024.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0027.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0028.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0028.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0031.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0031.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0034.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0034.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0038.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0038.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0039.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0039.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0041.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0041.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0042.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0042.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0046.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0046.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0048.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0048.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0049.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0049.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0051.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0051.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0052.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0052.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0055.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0055.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0060.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0060.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0063.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0063.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0068.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0068.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0072.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0072.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0073.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0073.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0077.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0077.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0094.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0094.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0116.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0116.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0199.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0199.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0361.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0361.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0468.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0468.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0624.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0624.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0659.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0659.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0696.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0696.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0768.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0768.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1012.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1012.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1014.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1014.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1127.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1127.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1296.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1296.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1421.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1421.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1490.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1490.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1534.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1534.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1585.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1585.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1697.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1697.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1820.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1820.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2022.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2022.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2057.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2057.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2139.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2139.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2253.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2253.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2533.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2533.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2549.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2549.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2669.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2669.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2751.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2751.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2818.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-2818.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3156.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3156.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3391.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3391.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3409.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3409.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3420.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3420.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3450.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3450.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3527.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3527.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3610.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3610.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3762.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3762.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3859.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-3859.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4219.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4219.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4248.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4248.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4372.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4372.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4527.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4527.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4855.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4855.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4899.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4899.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4925.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4925.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4961.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4961.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-5057.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-5057.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-5168.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-5168.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-5177.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-5177.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-5747.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-5747.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-5976.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-5976.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6009.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6009.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6064.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6064.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6111.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6111.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6459.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6459.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6665.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6665.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6746.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6746.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6833.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6833.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6998.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6998.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7157.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7157.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7314.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7314.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7379.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7379.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7383.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7383.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7391.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7391.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7426.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7426.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7493.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7493.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7597.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7597.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7702.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7702.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7776.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-7776.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-8172.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-8172.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-9064.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-9064.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-9124.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-9124.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-9451.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-9451.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-9562.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-9562.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-9680.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-9680.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-9703.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-9703.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0001.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0007.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0013.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0015.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0024.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0027.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0028.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0031.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0034.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0038.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0039.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0041.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0042.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0046.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0048.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0049.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0051.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0052.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0055.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0060.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0063.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0068.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0072.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0073.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0077.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0094.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0116.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0199.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0361.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0468.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0624.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0659.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0696.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0768.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-1012.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-1014.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-1127.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-1296.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-1421.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-1490.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-1534.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-1585.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-1697.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-1820.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2022.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2057.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2139.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2253.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2533.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2549.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2669.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2751.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2818.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-3156.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-3391.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-3409.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-3420.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-3450.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-3527.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-3610.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-3762.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-3859.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-4219.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-4248.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-4372.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-4527.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-4855.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-4899.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-4925.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-4961.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-5057.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-5168.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-5177.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-5747.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-5976.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6009.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6064.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6111.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6459.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6665.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6746.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6833.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6998.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7157.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7314.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7379.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7383.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7391.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7426.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7493.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7597.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7702.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7776.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-8172.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-9064.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-9124.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-9451.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-9562.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-9680.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-9703.lib
   Building UE4_Portfolio2_SLEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 24 processes...
-    [1/4] BTService_UpdateInfo.cpp
-    [2/4] UE4Editor-UE4_Portfolio2_SL-0116.lib
-       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0116.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0116.exp 개체를 생성하고 있습니다.
-    [3/4] UE4Editor-UE4_Portfolio2_SL-0116.dll
-       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0116.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0116.suppressed.exp 개체를 생성하고 있습니다.
-    [4/4] UE4_Portfolio2_SLEditor.target
-  Total time in Parallel executor: 3.20 seconds
-  Total execution time: 3.92 seconds
+  Building 17 actions with 24 processes...
+    [1/17] UE4_Portfolio2_SL.init.gen.cpp
+    [2/17] Enemy_Base.gen.cpp
+    [3/17] MyAttackNotifyState.cpp
+    [4/17] Enemy_SkeletonWarrior_AnimInst.cpp
+    [5/17] MyHeavyAttackNotifyState.cpp
+    [6/17] MyHeavyAttackNotifyState.gen.cpp
+    [7/17] MyAttackNotifyState.gen.cpp
+    [8/17] Enemy_SkeletonWarrior.gen.cpp
+    [9/17] PlayerCharacter.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(11): warning C5038: 데이터 멤버 'APlayerCharacter::CurStamina'은(는) 데이터 멤버 'APlayerCharacter::HPRatio' 이후에 초기화됩니다.
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(13): warning C5038: 데이터 멤버 'APlayerCharacter::StaminaRatio'은(는) 데이터 멤버 'APlayerCharacter::IsFight' 이후에 초기화됩니다.
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(17): warning C5038: 데이터 멤버 'APlayerCharacter::ComboCnt'은(는) 데이터 멤버 'APlayerCharacter::IsFall' 이후에 초기화됩니다.
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(20): warning C5038: 데이터 멤버 'APlayerCharacter::LeftWeapon'은(는) 데이터 멤버 'APlayerCharacter::AttackDamage' 이후에 초기화됩니다.
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(22): warning C5038: 데이터 멤버 'APlayerCharacter::DefaultDamage'은(는) 데이터 멤버 'APlayerCharacter::IsLockTargetExist' 이후에 초기화됩니다.
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(477): warning C4996: 'FCollisionQueryParams::FCollisionQueryParams': FCollisionQueryParams, to avoid ambiguity, please use other constructor and explicitly provide an FName parameter (not just a string literal) as the first parameter Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+    [10/17] Enemy_SkeletonWarrior.cpp
+    [11/17] Enemy_Base.cpp
+    [12/17] BTTask_Attack.cpp
+    [13/17] BTService_UpdateInfo.cpp
+    [14/17] AI_SkeletonWarrior.cpp
+    [15/17] UE4Editor-UE4_Portfolio2_SL.lib
+       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.exp 개체를 생성하고 있습니다.
+    [16/17] UE4Editor-UE4_Portfolio2_SL.dll
+       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.suppressed.exp 개체를 생성하고 있습니다.
+    [17/17] UE4_Portfolio2_SLEditor.target
+  Total time in Parallel executor: 4.45 seconds
+  Total execution time: 8.56 seconds

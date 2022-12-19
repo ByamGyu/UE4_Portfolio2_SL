@@ -8,6 +8,7 @@ AEnemy_Base::AEnemy_Base()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
+	AttackDamage = 5.0f;
 }
 
 void AEnemy_Base::BeginPlay()
@@ -31,6 +32,16 @@ void AEnemy_Base::ChangeState(EMONSTER_STATE _NextState)
 float AEnemy_Base::GetCurrentSpeed()
 {
 	return GetVelocity().Size();
+}
+
+void AEnemy_Base::SetAttackDamage(float _Value)
+{
+	AttackDamage = _Value;
+}
+
+float AEnemy_Base::GetAttackDamage()
+{
+	return AttackDamage;
 }
 
 void AEnemy_Base::SetCurHP(float _Value)

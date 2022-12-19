@@ -4,6 +4,7 @@
 #include "Enemy_Base.h"
 #include "define.h"
 #include "Enemy_SkeletonWarrior_AnimInst.h"
+#include "Weapon_RustySword.h"
 #include "Enemy_SkeletonWarrior.generated.h"
 
 
@@ -40,6 +41,27 @@ public:
 
 	float GetCurHP() override;
 	void SetCurHP(float _Value) override;
+
+
+	// 장비로 쓰일 액터 클래스 정보 저장 변수 선언
+protected:
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+		TSubclassOf<class AWeapon_Common> RightWeaponClass;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+		TSubclassOf<class AShield_Common> LeftWeaponClass;
+
+	// 장비 액터 선언
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+		class AWeapon_Common* RightWeapon;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+		class AShield_Common* LeftWeapon;
+
+
+	// 장비 액터 관련 함수
+public:
+	AWeapon_Common* GetRightWeapon();
+	void SetRightWeapon(class AWeapon_RustySword* _NewWeapon);
+
 
 
 public:

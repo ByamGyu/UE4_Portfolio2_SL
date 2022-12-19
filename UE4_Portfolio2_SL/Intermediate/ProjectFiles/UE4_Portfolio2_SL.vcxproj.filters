@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{C74ADDCB-211A-4ACB-862D-EBBD9A4986E2}</UniqueIdentifier>
+      <UniqueIdentifier>{1E3667D0-62DE-4167-8A83-8C808D37F3EA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{0CAB84ED-FF2A-4BF9-AAC8-77651689B84F}</UniqueIdentifier>
+      <UniqueIdentifier>{B64EB7EE-391F-4CD9-AECA-5D4118B4FFC2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{0E80F13D-288F-4A8A-8757-06F05D12E9B6}</UniqueIdentifier>
+      <UniqueIdentifier>{D21AD3E2-ECA5-470B-97E5-E0F87934176B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\AI_Base.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
@@ -195,6 +195,12 @@
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\Weapon_Default.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Weapon_RustySword.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\Weapon_RustySword.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
   </ItemGroup>

@@ -48,6 +48,8 @@ protected:
 	bool IsAttacking;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	bool IsFight;
+	
+
 
 	// 능력치 함수
 public:
@@ -55,6 +57,9 @@ public:
 	void ChangeState(EMONSTER_STATE _NextState);
 
 	float GetCurrentSpeed();
+
+	void SetAttackDamage(float _Value);
+	float GetAttackDamage();
 
 	bool GetIsAttacking() { return IsAttacking; }
 	void SetIsAttacking(bool _Value) { IsAttacking = _Value; }

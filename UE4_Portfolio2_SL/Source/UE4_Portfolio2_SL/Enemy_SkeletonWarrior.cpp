@@ -24,12 +24,28 @@ AEnemy_SkeletonWarrior::AEnemy_SkeletonWarrior()
 	//GetCharacterMovement()->JumpZVelocity = 300.0f; // 기본값(420)
 	GetCharacterMovement()->AirControl = 0.1f;
 
+	AttackDamage = 10.0f;
 
+	RightWeaponClass = AWeapon_RustySword::StaticClass();
 }
 
 void AEnemy_SkeletonWarrior::BeginPlay()
 {
 	Super::BeginPlay();
+
+
+	// 전용 장비(오른손) 들고있기
+	FName RightArmWeaponSocket(TEXT("RightArm_Weapon"));
+	if (GetMesh()->DoesSocketExist(RightArmWeaponSocket))
+	{
+		auto NewWeapon = GetWorld()->SpawnActor<AWeapon_RustySword>(RightWeaponClass, FVector::ZeroVector, FRotator::ZeroRotator);
+		if (NewWeapon != nullptr)
+		{
+			RightWeapon = NewWeapon;
+			NewWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, RightArmWeaponSocket);
+			NewWeapon->SetOwner(this);
+		}
+	}
 }
 
 void AEnemy_SkeletonWarrior::Tick(float DeltaTime)
@@ -92,6 +108,30 @@ void AEnemy_SkeletonWarrior::SetCurHP(float _Value)
 	Super::SetCurHP(_Value);
 
 	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString("SkeletonHP: ") + FString::SanitizeFloat(CurHP));
+}
+
+AWeapon_Common* AEnemy_SkeletonWarrior::GetRightWeapon()
+{
+	if (RightWeapon == nullptr)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("RightWeapon is Nullptr"));
+		return nullptr;
+	}
+	else return RightWeapon;
+}
+
+void AEnemy_SkeletonWarrior::SetRightWeapon(AWeapon_RustySword* _NewWeapon)
+{
+	FName RightArmWeaponSocket(TEXT("RightArm_Weapon"));
+
+	if (_NewWeapon != nullptr)
+	{
+		RightWeapon = _NewWeapon;
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("_NewRightWeapon is Nullptr"));
+	}
 }
 
 void AEnemy_SkeletonWarrior::RandomAttackAll1()
