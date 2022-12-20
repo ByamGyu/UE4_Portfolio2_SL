@@ -397,9 +397,7 @@ void AEnemy_SkeletonWarrior::Dead()
 	if (pAnimInst != nullptr)
 	{
 		ChangeState(EMONSTER_STATE::DEAD);
-		pAnimInst->PlayDeadMontage();
-		
-		
+		pAnimInst->PlayDeadMontage();		
 
 		// TODO (È¿°úÀ½?)
 	}

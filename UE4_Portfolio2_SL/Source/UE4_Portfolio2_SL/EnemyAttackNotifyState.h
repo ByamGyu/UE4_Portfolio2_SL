@@ -21,12 +21,17 @@ public:
 
 
 private:
+	AActor* Owner;
+
+
+private:
 	UPROPERTY()
-	TArray<AActor*> arrHitReuslts; // 맞은 액터 중복 방지를 위한 배열
+	TArray<AActor*> arrHittedReuslts; // 맞은 액터 중복 방지를 위한 배열
 	UPROPERTY()
 	float AttackDamage;
 
 
 private:
-	
+	UFUNCTION()
+	void GiveDamage(AEnemy_Base* _Attacker, APlayerCharacter* _DamageTo);
 };

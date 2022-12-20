@@ -729,7 +729,10 @@ void APlayerCharacter::Dead()
 		if (AnimInst != nullptr)
 		{
 			ChangeState(EPLAYER_STATE::DEAD);
+
+			// 피직스 애셋과 캡슐 콜리전 변경
 			GetMesh()->SetCollisionProfileName("NoCollision");
+			GetCapsuleComponent()->SetCollisionProfileName("OverlapAllObjectsIgnoreAllTrace");
 		}
 		else return;
 	}
@@ -797,9 +800,8 @@ float APlayerCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Damag
 
 	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Damage Amount: ") + FString::SanitizeFloat(DamageAmount));
 
-	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Attacker Name: ") + EventInstigator->GetPawn()->GetName());
-
-	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Used Tool: ") + DamageCauser->GetName());
+	if(EventInstigator != nullptr) GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Attacker Name: ") + EventInstigator->GetPawn()->GetName());
+	if(DamageCauser != nullptr)	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Used Tool: ") + DamageCauser->GetName());
 
 	
 
