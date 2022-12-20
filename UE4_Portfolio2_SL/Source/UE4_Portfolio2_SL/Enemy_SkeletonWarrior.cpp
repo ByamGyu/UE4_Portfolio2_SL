@@ -106,8 +106,6 @@ float AEnemy_SkeletonWarrior::GetCurHP()
 void AEnemy_SkeletonWarrior::SetCurHP(float _Value)
 {
 	Super::SetCurHP(_Value);
-
-	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString("SkeletonHP: ") + FString::SanitizeFloat(CurHP));
 }
 
 AWeapon_Common* AEnemy_SkeletonWarrior::GetRightWeapon()

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "CoreMinimal.h"
+#include "EngineMinimal.h"
 #include "Enemy_Base.h"
 #include "define.h"
 #include "Enemy_SkeletonWarrior_AnimInst.h"
