@@ -316,6 +316,13 @@ void APlayerCharacter::Guard(float _Value)
 					AnimInst->PlayGuardBreakMontage();
 				}				
 			}
+			else if (Cur_State == EPLAYER_STATE::GUARD_IMPACT_STRONG
+				|| Cur_State == EPLAYER_STATE::GUARD_IMPACT_WEAK
+				|| Cur_State == EPLAYER_STATE::IMPACT_STRONG
+				|| Cur_State == EPLAYER_STATE::IMPACT_WEAK)
+			{
+				return;
+			}
 			else ChangeState(EPLAYER_STATE::GUARD);
 		}
 		else if (_Value == 0.0f && Cur_State == EPLAYER_STATE::GUARD)
@@ -739,7 +746,7 @@ void APlayerCharacter::Dead()
 	else return;
 }
 
-void APlayerCharacter::PlayImpactAnimation()
+void APlayerCharacter::PlayHitAniamtion(float _Degree)
 {
 	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
 	if (AnimInst == nullptr)
@@ -749,8 +756,34 @@ void APlayerCharacter::PlayImpactAnimation()
 	}
 	else
 	{
-		ChangeState(EPLAYER_STATE::IMPACT_STRONG);
-		AnimInst->PlayImpactStrongMontage();
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, FString::SanitizeFloat(_Degree));
+
+		// 정면에서 맞으면
+		if (_Degree >= 90.0f)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("Forward"));
+
+			//가드 중이면
+			if (Cur_State == EPLAYER_STATE::GUARD)
+			{
+				ChangeState(EPLAYER_STATE::GUARD_IMPACT_WEAK);
+				AnimInst->PlayShieldBlockWeak();
+				GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("PlayShieldBlockWeak"));
+			}
+			else
+			{
+				ChangeState(EPLAYER_STATE::IMPACT_STRONG);
+				GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("PlayImpactMontage"));
+				AnimInst->PlayRandomImpactMontage();
+			}
+		}
+		// 뒤에서 맞으면
+		else if (_Degree < 90.0f)
+		{
+			ChangeState(EPLAYER_STATE::IMPACT_STRONG);
+			GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("Back"));
+			AnimInst->PlayImpactBackMontage();
+		}
 	}
 }
 
@@ -796,14 +829,12 @@ float APlayerCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Damag
 {
 	float Damage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 
+	if (GetState() == EPLAYER_STATE::GUARD
+		|| GetState() == EPLAYER_STATE::GUARD_IMPACT_WEAK
+		|| GetState() == EPLAYER_STATE::GUARD_IMPACT_STRONG
+		) return 0;
+
 	SetCurHP(-Damage);
-
-	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Damage Amount: ") + FString::SanitizeFloat(DamageAmount));
-
-	if(EventInstigator != nullptr) GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Attacker Name: ") + EventInstigator->GetPawn()->GetName());
-	if(DamageCauser != nullptr)	GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Used Tool: ") + DamageCauser->GetName());
-
-	
 
 	return Damage;
 }

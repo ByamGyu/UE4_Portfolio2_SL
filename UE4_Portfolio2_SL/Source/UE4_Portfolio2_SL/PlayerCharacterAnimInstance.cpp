@@ -70,6 +70,8 @@ UPlayerCharacterAnimInstance::UPlayerCharacterAnimInstance()
 	if (AM_ImpactStrong2.Succeeded()) ImpactStrong2 = AM_ImpactStrong2.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_ImpactStrong3(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Sword_Shield_Hit_R_2_Montage.Sword_Shield_Hit_R_2_Montage'"));
 	if (AM_ImpactStrong3.Succeeded()) ImpactStrong3 = AM_ImpactStrong3.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_ImpactBack1(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Hit_Combat_Large_B_Seq_Montage.Hit_Combat_Large_B_Seq_Montage'"));
+	if (AM_ImpactBack1.Succeeded()) ImpactBack1 = AM_ImpactBack1.Object;
 
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_ShieldBlockWeak(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Block_Hit_Seq_Montage.Block_Hit_Seq_Montage'"));
 	if (AM_ShieldBlockWeak.Succeeded()) ShieldBlockWeak = AM_ShieldBlockWeak.Object;
@@ -182,13 +184,18 @@ void UPlayerCharacterAnimInstance::PlayParryMontage()
 	Montage_Play(ParryMontage, 1.0f);
 }
 
-void UPlayerCharacterAnimInstance::PlayImpactStrongMontage()
+void UPlayerCharacterAnimInstance::PlayRandomImpactMontage()
 {
 	int32 tmp = FMath::RandRange(0, 2);
 
 	if (tmp == 0) Montage_Play(ImpactStrong1, 1.0f);
 	else if(tmp == 1) Montage_Play(ImpactStrong2, 1.0f);
 	else if(tmp == 2) Montage_Play(ImpactStrong3, 1.0f);
+}
+
+void UPlayerCharacterAnimInstance::PlayImpactBackMontage()
+{
+	Montage_Play(ImpactBack1, 1.0f);
 }
 
 void UPlayerCharacterAnimInstance::PlayShieldBlockWeak()
@@ -204,7 +211,17 @@ void UPlayerCharacterAnimInstance::PlayShieldBlockStrong()
 void UPlayerCharacterAnimInstance::AnimNotify_InitState()
 {
 	auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
-	if (Character != nullptr) Character->ChangeState(EPLAYER_STATE::IDLE);
+	if (Character != nullptr)
+	{
+		// 가드 상태면 가드 유지
+		if (Character->GetState() == EPLAYER_STATE::GUARD
+			|| Character->GetState() == EPLAYER_STATE::GUARD_IMPACT_WEAK
+			|| Character->GetState() == EPLAYER_STATE::GUARD_IMPACT_STRONG)
+		{
+			Character->ChangeState(EPLAYER_STATE::GUARD);
+		}
+		else Character->ChangeState(EPLAYER_STATE::IDLE);
+	}
 }
 
 void UPlayerCharacterAnimInstance::AnimNotify_JumpEnd()

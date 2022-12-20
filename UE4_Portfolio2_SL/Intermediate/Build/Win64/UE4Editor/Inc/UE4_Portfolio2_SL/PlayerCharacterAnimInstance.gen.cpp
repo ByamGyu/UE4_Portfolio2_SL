@@ -469,6 +469,10 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ImpactStrong3;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ImpactBack1_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ImpactBack1;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ShieldBlockWeak_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ShieldBlockWeak;
@@ -849,6 +853,14 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactStrong3 = { "ImpactStrong3", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactStrong3), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactStrong3_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactStrong3_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactBack1_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AnimMontage" },
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactBack1 = { "ImpactBack1", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactBack1), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactBack1_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactBack1_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ShieldBlockWeak_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "AnimMontage" },
@@ -904,6 +916,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactStrong1,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactStrong2,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactStrong3,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactBack1,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ShieldBlockWeak,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ShieldBlockStrong,
 	};
@@ -934,7 +947,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerCharacterAnimInstance, 2624113542);
+	IMPLEMENT_CLASS(UPlayerCharacterAnimInstance, 1072534994);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UPlayerCharacterAnimInstance>()
 	{
 		return UPlayerCharacterAnimInstance::StaticClass();

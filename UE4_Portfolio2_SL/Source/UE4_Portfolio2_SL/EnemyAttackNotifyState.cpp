@@ -68,14 +68,14 @@ void UEnemyAttackNotifyState::NotifyTick(USkeletalMeshComponent* MeshComp, UAnim
 						GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Orange, hittedCharacter->GetName());
 						arrHittedReuslts.Add(hittedCharacter);
 
-						// 내적 계산하기(현재 사용하지 않음)
+						// 내적 계산하기
 						FVector OwnerForward = Character->GetActorForwardVector();
 						FVector HittedActorForward = hittedCharacter->GetActorForwardVector();
 						float Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
 						float AcosAngle = FMath::Acos(Dot);
 						float AngleDegree = FMath::RadiansToDegrees(AcosAngle);
-						//hittedCharacter->PlayHitAniamtion(AngleDegree);
 
+						hittedCharacter->PlayHitAniamtion(AngleDegree);
 						GiveDamage(Character, hittedCharacter);
 					}
 				}

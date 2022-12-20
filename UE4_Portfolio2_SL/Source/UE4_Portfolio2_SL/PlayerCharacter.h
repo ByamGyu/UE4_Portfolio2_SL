@@ -144,7 +144,7 @@ public:
 
 	void Dead();
 
-	void PlayImpactAnimation();
+	void PlayHitAniamtion(float _Degree);
 	void PlayShieldBlockWeakAnimation();
 	void PlayShieldBlockStrongAnimation();
 	float GetCurStamina() { return CurStamina; }

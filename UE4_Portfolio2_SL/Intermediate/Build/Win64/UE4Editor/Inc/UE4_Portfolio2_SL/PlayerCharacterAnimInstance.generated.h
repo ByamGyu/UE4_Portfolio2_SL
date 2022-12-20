@@ -121,6 +121,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__ImpactStrong1() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactStrong1); } \
 	FORCEINLINE static uint32 __PPO__ImpactStrong2() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactStrong2); } \
 	FORCEINLINE static uint32 __PPO__ImpactStrong3() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactStrong3); } \
+	FORCEINLINE static uint32 __PPO__ImpactBack1() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactBack1); } \
 	FORCEINLINE static uint32 __PPO__ShieldBlockWeak() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ShieldBlockWeak); } \
 	FORCEINLINE static uint32 __PPO__ShieldBlockStrong() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ShieldBlockStrong); }
 
