@@ -68,7 +68,7 @@ void UMyHeavyAttackNotifyState::NotifyTick(USkeletalMeshComponent* MeshComp, UAn
 							GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, hittedCharacter->GetName());
 							arrHittedResults.Add(hittedCharacter);
 
-							// 내적 계산하기(현재 사용하지 않음)
+							// 내적 계산하기
 							FVector OwnerForward = Character->GetActorForwardVector();
 							FVector HittedActorForward = hittedCharacter->GetActorForwardVector();
 							float Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
