@@ -135,7 +135,8 @@ void AEnemy_SkeletonWarrior::SetRightWeapon(AWeapon_RustySword* _NewWeapon)
 void AEnemy_SkeletonWarrior::RandomAttackAll1()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
-		|| Cur_State == EMONSTER_STATE::MOVE)
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
 	{
 		auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 		if (pAnimInst != nullptr)
@@ -160,7 +161,8 @@ void AEnemy_SkeletonWarrior::RandomAttackAll1()
 void AEnemy_SkeletonWarrior::ComboAttack01()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
-		|| Cur_State == EMONSTER_STATE::MOVE)
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
 	{
 		auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 		if (pAnimInst != nullptr)
@@ -178,7 +180,8 @@ void AEnemy_SkeletonWarrior::ComboAttack01()
 void AEnemy_SkeletonWarrior::ComboAttack02()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
-		|| Cur_State == EMONSTER_STATE::MOVE)
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
 	{
 		auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 		if (pAnimInst != nullptr)
@@ -196,7 +199,8 @@ void AEnemy_SkeletonWarrior::ComboAttack02()
 void AEnemy_SkeletonWarrior::ComboAttack03()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
-		|| Cur_State == EMONSTER_STATE::MOVE)
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
 	{
 		auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 		if (pAnimInst != nullptr)
@@ -214,7 +218,8 @@ void AEnemy_SkeletonWarrior::ComboAttack03()
 void AEnemy_SkeletonWarrior::ComboAttackRandom()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
-		|| Cur_State == EMONSTER_STATE::MOVE)
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
 	{
 		auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 		if (pAnimInst != nullptr)
@@ -235,7 +240,8 @@ void AEnemy_SkeletonWarrior::ComboAttackRandom()
 void AEnemy_SkeletonWarrior::SingleAttackStand01()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
-		|| Cur_State == EMONSTER_STATE::MOVE)
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
 	{
 		auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 		if (pAnimInst != nullptr)
@@ -253,7 +259,8 @@ void AEnemy_SkeletonWarrior::SingleAttackStand01()
 void AEnemy_SkeletonWarrior::SingleAttackStand02()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
-		|| Cur_State == EMONSTER_STATE::MOVE)
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
 	{
 		auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 		if (pAnimInst != nullptr)
@@ -271,7 +278,8 @@ void AEnemy_SkeletonWarrior::SingleAttackStand02()
 void AEnemy_SkeletonWarrior::SingleAttackStand03()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
-		|| Cur_State == EMONSTER_STATE::MOVE)
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
 	{
 		auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 		if (pAnimInst != nullptr)
@@ -289,7 +297,8 @@ void AEnemy_SkeletonWarrior::SingleAttackStand03()
 void AEnemy_SkeletonWarrior::SingleAttackMove01()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
-		|| Cur_State == EMONSTER_STATE::MOVE)
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
 	{
 		auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 		if (pAnimInst != nullptr)
@@ -307,7 +316,8 @@ void AEnemy_SkeletonWarrior::SingleAttackMove01()
 void AEnemy_SkeletonWarrior::SingleAttackMove02()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
-		|| Cur_State == EMONSTER_STATE::MOVE)
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
 	{
 		auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 		if (pAnimInst != nullptr)
@@ -325,7 +335,8 @@ void AEnemy_SkeletonWarrior::SingleAttackMove02()
 void AEnemy_SkeletonWarrior::SingleAttackMove03()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
-		|| Cur_State == EMONSTER_STATE::MOVE)
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
 	{
 		auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 		if (pAnimInst != nullptr)
@@ -343,7 +354,8 @@ void AEnemy_SkeletonWarrior::SingleAttackMove03()
 void AEnemy_SkeletonWarrior::SingleAttackRandom()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
-		|| Cur_State == EMONSTER_STATE::MOVE)
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
 	{
 		auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 		if (pAnimInst != nullptr)

@@ -14,8 +14,20 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define UE4_PORTFOLIO2_SL_Enemy_SkeletonArcher_AnimInst_generated_h
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonArcher_AnimInst_h_13_SPARSE_DATA
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonArcher_AnimInst_h_13_RPC_WRAPPERS
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonArcher_AnimInst_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonArcher_AnimInst_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execAnimNotify_Fire); \
+	DECLARE_FUNCTION(execAnimNotify_PauseDeadMontage); \
+	DECLARE_FUNCTION(execAnimNotify_InitState);
+
+
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonArcher_AnimInst_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execAnimNotify_Fire); \
+	DECLARE_FUNCTION(execAnimNotify_PauseDeadMontage); \
+	DECLARE_FUNCTION(execAnimNotify_InitState);
+
+
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonArcher_AnimInst_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUEnemy_SkeletonArcher_AnimInst(); \
@@ -58,7 +70,22 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UEnemy_SkeletonArcher_AnimInst)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonArcher_AnimInst_h_13_PRIVATE_PROPERTY_OFFSET
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonArcher_AnimInst_h_13_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__CurrentSpeed() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, CurrentSpeed); } \
+	FORCEINLINE static uint32 __PPO__CurrentDirection() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, CurrentDirection); } \
+	FORCEINLINE static uint32 __PPO__IsFight() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, IsFight); } \
+	FORCEINLINE static uint32 __PPO__IsAttacking() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, IsAttacking); } \
+	FORCEINLINE static uint32 __PPO__KnockDown_Time() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, KnockDown_Time); } \
+	FORCEINLINE static uint32 __PPO__Cur_State() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Cur_State); } \
+	FORCEINLINE static uint32 __PPO__Attack_Melee() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Attack_Melee); } \
+	FORCEINLINE static uint32 __PPO__Attack_Range_Slow() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Attack_Range_Slow); } \
+	FORCEINLINE static uint32 __PPO__Attack_Range_Fast() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Attack_Range_Fast); } \
+	FORCEINLINE static uint32 __PPO__HitBack() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, HitBack); } \
+	FORCEINLINE static uint32 __PPO__Hit1() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Hit1); } \
+	FORCEINLINE static uint32 __PPO__Hit2() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Hit2); } \
+	FORCEINLINE static uint32 __PPO__Hit3() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Hit3); }
+
+
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonArcher_AnimInst_h_10_PROLOG
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonArcher_AnimInst_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

@@ -31,6 +31,15 @@ void EmptyLinkFunctionForGeneratedCodeBTDeco_HasTargetAndInDefensDist() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Min_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Min;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Max_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Max;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -44,6 +53,26 @@ void EmptyLinkFunctionForGeneratedCodeBTDeco_HasTargetAndInDefensDist() {}
 		{ "ModuleRelativePath", "BTDeco_HasTargetAndInDefensDist.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::NewProp_Min_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Info" },
+		{ "ModuleRelativePath", "BTDeco_HasTargetAndInDefensDist.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::NewProp_Min = { "Min", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UBTDeco_HasTargetAndInDefensDist, Min), METADATA_PARAMS(Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::NewProp_Min_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::NewProp_Min_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::NewProp_Max_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Info" },
+		{ "ModuleRelativePath", "BTDeco_HasTargetAndInDefensDist.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::NewProp_Max = { "Max", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UBTDeco_HasTargetAndInDefensDist, Max), METADATA_PARAMS(Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::NewProp_Max_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::NewProp_Max_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::NewProp_Min,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::NewProp_Max,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UBTDeco_HasTargetAndInDefensDist>::IsAbstract,
 	};
@@ -53,11 +82,11 @@ void EmptyLinkFunctionForGeneratedCodeBTDeco_HasTargetAndInDefensDist() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::PropPointers),
 		0,
 		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UBTDeco_HasTargetAndInDefensDist_Statics::Class_MetaDataParams))
@@ -71,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeBTDeco_HasTargetAndInDefensDist() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UBTDeco_HasTargetAndInDefensDist, 1864730984);
+	IMPLEMENT_CLASS(UBTDeco_HasTargetAndInDefensDist, 1399242504);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UBTDeco_HasTargetAndInDefensDist>()
 	{
 		return UBTDeco_HasTargetAndInDefensDist::StaticClass();

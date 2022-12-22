@@ -58,7 +58,10 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UBTDecorator_IsInAttackRange)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTDecorator_IsInAttackRange_h_12_PRIVATE_PROPERTY_OFFSET
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTDecorator_IsInAttackRange_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__AttackRange() { return STRUCT_OFFSET(UBTDecorator_IsInAttackRange, AttackRange); }
+
+
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTDecorator_IsInAttackRange_h_9_PROLOG
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTDecorator_IsInAttackRange_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

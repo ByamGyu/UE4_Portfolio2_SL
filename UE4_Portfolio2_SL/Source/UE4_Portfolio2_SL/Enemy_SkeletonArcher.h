@@ -66,7 +66,14 @@ public:
 
 
 public:
-	//void RandomAttackAll1() override;
+	void Play_Attack_Melee();
+	void Play_Attack_Range_Slow();
+	void Play_Attack_Range_Fast();
+	void Play_HitRandom();
+	void Play_Hit_Back();
+	void Play_Hit1();
+	void Play_Hit2();
+	void Play_Hit3();
 
 	void PlayHitAniamtion(float _Degree) override;
 

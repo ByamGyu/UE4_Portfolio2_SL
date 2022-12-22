@@ -31,7 +31,7 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 		return EMONSTER_STATE_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EMONSTER_STATE(EMONSTER_STATE_StaticEnum, TEXT("/Script/UE4_Portfolio2_SL"), TEXT("EMONSTER_STATE"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE_Hash() { return 2429237921U; }
+	uint32 Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE_Hash() { return 4005646075U; }
 	UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE()
 	{
 #if WITH_HOT_RELOAD
@@ -51,6 +51,7 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 				{ "EMONSTER_STATE::FALL", (int64)EMONSTER_STATE::FALL },
 				{ "EMONSTER_STATE::GUARD", (int64)EMONSTER_STATE::GUARD },
 				{ "EMONSTER_STATE::ATTACK", (int64)EMONSTER_STATE::ATTACK },
+				{ "EMONSTER_STATE::RANGE_ATTACK", (int64)EMONSTER_STATE::RANGE_ATTACK },
 				{ "EMONSTER_STATE::RANGE_AIM", (int64)EMONSTER_STATE::RANGE_AIM },
 				{ "EMONSTER_STATE::RANGE_FIRE", (int64)EMONSTER_STATE::RANGE_FIRE },
 				{ "EMONSTER_STATE::SPELL", (int64)EMONSTER_STATE::SPELL },
@@ -82,6 +83,7 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 				{ "MOVE.Name", "EMONSTER_STATE::MOVE" },
 				{ "PARRY.Name", "EMONSTER_STATE::PARRY" },
 				{ "RANGE_AIM.Name", "EMONSTER_STATE::RANGE_AIM" },
+				{ "RANGE_ATTACK.Name", "EMONSTER_STATE::RANGE_ATTACK" },
 				{ "RANGE_FIRE.Name", "EMONSTER_STATE::RANGE_FIRE" },
 				{ "SLEEP_SITDOWN.Name", "EMONSTER_STATE::SLEEP_SITDOWN" },
 				{ "SLEEP_STAND.Name", "EMONSTER_STATE::SLEEP_STAND" },

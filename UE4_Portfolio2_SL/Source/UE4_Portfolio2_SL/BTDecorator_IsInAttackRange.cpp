@@ -8,6 +8,9 @@
 UBTDecorator_IsInAttackRange::UBTDecorator_IsInAttackRange()
 {
 	NodeName = TEXT("CanAttack");
+
+
+	AttackRange = 200.0f;
 }
 
 bool UBTDecorator_IsInAttackRange::CalculateRawConditionValue(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) const
@@ -26,7 +29,7 @@ bool UBTDecorator_IsInAttackRange::CalculateRawConditionValue(UBehaviorTreeCompo
 	float Dist = ControllingPawn->GetDistanceTo(Target);
 	//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(Dist));
 
-	// 2m 이상 거리는 false 2m 미만 거리는 true
-	if (Dist <= 200.0f) return true;
+		
+	if (Dist <= AttackRange) return true;
 	else return false;
 }

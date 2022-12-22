@@ -40,8 +40,6 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 
 	// 탐지 중심부
 	FVector Center = ControllingPawn->GetActorLocation();
-	// 탐지 범위
-	float DetectRadius = 600.0f;
 
 	TArray<FOverlapResult> OverlapResults;
 	// 제외사항(AI가 조종하는 캐릭터 본인)

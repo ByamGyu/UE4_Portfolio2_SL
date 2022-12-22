@@ -15,7 +15,12 @@ class UE4_PORTFOLIO2_SL_API UBTDecorator_IsInAttackRange : public UBTDecorator
 public:
 	UBTDecorator_IsInAttackRange();
 
+
 protected:
 	virtual bool CalculateRawConditionValue(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) const override;
 
+
+private:
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	float AttackRange;
 };

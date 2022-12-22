@@ -136,6 +136,148 @@ void AEnemy_SkeletonArcher::SetRightWeapon(AWeapon_SkeletonArcherBow* _NewWeapon
 	}
 }
 
+void AEnemy_SkeletonArcher::Play_Attack_Melee()
+{
+	if (Cur_State == EMONSTER_STATE::IDLE
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
+	{
+		auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
+		if (pAnimInst != nullptr)
+		{
+			ChangeState(EMONSTER_STATE::ATTACK);
+
+			IsAttacking = true;
+
+			pAnimInst->Play_Attack_Melee();
+		}
+		else return;
+	}
+}
+
+void AEnemy_SkeletonArcher::Play_Attack_Range_Slow()
+{
+	if (Cur_State == EMONSTER_STATE::IDLE
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
+	{
+		auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
+		if (pAnimInst != nullptr)
+		{
+			ChangeState(EMONSTER_STATE::RANGE_ATTACK);
+
+			IsAttacking = true;
+
+			pAnimInst->Play_Attack_Range_Slow();
+		}
+		else return;
+	}
+}
+
+void AEnemy_SkeletonArcher::Play_Attack_Range_Fast()
+{
+	if (Cur_State == EMONSTER_STATE::IDLE
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
+	{
+		auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
+		if (pAnimInst != nullptr)
+		{
+			ChangeState(EMONSTER_STATE::RANGE_ATTACK);
+
+			IsAttacking = true;
+
+			pAnimInst->Play_Attack_Range_Fast();
+		}
+		else return;
+	}
+}
+
+void AEnemy_SkeletonArcher::Play_HitRandom()
+{
+	if (Cur_State == EMONSTER_STATE::IDLE
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
+	{
+		auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
+		if (pAnimInst != nullptr)
+		{
+			ChangeState(EMONSTER_STATE::IMPACT_WEAK);
+
+			pAnimInst->Play_HitRandom();
+		}
+		else return;
+	}
+}
+
+void AEnemy_SkeletonArcher::Play_Hit_Back()
+{
+	if (Cur_State == EMONSTER_STATE::IDLE
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
+	{
+		auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
+		if (pAnimInst != nullptr)
+		{
+			ChangeState(EMONSTER_STATE::IMPACT_WEAK);
+
+			pAnimInst->Play_Hit_Back();
+		}
+		else return;
+	}
+}
+
+void AEnemy_SkeletonArcher::Play_Hit1()
+{
+	if (Cur_State == EMONSTER_STATE::IDLE
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
+	{
+		auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
+		if (pAnimInst != nullptr)
+		{
+			ChangeState(EMONSTER_STATE::IMPACT_WEAK);
+
+			pAnimInst->Play_Hit1();
+		}
+		else return;
+	}
+}
+
+void AEnemy_SkeletonArcher::Play_Hit2()
+{
+	if (Cur_State == EMONSTER_STATE::IDLE
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
+	{
+		auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
+		if (pAnimInst != nullptr)
+		{
+			ChangeState(EMONSTER_STATE::IMPACT_WEAK);
+
+			pAnimInst->Play_Hit2();
+		}
+		else return;
+	}
+}
+
+void AEnemy_SkeletonArcher::Play_Hit3()
+{
+	if (Cur_State == EMONSTER_STATE::IDLE
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::DEAD)
+	{
+		auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
+		if (pAnimInst != nullptr)
+		{
+			ChangeState(EMONSTER_STATE::IMPACT_WEAK);
+
+			pAnimInst->Play_Hit3();
+		}
+		else return;
+	}
+}
+
 void AEnemy_SkeletonArcher::PlayHitAniamtion(float _Degree)
 {
 	Super::PlayHitAniamtion(_Degree);

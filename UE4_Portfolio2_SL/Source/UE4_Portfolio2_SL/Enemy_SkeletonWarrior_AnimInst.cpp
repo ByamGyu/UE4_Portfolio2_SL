@@ -67,7 +67,7 @@ void UEnemy_SkeletonWarrior_AnimInst::NativeUpdateAnimation(float DeltaSeconds)
 		IsAttacking = Character->GetIsAttacking();
 		// KnockDown_Time = Character->GetKnockDownTime();
 	}
-	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Skeleton: Character Owner Is Null!"));
+	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("SkeletonWarrior: Character Owner Is Null!"));
 }
 
 void UEnemy_SkeletonWarrior_AnimInst::PlayCombo01StandMontage()

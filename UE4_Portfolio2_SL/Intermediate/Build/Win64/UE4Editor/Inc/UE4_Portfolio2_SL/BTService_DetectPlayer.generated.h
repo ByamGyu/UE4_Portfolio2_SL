@@ -58,7 +58,10 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UBTService_DetectPlayer)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTService_DetectPlayer_h_12_PRIVATE_PROPERTY_OFFSET
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTService_DetectPlayer_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__DetectRadius() { return STRUCT_OFFSET(UBTService_DetectPlayer, DetectRadius); }
+
+
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTService_DetectPlayer_h_9_PROLOG
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTService_DetectPlayer_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

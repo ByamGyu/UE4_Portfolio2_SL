@@ -58,7 +58,11 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UBTDeco_HasTargetAndInDefensDist)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTDeco_HasTargetAndInDefensDist_h_12_PRIVATE_PROPERTY_OFFSET
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTDeco_HasTargetAndInDefensDist_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__Min() { return STRUCT_OFFSET(UBTDeco_HasTargetAndInDefensDist, Min); } \
+	FORCEINLINE static uint32 __PPO__Max() { return STRUCT_OFFSET(UBTDeco_HasTargetAndInDefensDist, Max); }
+
+
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTDeco_HasTargetAndInDefensDist_h_9_PROLOG
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTDeco_HasTargetAndInDefensDist_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

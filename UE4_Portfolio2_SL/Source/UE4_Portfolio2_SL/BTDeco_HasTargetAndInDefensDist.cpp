@@ -8,6 +8,10 @@
 UBTDeco_HasTargetAndInDefensDist::UBTDeco_HasTargetAndInDefensDist()
 {
 	NodeName = TEXT("HasTargetAndInDefensiveDist");
+
+
+	Min = 400.0f;
+	Max = 600.0f;
 }
 
 bool UBTDeco_HasTargetAndInDefensDist::CalculateRawConditionValue(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) const
@@ -26,7 +30,7 @@ bool UBTDeco_HasTargetAndInDefensDist::CalculateRawConditionValue(UBehaviorTreeC
 	float Dist = ControllingPawn->GetDistanceTo(Target);
 	//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(Dist));
 
-	// 4m이상은 false 4m 미만 2m 이상은 true
-	if (Dist < 600.0f && Dist >= 400.0f) return true;
+	
+	if (Dist < Max && Dist >= Min) return true;
 	else return true;
 }

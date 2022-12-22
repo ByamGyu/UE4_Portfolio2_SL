@@ -7,7 +7,10 @@
 
 UBTDe_HasTargetAndInOffensDist::UBTDe_HasTargetAndInOffensDist()
 {
+	NodeName = TEXT("HasTargetAndInOffensiveDist");
 
+
+	BoundaryLine = 400.0f;
 }
 
 bool UBTDe_HasTargetAndInOffensDist::CalculateRawConditionValue(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) const
@@ -26,7 +29,7 @@ bool UBTDe_HasTargetAndInOffensDist::CalculateRawConditionValue(UBehaviorTreeCom
 	float Dist = ControllingPawn->GetDistanceTo(Target);
 	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(Dist));
 
-	// 2m 초과 거리는 false 2m 이하 거리는 true
-	if (Dist <= 400.0f) return true;
+
+	if (Dist <= BoundaryLine) return true;
 	else return false;
 }
