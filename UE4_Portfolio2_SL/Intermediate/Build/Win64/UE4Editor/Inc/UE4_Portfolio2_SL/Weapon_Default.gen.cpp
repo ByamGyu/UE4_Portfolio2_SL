@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Default() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon_Default, 249339431);
+	IMPLEMENT_CLASS(AWeapon_Default, 501523499);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<AWeapon_Default>()
 	{
 		return AWeapon_Default::StaticClass();

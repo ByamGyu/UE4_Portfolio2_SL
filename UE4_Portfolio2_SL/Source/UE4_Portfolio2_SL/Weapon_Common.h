@@ -15,7 +15,7 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
-
+	virtual void Tick(float DeltaTime) override;
 
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
@@ -29,6 +29,10 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	const UStaticMeshSocket* WeaponSocketEnd;
 
+	// 투사체 전용 소켓
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	const UStaticMeshSocket* WeaponProjectileSocket;
+
 
 
 public:
@@ -37,9 +41,4 @@ public:
 	float GetWeaponDamage();
 
 	UStaticMeshComponent* GetMesh() { return Body; }
-
-
-public:
-	virtual void Tick(float DeltaTime) override;
-
 };

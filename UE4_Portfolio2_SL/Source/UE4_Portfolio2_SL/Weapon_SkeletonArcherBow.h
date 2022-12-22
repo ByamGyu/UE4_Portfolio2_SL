@@ -14,5 +14,5 @@ class UE4_PORTFOLIO2_SL_API AWeapon_SkeletonArcherBow : public AWeapon_Common
 
 
 public:
-	AWeapon_SkeletonArcherBow();	
+	AWeapon_SkeletonArcherBow();
 };

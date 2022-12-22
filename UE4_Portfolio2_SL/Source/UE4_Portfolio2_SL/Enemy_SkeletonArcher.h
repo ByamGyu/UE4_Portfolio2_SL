@@ -64,6 +64,10 @@ public:
 	void SetRightWeapon(class AWeapon_SkeletonArcherBow* _NewWeapon);
 
 
+	// 투사체 관련
+protected:
+
+
 
 public:
 	void Play_Attack_Melee();

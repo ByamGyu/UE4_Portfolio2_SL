@@ -61,7 +61,8 @@ public: \
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Weapon_Common_h_10_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Body() { return STRUCT_OFFSET(AWeapon_Common, Body); } \
 	FORCEINLINE static uint32 __PPO__WeaponSocketStart() { return STRUCT_OFFSET(AWeapon_Common, WeaponSocketStart); } \
-	FORCEINLINE static uint32 __PPO__WeaponSocketEnd() { return STRUCT_OFFSET(AWeapon_Common, WeaponSocketEnd); }
+	FORCEINLINE static uint32 __PPO__WeaponSocketEnd() { return STRUCT_OFFSET(AWeapon_Common, WeaponSocketEnd); } \
+	FORCEINLINE static uint32 __PPO__WeaponProjectileSocket() { return STRUCT_OFFSET(AWeapon_Common, WeaponProjectileSocket); }
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Weapon_Common_h_7_PROLOG

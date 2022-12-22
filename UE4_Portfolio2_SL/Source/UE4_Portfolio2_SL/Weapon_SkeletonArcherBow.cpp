@@ -15,5 +15,7 @@ AWeapon_SkeletonArcherBow::AWeapon_SkeletonArcherBow()
 
 		WeaponSocketStart = Body->GetSocketByName(TEXT("Sword_Start"));
 		WeaponSocketEnd = Body->GetSocketByName(TEXT("Sword_End"));
+
+		WeaponProjectileSocket = Body->GetSocketByName(TEXT("Socket_Projectile"));
 	}
 }
