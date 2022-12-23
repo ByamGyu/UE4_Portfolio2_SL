@@ -83,7 +83,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__HitBack() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, HitBack); } \
 	FORCEINLINE static uint32 __PPO__Hit1() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Hit1); } \
 	FORCEINLINE static uint32 __PPO__Hit2() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Hit2); } \
-	FORCEINLINE static uint32 __PPO__Hit3() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Hit3); }
+	FORCEINLINE static uint32 __PPO__Hit3() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Hit3); } \
+	FORCEINLINE static uint32 __PPO__Dead1() { return STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Dead1); }
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonArcher_AnimInst_h_10_PROLOG

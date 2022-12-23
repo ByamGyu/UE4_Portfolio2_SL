@@ -51,6 +51,8 @@ public:
 	void SetDamage();
 	float GetDamage();
 	void SetLifeTime(float _Value);
+	void SetSpeed(float _Value);
+	void SetMaxSpeed(float _Value);
 
 	UStaticMeshComponent* GetMesh() { return Body; }
 

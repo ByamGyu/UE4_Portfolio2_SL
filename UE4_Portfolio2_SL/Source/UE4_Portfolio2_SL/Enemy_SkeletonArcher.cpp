@@ -334,36 +334,36 @@ void AEnemy_SkeletonArcher::PlayHitAniamtion(float _Degree)
 {
 	Super::PlayHitAniamtion(_Degree);
 
-	//auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
-	//if (pAnimInst != nullptr)
-	//{
-	//	ChangeState(EMONSTER_STATE::IMPACT_WEAK);
+	auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::IMPACT_WEAK);
 
-	//	if (_Degree >= 90.0f)
-	//	{
-	//		pAnimInst->PlayImpactMontage();
-	//	}
-	//	else if (_Degree < 90.0f)
-	//	{
-	//		pAnimInst->PlayHitBackMontage();
-	//	}
+		if (_Degree >= 90.0f)
+		{
+			pAnimInst->Play_HitRandom();
+		}
+		else if (_Degree < 90.0f)
+		{
+			pAnimInst->Play_Hit_Back();
+		}
 
-	//	// TODO (효과음?)
-	//}
-	//else return;
+		// TODO (효과음?)
+	}
+	else return;
 }
 
 void AEnemy_SkeletonArcher::Dead()
 {
 	Super::Dead();
 
-	//auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
-	//if (pAnimInst != nullptr)
-	//{
-	//	ChangeState(EMONSTER_STATE::DEAD);
-	//	pAnimInst->PlayDeadMontage();
+	auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::DEAD);
+		pAnimInst->Play_Dead();
 
-	//	// TODO (효과음?)
-	//}
-	//else return;
+		// TODO (효과음?)
+	}
+	else return;
 }

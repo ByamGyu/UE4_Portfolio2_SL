@@ -184,6 +184,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Hit3_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Hit3;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Dead1_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Dead1;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -317,6 +321,14 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Hit3 = { "Hit3", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Hit3), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Hit3_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Hit3_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Dead1_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AnimMontage" },
+		{ "ModuleRelativePath", "Enemy_SkeletonArcher_AnimInst.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Dead1 = { "Dead1", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Dead1), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Dead1_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Dead1_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_CurrentSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_CurrentDirection,
@@ -332,6 +344,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Hit1,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Hit2,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Hit3,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Dead1,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UEnemy_SkeletonArcher_AnimInst>::IsAbstract,
@@ -360,7 +373,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEnemy_SkeletonArcher_AnimInst, 3132669506);
+	IMPLEMENT_CLASS(UEnemy_SkeletonArcher_AnimInst, 575424071);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UEnemy_SkeletonArcher_AnimInst>()
 	{
 		return UEnemy_SkeletonArcher_AnimInst::StaticClass();

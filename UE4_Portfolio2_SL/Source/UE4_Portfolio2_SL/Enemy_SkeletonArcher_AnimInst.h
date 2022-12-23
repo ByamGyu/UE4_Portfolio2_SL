@@ -51,6 +51,9 @@ private:
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* Hit3;
 
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* Dead1;
+
 
 	// 몽타주 재생 함수들
 public:
@@ -62,6 +65,7 @@ public:
 	void Play_Hit1();
 	void Play_Hit2();
 	void Play_Hit3();
+	void Play_Dead();
 
 
 	// 노티파이들

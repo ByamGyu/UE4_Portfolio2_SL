@@ -25,6 +25,9 @@ UEnemy_SkeletonArcher_AnimInst::UEnemy_SkeletonArcher_AnimInst()
 	if (AM_Hit2.Succeeded()) Hit2 = AM_Hit2.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Hit3(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonArcher/Animation_Montages/Standing_React_Small_From_Right_mixamo_com_Montage.Standing_React_Small_From_Right_mixamo_com_Montage'"));
 	if (AM_Hit3.Succeeded()) Hit3 = AM_Hit3.Object;
+
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Dead1(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonArcher/Animation_Montages/Standing_Death_Right_02_mixamo_com_Montage.Standing_Death_Right_02_mixamo_com_Montage'"));
+	if (AM_Dead1.Succeeded()) Dead1 = AM_Dead1.Object;
 }
 
 void UEnemy_SkeletonArcher_AnimInst::AnimNotify_InitState()
@@ -97,17 +100,22 @@ void UEnemy_SkeletonArcher_AnimInst::Play_Hit3()
 	Montage_Play(Hit3, 1.0f);
 }
 
+void UEnemy_SkeletonArcher_AnimInst::Play_Dead()
+{
+	Montage_Play(Dead1, 1.0f);
+}
+
 void UEnemy_SkeletonArcher_AnimInst::AnimNotify_PauseDeadMontage()
 {
 	auto Character = Cast<AEnemy_SkeletonArcher>(TryGetPawnOwner());
 	if (Character != nullptr)
 	{
-		//if (Montage_IsPlaying(Dead1))
-		//{
-		//	Montage_Pause(Dead1);
+		if (Montage_IsPlaying(Dead1))
+		{
+			Montage_Pause(Dead1);
 
-		//	// TODO
-		//}
+			// TODO
+		}
 		//else if (Montage_IsPlaying(Dead2))
 		//{
 		//	Montage_Pause(Dead2);

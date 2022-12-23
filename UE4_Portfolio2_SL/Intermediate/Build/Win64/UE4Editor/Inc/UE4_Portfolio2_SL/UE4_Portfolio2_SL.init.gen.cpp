@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeUE4_Portfolio2_SL_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xFC179D27,
+				0x3DE65016,
 				0x790FD38F,
 				METADATA_PARAMS(nullptr, 0)
 			};

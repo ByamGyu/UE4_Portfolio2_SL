@@ -19,7 +19,7 @@ AProjectile_SkeletonArcherArrow::AProjectile_SkeletonArcherArrow()
 	CollisionComponent->SetCollisionProfileName(TEXT("EnemyProjectile"));
 
 
-	ProjectileSpeed = 1000.0f;
+	SetSpeed(1000.0f);
 }
 
 void AProjectile_SkeletonArcherArrow::BeginPlay()

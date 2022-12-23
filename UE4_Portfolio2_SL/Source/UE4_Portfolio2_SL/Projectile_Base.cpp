@@ -11,13 +11,10 @@ AProjectile_Base::AProjectile_Base()
 	CollisionComponent->InitSphereRadius(5.0f);
 	RootComponent = CollisionComponent;
 
-	// 투사체 설정
-	ProjectileSpeed = 500.0f;
-
 	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovementComponent"));
 	//ProjectileMovementComponent->SetUpdatedComponent(RootComponent);
-	ProjectileMovementComponent->InitialSpeed = ProjectileSpeed;
-	ProjectileMovementComponent->MaxSpeed = ProjectileSpeed;
+	ProjectileMovementComponent->InitialSpeed = 500.0f;
+	ProjectileMovementComponent->MaxSpeed = 500.0f;
 	ProjectileMovementComponent->bRotationFollowsVelocity = true;
 	ProjectileMovementComponent->bShouldBounce = false;
 	ProjectileMovementComponent->ProjectileGravityScale = 0.0f;
@@ -66,6 +63,19 @@ float AProjectile_Base::GetDamage()
 void AProjectile_Base::SetLifeTime(float _Value)
 {
 	InitialLifeSpan = _Value;
+}
+
+void AProjectile_Base::SetSpeed(float _Value)
+{
+	ProjectileSpeed = _Value;
+	
+	ProjectileMovementComponent->InitialSpeed = ProjectileSpeed;
+	ProjectileMovementComponent->MaxSpeed = ProjectileSpeed;
+}
+
+void AProjectile_Base::SetMaxSpeed(float _Value)
+{
+	ProjectileMovementComponent->MaxSpeed = _Value;
 }
 
 void AProjectile_Base::FireInDirection(const FVector& _ShootDirection)
