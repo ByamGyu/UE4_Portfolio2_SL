@@ -77,7 +77,7 @@ public:
 
 	// 공격 함수
 public:
-	virtual void RandomAttackAll1();
+	virtual void RandomAttackAll();
 	virtual void ComboAttack01();
 	virtual void ComboAttack02();
 	virtual void ComboAttack03();

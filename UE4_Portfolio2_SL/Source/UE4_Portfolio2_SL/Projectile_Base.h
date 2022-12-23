@@ -50,11 +50,15 @@ public:
 	void SetDamage(float _Value);
 	void SetDamage();
 	float GetDamage();
+	void SetLifeTime(float _Value);
 
 	UStaticMeshComponent* GetMesh() { return Body; }
 
 
-protected:
+public:
 	// 투사체의 발사를 담당
 	void FireInDirection(const FVector& ShootDirection);
+
+	/*UFUNCTION()
+		void */
 };

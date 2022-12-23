@@ -22,7 +22,9 @@ EBTNodeResult::Type UBTTask_Attack::ExecuteTask(UBehaviorTreeComponent& OwnerCom
 		return EBTNodeResult::Failed;
 	}
 
-	pCharacter->RandomAttackAll1();
+	pCharacter->RandomAttackAll();
+
+	
 
 	// Task가 실행되면
 	// 일단 현재 작업이 진행중임을 알림

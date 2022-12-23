@@ -121,4 +121,11 @@ void UEnemy_SkeletonArcher_AnimInst::AnimNotify_PauseDeadMontage()
 void UEnemy_SkeletonArcher_AnimInst::AnimNotify_Fire()
 {
 	// 화살 발사
+	auto Character = Cast<AEnemy_SkeletonArcher>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		Character->Spawn_And_Fire_Arrow();
+
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("Fire!!!"));
+	}
 }

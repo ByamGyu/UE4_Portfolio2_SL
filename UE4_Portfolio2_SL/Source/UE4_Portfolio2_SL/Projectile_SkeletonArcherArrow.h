@@ -13,4 +13,8 @@ class UE4_PORTFOLIO2_SL_API AProjectile_SkeletonArcherArrow : public AProjectile
 
 public:
 	AProjectile_SkeletonArcherArrow();
+
+
+protected:
+	virtual void BeginPlay() override;
 };

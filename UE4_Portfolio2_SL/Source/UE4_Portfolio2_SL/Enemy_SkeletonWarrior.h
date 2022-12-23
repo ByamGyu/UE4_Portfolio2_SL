@@ -66,7 +66,7 @@ public:
 
 
 public:
-	void RandomAttackAll1() override;
+	void RandomAttackAll() override;
 	void ComboAttack01() override;
 	void ComboAttack02() override;
 	void ComboAttack03() override;

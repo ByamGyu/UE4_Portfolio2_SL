@@ -1,81 +1,27 @@
-﻿  Cleaning UE4_Portfolio2_SLEditor and UnrealHeaderTool binaries...
-  Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
-  Creating makefile for UE4_Portfolio2_SLEditor (no existing makefile)
+﻿  Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
   Parsing headers for UE4_Portfolio2_SLEditor
     Running UnrealHeaderTool "G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\UE4_Portfolio2_SL.uproject" "G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4_Portfolio2_SLEditor\Development\UE4_Portfolio2_SLEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\decja\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
   LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for UE4_Portfolio2_SLEditor in 3.1380667 seconds
+  Reflection code generated for UE4_Portfolio2_SLEditor in 3.2056581 seconds
   Building UE4_Portfolio2_SLEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 61 actions with 24 processes...
-    [1/61] Default.rc2
-    [2/61] SharedPCH.Engine.ShadowErrors.cpp
-    [3/61] define.cpp
-    [4/61] BTTask_TurntoTarget.gen.cpp
-    [5/61] MyAttackNotifyState.cpp
-    [6/61] Enemy_SkeletonWarrior.gen.cpp
-    [7/61] Enemy_SkeletonWarrior_AnimInst.cpp
-    [8/61] MyAttackNotifyState.gen.cpp
-    [9/61] UE4_Portfolio2_SLGameMode.cpp
-    [10/61] MyHeavyAttackNotifyState.cpp
-    [11/61] EnemyAttackNotifyState.cpp
-    [12/61] AI_Base.gen.cpp
-    [13/61] Enemy_SkeletonWarrior.cpp
-    [14/61] BTService_UpdateBackwardLocation.gen.cpp
-    [15/61] PlayerCharacterAnimInstance.cpp
-    [16/61] Enemy_Base.cpp
-    [17/61] BTTask_Attack.gen.cpp
-    [18/61] BTService_UpdateInfo.cpp
-    [19/61] BTService_DetectPlayer.cpp
-    [20/61] AI_SkeletonWarrior.cpp
-    [21/61] BTService_UpdateBackwardLocation.cpp
-    [22/61] BTDe_HasTargetAndInOffensDist.cpp
-    [23/61] BTDecorator_IsInAttackRange.cpp
-    [24/61] BTDeco_HasTargetAndInDefensDist.cpp
-    [25/61] define.gen.cpp
-    [26/61] BTDecorator_IsInAttackRange.gen.cpp
-    [27/61] BTTask_TurntoTarget.cpp
-    [28/61] UE4_Portfolio2_SL.cpp
-    [29/61] UE4_Portfolio2_SL.init.gen.cpp
-    [30/61] BTDe_HasTargetAndInOffensDist.gen.cpp
-    [31/61] BTTask_FindPatrolPos.cpp
-    [32/61] EnemyAttackNotifyState.gen.cpp
-    [33/61] Shield_Default.cpp
-    [34/61] MyHeavyAttackNotifyState.gen.cpp
-    [35/61] Weapon_Common.cpp
-    [36/61] Weapon_RustySword.cpp
-    [37/61] UE4_Portfolio2_SLCharacter.cpp
-    [38/61] AI_Base.cpp
-    [39/61] Enemy_Base.gen.cpp
-    [40/61] BTDeco_HasTargetAndInDefensDist.gen.cpp
-    [41/61] AI_SkeletonWarrior.gen.cpp
-    [42/61] BTService_UpdateInfo.gen.cpp
-    [43/61] BTService_DetectPlayer.gen.cpp
-    [44/61] Enemy_SkeletonWarrior_AnimInst.gen.cpp
-    [45/61] BTTask_FindPatrolPos.gen.cpp
-    [46/61] Shield_Common.gen.cpp
-    [47/61] PlayerCharacterAnimInstance.gen.cpp
-    [48/61] Shield_Default.gen.cpp
-    [49/61] UE4_Portfolio2_SLGameMode.gen.cpp
-    [50/61] UE4_Portfolio2_SLCharacter.gen.cpp
-    [51/61] Weapon_Common.gen.cpp
-    [52/61] BTTask_Attack.cpp
-    [53/61] Weapon_Default.gen.cpp
-    [54/61] Weapon_RustySword.gen.cpp
-    [55/61] Weapon_Default.cpp
-    [56/61] Shield_Common.cpp
-    [57/61] PlayerCharacter.gen.cpp
-    [58/61] PlayerCharacter.cpp
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(11): warning C5038: 데이터 멤버 'APlayerCharacter::CurStamina'은(는) 데이터 멤버 'APlayerCharacter::HPRatio' 이후에 초기화됩니다.
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(13): warning C5038: 데이터 멤버 'APlayerCharacter::StaminaRatio'은(는) 데이터 멤버 'APlayerCharacter::IsFight' 이후에 초기화됩니다.
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(17): warning C5038: 데이터 멤버 'APlayerCharacter::ComboCnt'은(는) 데이터 멤버 'APlayerCharacter::IsFall' 이후에 초기화됩니다.
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(20): warning C5038: 데이터 멤버 'APlayerCharacter::LeftWeapon'은(는) 데이터 멤버 'APlayerCharacter::AttackDamage' 이후에 초기화됩니다.
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(22): warning C5038: 데이터 멤버 'APlayerCharacter::DefaultDamage'은(는) 데이터 멤버 'APlayerCharacter::IsLockTargetExist' 이후에 초기화됩니다.
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(484): warning C4996: 'FCollisionQueryParams::FCollisionQueryParams': FCollisionQueryParams, to avoid ambiguity, please use other constructor and explicitly provide an FName parameter (not just a string literal) as the first parameter Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-    [59/61] UE4Editor-UE4_Portfolio2_SL.lib
-       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.exp 개체를 생성하고 있습니다.
-    [60/61] UE4Editor-UE4_Portfolio2_SL.dll
-       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.suppressed.exp 개체를 생성하고 있습니다.
-    [61/61] UE4_Portfolio2_SLEditor.target
-  Total time in Parallel executor: 26.38 seconds
-  Total execution time: 32.74 seconds
+  [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: BTTask_Attack.cpp, Enemy_Base.cpp, Enemy_SkeletonArcher.cpp, Enemy_SkeletonArcher_AnimInst.cpp, Enemy_SkeletonWarrior.cpp, Projectile_Base.cpp, Projectile_SkeletonArcherArrow.cpp
+  [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: Enemy_SkeletonArcher.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp
+  Building 7 actions with 24 processes...
+    [1/7] Enemy_SkeletonArcher_AnimInst.cpp
+    [2/7] Enemy_SkeletonArcher.gen.cpp
+    [3/7] Enemy_SkeletonArcher.cpp
+    [4/7] Module.UE4_Portfolio2_SL.cpp
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(11): warning C5038: 데이터 멤버 'APlayerCharacter::CurStamina'은(는) 데이터 멤버 'APlayerCharacter::HPRatio' 이후에 초기화됩니다.
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(13): warning C5038: 데이터 멤버 'APlayerCharacter::StaminaRatio'은(는) 데이터 멤버 'APlayerCharacter::IsFight' 이후에 초기화됩니다.
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(17): warning C5038: 데이터 멤버 'APlayerCharacter::ComboCnt'은(는) 데이터 멤버 'APlayerCharacter::IsFall' 이후에 초기화됩니다.
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(20): warning C5038: 데이터 멤버 'APlayerCharacter::LeftWeapon'은(는) 데이터 멤버 'APlayerCharacter::AttackDamage' 이후에 초기화됩니다.
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(22): warning C5038: 데이터 멤버 'APlayerCharacter::DefaultDamage'은(는) 데이터 멤버 'APlayerCharacter::IsLockTargetExist' 이후에 초기화됩니다.
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(484): warning C4996: 'FCollisionQueryParams::FCollisionQueryParams': FCollisionQueryParams, to avoid ambiguity, please use other constructor and explicitly provide an FName parameter (not just a string literal) as the first parameter Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+    [5/7] UE4Editor-UE4_Portfolio2_SL-0074.lib
+       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0074.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0074.exp 개체를 생성하고 있습니다.
+    [6/7] UE4Editor-UE4_Portfolio2_SL-0074.dll
+       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0074.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0074.suppressed.exp 개체를 생성하고 있습니다.
+    [7/7] UE4_Portfolio2_SLEditor.target
+  Total time in Parallel executor: 4.76 seconds
+  Total execution time: 8.67 seconds

@@ -79,7 +79,7 @@ float AEnemy_Base::TakeDamage(float DamageAmount, FDamageEvent const& DamageEven
 	return Damage;
 }
 
-void AEnemy_Base::RandomAttackAll1()
+void AEnemy_Base::RandomAttackAll()
 {
 }
 

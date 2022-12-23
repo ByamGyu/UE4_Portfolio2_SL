@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UE4_PORTFOLIO2_SL_API UClass* Z_Construct_UClass_AWeapon_Common_NoRegister();
 	UE4_PORTFOLIO2_SL_API UClass* Z_Construct_UClass_AShield_Common_NoRegister();
+	UE4_PORTFOLIO2_SL_API UClass* Z_Construct_UClass_AProjectile_SkeletonArcherArrow_NoRegister();
 // End Cross Module References
 	void AEnemy_SkeletonArcher::StaticRegisterNativesAEnemy_SkeletonArcher()
 	{
@@ -42,6 +43,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LeftWeaponClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_LeftWeaponClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Projectile_ArrowClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Projectile_ArrowClass;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RightWeapon_MetaData[];
 #endif
@@ -78,6 +83,14 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::NewProp_LeftWeaponClass = { "LeftWeaponClass", nullptr, (EPropertyFlags)0x0024080000000005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_SkeletonArcher, LeftWeaponClass), Z_Construct_UClass_AShield_Common_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::NewProp_LeftWeaponClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::NewProp_LeftWeaponClass_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::NewProp_Projectile_ArrowClass_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Info" },
+		{ "ModuleRelativePath", "Enemy_SkeletonArcher.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::NewProp_Projectile_ArrowClass = { "Projectile_ArrowClass", nullptr, (EPropertyFlags)0x0024080000000005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_SkeletonArcher, Projectile_ArrowClass), Z_Construct_UClass_AProjectile_SkeletonArcherArrow_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::NewProp_Projectile_ArrowClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::NewProp_Projectile_ArrowClass_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::NewProp_RightWeapon_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Info" },
@@ -89,6 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::NewProp_RightWeaponClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::NewProp_LeftWeaponClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::NewProp_Projectile_ArrowClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::NewProp_RightWeapon,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AEnemy_SkeletonArcher_Statics::StaticCppClassTypeInfo = {
@@ -118,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_SkeletonArcher, 2582587228);
+	IMPLEMENT_CLASS(AEnemy_SkeletonArcher, 1995221819);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<AEnemy_SkeletonArcher>()
 	{
 		return AEnemy_SkeletonArcher::StaticClass();

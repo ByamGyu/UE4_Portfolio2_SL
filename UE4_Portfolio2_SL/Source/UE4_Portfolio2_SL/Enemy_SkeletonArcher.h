@@ -5,6 +5,7 @@
 #include "define.h"
 #include "Enemy_SkeletonArcher_AnimInst.h"
 #include "Weapon_SkeletonArcherBow.h"
+#include "Projectile_SkeletonArcherArrow.h"
 #include "Enemy_SkeletonArcher.generated.h"
 
 
@@ -52,6 +53,8 @@ protected:
 	TSubclassOf<class AWeapon_Common> RightWeaponClass;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	TSubclassOf<class AShield_Common> LeftWeaponClass;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<class AProjectile_SkeletonArcherArrow> Projectile_ArrowClass;
 
 	// 장비 액터 선언
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
@@ -65,10 +68,13 @@ public:
 
 
 	// 투사체 관련
-protected:
+public:
+	void RandomAttackAll() override;
+	void Play_Fire_Arrow(); // 원거리 공격 애니메이션 재생
+	void Spawn_And_Fire_Arrow(); // 진짜 화살이 스폰되어 날아감
+	
 
-
-
+	// 애니메이션 재생
 public:
 	void Play_Attack_Melee();
 	void Play_Attack_Range_Slow();

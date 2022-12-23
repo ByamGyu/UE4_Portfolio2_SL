@@ -1,5 +1,7 @@
 #include "Enemy_SkeletonArcher.h"
+#include "PlayerCharacter.h"
 #include "AI_Base.h"
+#include "BehaviorTree/BlackboardComponent.h"
 
 
 AEnemy_SkeletonArcher::AEnemy_SkeletonArcher()
@@ -28,6 +30,8 @@ AEnemy_SkeletonArcher::AEnemy_SkeletonArcher()
 
 	// 실제 위치는 왼손임
 	RightWeaponClass = AWeapon_SkeletonArcherBow::StaticClass();
+
+	Projectile_ArrowClass = AProjectile_SkeletonArcherArrow::StaticClass();
 }
 
 void AEnemy_SkeletonArcher::BeginPlay()
@@ -134,6 +138,54 @@ void AEnemy_SkeletonArcher::SetRightWeapon(AWeapon_SkeletonArcherBow* _NewWeapon
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("_NewRightWeapon is Nullptr"));
 	}
+}
+
+void AEnemy_SkeletonArcher::RandomAttackAll()
+{
+	Play_Fire_Arrow();
+}
+
+void AEnemy_SkeletonArcher::Play_Fire_Arrow()
+{
+	AWeapon_SkeletonArcherBow* CurWeapon = Cast<AWeapon_SkeletonArcherBow>(GetRightWeapon());
+	if (CurWeapon != nullptr)
+	{
+		Play_Attack_Range_Slow();
+	}
+	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Bow Is Null"));
+}
+
+void AEnemy_SkeletonArcher::Spawn_And_Fire_Arrow()
+{
+	AWeapon_SkeletonArcherBow* CurWeapon = Cast<AWeapon_SkeletonArcherBow>(GetRightWeapon());
+	if (CurWeapon != nullptr)
+	{
+		FVector TargetLoc;
+		FVector SpawnLoc = CurWeapon->GetMesh()->GetSocketLocation(FName("Socket_Projectile"));
+		FVector TargetDir;
+
+		// 컨트롤러(AI) 가져오기
+		auto AIController = Cast<AAI_Base>(GetController());
+		if (AIController != nullptr)
+		{
+			// AI의 BB로 부터 Target 정보 가져오기
+			APlayerCharacter* Target = Cast<APlayerCharacter>(AIController->GetBlackboardComponent()->GetValueAsObject(AAI_Base::TargetKey));
+			if (Target != nullptr)
+			{
+				// 화살의 방향을 살짝 위로 조절(위치 차이 때문에 살짝 아래로 날아감)
+				TargetLoc = Target->GetActorLocation() + FVector(0.0f, 0.0f, 25.0f);
+				TargetDir = (TargetLoc - SpawnLoc).GetSafeNormal();
+			}
+		}
+
+		FActorSpawnParameters SpawnParams; // 더미
+
+		// 화살을 스폰하고
+		AProjectile_SkeletonArcherArrow* Arrow = GetWorld()->SpawnActor<AProjectile_SkeletonArcherArrow>(Projectile_ArrowClass, SpawnLoc, FRotator::ZeroRotator, SpawnParams);
+		// 화살을 발사
+		Arrow->FireInDirection(TargetDir);
+	}
+	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Bow Is Null"));
 }
 
 void AEnemy_SkeletonArcher::Play_Attack_Melee()

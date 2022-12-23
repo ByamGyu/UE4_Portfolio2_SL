@@ -132,7 +132,7 @@ void AEnemy_SkeletonWarrior::SetRightWeapon(AWeapon_RustySword* _NewWeapon)
 	}
 }
 
-void AEnemy_SkeletonWarrior::RandomAttackAll1()
+void AEnemy_SkeletonWarrior::RandomAttackAll()
 {
 	if (Cur_State == EMONSTER_STATE::IDLE
 		|| Cur_State == EMONSTER_STATE::MOVE
