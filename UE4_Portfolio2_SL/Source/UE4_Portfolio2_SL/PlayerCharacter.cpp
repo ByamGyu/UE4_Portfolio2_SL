@@ -829,10 +829,20 @@ float APlayerCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Damag
 {
 	float Damage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 
-	if (GetState() == EPLAYER_STATE::GUARD
-		|| GetState() == EPLAYER_STATE::GUARD_IMPACT_WEAK
-		|| GetState() == EPLAYER_STATE::GUARD_IMPACT_STRONG
-		) return 0;
+	// 각도 계산하기
+	FVector OwnerForward = this->GetActorForwardVector();
+	FVector HittedActorForward = DamageCauser->GetActorForwardVector();
+	float Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
+	float AcosAngle = FMath::Acos(Dot);
+	float AngleDegree = FMath::RadiansToDegrees(AcosAngle);
+
+	// 정면에서 맞으면
+	if (AngleDegree >= 90.0f)
+	{
+		if (GetState() == EPLAYER_STATE::GUARD
+			|| GetState() == EPLAYER_STATE::GUARD_IMPACT_WEAK
+			|| GetState() == EPLAYER_STATE::GUARD_IMPACT_STRONG) return 0.0f;
+	}
 
 	SetCurHP(-Damage);
 

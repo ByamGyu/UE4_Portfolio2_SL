@@ -8,14 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef UE4_PORTFOLIO2_SL_Projectile_SkeletonArcherArrow_generated_h
 #error "Projectile_SkeletonArcherArrow.generated.h already included, missing '#pragma once' in Projectile_SkeletonArcherArrow.h"
 #endif
 #define UE4_PORTFOLIO2_SL_Projectile_SkeletonArcherArrow_generated_h
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Projectile_SkeletonArcherArrow_h_11_SPARSE_DATA
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Projectile_SkeletonArcherArrow_h_11_RPC_WRAPPERS
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Projectile_SkeletonArcherArrow_h_11_RPC_WRAPPERS_NO_PURE_DECLS
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Projectile_SkeletonArcherArrow_h_11_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnCharacterOverlap);
+
+
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Projectile_SkeletonArcherArrow_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnCharacterOverlap);
+
+
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Projectile_SkeletonArcherArrow_h_11_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAProjectile_SkeletonArcherArrow(); \

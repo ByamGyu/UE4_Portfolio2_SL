@@ -184,6 +184,7 @@ void AEnemy_SkeletonArcher::Spawn_And_Fire_Arrow()
 		AProjectile_SkeletonArcherArrow* Arrow = GetWorld()->SpawnActor<AProjectile_SkeletonArcherArrow>(Projectile_ArrowClass, SpawnLoc, FRotator::ZeroRotator, SpawnParams);
 		// 화살을 발사
 		Arrow->FireInDirection(TargetDir);
+		Arrow->SetDamage(AttackDamage);
 	}
 	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Bow Is Null"));
 }

@@ -28,7 +28,8 @@ AProjectile_Base::AProjectile_Base()
 	ProjectileLifeTime = 10.0f;
 	InitialLifeSpan = ProjectileLifeTime;
 
-	DefaultDamage = 2.0f;
+	DefaultDamage = 5.0f;
+	SetDamage();
 }
 
 void AProjectile_Base::BeginPlay()
@@ -45,9 +46,17 @@ void AProjectile_Base::Tick(float DeltaTime)
 
 }
 
+void AProjectile_Base::PostInitializeComponents()
+{
+	Super::PostInitializeComponents();
+
+
+}
+
 void AProjectile_Base::SetDamage(float _Value)
 {
-	FinalDamage = DefaultDamage + (_Value * 0.2f);
+	float tmp = (int)(_Value * 0.75f);
+	FinalDamage = DefaultDamage + tmp;
 }
 
 void AProjectile_Base::SetDamage()

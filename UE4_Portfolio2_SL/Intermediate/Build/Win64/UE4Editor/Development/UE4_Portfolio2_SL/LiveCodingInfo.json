@@ -16,12 +16,11 @@
 			"BTTask_TurntoTarget.cpp.obj",
 			"define.cpp.obj",
 			"Enemy_Base.cpp.obj",
+			"Enemy_SkeletonArcher_AnimInst.cpp.obj",
 			"Enemy_SkeletonWarrior.cpp.obj",
 			"Enemy_SkeletonWarrior_AnimInst.cpp.obj",
-			"EnemyAttackNotifyState.cpp.obj",
 			"MyAttackNotifyState.cpp.obj",
 			"MyHeavyAttackNotifyState.cpp.obj",
-			"PlayerCharacter.cpp.obj",
 			"PlayerCharacterAnimInstance.cpp.obj",
 			"Shield_Common.cpp.obj",
 			"Shield_Default.cpp.obj",
@@ -33,7 +32,8 @@
 			"Weapon_RustySword.cpp.obj",
 			"Weapon_SkeletonArcherBow.cpp.obj",
 			"Enemy_SkeletonArcher.cpp.obj",
-			"Enemy_SkeletonArcher_AnimInst.cpp.obj",
+			"EnemyAttackNotifyState.cpp.obj",
+			"PlayerCharacter.cpp.obj",
 			"Projectile_Base.cpp.obj",
 			"Projectile_SkeletonArcherArrow.cpp.obj"
 		],
@@ -53,6 +53,7 @@
 			"define.gen.cpp.obj",
 			"Enemy_Base.gen.cpp.obj",
 			"Enemy_SkeletonArcher.gen.cpp.obj",
+			"Enemy_SkeletonArcher_AnimInst.gen.cpp.obj",
 			"Enemy_SkeletonWarrior.gen.cpp.obj",
 			"Enemy_SkeletonWarrior_AnimInst.gen.cpp.obj",
 			"EnemyAttackNotifyState.gen.cpp.obj",
@@ -61,7 +62,6 @@
 			"PlayerCharacter.gen.cpp.obj",
 			"PlayerCharacterAnimInstance.gen.cpp.obj",
 			"Projectile_Base.gen.cpp.obj",
-			"Projectile_SkeletonArcherArrow.gen.cpp.obj",
 			"Shield_Common.gen.cpp.obj",
 			"Shield_Default.gen.cpp.obj",
 			"UE4_Portfolio2_SLCharacter.gen.cpp.obj",
@@ -70,7 +70,7 @@
 			"Weapon_Default.gen.cpp.obj",
 			"Weapon_RustySword.gen.cpp.obj",
 			"Weapon_SkeletonArcherBow.gen.cpp.obj",
-			"Enemy_SkeletonArcher_AnimInst.gen.cpp.obj",
+			"Projectile_SkeletonArcherArrow.gen.cpp.obj",
 			"UE4_Portfolio2_SL.init.gen.cpp.obj"
 		]
 	}

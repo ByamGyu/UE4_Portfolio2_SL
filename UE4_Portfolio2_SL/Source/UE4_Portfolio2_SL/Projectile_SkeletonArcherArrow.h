@@ -17,4 +17,12 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
+	virtual void PostInitializeComponents() override;
+
+
+private:
+	UFUNCTION()
+	void OnCharacterOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherCOmp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	void DestroyLater(float _Value);
 };

@@ -16,6 +16,7 @@ public:
 protected:
 	virtual void BeginPlay();
 	virtual void Tick(float DeltaTime) override;
+	virtual void PostInitializeComponents();
 
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
