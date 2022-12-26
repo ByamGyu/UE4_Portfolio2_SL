@@ -62,6 +62,12 @@ private:
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* GuardBreak;
 
+	// 처형 당하는 모션
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* Executed1;
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* Executed2;
+
 	// 죽음
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* Dead1;
@@ -96,7 +102,11 @@ public:
 	void PlayAttackSlashMoveMontage();
 	void PlayAttackStrikeMoveMontage();
 	void PlayAttackThrustMoveMontage();
+
 	void PlayGuardBreakMontage();
+	void PlayExecuted1Montage();
+	void PlayExecuted2Montage();
+
 	void PlayDeadMontage();
 	void PlayImpactMontage();
 	void PlayHitBackMontage();
@@ -108,7 +118,13 @@ public:
 	// 노티파이들
 public:
 	UFUNCTION()
-		void AnimNotify_InitState();
+	void AnimNotify_InitState();
 	UFUNCTION()
-		void AnimNotify_PauseDeadMontage();
+	void AnimNotify_PauseDeadMontage();
+	UFUNCTION()
+	void AnimNotify_PauseExecutedMontage();
+	UFUNCTION()
+	void AnimNotify_InvinsibleStart();
+	UFUNCTION()
+	void AnimNotify_InvinsibleEnd();
 };

@@ -21,6 +21,20 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 	UE4_PORTFOLIO2_SL_API UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UPlayerCharacterAnimInstance::execAnimNotify_InvinsibleEnd)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AnimNotify_InvinsibleEnd();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UPlayerCharacterAnimInstance::execAnimNotify_InvinsibleStart)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AnimNotify_InvinsibleStart();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UPlayerCharacterAnimInstance::execAnimNotify_AttackInputCheck)
 	{
 		P_FINISH;
@@ -54,6 +68,13 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		P_THIS->AnimNotify_ParryEnd();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UPlayerCharacterAnimInstance::execAnimNotify_ParryStart)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AnimNotify_ParryStart();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UPlayerCharacterAnimInstance::execAnimNotify_SpellEnd)
@@ -92,9 +113,12 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 			{ "AnimNotify_AttackInputCheck", &UPlayerCharacterAnimInstance::execAnimNotify_AttackInputCheck },
 			{ "AnimNotify_GuardStart", &UPlayerCharacterAnimInstance::execAnimNotify_GuardStart },
 			{ "AnimNotify_InitState", &UPlayerCharacterAnimInstance::execAnimNotify_InitState },
+			{ "AnimNotify_InvinsibleEnd", &UPlayerCharacterAnimInstance::execAnimNotify_InvinsibleEnd },
+			{ "AnimNotify_InvinsibleStart", &UPlayerCharacterAnimInstance::execAnimNotify_InvinsibleStart },
 			{ "AnimNotify_JumpEnd", &UPlayerCharacterAnimInstance::execAnimNotify_JumpEnd },
 			{ "AnimNotify_NockDownRecover", &UPlayerCharacterAnimInstance::execAnimNotify_NockDownRecover },
 			{ "AnimNotify_ParryEnd", &UPlayerCharacterAnimInstance::execAnimNotify_ParryEnd },
+			{ "AnimNotify_ParryStart", &UPlayerCharacterAnimInstance::execAnimNotify_ParryStart },
 			{ "AnimNotify_RollEnd", &UPlayerCharacterAnimInstance::execAnimNotify_RollEnd },
 			{ "AnimNotify_SpellEnd", &UPlayerCharacterAnimInstance::execAnimNotify_SpellEnd },
 		};
@@ -188,6 +212,50 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleEnd_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleEnd_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerCharacterAnimInstance, nullptr, "AnimNotify_InvinsibleEnd", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleEnd_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleEnd_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleEnd()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleEnd_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleStart_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleStart_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleStart_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerCharacterAnimInstance, nullptr, "AnimNotify_InvinsibleStart", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleStart_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleStart_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleStart()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleStart_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_JumpEnd_Statics
 	{
 #if WITH_METADATA
@@ -251,6 +319,28 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_ParryEnd_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_ParryStart_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_ParryStart_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_ParryStart_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerCharacterAnimInstance, nullptr, "AnimNotify_ParryStart", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_ParryStart_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_ParryStart_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_ParryStart()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_ParryStart_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -457,6 +547,14 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ParryMontage;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Execution1_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Execution1;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Execution2_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Execution2;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ImpactStrong1_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ImpactStrong1;
@@ -493,9 +591,12 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackInputCheck, "AnimNotify_AttackInputCheck" }, // 1040418465
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_GuardStart, "AnimNotify_GuardStart" }, // 625723640
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InitState, "AnimNotify_InitState" }, // 3696852591
+		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleEnd, "AnimNotify_InvinsibleEnd" }, // 474231052
+		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleStart, "AnimNotify_InvinsibleStart" }, // 1801731387
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_JumpEnd, "AnimNotify_JumpEnd" }, // 2070447448
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_NockDownRecover, "AnimNotify_NockDownRecover" }, // 2853493014
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_ParryEnd, "AnimNotify_ParryEnd" }, // 2176938433
+		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_ParryStart, "AnimNotify_ParryStart" }, // 3092346518
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_RollEnd, "AnimNotify_RollEnd" }, // 1148083175
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_SpellEnd, "AnimNotify_SpellEnd" }, // 1838090597
 	};
@@ -829,6 +930,22 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ParryMontage = { "ParryMontage", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerCharacterAnimInstance, ParryMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ParryMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ParryMontage_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Execution1_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AnimMontage" },
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Execution1 = { "Execution1", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerCharacterAnimInstance, Execution1), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Execution1_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Execution1_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Execution2_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AnimMontage" },
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Execution2 = { "Execution2", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerCharacterAnimInstance, Execution2), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Execution2_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Execution2_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactStrong1_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "AnimMontage" },
@@ -913,6 +1030,8 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_HeavyAttackMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_GuardBreakMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ParryMontage,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Execution1,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Execution2,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactStrong1,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactStrong2,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_ImpactStrong3,
@@ -947,7 +1066,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerCharacterAnimInstance, 1072534994);
+	IMPLEMENT_CLASS(UPlayerCharacterAnimInstance, 1162474303);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UPlayerCharacterAnimInstance>()
 	{
 		return UPlayerCharacterAnimInstance::StaticClass();

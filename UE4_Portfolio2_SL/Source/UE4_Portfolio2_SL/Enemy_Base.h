@@ -45,10 +45,17 @@ protected:
 	float AttackDamage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	bool IsAttacking;
+	bool IsAttacking = false;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	bool IsFight;
+	bool IsFight = false;
 	
+	bool IsParried = false;	
+
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	int ExecutionAnimationNum = 0;
+
+public:
+	int GetExecutionAnimationNum() { return ExecutionAnimationNum; }
 
 
 	// 능력치 함수
@@ -65,6 +72,9 @@ public:
 	void SetIsAttacking(bool _Value) { IsAttacking = _Value; }
 	bool GetIsFight() { return IsFight; }
 	void SetIsFight(bool _Value) { IsFight = _Value; }
+
+	bool GetIsParried() { return IsParried; }
+	void SetIsParried(bool _Value) { IsParried = _Value; }
 
 	// 현재 자식 클래스에 구현되어있음 virtual로 바꿀 필요가???
 	virtual float GetCurHP() { return CurHP; }
@@ -91,6 +101,9 @@ public:
 	virtual void SingleAttackRandom();
 
 	virtual void PlayHitAniamtion(float _Degree);
+	virtual void PlayGuardBreakAnimation();
+	virtual void PlayExecuted1Animation();
+	virtual void PlayExecuted2Animation();
 
 	virtual void Dead();
 };

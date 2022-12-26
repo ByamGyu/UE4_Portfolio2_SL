@@ -1,6 +1,7 @@
 #include "PlayerCharacter.h"
 #include "Enemy_Base.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "DrawDebugHelpers.h"
 
 
 APlayerCharacter::APlayerCharacter()
@@ -22,7 +23,8 @@ APlayerCharacter::APlayerCharacter()
 	DefaultDamage(10.0f),
 	IsLockTargetExist(false),
 	LeftRightInputValue(0.0f),
-	CurrentSpeed(0.0f)
+	CurrentSpeed(0.0f),
+	IsParrying(false)
 {
 	PrimaryActorTick.bCanEverTick = true;
 
@@ -397,7 +399,9 @@ void APlayerCharacter::LightAttack()
 		|| Cur_State == EPLAYER_STATE::KNOCK_DOWN
 		|| Cur_State == EPLAYER_STATE::PARRY
 		|| Cur_State == EPLAYER_STATE::ROLL
-		|| Cur_State == EPLAYER_STATE::SPELL) return;
+		|| Cur_State == EPLAYER_STATE::SPELL
+		|| Cur_State == EPLAYER_STATE::EXECUTED
+		|| Cur_State == EPLAYER_STATE::EXECUTION) return;
 
 	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
 	if (AnimInst == nullptr)
@@ -406,8 +410,55 @@ void APlayerCharacter::LightAttack()
 		return;
 	}
 
+	AActor* tmp = CharacterCheck();
+	if (tmp != nullptr)
+	{
+		auto pEnemy = Cast<AEnemy_Base>(tmp);
+		if (pEnemy != nullptr)
+		{
+			if (pEnemy->GetState() == EMONSTER_STATE::GUARD_BREAK)
+			{
+				FDamageEvent DamageEvent;
+				pEnemy->TakeDamage(AttackDamage * 5.0f, DamageEvent, this->GetController(), this->GetRightWeapon());
+
+				// 처형 애니메이션 개수가 다를 수 있음!
+				int32 TargetExecutionAnimationNum = pEnemy->GetExecutionAnimationNum();
+				if (TargetExecutionAnimationNum == 0)
+				{
+					// 대상의 처형 애니메이션이 없으면 패스
+				}
+				else
+				{
+					int32 tmpint = FMath::RandRange(0, TargetExecutionAnimationNum - 1);
+					if (tmpint == 0)
+					{
+						pEnemy->ChangeState(EMONSTER_STATE::EXECUTION);
+						pEnemy->PlayExecuted1Animation();
+
+						ChangeState(EPLAYER_STATE::EXECUTION);
+						PlayExecutionAnimation2();
+
+						return;
+					}
+					else if (tmpint == 1)
+					{
+						pEnemy->ChangeState(EMONSTER_STATE::EXECUTION);
+						pEnemy->PlayExecuted2Animation();
+
+						ChangeState(EPLAYER_STATE::EXECUTION);
+						PlayExecutionAnimation2();
+
+						return;
+					}
+				}
+				
+			}
+		}
+	}
+
 	if (IsAttacking == false)
 	{
+		// 일반 공격
 		IsAttacking = true; // 공격중으로 전환
 		ChangeState(EPLAYER_STATE::ATTACK_LIGHT);
 		AnimInst->PlayLightAttackMontage();
@@ -685,6 +736,54 @@ void APlayerCharacter::SetLeftWeapon(AShield_Default* _NewWeapon)
 	}
 }
 
+AActor* APlayerCharacter::CharacterCheck()
+{
+	// ECC_GameTraceChannel2
+	// 레이 발사해서 상대방 상태 파악하기
+	FVector StartLoc = this->GetActorLocation();
+	FVector ForwardDir = this->GetActorForwardVector();
+	FVector EndLoc = StartLoc + ForwardDir * 75.0f;
+
+	FHitResult HitResult;
+	FCollisionQueryParams Params(NAME_None, false, this);
+	bool bResult = GetWorld()->SweepSingleByChannel(
+		HitResult,
+		StartLoc,
+		EndLoc,
+		FQuat::Identity,
+		ECollisionChannel::ECC_Pawn, // 이거 도대체 왜 ECC_GameTraceChannel2 PlayerAttack로는 안되니
+		FCollisionShape::MakeSphere(50.0f),
+		Params
+	);
+
+//#if ENABLE_DRAW_DEBUG
+//	FVector TraceVec = GetActorForwardVector() * 75.0f;
+//	FVector Center = GetActorLocation() + TraceVec * 0.5f;
+//	float HalfHeight = 200.0f * 0.5f + 50.0f;
+//	FQuat CapsuleRot = FRotationMatrix::MakeFromZ(TraceVec).ToQuat();
+//	FColor DrawColor = bResult ? FColor::Red : FColor::Green;
+//	float DebugLifeTime = 3.0f;
+//
+//	DrawDebugCapsule(GetWorld(),
+//		Center,
+//		HalfHeight,
+//		50.0f,
+//		CapsuleRot,
+//		DrawColor,
+//		false,
+//		DebugLifeTime);
+//#endif
+
+	if (bResult)
+	{
+		return HitResult.GetActor();
+	}
+	else
+	{
+		return nullptr;
+	}
+}
+
 void APlayerCharacter::ChangeState(EPLAYER_STATE _NextState)
 {
 	if (Cur_State == _NextState) return;
@@ -825,16 +924,53 @@ void APlayerCharacter::SetAttackDamage()
 	}
 }
 
+void APlayerCharacter::PlayExecutionAnimation1()
+{
+	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+	if (AnimInst == nullptr) return;
+	else
+	{
+		//ChangeState(EPLAYER_STATE::);
+		AnimInst->PlayExecution1();
+	}
+}
+
+void APlayerCharacter::PlayExecutionAnimation2()
+{
+	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+	if (AnimInst == nullptr) return;
+	else
+	{
+		//ChangeState(EPLAYER_STATE::);
+		AnimInst->PlayExecution2();
+	}
+}
+
 float APlayerCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
 	float Damage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 
+	FVector OwnerForward;
+	FVector HittedActorForward;
+	float Dot;
+	float AcosAngle;
+	float AngleDegree;
+
 	// 각도 계산하기
-	FVector OwnerForward = this->GetActorForwardVector();
-	FVector HittedActorForward = DamageCauser->GetActorForwardVector();
-	float Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
-	float AcosAngle = FMath::Acos(Dot);
-	float AngleDegree = FMath::RadiansToDegrees(AcosAngle);
+	if (DamageCauser != nullptr)
+	{
+		OwnerForward = this->GetActorForwardVector();
+		HittedActorForward = DamageCauser->GetActorForwardVector();
+		Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
+		AcosAngle = FMath::Acos(Dot);
+		AngleDegree = FMath::RadiansToDegrees(AcosAngle);
+	}
+	else
+	{
+		AngleDegree = 90.0f;
+	}
+
+	
 
 	// 정면에서 맞으면
 	if (AngleDegree >= 90.0f)

@@ -65,7 +65,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__HPRatio() { return STRUCT_OFFSET(AEnemy_Base, HPRatio); } \
 	FORCEINLINE static uint32 __PPO__AttackDamage() { return STRUCT_OFFSET(AEnemy_Base, AttackDamage); } \
 	FORCEINLINE static uint32 __PPO__IsAttacking() { return STRUCT_OFFSET(AEnemy_Base, IsAttacking); } \
-	FORCEINLINE static uint32 __PPO__IsFight() { return STRUCT_OFFSET(AEnemy_Base, IsFight); }
+	FORCEINLINE static uint32 __PPO__IsFight() { return STRUCT_OFFSET(AEnemy_Base, IsFight); } \
+	FORCEINLINE static uint32 __PPO__ExecutionAnimationNum() { return STRUCT_OFFSET(AEnemy_Base, ExecutionAnimationNum); }
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_10_PROLOG

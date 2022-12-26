@@ -16,11 +16,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_12_SPARSE_DATA
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execAnimNotify_InvinsibleEnd); \
+	DECLARE_FUNCTION(execAnimNotify_InvinsibleStart); \
 	DECLARE_FUNCTION(execAnimNotify_AttackInputCheck); \
 	DECLARE_FUNCTION(execAnimNotify_AttackEnd); \
 	DECLARE_FUNCTION(execAnimNotify_GuardStart); \
 	DECLARE_FUNCTION(execAnimNotify_NockDownRecover); \
 	DECLARE_FUNCTION(execAnimNotify_ParryEnd); \
+	DECLARE_FUNCTION(execAnimNotify_ParryStart); \
 	DECLARE_FUNCTION(execAnimNotify_SpellEnd); \
 	DECLARE_FUNCTION(execAnimNotify_RollEnd); \
 	DECLARE_FUNCTION(execAnimNotify_JumpEnd); \
@@ -29,11 +32,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execAnimNotify_InvinsibleEnd); \
+	DECLARE_FUNCTION(execAnimNotify_InvinsibleStart); \
 	DECLARE_FUNCTION(execAnimNotify_AttackInputCheck); \
 	DECLARE_FUNCTION(execAnimNotify_AttackEnd); \
 	DECLARE_FUNCTION(execAnimNotify_GuardStart); \
 	DECLARE_FUNCTION(execAnimNotify_NockDownRecover); \
 	DECLARE_FUNCTION(execAnimNotify_ParryEnd); \
+	DECLARE_FUNCTION(execAnimNotify_ParryStart); \
 	DECLARE_FUNCTION(execAnimNotify_SpellEnd); \
 	DECLARE_FUNCTION(execAnimNotify_RollEnd); \
 	DECLARE_FUNCTION(execAnimNotify_JumpEnd); \
@@ -118,6 +124,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__HeavyAttackMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, HeavyAttackMontage); } \
 	FORCEINLINE static uint32 __PPO__GuardBreakMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, GuardBreakMontage); } \
 	FORCEINLINE static uint32 __PPO__ParryMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ParryMontage); } \
+	FORCEINLINE static uint32 __PPO__Execution1() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, Execution1); } \
+	FORCEINLINE static uint32 __PPO__Execution2() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, Execution2); } \
 	FORCEINLINE static uint32 __PPO__ImpactStrong1() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactStrong1); } \
 	FORCEINLINE static uint32 __PPO__ImpactStrong2() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactStrong2); } \
 	FORCEINLINE static uint32 __PPO__ImpactStrong3() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactStrong3); } \

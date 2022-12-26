@@ -131,7 +131,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_SkeletonWarrior, 654963041);
+	IMPLEMENT_CLASS(AEnemy_SkeletonWarrior, 2926588210);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<AEnemy_SkeletonWarrior>()
 	{
 		return AEnemy_SkeletonWarrior::StaticClass();

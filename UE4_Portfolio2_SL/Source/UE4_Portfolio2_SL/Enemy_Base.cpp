@@ -131,6 +131,20 @@ void AEnemy_Base::PlayHitAniamtion(float _Degree)
 {	
 }
 
+void AEnemy_Base::PlayGuardBreakAnimation()
+{
+}
+
+void AEnemy_Base::PlayExecuted1Animation()
+{
+
+}
+
+void AEnemy_Base::PlayExecuted2Animation()
+{
+
+}
+
 void AEnemy_Base::Dead()
 {
 	// 피직스 애셋과 캡슐 콜리전 변경

@@ -34,6 +34,11 @@ Cur_State(EMONSTER_STATE::IDLE)
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_GuardBreak(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonWarrior/Animation_Montages/Anim_guardbreak_Montage.Anim_guardbreak_Montage'"));
 	if (AM_GuardBreak.Succeeded()) GuardBreak = AM_GuardBreak.Object;
 
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Executed1(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonWarrior/Animation_Montages/Execution_Target_01_Seq_Montage.Execution_Target_01_Seq_Montage'"));
+	if (AM_Executed1.Succeeded()) Executed1 = AM_Executed1.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Executed2(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonWarrior/Animation_Montages/Execution_Target_02_Seq_Montage.Execution_Target_02_Seq_Montage'"));
+	if (AM_Executed2.Succeeded()) Executed2 = AM_Executed2.Object;
+
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Dead1(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonWarrior/Animation_Montages/Anim_death_01_Montage.Anim_death_01_Montage'"));
 	if (AM_Dead1.Succeeded()) Dead1 = AM_Dead1.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Dead2(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonWarrior/Animation_Montages/Anim_death_02_Montage.Anim_death_02_Montage'"));
@@ -120,6 +125,16 @@ void UEnemy_SkeletonWarrior_AnimInst::PlayGuardBreakMontage()
 	Montage_Play(GuardBreak, 0.8f);
 }
 
+void UEnemy_SkeletonWarrior_AnimInst::PlayExecuted1Montage()
+{
+	Montage_Play(Executed1, 1.0f);
+}
+
+void UEnemy_SkeletonWarrior_AnimInst::PlayExecuted2Montage()
+{
+	Montage_Play(Executed2, 1.0f);
+}
+
 void UEnemy_SkeletonWarrior_AnimInst::PlayDeadMontage()
 {
 	int32 tmp = FMath::RandRange(0, 1);
@@ -184,5 +199,42 @@ void UEnemy_SkeletonWarrior_AnimInst::AnimNotify_PauseDeadMontage()
 			// TODO
 		}
 	}
-	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("asdf"));
+}
+
+void UEnemy_SkeletonWarrior_AnimInst::AnimNotify_PauseExecutedMontage()
+{
+	auto Character = Cast<AEnemy_SkeletonWarrior>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		if (Montage_IsPlaying(Executed1))
+		{
+			Montage_Pause(Executed1);
+
+			// TODO
+		}
+		else if (Montage_IsPlaying(Executed2))
+		{
+			Montage_Pause(Executed2);
+
+			// TODO
+		}
+	}
+}
+
+void UEnemy_SkeletonWarrior_AnimInst::AnimNotify_InvinsibleStart()
+{
+	auto Character = Cast<AEnemy_SkeletonWarrior>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		Character->GetMesh()->SetCollisionProfileName(FName("NoCollision"));
+	}
+}
+
+void UEnemy_SkeletonWarrior_AnimInst::AnimNotify_InvinsibleEnd()
+{
+	auto Character = Cast<AEnemy_SkeletonWarrior>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		Character->GetMesh()->SetCollisionProfileName(FName("EnemyPhysicsActor"));
+	}
 }

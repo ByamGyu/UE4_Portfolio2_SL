@@ -1,17 +1,20 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
-  Invalidating makefile for UE4_Portfolio2_SLEditor (working set of source files changed)
   Building UE4_Portfolio2_SLEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: Enemy_SkeletonArcher.cpp, EnemyAttackNotifyState.cpp, PlayerCharacter.cpp, Projectile_Base.cpp, Projectile_SkeletonArcherArrow.cpp
-  [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: Projectile_SkeletonArcherArrow.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp
-  Building 6 actions with 24 processes...
-    [1/6] Projectile_Base.cpp
-    [2/6] Enemy_SkeletonArcher.cpp
-    [3/6] Module.UE4_Portfolio2_SL.cpp
-    [4/6] UE4Editor-UE4_Portfolio2_SL-0119.lib
-       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0119.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0119.exp 개체를 생성하고 있습니다.
-    [5/6] UE4Editor-UE4_Portfolio2_SL-0119.dll
-       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0119.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0119.suppressed.exp 개체를 생성하고 있습니다.
-    [6/6] UE4_Portfolio2_SLEditor.target
-  Total time in Parallel executor: 4.33 seconds
-  Total execution time: 5.98 seconds
+  [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: Enemy_Base.cpp, Enemy_SkeletonArcher.cpp, Enemy_SkeletonWarrior.cpp, Enemy_SkeletonWarrior_AnimInst.cpp, EnemyAttackNotifyState.cpp, PlayerCharacter.cpp, PlayerCharacterAnimInstance.cpp
+  [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: define.gen.cpp, Enemy_Base.gen.cpp, Enemy_SkeletonArcher.gen.cpp, Enemy_SkeletonWarrior.gen.cpp, Enemy_SkeletonWarrior_AnimInst.gen.cpp, PlayerCharacter.gen.cpp, PlayerCharacterAnimInstance.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp
+  Building 4 actions with 24 processes...
+    [1/4] PlayerCharacter.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(12): warning C5038: 데이터 멤버 'APlayerCharacter::CurStamina'은(는) 데이터 멤버 'APlayerCharacter::HPRatio' 이후에 초기화됩니다.
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(14): warning C5038: 데이터 멤버 'APlayerCharacter::StaminaRatio'은(는) 데이터 멤버 'APlayerCharacter::IsFight' 이후에 초기화됩니다.
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(18): warning C5038: 데이터 멤버 'APlayerCharacter::ComboCnt'은(는) 데이터 멤버 'APlayerCharacter::IsFall' 이후에 초기화됩니다.
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(21): warning C5038: 데이터 멤버 'APlayerCharacter::LeftWeapon'은(는) 데이터 멤버 'APlayerCharacter::AttackDamage' 이후에 초기화됩니다.
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(23): warning C5038: 데이터 멤버 'APlayerCharacter::DefaultDamage'은(는) 데이터 멤버 'APlayerCharacter::IsLockTargetExist' 이후에 초기화됩니다.
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(522): warning C4996: 'FCollisionQueryParams::FCollisionQueryParams': FCollisionQueryParams, to avoid ambiguity, please use other constructor and explicitly provide an FName parameter (not just a string literal) as the first parameter Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+    [2/4] UE4Editor-UE4_Portfolio2_SL-0190.lib
+       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0190.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0190.exp 개체를 생성하고 있습니다.
+    [3/4] UE4Editor-UE4_Portfolio2_SL-0190.dll
+       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0190.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0190.suppressed.exp 개체를 생성하고 있습니다.
+    [4/4] UE4_Portfolio2_SLEditor.target
+  Total time in Parallel executor: 2.52 seconds
+  Total execution time: 3.20 seconds

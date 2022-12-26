@@ -68,6 +68,19 @@ void UEnemyAttackNotifyState::NotifyTick(USkeletalMeshComponent* MeshComp, UAnim
 						GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Orange, hittedCharacter->GetName());
 						arrHittedReuslts.Add(hittedCharacter);
 
+						// 플레이어가 패링 중이면
+						if (hittedCharacter->GetIsParrying() == true)
+						{
+							AEnemy_Base* OwnerCast = Cast<AEnemy_Base>(Owner);
+							if (OwnerCast != nullptr)
+							{
+								OwnerCast->PlayGuardBreakAnimation();
+								OwnerCast->ChangeState(EMONSTER_STATE::GUARD_BREAK);
+							}
+
+							return;
+						}
+
 						GiveDamage(Character, hittedCharacter);
 
 						// 내적 계산하기
@@ -76,7 +89,7 @@ void UEnemyAttackNotifyState::NotifyTick(USkeletalMeshComponent* MeshComp, UAnim
 						float Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
 						float AcosAngle = FMath::Acos(Dot);
 						float AngleDegree = FMath::RadiansToDegrees(AcosAngle);
-												
+						
 						hittedCharacter->PlayHitAniamtion(AngleDegree);						
 					}
 				}
@@ -100,5 +113,5 @@ void UEnemyAttackNotifyState::GiveDamage(AEnemy_Base* _Attacker, APlayerCharacte
 {
 	FDamageEvent DamageEvent;
 
-	_DamageTo->TakeDamage(AttackDamage, DamageEvent, _Attacker->GetController(), nullptr);
+	_DamageTo->TakeDamage(AttackDamage, DamageEvent, _Attacker->GetController(), Owner);
 }

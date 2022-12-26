@@ -103,6 +103,8 @@ private:
 	bool IsAttackButtonWhenAttack; // 공격 도중 다시 공격 입력이 들어왔는지
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	int ComboCnt; // 공격몽타주 애니메이션 섹션 점프 용도
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	bool IsParrying;
 
 
 private:
@@ -126,6 +128,10 @@ public:
 
 	AShield_Default* GetLeftWeapon();
 	void SetLeftWeapon(class AShield_Default* _NewWeapon);
+
+
+private:
+	AActor* CharacterCheck();
 
 
 public:
@@ -162,6 +168,13 @@ public:
 
 	int GetComboCnt() { return ComboCnt; }
 	void SetComboCnt(int _Value) { ComboCnt = _Value; }
+
+	bool GetIsParrying() { return IsParrying; }
+	void SetIsParrying(bool _Value) { IsParrying = _Value; }
+
+	void PlayExecutionAnimation1();
+	void PlayExecutionAnimation2();
+
 
 	// 대미지 받기 프레임워크
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;

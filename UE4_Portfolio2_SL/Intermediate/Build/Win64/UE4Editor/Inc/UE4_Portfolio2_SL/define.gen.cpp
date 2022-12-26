@@ -31,7 +31,7 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 		return EMONSTER_STATE_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EMONSTER_STATE(EMONSTER_STATE_StaticEnum, TEXT("/Script/UE4_Portfolio2_SL"), TEXT("EMONSTER_STATE"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE_Hash() { return 4005646075U; }
+	uint32 Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE_Hash() { return 833975873U; }
 	UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE()
 	{
 #if WITH_HOT_RELOAD
@@ -63,12 +63,16 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 				{ "EMONSTER_STATE::KNOCK_DOWN", (int64)EMONSTER_STATE::KNOCK_DOWN },
 				{ "EMONSTER_STATE::DEAD", (int64)EMONSTER_STATE::DEAD },
 				{ "EMONSTER_STATE::PARRY", (int64)EMONSTER_STATE::PARRY },
+				{ "EMONSTER_STATE::EXECUTION", (int64)EMONSTER_STATE::EXECUTION },
+				{ "EMONSTER_STATE::EXECUTED", (int64)EMONSTER_STATE::EXECUTED },
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "ATTACK.Name", "EMONSTER_STATE::ATTACK" },
 				{ "BlueprintType", "true" },
 				{ "DEAD.Name", "EMONSTER_STATE::DEAD" },
+				{ "EXECUTED.Name", "EMONSTER_STATE::EXECUTED" },
+				{ "EXECUTION.Name", "EMONSTER_STATE::EXECUTION" },
 				{ "FALL.Name", "EMONSTER_STATE::FALL" },
 				{ "GUARD.Name", "EMONSTER_STATE::GUARD" },
 				{ "GUARD_BREAK.Name", "EMONSTER_STATE::GUARD_BREAK" },
@@ -121,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 		return EPLAYER_STATE_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EPLAYER_STATE(EPLAYER_STATE_StaticEnum, TEXT("/Script/UE4_Portfolio2_SL"), TEXT("EPLAYER_STATE"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE_Hash() { return 1741691929U; }
+	uint32 Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE_Hash() { return 3450594962U; }
 	UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE()
 	{
 #if WITH_HOT_RELOAD
@@ -152,6 +156,8 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 				{ "EPLAYER_STATE::KNOCK_DOWN", (int64)EPLAYER_STATE::KNOCK_DOWN },
 				{ "EPLAYER_STATE::DEAD", (int64)EPLAYER_STATE::DEAD },
 				{ "EPLAYER_STATE::PARRY", (int64)EPLAYER_STATE::PARRY },
+				{ "EPLAYER_STATE::EXECUTION", (int64)EPLAYER_STATE::EXECUTION },
+				{ "EPLAYER_STATE::EXECUTED", (int64)EPLAYER_STATE::EXECUTED },
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
@@ -161,6 +167,8 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 				{ "ATTACK_LIGHT.Name", "EPLAYER_STATE::ATTACK_LIGHT" },
 				{ "BlueprintType", "true" },
 				{ "DEAD.Name", "EPLAYER_STATE::DEAD" },
+				{ "EXECUTED.Name", "EPLAYER_STATE::EXECUTED" },
+				{ "EXECUTION.Name", "EPLAYER_STATE::EXECUTION" },
 				{ "FALL.Name", "EPLAYER_STATE::FALL" },
 				{ "GUARD.Name", "EPLAYER_STATE::GUARD" },
 				{ "GUARD_BREAK.Name", "EPLAYER_STATE::GUARD_BREAK" },

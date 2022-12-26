@@ -132,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_SkeletonArcher, 1995221819);
+	IMPLEMENT_CLASS(AEnemy_SkeletonArcher, 4180088148);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<AEnemy_SkeletonArcher>()
 	{
 		return AEnemy_SkeletonArcher::StaticClass();

@@ -61,8 +61,13 @@ UPlayerCharacterAnimInstance::UPlayerCharacterAnimInstance()
 	if (AM_HeavyAttack.Succeeded()) HeavyAttackMontage = AM_HeavyAttack.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_GuardBreak(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Block_Hit_Break_Seq_Montage.Block_Hit_Break_Seq_Montage'"));
 	if (AM_GuardBreak.Succeeded()) GuardBreakMontage = AM_GuardBreak.Object;
+
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Parry(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Parry_Counter_Attack_Seq_Montage.Parry_Counter_Attack_Seq_Montage'"));
 	if (AM_Parry.Succeeded()) ParryMontage = AM_Parry.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Execution1(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Execution_01_Seq_Montage.Execution_01_Seq_Montage'"));
+	if (AM_Execution1.Succeeded()) Execution1 = AM_Execution1.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Execution2(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Execution_02_Seq_Montage.Execution_02_Seq_Montage'"));
+	if (AM_Execution2.Succeeded()) Execution2 = AM_Execution2.Object;
 
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_ImpactStrong1(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Hit_Combat_Large_F_Seq_Montage.Hit_Combat_Large_F_Seq_Montage'"));
 	if (AM_ImpactStrong1.Succeeded()) ImpactStrong1 = AM_ImpactStrong1.Object;
@@ -184,6 +189,16 @@ void UPlayerCharacterAnimInstance::PlayParryMontage()
 	Montage_Play(ParryMontage, 1.0f);
 }
 
+void UPlayerCharacterAnimInstance::PlayExecution1()
+{
+	Montage_Play(Execution1, 1.0f);
+}
+
+void UPlayerCharacterAnimInstance::PlayExecution2()
+{
+	Montage_Play(Execution2, 1.0f);
+}
+
 void UPlayerCharacterAnimInstance::PlayRandomImpactMontage()
 {
 	int32 tmp = FMath::RandRange(0, 2);
@@ -219,8 +234,13 @@ void UPlayerCharacterAnimInstance::AnimNotify_InitState()
 			|| Character->GetState() == EPLAYER_STATE::GUARD_IMPACT_STRONG)
 		{
 			Character->ChangeState(EPLAYER_STATE::GUARD);
+			Character->SetIsParrying(false);
 		}
-		else Character->ChangeState(EPLAYER_STATE::IDLE);
+		else
+		{
+			Character->ChangeState(EPLAYER_STATE::IDLE);
+			Character->SetIsParrying(false);
+		}
 	}
 }
 
@@ -239,9 +259,22 @@ void UPlayerCharacterAnimInstance::AnimNotify_SpellEnd()
 	
 }
 
+void UPlayerCharacterAnimInstance::AnimNotify_ParryStart()
+{
+	auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		Character->SetIsParrying(true);
+	}
+}
+
 void UPlayerCharacterAnimInstance::AnimNotify_ParryEnd()
 {
-	
+	auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		Character->SetIsParrying(false);
+	}
 }
 
 void UPlayerCharacterAnimInstance::AnimNotify_NockDownRecover()
@@ -287,5 +320,23 @@ void UPlayerCharacterAnimInstance::AnimNotify_AttackInputCheck()
 	else
 	{
 		return;
+	}
+}
+
+void UPlayerCharacterAnimInstance::AnimNotify_InvinsibleStart()
+{
+	auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		Character->GetMesh()->SetCollisionProfileName(FName("NoCollision"));
+	}
+}
+
+void UPlayerCharacterAnimInstance::AnimNotify_InvinsibleEnd()
+{
+	auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		Character->GetMesh()->SetCollisionProfileName(FName("PlayerPhysicsActor"));
 	}
 }

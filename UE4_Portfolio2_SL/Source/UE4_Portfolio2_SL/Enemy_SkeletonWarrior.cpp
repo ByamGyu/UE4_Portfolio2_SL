@@ -27,6 +27,8 @@ AEnemy_SkeletonWarrior::AEnemy_SkeletonWarrior()
 	AttackDamage = 10.0f;
 
 	RightWeaponClass = AWeapon_RustySword::StaticClass();
+
+	ExecutionAnimationNum = 2;
 }
 
 void AEnemy_SkeletonWarrior::BeginPlay()
@@ -64,6 +66,8 @@ void AEnemy_SkeletonWarrior::Tick(float DeltaTime)
 			|| Cur_State == EMONSTER_STATE::IMPACT_STRONG
 			|| Cur_State == EMONSTER_STATE::GUARD_IMPACT_WEAK
 			|| Cur_State == EMONSTER_STATE::GUARD_IMPACT_STRONG
+			|| Cur_State == EMONSTER_STATE::EXECUTED
+			|| Cur_State == EMONSTER_STATE::EXECUTION
 			)
 		{
 			return;
@@ -399,17 +403,70 @@ void AEnemy_SkeletonWarrior::PlayHitAniamtion(float _Degree)
 	else return;
 }
 
-void AEnemy_SkeletonWarrior::Dead()
+void AEnemy_SkeletonWarrior::PlayGuardBreakAnimation()
 {
-	Super::Dead();
+	Super::PlayGuardBreakAnimation();
 
 	auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
 	if (pAnimInst != nullptr)
 	{
-		ChangeState(EMONSTER_STATE::DEAD);
-		pAnimInst->PlayDeadMontage();		
+		ChangeState(EMONSTER_STATE::GUARD_BREAK);
+		pAnimInst->PlayGuardBreakMontage();
 
 		// TODO (효과음?)
 	}
 	else return;
+}
+
+void AEnemy_SkeletonWarrior::PlayExecuted1Animation()
+{
+	Super::PlayExecuted1Animation();
+
+	auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::EXECUTED);
+		pAnimInst->PlayExecuted1Montage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_SkeletonWarrior::PlayExecuted2Animation()
+{
+	Super::PlayExecuted2Animation();
+
+	auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::EXECUTED);
+		pAnimInst->PlayExecuted2Montage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_SkeletonWarrior::Dead()
+{
+	Super::Dead();
+
+	if (Cur_State == EMONSTER_STATE::EXECUTED)
+	{
+		ChangeState(EMONSTER_STATE::DEAD);
+		return;
+	}
+	else
+	{
+		auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
+		if (pAnimInst != nullptr)
+		{
+			ChangeState(EMONSTER_STATE::DEAD);
+			pAnimInst->PlayDeadMontage();
+
+			// TODO (효과음?)
+		}
+		else return;
+	}
 }

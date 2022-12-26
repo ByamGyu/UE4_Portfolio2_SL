@@ -80,6 +80,9 @@ public:
 	void SingleAttackRandom() override;
 
 	void PlayHitAniamtion(float _Degree) override;
+	void PlayGuardBreakAnimation() override;
+	void PlayExecuted1Animation() override;
+	void PlayExecuted2Animation() override;
 	
 	void Dead() override;
 };

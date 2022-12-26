@@ -96,8 +96,14 @@ private:
 	class UAnimMontage* HeavyAttackMontage;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* GuardBreakMontage;
+
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* ParryMontage;
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* Execution1;
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* Execution2;
+
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* ImpactStrong1;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
@@ -118,7 +124,11 @@ public:
 	void PlayLightAttackMontage();
 	void PlayHeavyAttackMontage();
 	void PlayGuardBreakMontage();
+
 	void PlayParryMontage();
+	void PlayExecution1();
+	void PlayExecution2();
+
 	void PlayRandomImpactMontage();
 	void PlayImpactBackMontage();
 	void PlayShieldBlockWeak();
@@ -137,6 +147,8 @@ private:
 	UFUNCTION()
 	void AnimNotify_SpellEnd();
 	UFUNCTION()
+	void AnimNotify_ParryStart();
+	UFUNCTION()
 	void AnimNotify_ParryEnd();
 	UFUNCTION()
 	void AnimNotify_NockDownRecover();
@@ -146,5 +158,9 @@ private:
 	void AnimNotify_AttackEnd();
 	UFUNCTION()
 	void AnimNotify_AttackInputCheck();
-
+	UFUNCTION()
+	void AnimNotify_InvinsibleStart();
+	UFUNCTION()
+	void AnimNotify_InvinsibleEnd();
+	
 };

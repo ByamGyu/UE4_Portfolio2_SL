@@ -16,12 +16,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_AnimInst_h_12_SPARSE_DATA
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_AnimInst_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execAnimNotify_InvinsibleEnd); \
+	DECLARE_FUNCTION(execAnimNotify_InvinsibleStart); \
+	DECLARE_FUNCTION(execAnimNotify_PauseExecutedMontage); \
 	DECLARE_FUNCTION(execAnimNotify_PauseDeadMontage); \
 	DECLARE_FUNCTION(execAnimNotify_InitState);
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_AnimInst_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execAnimNotify_InvinsibleEnd); \
+	DECLARE_FUNCTION(execAnimNotify_InvinsibleStart); \
+	DECLARE_FUNCTION(execAnimNotify_PauseExecutedMontage); \
 	DECLARE_FUNCTION(execAnimNotify_PauseDeadMontage); \
 	DECLARE_FUNCTION(execAnimNotify_InitState);
 
@@ -85,6 +91,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__Attack_Strike_Move() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Attack_Strike_Move); } \
 	FORCEINLINE static uint32 __PPO__Attack_Thrust_Move() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Attack_Thrust_Move); } \
 	FORCEINLINE static uint32 __PPO__GuardBreak() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, GuardBreak); } \
+	FORCEINLINE static uint32 __PPO__Executed1() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Executed1); } \
+	FORCEINLINE static uint32 __PPO__Executed2() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Executed2); } \
 	FORCEINLINE static uint32 __PPO__Dead1() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Dead1); } \
 	FORCEINLINE static uint32 __PPO__Dead2() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Dead2); } \
 	FORCEINLINE static uint32 __PPO__Hit01() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Hit01); } \

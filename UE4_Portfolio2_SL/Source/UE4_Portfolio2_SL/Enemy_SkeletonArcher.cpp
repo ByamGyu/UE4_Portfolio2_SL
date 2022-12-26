@@ -32,6 +32,8 @@ AEnemy_SkeletonArcher::AEnemy_SkeletonArcher()
 	RightWeaponClass = AWeapon_SkeletonArcherBow::StaticClass();
 
 	Projectile_ArrowClass = AProjectile_SkeletonArcherArrow::StaticClass();
+
+	ExecutionAnimationNum = 0;
 }
 
 void AEnemy_SkeletonArcher::BeginPlay()
@@ -72,6 +74,8 @@ void AEnemy_SkeletonArcher::Tick(float DeltaTime)
 			|| Cur_State == EMONSTER_STATE::IMPACT_STRONG
 			|| Cur_State == EMONSTER_STATE::GUARD_IMPACT_WEAK
 			|| Cur_State == EMONSTER_STATE::GUARD_IMPACT_STRONG
+			|| Cur_State == EMONSTER_STATE::EXECUTED
+			|| Cur_State == EMONSTER_STATE::EXECUTION
 			)
 		{
 			return;
