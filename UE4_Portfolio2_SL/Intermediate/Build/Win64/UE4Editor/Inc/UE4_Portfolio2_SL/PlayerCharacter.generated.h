@@ -76,6 +76,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__IsAttackButtonWhenAttack() { return STRUCT_OFFSET(APlayerCharacter, IsAttackButtonWhenAttack); } \
 	FORCEINLINE static uint32 __PPO__ComboCnt() { return STRUCT_OFFSET(APlayerCharacter, ComboCnt); } \
 	FORCEINLINE static uint32 __PPO__IsParrying() { return STRUCT_OFFSET(APlayerCharacter, IsParrying); } \
+	FORCEINLINE static uint32 __PPO__IssenAbleTime() { return STRUCT_OFFSET(APlayerCharacter, IssenAbleTime); } \
 	FORCEINLINE static uint32 __PPO__RightWeaponClass() { return STRUCT_OFFSET(APlayerCharacter, RightWeaponClass); } \
 	FORCEINLINE static uint32 __PPO__LeftWeaponClass() { return STRUCT_OFFSET(APlayerCharacter, LeftWeaponClass); } \
 	FORCEINLINE static uint32 __PPO__RightWeapon() { return STRUCT_OFFSET(APlayerCharacter, RightWeapon); } \

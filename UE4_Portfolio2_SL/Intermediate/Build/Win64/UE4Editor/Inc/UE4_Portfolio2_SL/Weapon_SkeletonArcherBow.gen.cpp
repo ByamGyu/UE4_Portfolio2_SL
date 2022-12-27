@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_SkeletonArcherBow() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon_SkeletonArcherBow, 3516926113);
+	IMPLEMENT_CLASS(AWeapon_SkeletonArcherBow, 829810351);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<AWeapon_SkeletonArcherBow>()
 	{
 		return AWeapon_SkeletonArcherBow::StaticClass();

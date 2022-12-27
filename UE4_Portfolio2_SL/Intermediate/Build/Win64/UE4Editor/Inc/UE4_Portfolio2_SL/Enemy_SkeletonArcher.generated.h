@@ -59,10 +59,7 @@ public: \
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonArcher_h_16_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__RightWeaponClass() { return STRUCT_OFFSET(AEnemy_SkeletonArcher, RightWeaponClass); } \
-	FORCEINLINE static uint32 __PPO__LeftWeaponClass() { return STRUCT_OFFSET(AEnemy_SkeletonArcher, LeftWeaponClass); } \
-	FORCEINLINE static uint32 __PPO__Projectile_ArrowClass() { return STRUCT_OFFSET(AEnemy_SkeletonArcher, Projectile_ArrowClass); } \
-	FORCEINLINE static uint32 __PPO__RightWeapon() { return STRUCT_OFFSET(AEnemy_SkeletonArcher, RightWeapon); }
+	FORCEINLINE static uint32 __PPO__Projectile_ArrowClass() { return STRUCT_OFFSET(AEnemy_SkeletonArcher, Projectile_ArrowClass); }
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonArcher_h_13_PROLOG

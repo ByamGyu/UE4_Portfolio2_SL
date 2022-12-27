@@ -22,6 +22,26 @@ void AEnemy_Base::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
+AWeapon_Common* AEnemy_Base::GetRightWeapon()
+{
+	if (RightWeapon == nullptr)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("RightWeapon is Nullptr"));
+		return nullptr;
+	}
+	else return RightWeapon;
+}
+
+AShield_Common* AEnemy_Base::GetLeftWeapon()
+{
+	if (LeftWeapon == nullptr)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("RightWeapon is Nullptr"));
+		return nullptr;
+	}
+	else return LeftWeapon;
+}
+
 void AEnemy_Base::ChangeState(EMONSTER_STATE _NextState)
 {
 	if (Cur_State == _NextState) return;

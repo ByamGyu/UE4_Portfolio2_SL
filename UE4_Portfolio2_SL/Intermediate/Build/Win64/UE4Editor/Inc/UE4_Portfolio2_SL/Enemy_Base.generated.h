@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define UE4_PORTFOLIO2_SL_Enemy_Base_generated_h
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_SPARSE_DATA
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_RPC_WRAPPERS
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_INCLASS_NO_PURE_DECLS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_SPARSE_DATA
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_RPC_WRAPPERS
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEnemy_Base(); \
 	friend struct Z_Construct_UClass_AEnemy_Base_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AEnemy_Base)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_INCLASS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAEnemy_Base(); \
 	friend struct Z_Construct_UClass_AEnemy_Base_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AEnemy_Base)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_STANDARD_CONSTRUCTORS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AEnemy_Base(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AEnemy_Base) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_ENHANCED_CONSTRUCTORS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AEnemy_Base(AEnemy_Base&&); \
@@ -58,7 +58,7 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AEnemy_Base)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_PRIVATE_PROPERTY_OFFSET \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Cur_State() { return STRUCT_OFFSET(AEnemy_Base, Cur_State); } \
 	FORCEINLINE static uint32 __PPO__MaxHP() { return STRUCT_OFFSET(AEnemy_Base, MaxHP); } \
 	FORCEINLINE static uint32 __PPO__CurHP() { return STRUCT_OFFSET(AEnemy_Base, CurHP); } \
@@ -66,30 +66,34 @@ public: \
 	FORCEINLINE static uint32 __PPO__AttackDamage() { return STRUCT_OFFSET(AEnemy_Base, AttackDamage); } \
 	FORCEINLINE static uint32 __PPO__IsAttacking() { return STRUCT_OFFSET(AEnemy_Base, IsAttacking); } \
 	FORCEINLINE static uint32 __PPO__IsFight() { return STRUCT_OFFSET(AEnemy_Base, IsFight); } \
-	FORCEINLINE static uint32 __PPO__ExecutionAnimationNum() { return STRUCT_OFFSET(AEnemy_Base, ExecutionAnimationNum); }
+	FORCEINLINE static uint32 __PPO__ExecutionAnimationNum() { return STRUCT_OFFSET(AEnemy_Base, ExecutionAnimationNum); } \
+	FORCEINLINE static uint32 __PPO__RightWeaponClass() { return STRUCT_OFFSET(AEnemy_Base, RightWeaponClass); } \
+	FORCEINLINE static uint32 __PPO__LeftWeaponClass() { return STRUCT_OFFSET(AEnemy_Base, LeftWeaponClass); } \
+	FORCEINLINE static uint32 __PPO__RightWeapon() { return STRUCT_OFFSET(AEnemy_Base, RightWeapon); } \
+	FORCEINLINE static uint32 __PPO__LeftWeapon() { return STRUCT_OFFSET(AEnemy_Base, LeftWeapon); }
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_10_PROLOG
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_GENERATED_BODY_LEGACY \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_12_PROLOG
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_PRIVATE_PROPERTY_OFFSET \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_SPARSE_DATA \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_RPC_WRAPPERS \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_INCLASS \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_STANDARD_CONSTRUCTORS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_PRIVATE_PROPERTY_OFFSET \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_SPARSE_DATA \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_RPC_WRAPPERS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_INCLASS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_GENERATED_BODY \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_PRIVATE_PROPERTY_OFFSET \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_SPARSE_DATA \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_INCLASS_NO_PURE_DECLS \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_13_ENHANCED_CONSTRUCTORS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_PRIVATE_PROPERTY_OFFSET \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_SPARSE_DATA \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_INCLASS_NO_PURE_DECLS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -58,13 +58,7 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AEnemy_SkeletonWarrior)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__RightWeaponClass() { return STRUCT_OFFSET(AEnemy_SkeletonWarrior, RightWeaponClass); } \
-	FORCEINLINE static uint32 __PPO__LeftWeaponClass() { return STRUCT_OFFSET(AEnemy_SkeletonWarrior, LeftWeaponClass); } \
-	FORCEINLINE static uint32 __PPO__RightWeapon() { return STRUCT_OFFSET(AEnemy_SkeletonWarrior, RightWeapon); } \
-	FORCEINLINE static uint32 __PPO__LeftWeapon() { return STRUCT_OFFSET(AEnemy_SkeletonWarrior, LeftWeapon); }
-
-
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_h_15_PRIVATE_PROPERTY_OFFSET
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_h_12_PROLOG
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

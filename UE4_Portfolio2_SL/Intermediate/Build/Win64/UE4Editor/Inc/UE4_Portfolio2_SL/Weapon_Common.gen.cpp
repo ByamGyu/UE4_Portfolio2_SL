@@ -94,10 +94,10 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Common() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Common_Statics::NewProp_WeaponProjectileSocket_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Info" },
-		{ "Comment", "// ????\xc3\xbc ???? ????\n" },
+		{ "Comment", "// ????\xc3\xbc ???? ????(\xc8\xb0 ???? ????)\n" },
 		{ "ModuleRelativePath", "Weapon_Common.h" },
 		{ "NativeConst", "" },
-		{ "ToolTip", "????\xc3\xbc ???? ????" },
+		{ "ToolTip", "????\xc3\xbc ???? ????(\xc8\xb0 ???? ????)" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Common_Statics::NewProp_WeaponProjectileSocket = { "WeaponProjectileSocket", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Common, WeaponProjectileSocket), Z_Construct_UClass_UStaticMeshSocket_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Common_Statics::NewProp_WeaponProjectileSocket_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Common_Statics::NewProp_WeaponProjectileSocket_MetaData)) };
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Common() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon_Common, 2613307259);
+	IMPLEMENT_CLASS(AWeapon_Common, 226162395);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<AWeapon_Common>()
 	{
 		return AWeapon_Common::StaticClass();

@@ -120,16 +120,6 @@ void AEnemy_SkeletonArcher::SetCurHP(float _Value)
 	Super::SetCurHP(_Value);
 }
 
-AWeapon_Common* AEnemy_SkeletonArcher::GetRightWeapon()
-{
-	if (RightWeapon == nullptr)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("RightWeapon is Nullptr"));
-		return nullptr;
-	}
-	else return RightWeapon;
-}
-
 void AEnemy_SkeletonArcher::SetRightWeapon(AWeapon_SkeletonArcherBow* _NewWeapon)
 {
 	FName RightArmWeaponSocket(TEXT("LeftArm_Weapon"));

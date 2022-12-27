@@ -17,6 +17,7 @@ UEnemyAttackNotifyState::UEnemyAttackNotifyState()
 void UEnemyAttackNotifyState::NotifyBegin(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, float TotalDuration)
 {
 	arrHittedReuslts.Empty();
+	
 
 	Owner = MeshComp->GetOwner();
 	if (Owner != nullptr)
@@ -31,6 +32,7 @@ void UEnemyAttackNotifyState::NotifyBegin(USkeletalMeshComponent* MeshComp, UAni
 void UEnemyAttackNotifyState::NotifyTick(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, float FrameDeltaTime)
 {
 	TArray<FHitResult> hit;
+	
 
 	AEnemy_SkeletonWarrior* Character = Cast<AEnemy_SkeletonWarrior>(Owner);
 	if (Character != nullptr && Character->GetRightWeapon() != nullptr)
@@ -95,6 +97,26 @@ void UEnemyAttackNotifyState::NotifyTick(USkeletalMeshComponent* MeshComp, UAnim
 				}
 			}
 		}
+
+		// arrHittedResultsIssen.Empty(); 이거는 NotifyBegin에
+		//TArray<FHitResult> hit_Issen;
+		//FCollisionQueryParams FCollQueryParam;
+
+		//// 일섬 전용
+		//Character->GetWorld()->SweepMultiByChannel(
+		//	hit_Issen,
+		//	SocketStart,
+		//	SocketEnd,
+		//	FQuat::Identity,
+		//	ECollisionChannel::ECC_GameTraceChannel5,
+		//	FCollisionShape::MakeSphere(25.0f),
+		//	FCollQueryParam
+		//);
+
+		//if (hit_Issen.IsValidIndex(0))
+		//{
+		//	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("Issen!"));
+		//}
 	}
 	// 캐릭터는 있는데 오른손 장비가 없으면
 	else if (Character != nullptr && Character->GetRightWeapon() == nullptr)

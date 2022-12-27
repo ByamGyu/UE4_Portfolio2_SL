@@ -112,16 +112,6 @@ void AEnemy_SkeletonWarrior::SetCurHP(float _Value)
 	Super::SetCurHP(_Value);
 }
 
-AWeapon_Common* AEnemy_SkeletonWarrior::GetRightWeapon()
-{
-	if (RightWeapon == nullptr)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("RightWeapon is Nullptr"));
-		return nullptr;
-	}
-	else return RightWeapon;
-}
-
 void AEnemy_SkeletonWarrior::SetRightWeapon(AWeapon_RustySword* _NewWeapon)
 {
 	FName RightArmWeaponSocket(TEXT("RightArm_Weapon"));

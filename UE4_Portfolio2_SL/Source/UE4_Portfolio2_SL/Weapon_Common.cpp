@@ -5,6 +5,7 @@ AWeapon_Common::AWeapon_Common()
 {
 	PrimaryActorTick.bCanEverTick = false;
 
+	
 
 	DefaultDamage = 10.0f;
 }

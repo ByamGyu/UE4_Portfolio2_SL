@@ -29,6 +29,8 @@ private:
 	TArray<AActor*> arrHittedReuslts; // 맞은 액터 중복 방지를 위한 배열
 	UPROPERTY()
 	float AttackDamage;
+	//UPROPERTY()
+	//TArray<AActor*> arrHittedResultsIssen; // 일섬 전용 배열
 
 
 private:

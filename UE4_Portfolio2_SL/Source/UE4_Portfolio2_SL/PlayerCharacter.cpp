@@ -24,7 +24,8 @@ APlayerCharacter::APlayerCharacter()
 	IsLockTargetExist(false),
 	LeftRightInputValue(0.0f),
 	CurrentSpeed(0.0f),
-	IsParrying(false)
+	IsParrying(false),
+	IssenAbleTime(0.0f)
 {
 	PrimaryActorTick.bCanEverTick = true;
 
@@ -115,6 +116,7 @@ void APlayerCharacter::Tick(float DeltaTime)
 	IsFalling();
 	SetAttackDamage(); // 틱마다 공격 대미지를 계산함.
 	LookLockOnTarget(DeltaTime);
+	IssenAbleTimeTick(DeltaTime);
 }
 
 void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -782,6 +784,12 @@ AActor* APlayerCharacter::CharacterCheck()
 	{
 		return nullptr;
 	}
+}
+
+void APlayerCharacter::IssenAbleTimeTick(float _DeltaTime)
+{
+	if (IssenAbleTime <= 0.0f) IssenAbleTime = 0.0f;
+	else IssenAbleTime -= _DeltaTime;
 }
 
 void APlayerCharacter::ChangeState(EPLAYER_STATE _NextState)

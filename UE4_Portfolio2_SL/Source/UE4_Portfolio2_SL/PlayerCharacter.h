@@ -105,6 +105,8 @@ private:
 	int ComboCnt; // 공격몽타주 애니메이션 섹션 점프 용도
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	bool IsParrying;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	float IssenAbleTime;
 
 
 private:
@@ -132,6 +134,7 @@ public:
 
 private:
 	AActor* CharacterCheck();
+	void IssenAbleTimeTick(float DeltaTime);
 
 
 public:
@@ -171,6 +174,9 @@ public:
 
 	bool GetIsParrying() { return IsParrying; }
 	void SetIsParrying(bool _Value) { IsParrying = _Value; }
+
+	float GetIssenAbleTime() { return IssenAbleTime; }
+	void SetISsenAbleTime(float _Value) { IssenAbleTime = _Value; }
 
 	void PlayExecutionAnimation1();
 	void PlayExecutionAnimation2();

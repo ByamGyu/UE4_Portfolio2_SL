@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_RustySword() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon_RustySword, 2820730183);
+	IMPLEMENT_CLASS(AWeapon_RustySword, 647529151);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<AWeapon_RustySword>()
 	{
 		return AWeapon_RustySword::StaticClass();
