@@ -68,6 +68,8 @@ UPlayerCharacterAnimInstance::UPlayerCharacterAnimInstance()
 	if (AM_Execution1.Succeeded()) Execution1 = AM_Execution1.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Execution2(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Execution_02_Seq_Montage.Execution_02_Seq_Montage'"));
 	if (AM_Execution2.Succeeded()) Execution2 = AM_Execution2.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Issen(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/ARPG_Ninja_Anim_UE_Attack_Dodge_2_Montage.ARPG_Ninja_Anim_UE_Attack_Dodge_2_Montage'"));
+	if (AM_Issen.Succeeded()) Issen = AM_Issen.Object;
 
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_ImpactStrong1(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Hit_Combat_Large_F_Seq_Montage.Hit_Combat_Large_F_Seq_Montage'"));
 	if (AM_ImpactStrong1.Succeeded()) ImpactStrong1 = AM_ImpactStrong1.Object;
@@ -197,6 +199,11 @@ void UPlayerCharacterAnimInstance::PlayExecution1()
 void UPlayerCharacterAnimInstance::PlayExecution2()
 {
 	Montage_Play(Execution2, 1.0f);
+}
+
+void UPlayerCharacterAnimInstance::PlayIssenMontage()
+{
+	Montage_Play(Issen, 1.0f);
 }
 
 void UPlayerCharacterAnimInstance::PlayRandomImpactMontage()

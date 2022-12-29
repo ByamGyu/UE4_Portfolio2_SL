@@ -1,14 +1,11 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
   Building UE4_Portfolio2_SLEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: Enemy_Base.cpp, Enemy_SkeletonArcher.cpp, Enemy_SkeletonWarrior.cpp, EnemyAttackNotifyState.cpp, IssenTimingNotifyState.cpp, Weapon_Common.cpp, Weapon_RustySword.cpp
-  [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: Enemy_Base.gen.cpp, Enemy_SkeletonArcher.gen.cpp, Enemy_SkeletonWarrior.gen.cpp, IssenTimingNotifyState.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp, Weapon_Common.gen.cpp, Weapon_Default.gen.cpp, Weapon_RustySword.gen.cpp, Weapon_SkeletonArcherBow.gen.cpp
-  Building 4 actions with 24 processes...
-    [1/4] IssenTimingNotifyState.cpp
-    [2/4] UE4Editor-UE4_Portfolio2_SL-0034.lib
-       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0034.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0034.exp 개체를 생성하고 있습니다.
-    [3/4] UE4Editor-UE4_Portfolio2_SL-0034.dll
-       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0034.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0034.suppressed.exp 개체를 생성하고 있습니다.
-    [4/4] UE4_Portfolio2_SLEditor.target
-  Total time in Parallel executor: 2.24 seconds
-  Total execution time: 2.94 seconds
+  [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: BTService_DetectPlayer.cpp, MyGameInstance.cpp, PlayerCharacter.cpp, PlayerCharacterAnimInstance.cpp
+  [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: define.gen.cpp, MyGameInstance.gen.cpp, PlayerCharacterAnimInstance.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp
+  Building 2 actions with 24 processes...
+    [1/2] UE4Editor-UE4_Portfolio2_SL.dll
+       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.suppressed.exp 개체를 생성하고 있습니다.
+    [2/2] UE4_Portfolio2_SLEditor.target
+  Total time in Parallel executor: 0.62 seconds
+  Total execution time: 1.22 seconds

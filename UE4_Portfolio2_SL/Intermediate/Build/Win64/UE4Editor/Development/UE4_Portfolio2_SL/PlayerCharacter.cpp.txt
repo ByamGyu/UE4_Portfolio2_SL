@@ -205,6 +205,8 @@ G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Shield_Common.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\Shield_Common.generated.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\Shield_Default.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\MyGameInstance.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\MyGameInstance.generated.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\PlayerCharacter.generated.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Enemy_Base.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\Enemy_Base.generated.h

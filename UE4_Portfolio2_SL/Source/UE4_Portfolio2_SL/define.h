@@ -25,7 +25,8 @@ enum class EPLAYER_STATE : uint8
 	DEAD,
 	PARRY,
 	EXECUTION,
-	EXECUTED
+	EXECUTED,
+	ISSEN
 };
 
 UENUM(BlueprintType)

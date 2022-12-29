@@ -412,10 +412,20 @@ void APlayerCharacter::LightAttack()
 		return;
 	}
 
-	AActor* tmp = CharacterCheck();
-	if (tmp != nullptr)
+	// 브금 테스트중!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	UMyGameInstance* MyGI = Cast<UMyGameInstance>(GetGameInstance());
+	if (MyGI != nullptr)
 	{
-		auto pEnemy = Cast<AEnemy_Base>(tmp);
+		// 브금 테스트중!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		//MyGI->SetBGM_CUST("BGM_Test");
+		//MyGI->PlayBGM_CUST("BGM_Test");
+	}
+
+	// 처형 판정
+	AActor* tmp_Character = CharacterCheck();
+	if (tmp_Character != nullptr)
+	{
+		auto pEnemy = Cast<AEnemy_Base>(tmp_Character);
 		if (pEnemy != nullptr)
 		{
 			if (pEnemy->GetState() == EMONSTER_STATE::GUARD_BREAK)
@@ -458,9 +468,18 @@ void APlayerCharacter::LightAttack()
 		}
 	}
 
+	// 일섬 // tmp_Character != nullptr && 
+	if (IssenAbleTime > 0.0f)
+	{
+		ChangeState(EPLAYER_STATE::ISSEN);
+		AnimInst->PlayIssenMontage();
+		SetISsenAbleTime(0.0f);
+		return;
+	}
+
+	// 일반 공격(콤보 까지)
 	if (IsAttacking == false)
 	{
-		// 일반 공격
 		IsAttacking = true; // 공격중으로 전환
 		ChangeState(EPLAYER_STATE::ATTACK_LIGHT);
 		AnimInst->PlayLightAttackMontage();
@@ -490,6 +509,13 @@ void APlayerCharacter::HeavyAttack()
 	}
 
 	
+	// 브금 테스트중!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	/*UMyGameInstance* MyGI = Cast<UMyGameInstance>(GetGameInstance());
+	if (MyGI != nullptr)
+	{		
+		MyGI->FadeOutBGM_CUST(1.0f);
+	}*/
+
 
 	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
 	if (AnimInst == nullptr)

@@ -97,7 +97,7 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 		ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = true;
 		ControllingPawn->GetCharacterMovement()->MaxWalkSpeed = 200.0f;
 
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Target Is Not Exist"));
+		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Target Is Not Exist"));
 	}
 	// 플레이어가 감지됐다면
 	else if (IsTargetFind == true)
@@ -105,7 +105,7 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 		ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = false;
 		ControllingPawn->GetCharacterMovement()->MaxWalkSpeed = 75.0f;
 
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Target Is Exist"));
+		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Target Is Exist"));
 	}
 
 	DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Green, false, 0.2f);

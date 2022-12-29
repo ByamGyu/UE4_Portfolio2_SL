@@ -103,6 +103,8 @@ private:
 	class UAnimMontage* Execution1;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* Execution2;
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* Issen;
 
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* ImpactStrong1;
@@ -128,6 +130,7 @@ public:
 	void PlayParryMontage();
 	void PlayExecution1();
 	void PlayExecution2();
+	void PlayIssenMontage();
 
 	void PlayRandomImpactMontage();
 	void PlayImpactBackMontage();

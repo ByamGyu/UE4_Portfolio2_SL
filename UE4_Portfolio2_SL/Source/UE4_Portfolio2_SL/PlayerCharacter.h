@@ -6,6 +6,7 @@
 #include "PlayerCharacterAnimInstance.h"
 #include "Weapon_Default.h"
 #include "Shield_Default.h"
+#include "MyGameInstance.h"
 #include "PlayerCharacter.generated.h"
 
 UCLASS()

@@ -125,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 		return EPLAYER_STATE_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EPLAYER_STATE(EPLAYER_STATE_StaticEnum, TEXT("/Script/UE4_Portfolio2_SL"), TEXT("EPLAYER_STATE"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE_Hash() { return 3450594962U; }
+	uint32 Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE_Hash() { return 1685709174U; }
 	UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE()
 	{
 #if WITH_HOT_RELOAD
@@ -158,6 +158,7 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 				{ "EPLAYER_STATE::PARRY", (int64)EPLAYER_STATE::PARRY },
 				{ "EPLAYER_STATE::EXECUTION", (int64)EPLAYER_STATE::EXECUTION },
 				{ "EPLAYER_STATE::EXECUTED", (int64)EPLAYER_STATE::EXECUTED },
+				{ "EPLAYER_STATE::ISSEN", (int64)EPLAYER_STATE::ISSEN },
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
@@ -177,6 +178,7 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 				{ "IDLE.Name", "EPLAYER_STATE::IDLE" },
 				{ "IMPACT_STRONG.Name", "EPLAYER_STATE::IMPACT_STRONG" },
 				{ "IMPACT_WEAK.Name", "EPLAYER_STATE::IMPACT_WEAK" },
+				{ "ISSEN.Name", "EPLAYER_STATE::ISSEN" },
 				{ "JUMP.Name", "EPLAYER_STATE::JUMP" },
 				{ "KNOCK_DOWN.Name", "EPLAYER_STATE::KNOCK_DOWN" },
 				{ "ModuleRelativePath", "define.h" },
