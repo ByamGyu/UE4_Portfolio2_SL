@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeMyGameInstance() {}
 	UE4_PORTFOLIO2_SL_API UClass* Z_Construct_UClass_UMyGameInstance();
 	ENGINE_API UClass* Z_Construct_UClass_UGameInstance();
 	UPackage* Z_Construct_UPackage__Script_UE4_Portfolio2_SL();
+	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 // End Cross Module References
 	void UMyGameInstance::StaticRegisterNativesUMyGameInstance()
 	{
@@ -31,6 +32,15 @@ void EmptyLinkFunctionForGeneratedCodeMyGameInstance() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_S_SFXTest_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_S_SFXTest;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_S_BGMTest_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_S_BGMTest;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -44,6 +54,26 @@ void EmptyLinkFunctionForGeneratedCodeMyGameInstance() {}
 		{ "ModuleRelativePath", "MyGameInstance.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMyGameInstance_Statics::NewProp_S_SFXTest_MetaData[] = {
+		{ "Category", "Music" },
+		{ "Comment", "// ?\xd7\xbd?\xc6\xae ??????\n" },
+		{ "ModuleRelativePath", "MyGameInstance.h" },
+		{ "ToolTip", "?\xd7\xbd?\xc6\xae ??????" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMyGameInstance_Statics::NewProp_S_SFXTest = { "S_SFXTest", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMyGameInstance, S_SFXTest), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMyGameInstance_Statics::NewProp_S_SFXTest_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMyGameInstance_Statics::NewProp_S_SFXTest_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMyGameInstance_Statics::NewProp_S_BGMTest_MetaData[] = {
+		{ "Category", "Music" },
+		{ "ModuleRelativePath", "MyGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMyGameInstance_Statics::NewProp_S_BGMTest = { "S_BGMTest", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMyGameInstance, S_BGMTest), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMyGameInstance_Statics::NewProp_S_BGMTest_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMyGameInstance_Statics::NewProp_S_BGMTest_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMyGameInstance_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMyGameInstance_Statics::NewProp_S_SFXTest,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMyGameInstance_Statics::NewProp_S_BGMTest,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UMyGameInstance_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UMyGameInstance>::IsAbstract,
 	};
@@ -53,11 +83,11 @@ void EmptyLinkFunctionForGeneratedCodeMyGameInstance() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_UMyGameInstance_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_UMyGameInstance_Statics::PropPointers),
 		0,
 		0x009000A8u,
 		METADATA_PARAMS(Z_Construct_UClass_UMyGameInstance_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UMyGameInstance_Statics::Class_MetaDataParams))
@@ -71,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeMyGameInstance() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMyGameInstance, 366342934);
+	IMPLEMENT_CLASS(UMyGameInstance, 450557540);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UMyGameInstance>()
 	{
 		return UMyGameInstance::StaticClass();

@@ -34,7 +34,9 @@ public:
 	// 사운드 관련
 private:
 	// 테스트 음원들
+	UPROPERTY(EditDefaultsOnly, Category = Music)
 	USoundBase* S_SFXTest;
+	UPROPERTY(EditDefaultsOnly, Category = Music)
 	USoundBase* S_BGMTest;
 
 	TMap<FString, USoundBase*> Arr_SFXs;
@@ -44,18 +46,16 @@ private:
 
 
 public:
-	void PlaySoundEffectAtLocation_CUST(FString _name, FVector _Location);
-	void PlaySoundEffectAtLocationAndVolum_CUST(FString _name, FVector _Location, float _Volume = 1.0f);
+	void PlaySoundEffectAtLocation_CUST(FString _Name, FVector _Location);
+	void PlaySoundEffectAtLocationAndVolum_CUST(FString _Name, FVector _Location, float _Volume = 1.0f);
 	
 	// BGM은 위치 정보가 필요 없음
-	void SetBGM_CUST(FString _name);
-	void PlayBGM_CUST(FString _name, bool _Loop = true);
-	/*void PlayBGMAndVolum_CUST(FString _name, bool _Loop = true, float _Volume = 1.0f);
-	void StartBGM_CUST();
+	void SetBGM_CUST(FString _Name);
+	void PlayBGM_CUST(FString _Name, bool _Loop = true);
+	void PlayBGMAndVolum_CUST(FString _name, bool _Loop = true, float _Volume = 1.0f);
 	void StopBGM_CUST();
 	void PauseBGM_CUST();
 	void ResumeBGM_CUST();
-	void RestartBGM_CUST();
 	void FadeInBGM_CUST(float _FadeInDuration, float _Volume = 1.0f);
-	void FadeOutBGM_CUST(float _FadeOutDuration);*/
+	void FadeOutBGM_CUST(float _FadeOutDuration);
 };

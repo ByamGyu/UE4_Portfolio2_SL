@@ -35,6 +35,12 @@ UMyGameInstance::UMyGameInstance()
 void UMyGameInstance::Init()
 {
 	Super::Init();
+
+
+	// 비어있는 오디오 파일 변수 만들어서 오디오 컴포넌트에 적용하기
+
+
+	// 다른 함수에 IsPlaying으로 체크하는거도 해주기
 }
 
 void UMyGameInstance::PlaySoundEffectAtLocation_CUST(FString _name, FVector _Location)
@@ -61,84 +67,79 @@ void UMyGameInstance::PlaySoundEffectAtLocationAndVolum_CUST(FString _name, FVec
 	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("SFXResource Is Not Exist"));
 }
 
-void UMyGameInstance::SetBGM_CUST(FString _name)
+void UMyGameInstance::SetBGM_CUST(FString _Name)
 {
-	if (BGMPlayer == nullptr)
+	// 파일이 있으면
+	if (Arr_BGMs.Contains(_Name) == true)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("BGMPlayer Is Nullptr!!!!!"));
-		return;
+		BGMPlayer = UGameplayStatics::CreateSound2D(
+			GetWorld(),
+			Arr_BGMs[_Name],
+			1.0f,
+			1.0f,
+			0.0f
+		);
+
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("AudioComponent Set Success"));
 	}
-	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("BGMPlayer Is Exist"));
-
-	bool IsExist = Arr_BGMs.Contains(_name);
-	if (IsExist == false)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("BGMResource Is Not Exist"));
-		return;
-	}
-	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("BGMResource Is Exist"));
-
-
-	BGMPlayer->SetSound(Arr_BGMs[_name]);
+	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("AudioComponent Set Fail"));
 }
 
-void UMyGameInstance::PlayBGM_CUST(FString _name, bool _Loop)
+void UMyGameInstance::PlayBGM_CUST(FString _Name, bool _Loop)
 {
-	bool IsExist = Arr_BGMs.Contains(_name);
-	if (IsExist == false)
+	if (Arr_BGMs.Contains(_Name) == false)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("BGMResource Is Not Exist"));
-		return;
-	}
-	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("BGMResource Is Exist"));
-
-	if (BGMPlayer == nullptr)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("BGMPlayer Is Nullptr!!!!!"));
 		return;
 	}
 	else
 	{
+		// BGMPlayer Null 체크는 UGameplayStatics::CreateSound2D()를 통해서 함
+		// 따라서 여기서는 하지 말고 Set 단계나 초기화 단계에서 하는게 좋음
+
 		BGMPlayer->Play();
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("BGMResource Is Exist"));
+	}
+
+	
+}
+
+void UMyGameInstance::PlayBGMAndVolum_CUST(FString _Name, bool _Loop, float _Volume)
+{
+	if (Arr_BGMs.Contains(_Name) == false)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("BGMResource Is Not Exist"));
+		return;
+	}
+	else
+	{
+		BGMPlayer->SetVolumeMultiplier(_Volume);
+		BGMPlayer->Play();		
 	}
 }
 
-//void UMyGameInstance::PlayBGMAndVolum_CUST(FString _name, bool _Loop, float _Volume)
-//{
-//	
-//}
-//
-//void UMyGameInstance::StartBGM_CUST()
-//{
-//	
-//}
-//
-//void UMyGameInstance::StopBGM_CUST()
-//{
-//	
-//}
-//
-//void UMyGameInstance::PauseBGM_CUST()
-//{
-//	
-//}
-//
-//void UMyGameInstance::ResumeBGM_CUST()
-//{
-//	
-//}
-//
-//void UMyGameInstance::RestartBGM_CUST()
-//{
-//	
-//}
-//
-//void UMyGameInstance::FadeInBGM_CUST(float _FadeInDuration, float _Volume)
-//{
-//	
-//}
-//
-//void UMyGameInstance::FadeOutBGM_CUST(float _FadeOutDuration)
-//{
-//	
-//}
+void UMyGameInstance::StopBGM_CUST()
+{
+	BGMPlayer->Stop();
+}
+
+void UMyGameInstance::PauseBGM_CUST()
+{
+	BGMPlayer->SetPaused(true);
+}
+
+void UMyGameInstance::ResumeBGM_CUST()
+{
+	BGMPlayer->SetPaused(false);
+}
+
+void UMyGameInstance::FadeInBGM_CUST(float _FadeInDuration, float _Volume)
+{
+	BGMPlayer->FadeIn(_FadeInDuration, _Volume);
+}
+
+void UMyGameInstance::FadeOutBGM_CUST(float _FadeOutDuration)
+{
+	// 아예 끝남
+	BGMPlayer->FadeOut(1.0f, 0.0f);
+}

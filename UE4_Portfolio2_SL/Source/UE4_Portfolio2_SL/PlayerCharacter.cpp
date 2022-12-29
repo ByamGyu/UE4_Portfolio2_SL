@@ -412,15 +412,6 @@ void APlayerCharacter::LightAttack()
 		return;
 	}
 
-	// 브금 테스트중!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	UMyGameInstance* MyGI = Cast<UMyGameInstance>(GetGameInstance());
-	if (MyGI != nullptr)
-	{
-		// 브금 테스트중!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		//MyGI->SetBGM_CUST("BGM_Test");
-		//MyGI->PlayBGM_CUST("BGM_Test");
-	}
-
 	// 처형 판정
 	AActor* tmp_Character = CharacterCheck();
 	if (tmp_Character != nullptr)
@@ -507,15 +498,6 @@ void APlayerCharacter::HeavyAttack()
 	{
 		return;
 	}
-
-	
-	// 브금 테스트중!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	/*UMyGameInstance* MyGI = Cast<UMyGameInstance>(GetGameInstance());
-	if (MyGI != nullptr)
-	{		
-		MyGI->FadeOutBGM_CUST(1.0f);
-	}*/
-
 
 	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
 	if (AnimInst == nullptr)
