@@ -8,6 +8,7 @@
 			"BTDe_HasTargetAndInOffensDist.cpp.obj",
 			"BTDeco_HasTargetAndInDefensDist.cpp.obj",
 			"BTDecorator_IsInAttackRange.cpp.obj",
+			"BTService_DetectPlayer.cpp.obj",
 			"BTService_UpdateBackwardLocation.cpp.obj",
 			"BTService_UpdateInfo.cpp.obj",
 			"BTTask_Attack.cpp.obj",
@@ -23,6 +24,7 @@
 			"IssenTimingNotifyState.cpp.obj",
 			"MyAttackNotifyState.cpp.obj",
 			"MyHeavyAttackNotifyState.cpp.obj",
+			"PlayerCharacterAnimInstance.cpp.obj",
 			"Projectile_Base.cpp.obj",
 			"Projectile_SkeletonArcherArrow.cpp.obj",
 			"Shield_Common.cpp.obj",
@@ -34,10 +36,8 @@
 			"Weapon_Default.cpp.obj",
 			"Weapon_RustySword.cpp.obj",
 			"Weapon_SkeletonArcherBow.cpp.obj",
-			"BTService_DetectPlayer.cpp.obj",
 			"MyGameInstance.cpp.obj",
-			"PlayerCharacter.cpp.obj",
-			"PlayerCharacterAnimInstance.cpp.obj"
+			"PlayerCharacter.cpp.obj"
 		],
 		"Module.UE4_Portfolio2_SL.gen.cpp.obj": [
 			"AI_Base.gen.cpp.obj",
@@ -52,6 +52,7 @@
 			"BTTask_Attack.gen.cpp.obj",
 			"BTTask_FindPatrolPos.gen.cpp.obj",
 			"BTTask_TurntoTarget.gen.cpp.obj",
+			"define.gen.cpp.obj",
 			"Enemy_Base.gen.cpp.obj",
 			"Enemy_SkeletonArcher.gen.cpp.obj",
 			"Enemy_SkeletonArcher_AnimInst.gen.cpp.obj",
@@ -62,6 +63,7 @@
 			"MyAttackNotifyState.gen.cpp.obj",
 			"MyHeavyAttackNotifyState.gen.cpp.obj",
 			"PlayerCharacter.gen.cpp.obj",
+			"PlayerCharacterAnimInstance.gen.cpp.obj",
 			"Projectile_Base.gen.cpp.obj",
 			"Projectile_SkeletonArcherArrow.gen.cpp.obj",
 			"Shield_Common.gen.cpp.obj",
@@ -72,9 +74,7 @@
 			"Weapon_Default.gen.cpp.obj",
 			"Weapon_RustySword.gen.cpp.obj",
 			"Weapon_SkeletonArcherBow.gen.cpp.obj",
-			"define.gen.cpp.obj",
 			"MyGameInstance.gen.cpp.obj",
-			"PlayerCharacterAnimInstance.gen.cpp.obj",
 			"UE4_Portfolio2_SL.init.gen.cpp.obj"
 		]
 	}

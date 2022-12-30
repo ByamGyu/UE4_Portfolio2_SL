@@ -2,6 +2,8 @@
 
 #include "EngineMinimal.h"
 #include "Engine/GameInstance.h"
+#include "Niagara/Public/NiagaraComponent.h"
+#include "Niagara/Public/NiagaraFunctionLibrary.h"
 #include "MyGameInstance.generated.h"
 
 
@@ -19,24 +21,35 @@ public:
 	//virtual void OnStart() override;
 
 
-private:
-
 
 
 
 	// 이펙트 관련
 private:
+	// 이펙트 리소스
+	UPROPERTY(EditDefaultsOnly, Category = Effects)
+	UNiagaraSystem* NS_Issen;
+
+
+	// 파티클을 전달 받아 재생시켜주는 컴포넌트
+	UParticleSystemComponent* ParticleComponent;
+	UNiagaraComponent* NiagaraComponent;
+
 
 
 public:
+	void SpawnParticleAtLocation(FVector _Location, FRotator _Rotator = FRotator::ZeroRotator, FVector _Scale = FVector(1.0f, 1.0f, 1.0f));
+	void SpawnNiagaraParticleAtLocation(FVector _Location, FRotator _Rotator = FRotator::ZeroRotator, FVector _Scale = FVector(1.0f, 1.0f, 1.0f));
+	void ParticleFinishied();
+
 
 
 	// 사운드 관련
 private:
 	// 테스트 음원들
-	UPROPERTY(EditDefaultsOnly, Category = Music)
+	UPROPERTY(EditDefaultsOnly, Category = Musics)
 	USoundBase* S_SFXTest;
-	UPROPERTY(EditDefaultsOnly, Category = Music)
+	UPROPERTY(EditDefaultsOnly, Category = Musics)
 	USoundBase* S_BGMTest;
 
 	TMap<FString, USoundBase*> Arr_SFXs;

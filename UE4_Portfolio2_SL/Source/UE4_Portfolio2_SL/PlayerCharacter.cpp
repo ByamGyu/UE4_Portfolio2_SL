@@ -464,7 +464,8 @@ void APlayerCharacter::LightAttack()
 	{
 		ChangeState(EPLAYER_STATE::ISSEN);
 		AnimInst->PlayIssenMontage();
-		SetISsenAbleTime(0.0f);
+		SetISsenAbleTime(0.0f);		
+
 		return;
 	}
 

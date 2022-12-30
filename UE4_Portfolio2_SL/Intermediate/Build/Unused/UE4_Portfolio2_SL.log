@@ -1,22 +1,35 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0004.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-0004.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1671.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-1671.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4413.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4413.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4510.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-4510.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6583.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-6583.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-8354.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-8354.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-8640.dll
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Binaries\Win64\UE4Editor-UE4_Portfolio2_SL-8640.pdb
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0004.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-1671.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-4413.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-4510.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6583.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-8354.lib
+  Deleted hot-reload file: G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-8640.lib
   Building UE4_Portfolio2_SLEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: BTService_DetectPlayer.cpp, MyGameInstance.cpp, PlayerCharacter.cpp, PlayerCharacterAnimInstance.cpp
-  [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: define.gen.cpp, MyGameInstance.gen.cpp, PlayerCharacterAnimInstance.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp
-  Building 6 actions with 24 processes...
-    [1/6] PlayerCharacter.cpp
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(12): warning C5038: 데이터 멤버 'APlayerCharacter::CurStamina'은(는) 데이터 멤버 'APlayerCharacter::HPRatio' 이후에 초기화됩니다.
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(14): warning C5038: 데이터 멤버 'APlayerCharacter::StaminaRatio'은(는) 데이터 멤버 'APlayerCharacter::IsFight' 이후에 초기화됩니다.
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(18): warning C5038: 데이터 멤버 'APlayerCharacter::ComboCnt'은(는) 데이터 멤버 'APlayerCharacter::IsFall' 이후에 초기화됩니다.
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(21): warning C5038: 데이터 멤버 'APlayerCharacter::LeftWeapon'은(는) 데이터 멤버 'APlayerCharacter::AttackDamage' 이후에 초기화됩니다.
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(23): warning C5038: 데이터 멤버 'APlayerCharacter::DefaultDamage'은(는) 데이터 멤버 'APlayerCharacter::IsLockTargetExist' 이후에 초기화됩니다.
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.cpp(563): warning C4996: 'FCollisionQueryParams::FCollisionQueryParams': FCollisionQueryParams, to avoid ambiguity, please use other constructor and explicitly provide an FName parameter (not just a string literal) as the first parameter Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-    [2/6] Module.UE4_Portfolio2_SL.gen.cpp
-    [3/6] Module.UE4_Portfolio2_SL.cpp
-    [4/6] UE4Editor-UE4_Portfolio2_SL-0018.lib
-       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0018.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0018.exp 개체를 생성하고 있습니다.
-    [5/6] UE4Editor-UE4_Portfolio2_SL-0018.dll
-       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0018.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0018.suppressed.exp 개체를 생성하고 있습니다.
-    [6/6] UE4_Portfolio2_SLEditor.target
-  Total time in Parallel executor: 4.38 seconds
-  Total execution time: 5.07 seconds
+  [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: MyGameInstance.cpp, PlayerCharacter.cpp
+  [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: MyGameInstance.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp
+  Building 4 actions with 24 processes...
+    [1/4] MyGameInstance.cpp
+    [2/4] UE4Editor-UE4_Portfolio2_SL.lib
+       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.exp 개체를 생성하고 있습니다.
+    [3/4] UE4Editor-UE4_Portfolio2_SL.dll
+       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL.suppressed.exp 개체를 생성하고 있습니다.
+    [4/4] UE4_Portfolio2_SLEditor.target
+  Total time in Parallel executor: 4.63 seconds
+  Total execution time: 5.51 seconds
