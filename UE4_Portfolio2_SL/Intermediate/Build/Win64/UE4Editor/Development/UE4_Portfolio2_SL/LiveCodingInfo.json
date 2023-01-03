@@ -62,7 +62,6 @@
 			"IssenTimingNotifyState.gen.cpp.obj",
 			"MyAttackNotifyState.gen.cpp.obj",
 			"MyHeavyAttackNotifyState.gen.cpp.obj",
-			"PlayerCharacter.gen.cpp.obj",
 			"PlayerCharacterAnimInstance.gen.cpp.obj",
 			"Projectile_Base.gen.cpp.obj",
 			"Projectile_SkeletonArcherArrow.gen.cpp.obj",
@@ -75,6 +74,7 @@
 			"Weapon_RustySword.gen.cpp.obj",
 			"Weapon_SkeletonArcherBow.gen.cpp.obj",
 			"MyGameInstance.gen.cpp.obj",
+			"PlayerCharacter.gen.cpp.obj",
 			"UE4_Portfolio2_SL.init.gen.cpp.obj"
 		]
 	}

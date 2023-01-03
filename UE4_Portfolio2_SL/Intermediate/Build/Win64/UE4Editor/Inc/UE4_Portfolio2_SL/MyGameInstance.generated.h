@@ -59,9 +59,13 @@ public: \
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_MyGameInstance_h_14_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__NS_Issen() { return STRUCT_OFFSET(UMyGameInstance, NS_Issen); } \
-	FORCEINLINE static uint32 __PPO__S_SFXTest() { return STRUCT_OFFSET(UMyGameInstance, S_SFXTest); } \
-	FORCEINLINE static uint32 __PPO__S_BGMTest() { return STRUCT_OFFSET(UMyGameInstance, S_BGMTest); }
+	FORCEINLINE static uint32 __PPO__ParticleComponent() { return STRUCT_OFFSET(UMyGameInstance, ParticleComponent); } \
+	FORCEINLINE static uint32 __PPO__NiagaraComponent() { return STRUCT_OFFSET(UMyGameInstance, NiagaraComponent); } \
+	FORCEINLINE static uint32 __PPO__Arr_ParticleSystems() { return STRUCT_OFFSET(UMyGameInstance, Arr_ParticleSystems); } \
+	FORCEINLINE static uint32 __PPO__Arr_NiagaraSystems() { return STRUCT_OFFSET(UMyGameInstance, Arr_NiagaraSystems); } \
+	FORCEINLINE static uint32 __PPO__Arr_SFXs() { return STRUCT_OFFSET(UMyGameInstance, Arr_SFXs); } \
+	FORCEINLINE static uint32 __PPO__Arr_BGMs() { return STRUCT_OFFSET(UMyGameInstance, Arr_BGMs); } \
+	FORCEINLINE static uint32 __PPO__BGMPlayer() { return STRUCT_OFFSET(UMyGameInstance, BGMPlayer); }
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_MyGameInstance_h_11_PROLOG

@@ -8,14 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FDamageEvent;
+class AController;
+class AActor;
 #ifdef UE4_PORTFOLIO2_SL_PlayerCharacter_generated_h
 #error "PlayerCharacter.generated.h already included, missing '#pragma once' in PlayerCharacter.h"
 #endif
 #define UE4_PORTFOLIO2_SL_PlayerCharacter_generated_h
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_SPARSE_DATA
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_RPC_WRAPPERS
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execTakeDamage);
+
+
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execTakeDamage);
+
+
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerCharacter(); \

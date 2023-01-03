@@ -3,33 +3,14 @@
 
 UMyGameInstance::UMyGameInstance()
 {
-	// 이펙트 관련
+	// 컴포넌트 관련
 	ParticleComponent = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("ParticleSystemComponent"));
 	NiagaraComponent = CreateDefaultSubobject<UNiagaraComponent>(TEXT("NiagaraComponent"));
-
-
-	// 이펙트 리소스
-	//static ConstructorHelpers::FObjectFinder<UParticleSystem> ParticleAsset(TEXT(""));
-	//if (ParticleAsset.Succeeded()) Issen = ParticleAsset.Object; // 나이아가라시스템은 따로 있음
-	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> NSAsset(TEXT("NiagaraSystem'/Game/MyFolder/Effects/NS_Issen.NS_Issen'"));
-	if (NSAsset.Succeeded()) NS_Issen = NSAsset.Object;
-
-
-	// 사운드 관련
+	
 	BGMPlayer = CreateDefaultSubobject<UAudioComponent>(TEXT("SoundPlayer1"));
 	BGMPlayer->bAutoActivate = true;
-	
 
-	
-
-
-	// 테스트 음원
-	static ConstructorHelpers::FObjectFinder<USoundBase> S_SFXTEst1(TEXT("SoundWave'/Game/MyFolder/Sounds/SoundEffects/Test.Test'"));
-	if (S_SFXTEst1.Succeeded()) S_SFXTest = S_SFXTEst1.Object;
-	static ConstructorHelpers::FObjectFinder<USoundBase> S_TestBGM1(TEXT("SoundWave'/Game/MyFolder/Sounds/SoundEffects/TestBGMFile.TestBGMFile'"));
-	if (S_TestBGM1.Succeeded()) S_BGMTest = S_TestBGM1.Object;
-	Arr_BGMs.Add("BGM_Test", S_BGMTest);
-	Arr_SFXs.Add("SFX_Test", S_SFXTest);
+	Init_Resources();
 }
 
 void UMyGameInstance::Init()
@@ -42,19 +23,79 @@ void UMyGameInstance::Init()
 	// 다른 함수에 IsPlaying으로 체크하는거도 해주기
 }
 
-void UMyGameInstance::SpawnParticleAtLocation(FVector _Location, FRotator _Rotator, FVector _Scale)
+void UMyGameInstance::Init_Resources()
 {
+	// 배열들 초기화
+	Arr_ParticleSystems.Empty();
+	Arr_NiagaraSystems.Empty();
+	Arr_SFXs.Empty();
+	Arr_BGMs.Empty();
+
+	// 배열에 넣을때 사용할 임시 변수들
+	UParticleSystem* PS_tmp;
+	UNiagaraSystem* NS_tmp;
+	USoundBase* SB_tmp;
+
+
+	// 구버전 이펙트
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> PS_BloodSplat1(TEXT("ParticleSystem'/Game/Realistic_Starter_VFX_Pack/Particles/Blood/P_Blood_Splat_2d.P_Blood_Splat_2d'"));
+	if (PS_BloodSplat1.Succeeded()) PS_tmp = PS_BloodSplat1.Object; // 피격당할 때 피 스폰1
+	Arr_ParticleSystems.Add("PS_BloodSplat1", PS_tmp);
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> PS_BloodSplat2(TEXT("ParticleSystem'/Game/Realistic_Starter_VFX_Pack/Particles/Blood/P_Blood_Splat_3d.P_Blood_Splat_3d'"));
+	if (PS_BloodSplat2.Succeeded()) PS_tmp = PS_BloodSplat2.Object; // 피격당할 때 피 스폰2
+	Arr_ParticleSystems.Add("PS_BloodSplat1", PS_tmp);
+
+
+	// 나이아가라 이펙트	
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> NS_Issen1(TEXT("NiagaraSystem'/Game/MyFolder/Effects/NS_Issen.NS_Issen'"));
+	if (NS_Issen1.Succeeded()) NS_tmp = NS_Issen1.Object; // 일섬
+	Arr_NiagaraSystems.Add("NS_Issen", NS_tmp);
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem> NS_BloodTest1(TEXT("NiagaraSystem'/Game/sA_DarkKnight_Set/Fx/NS_Aoe_1.NS_Aoe_1'"));
+	if (NS_BloodTest1.Succeeded()) NS_tmp = NS_BloodTest1.Object; // 피기둥
+	Arr_NiagaraSystems.Add("NS_BloodTest", NS_tmp);
+
+
+	// 테스트 음원
+	static ConstructorHelpers::FObjectFinder<USoundBase> S_SFXTEst1(TEXT("SoundWave'/Game/MyFolder/Sounds/SoundEffects/Test.Test'"));
+	if (S_SFXTEst1.Succeeded()) SB_tmp = S_SFXTEst1.Object;
+	Arr_BGMs.Add("BGM_Test", SB_tmp);
+	static ConstructorHelpers::FObjectFinder<USoundBase> S_TestBGM1(TEXT("SoundWave'/Game/MyFolder/Sounds/SoundEffects/TestBGMFile.TestBGMFile'"));
+	if (S_TestBGM1.Succeeded()) SB_tmp = S_TestBGM1.Object;
+	Arr_SFXs.Add("SFX_Test", SB_tmp);
+
+
+	// 효과음 음원
+
+
+
+	// 배경음 음원
+
+
 
 }
 
-void UMyGameInstance::SpawnNiagaraParticleAtLocation(FVector _Location, FRotator _Rotator, FVector _Scale)
+void UMyGameInstance::SpawnParticleSystemAtLocation(FString _Name, FVector _Location, FRotator _Rotator, FVector _Scale)
 {
-	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), NS_Issen, _Location);
+	if (Arr_ParticleSystems.Contains(_Name))
+	{
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), Arr_ParticleSystems[_Name], _Location);
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("This ParticleSystem Resource Is Null!"));
+	}
 }
 
-void UMyGameInstance::ParticleFinishied()
+void UMyGameInstance::SpawnNiagaraSystemAtLocation(FString _Name, FVector _Location, FRotator _Rotator, FVector _Scale)
 {
-	//Destroy();
+	if (Arr_NiagaraSystems.Contains(_Name))
+	{
+		UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), Arr_NiagaraSystems[_Name], _Location);
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("This NiagaraEffect Resource Is Null!"));
+	}
 }
 
 void UMyGameInstance::PlaySoundEffectAtLocation_CUST(FString _name, FVector _Location)
@@ -154,6 +195,6 @@ void UMyGameInstance::FadeInBGM_CUST(float _FadeInDuration, float _Volume)
 
 void UMyGameInstance::FadeOutBGM_CUST(float _FadeOutDuration)
 {
-	// 아예 끝남
+	// FadeOut은 아예 끝남
 	BGMPlayer->FadeOut(1.0f, 0.0f);
 }

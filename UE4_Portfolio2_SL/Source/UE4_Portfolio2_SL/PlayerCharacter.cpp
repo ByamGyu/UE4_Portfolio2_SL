@@ -432,20 +432,21 @@ void APlayerCharacter::LightAttack()
 				}
 				else
 				{
+					pEnemy->ChangeState(EMONSTER_STATE::EXECUTION);
+
+					// 처형 애니메이션 랜덤 재생
 					int32 tmpint = FMath::RandRange(0, TargetExecutionAnimationNum - 1);
 					if (tmpint == 0)
-					{
-						pEnemy->ChangeState(EMONSTER_STATE::EXECUTION);
+					{						
 						pEnemy->PlayExecuted1Animation();
 
 						ChangeState(EPLAYER_STATE::EXECUTION);
-						PlayExecutionAnimation2();
+						PlayExecutionAnimation1();
 
 						return;
 					}
 					else if (tmpint == 1)
 					{
-						pEnemy->ChangeState(EMONSTER_STATE::EXECUTION);
 						pEnemy->PlayExecuted2Animation();
 
 						ChangeState(EPLAYER_STATE::EXECUTION);
@@ -459,12 +460,56 @@ void APlayerCharacter::LightAttack()
 		}
 	}
 
-	// 일섬 // tmp_Character != nullptr && 
+	// 일섬!
 	if (IssenAbleTime > 0.0f)
 	{
 		ChangeState(EPLAYER_STATE::ISSEN);
 		AnimInst->PlayIssenMontage();
-		SetISsenAbleTime(0.0f);		
+		SetISsenAbleTime(0.0f);
+
+		// 판정
+		TArray<FHitResult> hit; // 맞은 액터를 저장할 임시 배열
+		FCollisionQueryParams QueryParams(NAME_None, false, this);
+
+		FVector StartLoc = this->GetActorLocation();
+		FVector EndLoc = this->GetActorLocation() + this->GetActorForwardVector() * 400.0f;
+		this->GetWorld()->SweepMultiByChannel(
+			hit,
+			StartLoc,
+			EndLoc,
+			FQuat::Identity,
+			ECollisionChannel::ECC_GameTraceChannel2, // PlayerAttack
+			// 돌진 사거리 절반 만큼
+			FCollisionShape::MakeBox(FVector(225.0f, 75.0f, 75.0f)),
+			QueryParams,
+			FCollisionResponseParams::DefaultResponseParam
+		);
+
+		if (hit.IsValidIndex(0))
+		{
+			for (int i = 0; i < hit.Num(); i++)
+			{
+				// 적이 Enemy_Base 타입이면
+				AEnemy_Base* hittedCharacter = Cast<AEnemy_Base>(hit[i].GetActor());
+				if (hittedCharacter != nullptr)
+				{
+					// 일단 피격 애니메이션 재생(체력이 0이하면 알아서 Dead 애니메이션 재생됨)
+					hittedCharacter->PlayHitAniamtion(0.0f);
+
+					// 이펙트 스폰
+					UMyGameInstance* GI = Cast<UMyGameInstance>(GetGameInstance());
+					if (GI != nullptr)
+					{
+						GI->SpawnNiagaraSystemAtLocation("NS_Issen", hit[i].GetActor()->GetActorLocation());
+					}
+
+					// 데미지 입히기
+					FDamageEvent DamageEvent;
+					hittedCharacter->TakeDamage(this->GetAttackDamage() * 10.0f, DamageEvent, this->GetController(), this->GetRightWeapon());
+				}
+				else continue;				
+			}
+		}		
 
 		return;
 	}

@@ -183,8 +183,10 @@ public:
 	void PlayExecutionAnimation2();
 
 
-	// 대미지 받기 프레임워크
+	// 대미지 프레임워크
+	UFUNCTION()
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
+	
 
 
 public:
