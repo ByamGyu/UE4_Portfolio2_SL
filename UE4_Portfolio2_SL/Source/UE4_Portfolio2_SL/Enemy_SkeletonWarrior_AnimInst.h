@@ -23,6 +23,8 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	float CurrentDirection;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
+	float CurHP;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	bool IsFight;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	bool IsAttacking;
@@ -67,6 +69,8 @@ private:
 	class UAnimMontage* Executed1;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* Executed2;
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* Executed_Back;
 
 	// Á×À½
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
@@ -106,6 +110,7 @@ public:
 	void PlayGuardBreakMontage();
 	void PlayExecuted1Montage();
 	void PlayExecuted2Montage();
+	void PlayExecutedBack();
 
 	void PlayDeadMontage();
 	void PlayImpactMontage();
@@ -120,9 +125,7 @@ public:
 	UFUNCTION()
 	void AnimNotify_InitState();
 	UFUNCTION()
-	void AnimNotify_PauseDeadMontage();
-	UFUNCTION()
-	void AnimNotify_PauseExecutedMontage();
+	void AnimNotify_PauseMontage();
 	UFUNCTION()
 	void AnimNotify_InvinsibleStart();
 	UFUNCTION()

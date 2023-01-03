@@ -162,7 +162,10 @@ void AEnemy_Base::PlayExecuted1Animation()
 
 void AEnemy_Base::PlayExecuted2Animation()
 {
+}
 
+void AEnemy_Base::PlayExecutedBackAnimation()
+{
 }
 
 void AEnemy_Base::Dead()

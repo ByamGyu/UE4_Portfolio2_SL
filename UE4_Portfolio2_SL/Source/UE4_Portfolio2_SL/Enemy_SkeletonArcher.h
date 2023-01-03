@@ -75,6 +75,7 @@ public:
 	void Play_Hit1();
 	void Play_Hit2();
 	void Play_Hit3();
+	void PlayExecutedBackAnimation() override;
 
 	void PlayHitAniamtion(float _Degree) override;
 

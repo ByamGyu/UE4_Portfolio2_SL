@@ -67,6 +67,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__IsAttacking() { return STRUCT_OFFSET(AEnemy_Base, IsAttacking); } \
 	FORCEINLINE static uint32 __PPO__IsFight() { return STRUCT_OFFSET(AEnemy_Base, IsFight); } \
 	FORCEINLINE static uint32 __PPO__ExecutionAnimationNum() { return STRUCT_OFFSET(AEnemy_Base, ExecutionAnimationNum); } \
+	FORCEINLINE static uint32 __PPO__ExecutionBackAnimationNum() { return STRUCT_OFFSET(AEnemy_Base, ExecutionBackAnimationNum); } \
 	FORCEINLINE static uint32 __PPO__RightWeaponClass() { return STRUCT_OFFSET(AEnemy_Base, RightWeaponClass); } \
 	FORCEINLINE static uint32 __PPO__LeftWeaponClass() { return STRUCT_OFFSET(AEnemy_Base, LeftWeaponClass); } \
 	FORCEINLINE static uint32 __PPO__RightWeapon() { return STRUCT_OFFSET(AEnemy_Base, RightWeapon); } \

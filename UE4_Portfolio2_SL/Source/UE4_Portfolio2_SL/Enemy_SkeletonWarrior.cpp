@@ -29,6 +29,7 @@ AEnemy_SkeletonWarrior::AEnemy_SkeletonWarrior()
 	RightWeaponClass = AWeapon_RustySword::StaticClass();
 
 	ExecutionAnimationNum = 2;
+	ExecutionBackAnimationNum = 1;
 }
 
 void AEnemy_SkeletonWarrior::BeginPlay()
@@ -438,6 +439,21 @@ void AEnemy_SkeletonWarrior::PlayExecuted2Animation()
 	else return;
 }
 
+void AEnemy_SkeletonWarrior::PlayExecutedBackAnimation()
+{
+	Super::PlayExecutedBackAnimation();
+
+	auto pAnimInst = Cast<UEnemy_SkeletonWarrior_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::EXECUTED);
+		pAnimInst->PlayExecutedBack();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
 void AEnemy_SkeletonWarrior::Dead()
 {
 	Super::Dead();
@@ -453,6 +469,10 @@ void AEnemy_SkeletonWarrior::Dead()
 		if (pAnimInst != nullptr)
 		{
 			ChangeState(EMONSTER_STATE::DEAD);
+
+			// 처형애니메이션 실행중이면 return;
+			if (Cur_State == EMONSTER_STATE::EXECUTED) return;
+
 			pAnimInst->PlayDeadMontage();
 
 			// TODO (효과음?)

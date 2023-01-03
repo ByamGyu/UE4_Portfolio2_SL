@@ -34,6 +34,7 @@ AEnemy_SkeletonArcher::AEnemy_SkeletonArcher()
 	Projectile_ArrowClass = AProjectile_SkeletonArcherArrow::StaticClass();
 
 	ExecutionAnimationNum = 0;
+	ExecutionBackAnimationNum = 1;
 }
 
 void AEnemy_SkeletonArcher::BeginPlay()
@@ -325,6 +326,21 @@ void AEnemy_SkeletonArcher::Play_Hit3()
 	}
 }
 
+void AEnemy_SkeletonArcher::PlayExecutedBackAnimation()
+{
+	Super::PlayExecutedBackAnimation();
+
+	auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::EXECUTED);
+		pAnimInst->Play_Executed_Back();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
 void AEnemy_SkeletonArcher::PlayHitAniamtion(float _Degree)
 {
 	Super::PlayHitAniamtion(_Degree);
@@ -356,6 +372,10 @@ void AEnemy_SkeletonArcher::Dead()
 	if (pAnimInst != nullptr)
 	{
 		ChangeState(EMONSTER_STATE::DEAD);
+
+		// 처형애니메이션 실행중이면 return;
+		if (Cur_State == EMONSTER_STATE::EXECUTED) return;
+
 		pAnimInst->Play_Dead();
 
 		// TODO (효과음?)

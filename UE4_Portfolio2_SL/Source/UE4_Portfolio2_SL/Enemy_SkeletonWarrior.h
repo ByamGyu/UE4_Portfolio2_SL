@@ -68,6 +68,7 @@ public:
 	void PlayGuardBreakAnimation() override;
 	void PlayExecuted1Animation() override;
 	void PlayExecuted2Animation() override;
+	void PlayExecutedBackAnimation() override;
 	
 	void Dead() override;
 };

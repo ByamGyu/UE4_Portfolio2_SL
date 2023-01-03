@@ -18,8 +18,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
  \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleEnd); \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleStart); \
-	DECLARE_FUNCTION(execAnimNotify_PauseExecutedMontage); \
-	DECLARE_FUNCTION(execAnimNotify_PauseDeadMontage); \
+	DECLARE_FUNCTION(execAnimNotify_PauseMontage); \
 	DECLARE_FUNCTION(execAnimNotify_InitState);
 
 
@@ -27,8 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
  \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleEnd); \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleStart); \
-	DECLARE_FUNCTION(execAnimNotify_PauseExecutedMontage); \
-	DECLARE_FUNCTION(execAnimNotify_PauseDeadMontage); \
+	DECLARE_FUNCTION(execAnimNotify_PauseMontage); \
 	DECLARE_FUNCTION(execAnimNotify_InitState);
 
 
@@ -77,6 +75,7 @@ public: \
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_SkeletonWarrior_AnimInst_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CurrentSpeed() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, CurrentSpeed); } \
 	FORCEINLINE static uint32 __PPO__CurrentDirection() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, CurrentDirection); } \
+	FORCEINLINE static uint32 __PPO__CurHP() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, CurHP); } \
 	FORCEINLINE static uint32 __PPO__IsFight() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, IsFight); } \
 	FORCEINLINE static uint32 __PPO__IsAttacking() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, IsAttacking); } \
 	FORCEINLINE static uint32 __PPO__KnockDown_Time() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, KnockDown_Time); } \
@@ -93,6 +92,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__GuardBreak() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, GuardBreak); } \
 	FORCEINLINE static uint32 __PPO__Executed1() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Executed1); } \
 	FORCEINLINE static uint32 __PPO__Executed2() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Executed2); } \
+	FORCEINLINE static uint32 __PPO__Executed_Back() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Executed_Back); } \
 	FORCEINLINE static uint32 __PPO__Dead1() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Dead1); } \
 	FORCEINLINE static uint32 __PPO__Dead2() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Dead2); } \
 	FORCEINLINE static uint32 __PPO__Hit01() { return STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Hit01); } \

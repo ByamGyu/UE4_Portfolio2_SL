@@ -38,6 +38,8 @@ Cur_State(EMONSTER_STATE::IDLE)
 	if (AM_Executed1.Succeeded()) Executed1 = AM_Executed1.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Executed2(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonWarrior/Animation_Montages/Execution_Target_02_Seq_Montage.Execution_Target_02_Seq_Montage'"));
 	if (AM_Executed2.Succeeded()) Executed2 = AM_Executed2.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Executed_Back(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonWarrior/Animation_Montages/ARPG_Ninja_Anim_UE_Executed_B_3_Montage.ARPG_Ninja_Anim_UE_Executed_B_3_Montage'"));
+	if (AM_Executed_Back.Succeeded()) Executed_Back = AM_Executed_Back.Object;
 
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Dead1(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonWarrior/Animation_Montages/Anim_death_01_Montage.Anim_death_01_Montage'"));
 	if (AM_Dead1.Succeeded()) Dead1 = AM_Dead1.Object;
@@ -70,6 +72,7 @@ void UEnemy_SkeletonWarrior_AnimInst::NativeUpdateAnimation(float DeltaSeconds)
 		Cur_State = Character->GetState();
 		IsFight = Character->GetIsFight();
 		IsAttacking = Character->GetIsAttacking();
+		CurHP = Character->GetCurHP();
 		// KnockDown_Time = Character->GetKnockDownTime();
 	}
 	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("SkeletonWarrior: Character Owner Is Null!"));
@@ -135,6 +138,11 @@ void UEnemy_SkeletonWarrior_AnimInst::PlayExecuted2Montage()
 	Montage_Play(Executed2, 1.0f);
 }
 
+void UEnemy_SkeletonWarrior_AnimInst::PlayExecutedBack()
+{
+	Montage_Play(Executed_Back, 1.0f);
+}
+
 void UEnemy_SkeletonWarrior_AnimInst::PlayDeadMontage()
 {
 	int32 tmp = FMath::RandRange(0, 1);
@@ -181,42 +189,17 @@ void UEnemy_SkeletonWarrior_AnimInst::AnimNotify_InitState()
 	}
 }
 
-void UEnemy_SkeletonWarrior_AnimInst::AnimNotify_PauseDeadMontage()
+void UEnemy_SkeletonWarrior_AnimInst::AnimNotify_PauseMontage()
 {
 	auto Character = Cast<AEnemy_SkeletonWarrior>(TryGetPawnOwner());
 	if (Character != nullptr)
 	{
-		if (Montage_IsPlaying(Dead1))
+		if (CurHP <= 0.0f)
 		{
-			Montage_Pause(Dead1);
-
-			// TODO
-		}
-		else if (Montage_IsPlaying(Dead2))
-		{
-			Montage_Pause(Dead2);
-
-			// TODO
-		}
-	}
-}
-
-void UEnemy_SkeletonWarrior_AnimInst::AnimNotify_PauseExecutedMontage()
-{
-	auto Character = Cast<AEnemy_SkeletonWarrior>(TryGetPawnOwner());
-	if (Character != nullptr)
-	{
-		if (Montage_IsPlaying(Executed1))
-		{
-			Montage_Pause(Executed1);
-
-			// TODO
-		}
-		else if (Montage_IsPlaying(Executed2))
-		{
-			Montage_Pause(Executed2);
-
-			// TODO
+			if (GetCurrentActiveMontage() != nullptr)
+			{
+				Montage_Pause(GetCurrentActiveMontage());
+			}
 		}
 	}
 }

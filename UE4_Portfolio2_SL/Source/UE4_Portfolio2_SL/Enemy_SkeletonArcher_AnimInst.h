@@ -24,6 +24,8 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	float CurrentDirection;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
+	float CurHP;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	bool IsFight;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	bool IsAttacking;
@@ -54,6 +56,10 @@ private:
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* Dead1;
 
+	// 처형 당하는 모션
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* Executed_Back;
+
 
 	// 몽타주 재생 함수들
 public:
@@ -66,6 +72,7 @@ public:
 	void Play_Hit2();
 	void Play_Hit3();
 	void Play_Dead();
+	void Play_Executed_Back();
 
 
 	// 노티파이들
@@ -73,7 +80,7 @@ public:
 	UFUNCTION()
 	void AnimNotify_InitState();
 	UFUNCTION()
-	void AnimNotify_PauseDeadMontage();
+	void AnimNotify_PauseMontage();
 	UFUNCTION()
 	void AnimNotify_Fire();
 };

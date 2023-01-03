@@ -35,18 +35,11 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 		P_THIS->AnimNotify_InvinsibleStart();
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_PauseExecutedMontage)
+	DEFINE_FUNCTION(UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_PauseMontage)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->AnimNotify_PauseExecutedMontage();
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_PauseDeadMontage)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->AnimNotify_PauseDeadMontage();
+		P_THIS->AnimNotify_PauseMontage();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_InitState)
@@ -63,8 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 			{ "AnimNotify_InitState", &UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_InitState },
 			{ "AnimNotify_InvinsibleEnd", &UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_InvinsibleEnd },
 			{ "AnimNotify_InvinsibleStart", &UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_InvinsibleStart },
-			{ "AnimNotify_PauseDeadMontage", &UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_PauseDeadMontage },
-			{ "AnimNotify_PauseExecutedMontage", &UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_PauseExecutedMontage },
+			{ "AnimNotify_PauseMontage", &UEnemy_SkeletonWarrior_AnimInst::execAnimNotify_PauseMontage },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -134,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage_Statics
+	struct Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseMontage_Statics
 	{
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -142,39 +134,17 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseMontage_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Enemy_SkeletonWarrior_AnimInst.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst, nullptr, "AnimNotify_PauseDeadMontage", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseMontage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst, nullptr, "AnimNotify_PauseMontage", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseMontage_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseMontage_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseMontage()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseExecutedMontage_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseExecutedMontage_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Enemy_SkeletonWarrior_AnimInst.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseExecutedMontage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst, nullptr, "AnimNotify_PauseExecutedMontage", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseExecutedMontage_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseExecutedMontage_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseExecutedMontage()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseExecutedMontage_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseMontage_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -197,6 +167,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentDirection_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CurrentDirection;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurHP_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CurHP;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IsFight_MetaData[];
 #endif
@@ -265,6 +239,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Executed2;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Executed_Back_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Executed_Back;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Dead1_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Dead1;
@@ -308,8 +286,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 		{ &Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_InitState, "AnimNotify_InitState" }, // 2263863201
 		{ &Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_InvinsibleEnd, "AnimNotify_InvinsibleEnd" }, // 1857154335
 		{ &Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_InvinsibleStart, "AnimNotify_InvinsibleStart" }, // 4109738569
-		{ &Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseDeadMontage, "AnimNotify_PauseDeadMontage" }, // 4167258273
-		{ &Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseExecutedMontage, "AnimNotify_PauseExecutedMontage" }, // 3598521168
+		{ &Z_Construct_UFunction_UEnemy_SkeletonWarrior_AnimInst_AnimNotify_PauseMontage, "AnimNotify_PauseMontage" }, // 2319321445
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::Class_MetaDataParams[] = {
@@ -334,6 +311,14 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_CurrentDirection = { "CurrentDirection", nullptr, (EPropertyFlags)0x0040000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, CurrentDirection), METADATA_PARAMS(Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_CurrentDirection_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_CurrentDirection_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_CurHP_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "Character" },
+		{ "ModuleRelativePath", "Enemy_SkeletonWarrior_AnimInst.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_CurHP = { "CurHP", nullptr, (EPropertyFlags)0x0040000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, CurHP), METADATA_PARAMS(Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_CurHP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_CurHP_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_IsFight_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -482,6 +467,14 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Executed2 = { "Executed2", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Executed2), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Executed2_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Executed2_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Executed_Back_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AnimMontage" },
+		{ "ModuleRelativePath", "Enemy_SkeletonWarrior_AnimInst.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Executed_Back = { "Executed_Back", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_SkeletonWarrior_AnimInst, Executed_Back), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Executed_Back_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Executed_Back_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Dead1_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "AnimMontage" },
@@ -553,6 +546,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_CurrentSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_CurrentDirection,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_CurHP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_IsFight,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_IsAttacking,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_KnockDown_Time,
@@ -570,6 +564,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_GuardBreak,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Executed1,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Executed2,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Executed_Back,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Dead1,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Dead2,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonWarrior_AnimInst_Statics::NewProp_Hit01,
@@ -606,7 +601,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonWarrior_AnimInst() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEnemy_SkeletonWarrior_AnimInst, 3036354385);
+	IMPLEMENT_CLASS(UEnemy_SkeletonWarrior_AnimInst, 2312442704);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UEnemy_SkeletonWarrior_AnimInst>()
 	{
 		return UEnemy_SkeletonWarrior_AnimInst::StaticClass();

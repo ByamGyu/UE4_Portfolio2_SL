@@ -68,6 +68,8 @@ UPlayerCharacterAnimInstance::UPlayerCharacterAnimInstance()
 	if (AM_Execution1.Succeeded()) Execution1 = AM_Execution1.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Execution2(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Execution_02_Seq_Montage.Execution_02_Seq_Montage'"));
 	if (AM_Execution2.Succeeded()) Execution2 = AM_Execution2.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Execution_Back(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/ARPG_Ninja_Anim_UE_Execute_B_Montage.ARPG_Ninja_Anim_UE_Execute_B_Montage'"));
+	if (AM_Execution_Back.Succeeded()) Execution_Back = AM_Execution_Back.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Issen(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/ARPG_Ninja_Anim_UE_Attack_Dodge_2_Montage.ARPG_Ninja_Anim_UE_Attack_Dodge_2_Montage'"));
 	if (AM_Issen.Succeeded()) Issen = AM_Issen.Object;
 
@@ -199,6 +201,11 @@ void UPlayerCharacterAnimInstance::PlayExecution1()
 void UPlayerCharacterAnimInstance::PlayExecution2()
 {
 	Montage_Play(Execution2, 1.0f);
+}
+
+void UPlayerCharacterAnimInstance::PlayExecutionBack()
+{
+	Montage_Play(Execution_Back, 1.0f);
 }
 
 void UPlayerCharacterAnimInstance::PlayIssenMontage()

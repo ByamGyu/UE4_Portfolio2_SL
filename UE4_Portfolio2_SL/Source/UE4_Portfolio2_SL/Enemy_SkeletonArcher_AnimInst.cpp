@@ -28,6 +28,9 @@ UEnemy_SkeletonArcher_AnimInst::UEnemy_SkeletonArcher_AnimInst()
 
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Dead1(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonArcher/Animation_Montages/Standing_Death_Right_02_mixamo_com_Montage.Standing_Death_Right_02_mixamo_com_Montage'"));
 	if (AM_Dead1.Succeeded()) Dead1 = AM_Dead1.Object;
+
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_Executed_Back(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonArcher/Animation_Montages/ARPG_Ninja_Anim_UE_Executed_B_2_Montage.ARPG_Ninja_Anim_UE_Executed_B_2_Montage'"));
+	if (AM_Executed_Back.Succeeded()) Executed_Back = AM_Executed_Back.Object;
 }
 
 void UEnemy_SkeletonArcher_AnimInst::AnimNotify_InitState()
@@ -51,6 +54,7 @@ void UEnemy_SkeletonArcher_AnimInst::NativeUpdateAnimation(float DeltaSeconds)
 		Cur_State = Character->GetState();
 		IsFight = Character->GetIsFight();
 		IsAttacking = Character->GetIsAttacking();
+		CurHP = Character->GetCurHP();
 		// KnockDown_Time = Character->GetKnockDownTime();
 	}
 	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("SkeletonArcher: Character Owner Is Null!"));
@@ -105,25 +109,24 @@ void UEnemy_SkeletonArcher_AnimInst::Play_Dead()
 	Montage_Play(Dead1, 1.0f);
 }
 
-void UEnemy_SkeletonArcher_AnimInst::AnimNotify_PauseDeadMontage()
+void UEnemy_SkeletonArcher_AnimInst::Play_Executed_Back()
+{
+	Montage_Play(Executed_Back, 1.0f);
+}
+
+void UEnemy_SkeletonArcher_AnimInst::AnimNotify_PauseMontage()
 {
 	auto Character = Cast<AEnemy_SkeletonArcher>(TryGetPawnOwner());
 	if (Character != nullptr)
 	{
-		if (Montage_IsPlaying(Dead1))
+		if (CurHP <= 0.0f)
 		{
-			Montage_Pause(Dead1);
-
-			// TODO
+			if (GetCurrentActiveMontage() != nullptr)
+			{
+				Montage_Pause(GetCurrentActiveMontage());
+			}
 		}
-		//else if (Montage_IsPlaying(Dead2))
-		//{
-		//	Montage_Pause(Dead2);
-
-		//	// TODO
-		//}
 	}
-	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("asdf"));
 }
 
 void UEnemy_SkeletonArcher_AnimInst::AnimNotify_Fire()

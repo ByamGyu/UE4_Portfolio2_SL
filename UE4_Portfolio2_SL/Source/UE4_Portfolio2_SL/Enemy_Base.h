@@ -55,6 +55,8 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	int ExecutionAnimationNum = 0;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	int ExecutionBackAnimationNum = 0;
 
 
 	// 장비로 쓰일 액터 클래스 정보 저장 변수 선언
@@ -78,6 +80,7 @@ public:
 
 public:
 	int GetExecutionAnimationNum() { return ExecutionAnimationNum; }
+	int GetExecutionBackAnimationNum() { return ExecutionBackAnimationNum; }
 
 
 	// 능력치 함수
@@ -126,6 +129,7 @@ public:
 	virtual void PlayGuardBreakAnimation();
 	virtual void PlayExecuted1Animation();
 	virtual void PlayExecuted2Animation();
+	virtual void PlayExecutedBackAnimation();
 
 	virtual void Dead();
 };

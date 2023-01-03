@@ -28,11 +28,11 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 		P_THIS->AnimNotify_Fire();
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(UEnemy_SkeletonArcher_AnimInst::execAnimNotify_PauseDeadMontage)
+	DEFINE_FUNCTION(UEnemy_SkeletonArcher_AnimInst::execAnimNotify_PauseMontage)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->AnimNotify_PauseDeadMontage();
+		P_THIS->AnimNotify_PauseMontage();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UEnemy_SkeletonArcher_AnimInst::execAnimNotify_InitState)
@@ -48,7 +48,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AnimNotify_Fire", &UEnemy_SkeletonArcher_AnimInst::execAnimNotify_Fire },
 			{ "AnimNotify_InitState", &UEnemy_SkeletonArcher_AnimInst::execAnimNotify_InitState },
-			{ "AnimNotify_PauseDeadMontage", &UEnemy_SkeletonArcher_AnimInst::execAnimNotify_PauseDeadMontage },
+			{ "AnimNotify_PauseMontage", &UEnemy_SkeletonArcher_AnimInst::execAnimNotify_PauseMontage },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -96,7 +96,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseDeadMontage_Statics
+	struct Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseMontage_Statics
 	{
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -104,17 +104,17 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseDeadMontage_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseMontage_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Enemy_SkeletonArcher_AnimInst.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseDeadMontage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst, nullptr, "AnimNotify_PauseDeadMontage", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseDeadMontage_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseDeadMontage_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseDeadMontage()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseMontage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst, nullptr, "AnimNotify_PauseMontage", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseMontage_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseMontage_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseMontage()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseDeadMontage_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseMontage_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -137,6 +137,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentDirection_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CurrentDirection;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurHP_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CurHP;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IsFight_MetaData[];
 #endif
@@ -188,6 +192,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Dead1_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Dead1;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Executed_Back_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Executed_Back;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -199,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_Fire, "AnimNotify_Fire" }, // 3045280403
 		{ &Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_InitState, "AnimNotify_InitState" }, // 1561354325
-		{ &Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseDeadMontage, "AnimNotify_PauseDeadMontage" }, // 3747111315
+		{ &Z_Construct_UFunction_UEnemy_SkeletonArcher_AnimInst_AnimNotify_PauseMontage, "AnimNotify_PauseMontage" }, // 3450204685
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::Class_MetaDataParams[] = {
@@ -224,6 +232,14 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_CurrentDirection = { "CurrentDirection", nullptr, (EPropertyFlags)0x0040000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, CurrentDirection), METADATA_PARAMS(Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_CurrentDirection_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_CurrentDirection_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_CurHP_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "Character" },
+		{ "ModuleRelativePath", "Enemy_SkeletonArcher_AnimInst.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_CurHP = { "CurHP", nullptr, (EPropertyFlags)0x0040000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, CurHP), METADATA_PARAMS(Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_CurHP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_CurHP_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_IsFight_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -329,9 +345,20 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Dead1 = { "Dead1", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Dead1), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Dead1_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Dead1_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Executed_Back_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AnimMontage" },
+		{ "Comment", "// \xc3\xb3?? ???\xcf\xb4? ????\n" },
+		{ "ModuleRelativePath", "Enemy_SkeletonArcher_AnimInst.h" },
+		{ "ToolTip", "\xc3\xb3?? ???\xcf\xb4? ????" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Executed_Back = { "Executed_Back", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_SkeletonArcher_AnimInst, Executed_Back), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Executed_Back_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Executed_Back_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_CurrentSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_CurrentDirection,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_CurHP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_IsFight,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_IsAttacking,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_KnockDown_Time,
@@ -345,6 +372,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Hit2,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Hit3,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Dead1,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::NewProp_Executed_Back,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UEnemy_SkeletonArcher_AnimInst_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UEnemy_SkeletonArcher_AnimInst>::IsAbstract,
@@ -373,7 +401,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_SkeletonArcher_AnimInst() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEnemy_SkeletonArcher_AnimInst, 575424071);
+	IMPLEMENT_CLASS(UEnemy_SkeletonArcher_AnimInst, 677897109);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UEnemy_SkeletonArcher_AnimInst>()
 	{
 		return UEnemy_SkeletonArcher_AnimInst::StaticClass();

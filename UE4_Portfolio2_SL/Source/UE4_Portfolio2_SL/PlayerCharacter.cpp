@@ -419,6 +419,7 @@ void APlayerCharacter::LightAttack()
 		auto pEnemy = Cast<AEnemy_Base>(tmp_Character);
 		if (pEnemy != nullptr)
 		{
+			// 가드브레이크 상태일 경우
 			if (pEnemy->GetState() == EMONSTER_STATE::GUARD_BREAK)
 			{
 				FDamageEvent DamageEvent;
@@ -456,6 +457,48 @@ void APlayerCharacter::LightAttack()
 					}
 				}
 				
+			}
+
+			// 뒤돌아 있는 경우
+			if (pEnemy->GetState() != EMONSTER_STATE::DEAD
+				|| pEnemy->GetState() != EMONSTER_STATE::EXECUTED
+				|| pEnemy->GetState() != EMONSTER_STATE::FALL
+				|| pEnemy->GetState() != EMONSTER_STATE::JUMP)
+			{
+				FVector OwnerForward;
+				FVector HittedActorForward;
+				float Dot;
+				float AcosAngle;
+				float AngleDegree;
+
+				OwnerForward = this->GetActorForwardVector();
+				HittedActorForward = pEnemy->GetActorForwardVector();
+				Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
+				AcosAngle = FMath::Acos(Dot);
+				AngleDegree = FMath::RadiansToDegrees(AcosAngle);
+
+
+				// 적이 뒤돌아 있으면
+				if (AngleDegree <= 75.0f)
+				{
+					// 뒤에서 처형 애니메이션 개수가 1개 이상이면
+					if (pEnemy->GetExecutionBackAnimationNum() == 0)
+					{
+
+					}
+					else
+					{
+						// 이걸 먼저 실행해야 제대로 애니메이션이 나옴.
+						FDamageEvent DamageEvent;
+						pEnemy->TakeDamage(this->GetAttackDamage() * 5.0f, DamageEvent, this->GetController(), this->GetRightWeapon());
+
+						pEnemy->ChangeState(EMONSTER_STATE::EXECUTED);
+						pEnemy->PlayExecutedBackAnimation();
+						PlayExecutionBackAnimation();
+
+						return;
+					}
+				}
 			}
 		}
 	}
@@ -798,7 +841,7 @@ AActor* APlayerCharacter::CharacterCheck()
 	// 레이 발사해서 상대방 상태 파악하기
 	FVector StartLoc = this->GetActorLocation();
 	FVector ForwardDir = this->GetActorForwardVector();
-	FVector EndLoc = StartLoc + ForwardDir * 75.0f;
+	FVector EndLoc = StartLoc + ForwardDir * 100.0f;
 
 	FHitResult HitResult;
 	FCollisionQueryParams Params(NAME_None, false, this);
@@ -992,7 +1035,7 @@ void APlayerCharacter::PlayExecutionAnimation1()
 	if (AnimInst == nullptr) return;
 	else
 	{
-		//ChangeState(EPLAYER_STATE::);
+		ChangeState(EPLAYER_STATE::EXECUTION);
 		AnimInst->PlayExecution1();
 	}
 }
@@ -1003,8 +1046,19 @@ void APlayerCharacter::PlayExecutionAnimation2()
 	if (AnimInst == nullptr) return;
 	else
 	{
-		//ChangeState(EPLAYER_STATE::);
+		ChangeState(EPLAYER_STATE::EXECUTION);
 		AnimInst->PlayExecution2();
+	}
+}
+
+void APlayerCharacter::PlayExecutionBackAnimation()
+{
+	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+	if (AnimInst == nullptr) return;
+	else
+	{
+		ChangeState(EPLAYER_STATE::EXECUTION);
+		AnimInst->PlayExecutionBack();
 	}
 }
 

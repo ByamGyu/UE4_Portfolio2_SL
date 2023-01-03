@@ -37,7 +37,7 @@ void UIssenTimingNotifyState::NotifyTick(USkeletalMeshComponent* MeshComp, UAnim
 		FVector Dir = (SocketEnd - SocketStart).GetSafeNormal();
 
 		// 딱히 의미 없음
-		DrawDebugCapsule(Owner->GetWorld(), SocketStart, 50.0f, 50.0f, FQuat::Identity, FColor::Orange, true, 1.5f, 1.0f, 1.5f);
+		DrawDebugCapsule(Owner->GetWorld(), SocketStart, 75.0f, 75.0f, FQuat::Identity, FColor::Orange, true, 1.5f, 1.0f, 1.5f);
 		
 
 		Owner->GetWorld()->SweepMultiByChannel(
@@ -46,7 +46,7 @@ void UIssenTimingNotifyState::NotifyTick(USkeletalMeshComponent* MeshComp, UAnim
 			SocketEnd,
 			FQuat::Identity,
 			ECollisionChannel::ECC_GameTraceChannel5,
-			FCollisionShape::MakeSphere(50.0f)
+			FCollisionShape::MakeSphere(75.0f)
 			);
 
 		if (hit.IsValidIndex(0))

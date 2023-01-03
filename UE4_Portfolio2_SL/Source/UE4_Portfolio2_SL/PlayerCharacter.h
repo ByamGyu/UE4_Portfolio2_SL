@@ -181,6 +181,7 @@ public:
 
 	void PlayExecutionAnimation1();
 	void PlayExecutionAnimation2();
+	void PlayExecutionBackAnimation();
 
 
 	// 대미지 프레임워크

@@ -126,6 +126,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__ParryMontage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ParryMontage); } \
 	FORCEINLINE static uint32 __PPO__Execution1() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, Execution1); } \
 	FORCEINLINE static uint32 __PPO__Execution2() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, Execution2); } \
+	FORCEINLINE static uint32 __PPO__Execution_Back() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, Execution_Back); } \
 	FORCEINLINE static uint32 __PPO__Issen() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, Issen); } \
 	FORCEINLINE static uint32 __PPO__ImpactStrong1() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactStrong1); } \
 	FORCEINLINE static uint32 __PPO__ImpactStrong2() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, ImpactStrong2); } \
