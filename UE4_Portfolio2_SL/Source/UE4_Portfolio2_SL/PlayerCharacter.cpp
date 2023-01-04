@@ -74,7 +74,7 @@ APlayerCharacter::APlayerCharacter()
 
 	// 시작 장비 클래스 정보 저장하기
 	RightWeaponClass = AWeapon_Default::StaticClass();
-	LeftWeaponClass = AShield_Default::StaticClass();	
+	LeftWeaponClass = AShield_Default::StaticClass();
 }
 
 void APlayerCharacter::BeginPlay()

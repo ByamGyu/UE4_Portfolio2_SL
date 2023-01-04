@@ -18,7 +18,7 @@ public:
 	virtual void NativeTick(const FGeometry& MyGeometry, float InDeltaTime) override;
 
 
-		// ProgressBar를 변수로 저장하고 직접 조종
+	// ProgressBar를 변수로 저장하고 직접 조종
 private:
 	UProgressBar* PB_HPBar;
 

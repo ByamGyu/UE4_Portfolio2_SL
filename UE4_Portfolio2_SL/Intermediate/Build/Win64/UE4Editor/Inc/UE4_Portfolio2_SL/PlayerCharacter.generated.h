@@ -16,18 +16,18 @@ class AActor;
 #endif
 #define UE4_PORTFOLIO2_SL_PlayerCharacter_generated_h
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_SPARSE_DATA
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_RPC_WRAPPERS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_SPARSE_DATA
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execTakeDamage);
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execTakeDamage);
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_INCLASS_NO_PURE_DECLS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerCharacter(); \
 	friend struct Z_Construct_UClass_APlayerCharacter_Statics; \
@@ -36,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerCharacter)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_INCLASS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesAPlayerCharacter(); \
 	friend struct Z_Construct_UClass_APlayerCharacter_Statics; \
@@ -45,7 +45,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerCharacter)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_STANDARD_CONSTRUCTORS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APlayerCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APlayerCharacter) \
@@ -58,7 +58,7 @@ private: \
 public:
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_ENHANCED_CONSTRUCTORS \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APlayerCharacter(APlayerCharacter&&); \
@@ -69,7 +69,7 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APlayerCharacter)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__m_CameraArm() { return STRUCT_OFFSET(APlayerCharacter, m_CameraArm); } \
 	FORCEINLINE static uint32 __PPO__m_Camera() { return STRUCT_OFFSET(APlayerCharacter, m_Camera); } \
 	FORCEINLINE static uint32 __PPO__Cur_State() { return STRUCT_OFFSET(APlayerCharacter, Cur_State); } \
@@ -94,27 +94,27 @@ public: \
 	FORCEINLINE static uint32 __PPO__LeftWeapon() { return STRUCT_OFFSET(APlayerCharacter, LeftWeapon); }
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_12_PROLOG
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_GENERATED_BODY_LEGACY \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_PROLOG
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_SPARSE_DATA \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_RPC_WRAPPERS \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_INCLASS \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_STANDARD_CONSTRUCTORS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_PRIVATE_PROPERTY_OFFSET \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_SPARSE_DATA \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_RPC_WRAPPERS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_INCLASS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_GENERATED_BODY \
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_SPARSE_DATA \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_INCLASS_NO_PURE_DECLS \
-	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_15_ENHANCED_CONSTRUCTORS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_PRIVATE_PROPERTY_OFFSET \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_SPARSE_DATA \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_INCLASS_NO_PURE_DECLS \
+	UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

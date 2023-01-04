@@ -7,6 +7,9 @@
 #include "Weapon_Default.h"
 #include "Shield_Default.h"
 #include "MyGameInstance.h"
+#include "Components/WidgetComponent.h"
+#include "UserWidget_HPBar.h"
+#include "UserWidget_StaminaBar.h"
 #include "PlayerCharacter.generated.h"
 
 UCLASS()

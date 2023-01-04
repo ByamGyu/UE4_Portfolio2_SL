@@ -314,25 +314,19 @@ G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4E
 G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara/Public/NiagaraFunctionLibrary.h
 G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraFunctionLibrary.generated.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\MyGameInstance.generated.h
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\PlayerCharacter.generated.h
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Enemy_Base.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/ProgressBar.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Slate\Public\Widgets/Notifications/SProgressBar.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Slate\SProgressBar.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/WidgetComponent.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/Widget.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/Visual.h
 G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Visual.generated.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\UMG\Public\Slate/WidgetTransform.h
 G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetTransform.generated.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\UMG\Public\Blueprint/WidgetNavigation.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Types/NavigationMetaData.h
 G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetNavigation.generated.h
 G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Widget.generated.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\ProgressBar.generated.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/WidgetComponent.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/NamedSlotInterface.h
 G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\NamedSlotInterface.generated.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Slate\Public\Widgets/Layout/Anchors.h
@@ -419,7 +413,15 @@ G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Widge
 G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
 G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetComponent.generated.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\UserWidget_HPBar.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/ProgressBar.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Slate\Public\Widgets/Notifications/SProgressBar.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Slate\SProgressBar.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\ProgressBar.generated.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\UserWidget_HPBar.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\UserWidget_StaminaBar.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\UserWidget_StaminaBar.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\PlayerCharacter.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Enemy_Base.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\Enemy_Base.generated.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
 G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
