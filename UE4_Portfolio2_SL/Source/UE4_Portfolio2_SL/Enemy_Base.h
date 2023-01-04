@@ -38,6 +38,10 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	UWidgetComponent* WidgetComponent;
 
+	// UI 관련 함수
+public:
+	UWidgetComponent* GetWidgetComponent() { return WidgetComponent; }
+
 
 	// 능력치 변수
 protected:

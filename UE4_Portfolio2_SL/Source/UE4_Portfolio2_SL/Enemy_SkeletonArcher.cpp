@@ -35,6 +35,11 @@ AEnemy_SkeletonArcher::AEnemy_SkeletonArcher()
 
 	ExecutionAnimationNum = 0;
 	ExecutionBackAnimationNum = 1;
+
+	
+	// UI관련 체력바
+	WidgetComponent = CreateDefaultSubobject<UWidgetComponent>(TEXT("WidgetComponent"));
+	WidgetComponent->SetupAttachment(GetMesh());
 }
 
 void AEnemy_SkeletonArcher::BeginPlay()
@@ -89,6 +94,13 @@ void AEnemy_SkeletonArcher::Tick(float DeltaTime)
 
 	// HP 퍼센트 관리
 	HPRatio = CurHP / MaxHP;
+
+	// 체력바 변경
+	UUserWidget_HPBar* pHPBar = Cast<UUserWidget_HPBar>(WidgetComponent->GetWidget());
+	if (pHPBar != nullptr)
+	{
+		pHPBar->SetHPBar(HPRatio);
+	}
 }
 
 void AEnemy_SkeletonArcher::PossessedBy(AController* NewController)
@@ -373,6 +385,9 @@ void AEnemy_SkeletonArcher::PlayHitAniamtion(float _Degree)
 void AEnemy_SkeletonArcher::Dead()
 {
 	Super::Dead();
+
+	// UI를 모두 안보이게 한다
+	WidgetComponent->SetVisibility(false);
 
 	auto pAnimInst = Cast<UEnemy_SkeletonArcher_AnimInst>(GetMesh()->GetAnimInstance());
 	if (pAnimInst != nullptr)

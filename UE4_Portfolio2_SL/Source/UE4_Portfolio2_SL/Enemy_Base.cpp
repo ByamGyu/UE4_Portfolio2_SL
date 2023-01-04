@@ -15,6 +15,9 @@ void AEnemy_Base::BeginPlay()
 {
 	Super::BeginPlay();
 
+	// UI관련은 생성자에서 해주면 UI 자체의 생성자 생명주기 문제 때문에 크러쉬가 남
+	// UI관련은 BeginPlay에서 해주자!!
+	WidgetComponent->SetVisibility(false);
 }
 
 void AEnemy_Base::Tick(float DeltaTime)

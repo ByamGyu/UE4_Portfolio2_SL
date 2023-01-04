@@ -477,6 +477,9 @@ void AEnemy_SkeletonWarrior::Dead()
 {
 	Super::Dead();
 
+	// UI를 모두 안보이게 한다
+	WidgetComponent->SetVisibility(false);
+
 	if (Cur_State == EMONSTER_STATE::EXECUTED)
 	{
 		ChangeState(EMONSTER_STATE::DEAD);

@@ -676,15 +676,24 @@ void APlayerCharacter::LockOn()
 			LockedOnTarget = ClosestHitActor;
 		}
 	}
-	else
+	else // 락온 해제
 	{
 		IsLockTargetExist = false;
+
+		// 대상의 HP바 꺼주기
+		auto IsMonster = Cast<AEnemy_Base>(LockedOnTarget);
+		if (IsMonster != nullptr)
+		{
+			IsMonster->GetWidgetComponent()->SetVisibility(false);
+		}
+
 		LockedOnTarget = nullptr;
 	}
 
 	if (LockedOnTarget != nullptr)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, LockedOnTarget->GetName());
+		// 락온 된 대상 이름 출력해보기
+		// GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, LockedOnTarget->GetName());
 	}
 }
 
@@ -699,6 +708,14 @@ void APlayerCharacter::LookLockOnTarget(float DeltaSeconds)
 		{
 			IsLockTargetExist = false;
 			LockedOnTarget = nullptr;
+
+			// 체력바 안보이게 꺼주기
+			auto IsMonster = Cast<AEnemy_Base>(LockedOnTarget);
+			if (IsMonster != nullptr)
+			{
+				IsMonster->GetWidgetComponent()->SetVisibility(false);
+			}
+
 			return;
 		}
 
@@ -711,8 +728,10 @@ void APlayerCharacter::LookLockOnTarget(float DeltaSeconds)
 			{
 				IsLockTargetExist = false;
 				LockedOnTarget = nullptr;
+				IsMonster->GetWidgetComponent()->SetVisibility(false);
 			}
 		}
+
 		// 대상이 플레이어고 체력 확인
 		auto IsPlayer = Cast<APlayerCharacter>(LockedOnTarget);
 		if (IsPlayer != nullptr)
@@ -728,7 +747,7 @@ void APlayerCharacter::LookLockOnTarget(float DeltaSeconds)
 		if (LockedOnTarget != nullptr)
 		{
 			FVector LockedOnLocation = LockedOnTarget->GetActorLocation();
-			LockedOnLocation.Z -= 50.0f; // 대상이 잘 보이게 시점 살짝 높여주기
+			LockedOnLocation.Z -= 50.0f; // 대상이 잘 보이게 카메라를 살짝 높여주기
 			// 대상을 바라보는 회전값
 			FRotator LookAtRotation = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), LockedOnLocation);
 			// 현재 시점에서 대상을 바라보는 시점으로 회전보간
@@ -742,6 +761,11 @@ void APlayerCharacter::LookLockOnTarget(float DeltaSeconds)
 			// 락온 대상을 주시하면서 걷기(Strafe Movement)를 위한 캐릭터 회전
 			FRotator CharacterInterpRotation = UKismetMathLibrary::RInterpTo(GetActorRotation(), FRotator(GetActorRotation().Pitch, GetControlRotation().Yaw, GetActorRotation().Roll), DeltaSeconds, 10.0f);
 			GetController()->GetPawn()->SetActorRotation(CharacterInterpRotation);
+
+			if (IsMonster != nullptr)
+			{
+				IsMonster->GetWidgetComponent()->SetVisibility(true);
+			}
 		}
 		
 	}

@@ -37,6 +37,6 @@ void UUserWidget_HPBar::SetHPBar(float _Ratio)
 	{
 		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, FString::SanitizeFloat(_Ratio));
 
-		PB_HPBar->SetPercent(_Ratio);
+		PB_HPBar->SetPercent(_Ratio);		
 	}
 }
