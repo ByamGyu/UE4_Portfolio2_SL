@@ -79,10 +79,16 @@ void AEnemy_SkeletonArcher::Tick(float DeltaTime)
 			|| Cur_State == EMONSTER_STATE::EXECUTION
 			)
 		{
-			return;
+			// 아무것도 하지 않음
 		}
-		else ChangeState(EMONSTER_STATE::MOVE);
+		else
+		{
+			ChangeState(EMONSTER_STATE::MOVE);
+		}
 	}
+
+	// HP 퍼센트 관리
+	HPRatio = CurHP / MaxHP;
 }
 
 void AEnemy_SkeletonArcher::PossessedBy(AController* NewController)

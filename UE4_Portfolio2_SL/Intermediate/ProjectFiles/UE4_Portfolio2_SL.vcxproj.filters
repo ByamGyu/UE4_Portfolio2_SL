@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{8C5B6E6A-84BB-405A-8A78-FFA9F9FDEFE8}</UniqueIdentifier>
+      <UniqueIdentifier>{452AFD36-3E3B-4D18-BC05-B9A03C2966A9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{89ED3776-1063-4C01-B735-E2206000227C}</UniqueIdentifier>
+      <UniqueIdentifier>{7B93E4C5-700A-4B11-800C-1987FDA947A5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{4AAB9611-7497-4DB9-B2EA-CE96C9F9720C}</UniqueIdentifier>
+      <UniqueIdentifier>{4FB9C09F-B3FF-4F7E-8FD1-0B4F7596CF2E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\AI_Base.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
@@ -225,6 +225,12 @@
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\UE4_Portfolio2_SLGameMode.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\UserWidget_HPBar.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\UserWidget_HPBar.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Weapon_Common.cpp">

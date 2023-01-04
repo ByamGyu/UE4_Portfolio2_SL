@@ -30,6 +30,12 @@ AEnemy_SkeletonWarrior::AEnemy_SkeletonWarrior()
 
 	ExecutionAnimationNum = 2;
 	ExecutionBackAnimationNum = 1;
+
+
+	// UI관련 체력바
+	WidgetComponent = CreateDefaultSubobject<UWidgetComponent>(TEXT("WidgetComponent"));
+	WidgetComponent->SetupAttachment(GetMesh()); // 스켈레탈메쉬를 기준으로
+
 }
 
 void AEnemy_SkeletonWarrior::BeginPlay()
@@ -71,9 +77,22 @@ void AEnemy_SkeletonWarrior::Tick(float DeltaTime)
 			|| Cur_State == EMONSTER_STATE::EXECUTION
 			)
 		{
-			return;
+			// 아무것도 하지 않음
 		}
-		else ChangeState(EMONSTER_STATE::MOVE);
+		else
+		{
+			ChangeState(EMONSTER_STATE::MOVE);
+		}
+	}
+
+	// HP 퍼센트 관리
+	HPRatio = CurHP / MaxHP;
+
+	// 체력바 변경
+	UUserWidget_HPBar* pHPBar = Cast<UUserWidget_HPBar>(WidgetComponent->GetWidget());
+	if (pHPBar != nullptr)
+	{
+		pHPBar->SetHPBar(HPRatio);
 	}
 }
 

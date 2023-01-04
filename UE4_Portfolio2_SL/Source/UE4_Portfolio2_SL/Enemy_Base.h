@@ -6,6 +6,9 @@
 #include "Animation/AnimInstance.h"
 #include "Weapon_Common.h"
 #include "Shield_Common.h"
+#include "Components/ProgressBar.h"
+#include "Components/WidgetComponent.h"
+#include "UserWidget_HPBar.h"
 #include "Enemy_Base.generated.h"
 
 
@@ -28,6 +31,12 @@ public:
 protected:
 	USkeletalMeshComponent* SM;
 	UAnimInstance* AnimInst;
+
+
+	// UI 관련
+protected:
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	UWidgetComponent* WidgetComponent;
 
 
 	// 능력치 변수
