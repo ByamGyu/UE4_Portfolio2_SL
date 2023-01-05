@@ -16,6 +16,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_12_SPARSE_DATA
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execAnimNotify_UseStaminaHeavyAttack); \
+	DECLARE_FUNCTION(execAnimNotify_UseStaminaLightAttack); \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleEnd); \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleStart); \
 	DECLARE_FUNCTION(execAnimNotify_AttackInputCheck); \
@@ -32,6 +34,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execAnimNotify_UseStaminaHeavyAttack); \
+	DECLARE_FUNCTION(execAnimNotify_UseStaminaLightAttack); \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleEnd); \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleStart); \
 	DECLARE_FUNCTION(execAnimNotify_AttackInputCheck); \
@@ -103,6 +107,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__CurHP() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurHP); } \
 	FORCEINLINE static uint32 __PPO__CurStamina() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurStamina); } \
 	FORCEINLINE static uint32 __PPO__Cur_State() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, Cur_State); } \
+	FORCEINLINE static uint32 __PPO__StaminaUse() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, StaminaUse); } \
 	FORCEINLINE static uint32 __PPO__RollIdle_F0_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollIdle_F0_Montage); } \
 	FORCEINLINE static uint32 __PPO__RollIdle_FL45_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollIdle_FL45_Montage); } \
 	FORCEINLINE static uint32 __PPO__RollIdle_FL90_Montage() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, RollIdle_FL90_Montage); } \

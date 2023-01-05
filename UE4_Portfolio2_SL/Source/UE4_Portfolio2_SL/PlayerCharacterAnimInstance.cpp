@@ -110,6 +110,7 @@ void UPlayerCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		IsAttackButtonWhenAttack = Pawn->GetIsAttackButtonWhenAttack();
 		ComboCnt = Pawn->GetComboCnt();
 		IsLockOn = Pawn->GetIsLockOn();
+		StaminaUse = Pawn->GetStaminaUse();
 		//KnockDown_Time = Pawn->GetKnockDownTime();
 
 		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(CurrentDirection));
@@ -307,9 +308,13 @@ void UPlayerCharacterAnimInstance::AnimNotify_AttackEnd()
 	if (Character != nullptr)
 	{
 		// 공격 애니메이션(섹션)이 끝나면
+
+		// 몽타주를 먼저 멈추고(안멈추면 가까운 다음 노티파이를 실행시킬 수 있음)
+		Montage_Stop(0.25f, GetCurrentActiveMontage());
+
 		Character->SetIsAttacking(false); // 공격상태 false로 바꾸고,
 		Character->SetComboCnt(0); // 콤보Cnt를 0으로 바꾸고
-		Character->SetIsAttackButtonWhenAttack(false); // 연속 공격 입력 상태 false로 바꾸고,
+		Character->SetIsAttackButtonWhenAttack(false); // 연속 공격 입력 상태 false로 바꾸고,		
 
 		Character->ChangeState(EPLAYER_STATE::IDLE); // 캐릭터 상태를 IDLE로 전환
 	}
@@ -352,5 +357,24 @@ void UPlayerCharacterAnimInstance::AnimNotify_InvinsibleEnd()
 	if (Character != nullptr)
 	{
 		Character->GetMesh()->SetCollisionProfileName(FName("PlayerPhysicsActor"));
+	}
+}
+
+void UPlayerCharacterAnimInstance::AnimNotify_UseStaminaLightAttack()
+{
+	auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		Character->SetCurStamina(StaminaUse * (-15.0f));
+		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("LightAttack Stamina Use Notify"));
+	}
+}
+
+void UPlayerCharacterAnimInstance::AnimNotify_UseStaminaHeavyAttack()
+{
+	auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		Character->SetCurStamina(StaminaUse * (-33.0f));
 	}
 }

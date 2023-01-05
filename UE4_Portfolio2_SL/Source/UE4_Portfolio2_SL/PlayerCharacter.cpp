@@ -6,9 +6,9 @@
 
 APlayerCharacter::APlayerCharacter()
 	: Cur_State(EPLAYER_STATE::IDLE),
-	MaxHP(100),
+	MaxHP(200.0f),
 	CurHP(MaxHP),
-	MaxStamina(100),
+	MaxStamina(150.0f),
 	CurStamina(MaxStamina),
 	HPRatio(1.0f),
 	StaminaRatio(1.0f),
@@ -25,7 +25,8 @@ APlayerCharacter::APlayerCharacter()
 	LeftRightInputValue(0.0f),
 	CurrentSpeed(0.0f),
 	IsParrying(false),
-	IssenAbleTime(0.0f)
+	IssenAbleTime(0.0f),
+	StaminaUse(1.0f)
 {
 	PrimaryActorTick.bCanEverTick = true;
 
@@ -75,6 +76,9 @@ APlayerCharacter::APlayerCharacter()
 	// 시작 장비 클래스 정보 저장하기
 	RightWeaponClass = AWeapon_Default::StaticClass();
 	LeftWeaponClass = AShield_Default::StaticClass();
+
+
+	
 }
 
 void APlayerCharacter::BeginPlay()
@@ -117,6 +121,12 @@ void APlayerCharacter::Tick(float DeltaTime)
 	SetAttackDamage(); // 틱마다 공격 대미지를 계산함.
 	LookLockOnTarget(DeltaTime);
 	IssenAbleTimeTick(DeltaTime);
+
+	// 편의를 의해서 일단 여기서 계속 UI 갱신
+	RefreshHUD();
+
+	// 자연 치유 및 스테미나 회복
+	RecoverTickHPStamina(DeltaTime);
 }
 
 void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -284,8 +294,15 @@ void APlayerCharacter::Jump()
 	}
 	else
 	{
-		ChangeState(EPLAYER_STATE::JUMP);
-		ACharacter::Jump();
+		if (CurStamina > StaminaUse * 20.0f)
+		{
+			ChangeState(EPLAYER_STATE::JUMP);
+			ACharacter::Jump();
+
+			SetCurStamina(StaminaUse * (-30.0f));
+		}
+
+		
 	}
 }
 
@@ -349,14 +366,16 @@ void APlayerCharacter::Roll()
 		|| Cur_State == EPLAYER_STATE::MOVE
 		|| Cur_State == EPLAYER_STATE::GUARD)
 	{
-		auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
-		if (AnimInst != nullptr)
+		if (CurStamina >= StaminaUse * 10.0f) // 현재 스테미나가 10 이상 있으면
 		{
-			ChangeState(EPLAYER_STATE::ROLL);
+			auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+			if (AnimInst != nullptr)
+			{
+				ChangeState(EPLAYER_STATE::ROLL);
 
-
-			if (IsFight == true) AnimInst->PlayRollCombatMontage();
-			else AnimInst->PlayRollIdleMontage();
+				AnimInst->PlayRollIdleMontage();
+				SetCurStamina(StaminaUse * (-25.0f));
+			}
 		}
 	}
 }
@@ -367,9 +386,16 @@ void APlayerCharacter::Spell()
 		|| Cur_State == EPLAYER_STATE::MOVE
 		|| Cur_State == EPLAYER_STATE::GUARD)
 	{
-		ChangeState(EPLAYER_STATE::SPELL);
+		if (CurStamina < StaminaUse * 30.0f)
+		{
+			return;
+		}
+		else
+		{
+			ChangeState(EPLAYER_STATE::SPELL);
+			SetCurStamina(StaminaUse * (-40.0f));
+		}
 	}
-	else return;
 }
 
 void APlayerCharacter::Parry()
@@ -378,12 +404,17 @@ void APlayerCharacter::Parry()
 		|| Cur_State == EPLAYER_STATE::MOVE
 		|| Cur_State == EPLAYER_STATE::GUARD)
 	{
-		auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
-		if (AnimInst != nullptr)
+		if (CurStamina >= StaminaUse * 10.0f)
 		{
-			ChangeState(EPLAYER_STATE::PARRY);
-			AnimInst->PlayParryMontage();
-		}
+			auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+			if (AnimInst != nullptr)
+			{
+				ChangeState(EPLAYER_STATE::PARRY);
+				AnimInst->PlayParryMontage();
+
+				SetCurStamina(StaminaUse * (-15.0f));
+			}
+		}		
 	}
 	else return;
 }
@@ -404,6 +435,11 @@ void APlayerCharacter::LightAttack()
 		|| Cur_State == EPLAYER_STATE::SPELL
 		|| Cur_State == EPLAYER_STATE::EXECUTED
 		|| Cur_State == EPLAYER_STATE::EXECUTION) return;
+
+	if (CurStamina < StaminaUse * 10.0f)
+	{
+		return;
+	}
 
 	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
 	if (AnimInst == nullptr)
@@ -588,16 +624,21 @@ void APlayerCharacter::HeavyAttack()
 		return;
 	}
 
+	if (CurStamina < StaminaUse * 10.0f)
+	{
+		return;
+	}
+
 	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
 	if (AnimInst == nullptr)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter::LightAttack(): AnimInst is Null"));
+		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter::HeavyAttack(): AnimInst is Null"));
 		return;
 	}
 
 	if (IsAttacking == false)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter::HeavyAttack()"));
+		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter::HeavyAttack()"));
 
 		IsAttacking = true; // 공격중으로 전환
 		ChangeState(EPLAYER_STATE::ATTACK_HEAVY);
@@ -859,6 +900,20 @@ void APlayerCharacter::SetLeftWeapon(AShield_Default* _NewWeapon)
 	}
 }
 
+void APlayerCharacter::RefreshHUD()
+{
+	AMyPlayerController* MyController = Cast<AMyPlayerController>(GetController());
+	if (MyController != nullptr)
+	{
+		UUserWidget_HUD* MyHUD = Cast<UUserWidget_HUD>(MyController->GetMainHUDWidget());
+		if (MyHUD != nullptr)
+		{
+			MyHUD->GetHPBar()->SetPercent(HPRatio);
+			MyHUD->GetStaminaBar()->SetPercent(StaminaRatio);
+		}
+	}
+}
+
 AActor* APlayerCharacter::CharacterCheck()
 {
 	// ECC_GameTraceChannel2
@@ -940,7 +995,16 @@ void APlayerCharacter::SetCurHP(float _Value)
 	{
 		CurHP += _Value;
 
-		if (CurHP >= MaxHP) CurHP = MaxHP;
+		if (CurHP >= MaxHP)
+		{
+			CurHP = MaxHP;
+			HPRatio = 1.0f;
+		}
+		else
+		{
+			HPRatio = (float)((float)CurHP / (float)MaxHP);
+			//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(HPRatio));
+		}
 	}
 	else if (_Value < 0) // -는 입은 피해
 	{
@@ -949,11 +1013,80 @@ void APlayerCharacter::SetCurHP(float _Value)
 		if (CurHP <= 0.0f)
 		{
 			CurHP = 0;
+			HPRatio = 0.0f;
 			Dead();
 		}
+		else
+		{
+			HPRatio = (float)((float)CurHP / (float)MaxHP);
+			GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(HPRatio));
+		}
+	}
+}
+
+void APlayerCharacter::RecoverTickHPStamina(float _DeltaSecond)
+{
+	// HP 회복
+	if (Cur_State != EPLAYER_STATE::DEAD
+		|| Cur_State != EPLAYER_STATE::EXECUTED)
+	{
+		SetCurHP(_DeltaSecond * 3.0f);
 	}
 
-	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(CurHP));
+
+	// 스테미나 회복
+	if (Cur_State == EPLAYER_STATE::IDLE
+		|| Cur_State == EPLAYER_STATE::FALL
+		|| Cur_State == EPLAYER_STATE::GUARD
+		|| Cur_State == EPLAYER_STATE::MOVE)
+	{
+		SetCurStamina(_DeltaSecond * 30.0f);
+	}
+}
+
+void APlayerCharacter::SetCurStamina(float _Value)
+{
+	if (_Value > 0.0f) // + 회복
+	{
+		CurStamina += _Value;
+
+		if (CurStamina >= MaxStamina)
+		{
+			CurStamina = MaxStamina;
+			StaminaRatio = 1.0f;
+		}
+		else
+		{
+			StaminaRatio = (float)((float)CurStamina / (float)MaxStamina);
+			//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(StaminaRatio));
+		}
+	}
+	else if (_Value < 0.0f) // - 감소
+	{
+		CurStamina += _Value;
+
+		if (CurStamina <= 0.0f)
+		{
+			CurStamina = 0;
+			StaminaRatio = 0.0f;
+		}
+		else
+		{
+			StaminaRatio = (float)((float)CurStamina / (float)MaxStamina);
+			//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(StaminaRatio));
+		}
+	}
+}
+
+void APlayerCharacter::InitHPAndStamina()
+{
+	CurHP = MaxHP;
+	HPRatio = 1.0f;
+
+	CurStamina = MaxStamina;
+	StaminaRatio = 1.0f;
+
+	ChangeState(EPLAYER_STATE::IDLE);
 }
 
 void APlayerCharacter::Dead()
@@ -964,6 +1097,8 @@ void APlayerCharacter::Dead()
 		if (AnimInst != nullptr)
 		{
 			ChangeState(EPLAYER_STATE::DEAD);
+
+			HPRatio = 0.0f;
 
 			// 피직스 애셋과 캡슐 콜리전 변경
 			GetMesh()->SetCollisionProfileName("NoCollision");
@@ -984,33 +1119,33 @@ void APlayerCharacter::PlayHitAniamtion(float _Degree)
 	}
 	else
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, FString::SanitizeFloat(_Degree));
+		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, FString::SanitizeFloat(_Degree));
 
 		// 정면에서 맞으면
 		if (_Degree >= 90.0f)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("Forward"));
+			//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("Forward"));
 
 			//가드 중이면
 			if (Cur_State == EPLAYER_STATE::GUARD)
 			{
 				ChangeState(EPLAYER_STATE::GUARD_IMPACT_WEAK);
 				AnimInst->PlayShieldBlockWeak();
-				GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("PlayShieldBlockWeak"));
+				//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("PlayShieldBlockWeak"));
 			}
 			else
 			{
-				ChangeState(EPLAYER_STATE::IMPACT_STRONG);
-				GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("PlayImpactMontage"));
+				ChangeState(EPLAYER_STATE::IMPACT_STRONG);				
 				AnimInst->PlayRandomImpactMontage();
+				//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("PlayImpactMontage"));
 			}
 		}
 		// 뒤에서 맞으면
 		else if (_Degree < 90.0f)
 		{
 			ChangeState(EPLAYER_STATE::IMPACT_STRONG);
-			GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("Back"));
 			AnimInst->PlayImpactBackMontage();
+			//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, TEXT("Back"));
 		}
 	}
 }
@@ -1020,7 +1155,7 @@ void APlayerCharacter::PlayShieldBlockWeakAnimation()
 	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
 	if (AnimInst == nullptr)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter AnimInst is Null"));
+		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter AnimInst is Null"));
 		return;
 	}
 	else
@@ -1035,7 +1170,7 @@ void APlayerCharacter::PlayShieldBlockStrongAnimation()
 	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
 	if (AnimInst == nullptr)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter AnimInst is Null"));
+		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("PlayerCharacter AnimInst is Null"));
 		return;
 	}
 	else

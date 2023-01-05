@@ -4,12 +4,20 @@
 #include "GameFramework/Character.h"
 #include "define.h"
 #include "PlayerCharacterAnimInstance.h"
+
 #include "Weapon_Default.h"
 #include "Shield_Default.h"
+
 #include "MyGameInstance.h"
+
 #include "Components/WidgetComponent.h"
 #include "UserWidget_HPBar.h"
 #include "UserWidget_StaminaBar.h"
+#include "UserWidget_HUD.h"
+
+#include "MyPlayerController.h"
+#include "UserWidget_HUD.h"
+
 #include "PlayerCharacter.generated.h"
 
 UCLASS()
@@ -84,15 +92,15 @@ private:
 	bool IsFall;
 
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	int MaxHP;
+	float MaxHP;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	int CurHP;
+	float CurHP;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	float HPRatio;
 	UPROPERTY(VisibleAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	int MaxStamina;
+	float MaxStamina;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	int CurStamina;
+	float CurStamina;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	float StaminaRatio;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
@@ -111,6 +119,9 @@ private:
 	bool IsParrying;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	float IssenAbleTime;
+
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	float StaminaUse; // 모든 스테미나 소모 행동에 사용되는 수치 기준 (1.0f)
 
 
 private:
@@ -136,6 +147,12 @@ public:
 	void SetLeftWeapon(class AShield_Default* _NewWeapon);
 
 
+	// HUD 갱신
+public:
+	void RefreshHUD();
+
+
+	// 일섬 및 전방 캐릭터 상태 체크
 private:
 	AActor* CharacterCheck();
 	void IssenAbleTimeTick(float DeltaTime);
@@ -154,13 +171,27 @@ public:
 
 	float GetCurHP() { return CurHP; }
 	void SetCurHP(float _Value);
+	float GetHPRatio() { return HPRatio; }
+	float GetMaxHP() { return MaxHP; }
+	void SetMaxHP(float _Value) { MaxHP = _Value; }
+	void RecoverTickHPStamina(float _DeltaSecond);
+
+	float GetCurStamina() { return CurStamina; }
+	void SetCurStamina(float _Value);
+	float GetStaminaRatio() { return StaminaRatio; }
+	float GetMaxStamina() { return MaxStamina; }
+	void SetMaxStamina(float _Value) { MaxStamina = _Value; }
+
+	float GetStaminaUse() { return StaminaUse; }
+	void SetStaminaUse(float _Value) { StaminaUse = _Value; }
+
+	void InitHPAndStamina();
 
 	void Dead();
 
 	void PlayHitAniamtion(float _Degree);
 	void PlayShieldBlockWeakAnimation();
 	void PlayShieldBlockStrongAnimation();
-	float GetCurStamina() { return CurStamina; }
 
 
 	void SetAttackDamage();

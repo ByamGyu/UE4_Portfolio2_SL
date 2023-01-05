@@ -99,7 +99,7 @@ void AEnemy_SkeletonArcher::Tick(float DeltaTime)
 	UUserWidget_HPBar* pHPBar = Cast<UUserWidget_HPBar>(WidgetComponent->GetWidget());
 	if (pHPBar != nullptr)
 	{
-		pHPBar->SetHPBar(HPRatio);
+		pHPBar->SetPercent(HPRatio);
 	}
 }
 

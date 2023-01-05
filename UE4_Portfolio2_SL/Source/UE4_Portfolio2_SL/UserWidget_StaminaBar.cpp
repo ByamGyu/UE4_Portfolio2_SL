@@ -10,8 +10,7 @@ void UUserWidget_StaminaBar::NativeConstruct()
 	// 블루프린트에서 "PB_HPBar"라는 이름의 ProgressBar를 가져와 저장한다.
 	PB_StaminaBar = Cast<UProgressBar>(GetWidgetFromName("PB_StaminaBar"));
 
-	// Test
-	SetStaminaBar(1.0f);
+	SetPercent(1.0f);
 }
 
 void UUserWidget_StaminaBar::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
@@ -21,7 +20,7 @@ void UUserWidget_StaminaBar::NativeTick(const FGeometry& MyGeometry, float InDel
 
 }
 
-void UUserWidget_StaminaBar::SetStaminaBar(float _Ratio)
+void UUserWidget_StaminaBar::SetPercent(float _Ratio)
 {
 	if (PB_StaminaBar == nullptr)
 	{

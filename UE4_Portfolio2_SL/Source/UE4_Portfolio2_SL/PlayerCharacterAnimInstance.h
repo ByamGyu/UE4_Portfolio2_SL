@@ -45,8 +45,10 @@ private:
 	float CurHP;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	float CurStamina;
-	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Character, Meta = (AllowPrivateAccess = true))
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	EPLAYER_STATE Cur_State;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
+	float StaminaUse;
 
 	// ¸ùÅ¸ÁÖµé
 private:
@@ -168,5 +170,9 @@ private:
 	void AnimNotify_InvinsibleStart();
 	UFUNCTION()
 	void AnimNotify_InvinsibleEnd();
+	UFUNCTION()
+	void AnimNotify_UseStaminaLightAttack();
+	UFUNCTION()
+	void AnimNotify_UseStaminaHeavyAttack();
 	
 };

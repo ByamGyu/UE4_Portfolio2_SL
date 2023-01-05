@@ -24,4 +24,9 @@ public:
 private:
 	UUserWidget_HPBar* UW_HP;
 	UUserWidget_StaminaBar* UW_Stamina;
+
+
+public:
+	UUserWidget_HPBar* GetHPBar() { return UW_HP; }
+	UUserWidget_StaminaBar* GetStaminaBar() { return UW_Stamina; }
 };

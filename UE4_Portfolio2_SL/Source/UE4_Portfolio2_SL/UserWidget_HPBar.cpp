@@ -16,8 +16,7 @@ void UUserWidget_HPBar::NativeConstruct()
 	// 블루프린트에서 "PB_HPBar"라는 이름의 ProgressBar를 가져와 저장한다.
 	PB_HPBar = Cast<UProgressBar>(GetWidgetFromName("PB_HPBar"));
 
-	// Test
-	SetHPBar(1.0f);
+	SetPercent(1.0f);
 }
 
 // Tick
@@ -27,7 +26,7 @@ void UUserWidget_HPBar::NativeTick(const FGeometry& MyGeometry, float InDeltaTim
 
 }
 
-void UUserWidget_HPBar::SetHPBar(float _Ratio)
+void UUserWidget_HPBar::SetPercent(float _Ratio)
 {
 	if (PB_HPBar == nullptr)
 	{

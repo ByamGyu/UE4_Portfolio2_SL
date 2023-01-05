@@ -24,5 +24,5 @@ private:
 
 
 public:
-	void SetHPBar(float _Ratio);
+	void SetPercent(float _Ratio);
 };

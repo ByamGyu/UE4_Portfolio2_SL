@@ -21,6 +21,20 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 	UE4_PORTFOLIO2_SL_API UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UPlayerCharacterAnimInstance::execAnimNotify_UseStaminaHeavyAttack)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AnimNotify_UseStaminaHeavyAttack();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UPlayerCharacterAnimInstance::execAnimNotify_UseStaminaLightAttack)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AnimNotify_UseStaminaLightAttack();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UPlayerCharacterAnimInstance::execAnimNotify_InvinsibleEnd)
 	{
 		P_FINISH;
@@ -121,6 +135,8 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 			{ "AnimNotify_ParryStart", &UPlayerCharacterAnimInstance::execAnimNotify_ParryStart },
 			{ "AnimNotify_RollEnd", &UPlayerCharacterAnimInstance::execAnimNotify_RollEnd },
 			{ "AnimNotify_SpellEnd", &UPlayerCharacterAnimInstance::execAnimNotify_SpellEnd },
+			{ "AnimNotify_UseStaminaHeavyAttack", &UPlayerCharacterAnimInstance::execAnimNotify_UseStaminaHeavyAttack },
+			{ "AnimNotify_UseStaminaLightAttack", &UPlayerCharacterAnimInstance::execAnimNotify_UseStaminaLightAttack },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -388,6 +404,50 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaHeavyAttack_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaHeavyAttack_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaHeavyAttack_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerCharacterAnimInstance, nullptr, "AnimNotify_UseStaminaHeavyAttack", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaHeavyAttack_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaHeavyAttack_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaHeavyAttack()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaHeavyAttack_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaLightAttack_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaLightAttack_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaLightAttack_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerCharacterAnimInstance, nullptr, "AnimNotify_UseStaminaLightAttack", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaLightAttack_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaLightAttack_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaLightAttack()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaLightAttack_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UPlayerCharacterAnimInstance_NoRegister()
 	{
 		return UPlayerCharacterAnimInstance::StaticClass();
@@ -462,6 +522,10 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Cur_State_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_Cur_State;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StaminaUse_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_StaminaUse;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RollIdle_F0_Montage_MetaData[];
 #endif
@@ -607,6 +671,8 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_ParryStart, "AnimNotify_ParryStart" }, // 3092346518
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_RollEnd, "AnimNotify_RollEnd" }, // 1148083175
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_SpellEnd, "AnimNotify_SpellEnd" }, // 1838090597
+		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaHeavyAttack, "AnimNotify_UseStaminaHeavyAttack" }, // 3773665626
+		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_UseStaminaLightAttack, "AnimNotify_UseStaminaLightAttack" }, // 938185989
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::Class_MetaDataParams[] = {
@@ -761,7 +827,15 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Cur_State = { "Cur_State", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerCharacterAnimInstance, Cur_State), Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Cur_State_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Cur_State_MetaData)) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Cur_State = { "Cur_State", nullptr, (EPropertyFlags)0x0040000000000015, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerCharacterAnimInstance, Cur_State), Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Cur_State_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Cur_State_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_StaminaUse_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "Character" },
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_StaminaUse = { "StaminaUse", nullptr, (EPropertyFlags)0x0040000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerCharacterAnimInstance, StaminaUse), METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_StaminaUse_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_StaminaUse_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_RollIdle_F0_Montage_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -1033,6 +1107,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_CurStamina,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Cur_State_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_Cur_State,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_StaminaUse,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_RollIdle_F0_Montage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_RollIdle_FL45_Montage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::NewProp_RollIdle_FL90_Montage,
@@ -1092,7 +1167,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerCharacterAnimInstance, 1460642843);
+	IMPLEMENT_CLASS(UPlayerCharacterAnimInstance, 498028155);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UPlayerCharacterAnimInstance>()
 	{
 		return UPlayerCharacterAnimInstance::StaticClass();
