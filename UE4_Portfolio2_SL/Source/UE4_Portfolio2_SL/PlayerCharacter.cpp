@@ -469,6 +469,9 @@ void APlayerCharacter::LightAttack()
 				}
 				else
 				{
+					this->SetActorLocation(pEnemy->GetActorLocation() - (pEnemy->GetActorForwardVector() * 200));
+					this->SetActorRotation(pEnemy->GetActorRotation());
+
 					pEnemy->ChangeState(EMONSTER_STATE::EXECUTION);
 
 					// 처형 애니메이션 랜덤 재생
@@ -528,6 +531,9 @@ void APlayerCharacter::LightAttack()
 						FDamageEvent DamageEvent;
 						pEnemy->TakeDamage(this->GetAttackDamage() * 5.0f, DamageEvent, this->GetController(), this->GetRightWeapon());
 
+						this->SetActorLocation(pEnemy->GetActorLocation() - (pEnemy->GetActorForwardVector() * 200));
+						this->SetActorRotation(pEnemy->GetActorRotation());
+						
 						pEnemy->ChangeState(EMONSTER_STATE::EXECUTED);
 						pEnemy->PlayExecutedBackAnimation();
 						PlayExecutionBackAnimation();
