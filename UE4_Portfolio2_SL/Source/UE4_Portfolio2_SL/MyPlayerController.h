@@ -21,6 +21,9 @@ public:
 
 
 private:
+	// TSubclassOf의 역할은 UClass 타입의 안정성을 보장해주는 템플릿 클래스다.
+	// 여기서는 TSubclassOf 템플릿 클래스로 생성한 BP 클래스를 받아온 후 
+	// 부모 클래스로 지정한 C++ 클래스의 객체에 넣어준 후 사용한다.
 	UPROPERTY()
 	TSubclassOf<UUserWidget> MainHUD_Class; // HUD 클래스를 저장
 

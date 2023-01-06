@@ -32,7 +32,7 @@ AMyPlayerController::AMyPlayerController()
 	}
 
 
-	// UI 갱신 함수는 UI를 사용하는 캐릭터 클래스에서 작성 및 BeginPlay()에서 처음으로 실행시켜 갱신시킴
+	// UI 갱신 함수는 UI를 사용하는 캐릭터 클래스에서 작성 및 BeginPlay()에서 갱신시켜야 한다.
 	// RefreshUI 함수는 플레이어 캐릭터에서 현재 사용중인 컨트롤러를 가져오고,
 	// 해당 컨트롤러에서 HUD위젯을 가져온 다음 캐스팅해서 조작하는 구조
 	

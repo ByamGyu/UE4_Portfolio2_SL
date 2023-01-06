@@ -3,10 +3,6 @@
 
 
 // UserWidget에서는 사용자가 생성자를 따로 생성하지 못함.
-
-
-
-
 // 생성자
 void UUserWidget_HPBar::NativeConstruct()
 {

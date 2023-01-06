@@ -1,6 +1,8 @@
 #include "UserWidget_StaminaBar.h"
 
 
+
+
 // »ý¼ºÀÚ
 void UUserWidget_StaminaBar::NativeConstruct()
 {

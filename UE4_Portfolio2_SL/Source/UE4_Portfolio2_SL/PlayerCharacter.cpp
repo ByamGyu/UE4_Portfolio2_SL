@@ -86,6 +86,9 @@ void APlayerCharacter::BeginPlay()
 	Super::BeginPlay();
 	
 
+	// 카메라 매니저 저장하기
+	CameraManager = GetWorld()->GetFirstPlayerController()->PlayerCameraManager;
+
 	// 디폴트 장비(오른손) 들고있기
 	FName RightArmWeaponSocket(TEXT("RightArm_Weapon"));
 	if (GetMesh()->DoesSocketExist(RightArmWeaponSocket))
@@ -685,6 +688,10 @@ void APlayerCharacter::LockOn()
 		// 탐지된 액터중 가장 가까운 액터
 		AActor* ClosestHitActor = nullptr;
 
+		// 각도 기준으로 테스트중!!!!!!!!!!
+		float MinimumAngle = 360.0f;
+
+
 		FHitResult HitResult;
 		// 0도 ~ 120도 까지 5도 씩 레이 발사
 		for (int i = 0; i < 120; i += 5)
@@ -695,7 +702,7 @@ void APlayerCharacter::LockOn()
 				GetWorld(),
 				StartPoint,
 				EndPoint,
-				200.0f, // 구체의 두께(너무 두꺼우면 내 뒤에 있는 대상도 탐지됨)
+				200.0f, // 구체의 두께
 				ObjectTypeToLock, // 탐지된 대상들 저장할 배열
 				false, // 복잡한 충돌 판정 여부
 				ActorsToNotTargeting, // 무시할 대상들
@@ -707,17 +714,53 @@ void APlayerCharacter::LockOn()
 				2.0f // 디버그 그리기 지속 시간
 			);
 
-			// 새롭게 탐지된 대상이 있고, 대상이 기존 대상보다 가까우면
-			if (bIsHit == true && HitResult.Distance < ClosestDist)
+			// 각도 기준
+			// 탐지된 대상이 있고, 내 시야의 밖(안보이는 범위 혹은 뒤)에 있으면 제외
+			if (bIsHit == true)
 			{
-				// 최단 거리 갱신
-				ClosestDist = HitResult.Distance;
-				// 탐지된 대상 가져오기
-				ClosestHitActor = HitResult.Actor.Get();
+				FVector CameraForward;
+				FVector TargetVector;
+				float Dot;
+				float AcosAngle;
+				float AngleDegree;
+				CameraForward = GetFollowCamera()->GetForwardVector();
+				TargetVector = (HitResult.Actor.Get()->GetActorLocation() - (CameraManager->GetCameraLocation())).GetSafeNormal();
+				Dot = FVector::DotProduct(CameraForward, TargetVector);
+				AcosAngle = FMath::Acos(Dot);
+				AngleDegree = FMath::RadiansToDegrees(AcosAngle);
+
+				GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, FString::SanitizeFloat(AngleDegree));
+				//GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Cyan, HitResult.Actor.Get()->GetName());
+				
+				// 대상이 내 뒤에 있으면 넘어간다 continue
+				// 내적한 값(Dot)이 음수가 나오면 뒤에 있다는 얘기, 양수면 앞
+				if (Dot < 0) continue;
+
+				// 시야각 60도를 벗어나면 continue
+				if (AngleDegree > 30.0f) continue;
+				else
+				{
+					if (MinimumAngle > AngleDegree)
+					{
+						MinimumAngle = AngleDegree;
+
+						ClosestHitActor = HitResult.Actor.Get();
+					}
+				}
 			}
+
+			// 거리 기준
+			// 새롭게 탐지된 대상이 있고, 대상이 기존 대상보다 가까우면
+			//if (bIsHit == true && HitResult.Distance < ClosestDist)
+			//{
+			//	// 최단 거리 갱신
+			//	ClosestDist = HitResult.Distance;
+			//	// 탐지된 대상 가져오기
+			//	ClosestHitActor = HitResult.Actor.Get();
+			//}
 		}
 
-		if (ClosestHitActor != nullptr) // 탐지된 대상이 있으면
+		if (ClosestHitActor != nullptr) // 가장 가깝게 탐지된 대상이 있으면
 		{
 			IsLockTargetExist = true;
 			LockedOnTarget = ClosestHitActor;
@@ -735,12 +778,6 @@ void APlayerCharacter::LockOn()
 		}
 
 		LockedOnTarget = nullptr;
-	}
-
-	if (LockedOnTarget != nullptr)
-	{
-		// 락온 된 대상 이름 출력해보기
-		// GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, LockedOnTarget->GetName());
 	}
 }
 

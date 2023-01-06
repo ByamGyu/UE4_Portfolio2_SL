@@ -27,7 +27,7 @@ bool UBTDe_HasTargetAndInOffensDist::CalculateRawConditionValue(UBehaviorTreeCom
 
 	// 거리 계산
 	float Dist = ControllingPawn->GetDistanceTo(Target);
-	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(Dist));
+	//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(Dist));
 
 
 	if (Dist <= BoundaryLine) return true;

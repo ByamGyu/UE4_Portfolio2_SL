@@ -26,6 +26,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UE4_PORTFOLIO2_SL_API UClass* Z_Construct_UClass_AWeapon_Default_NoRegister();
 	UE4_PORTFOLIO2_SL_API UClass* Z_Construct_UClass_AShield_Default_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_APlayerCameraManager_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(APlayerCharacter::execTakeDamage)
 	{
@@ -213,6 +214,10 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LeftWeapon_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_LeftWeapon;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CameraManager_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CameraManager;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -446,6 +451,12 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_LeftWeapon = { "LeftWeapon", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerCharacter, LeftWeapon), Z_Construct_UClass_AShield_Default_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_LeftWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_LeftWeapon_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerCharacter_Statics::NewProp_CameraManager_MetaData[] = {
+		{ "ModuleRelativePath", "PlayerCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_CameraManager = { "CameraManager", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerCharacter, CameraManager), Z_Construct_UClass_APlayerCameraManager_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_CameraManager_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_CameraManager_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlayerCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_m_CameraArm,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_m_Camera,
@@ -471,6 +482,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_LeftWeaponClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_RightWeapon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_LeftWeapon,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerCharacter_Statics::NewProp_CameraManager,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APlayerCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APlayerCharacter>::IsAbstract,
@@ -499,7 +511,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayerCharacter, 1939600217);
+	IMPLEMENT_CLASS(APlayerCharacter, 3228882051);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<APlayerCharacter>()
 	{
 		return APlayerCharacter::StaticClass();

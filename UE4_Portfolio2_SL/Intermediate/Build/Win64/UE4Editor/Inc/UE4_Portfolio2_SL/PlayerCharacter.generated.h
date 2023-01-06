@@ -92,7 +92,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__RightWeaponClass() { return STRUCT_OFFSET(APlayerCharacter, RightWeaponClass); } \
 	FORCEINLINE static uint32 __PPO__LeftWeaponClass() { return STRUCT_OFFSET(APlayerCharacter, LeftWeaponClass); } \
 	FORCEINLINE static uint32 __PPO__RightWeapon() { return STRUCT_OFFSET(APlayerCharacter, RightWeapon); } \
-	FORCEINLINE static uint32 __PPO__LeftWeapon() { return STRUCT_OFFSET(APlayerCharacter, LeftWeapon); }
+	FORCEINLINE static uint32 __PPO__LeftWeapon() { return STRUCT_OFFSET(APlayerCharacter, LeftWeapon); } \
+	FORCEINLINE static uint32 __PPO__CameraManager() { return STRUCT_OFFSET(APlayerCharacter, CameraManager); }
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacter_h_23_PROLOG

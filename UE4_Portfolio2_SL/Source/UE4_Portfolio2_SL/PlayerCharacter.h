@@ -224,6 +224,10 @@ public:
 	
 
 
+private:
+	UPROPERTY()
+	APlayerCameraManager* CameraManager; // 카메라 매니저
+
 public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return m_CameraArm; }
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return m_Camera; }

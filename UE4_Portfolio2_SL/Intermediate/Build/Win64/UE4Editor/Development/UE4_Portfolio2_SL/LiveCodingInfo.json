@@ -5,7 +5,6 @@
 			"AI_Base.cpp.obj",
 			"AI_SkeletonArcher.cpp.obj",
 			"AI_SkeletonWarrior.cpp.obj",
-			"BTDe_HasTargetAndInOffensDist.cpp.obj",
 			"BTDeco_HasTargetAndInDefensDist.cpp.obj",
 			"BTDecorator_IsInAttackRange.cpp.obj",
 			"BTService_DetectPlayer.cpp.obj",
@@ -25,7 +24,6 @@
 			"MyAttackNotifyState.cpp.obj",
 			"MyGameInstance.cpp.obj",
 			"MyHeavyAttackNotifyState.cpp.obj",
-			"MyPlayerController.cpp.obj",
 			"PlayerCharacterAnimInstance.cpp.obj",
 			"Projectile_Base.cpp.obj",
 			"Projectile_SkeletonArcherArrow.cpp.obj",
@@ -34,14 +32,16 @@
 			"UE4_Portfolio2_SL.cpp.obj",
 			"UE4_Portfolio2_SLCharacter.cpp.obj",
 			"UE4_Portfolio2_SLGameMode.cpp.obj",
-			"UserWidget_HPBar.cpp.obj",
 			"UserWidget_HUD.cpp.obj",
-			"UserWidget_StaminaBar.cpp.obj",
 			"Weapon_Common.cpp.obj",
 			"Weapon_Default.cpp.obj",
 			"Weapon_RustySword.cpp.obj",
 			"Weapon_SkeletonArcherBow.cpp.obj",
-			"PlayerCharacter.cpp.obj"
+			"BTDe_HasTargetAndInOffensDist.cpp.obj",
+			"MyPlayerController.cpp.obj",
+			"PlayerCharacter.cpp.obj",
+			"UserWidget_HPBar.cpp.obj",
+			"UserWidget_StaminaBar.cpp.obj"
 		],
 		"Module.UE4_Portfolio2_SL.gen.cpp.obj": [
 			"AI_Base.gen.cpp.obj",
@@ -67,14 +67,11 @@
 			"MyAttackNotifyState.gen.cpp.obj",
 			"MyGameInstance.gen.cpp.obj",
 			"MyHeavyAttackNotifyState.gen.cpp.obj",
-			"MyPlayerController.gen.cpp.obj",
-			"PlayerCharacter.gen.cpp.obj",
 			"PlayerCharacterAnimInstance.gen.cpp.obj",
 			"Projectile_Base.gen.cpp.obj",
 			"Projectile_SkeletonArcherArrow.gen.cpp.obj",
 			"Shield_Common.gen.cpp.obj",
 			"Shield_Default.gen.cpp.obj",
-			"UE4_Portfolio2_SL.init.gen.cpp.obj",
 			"UE4_Portfolio2_SLCharacter.gen.cpp.obj",
 			"UE4_Portfolio2_SLGameMode.gen.cpp.obj",
 			"UserWidget_HPBar.gen.cpp.obj",
@@ -83,7 +80,10 @@
 			"Weapon_Common.gen.cpp.obj",
 			"Weapon_Default.gen.cpp.obj",
 			"Weapon_RustySword.gen.cpp.obj",
-			"Weapon_SkeletonArcherBow.gen.cpp.obj"
+			"Weapon_SkeletonArcherBow.gen.cpp.obj",
+			"MyPlayerController.gen.cpp.obj",
+			"PlayerCharacter.gen.cpp.obj",
+			"UE4_Portfolio2_SL.init.gen.cpp.obj"
 		]
 	}
 }
