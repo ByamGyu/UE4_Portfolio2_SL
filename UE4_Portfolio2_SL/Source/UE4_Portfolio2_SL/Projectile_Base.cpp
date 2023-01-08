@@ -11,6 +11,7 @@ AProjectile_Base::AProjectile_Base()
 	CollisionComponent->InitSphereRadius(5.0f);
 	RootComponent = CollisionComponent;
 
+	
 	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovementComponent"));
 	//ProjectileMovementComponent->SetUpdatedComponent(RootComponent);
 	ProjectileMovementComponent->InitialSpeed = 500.0f;
@@ -22,8 +23,7 @@ AProjectile_Base::AProjectile_Base()
 
 	// 파티클 컴포넌트
 	ParticleComponent = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("ParticleComponent"));
-	ParticleComponent->SetupAttachment(Body);
-
+	
 	// 수명
 	ProjectileLifeTime = 10.0f;
 	InitialLifeSpan = ProjectileLifeTime;

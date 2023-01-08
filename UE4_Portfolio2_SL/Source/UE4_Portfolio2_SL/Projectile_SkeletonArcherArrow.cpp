@@ -16,18 +16,29 @@ AProjectile_SkeletonArcherArrow::AProjectile_SkeletonArcherArrow()
 		Body->SetRelativeRotation(FRotator(-90.0f, 0.0f, 0.0f));
 		Body->SetRelativeLocation(FVector(-57.0f, 0.0f, 0.0f));
 
-		TrailSocket = Body->GetSocketByName(TEXT("Socket_Trail"));
+		ParticleComponent->SetupAttachment(Body);
 	}
 
 	CollisionComponent->SetCollisionProfileName(TEXT("EnemyProjectile"));
 
-
 	SetSpeed(1000.0f);
+
+
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> PS_Trail(TEXT("ParticleSystem'/Game/MyFolder/Effects/PS_Trail.PS_Trail'"));
+	if (PS_Trail.Succeeded())
+	{
+		PS_ArrowTrail = PS_Trail.Object;
+		ParticleComponent->SetTemplate(PS_ArrowTrail);		
+	}
 }
 
 void AProjectile_SkeletonArcherArrow::BeginPlay()
 {
 	Super::BeginPlay();
+
+
+	ParticleComponent->BeginTrails("Socket_TrailStart", "Socket_TrailEnd", ETrailWidthMode::ETrailWidthMode_FromFirst, 1.0f);
+	
 }
 
 void AProjectile_SkeletonArcherArrow::PostInitializeComponents()
@@ -65,6 +76,6 @@ void AProjectile_SkeletonArcherArrow::DestroyLater(float _Value)
 	Body->SetCollisionProfileName(TEXT("NoCollision"));
 	CollisionComponent->SetCollisionProfileName(TEXT("NoCollision"));
 	ProjectileMovementComponent->StopMovementImmediately();
-		
+
 	SetLifeSpan(_Value);
 }

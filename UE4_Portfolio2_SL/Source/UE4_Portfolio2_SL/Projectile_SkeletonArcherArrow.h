@@ -20,6 +20,11 @@ protected:
 	virtual void PostInitializeComponents() override;
 
 
+
+private:
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	UParticleSystem* PS_ArrowTrail;
+
 private:
 	UFUNCTION()
 	void OnCharacterOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherCOmp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);

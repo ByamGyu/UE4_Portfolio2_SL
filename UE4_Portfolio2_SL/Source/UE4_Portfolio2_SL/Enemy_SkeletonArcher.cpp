@@ -179,25 +179,30 @@ void AEnemy_SkeletonArcher::Spawn_And_Fire_Arrow()
 
 		// 컨트롤러(AI) 가져오기
 		auto AIController = Cast<AAI_Base>(GetController());
-		if (AIController != nullptr)
+		if (AIController == nullptr)
 		{
-			// AI의 BB로 부터 Target 정보 가져오기
-			APlayerCharacter* Target = Cast<APlayerCharacter>(AIController->GetBlackboardComponent()->GetValueAsObject(AAI_Base::TargetKey));
-			if (Target != nullptr)
-			{
-				// 화살의 방향을 살짝 위로 조절(위치 차이 때문에 살짝 아래로 날아감)
-				TargetLoc = Target->GetActorLocation() + FVector(0.0f, 0.0f, 25.0f);
-				TargetDir = (TargetLoc - SpawnLoc).GetSafeNormal();
-			}
+			return;
 		}
 
-		FActorSpawnParameters SpawnParams; // 더미
+		// AI의 BB로 부터 Target 정보 가져오기
+		APlayerCharacter * Target = Cast<APlayerCharacter>(AIController->GetBlackboardComponent()->GetValueAsObject(AAI_Base::TargetKey));
+		if (Target != nullptr)
+		{
+			// 화살의 방향을 살짝 위로 조절(위치 차이 때문에 살짝 아래로 날아감)
+			TargetLoc = Target->GetActorLocation() + FVector(0.0f, 0.0f, 25.0f);
+			TargetDir = (TargetLoc - SpawnLoc).GetSafeNormal();
+		}
 
-		// 화살을 스폰하고
-		AProjectile_SkeletonArcherArrow* Arrow = GetWorld()->SpawnActor<AProjectile_SkeletonArcherArrow>(Projectile_ArrowClass, SpawnLoc, FRotator::ZeroRotator, SpawnParams);
-		// 화살을 발사
-		Arrow->FireInDirection(TargetDir);
-		Arrow->SetDamage(AttackDamage);
+		if (Target != nullptr)
+		{
+			FActorSpawnParameters SpawnParams; // 더미
+
+			// 화살을 스폰하고
+			AProjectile_SkeletonArcherArrow* Arrow = GetWorld()->SpawnActor<AProjectile_SkeletonArcherArrow>(Projectile_ArrowClass, SpawnLoc, FRotator::ZeroRotator, SpawnParams);
+			// 화살을 발사
+			Arrow->FireInDirection(TargetDir);
+			Arrow->SetDamage(AttackDamage);
+		}
 	}
 	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Bow Is Null"));
 }

@@ -69,7 +69,10 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AProjectile_SkeletonArcherArrow)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Projectile_SkeletonArcherArrow_h_11_PRIVATE_PROPERTY_OFFSET
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Projectile_SkeletonArcherArrow_h_11_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__PS_ArrowTrail() { return STRUCT_OFFSET(AProjectile_SkeletonArcherArrow, PS_ArrowTrail); }
+
+
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Projectile_SkeletonArcherArrow_h_8_PROLOG
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Projectile_SkeletonArcherArrow_h_11_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

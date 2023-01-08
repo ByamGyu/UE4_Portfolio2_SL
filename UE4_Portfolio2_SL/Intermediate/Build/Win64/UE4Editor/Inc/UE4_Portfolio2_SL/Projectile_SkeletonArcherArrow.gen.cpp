@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectile_SkeletonArcherArrow() {}
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(AProjectile_SkeletonArcherArrow::execOnCharacterOverlap)
 	{
@@ -134,6 +135,11 @@ void EmptyLinkFunctionForGeneratedCodeProjectile_SkeletonArcherArrow() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PS_ArrowTrail_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PS_ArrowTrail;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -150,6 +156,17 @@ void EmptyLinkFunctionForGeneratedCodeProjectile_SkeletonArcherArrow() {}
 		{ "ModuleRelativePath", "Projectile_SkeletonArcherArrow.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectile_SkeletonArcherArrow_Statics::NewProp_PS_ArrowTrail_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Info" },
+		{ "ModuleRelativePath", "Projectile_SkeletonArcherArrow.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectile_SkeletonArcherArrow_Statics::NewProp_PS_ArrowTrail = { "PS_ArrowTrail", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectile_SkeletonArcherArrow, PS_ArrowTrail), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectile_SkeletonArcherArrow_Statics::NewProp_PS_ArrowTrail_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectile_SkeletonArcherArrow_Statics::NewProp_PS_ArrowTrail_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AProjectile_SkeletonArcherArrow_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectile_SkeletonArcherArrow_Statics::NewProp_PS_ArrowTrail,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AProjectile_SkeletonArcherArrow_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AProjectile_SkeletonArcherArrow>::IsAbstract,
 	};
@@ -159,11 +176,11 @@ void EmptyLinkFunctionForGeneratedCodeProjectile_SkeletonArcherArrow() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		FuncInfo,
-		nullptr,
+		Z_Construct_UClass_AProjectile_SkeletonArcherArrow_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AProjectile_SkeletonArcherArrow_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AProjectile_SkeletonArcherArrow_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectile_SkeletonArcherArrow_Statics::Class_MetaDataParams))
@@ -177,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectile_SkeletonArcherArrow() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AProjectile_SkeletonArcherArrow, 316300479);
+	IMPLEMENT_CLASS(AProjectile_SkeletonArcherArrow, 3522424398);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<AProjectile_SkeletonArcherArrow>()
 	{
 		return AProjectile_SkeletonArcherArrow::StaticClass();
