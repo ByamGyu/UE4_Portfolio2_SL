@@ -17,5 +17,4 @@ AShield_Default::AShield_Default()
 		SocketShieldLeft = Body->GetSocketByName(TEXT("Shield_Left"));
 		SocketShieldRight = Body->GetSocketByName(TEXT("Shield_Right"));
 	}
-	
 }

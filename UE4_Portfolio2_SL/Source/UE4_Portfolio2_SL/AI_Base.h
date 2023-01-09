@@ -27,6 +27,8 @@ protected:
 
 public:
 	UBlackboardData* GetBB() { return BB; }
+	UBehaviorTree* GetBT() { return BT; }
+
 
 
 public:

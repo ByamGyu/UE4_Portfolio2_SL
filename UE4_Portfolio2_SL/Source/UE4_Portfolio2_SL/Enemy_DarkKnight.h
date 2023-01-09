@@ -3,9 +3,9 @@
 #include "EngineMinimal.h"
 #include "Enemy_Base.h"
 #include "define.h"
-
-// AnimInst
-// Weapon or Shield
+#include "Enemy_DarkKnight_AnimInst.h"
+#include "Shield_DarkKnightShield.h"
+#include "Weapon_DarkKnightSword.h"
 
 #include "Enemy_DarkKnight.generated.h"
 
@@ -49,7 +49,8 @@ public:
 
 	// 장비 액터 관련 함수
 public:
-	//void SetRightWeapon(class AWeapon_RustySword* _NewWeapon);
+	void SetRightWeapon(class AWeapon_Common* _NewWeapon);
+	void SetLeftWeapon(class AShield_Common* _NewShield);
 
 
 	// 공격 및 처형 애니메이션

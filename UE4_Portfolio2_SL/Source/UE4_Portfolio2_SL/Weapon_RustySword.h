@@ -14,6 +14,9 @@ class UE4_PORTFOLIO2_SL_API AWeapon_RustySword : public AWeapon_Common
 
 public:
 	AWeapon_RustySword();
+
+
+protected:
 	virtual void BeginPlay() override;
 
 

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F21EFF84-7374-4C49-B9AD-852F4BCCBA76}</UniqueIdentifier>
+      <UniqueIdentifier>{9FFDF710-A374-4C37-82B0-71E3FA57B1A9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{37EF9F3B-5ED3-4C97-A906-5B0AE1F62657}</UniqueIdentifier>
+      <UniqueIdentifier>{F37F5D94-B1F3-45D0-8AC1-9595E25828C2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,12 +30,18 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{1B56FC49-2CEC-48C3-8527-A90D1C2D3CA3}</UniqueIdentifier>
+      <UniqueIdentifier>{78E361A2-92FB-437B-9BCA-DC521BD12880}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\AI_Base.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\AI_Base.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\AI_DarkKnight.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\AI_DarkKnight.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\AI_SkeletonArcher.cpp">
@@ -218,6 +224,12 @@
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\Shield_Common.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Shield_DarkKnightShield.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\Shield_DarkKnightShield.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Shield_Default.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
@@ -267,6 +279,12 @@
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\Weapon_Common.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Weapon_DarkKnightSword.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\Weapon_DarkKnightSword.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Weapon_Default.cpp">

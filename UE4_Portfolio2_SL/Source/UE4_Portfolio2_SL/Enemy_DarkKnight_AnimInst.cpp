@@ -12,8 +12,8 @@ UEnemy_DarkKnight_AnimInst::UEnemy_DarkKnight_AnimInst()
 	KnockDown_Time(0.0f),
 	Cur_State(EMONSTER_STATE::IDLE)
 {
-	/*static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_ComboAttack01(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonWarrior/Animation_Montages/Anim_ComboAttack01_Stand.Anim_ComboAttack01_Stand'"));
-	if (AM_ComboAttack01.Succeeded()) Attack_Combo_01_Stand = AM_ComboAttack01.Object;*/
+	//static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_ComboAttack01(TEXT("AnimMontage'/Game/MyFolder/Enemy_SkeletonWarrior/Animation_Montages/Anim_ComboAttack01_Stand.Anim_ComboAttack01_Stand'"));
+	//if (AM_ComboAttack01.Succeeded()) Attack_Combo_01_Stand = AM_ComboAttack01.Object;*/
 }
 
 void UEnemy_DarkKnight_AnimInst::NativeUpdateAnimation(float DeltaSeconds)

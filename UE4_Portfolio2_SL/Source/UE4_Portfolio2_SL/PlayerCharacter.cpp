@@ -1,7 +1,11 @@
 #include "PlayerCharacter.h"
 #include "Enemy_Base.h"
+#include "AI_Base.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "DrawDebugHelpers.h"
+#include "BehaviorTree/BehaviorTreeComponent.h"
+#include "BehaviorTree/BehaviorTree.h"
+#include "BehaviorTree/BlackboardComponent.h"
 
 
 APlayerCharacter::APlayerCharacter()
@@ -472,10 +476,10 @@ void APlayerCharacter::LightAttack()
 				}
 				else
 				{
-					this->SetActorLocation(pEnemy->GetActorLocation() - (pEnemy->GetActorForwardVector() * 200));
-					this->SetActorRotation(pEnemy->GetActorRotation());
-
+					this->SetActorLocation(pEnemy->GetActorLocation() + pEnemy->GetActorForwardVector() * 125.0f);
+					
 					pEnemy->ChangeState(EMONSTER_STATE::EXECUTION);
+
 
 					// 처형 애니메이션 랜덤 재생
 					int32 tmpint = FMath::RandRange(0, TargetExecutionAnimationNum - 1);
@@ -540,6 +544,14 @@ void APlayerCharacter::LightAttack()
 						pEnemy->ChangeState(EMONSTER_STATE::EXECUTED);
 						pEnemy->PlayExecutedBackAnimation();
 						PlayExecutionBackAnimation();
+
+						
+						AAI_Base* AIController_Enemy = Cast <AAI_Base>(pEnemy->GetController());
+						if (AIController_Enemy != nullptr)
+						{
+							AIController_Enemy->GetBlackboardComponent()->SetValueAsObject(AAI_Base::TargetKey, this);
+						}						
+						
 
 						return;
 					}
@@ -729,8 +741,8 @@ void APlayerCharacter::LockOn()
 				AcosAngle = FMath::Acos(Dot);
 				AngleDegree = FMath::RadiansToDegrees(AcosAngle);
 
-				GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, FString::SanitizeFloat(AngleDegree));
-				//GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Cyan, HitResult.Actor.Get()->GetName());
+				//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, FString::SanitizeFloat(AngleDegree));
+				GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Cyan, HitResult.Actor.Get()->GetName());
 				
 				// 대상이 내 뒤에 있으면 넘어간다 continue
 				// 내적한 값(Dot)이 음수가 나오면 뒤에 있다는 얘기, 양수면 앞
@@ -763,6 +775,7 @@ void APlayerCharacter::LockOn()
 		if (ClosestHitActor != nullptr) // 가장 가깝게 탐지된 대상이 있으면
 		{
 			IsLockTargetExist = true;
+			//GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, LockedOnTarget->GetName());
 			LockedOnTarget = ClosestHitActor;
 		}
 	}
@@ -774,7 +787,10 @@ void APlayerCharacter::LockOn()
 		auto IsMonster = Cast<AEnemy_Base>(LockedOnTarget);
 		if (IsMonster != nullptr)
 		{
-			IsMonster->GetWidgetComponent()->SetVisibility(false);
+			if (IsMonster->GetWidgetComponent() != nullptr)
+			{
+				IsMonster->GetWidgetComponent()->SetVisibility(false);
+			}
 		}
 
 		LockedOnTarget = nullptr;
@@ -797,7 +813,10 @@ void APlayerCharacter::LookLockOnTarget(float DeltaSeconds)
 			auto IsMonster = Cast<AEnemy_Base>(LockedOnTarget);
 			if (IsMonster != nullptr)
 			{
-				IsMonster->GetWidgetComponent()->SetVisibility(false);
+				if (IsMonster->GetWidgetComponent() != nullptr)
+				{
+					IsMonster->GetWidgetComponent()->SetVisibility(false);
+				}
 			}
 
 			return;
@@ -812,7 +831,11 @@ void APlayerCharacter::LookLockOnTarget(float DeltaSeconds)
 			{
 				IsLockTargetExist = false;
 				LockedOnTarget = nullptr;
-				IsMonster->GetWidgetComponent()->SetVisibility(false);
+
+				if (IsMonster->GetWidgetComponent() != nullptr)
+				{
+					IsMonster->GetWidgetComponent()->SetVisibility(false);
+				}				
 			}
 		}
 
@@ -843,12 +866,24 @@ void APlayerCharacter::LookLockOnTarget(float DeltaSeconds)
 			GetCharacterMovement()->bOrientRotationToMovement = false;
 
 			// 락온 대상을 주시하면서 걷기(Strafe Movement)를 위한 캐릭터 회전
-			FRotator CharacterInterpRotation = UKismetMathLibrary::RInterpTo(GetActorRotation(), FRotator(GetActorRotation().Pitch, GetControlRotation().Yaw, GetActorRotation().Roll), DeltaSeconds, 10.0f);
-			GetController()->GetPawn()->SetActorRotation(CharacterInterpRotation);
+			if (Cur_State == EPLAYER_STATE::ROLL)
+			{
+				// ROLL 상태에서는 회전하지 않음.
+				// 혹시 다른 구현 거리 있으면 추가
+			}
+			else
+			{
+				FRotator CharacterInterpRotation = UKismetMathLibrary::RInterpTo(GetActorRotation(), FRotator(GetActorRotation().Pitch, GetControlRotation().Yaw, GetActorRotation().Roll), DeltaSeconds, 10.0f);
+				GetController()->GetPawn()->SetActorRotation(CharacterInterpRotation);
+			}
+			
 
 			if (IsMonster != nullptr)
 			{
-				IsMonster->GetWidgetComponent()->SetVisibility(true);
+				if (IsMonster->GetWidgetComponent() != nullptr)
+				{
+					IsMonster->GetWidgetComponent()->SetVisibility(true);
+				}
 			}
 		}
 		

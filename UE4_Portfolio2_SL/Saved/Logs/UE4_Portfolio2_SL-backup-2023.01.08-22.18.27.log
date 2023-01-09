@@ -1,1443 +1,0 @@
-﻿Log file open, 01/09/23 07:10:19
-LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
-LogWindows: File 'aqProf.dll' does not exist
-LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
-LogWindows: File 'VtuneApi.dll' does not exist
-LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
-LogWindows: File 'VtuneApi32e.dll' does not exist
-LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
-LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
-LogInit: Display: Running engine for game: UE4_Portfolio2_SL
-LogPlatformFile: Not using cached read wrapper
-LogTaskGraph: Started task graph with 5 named threads and 71 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.186233
-LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
-LogInit: Display: Loading text-based GConfig....
-LogPluginManager: Mounting plugin MeshPainting
-LogPluginManager: Mounting plugin XGEController
-LogPluginManager: Mounting plugin Paper2D
-LogPluginManager: Mounting plugin AISupport
-LogPluginManager: Mounting plugin LightPropagationVolume
-LogPluginManager: Mounting plugin EnvironmentQueryEditor
-LogPluginManager: Mounting plugin GameplayCameras
-LogPluginManager: Mounting plugin CameraShakePreviewer
-LogPluginManager: Mounting plugin LiveLink
-LogPluginManager: Mounting plugin AnimationSharing
-LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
-LogPluginManager: Mounting plugin CLionSourceCodeAccess
-LogPluginManager: Mounting plugin AssetManagerEditor
-LogPluginManager: Mounting plugin GitSourceControl
-LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
-LogPluginManager: Mounting plugin NullSourceCodeAccess
-LogPluginManager: Mounting plugin PixWinPlugin
-LogPluginManager: Mounting plugin PerforceSourceControl
-LogPluginManager: Mounting plugin CryptoKeys
-LogPluginManager: Mounting plugin PlasticSourceControl
-LogPluginManager: Mounting plugin PluginUtils
-LogPluginManager: Mounting plugin PropertyAccessNode
-LogPluginManager: Mounting plugin RiderSourceCodeAccess
-LogPluginManager: Mounting plugin SubversionSourceControl
-LogPluginManager: Mounting plugin TextureFormatOodle
-LogPluginManager: Mounting plugin UObjectPlugin
-LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
-LogPluginManager: Mounting plugin XCodeSourceCodeAccess
-LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
-LogPluginManager: Mounting plugin CurveEditorTools
-LogPluginManager: Mounting plugin DataValidation
-LogPluginManager: Mounting plugin AlembicImporter
-LogPluginManager: Mounting plugin FacialAnimation
-LogPluginManager: Mounting plugin GameplayTagsEditor
-LogPluginManager: Mounting plugin GeometryMode
-LogPluginManager: Mounting plugin MacGraphicsSwitching
-LogPluginManager: Mounting plugin MaterialAnalyzer
-LogPluginManager: Mounting plugin MobileLauncherProfileWizard
-LogPluginManager: Mounting plugin PluginBrowser
-LogPluginManager: Mounting plugin SpeedTreeImporter
-LogPluginManager: Mounting plugin AutomationUtils
-LogPluginManager: Mounting plugin BackChannel
-LogPluginManager: Mounting plugin ChaosClothEditor
-LogPluginManager: Mounting plugin ChaosCloth
-LogPluginManager: Mounting plugin ChaosEditor
-LogPluginManager: Mounting plugin ChaosNiagara
-LogPluginManager: Mounting plugin ChaosSolverPlugin
-LogPluginManager: Mounting plugin CharacterAI
-LogPluginManager: Mounting plugin GeometryCache
-LogPluginManager: Mounting plugin DatasmithContent
-LogPluginManager: Mounting plugin GeometryCollectionPlugin
-LogPluginManager: Mounting plugin GeometryProcessing
-LogPluginManager: Mounting plugin MotoSynth
-LogPluginManager: Mounting plugin OpenImageDenoise
-LogPluginManager: Mounting plugin VariantManagerContent
-LogPluginManager: Mounting plugin PlanarCut
-LogPluginManager: Mounting plugin PlatformCrypto
-LogPluginManager: Mounting plugin ProxyLODPlugin
-LogPluginManager: Mounting plugin PythonScriptPlugin
-LogPluginManager: Mounting plugin Niagara
-LogPluginManager: Mounting plugin LuminPlatformFeatures
-LogPluginManager: Mounting plugin SkeletalReduction
-LogPluginManager: Mounting plugin MagicLeap
-LogPluginManager: Mounting plugin MixamoAnimationRetargeting
-LogPluginManager: Mounting plugin MagicLeapLightEstimation
-LogPluginManager: Mounting plugin AndroidMedia
-LogPluginManager: Mounting plugin MagicLeapMedia
-LogPluginManager: Mounting plugin AvfMedia
-LogPluginManager: Mounting plugin MagicLeapPassableWorld
-LogPluginManager: Mounting plugin MLSDK
-LogPluginManager: Mounting plugin TcpMessaging
-LogPluginManager: Mounting plugin ActorSequence
-LogPluginManager: Mounting plugin UdpMessaging
-LogPluginManager: Mounting plugin ImgMedia
-LogPluginManager: Mounting plugin LevelSequenceEditor
-LogPluginManager: Mounting plugin MediaCompositing
-LogPluginManager: Mounting plugin MatineeToLevelSequence
-LogPluginManager: Mounting plugin MediaPlayerEditor
-LogPluginManager: Mounting plugin WebMMedia
-LogPluginManager: Mounting plugin WmfMedia
-LogPluginManager: Mounting plugin TemplateSequence
-LogPluginManager: Mounting plugin LauncherChunkInstaller
-LogPluginManager: Mounting plugin OnlineSubsystem
-LogPluginManager: Mounting plugin ActorLayerUtilities
-LogPluginManager: Mounting plugin OnlineSubsystemNull
-LogPluginManager: Mounting plugin OnlineSubsystemUtils
-LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
-LogPluginManager: Mounting plugin AndroidPermission
-LogPluginManager: Mounting plugin AndroidMoviePlayer
-LogPluginManager: Mounting plugin AppleImageUtils
-LogPluginManager: Mounting plugin AppleMoviePlayer
-LogPluginManager: Mounting plugin ArchVisCharacter
-LogPluginManager: Mounting plugin AssetTags
-LogPluginManager: Mounting plugin AudioCapture
-LogPluginManager: Mounting plugin AudioSynesthesia
-LogPluginManager: Mounting plugin CableComponent
-LogPluginManager: Mounting plugin ChunkDownloader
-LogPluginManager: Mounting plugin CustomMeshComponent
-LogPluginManager: Mounting plugin EditableMesh
-LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
-LogPluginManager: Mounting plugin GooglePAD
-LogPluginManager: Mounting plugin GoogleCloudMessaging
-LogPluginManager: Mounting plugin IOSDeviceProfileSelector
-LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
-LogPluginManager: Mounting plugin LocationServicesBPLibrary
-LogPluginManager: Mounting plugin MobilePatchingUtils
-LogPluginManager: Mounting plugin OpenXR
-LogPluginManager: Mounting plugin OpenXREyeTracker
-LogPluginManager: Mounting plugin OpenXRHandTracking
-LogPluginManager: Mounting plugin PhysXVehicles
-LogPluginManager: Mounting plugin PostSplashScreen
-LogPluginManager: Mounting plugin ProceduralMeshComponent
-LogPluginManager: Mounting plugin PropertyAccessEditor
-LogPluginManager: Mounting plugin RuntimePhysXCooking
-LogPluginManager: Mounting plugin SignificanceManager
-LogPluginManager: Mounting plugin SoundFields
-LogPluginManager: Mounting plugin Synthesis
-LogPluginManager: Mounting plugin ScreenshotTools
-LogPluginManager: Mounting plugin WebMMoviePlayer
-LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogPluginManager: Mounting plugin OodleData
-LogPluginManager: Mounting plugin OodleNetwork
-LogPluginManager: Mounting plugin Takes
-LogPluginManager: Mounting plugin ContentBrowserAssetDataSource
-LogPluginManager: Mounting plugin ContentBrowserClassDataSource
-LogPluginManager: Mounting plugin ContentBrowserFileDataSource
-LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
-LogPluginManager: Mounting plugin OnlineSubsystemIOS
-LogPluginManager: Mounting plugin OculusVR
-LogPluginManager: Mounting plugin SteamVR
-PixWinPlugin: PIX capture plugin failed to initialize! Check that the process is launched from PIX.
-LogInit: Using libcurl 7.55.1-DEV
-LogInit:  - built for x86_64-pc-win32
-LogInit:  - supports SSL with OpenSSL/1.1.1
-LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
-LogInit:  - other features:
-LogInit:      CURL_VERSION_SSL
-LogInit:      CURL_VERSION_LIBZ
-LogInit:      CURL_VERSION_IPV6
-LogInit:      CURL_VERSION_ASYNCHDNS
-LogInit:      CURL_VERSION_LARGEFILE
-LogInit:      CURL_VERSION_IDN
-LogInit:  CurlRequestOptions (configurable via config and command line):
-LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
-LogInit:  - LocalHostAddr = Default
-LogInit:  - BufferSize = 65536
-LogOnline: OSS: Creating online subsystem instance for: NULL
-LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
-LogOculusPluginWrapper: OculusPlugin initialized successfully
-LogHMD: Failed initializing OVRPlugin 1.59.0
-LogInit: Build: ++UE4+Release-4.27-CL-18319896
-LogInit: Engine Version: 4.27.2-18319896+++UE4+Release-4.27
-LogInit: Compatible Engine Version: 4.27.0-17155196+++UE4+Release-4.27
-LogInit: Net CL: 17155196
-LogInit: OS: Windows 10 (Release 2009) (), CPU: AMD Ryzen 9 5900X 12-Core Processor            , GPU: AMD Radeon RX 6600 XT
-LogInit: Compiled (64-bit): Nov 30 2021 07:12:08
-LogInit: Compiled with Visual C++: 19.24.28315.00
-LogInit: Build Configuration: Development
-LogInit: Branch Name: ++UE4+Release-4.27
-LogInit: Command Line: 
-LogInit: Base Directory: G:/Unreal Engine/UE_4.27/Engine/Binaries/Win64/
-LogInit: Allocator: TBB
-LogInit: Installed Engine Build: 1
-LogDevObjectVersion: Number of dev versions registered: 29
-LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
-LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
-LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
-LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
-LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
-LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
-LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
-LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
-LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 14
-LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
-LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 45
-LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 13
-LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
-LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
-LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
-LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
-LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
-LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
-LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
-LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 47
-LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
-LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
-LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
-LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
-LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 41
-LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
-LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
-LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
-LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
-LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
-LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Engine.ini]
-LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-LogInit: Object subsystem initialized
-LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
-LogConfig: Setting CVar [[r.setres:1280x720]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Engine.ini]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Engine.ini]
-[2023.01.08-22.10.19:973][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Engine.ini]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2023.01.08-22.10.19:973][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Engine.ini]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
-[2023.01.08-22.10.19:974][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Engine.ini]
-[2023.01.08-22.10.19:974][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Engine.ini]
-[2023.01.08-22.10.19:986][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2023.01.08-22.10.19:986][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
-[2023.01.08-22.10.19:987][  0]LogInit: Selected Device Profile: [Windows]
-[2023.01.08-22.10.19:987][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2023.01.08-22.10.19:987][  0]LogHAL: Display: Platform has ~ 64 GB [68629602304 / 68719476736 / 64], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2023.01.08-22.10.19:987][  0]LogInit: Going up to parent DeviceProfile []
-[2023.01.08-22.10.19:987][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2023.01.08-22.10.19:987][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Scalability.ini]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
-[2023.01.08-22.10.19:988][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Engine.ini]
-[2023.01.08-22.10.19:988][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Config/Windows/Editor.ini]
-[2023.01.08-22.10.19:988][  0]LogInit: Computer: DESKTOP-37S8SED
-[2023.01.08-22.10.19:988][  0]LogInit: User: decja
-[2023.01.08-22.10.19:988][  0]LogInit: CPU Page size=4096, Cores=12
-[2023.01.08-22.10.19:988][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2023.01.08-22.10.19:988][  0]LogMemory: Memory total: Physical=63.9GB (64GB approx)
-[2023.01.08-22.10.19:988][  0]LogMemory: Platform Memory Stats for Windows
-[2023.01.08-22.10.19:988][  0]LogMemory: Process Physical Memory: 150.40 MB used, 150.40 MB peak
-[2023.01.08-22.10.19:988][  0]LogMemory: Process Virtual Memory: 136.46 MB used, 136.46 MB peak
-[2023.01.08-22.10.19:988][  0]LogMemory: Physical Memory: 19073.81 MB used,  46376.48 MB free, 65450.29 MB total
-[2023.01.08-22.10.19:988][  0]LogMemory: Virtual Memory: 134160120.00 MB used,  57606.57 MB free, 134217728.00 MB total
-[2023.01.08-22.10.19:995][  0]LogWindows: WindowsPlatformFeatures enabled
-[2023.01.08-22.10.20:022][  0]LogInit: Physics initialised using underlying interface: PhysX
-[2023.01.08-22.10.20:027][  0]LogInit: Using OS detected language (ko-KR).
-[2023.01.08-22.10.20:027][  0]LogInit: Using OS detected locale (ko-KR).
-[2023.01.08-22.10.20:030][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
-[2023.01.08-22.10.20:115][  0]LogInit: Setting process to per monitor DPI aware
-[2023.01.08-22.10.20:131][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
-[2023.01.08-22.10.20:142][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2023.01.08-22.10.20:142][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2023.01.08-22.10.20:324][  0]LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
-[2023.01.08-22.10.20:327][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2023.01.08-22.10.20:327][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
-[2023.01.08-22.10.20:327][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
-[2023.01.08-22.10.20:327][  0]LogD3D11RHI: D3D11 adapters:
-[2023.01.08-22.10.20:512][  0]LogD3D11RHI:    0. 'AMD Radeon RX 6600 XT' (Feature Level 11_0)
-[2023.01.08-22.10.20:512][  0]LogD3D11RHI:       8147/0/32725 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x1002
-[2023.01.08-22.10.20:515][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2023.01.08-22.10.20:515][  0]LogD3D11RHI:       0/0/32725 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2023.01.08-22.10.20:515][  0]LogD3D11RHI: Chosen D3D11 Adapter:
-[2023.01.08-22.10.20:515][  0]LogD3D11RHI:     Description : AMD Radeon RX 6600 XT
-[2023.01.08-22.10.20:515][  0]LogD3D11RHI:     VendorId    : 1002
-[2023.01.08-22.10.20:515][  0]LogD3D11RHI:     DeviceId    : 73ff
-[2023.01.08-22.10.20:515][  0]LogD3D11RHI:     SubSysId    : e4481da2
-[2023.01.08-22.10.20:515][  0]LogD3D11RHI:     Revision    : 00c1
-[2023.01.08-22.10.20:515][  0]LogD3D11RHI:     DedicatedVideoMemory : 8542969856 bytes
-[2023.01.08-22.10.20:515][  0]LogD3D11RHI:     DedicatedSystemMemory : 0 bytes
-[2023.01.08-22.10.20:515][  0]LogD3D11RHI:     SharedSystemMemory : 34314801152 bytes
-[2023.01.08-22.10.20:515][  0]LogD3D11RHI:     AdapterLuid : 0 72204
-[2023.01.08-22.10.20:521][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2023.01.08-22.10.20:521][  0]LogD3D11RHI:     GPU DeviceId: 0x73ff (for the marketing name, search the web for "GPU Device Id")
-[2023.01.08-22.10.20:521][  0]LogWindows: EnumDisplayDevices:
-[2023.01.08-22.10.20:521][  0]LogWindows:    0. 'AMD Radeon RX 6600 XT' (P:1 D:1)
-[2023.01.08-22.10.20:522][  0]LogWindows:    1. 'AMD Radeon RX 6600 XT' (P:0 D:1)
-[2023.01.08-22.10.20:522][  0]LogWindows:    2. 'AMD Radeon RX 6600 XT' (P:0 D:0)
-[2023.01.08-22.10.20:522][  0]LogWindows:    3. 'AMD Radeon RX 6600 XT' (P:0 D:0)
-[2023.01.08-22.10.20:522][  0]LogWindows:    4. 'AMD Radeon RX 6600 XT' (P:0 D:0)
-[2023.01.08-22.10.20:522][  0]LogWindows:    5. 'AMD Radeon RX 6600 XT' (P:0 D:0)
-[2023.01.08-22.10.20:523][  0]LogWindows: DebugString: FoundDriverCount:6 
-[2023.01.08-22.10.20:523][  0]LogD3D11RHI:     Adapter Name: AMD Radeon RX 6600 XT
-[2023.01.08-22.10.20:523][  0]LogD3D11RHI:   Driver Version: AMD Software: Adrenalin Edition 22.11.2 (internal:31.0.12029.10015, unified:31.0.12029.10015)
-[2023.01.08-22.10.20:523][  0]LogD3D11RHI:      Driver Date: 11-30-2022
-[2023.01.08-22.10.20:523][  0]LogRHI: Texture pool is 5165 MB (70% of 7379 MB)
-[2023.01.08-22.10.20:554][  0]LogD3D11RHI: Creating D3DDevice with AMD AGS, using adapter:
-[2023.01.08-22.10.20:554][  0]LogD3D11RHI:     Description : AMD Radeon RX 6600 XT
-[2023.01.08-22.10.20:554][  0]LogD3D11RHI:     VendorId    : 1002
-[2023.01.08-22.10.20:554][  0]LogD3D11RHI:     DeviceId    : 73ff
-[2023.01.08-22.10.20:554][  0]LogD3D11RHI:     SubSysId    : e4481da2
-[2023.01.08-22.10.20:554][  0]LogD3D11RHI:     Revision    : 00c1
-[2023.01.08-22.10.20:554][  0]LogD3D11RHI:     DedicatedVideoMemory : 8542969856 bytes
-[2023.01.08-22.10.20:554][  0]LogD3D11RHI:     DedicatedSystemMemory : 0 bytes
-[2023.01.08-22.10.20:554][  0]LogD3D11RHI:     SharedSystemMemory : 34314801152 bytes
-[2023.01.08-22.10.20:554][  0]LogD3D11RHI:     AdapterLuid : 0 72204
-[2023.01.08-22.10.20:735][  0]LogD3D11RHI: Created device via AGS, feature level 11_0, supported extensions 1fffffbf.
-[2023.01.08-22.10.20:735][  0]LogD3D11RHI: RHI has support for 64 bit atomics
-[2023.01.08-22.10.20:735][  0]LogD3D11RHI: Async texture creation enabled
-[2023.01.08-22.10.20:735][  0]LogD3D11RHI: Array index from any shader is supported
-[2023.01.08-22.10.20:747][  0]LogD3D11RHI: GPU Timing Frequency: 100.000000 (Debug: 2 1)
-[2023.01.08-22.10.20:980][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2023.01.08-22.10.20:997][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2023.01.08-22.10.20:997][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2023.01.08-22.10.20:997][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2023.01.08-22.10.20:997][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2023.01.08-22.10.20:997][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2023.01.08-22.10.20:997][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2023.01.08-22.10.20:997][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2023.01.08-22.10.20:998][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2023.01.08-22.10.20:998][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2023.01.08-22.10.20:998][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2023.01.08-22.10.21:015][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2023.01.08-22.10.21:015][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2023.01.08-22.10.21:023][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
-[2023.01.08-22.10.21:028][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2023.01.08-22.10.21:032][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2023.01.08-22.10.21:036][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2023.01.08-22.10.21:044][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2023.01.08-22.10.21:049][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2023.01.08-22.10.21:053][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2023.01.08-22.10.21:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2023.01.08-22.10.21:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2023.01.08-22.10.21:080][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
-[2023.01.08-22.10.21:084][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
-[2023.01.08-22.10.21:088][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
-[2023.01.08-22.10.21:093][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
-[2023.01.08-22.10.21:102][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2023.01.08-22.10.21:102][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2023.01.08-22.10.21:110][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2023.01.08-22.10.21:115][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2023.01.08-22.10.21:119][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2023.01.08-22.10.21:124][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2023.01.08-22.10.21:124][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2023.01.08-22.10.21:132][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2023.01.08-22.10.21:166][  0]LogTextureFormatOodle: Display: Oodle Texture 2.9.0 init RDO Off
-[2023.01.08-22.10.21:202][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
-[2023.01.08-22.10.21:202][  0]LogShaderCompilers: Guid format shader working directory is -51 characters bigger than the processId version (../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Intermediate/Shaders/WorkingDirectory/37024/).
-[2023.01.08-22.10.21:203][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/decja/AppData/Local/Temp/UnrealShaderWorkingDir/8A9287AC44A88427E895B1B98B3A9C23/'.
-[2023.01.08-22.10.21:203][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2023.01.08-22.10.21:203][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2023.01.08-22.10.21:203][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2023.01.08-22.10.21:785][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2023.01.08-22.10.21:837][  0]LogDerivedDataCache: Loaded boot cache 0.05s 135MB C:/Users/decja/AppData/Local/UnrealEngine/4.27/DerivedDataCache/Boot.ddc.
-[2023.01.08-22.10.21:837][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/decja/AppData/Local/UnrealEngine/4.27/DerivedDataCache/Boot.ddc
-[2023.01.08-22.10.21:837][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2023.01.08-22.10.21:837][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2023.01.08-22.10.21:837][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2023.01.08-22.10.21:837][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2023.01.08-22.10.21:851][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2023.01.08-22.10.21:851][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2023.01.08-22.10.21:851][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2023.01.08-22.10.21:861][  0]LogDerivedDataCache: Speed tests for C:/Users/decja/AppData/Local/UnrealEngine/Common/DerivedDataCache took 0.01 seconds
-[2023.01.08-22.10.21:861][  0]LogDerivedDataCache: Display: Performance to C:/Users/decja/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.10ms. RandomReadSpeed=557.23MBs, RandomWriteSpeed=139.45MBs. Assigned SpeedClass 'Local'
-[2023.01.08-22.10.21:862][  0]LogDerivedDataCache: Using Local data cache path C:/Users/decja/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2023.01.08-22.10.21:862][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2023.01.08-22.10.21:862][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2023.01.08-22.10.21:895][  0]LogSlate: Using FreeType 2.10.0
-[2023.01.08-22.10.21:896][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2023.01.08-22.10.21:919][  0]LogAssetRegistry: FAssetRegistry took 0.0020 seconds to start up
-[2023.01.08-22.10.22:044][  0]LogCollisionProfile: Warning: Profile (Pawn) - Custom Channel Name = 'TestTrace' hasn't been found
-[2023.01.08-22.10.22:044][  0]LogCollisionProfile: Warning: Profile (EnemyCharacter) - Custom Channel Name = 'TestTrace' hasn't been found
-[2023.01.08-22.10.22:044][  0]LogCollisionProfile: Warning: Profile (PlayerCharacter) - Custom Channel Name = 'TestTrace' hasn't been found
-[2023.01.08-22.10.22:044][  0]LogCollisionProfile: Warning: Profile (PlayerPhysicsActor) - Custom Channel Name = 'TestTrace' hasn't been found
-[2023.01.08-22.10.22:044][  0]LogCollisionProfile: Warning: Profile (EnemyPhysicsActor) - Custom Channel Name = 'TestTrace' hasn't been found
-[2023.01.08-22.10.22:101][  0]LogInit: Selected Device Profile: [Windows]
-[2023.01.08-22.10.22:101][  0]LogInit: Active device profile: [000001EF12B6EC00][000001EF10693740 49] Windows
-[2023.01.08-22.10.22:101][  0]LogInit: Profiles: [000001EF12B6EC00][000001EF10693740 49] Windows, [000001EF12AED800][000001EF1069BA00 49] WindowsNoEditor, [000001EF12B6E200][000001EF1069E140 49] WindowsServer, [000001EF12AEE100][000001EF106A2400 49] WindowsClient, [000001EF12B6DB00][000001EF05F6A6C0 49] IOS, [000001EF12AED000][000001EF05F6E980 49] iPadAir, [000001EF12B6F300][000001EF05F72C40 49] iPadAir2, [000001EF12A65900][000001EF05F83140 49] IPadPro, [000001EF12A65A00][000001EF05F77180 49] iPadAir3, [000001EF12AEDF00][000001EF05F7F440 49] iPadAir4, [000001EF12A66900][000001EF05F7B700 49] iPadMini2, [000001EF12AEC900][000001EF05F879C0 49] iPadMini3, [000001EF12A67600][000001EF05F8A100 49] iPadMini4, [000001EF12AEE700][000001EF05F8E3C0 49] iPadMini5, [000001EF12A91200][000001EF05FA2900 49] iPhone6, [000001EF12A91300][000001EF05F92940 49] iPodTouch6, [000001EF12B6E800][000001EF05FAAE80 49] iPhone7, [000001EF12B6E300][000001EF05F9AEC0 49] iPodTouch7, [000001EF12A66C00][000001EF10697140 49] iPhone5S, [000001EF12A66300][000001EF05F9F3C0 49] iPhone6Plus, [000001EF12A91000][000001EF05FA7680 49] iPhone6S, [000001EF12A64600][000001EF05FAF940 49] iPhone6SPlus, [000001EF12A93600][000001EF05FB3C00 49] iPhone7Plus, [000001EF12A66500][000001EF05FB6340 49] iPhoneSE, [000001EF12A91100][000001EF05FBA600 49] iPhone8, [000001EF12A66A00][000001EF05FBE8C0 49] iPhone8Plus, [000001EF12A92600][000001EF05FC2B80 49] iPhoneX, [000001EF12A67A00][000001EF05FC6E40 49] iPhoneXS, [000001EF12A92100][000001EF05FCB100 49] iPhoneXSMax, [000001EF12A65200][000001EF05F97380 49] iPhoneXR, [000001EF12A91800][000001EF0CA39600 49] iPhone11, [000001EF12A67200][000001EF0CA418C0 49] iPhone11Pro, [000001EF12A93300][000001EF0CA45B80 49] iPhone11ProMax, [000001EF12A67400][000001EF0CA482C0 49] iPhoneSE2, [000001EF12A90C00][000001EF0CA4C580 49] iPhone12Mini, [000001EF12B6D700][000001EF0CA50840 49] iPhone12, [000001EF12A92E00][000001EF0CA54B00 49] iPhone12Pro, [000001EF12B6F200][000001EF0CA58DC0 49] iPhone12ProMax, [000001EF12A90600][000001EF0CA5D080 49] iPadPro105, [000001EF12B6E600][000001EF0CA61340 49] iPadPro129, [000001EF12A92200][000001EF0CA3D5C0 49] iPadPro97, [000001EF12B6C200][000001EF0CA65840 49] iPadPro2_129, [000001EF12A91400][000001EF0CA6DB00 49] iPad5, [000001EF12B6DC00][000001EF0CA70240 49] iPad6, [000001EF12A92F00][000001EF0CA74500 49] iPad7, [000001EF12B6C300][000001EF0CA787C0 49] iPad8, [000001EF12A90200][000001EF0CA7CA80 49] iPadPro11, [000001EF12B6C400][000001EF0CA80D40 49] iPadPro2_11, [000001EF12A92300][000001EF0CA85000 49] iPadPro3_129, [000001EF12B6C800][000001EF0CA892C0 49] iPadPro4_129, [000001EF12A92000][000001EF0CA8D580 49] AppleTV, [000001EF12B6CF00][000001EF0CA69800 49] AppleTV4K, [000001EF12A92500][000001EF0CAC7A80 49] TVOS, [000001EF12B6CC00][000001EF1136C1C0 49] Mac, [000001EF12A91F00][000001EF113F2480 49] MacClient, [000001EF12B6CB00][000001EF11484740 49] MacNoEditor, [000001EF12A92400][000001EF11488A00 49] MacServer, [000001EF12B6D100][000001EF10D7ACC0 49] Linux, [000001EF12A91600][000001EF10E36F80 49] LinuxAArch64, [000001EF12B6EA00][000001EF10E3B240 49] LinuxNoEditor, [000001EF12A92B00][000001EF1076B500 49] LinuxAArch64NoEditor, [000001EF12B6DE00][000001EF107777C0 49] LinuxClient, [000001EF12A90300][000001EF11369A40 49] LinuxAArch64Client, [000001EF12B6E000][000001EF1132C140 49] LinuxServer, [000001EF12A90B00][000001EF11340400 49] LinuxAArch64Server, [000001EF12B6E700][000001EF113446C0 49] Android, [000001EF12A91E00][000001EF1134C980 49] Android_Low, [000001EF12B6DA00][000001EF11356C40 49] Android_Mid, [000001EF12A91700][000001EF113C6F00 49] Android_High, [000001EF12B6D800][000001EF113CF1C0 49] Android_Default, [000001EF12A91B00][000001EF113D7480 49] Android_Adreno4xx, [000001EF12B6F600][000001EF113DF740 49] Android_Adreno5xx_Low, [000001EF12A90700][000001EF113EFA00 49] Android_Adreno5xx, [000001EF12A65D00][000001EF1133C100 49] Android_Adreno6xx, [000001EF12AEEB00][000001EF107CA380 49] Android_Adreno6xx_Vulkan, [000001EF12A66D00][000001EF107E2640 49] Android_Mali_T6xx, [000001EF12AEEE00][000001EF107EC900 49] Android_Mali_T7xx, [000001EF12A64A00][000001EF107F0BC0 49] Android_Mali_T8xx, [000001EF12AEE900][000001EF11444E80 49] Android_Mali_G71, [000001EF12A65B00][000001EF11449140 49] Android_Mali_G72, [000001EF12AECF00][000001EF1144D400 49] Android_Mali_G72_Vulkan, [000001EF12A67300][000001EF114516C0 49] Android_Mali_G76, [000001EF12AEFF00][000001EF11455980 49] Android_Mali_G76_Vulkan, [000001EF12A67E00][000001EF114580C0 49] Android_Mali_G77, [000001EF12AEFB00][000001EF107DE340 49] Android_Mali_G77_Vulkan, [000001EF12A66000][000001EF1145C5C0 49] Android_Mali_G78, [000001EF12AEE300][000001EF11464880 49] Android_Mali_G78_Vulkan, [000001EF12A66F00][000001EF11468B40 49] Android_Mali_G710, [000001EF12AEC600][000001EF1146CE00 49] Android_Mali_G710_Vulkan, [000001EF12A66E00][000001EF114710C0 49] Android_Vulkan_SM5, [000001EF12AEEC00][000001EF11475380 49] Android_PowerVR_G6xxx, [000001EF12A64E00][000001EF11479640 49] Android_PowerVR_GT7xxx, [000001EF12AEDB00][000001EF1147D900 49] Android_PowerVR_GE8xxx, [000001EF12A66200][000001EF11481BC0 49] Android_PowerVR_GM9xxx, [000001EF12AEEF00][000001EF10C98300 49] Android_PowerVR_GM9xxx_Vulkan, [000001EF12A67C00][000001EF11460580 49] Android_TegraK1, [000001EF12AEE500][000001EF10C9C800 49] Android_Unknown_Vulkan, [000001EF12A64500][000001EF10CA4AC0 49] Lumin, [000001EF12AEE400][000001EF10CA8D80 49] Lumin_Desktop, [000001EF12A65100][000001EF10CAD040 49] HoloLens, 
-[2023.01.08-22.10.22:205][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2023.01.08-22.10.22:205][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2023.01.08-22.10.22:205][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2023.01.08-22.10.22:205][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2023.01.08-22.10.22:205][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2023.01.08-22.10.22:222][  0]LogNetVersion: UE4_Portfolio2_SL 1.0.0, NetCL: 17155196, EngineNetVer: 17, GameNetVer: 0 (Checksum: 2867686067)
-[2023.01.08-22.10.22:550][  0]LogTexture: Default maximum texture size for cubemaps generated from long-lat sources has been changed from 512 to unlimited. In order to preserve old behaiour for '/Engine/MapTemplates/Sky/DaylightAmbientCubemap.DaylightAmbientCubemap', its maximum texture size has been explicitly set to 512.
-[2023.01.08-22.10.22:590][  0]LogHMD: PokeAHoleMaterial loaded successfully
-[2023.01.08-22.10.22:594][  0]LogUObjectArray: 17178 objects as part of root set at end of initial load.
-[2023.01.08-22.10.22:594][  0]LogUObjectAllocator: 4302048 out of 0 bytes used by permanent object pool.
-[2023.01.08-22.10.22:594][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2023.01.08-22.10.22:854][  0]LogPython: Using Python 3.7.7
-[2023.01.08-22.10.23:232][  0]LogNiagaraDebuggerClient: Niagara Debugger Client Initialized | Session: B9458BCF4FEBE7E8833D6AA60A8A8948 | Instance: E9288B2644D56C929CEB1CAC535A4364 (DESKTOP-37S8SED-37024).
-[2023.01.08-22.10.23:361][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2023.01.08-22.10.23:369][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2023.01.08-22.10.24:817][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
-[2023.01.08-22.10.24:817][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
-[2023.01.08-22.10.24:821][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
-[2023.01.08-22.10.24:834][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
-[2023.01.08-22.10.24:844][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
-[2023.01.08-22.10.24:851][  0]LogUProjectInfo: Found projects:
-[2023.01.08-22.10.25:040][  0]LogOpenImageDenoise: OIDN starting up
-[2023.01.08-22.10.25:229][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2023.01.08-22.10.25:252][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2023.01.08-22.10.25:252][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2023.01.08-22.10.25:368][  0]LogCollectionManager: Loaded 0 collections in 0.001301 seconds
-[2023.01.08-22.10.25:390][  0]LogFileCache: Scanning file cache for directory 'G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Collections/' took 0.00s
-[2023.01.08-22.10.25:390][  0]LogFileCache: Scanning file cache for directory 'G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/Developers/decja/Collections/' took 0.00s
-[2023.01.08-22.10.25:390][  0]LogFileCache: Scanning file cache for directory 'G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/Collections/' took 0.00s
-[2023.01.08-22.10.25:390][  0]LogOcInput: OculusInput pre-init called
-[2023.01.08-22.10.25:590][  0]LogEngine: Initializing Engine...
-[2023.01.08-22.10.25:592][  0]LogHMD: Failed to enumerate extensions. Please check that you have a valid OpenXR runtime installed.
-[2023.01.08-22.10.25:592][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2023.01.08-22.10.25:592][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
-[2023.01.08-22.10.25:593][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2023.01.08-22.10.25:695][  0]LogInit: Initializing FReadOnlyCVARCache
-[2023.01.08-22.10.25:702][  0]LogAIModule: Creating AISystem for world Untitled
-[2023.01.08-22.10.25:702][  0]LogAudio: Display: Initializing Audio Device Manager...
-[2023.01.08-22.10.25:706][  0]LogAudio: Display: Loading Default Audio Settings Objects...
-[2023.01.08-22.10.25:707][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
-[2023.01.08-22.10.25:707][  0]LogAudio: Display: Audio Device Manager Initialized
-[2023.01.08-22.10.25:707][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
-[2023.01.08-22.10.25:707][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2023.01.08-22.10.25:707][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2023.01.08-22.10.25:707][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2023.01.08-22.10.25:707][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2023.01.08-22.10.25:707][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2023.01.08-22.10.25:707][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2023.01.08-22.10.25:707][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2023.01.08-22.10.25:707][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2023.01.08-22.10.25:707][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
-[2023.01.08-22.10.25:707][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
-[2023.01.08-22.10.25:707][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
-[2023.01.08-22.10.25:707][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2023.01.08-22.10.25:718][  0]LogAudioMixer: Display: 0: FrontLeft
-[2023.01.08-22.10.25:718][  0]LogAudioMixer: Display: 1: FrontRight
-[2023.01.08-22.10.25:810][  0]LogAudioMixer: Display: Using Audio Device 스피커(Realtek(R) Audio)
-[2023.01.08-22.10.25:810][  0]LogAudioMixer: Display: Initializing Sound Submixes...
-[2023.01.08-22.10.25:813][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2023.01.08-22.10.25:813][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2023.01.08-22.10.25:814][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2023.01.08-22.10.25:814][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
-[2023.01.08-22.10.25:814][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
-[2023.01.08-22.10.25:814][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
-[2023.01.08-22.10.25:814][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
-[2023.01.08-22.10.25:814][  0]LogInit: FAudioDevice initialized.
-[2023.01.08-22.10.25:815][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
-[2023.01.08-22.10.25:815][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2023.01.08-22.10.25:896][  0]LogDerivedDataCache: Saved boot cache 0.08s 135MB C:/Users/decja/AppData/Local/UnrealEngine/4.27/DerivedDataCache/Boot.ddc.
-[2023.01.08-22.10.25:897][  0]LogInit: Texture streaming: Enabled
-[2023.01.08-22.10.25:911][  0]LogAnalytics: Display: [UEEditor.Rocket.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 4.27.2-18319896+++UE4+Release-4.27
-[2023.01.08-22.10.25:915][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2023.01.08-22.10.25:915][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={59D5B189-4C07-ECAF-6348-A8B669AB9FFA}
-[2023.01.08-22.10.25:915][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
-[2023.01.08-22.10.25:916][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
-[2023.01.08-22.10.25:943][  0]LogInit: Transaction tracking system initialized
-[2023.01.08-22.10.25:966][  0]BlueprintLog: New page: 에디터 로드
-[2023.01.08-22.10.26:028][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
-[2023.01.08-22.10.26:052][  0]TimingProfiler: Initialize
-[2023.01.08-22.10.26:052][  0]TimingProfiler: OnSessionChanged
-[2023.01.08-22.10.26:052][  0]LoadingProfiler: Initialize
-[2023.01.08-22.10.26:052][  0]LoadingProfiler: OnSessionChanged
-[2023.01.08-22.10.26:052][  0]NetworkingProfiler: Initialize
-[2023.01.08-22.10.26:052][  0]NetworkingProfiler: OnSessionChanged
-[2023.01.08-22.10.26:052][  0]MemoryProfiler: Initialize
-[2023.01.08-22.10.26:052][  0]MemoryProfiler: OnSessionChanged
-[2023.01.08-22.10.26:189][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
-[2023.01.08-22.10.26:189][  0]LogCook: Display: Mobile HDR setting 1
-[2023.01.08-22.10.26:370][  0]LogFileCache: Scanning file cache for directory 'G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/' took 0.04s
-[2023.01.08-22.10.26:522][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
-[2023.01.08-22.10.26:525][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
-[2023.01.08-22.10.26:525][  0]LogUnrealEdMisc: Loading editor; pre map load, took 7.649
-[2023.01.08-22.10.26:526][  0]LightingResults: New page: 라이팅 빌드
-[2023.01.08-22.10.26:527][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2023.01.08-22.10.26:527][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2023.01.08-22.10.26:527][  0]MapCheck: New page: 맵 체크
-[2023.01.08-22.10.26:527][  0]LightingResults: New page: 라이팅 빌드
-[2023.01.08-22.10.26:562][  0]LogAudio: Display: Audio Device unregistered from world 'None'.
-[2023.01.08-22.10.26:565][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
-[2023.01.08-22.10.26:643][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'ThirdPersonExampleMap'.
-[2023.01.08-22.10.26:644][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2023.01.08-22.10.26:647][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:647][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:647][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:647][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:647][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:647][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:647][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:647][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:648][  0]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.26:650][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2023.01.08-22.10.26:661][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
-[2023.01.08-22.10.26:661][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2023.01.08-22.10.26:661][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.066ms.
-[2023.01.08-22.10.26:661][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.136
-[2023.01.08-22.10.26:664][  0]LogUnrealEdMisc: Total Editor Startup Time, took 7.788
-[2023.01.08-22.10.26:759][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2023.01.08-22.10.26:763][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2023.01.08-22.10.26:767][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2023.01.08-22.10.26:771][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2023.01.08-22.10.26:782][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0075 seconds. Added 3860 classes and 930 folders.
-[2023.01.08-22.10.26:785][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2023.01.08-22.10.26:787][  0]LogPakFile: PakFile PrimaryIndexSize=187
-[2023.01.08-22.10.26:787][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:787][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
-[2023.01.08-22.10.26:787][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/FP_FirstPerson.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:787][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/FP_FirstPerson.upack)
-[2023.01.08-22.10.26:787][  0]LogPakFile: OnPakFileMounted2Time == 0.000038
-[2023.01.08-22.10.26:788][  0]LogPakFile: PakFile PrimaryIndexSize=189
-[2023.01.08-22.10.26:788][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:788][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
-[2023.01.08-22.10.26:788][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/FP_FirstPersonBP.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:788][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/FP_FirstPersonBP.upack)
-[2023.01.08-22.10.26:788][  0]LogPakFile: OnPakFileMounted2Time == 0.000028
-[2023.01.08-22.10.26:789][  0]LogPakFile: PakFile PrimaryIndexSize=191
-[2023.01.08-22.10.26:789][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:789][  0]LogPakFile: PakFile FullDirectoryIndexSize=160
-[2023.01.08-22.10.26:789][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/MobileStarterContent.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:789][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/MobileStarterContent.upack)
-[2023.01.08-22.10.26:789][  0]LogPakFile: OnPakFileMounted2Time == 0.000024
-[2023.01.08-22.10.26:790][  0]LogPakFile: PakFile PrimaryIndexSize=185
-[2023.01.08-22.10.26:790][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:790][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
-[2023.01.08-22.10.26:790][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/StarterContent.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:790][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/StarterContent.upack)
-[2023.01.08-22.10.26:790][  0]LogPakFile: OnPakFileMounted2Time == 0.000025
-[2023.01.08-22.10.26:791][  0]LogPakFile: PakFile PrimaryIndexSize=190
-[2023.01.08-22.10.26:791][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:791][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
-[2023.01.08-22.10.26:791][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_2DSideScroller.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:791][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_2DSideScroller.upack)
-[2023.01.08-22.10.26:791][  0]LogPakFile: OnPakFileMounted2Time == 0.000024
-[2023.01.08-22.10.26:792][  0]LogPakFile: PakFile PrimaryIndexSize=192
-[2023.01.08-22.10.26:792][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:792][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
-[2023.01.08-22.10.26:792][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_2DSideScrollerBP.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:792][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_2DSideScrollerBP.upack)
-[2023.01.08-22.10.26:792][  0]LogPakFile: OnPakFileMounted2Time == 0.000030
-[2023.01.08-22.10.26:793][  0]LogPakFile: PakFile PrimaryIndexSize=182
-[2023.01.08-22.10.26:793][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:793][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
-[2023.01.08-22.10.26:793][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_Flying.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:793][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_Flying.upack)
-[2023.01.08-22.10.26:793][  0]LogPakFile: OnPakFileMounted2Time == 0.000024
-[2023.01.08-22.10.26:794][  0]LogPakFile: PakFile PrimaryIndexSize=184
-[2023.01.08-22.10.26:794][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:794][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
-[2023.01.08-22.10.26:794][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_FlyingBP.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:794][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_FlyingBP.upack)
-[2023.01.08-22.10.26:794][  0]LogPakFile: OnPakFileMounted2Time == 0.000029
-[2023.01.08-22.10.26:795][  0]LogPakFile: PakFile PrimaryIndexSize=188
-[2023.01.08-22.10.26:795][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:795][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
-[2023.01.08-22.10.26:795][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_HandheldARBP.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:795][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_HandheldARBP.upack)
-[2023.01.08-22.10.26:795][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
-[2023.01.08-22.10.26:796][  0]LogPakFile: PakFile PrimaryIndexSize=182
-[2023.01.08-22.10.26:796][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:796][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
-[2023.01.08-22.10.26:796][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_Puzzle.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:796][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_Puzzle.upack)
-[2023.01.08-22.10.26:796][  0]LogPakFile: OnPakFileMounted2Time == 0.000028
-[2023.01.08-22.10.26:797][  0]LogPakFile: PakFile PrimaryIndexSize=184
-[2023.01.08-22.10.26:797][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:797][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
-[2023.01.08-22.10.26:797][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_PuzzleBP.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:797][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_PuzzleBP.upack)
-[2023.01.08-22.10.26:797][  0]LogPakFile: OnPakFileMounted2Time == 0.000029
-[2023.01.08-22.10.26:798][  0]LogPakFile: PakFile PrimaryIndexSize=183
-[2023.01.08-22.10.26:798][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:798][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
-[2023.01.08-22.10.26:798][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_Rolling.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:798][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_Rolling.upack)
-[2023.01.08-22.10.26:798][  0]LogPakFile: OnPakFileMounted2Time == 0.000024
-[2023.01.08-22.10.26:799][  0]LogPakFile: PakFile PrimaryIndexSize=185
-[2023.01.08-22.10.26:799][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:799][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
-[2023.01.08-22.10.26:799][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_RollingBP.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:799][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_RollingBP.upack)
-[2023.01.08-22.10.26:799][  0]LogPakFile: OnPakFileMounted2Time == 0.000025
-[2023.01.08-22.10.26:800][  0]LogPakFile: PakFile PrimaryIndexSize=188
-[2023.01.08-22.10.26:800][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:800][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
-[2023.01.08-22.10.26:800][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_SideScroller.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:800][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_SideScroller.upack)
-[2023.01.08-22.10.26:800][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
-[2023.01.08-22.10.26:801][  0]LogPakFile: PakFile PrimaryIndexSize=190
-[2023.01.08-22.10.26:801][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:801][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
-[2023.01.08-22.10.26:801][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_SideScrollerBP.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:801][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_SideScrollerBP.upack)
-[2023.01.08-22.10.26:801][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
-[2023.01.08-22.10.26:802][  0]LogPakFile: PakFile PrimaryIndexSize=187
-[2023.01.08-22.10.26:802][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:802][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
-[2023.01.08-22.10.26:802][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_ThirdPerson.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:802][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_ThirdPerson.upack)
-[2023.01.08-22.10.26:802][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
-[2023.01.08-22.10.26:803][  0]LogPakFile: PakFile PrimaryIndexSize=189
-[2023.01.08-22.10.26:803][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:803][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
-[2023.01.08-22.10.26:803][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_ThirdPersonBP.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:803][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_ThirdPersonBP.upack)
-[2023.01.08-22.10.26:803][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
-[2023.01.08-22.10.26:804][  0]LogPakFile: PakFile PrimaryIndexSize=183
-[2023.01.08-22.10.26:804][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:804][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
-[2023.01.08-22.10.26:804][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_TopDown.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:804][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_TopDown.upack)
-[2023.01.08-22.10.26:804][  0]LogPakFile: OnPakFileMounted2Time == 0.000027
-[2023.01.08-22.10.26:805][  0]LogPakFile: PakFile PrimaryIndexSize=185
-[2023.01.08-22.10.26:805][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:805][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
-[2023.01.08-22.10.26:805][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_TopDownBP.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:805][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_TopDownBP.upack)
-[2023.01.08-22.10.26:805][  0]LogPakFile: OnPakFileMounted2Time == 0.000026
-[2023.01.08-22.10.26:806][  0]LogPakFile: PakFile PrimaryIndexSize=185
-[2023.01.08-22.10.26:806][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:806][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
-[2023.01.08-22.10.26:806][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_TwinStick.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:806][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_TwinStick.upack)
-[2023.01.08-22.10.26:806][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
-[2023.01.08-22.10.26:807][  0]LogPakFile: PakFile PrimaryIndexSize=187
-[2023.01.08-22.10.26:807][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:807][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
-[2023.01.08-22.10.26:807][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_TwinStickBP.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:807][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_TwinStickBP.upack)
-[2023.01.08-22.10.26:807][  0]LogPakFile: OnPakFileMounted2Time == 0.000024
-[2023.01.08-22.10.26:808][  0]LogPakFile: PakFile PrimaryIndexSize=183
-[2023.01.08-22.10.26:808][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:808][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
-[2023.01.08-22.10.26:808][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_Vehicle.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:808][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_Vehicle.upack)
-[2023.01.08-22.10.26:808][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
-[2023.01.08-22.10.26:809][  0]LogPakFile: PakFile PrimaryIndexSize=186
-[2023.01.08-22.10.26:809][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:809][  0]LogPakFile: PakFile FullDirectoryIndexSize=146
-[2023.01.08-22.10.26:809][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_VehicleAdv.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:809][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_VehicleAdv.upack)
-[2023.01.08-22.10.26:809][  0]LogPakFile: OnPakFileMounted2Time == 0.000024
-[2023.01.08-22.10.26:810][  0]LogPakFile: PakFile PrimaryIndexSize=188
-[2023.01.08-22.10.26:810][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:810][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
-[2023.01.08-22.10.26:810][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_VehicleAdvBP.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:810][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_VehicleAdvBP.upack)
-[2023.01.08-22.10.26:810][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
-[2023.01.08-22.10.26:811][  0]LogPakFile: PakFile PrimaryIndexSize=185
-[2023.01.08-22.10.26:811][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:811][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
-[2023.01.08-22.10.26:811][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_VehicleBP.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:811][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_VehicleBP.upack)
-[2023.01.08-22.10.26:811][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
-[2023.01.08-22.10.26:812][  0]LogPakFile: PakFile PrimaryIndexSize=192
-[2023.01.08-22.10.26:812][  0]LogPakFile: PakFile PathHashIndexSize=101
-[2023.01.08-22.10.26:812][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
-[2023.01.08-22.10.26:812][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'G:/Unreal Engine/UE_4.27/FeaturePacks/TP_VirtualRealityBP.upack' (chunk index -1, root 'root:/') mounted
-[2023.01.08-22.10.26:812][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:G:/Unreal Engine/UE_4.27/FeaturePacks/TP_VirtualRealityBP.upack)
-[2023.01.08-22.10.26:812][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
-[2023.01.08-22.10.26:914][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2023.01.08-22.10.26:918][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SceneOutliner' in 0.0001 seconds. Added 2 classes and 0 folders.
-[2023.01.08-22.10.26:991][  0]LogSlate: Took 0.000210 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2023.01.08-22.10.26:992][  0]LogSlate: Took 0.000157 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2023.01.08-22.10.26:993][  0]LogSlate: Took 0.000895 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
-[2023.01.08-22.10.26:994][  0]LogSlate: Took 0.000886 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
-[2023.01.08-22.10.26:995][  0]LogSlate: Took 0.000157 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2023.01.08-22.10.27:055][  0]LogRenderer: Reallocating scene render targets to support 1192x620 Format 10 NumSamples 1 (Frame:1).
-[2023.01.08-22.10.27:413][  0]LogSlate: Took 0.000193 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2023.01.08-22.10.27:462][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2023.01.08-22.10.27:462][  0]LogLoad: (Engine Initialization) Total time: 8.59 seconds
-[2023.01.08-22.10.27:462][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2023.01.08-22.10.27:526][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2023.01.08-22.10.27:551][  1]LogAssetRegistry: Asset discovery search completed in 5.6332 seconds
-[2023.01.08-22.10.27:557][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
-[2023.01.08-22.10.28:877][  5]LogSlate: Took 0.000167 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2023.01.08-22.10.31:986][ 44]Candidate modules for hot reload:
-[2023.01.08-22.10.31:986][ 44]  UE4_Portfolio2_SL
-[2023.01.08-22.10.31:986][ 44]Launching UnrealBuildTool... [G:/Unreal Engine/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UE4_Portfolio2_SL,2832 UE4_Portfolio2_SLEditor Win64 Development -Project="G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/UE4_Portfolio2_SL.uproject" "G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/UE4_Portfolio2_SL.uproject"  -IgnoreJunk]
-[2023.01.08-22.10.31:989][ 44]Warning: Starting HotReload took  0.0s.
-[2023.01.08-22.10.33:156][137]LogAssetEditorSubsystem: Opening Asset editor for Material /Game/MyFolder/Effects/M_Trail.M_Trail
-[2023.01.08-22.10.33:157][137]LogMaterial: Display: Missing cached shadermap for M_Trail in PCD3D_SM5, Default, SM5 (DDC key hash: 83685202EB5EA08E243DA6726FF0B5DE097C0437), compiling. 
-[2023.01.08-22.10.33:171][137]LogShaderCompilers: Display: Submitted 9 shader compile jobs with 'Normal' priority
-[2023.01.08-22.10.33:174][137]LogTexture: Default maximum texture size for cubemaps generated from long-lat sources has been changed from 512 to unlimited. In order to preserve old behaiour for '/Engine/EditorMaterials/AssetViewer/EpicQuadPanorama_CC+EV1.EpicQuadPanorama_CC+EV1', its maximum texture size has been explicitly set to 512.
-[2023.01.08-22.10.33:224][137]LogTexture: Default maximum texture size for cubemaps generated from long-lat sources has been changed from 512 to unlimited. In order to preserve old behaiour for '/Engine/MapTemplates/Sky/SunsetAmbientCubemap.SunsetAmbientCubemap', its maximum texture size has been explicitly set to 512.
-[2023.01.08-22.10.33:308][137]LogMaterial: Display: Missing cached shadermap for M_Trail in PCD3D_SM5, Default, SM5 (DDC key hash: 83E846FC5EA12B1ED8461E232ED8983B6F4EA8C9), compiling. 
-[2023.01.08-22.10.33:309][137]LogMaterial: Display: Missing cached shadermap for M_Trail in PCD3D_SM5, Default, SM5 (DDC key hash: E3886022AA8F73EA92EBC34F79B83DDD5A5FDAFE), compiling. 
-[2023.01.08-22.10.33:310][137]LogMaterial: Display: Missing cached shadermap for FMatExpressionPreview MaterialExpressionDepthFade_0 in PCD3D_SM5, Default, SM5 (DDC key hash: B7584E75F73A1093725731D2DF33405A3B455EE8), compiling. 
-[2023.01.08-22.10.33:326][137]MaterialEditorStats: Texture samplers: 0/16
-[2023.01.08-22.10.33:326][137]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
-[2023.01.08-22.10.33:326][137]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
-[2023.01.08-22.10.33:328][137]LogSlate: Took 0.000177 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2023.01.08-22.10.33:404][137]LogShaderCompilers: Display: Submitted 9 shader compile jobs with 'Normal' priority
-[2023.01.08-22.10.33:404][137]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 2
-[2023.01.08-22.10.33:404][137]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 1
-[2023.01.08-22.10.33:404][137]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 7
-[2023.01.08-22.10.33:404][137]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 6
-[2023.01.08-22.10.33:404][137]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 5
-[2023.01.08-22.10.33:404][137]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 4
-[2023.01.08-22.10.33:404][137]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 3
-[2023.01.08-22.10.33:404][137]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 2
-[2023.01.08-22.10.33:404][137]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 1
-[2023.01.08-22.10.33:404][137]LogShaderCompilers: Display: Started 7 'Local' shader compile jobs with 'Normal' priority
-[2023.01.08-22.10.33:404][137]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
-[2023.01.08-22.10.33:404][137]LogSlate: Took 0.000160 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
-[2023.01.08-22.10.33:474][141]LogSlate: Took 0.000188 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2023.01.08-22.10.33:565][145]LogShaderCompilers: Display: Submitted 2 shader compile jobs with 'ForceLocal' priority
-[2023.01.08-22.10.33:565][145]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 2
-[2023.01.08-22.10.33:565][145]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 1
-[2023.01.08-22.10.33:565][145]LogShaderCompilers: Display: Started 2 'Local' shader compile jobs with 'ForceLocal' priority
-[2023.01.08-22.10.33:906][174]MaterialEditorStats: Texture samplers: 2/16
-[2023.01.08-22.10.33:906][174]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
-[2023.01.08-22.10.33:906][174]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
-[2023.01.08-22.10.34:031][189]MaterialEditorStats: Base pass shader without light map: 81 instructions
-[2023.01.08-22.10.34:031][189]MaterialEditorStats: Base pass vertex shader: 197 instructions
-[2023.01.08-22.10.34:031][189]MaterialEditorStats: Texture samplers: 4/16
-[2023.01.08-22.10.34:031][189]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
-[2023.01.08-22.10.34:031][189]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
-[2023.01.08-22.10.39:150][804]CompilerResultsLog: New page: 컴파일 - 2023. 1. 9. 오후 4:10:39
-[2023.01.08-22.10.39:150][804]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
-[2023.01.08-22.10.39:150][804]CompilerResultsLog: Building UE4_Portfolio2_SLEditor...
-[2023.01.08-22.10.39:150][804]CompilerResultsLog: Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2023.01.08-22.10.39:150][804]CompilerResultsLog: [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: Enemy_SkeletonArcher.cpp, Projectile_SkeletonArcherArrow.cpp
-[2023.01.08-22.10.39:150][804]CompilerResultsLog: [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: Projectile_SkeletonArcherArrow.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp
-[2023.01.08-22.10.39:150][804]CompilerResultsLog: Building 4 actions with 24 processes...
-[2023.01.08-22.10.39:150][804]CompilerResultsLog:   [1/4] Projectile_SkeletonArcherArrow.cpp
-[2023.01.08-22.10.39:150][804]CompilerResultsLog:   [2/4] UE4Editor-UE4_Portfolio2_SL-2832.lib
-[2023.01.08-22.10.39:150][804]CompilerResultsLog:      G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2832.lib ???̺귯?? ?? G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2832.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
-[2023.01.08-22.10.39:150][804]CompilerResultsLog:   [3/4] UE4Editor-UE4_Portfolio2_SL-2832.dll
-[2023.01.08-22.10.39:150][804]CompilerResultsLog:      G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2832.suppressed.lib ???̺귯?? ?? G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2832.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
-[2023.01.08-22.10.39:150][804]CompilerResultsLog:   [4/4] UE4_Portfolio2_SLEditor.target
-[2023.01.08-22.10.39:150][804]CompilerResultsLog: Total time in Parallel executor: 6.37 seconds
-[2023.01.08-22.10.39:150][804]CompilerResultsLog: Total execution time: 7.06 seconds
-[2023.01.08-22.10.39:150][804]LogMainFrame: MainFrame: Module compiling took 7.172 seconds
-[2023.01.08-22.10.39:164][804]LogClass: EMONSTER_STATE HotReload.
-[2023.01.08-22.10.39:164][804]LogClass: EPLAYER_STATE HotReload.
-[2023.01.08-22.10.39:178][804]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UE4_Portfolio2_SL' in 0.0003 seconds. Added 38 classes and 2 folders.
-[2023.01.08-22.10.39:184][804]Display: HotReload successful (26 functions remapped  0 scriptstructs remapped)
-[2023.01.08-22.10.39:255][804]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0073 seconds. Added 3860 classes and 930 folders.
-[2023.01.08-22.10.39:255][804]Display: HotReload took  7.3s.
-[2023.01.08-22.10.43:789][161]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
-[2023.01.08-22.10.44:598][243]LogTemp: Repeating last play command: 선택된 뷰포트
-[2023.01.08-22.10.44:602][243]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2023.01.08-22.10.44:602][243]PIE: New page: PIE 세션: ThirdPersonExampleMap (2023. 1. 9. 오후 4:10:44)
-[2023.01.08-22.10.44:603][243]LogOnline: OSS: Creating online subsystem instance for: NULL
-[2023.01.08-22.10.44:604][243]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
-[2023.01.08-22.10.44:604][243]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2023.01.08-22.10.44:614][243]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009994s)
-[2023.01.08-22.10.44:615][243]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2023.01.08-22.10.44:615][243]LogPlayLevel: PIE: World Init took: (0.000694s)
-[2023.01.08-22.10.44:615][243]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.010785s)
-[2023.01.08-22.10.44:619][243]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
-[2023.01.08-22.10.44:620][243]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
-[2023.01.08-22.10.44:620][243]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2023.01.08-22.10.44:620][243]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2023.01.08-22.10.44:620][243]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2023.01.08-22.10.44:620][243]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2023.01.08-22.10.44:620][243]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2023.01.08-22.10.44:620][243]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2023.01.08-22.10.44:620][243]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2023.01.08-22.10.44:620][243]LogAudio: Display: AudioDevice MaxSources: 32
-[2023.01.08-22.10.44:620][243]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
-[2023.01.08-22.10.44:620][243]LogAudio: Display: Audio Reverb Plugin: None (built-in).
-[2023.01.08-22.10.44:620][243]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
-[2023.01.08-22.10.44:620][243]LogAudioMixer: Display: Initializing audio mixer.
-[2023.01.08-22.10.44:623][243]LogAudioMixer: Display: 0: FrontLeft
-[2023.01.08-22.10.44:623][243]LogAudioMixer: Display: 1: FrontRight
-[2023.01.08-22.10.44:651][243]LogAudioMixer: Display: Using Audio Device 스피커(Realtek(R) Audio)
-[2023.01.08-22.10.44:651][243]LogAudioMixer: Display: Initializing Sound Submixes...
-[2023.01.08-22.10.44:651][243]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2023.01.08-22.10.44:651][243]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2023.01.08-22.10.44:651][243]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2023.01.08-22.10.44:651][243]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
-[2023.01.08-22.10.44:651][243]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
-[2023.01.08-22.10.44:652][243]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
-[2023.01.08-22.10.44:652][243]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
-[2023.01.08-22.10.44:652][243]LogInit: FAudioDevice initialized.
-[2023.01.08-22.10.44:652][243]LogAudio: Display: Audio Device (ID: 2) registered with world 'ThirdPersonExampleMap'.
-[2023.01.08-22.10.44:657][243]LogLoad: Game class is 'UE4_Portfolio2_SLGameMode'
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:659][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:661][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:661][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:661][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:661][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:662][243]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2023.01.09-07.10.44
-[2023.01.08-22.10.44:663][243]LogWorld: Bringing up level for play took: 0.005109
-[2023.01.08-22.10.44:663][243]LogOnline: OSS: Creating online subsystem instance for: :Context_2
-[2023.01.08-22.10.44:719][243]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 20 classes and 0 folders.
-[2023.01.08-22.10.44:719][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:719][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:719][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:719][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:719][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:719][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:719][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:719][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:719][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:719][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:719][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:719][243]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.10.44:721][243]LogActor: Warning: Weapon_RustySword /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Weapon_RustySword_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.10.44:721][243]LogActor: Warning: Weapon_Default /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Weapon_Default_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.10.44:721][243]LogActor: Warning: Shield_Default /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Shield_Default_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.10.44:722][243]LogActor: Warning: Weapon_SkeletonArcherBow /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Weapon_SkeletonArcherBow_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.10.44:722][243]LogActor: Warning: Weapon_Default /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Weapon_Default_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.10.44:722][243]LogActor: Warning: Shield_Default /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Shield_Default_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.10.44:722][243]PIE: 서버가 로그인했습니다.
-[2023.01.08-22.10.44:723][243]PIE: 에디터에서 플레이 총 시작 시간 0.122초입니다.
-[2023.01.08-22.11.18:229][245]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2023.01.08-22.11.18:229][245]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2023.01.08-22.11.18:229][245]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
-[2023.01.08-22.11.18:230][245]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2023.01.08-22.11.18:237][245]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2023.01.08-22.11.18:238][245]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2023.01.08-22.11.18:242][245]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2023.01.08-22.11.18:243][245]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
-[2023.01.08-22.11.18:243][245]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
-[2023.01.08-22.11.18:249][245]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
-[2023.01.08-22.11.18:311][250]LogPlayLevel: Display: Destroying online subsystem :Context_2
-[2023.01.08-22.11.41:189][553]LogAssetEditorSubsystem: Opening Asset editor for ParticleSystem /Game/MyFolder/Effects/PS_Trail.PS_Trail
-[2023.01.08-22.11.41:197][553]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'Cascade' in 0.0002 seconds. Added 2 classes and 2 folders.
-[2023.01.08-22.15.13:239][561]LogTemp: Repeating last play command: 선택된 뷰포트
-[2023.01.08-22.15.13:243][561]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2023.01.08-22.15.13:243][561]PIE: New page: PIE 세션: ThirdPersonExampleMap (2023. 1. 9. 오후 4:15:13)
-[2023.01.08-22.15.13:279][561]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2023.01.08-22.15.13:287][561]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007938s)
-[2023.01.08-22.15.13:288][561]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2023.01.08-22.15.13:288][561]LogPlayLevel: PIE: World Init took: (0.000776s)
-[2023.01.08-22.15.13:288][561]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.008809s)
-[2023.01.08-22.15.13:293][561]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
-[2023.01.08-22.15.13:293][561]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
-[2023.01.08-22.15.13:293][561]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2023.01.08-22.15.13:293][561]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2023.01.08-22.15.13:293][561]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2023.01.08-22.15.13:293][561]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2023.01.08-22.15.13:293][561]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2023.01.08-22.15.13:293][561]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2023.01.08-22.15.13:293][561]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2023.01.08-22.15.13:293][561]LogAudio: Display: AudioDevice MaxSources: 32
-[2023.01.08-22.15.13:293][561]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
-[2023.01.08-22.15.13:293][561]LogAudio: Display: Audio Reverb Plugin: None (built-in).
-[2023.01.08-22.15.13:293][561]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
-[2023.01.08-22.15.13:293][561]LogAudioMixer: Display: Initializing audio mixer.
-[2023.01.08-22.15.13:297][561]LogAudioMixer: Display: 0: FrontLeft
-[2023.01.08-22.15.13:297][561]LogAudioMixer: Display: 1: FrontRight
-[2023.01.08-22.15.13:325][561]LogAudioMixer: Display: Using Audio Device 스피커(Realtek(R) Audio)
-[2023.01.08-22.15.13:325][561]LogAudioMixer: Display: Initializing Sound Submixes...
-[2023.01.08-22.15.13:325][561]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2023.01.08-22.15.13:325][561]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2023.01.08-22.15.13:325][561]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2023.01.08-22.15.13:325][561]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
-[2023.01.08-22.15.13:325][561]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
-[2023.01.08-22.15.13:326][561]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
-[2023.01.08-22.15.13:326][561]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
-[2023.01.08-22.15.13:326][561]LogInit: FAudioDevice initialized.
-[2023.01.08-22.15.13:326][561]LogAudio: Display: Audio Device (ID: 3) registered with world 'ThirdPersonExampleMap'.
-[2023.01.08-22.15.13:334][561]LogLoad: Game class is 'UE4_Portfolio2_SLGameMode'
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:335][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:336][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:336][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:337][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:337][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:337][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:337][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:338][561]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2023.01.09-07.15.13
-[2023.01.08-22.15.13:339][561]LogWorld: Bringing up level for play took: 0.004797
-[2023.01.08-22.15.13:339][561]LogOnline: OSS: Creating online subsystem instance for: :Context_5
-[2023.01.08-22.15.13:341][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:341][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:341][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:341][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:341][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:341][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:341][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:341][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:341][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:341][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:341][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:341][561]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.15.13:343][561]LogActor: Warning: Weapon_RustySword /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Weapon_RustySword_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.15.13:343][561]LogActor: Warning: Weapon_Default /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Weapon_Default_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.15.13:343][561]LogActor: Warning: Shield_Default /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Shield_Default_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.15.13:343][561]LogActor: Warning: Weapon_SkeletonArcherBow /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Weapon_SkeletonArcherBow_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.15.13:343][561]LogActor: Warning: Weapon_Default /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Weapon_Default_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.15.13:343][561]LogActor: Warning: Shield_Default /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Shield_Default_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.15.13:343][561]PIE: 서버가 로그인했습니다.
-[2023.01.08-22.15.13:344][561]PIE: 에디터에서 플레이 총 시작 시간 0.102초입니다.
-[2023.01.08-22.15.19:978][290]LogEditorViewport: Clicking on Actor (LMB): Projectile_SkeletonArcherArrow (Projectile_SkeletonArcherArrow)
-[2023.01.08-22.15.33:190][807]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2023.01.08-22.15.33:190][807]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2023.01.08-22.15.33:190][807]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
-[2023.01.08-22.15.33:191][807]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2023.01.08-22.15.33:195][807]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2023.01.08-22.15.33:196][807]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2023.01.08-22.15.33:202][807]LogAudio: Display: Audio Device unregistered from world 'None'.
-[2023.01.08-22.15.33:202][807]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
-[2023.01.08-22.15.33:203][807]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
-[2023.01.08-22.15.33:206][807]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2023.01.08-22.15.33:208][807]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
-[2023.01.08-22.15.33:259][813]LogPlayLevel: Display: Destroying online subsystem :Context_5
-[2023.01.08-22.16.05:927][ 76]Candidate modules for hot reload:
-[2023.01.08-22.16.05:927][ 76]  UE4_Portfolio2_SL
-[2023.01.08-22.16.05:927][ 76]Launching UnrealBuildTool... [G:/Unreal Engine/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UE4_Portfolio2_SL,5907 UE4_Portfolio2_SLEditor Win64 Development -Project="G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/UE4_Portfolio2_SL.uproject" "G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/UE4_Portfolio2_SL.uproject"  -IgnoreJunk]
-[2023.01.08-22.16.05:930][ 76]Warning: Starting HotReload took  0.0s.
-[2023.01.08-22.16.15:337][141]CompilerResultsLog: New page: 컴파일 - 2023. 1. 9. 오후 4:16:15
-[2023.01.08-22.16.15:337][141]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
-[2023.01.08-22.16.15:337][141]CompilerResultsLog: Invalidating makefile for UE4_Portfolio2_SLEditor (working set of source files changed)
-[2023.01.08-22.16.15:337][141]CompilerResultsLog: Building UE4_Portfolio2_SLEditor...
-[2023.01.08-22.16.15:337][141]CompilerResultsLog: Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2023.01.08-22.16.15:337][141]CompilerResultsLog: [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: Enemy_SkeletonArcher.cpp, Projectile_Base.cpp, Projectile_SkeletonArcherArrow.cpp
-[2023.01.08-22.16.15:337][141]CompilerResultsLog: [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: Projectile_SkeletonArcherArrow.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp
-[2023.01.08-22.16.15:337][141]CompilerResultsLog: Building 6 actions with 24 processes...
-[2023.01.08-22.16.15:337][141]CompilerResultsLog:   [1/6] Projectile_Base.cpp
-[2023.01.08-22.16.15:337][141]CompilerResultsLog:   [2/6] Projectile_SkeletonArcherArrow.cpp
-[2023.01.08-22.16.15:337][141]CompilerResultsLog:    G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Projectile_SkeletonArcherArrow.cpp(43) : error C2039: 'getsocketname': 'UStaticMeshComponent'?? ?????? ?ƴմϴ?.
-[2023.01.08-22.16.15:337][141]CompilerResultsLog:   G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraFunctionLibrary.generated.h(20): note: 'UStaticMeshComponent' ?????? ?????Ͻʽÿ?.
-[2023.01.08-22.16.15:337][141]CompilerResultsLog:    G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Projectile_SkeletonArcherArrow.cpp(45) : error C2146: ???? ????: ';'??(??) 'GEngine' ?ĺ??? ?տ? ?????ϴ?.
-[2023.01.08-22.16.15:337][141]CompilerResultsLog:   [3/6] Module.UE4_Portfolio2_SL.cpp
-[2023.01.08-22.16.15:337][141]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(12): warning C5038: ?????? ???? 'APlayerCharacter::CurStamina'??(??) ?????? ???? 'APlayerCharacter::HPRatio' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.16.15:337][141]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(14): warning C5038: ?????? ???? 'APlayerCharacter::StaminaRatio'??(??) ?????? ???? 'APlayerCharacter::IsFight' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.16.15:337][141]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(18): warning C5038: ?????? ???? 'APlayerCharacter::ComboCnt'??(??) ?????? ???? 'APlayerCharacter::IsFall' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.16.15:337][141]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(21): warning C5038: ?????? ???? 'APlayerCharacter::LeftWeapon'??(??) ?????? ???? 'APlayerCharacter::AttackDamage' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.16.15:337][141]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(23): warning C5038: ?????? ???? 'APlayerCharacter::DefaultDamage'??(??) ?????? ???? 'APlayerCharacter::IsLockTargetExist' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.16.15:337][141]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(684): warning C4996: 'FCollisionQueryParams::FCollisionQueryParams': FCollisionQueryParams, to avoid ambiguity, please use other constructor and explicitly provide an FName parameter (not just a string literal) as the first parameter Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-[2023.01.08-22.16.15:337][141]LogMainFrame: MainFrame: Module compiling took 9.413 seconds
-[2023.01.08-22.16.15:342][141]Warning: HotReload failed, recompile failed
-[2023.01.08-22.16.40:608][297]Candidate modules for hot reload:
-[2023.01.08-22.16.40:608][297]  UE4_Portfolio2_SL
-[2023.01.08-22.16.40:608][297]Launching UnrealBuildTool... [G:/Unreal Engine/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UE4_Portfolio2_SL,7321 UE4_Portfolio2_SLEditor Win64 Development -Project="G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/UE4_Portfolio2_SL.uproject" "G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/UE4_Portfolio2_SL.uproject"  -IgnoreJunk]
-[2023.01.08-22.16.40:610][297]Warning: Starting HotReload took  0.0s.
-[2023.01.08-22.16.41:913][407]CompilerResultsLog: New page: 컴파일 - 2023. 1. 9. 오후 4:16:41
-[2023.01.08-22.16.41:913][407]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
-[2023.01.08-22.16.41:913][407]CompilerResultsLog: Building UE4_Portfolio2_SLEditor...
-[2023.01.08-22.16.41:913][407]CompilerResultsLog: Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2023.01.08-22.16.41:913][407]CompilerResultsLog: [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: Enemy_SkeletonArcher.cpp, Projectile_Base.cpp, Projectile_SkeletonArcherArrow.cpp
-[2023.01.08-22.16.41:913][407]CompilerResultsLog: [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: Projectile_SkeletonArcherArrow.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp
-[2023.01.08-22.16.41:913][407]CompilerResultsLog: Building 3 actions with 24 processes...
-[2023.01.08-22.16.41:913][407]CompilerResultsLog:   [1/3] UE4Editor-UE4_Portfolio2_SL-7321.lib
-[2023.01.08-22.16.41:913][407]CompilerResultsLog:      G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7321.lib ???̺귯?? ?? G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7321.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
-[2023.01.08-22.16.41:913][407]CompilerResultsLog:   [2/3] UE4Editor-UE4_Portfolio2_SL-7321.dll
-[2023.01.08-22.16.41:913][407]CompilerResultsLog:      G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7321.suppressed.lib ???̺귯?? ?? G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-7321.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
-[2023.01.08-22.16.41:913][407]CompilerResultsLog:   [3/3] UE4_Portfolio2_SLEditor.target
-[2023.01.08-22.16.41:913][407]CompilerResultsLog: Total time in Parallel executor: 0.60 seconds
-[2023.01.08-22.16.41:913][407]CompilerResultsLog: Total execution time: 1.23 seconds
-[2023.01.08-22.16.41:913][407]LogMainFrame: MainFrame: Module compiling took 1.307 seconds
-[2023.01.08-22.16.41:927][407]LogClass: EMONSTER_STATE HotReload.
-[2023.01.08-22.16.41:927][407]LogClass: EPLAYER_STATE HotReload.
-[2023.01.08-22.16.41:929][407]LogHotReload: Re-instancing Projectile_SkeletonArcherArrow after hot-reload.
-[2023.01.08-22.16.41:946][407]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UE4_Portfolio2_SL' in 0.0003 seconds. Added 38 classes and 2 folders.
-[2023.01.08-22.16.41:951][407]Display: HotReload successful (26 functions remapped  0 scriptstructs remapped)
-[2023.01.08-22.16.42:006][407]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0071 seconds. Added 3862 classes and 932 folders.
-[2023.01.08-22.16.42:006][407]Display: HotReload took  1.4s.
-[2023.01.08-22.16.42:936][510]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
-[2023.01.08-22.16.43:677][598]LogTemp: Repeating last play command: 선택된 뷰포트
-[2023.01.08-22.16.43:681][598]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2023.01.08-22.16.43:681][598]PIE: New page: PIE 세션: ThirdPersonExampleMap (2023. 1. 9. 오후 4:16:43)
-[2023.01.08-22.16.43:681][598]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2023.01.08-22.16.43:689][598]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008213s)
-[2023.01.08-22.16.43:690][598]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2023.01.08-22.16.43:690][598]LogPlayLevel: PIE: World Init took: (0.000796s)
-[2023.01.08-22.16.43:690][598]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.009095s)
-[2023.01.08-22.16.43:695][598]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
-[2023.01.08-22.16.43:695][598]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
-[2023.01.08-22.16.43:695][598]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2023.01.08-22.16.43:695][598]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2023.01.08-22.16.43:695][598]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2023.01.08-22.16.43:695][598]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2023.01.08-22.16.43:695][598]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2023.01.08-22.16.43:695][598]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2023.01.08-22.16.43:695][598]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2023.01.08-22.16.43:695][598]LogAudio: Display: AudioDevice MaxSources: 32
-[2023.01.08-22.16.43:695][598]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
-[2023.01.08-22.16.43:696][598]LogAudio: Display: Audio Reverb Plugin: None (built-in).
-[2023.01.08-22.16.43:696][598]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
-[2023.01.08-22.16.43:696][598]LogAudioMixer: Display: Initializing audio mixer.
-[2023.01.08-22.16.43:699][598]LogAudioMixer: Display: 0: FrontLeft
-[2023.01.08-22.16.43:699][598]LogAudioMixer: Display: 1: FrontRight
-[2023.01.08-22.16.43:725][598]LogAudioMixer: Display: Using Audio Device 스피커(Realtek(R) Audio)
-[2023.01.08-22.16.43:726][598]LogAudioMixer: Display: Initializing Sound Submixes...
-[2023.01.08-22.16.43:726][598]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2023.01.08-22.16.43:726][598]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2023.01.08-22.16.43:726][598]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2023.01.08-22.16.43:726][598]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
-[2023.01.08-22.16.43:726][598]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
-[2023.01.08-22.16.43:727][598]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
-[2023.01.08-22.16.43:727][598]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
-[2023.01.08-22.16.43:727][598]LogInit: FAudioDevice initialized.
-[2023.01.08-22.16.43:727][598]LogAudio: Display: Audio Device (ID: 4) registered with world 'ThirdPersonExampleMap'.
-[2023.01.08-22.16.43:734][598]LogLoad: Game class is 'UE4_Portfolio2_SLGameMode'
-[2023.01.08-22.16.43:735][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:735][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:735][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:735][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:735][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:735][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:735][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:735][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonWarrior_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:736][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:736][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:736][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:736][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:736][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:736][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:736][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:736][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:736][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:736][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:736][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:736][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:737][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:737][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:737][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:737][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_SkeletonArcher_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:738][598]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2023.01.09-07.16.43
-[2023.01.08-22.16.43:739][598]LogWorld: Bringing up level for play took: 0.004882
-[2023.01.08-22.16.43:739][598]LogOnline: OSS: Creating online subsystem instance for: :Context_6
-[2023.01.08-22.16.43:741][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:741][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:741][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:741][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:741][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:741][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:741][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:741][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:741][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:741][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:741][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:741][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_PlayerCharacter_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
-[2023.01.08-22.16.43:743][598]LogActor: Warning: Weapon_RustySword /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Weapon_RustySword_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.16.43:743][598]LogActor: Warning: Weapon_Default /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Weapon_Default_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.16.43:743][598]LogActor: Warning: Shield_Default /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Shield_Default_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.16.43:743][598]LogActor: Warning: Weapon_SkeletonArcherBow /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Weapon_SkeletonArcherBow_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.16.43:743][598]LogActor: Warning: Weapon_Default /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Weapon_Default_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.16.43:744][598]LogActor: Warning: Shield_Default /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.Shield_Default_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2023.01.08-22.16.43:744][598]PIE: 서버가 로그인했습니다.
-[2023.01.08-22.16.43:744][598]PIE: 에디터에서 플레이 총 시작 시간 0.064초입니다.
-[2023.01.08-22.16.50:434][326]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2023.01.08-22.16.51:227][414]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2023.01.08-22.16.51:604][457]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2023.01.08-22.16.52:142][520]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2023.01.08-22.16.52:423][552]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
-[2023.01.08-22.16.52:915][608]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
-[2023.01.08-22.16.53:264][645]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
-[2023.01.08-22.16.53:595][681]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
-[2023.01.08-22.16.53:880][713]LogEditorViewport: Clicking on Actor (LMB): Projectile_SkeletonArcherArrow (Projectile_SkeletonArcherArrow)
-[2023.01.08-22.17.01:899][531]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2023.01.08-22.17.01:899][531]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2023.01.08-22.17.01:900][531]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
-[2023.01.08-22.17.01:900][531]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2023.01.08-22.17.01:905][531]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2023.01.08-22.17.01:907][531]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2023.01.08-22.17.01:911][531]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2023.01.08-22.17.01:911][531]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
-[2023.01.08-22.17.01:912][531]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
-[2023.01.08-22.17.01:917][531]LogUObjectHash: Compacting FUObjectHashTables data took   0.81ms
-[2023.01.08-22.17.02:001][536]LogPlayLevel: Display: Destroying online subsystem :Context_6
-[2023.01.08-22.17.15:617][778]Candidate modules for hot reload:
-[2023.01.08-22.17.15:617][778]  UE4_Portfolio2_SL
-[2023.01.08-22.17.15:617][778]Launching UnrealBuildTool... [G:/Unreal Engine/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UE4_Portfolio2_SL,6289 UE4_Portfolio2_SLEditor Win64 Development -Project="G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/UE4_Portfolio2_SL.uproject" "G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/UE4_Portfolio2_SL.uproject"  -IgnoreJunk]
-[2023.01.08-22.17.15:620][778]Warning: Starting HotReload took  0.0s.
-[2023.01.08-22.17.25:077][823]CompilerResultsLog: New page: 컴파일 - 2023. 1. 9. 오후 4:17:25
-[2023.01.08-22.17.25:078][823]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
-[2023.01.08-22.17.25:078][823]CompilerResultsLog: Invalidating makefile for UE4_Portfolio2_SLEditor (working set of source files changed)
-[2023.01.08-22.17.25:078][823]CompilerResultsLog: Building UE4_Portfolio2_SLEditor...
-[2023.01.08-22.17.25:078][823]CompilerResultsLog: Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2023.01.08-22.17.25:078][823]CompilerResultsLog: [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: Enemy_SkeletonArcher.cpp, Projectile_SkeletonArcherArrow.cpp
-[2023.01.08-22.17.25:078][823]CompilerResultsLog: [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: Projectile_SkeletonArcherArrow.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp
-[2023.01.08-22.17.25:078][823]CompilerResultsLog: Building 4 actions with 24 processes...
-[2023.01.08-22.17.25:078][823]CompilerResultsLog:   [1/4] Module.UE4_Portfolio2_SL.cpp
-[2023.01.08-22.17.25:078][823]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(12): warning C5038: ?????? ???? 'APlayerCharacter::CurStamina'??(??) ?????? ???? 'APlayerCharacter::HPRatio' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.17.25:078][823]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(14): warning C5038: ?????? ???? 'APlayerCharacter::StaminaRatio'??(??) ?????? ???? 'APlayerCharacter::IsFight' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.17.25:078][823]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(18): warning C5038: ?????? ???? 'APlayerCharacter::ComboCnt'??(??) ?????? ???? 'APlayerCharacter::IsFall' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.17.25:078][823]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(21): warning C5038: ?????? ???? 'APlayerCharacter::LeftWeapon'??(??) ?????? ???? 'APlayerCharacter::AttackDamage' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.17.25:078][823]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(23): warning C5038: ?????? ???? 'APlayerCharacter::DefaultDamage'??(??) ?????? ???? 'APlayerCharacter::IsLockTargetExist' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.17.25:078][823]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(684): warning C4996: 'FCollisionQueryParams::FCollisionQueryParams': FCollisionQueryParams, to avoid ambiguity, please use other constructor and explicitly provide an FName parameter (not just a string literal) as the first parameter Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-[2023.01.08-22.17.25:078][823]CompilerResultsLog:   [2/4] UE4Editor-UE4_Portfolio2_SL-6289.lib
-[2023.01.08-22.17.25:078][823]CompilerResultsLog:      G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6289.lib ???̺귯?? ?? G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6289.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
-[2023.01.08-22.17.25:078][823]CompilerResultsLog:   [3/4] UE4Editor-UE4_Portfolio2_SL-6289.dll
-[2023.01.08-22.17.25:078][823]CompilerResultsLog:      G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6289.suppressed.lib ???̺귯?? ?? G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6289.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
-[2023.01.08-22.17.25:078][823]CompilerResultsLog:   [4/4] UE4_Portfolio2_SLEditor.target
-[2023.01.08-22.17.25:078][823]CompilerResultsLog: Total time in Parallel executor: 7.67 seconds
-[2023.01.08-22.17.25:078][823]CompilerResultsLog: Total execution time: 9.32 seconds
-[2023.01.08-22.17.25:078][823]LogMainFrame: MainFrame: Module compiling took 9.464 seconds
-[2023.01.08-22.17.25:094][823]LogClass: EMONSTER_STATE HotReload.
-[2023.01.08-22.17.25:094][823]LogClass: EPLAYER_STATE HotReload.
-[2023.01.08-22.17.25:095][823]LogHotReload: Re-instancing Projectile_SkeletonArcherArrow after hot-reload.
-[2023.01.08-22.17.25:113][823]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UE4_Portfolio2_SL' in 0.0003 seconds. Added 38 classes and 2 folders.
-[2023.01.08-22.17.25:118][823]Display: HotReload successful (26 functions remapped  0 scriptstructs remapped)
-[2023.01.08-22.17.25:165][823]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0076 seconds. Added 3862 classes and 932 folders.
-[2023.01.08-22.17.25:165][823]Display: HotReload took  9.6s.
-[2023.01.08-22.18.15:659][  3]Candidate modules for hot reload:
-[2023.01.08-22.18.15:659][  3]  UE4_Portfolio2_SL
-[2023.01.08-22.18.15:659][  3]Launching UnrealBuildTool... [G:/Unreal Engine/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UE4_Portfolio2_SL,2220 UE4_Portfolio2_SLEditor Win64 Development -Project="G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/UE4_Portfolio2_SL.uproject" "G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/UE4_Portfolio2_SL.uproject"  -IgnoreJunk]
-[2023.01.08-22.18.15:661][  3]Warning: Starting HotReload took  0.0s.
-[2023.01.08-22.18.25:347][525]CompilerResultsLog: New page: 컴파일 - 2023. 1. 9. 오후 4:18:25
-[2023.01.08-22.18.25:347][525]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
-[2023.01.08-22.18.25:347][525]CompilerResultsLog: Invalidating makefile for UE4_Portfolio2_SLEditor (working set of source files changed)
-[2023.01.08-22.18.25:347][525]CompilerResultsLog: Building UE4_Portfolio2_SLEditor...
-[2023.01.08-22.18.25:347][525]CompilerResultsLog: Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2023.01.08-22.18.25:347][525]CompilerResultsLog: [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: Enemy_SkeletonArcher.cpp, Projectile_Base.cpp, Projectile_SkeletonArcherArrow.cpp
-[2023.01.08-22.18.25:347][525]CompilerResultsLog: [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: Projectile_SkeletonArcherArrow.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp
-[2023.01.08-22.18.25:347][525]CompilerResultsLog: Building 5 actions with 24 processes...
-[2023.01.08-22.18.25:347][525]CompilerResultsLog:   [1/5] Projectile_Base.cpp
-[2023.01.08-22.18.25:347][525]CompilerResultsLog:   [2/5] Module.UE4_Portfolio2_SL.cpp
-[2023.01.08-22.18.25:347][525]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(12): warning C5038: ?????? ???? 'APlayerCharacter::CurStamina'??(??) ?????? ???? 'APlayerCharacter::HPRatio' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.18.25:347][525]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(14): warning C5038: ?????? ???? 'APlayerCharacter::StaminaRatio'??(??) ?????? ???? 'APlayerCharacter::IsFight' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.18.25:347][525]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(18): warning C5038: ?????? ???? 'APlayerCharacter::ComboCnt'??(??) ?????? ???? 'APlayerCharacter::IsFall' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.18.25:347][525]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(21): warning C5038: ?????? ???? 'APlayerCharacter::LeftWeapon'??(??) ?????? ???? 'APlayerCharacter::AttackDamage' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.18.25:347][525]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(23): warning C5038: ?????? ???? 'APlayerCharacter::DefaultDamage'??(??) ?????? ???? 'APlayerCharacter::IsLockTargetExist' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
-[2023.01.08-22.18.25:347][525]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(684): warning C4996: 'FCollisionQueryParams::FCollisionQueryParams': FCollisionQueryParams, to avoid ambiguity, please use other constructor and explicitly provide an FName parameter (not just a string literal) as the first parameter Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-[2023.01.08-22.18.25:347][525]CompilerResultsLog:   [3/5] UE4Editor-UE4_Portfolio2_SL-2220.lib
-[2023.01.08-22.18.25:347][525]CompilerResultsLog:      G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2220.lib ???̺귯?? ?? G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2220.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
-[2023.01.08-22.18.25:347][525]CompilerResultsLog:   [4/5] UE4Editor-UE4_Portfolio2_SL-2220.dll
-[2023.01.08-22.18.25:347][525]CompilerResultsLog:      G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2220.suppressed.lib ???̺귯?? ?? G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-2220.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
-[2023.01.08-22.18.25:347][525]CompilerResultsLog:   [5/5] UE4_Portfolio2_SLEditor.target
-[2023.01.08-22.18.25:347][525]CompilerResultsLog: Total time in Parallel executor: 7.93 seconds
-[2023.01.08-22.18.25:347][525]CompilerResultsLog: Total execution time: 9.61 seconds
-[2023.01.08-22.18.25:347][525]LogMainFrame: MainFrame: Module compiling took 9.690 seconds
-[2023.01.08-22.18.25:361][525]LogClass: EMONSTER_STATE HotReload.
-[2023.01.08-22.18.25:362][525]LogClass: EPLAYER_STATE HotReload.
-[2023.01.08-22.18.27:269][525]LogWindows: Error: === Critical error: ===
-[2023.01.08-22.18.27:269][525]LogWindows: Error: 
-[2023.01.08-22.18.27:269][525]LogWindows: Error: Fatal error!
-[2023.01.08-22.18.27:269][525]LogWindows: Error: 
-[2023.01.08-22.18.27:269][525]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x0000000000000098
-[2023.01.08-22.18.27:270][525]LogWindows: Error: 
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc9e595ae0 UE4Editor-Engine.dll!USceneComponent::SetupAttachment() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp:1750]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc2b64a2c2 UE4Editor-UE4_Portfolio2_SL-2220.dll!AProjectile_Base::AProjectile_Base() [G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Projectile_Base.cpp:16]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc2b64adbd UE4Editor-UE4_Portfolio2_SL-2220.dll!AProjectile_SkeletonArcherArrow::AProjectile_SkeletonArcherArrow() [G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Projectile_SkeletonArcherArrow.cpp:6]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc39443d23 UE4Editor-HotReload.dll!FHotReloadClassReinstancer::RecreateCDOAndSetupOldClassReinstancing() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.cpp:247]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc39434c90 UE4Editor-HotReload.dll!FHotReloadClassReinstancer::FHotReloadClassReinstancer() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.cpp:322]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc39439fe5 UE4Editor-HotReload.dll!FHotReloadClassReinstancer::Create() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReloadClassReinstancer.h:120]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc394462f3 UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClass() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1254]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc39446a99 UE4Editor-HotReload.dll!FHotReloadModule::ReinstanceClasses() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1244]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc3943ed16 UE4Editor-HotReload.dll!TBaseRawMethodDelegateInstance<0,FHotReloadModule,void __cdecl(void),FDefaultDelegateUserPolicy>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:469]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffcb80271c6 UE4Editor-CoreUObject.dll!UClassReplaceHotReloadClasses() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:845]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffcb8005422 UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:1008]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffcb7ecddc5 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance<void __cdecl(FName,bool),FDefaultDelegateUserPolicy>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:731]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc9d181bea UE4Editor-Core.dll!TMulticastDelegate<void __cdecl(FName,bool),FDefaultDelegateUserPolicy>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:955]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc9d1a15a3 UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:519]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc9d1a0618 UE4Editor-Core.dll!FModuleManager::LoadModule() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:353]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc3943b047 UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadInternal() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:799]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc39438fa7 UE4Editor-HotReload.dll!UE4Function_Private::TFunctionRefCaller<<lambda_d85446a946c3f6776c68ebfeb93e5785>,void __cdecl(TMap<FName,FString,FDefaultSetAllocator,TDefaultMapHashableKeyFuncs<FName,FString,0> > const &,bool,enum ECompilationResult::Type)>::Call() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Templates\Function.h:549]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc39439b6d UE4Editor-HotReload.dll!FHotReloadModule::CheckForFinishedModuleDLLCompile() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1863]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc3944c709 UE4Editor-HotReload.dll!FHotReloadModule::Tick() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1415]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffc9ceb1d93 UE4Editor-Core.dll!FTicker::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Containers\Ticker.cpp:95]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ff7cd49bca8 UE4Editor.exe!FEngineLoop::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:5132]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ff7cd4b0fcc UE4Editor.exe!GuardedMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Launch.cpp:178]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ff7cd4b10ba UE4Editor.exe!GuardedMainWrapper() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ff7cd4b40dd UE4Editor.exe!LaunchWindowsStartup() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:273]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ff7cd4c5984 UE4Editor.exe!WinMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:320]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ff7cd4c853a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffcefe97614 KERNEL32.DLL!UnknownFunction []
-[2023.01.08-22.18.27:270][525]LogWindows: Error: [Callstack] 0x00007ffcf1ec26a1 ntdll.dll!UnknownFunction []
-[2023.01.08-22.18.27:270][525]LogWindows: Error: 
-[2023.01.08-22.18.27:276][525]LogExit: Executing StaticShutdownAfterError
-[2023.01.08-22.18.27:278][525]LogWindows: FPlatformMisc::RequestExit(1)
-[2023.01.08-22.18.27:278][525]LogWindows: FPlatformMisc::RequestExitWithStatus(1, 3)
-[2023.01.08-22.18.27:278][525]LogCore: Engine exit requested (reason: Win RequestExit)
-[2023.01.08-22.18.27:284][525]Log file closed, 01/09/23 07:18:27

@@ -38,8 +38,10 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 	float tmp = FMath::FRandRange(0.0f, 1.0f);
 	OwnerComp.GetBlackboardComponent()->SetValueAsFloat(AAI_Base::PercentKey, tmp);
 
+
 	// 탐지 중심부
 	FVector Center = ControllingPawn->GetActorLocation();
+
 
 	TArray<FOverlapResult> OverlapResults;
 	// 제외사항(AI가 조종하는 캐릭터 본인)
@@ -56,7 +58,9 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 		CollisionQueryParam
 	);
 
+
 	bool IsTargetFind = false;
+
 
 	if (bResult == true) // 감지된 것이 있는지
 	{
@@ -92,10 +96,19 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 	// 플레이어가 감지되지 않았다면
 	if (IsTargetFind == false)
 	{
-		OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_Base::TargetKey, nullptr);
-		
-		ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = true;
-		ControllingPawn->GetCharacterMovement()->MaxWalkSpeed = 200.0f;
+		// 플레이어가 기록되어 있으면! (ex. 뒤잡으로 플레이어 감지)
+		if (OwnerComp.GetBlackboardComponent()->GetValueAsObject("Target") != nullptr)
+		{
+			//ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = false;
+			//ControllingPawn->GetCharacterMovement()->MaxWalkSpeed = 75.0f;
+		}
+		else
+		{
+			OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_Base::TargetKey, nullptr);
+
+			ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = true;
+			ControllingPawn->GetCharacterMovement()->MaxWalkSpeed = 200.0f;
+		}
 
 		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Target Is Not Exist"));
 	}

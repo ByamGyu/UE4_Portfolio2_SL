@@ -1,4 +1,5 @@
 #include "BTTask_FindPatrolPos.h"
+#include "AI_Base.h"
 #include "AI_SkeletonWarrior.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "NavigationSystem.h"
@@ -20,19 +21,22 @@ EBTNodeResult::Type UBTTask_FindPatrolPos::ExecuteTask(UBehaviorTreeComponent& O
 	// 빙의된 캐릭터가 없으면 실패
 	if(ControllingPawn == nullptr) return EBTNodeResult::Failed;
 
+
 	UNavigationSystemV1* NavSystem = UNavigationSystemV1::GetNavigationSystem(ControllingPawn->GetWorld());
 	// 내비게이션 시스템?이 없으면 실패
 	if(NavSystem == nullptr) return EBTNodeResult::Failed;
 
-	// AAI_SkeletonWarrior::HomePosKey 값을 가져옴
-	FVector Origin = OwnerComp.GetBlackboardComponent()->GetValueAsVector(AAI_SkeletonWarrior::HomePosKey);
+
+	// AAI_Base::HomePosKey 값을 가져옴
+	FVector Origin = OwnerComp.GetBlackboardComponent()->GetValueAsVector(AAI_Base::HomePosKey);
 	FNavLocation NextPatrol;
+
 
 	// 내비게이션 시스템에서 범위 내에 있는 랜덤 지역을 NextPartrol 변수에 넣어줌.
 	if (NavSystem->GetRandomPointInNavigableRadius(FVector::ZeroVector, 500.0f, NextPatrol))
 	{
-		// 사용중인 BB에서 AAI_SkeletonWarrior::PatrolPosKey에 NextPartrol값을 넣어줌
-		OwnerComp.GetBlackboardComponent()->SetValueAsVector(AAI_SkeletonWarrior::PatrolPosKey, NextPatrol.Location);
+		// 사용중인 BB에서 AAI_Base::PatrolPosKey에 NextPartrol값을 넣어줌
+		OwnerComp.GetBlackboardComponent()->SetValueAsVector(AAI_Base::PatrolPosKey, NextPatrol.Location);
 		return EBTNodeResult::Succeeded;
 	}
 

@@ -2,6 +2,7 @@
 #include "AI_Base.h"
 #include "PlayerCharacter.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "Enemy_Base.h"
 
 
 UBTTask_TurntoTarget::UBTTask_TurntoTarget()
@@ -25,9 +26,27 @@ EBTNodeResult::Type UBTTask_TurntoTarget::ExecuteTask(UBehaviorTreeComponent& Ow
 	LookVector.Z = 0.0f;
 
 	FRotator TargetRot = FRotationMatrix::MakeFromX(LookVector).Rotator();
-	// 서서히 회전함
-	pCharacter->SetActorRotation(FMath::RInterpTo(pCharacter->GetActorRotation(), TargetRot, GetWorld()->GetDeltaSeconds(), 3.0f));
+	
+	
+	AEnemy_Base* pEnemyCharacter = Cast<AEnemy_Base>(pCharacter);
+	if (pEnemyCharacter != nullptr)
+	{
+		// 처형당하는 상태일 때는 회전하지 못하게 함
+		// 가드브레이크 상태도 동일
+		if (pEnemyCharacter->GetState() == EMONSTER_STATE::EXECUTED
+			|| pEnemyCharacter->GetState() == EMONSTER_STATE::GUARD_BREAK)
+		{
+			// 회전하지 않음
+		}
+		else
+		{
+			// 서서히 회전함
+			// 처음 수치는 3.0f이었음
+			pCharacter->SetActorRotation(FMath::RInterpTo(pCharacter->GetActorRotation(), TargetRot, GetWorld()->GetDeltaSeconds(), 1.5f));
+		}
+	}
 
+	//FMath::RInterpConstantTo
 
 	return EBTNodeResult::Succeeded;
 }
