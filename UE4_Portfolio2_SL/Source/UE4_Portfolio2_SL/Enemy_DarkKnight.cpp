@@ -27,10 +27,12 @@ AEnemy_DarkKnight::AEnemy_DarkKnight()
 	AttackDamage = 10.0f;
 
 	RightWeaponClass = AWeapon_DarkKnightSword::StaticClass();
-	LeftWeaponClass = AShield_DarkKnightShield::StaticClass();
+	//LeftWeaponClass = AShield_DarkKnightShield::StaticClass();
 
 	//ExecutionAnimationNum = 2;
 	//ExecutionBackAnimationNum = 1;
+
+	Cur_EquipmentState = EEQUIPMENT_STATE::SWORD;
 
 
 	//// UI관련 체력바
@@ -55,17 +57,18 @@ void AEnemy_DarkKnight::BeginPlay()
 		}
 	}
 
-	FName LeftArmWeaponSocket(TEXT("LeftArm_Weapon"));
-	if (GetMesh()->DoesSocketExist(LeftArmWeaponSocket))
-	{
-		auto NewWeapon = GetWorld()->SpawnActor<AShield_DarkKnightShield>(LeftWeaponClass, FVector::ZeroVector, FRotator::ZeroRotator);
-		if (NewWeapon != nullptr)
-		{
-			LeftWeapon = NewWeapon;
-			NewWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, LeftArmWeaponSocket);
-			NewWeapon->SetOwner(this);
-		}
-	}
+	// 전용 장비(왼손) 들고있기
+	//FName LeftArmWeaponSocket(TEXT("LeftArm_Weapon"));
+	//if (GetMesh()->DoesSocketExist(LeftArmWeaponSocket))
+	//{
+	//	auto NewWeapon = GetWorld()->SpawnActor<AShield_DarkKnightShield>(LeftWeaponClass, FVector::ZeroVector, FRotator::ZeroRotator);
+	//	if (NewWeapon != nullptr)
+	//	{
+	//		LeftWeapon = NewWeapon;
+	//		NewWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, LeftArmWeaponSocket);
+	//		NewWeapon->SetOwner(this);
+	//	}
+	//}
 }
 
 void AEnemy_DarkKnight::Tick(float DeltaTime)

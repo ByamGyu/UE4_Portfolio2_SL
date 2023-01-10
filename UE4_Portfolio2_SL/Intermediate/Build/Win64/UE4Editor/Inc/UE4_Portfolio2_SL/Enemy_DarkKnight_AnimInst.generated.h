@@ -79,7 +79,31 @@ public: \
 	FORCEINLINE static uint32 __PPO__IsFight() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, IsFight); } \
 	FORCEINLINE static uint32 __PPO__IsAttacking() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, IsAttacking); } \
 	FORCEINLINE static uint32 __PPO__KnockDown_Time() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, KnockDown_Time); } \
-	FORCEINLINE static uint32 __PPO__Cur_State() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Cur_State); }
+	FORCEINLINE static uint32 __PPO__Cur_State() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Cur_State); } \
+	FORCEINLINE static uint32 __PPO__Cur_EquipmentState() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Cur_EquipmentState); } \
+	FORCEINLINE static uint32 __PPO__Execute1() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Execute1); } \
+	FORCEINLINE static uint32 __PPO__Execute2() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Execute2); } \
+	FORCEINLINE static uint32 __PPO__Executed_FalldownFront() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Executed_FalldownFront); } \
+	FORCEINLINE static uint32 __PPO__Executed_FalldownBack() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Executed_FalldownBack); } \
+	FORCEINLINE static uint32 __PPO__GuardBreak_GS() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, GuardBreak_GS); } \
+	FORCEINLINE static uint32 __PPO__GuardBreak_SS() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, GuardBreak_SS); } \
+	FORCEINLINE static uint32 __PPO__Attack_GS_ChargedCombo() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Attack_GS_ChargedCombo); } \
+	FORCEINLINE static uint32 __PPO__Attack_GS_HandAndSwordSwing() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Attack_GS_HandAndSwordSwing); } \
+	FORCEINLINE static uint32 __PPO__Attack_GS_RunningAttackSimple() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Attack_GS_RunningAttackSimple); } \
+	FORCEINLINE static uint32 __PPO__Attack_GS_RunningAttackWithAOE() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Attack_GS_RunningAttackWithAOE); } \
+	FORCEINLINE static uint32 __PPO__Attack_GS_SwingAndSlam() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Attack_GS_SwingAndSlam); } \
+	FORCEINLINE static uint32 __PPO__Attack_GS_Uppercut() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Attack_GS_Uppercut); } \
+	FORCEINLINE static uint32 __PPO__Attack_SS_Combo1() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Attack_SS_Combo1); } \
+	FORCEINLINE static uint32 __PPO__Attack_SS_Combo2() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Attack_SS_Combo2); } \
+	FORCEINLINE static uint32 __PPO__Attack_SS_Combo3() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Attack_SS_Combo3); } \
+	FORCEINLINE static uint32 __PPO__Attack_SS_JumpAttack() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Attack_SS_JumpAttack); } \
+	FORCEINLINE static uint32 __PPO__Hit_GS_F() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Hit_GS_F); } \
+	FORCEINLINE static uint32 __PPO__Hit_GS_B() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Hit_GS_B); } \
+	FORCEINLINE static uint32 __PPO__Hit_SS_F() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Hit_SS_F); } \
+	FORCEINLINE static uint32 __PPO__Hit_SS_B() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Hit_SS_B); } \
+	FORCEINLINE static uint32 __PPO__Boss_Battle_Entrance() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Boss_Battle_Entrance); } \
+	FORCEINLINE static uint32 __PPO__Idle_To_Combat() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Idle_To_Combat); } \
+	FORCEINLINE static uint32 __PPO__Combat_To_Idle() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Combat_To_Idle); }
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_DarkKnight_AnimInst_h_10_PROLOG

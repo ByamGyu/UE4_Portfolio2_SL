@@ -13,10 +13,69 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodedefine() {}
 // Cross Module References
-	UE4_PORTFOLIO2_SL_API UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE();
+	UE4_PORTFOLIO2_SL_API UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EEQUIPMENT_STATE();
 	UPackage* Z_Construct_UPackage__Script_UE4_Portfolio2_SL();
+	UE4_PORTFOLIO2_SL_API UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE();
 	UE4_PORTFOLIO2_SL_API UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE();
 // End Cross Module References
+	static UEnum* EEQUIPMENT_STATE_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_UE4_Portfolio2_SL_EEQUIPMENT_STATE, Z_Construct_UPackage__Script_UE4_Portfolio2_SL(), TEXT("EEQUIPMENT_STATE"));
+		}
+		return Singleton;
+	}
+	template<> UE4_PORTFOLIO2_SL_API UEnum* StaticEnum<EEQUIPMENT_STATE>()
+	{
+		return EEQUIPMENT_STATE_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EEQUIPMENT_STATE(EEQUIPMENT_STATE_StaticEnum, TEXT("/Script/UE4_Portfolio2_SL"), TEXT("EEQUIPMENT_STATE"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EEQUIPMENT_STATE_Hash() { return 2598169571U; }
+	UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EEQUIPMENT_STATE()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_UE4_Portfolio2_SL();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EEQUIPMENT_STATE"), 0, Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EEQUIPMENT_STATE_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "EEQUIPMENT_STATE::NONE", (int64)EEQUIPMENT_STATE::NONE },
+				{ "EEQUIPMENT_STATE::SWORD", (int64)EEQUIPMENT_STATE::SWORD },
+				{ "EEQUIPMENT_STATE::SWORD_AND_SHIELD", (int64)EEQUIPMENT_STATE::SWORD_AND_SHIELD },
+				{ "EEQUIPMENT_STATE::GREATSWORD", (int64)EEQUIPMENT_STATE::GREATSWORD },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "BlueprintType", "true" },
+				{ "GREATSWORD.Name", "EEQUIPMENT_STATE::GREATSWORD" },
+				{ "ModuleRelativePath", "define.h" },
+				{ "NONE.Name", "EEQUIPMENT_STATE::NONE" },
+				{ "SWORD.Name", "EEQUIPMENT_STATE::SWORD" },
+				{ "SWORD_AND_SHIELD.Name", "EEQUIPMENT_STATE::SWORD_AND_SHIELD" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_UE4_Portfolio2_SL,
+				nullptr,
+				"EEQUIPMENT_STATE",
+				"EEQUIPMENT_STATE",
+				Enumerators,
+				UE_ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				EEnumFlags::None,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 	static UEnum* EMONSTER_STATE_StaticEnum()
 	{
 		static UEnum* Singleton = nullptr;

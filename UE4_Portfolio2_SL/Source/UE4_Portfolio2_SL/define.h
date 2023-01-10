@@ -55,3 +55,12 @@ enum class EMONSTER_STATE : uint8
 	EXECUTION,
 	EXECUTED
 };
+
+UENUM(BlueprintType)
+enum class EEQUIPMENT_STATE : uint8
+{
+	NONE,
+	SWORD,
+	SWORD_AND_SHIELD,
+	GREATSWORD
+};

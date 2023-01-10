@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{9FFDF710-A374-4C37-82B0-71E3FA57B1A9}</UniqueIdentifier>
+      <UniqueIdentifier>{1D09F43D-EB38-47CC-A17A-8C47B9C3353F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{F37F5D94-B1F3-45D0-8AC1-9595E25828C2}</UniqueIdentifier>
+      <UniqueIdentifier>{582FBD4E-96E5-49D3-8B61-8515F43416EB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{78E361A2-92FB-437B-9BCA-DC521BD12880}</UniqueIdentifier>
+      <UniqueIdentifier>{0D9FED87-97E0-4236-924D-F0BFA4EEBCEC}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\AI_Base.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
@@ -279,6 +279,12 @@
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\Weapon_Common.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Weapon_DarkKnightGreatSword.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\Weapon_DarkKnightGreatSword.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\Weapon_DarkKnightSword.cpp">
