@@ -103,7 +103,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__Hit_SS_B() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Hit_SS_B); } \
 	FORCEINLINE static uint32 __PPO__Boss_Battle_Entrance() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Boss_Battle_Entrance); } \
 	FORCEINLINE static uint32 __PPO__Idle_To_Combat() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Idle_To_Combat); } \
-	FORCEINLINE static uint32 __PPO__Combat_To_Idle() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Combat_To_Idle); }
+	FORCEINLINE static uint32 __PPO__Combat_To_Idle() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Combat_To_Idle); } \
+	FORCEINLINE static uint32 __PPO__Boss_Death() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Boss_Death); }
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_DarkKnight_AnimInst_h_10_PROLOG

@@ -2251,3 +2251,854 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2023.01.10-19.05.59:465][356]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
 [2023.01.10-19.05.59:515][358]LogPlayLevel: Display: Destroying online subsystem :Context_70
 [2023.01.10-19.06.02:853][747]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
+[2023.01.10-19.06.49:733][408]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_SkeletonWarrior/Animation_Montages/Anim_attackstand_01_Montage.Anim_attackstand_01_Montage
+[2023.01.10-19.06.49:737][408]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_63:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.06.53:370][766]LogSlate: Window 'Anim_attackstand_01_Montage' being destroyed
+[2023.01.10-19.06.53:394][766]LogWorld: UWorld::CleanupWorld for World_63, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.06.53:394][766]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.06.53:429][766]LogWorld: UWorld::CleanupWorld for World_64, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.06.53:429][766]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.07.16:204][848]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Skeleton_Animations/animations/Anim_defend_hit_02.Anim_defend_hit_02
+[2023.01.10-19.07.16:208][848]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_65:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.07.16:512][848]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimMontage
+[2023.01.10-19.07.18:399][ 53]LogSlate: Window 'Anim_defend_hit_02' being destroyed
+[2023.01.10-19.07.18:444][ 53]LogWorld: UWorld::CleanupWorld for World_65, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.07.18:444][ 53]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.07.18:453][ 53]LogWorld: UWorld::CleanupWorld for World_67, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.07.18:453][ 53]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.07.18:484][ 53]LogWorld: UWorld::CleanupWorld for World_66, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.07.18:484][ 53]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.07.22:013][320]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Skeleton_Animations/animations/Anim_guardandattackmove_01.Anim_guardandattackmove_01
+[2023.01.10-19.07.22:017][320]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_68:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.07.22:343][320]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimMontage
+[2023.01.10-19.07.28:202][996]LogSlate: Window 'Anim_guardandattackmove_01' being destroyed
+[2023.01.10-19.07.28:234][996]LogWorld: UWorld::CleanupWorld for World_68, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.07.28:234][996]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.07.28:241][996]LogWorld: UWorld::CleanupWorld for World_70, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.07.28:241][996]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.07.28:279][996]LogWorld: UWorld::CleanupWorld for World_69, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.07.28:279][996]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.07.29:540][138]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2023.01.10-19.13.00:455][279]LogAssetEditorSubsystem: Opening Asset editor for AnimBlueprint /Game/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.ABP_DarkKnight
+[2023.01.10-19.13.00:469][279]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_72:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.13.00:469][279]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.13.01:147][297]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.13.01:356][322]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.13.01:531][343]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.13.01:705][364]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.13.01:907][385]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.13.02:082][406]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.13.02:257][427]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.13.21:647][461]BlueprintLog: New page: ABP_DarkKnight 컴파일
+[2023.01.10-19.13.21:659][461]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.13.21:659][461]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.13.21:659][461]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.13.21:660][461]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.13.21:676][461]LogUObjectHash: Compacting FUObjectHashTables data took   2.33ms
+[2023.01.10-19.13.22:120][504]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/ABP_DarkKnightBAA88C55442774B86F03FC9390CF6820.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.uasset'
+[2023.01.10-19.13.22:131][504]AssetCheck: New page: 에셋 저장:  ABP_DarkKnight
+[2023.01.10-19.13.22:131][504]LogContentValidation: Display: AnimBlueprint /Game/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.ABP_DarkKnight 유효성 검사 중
+[2023.01.10-19.15.05:744][245]BlueprintLog: New page: ABP_DarkKnight 컴파일
+[2023.01.10-19.15.05:758][245]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.15.05:758][245]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.15.05:758][245]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.15.05:758][245]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.15.05:758][245]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.15.05:758][245]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.15.05:758][245]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.15.05:758][245]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.15.05:758][245]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.15.05:759][245]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.15.05:759][245]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.15.05:759][245]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.15.05:778][245]LogUObjectHash: Compacting FUObjectHashTables data took   2.06ms
+[2023.01.10-19.15.06:312][300]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/ABP_DarkKnight75E211A447FE8644C39CDD92CD32CB71.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.uasset'
+[2023.01.10-19.15.06:321][300]AssetCheck: New page: 에셋 저장:  ABP_DarkKnight
+[2023.01.10-19.15.06:321][300]LogContentValidation: Display: AnimBlueprint /Game/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.ABP_DarkKnight 유효성 검사 중
+[2023.01.10-19.16.02:131][ 42]BlueprintLog: New page: ABP_DarkKnight 컴파일
+[2023.01.10-19.16.02:145][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:145][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:145][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:145][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:145][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:145][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:146][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:146][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:146][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:146][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:146][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:146][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:146][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:146][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:146][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:146][ 42]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.16.02:165][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
+[2023.01.10-19.16.02:655][ 89]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/ABP_DarkKnight41D319614DAA8CBB11FAF6AFFB472382.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.uasset'
+[2023.01.10-19.16.02:666][ 89]AssetCheck: New page: 에셋 저장:  ABP_DarkKnight
+[2023.01.10-19.16.02:666][ 89]LogContentValidation: Display: AnimBlueprint /Game/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.ABP_DarkKnight 유효성 검사 중
+[2023.01.10-19.16.23:258][193]LogUObjectHash: Compacting FUObjectHashTables data took   1.98ms
+[2023.01.10-19.16.24:090][193]LogSlate: Window '콘텐츠 저장' being destroyed
+[2023.01.10-19.16.24:235][193]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/ABP_DarkKnight6DBD904C4A2BAEC141039A8BC1EE6B60.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.uasset'
+[2023.01.10-19.16.24:243][193]AssetCheck: New page: 에셋 저장:  ABP_DarkKnight
+[2023.01.10-19.16.24:243][193]LogContentValidation: Display: AnimBlueprint /Game/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.ABP_DarkKnight 유효성 검사 중
+[2023.01.10-19.16.52:053][106]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Sword_and_Shield/Animations/Sequence/08_Hit/Idle/Hit_Death_Seq.Hit_Death_Seq
+[2023.01.10-19.16.52:139][106]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Sword_and_Shield/Animations/Sequence/08_Hit/Idle/Hit_Death_Seq.Hit_Death_Seq
+[2023.01.10-19.16.52:209][106]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_74:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.16.52:502][106]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.16.56:160][514]LogSlate: Window 'Hit_Death_Seq' being destroyed
+[2023.01.10-19.16.56:214][514]LogWorld: UWorld::CleanupWorld for World_74, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.16.56:214][514]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.16.56:221][514]LogWorld: UWorld::CleanupWorld for World_76, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.16.56:221][514]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.16.56:254][514]LogWorld: UWorld::CleanupWorld for World_75, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.16.56:254][514]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.03:089][ 97]LogContentBrowser: Verbose: The majority of assets in the view are of type: Skeleton
+[2023.01.10-19.17.04:983][279]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Hit_Death_Seq.Hit_Death_Seq
+[2023.01.10-19.17.04:983][279]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Hit_Death_Seq.Hit_Death_Seq
+[2023.01.10-19.17.04:989][279]LogSlate: Window '스켈레톤 선택' being destroyed
+[2023.01.10-19.17.04:992][279]LogWorld: UWorld::CleanupWorld for World_78, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.04:993][279]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.05:001][279]LogWorld: UWorld::CleanupWorld for World_77, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.05:001][279]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.05:049][280]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Hit_Death_Seq.Hit_Death_Seq
+[2023.01.10-19.17.12:917][115]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Sword_and_Shield/Animations/Sequence/08_Hit/Combat/Hit_Combat_Death_Seq.Hit_Combat_Death_Seq
+[2023.01.10-19.17.12:921][115]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_79:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.17.13:122][115]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.17.16:532][475]LogWorld: UWorld::CleanupWorld for World_79, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.16:532][475]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.16:540][475]LogWorld: UWorld::CleanupWorld for World_81, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.16:540][475]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.16:574][475]LogWorld: UWorld::CleanupWorld for World_80, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.16:574][475]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.24:016][341]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Sword_and_Shield/Animations/Sequence/08_Hit/Combat/Hit_Combat_Large_Death_Seq.Hit_Combat_Large_Death_Seq
+[2023.01.10-19.17.24:020][341]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_82:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.17.24:268][341]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.17.26:712][609]LogWorld: UWorld::CleanupWorld for World_82, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.26:712][609]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.26:719][609]LogWorld: UWorld::CleanupWorld for World_84, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.26:719][609]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.26:753][609]LogWorld: UWorld::CleanupWorld for World_83, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.26:753][609]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.31:258][ 65]LogContentBrowser: Verbose: The majority of assets in the view are of type: Skeleton
+[2023.01.10-19.17.32:948][209]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Hit_Combat_Death_Seq.Hit_Combat_Death_Seq
+[2023.01.10-19.17.32:948][209]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Hit_Combat_Death_Seq.Hit_Combat_Death_Seq
+[2023.01.10-19.17.32:955][209]LogSlate: Window '스켈레톤 선택' being destroyed
+[2023.01.10-19.17.32:958][209]LogWorld: UWorld::CleanupWorld for World_86, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.32:958][209]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.32:968][209]LogWorld: UWorld::CleanupWorld for World_85, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.32:968][209]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.33:018][210]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Hit_Combat_Death_Seq.Hit_Combat_Death_Seq
+[2023.01.10-19.17.34:854][358]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2023.01.10-19.17.35:543][358]LogSlate: Window '콘텐츠 저장' being destroyed
+[2023.01.10-19.17.35:582][358]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Hit_Combat_Death_SeqE3F4EB64492B724BBD895AB5E8457852.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/Hit_Combat_Death_Seq.uasset'
+[2023.01.10-19.17.35:590][358]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Hit_Death_Seq" FILE="../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/Hit_Death_Seq.uasset" SILENT=true
+[2023.01.10-19.17.35:596][358]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Hit_Death_SeqF3134584404A3C230FEC6E8967C918C1.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/Hit_Death_Seq.uasset'
+[2023.01.10-19.17.35:599][358]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/SK_Mannequin_Skeleton89D382E849CD0DA3D83E67BD5B5186EC.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/Fallen_Knight/Mesh/SK_Mannequin_Skeleton.uasset'
+[2023.01.10-19.17.35:603][358]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/UE4_Mannequin_Skeleton8D19AD394B5B683DF8AEA4B5D273CDD3.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/Sword_and_Shield/Demo/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.uasset'
+[2023.01.10-19.17.35:618][358]AssetCheck: New page: 에셋 저장:  다수의 에셋
+[2023.01.10-19.17.35:618][358]LogContentValidation: Display: Skeleton /Game/Fallen_Knight/Mesh/SK_Mannequin_Skeleton.SK_Mannequin_Skeleton 유효성 검사 중
+[2023.01.10-19.17.35:618][358]LogContentValidation: Display: AnimSequence /Game/Hit_Combat_Death_Seq.Hit_Combat_Death_Seq 유효성 검사 중
+[2023.01.10-19.17.35:618][358]LogContentValidation: Display: AnimSequence /Game/Hit_Death_Seq.Hit_Death_Seq 유효성 검사 중
+[2023.01.10-19.17.35:618][358]LogContentValidation: Display: Skeleton /Game/Sword_and_Shield/Demo/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton 유효성 검사 중
+[2023.01.10-19.17.36:423][430]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Hit_Combat_Death_Seq.Hit_Combat_Death_Seq
+[2023.01.10-19.17.36:433][430]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_87:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.17.36:791][430]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.17.37:164][454]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.17.37:339][475]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.17.37:572][503]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.17.37:748][524]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.17.37:923][545]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.17.39:936][774]LogSlate: Window 'Hit_Combat_Death_Seq' being destroyed
+[2023.01.10-19.17.39:964][774]LogWorld: UWorld::CleanupWorld for World_87, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.39:964][774]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.39:972][774]LogWorld: UWorld::CleanupWorld for World_89, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.39:972][774]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.40:002][774]LogWorld: UWorld::CleanupWorld for World_88, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.40:002][774]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.40:717][850]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Hit_Death_Seq.Hit_Death_Seq
+[2023.01.10-19.17.40:727][850]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_90:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.17.41:055][850]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.17.41:376][874]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.17.41:552][895]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.17.41:785][923]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.17.41:960][944]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.17.42:135][965]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.17.43:906][171]LogSlate: Window 'Hit_Death_Seq' being destroyed
+[2023.01.10-19.17.43:933][171]LogWorld: UWorld::CleanupWorld for World_90, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.43:933][171]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.43:941][171]LogWorld: UWorld::CleanupWorld for World_92, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.43:941][171]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.43:973][171]LogWorld: UWorld::CleanupWorld for World_91, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.17.43:973][171]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.17.46:037][346]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2023.01.10-19.17.46:834][346]LogSlate: Window 'Delete Assets' being destroyed
+[2023.01.10-19.17.46:879][346]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/Hit_Death_Seq.Hit_Death_Seq
+[2023.01.10-19.17.48:843][346]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2023.01.10-19.17.48:860][346]LogUObjectHash: Compacting FUObjectHashTables data took   1.48ms
+[2023.01.10-19.17.48:873][346]LogUObjectHash: Compacting FUObjectHashTables data took   0.47ms
+[2023.01.10-19.17.49:868][444]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2023.01.10-19.18.28:089][206]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/RootMotion/Sword_Death_L.Sword_Death_L
+[2023.01.10-19.18.28:188][206]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SnSAnimsetPro/Animations/RootMotion/Sword_Death_L.Sword_Death_L
+[2023.01.10-19.18.28:258][206]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_93:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.18.28:514][206]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.18.31:999][603]LogSlate: Window 'Sword_Death_L' being destroyed
+[2023.01.10-19.18.32:044][603]LogWorld: UWorld::CleanupWorld for World_93, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.18.32:044][603]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.18.32:052][603]LogWorld: UWorld::CleanupWorld for World_95, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.18.32:052][603]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.18.32:087][603]LogWorld: UWorld::CleanupWorld for World_94, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.18.32:087][603]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.18.32:673][631]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/SnSAnimsetPro/Animations/RootMotion/Sword_Death_R.Sword_Death_R
+[2023.01.10-19.18.32:736][631]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SnSAnimsetPro/Animations/RootMotion/Sword_Death_R.Sword_Death_R
+[2023.01.10-19.18.32:740][631]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_96:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.18.33:016][631]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.18.36:327][  5]LogSlate: Window 'Sword_Death_R' being destroyed
+[2023.01.10-19.18.36:374][  5]LogWorld: UWorld::CleanupWorld for World_96, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.18.36:374][  5]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.18.36:382][  5]LogWorld: UWorld::CleanupWorld for World_98, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.18.36:382][  5]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.18.36:413][  5]LogWorld: UWorld::CleanupWorld for World_97, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.18.36:413][  5]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.01:893][741]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ARPG_Ninja/Animations/ARPG_Ninja_Anim_UE_Death.ARPG_Ninja_Anim_UE_Death
+[2023.01.10-19.19.01:959][741]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_99:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.19.02:215][741]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.19.04:196][955]LogSlate: Window 'ARPG_Ninja_Anim_UE_Death' being destroyed
+[2023.01.10-19.19.04:231][955]LogWorld: UWorld::CleanupWorld for World_99, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.04:231][955]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.04:238][955]LogWorld: UWorld::CleanupWorld for World_101, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.04:239][955]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.04:279][955]LogWorld: UWorld::CleanupWorld for World_100, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.04:279][955]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.05:099][  7]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ARPG_Ninja/Animations/ARPG_Ninja_Anim_UE_Death2.ARPG_Ninja_Anim_UE_Death2
+[2023.01.10-19.19.05:103][  7]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_102:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.19.05:406][  7]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.19.07:442][227]LogSlate: Window 'ARPG_Ninja_Anim_UE_Death2' being destroyed
+[2023.01.10-19.19.07:473][227]LogWorld: UWorld::CleanupWorld for World_102, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.07:473][227]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.07:481][227]LogWorld: UWorld::CleanupWorld for World_104, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.07:481][227]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.07:516][227]LogWorld: UWorld::CleanupWorld for World_103, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.07:516][227]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.08:231][286]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ARPG_Ninja/Animations/ARPG_Ninja_Anim_UE_Death_Airborne_End.ARPG_Ninja_Anim_UE_Death_Airborne_End
+[2023.01.10-19.19.08:235][286]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_105:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.19.08:532][286]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.19.10:310][477]LogSlate: Window 'ARPG_Ninja_Anim_UE_Death_Airborne_End' being destroyed
+[2023.01.10-19.19.10:334][477]LogWorld: UWorld::CleanupWorld for World_105, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.10:334][477]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.10:342][477]LogWorld: UWorld::CleanupWorld for World_107, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.10:342][477]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.10:377][477]LogWorld: UWorld::CleanupWorld for World_106, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.10:377][477]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.11:349][548]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ARPG_Ninja/Animations/ARPG_Ninja_Anim_UE_Death_Airborne_Mid.ARPG_Ninja_Anim_UE_Death_Airborne_Mid
+[2023.01.10-19.19.11:354][548]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_108:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.19.11:650][548]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.19.12:823][668]LogSlate: Window 'ARPG_Ninja_Anim_UE_Death_Airborne_Mid' being destroyed
+[2023.01.10-19.19.12:853][668]LogWorld: UWorld::CleanupWorld for World_108, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.12:853][668]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.12:861][668]LogWorld: UWorld::CleanupWorld for World_110, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.12:861][668]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.12:893][668]LogWorld: UWorld::CleanupWorld for World_109, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.12:893][668]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.13:600][731]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ARPG_Ninja/Animations/ARPG_Ninja_Anim_UE_Death_Airborne_Start.ARPG_Ninja_Anim_UE_Death_Airborne_Start
+[2023.01.10-19.19.13:604][731]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_111:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.19.13:937][731]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.19.15:267][862]LogSlate: Window 'ARPG_Ninja_Anim_UE_Death_Airborne_Start' being destroyed
+[2023.01.10-19.19.15:303][862]LogWorld: UWorld::CleanupWorld for World_111, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.15:303][862]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.15:311][862]LogWorld: UWorld::CleanupWorld for World_113, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.15:311][862]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.15:346][862]LogWorld: UWorld::CleanupWorld for World_112, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.15:346][862]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.17:450][ 86]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ARPG_Ninja/Animations/ARPG_Ninja_Anim_UE_Executed_Death.ARPG_Ninja_Anim_UE_Executed_Death
+[2023.01.10-19.19.17:454][ 86]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_114:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.19.17:742][ 86]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.19.19:764][301]LogSlate: Window 'ARPG_Ninja_Anim_UE_Executed_Death' being destroyed
+[2023.01.10-19.19.19:803][301]LogWorld: UWorld::CleanupWorld for World_114, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.19:803][301]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.19:811][301]LogWorld: UWorld::CleanupWorld for World_116, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.19:811][301]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.19:847][301]LogWorld: UWorld::CleanupWorld for World_115, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.19:847][301]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.20:632][366]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ARPG_Ninja/Animations/ARPG_Ninja_Anim_UE_Hit_knockdown_Death.ARPG_Ninja_Anim_UE_Hit_knockdown_Death
+[2023.01.10-19.19.20:636][366]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_117:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.19.20:932][366]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.19.27:981][185]LogSlate: Window 'ARPG_Ninja_Anim_UE_Hit_knockdown_Death' being destroyed
+[2023.01.10-19.19.28:016][185]LogWorld: UWorld::CleanupWorld for World_117, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.28:016][185]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.28:024][185]LogWorld: UWorld::CleanupWorld for World_119, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.28:024][185]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.28:061][185]LogWorld: UWorld::CleanupWorld for World_118, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.28:061][185]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.30:532][416]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ARPG_Ninja/Animations/ARPG_Ninja_Anim_UE_Executed_B_Death.ARPG_Ninja_Anim_UE_Executed_B_Death
+[2023.01.10-19.19.30:536][416]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_120:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.19.30:891][416]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.19.33:491][704]LogSlate: Window 'ARPG_Ninja_Anim_UE_Executed_B_Death' being destroyed
+[2023.01.10-19.19.33:524][704]LogWorld: UWorld::CleanupWorld for World_120, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.33:524][704]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.33:532][704]LogWorld: UWorld::CleanupWorld for World_122, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.33:532][704]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.33:568][704]LogWorld: UWorld::CleanupWorld for World_121, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.33:568][704]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.34:985][846]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/ARPG_Ninja/Animations/ARPG_Ninja_Anim_UE_Hit_knockdown_Death.ARPG_Ninja_Anim_UE_Hit_knockdown_Death
+[2023.01.10-19.19.34:989][846]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_123:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.19.35:298][846]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.19.41:935][577]LogSlate: Window 'ARPG_Ninja_Anim_UE_Hit_knockdown_Death' being destroyed
+[2023.01.10-19.19.41:973][577]LogWorld: UWorld::CleanupWorld for World_123, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.41:973][577]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.41:981][577]LogWorld: UWorld::CleanupWorld for World_125, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.41:981][577]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.42:013][577]LogWorld: UWorld::CleanupWorld for World_124, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.42:013][577]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.51:216][561]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Hit_Combat_Death_Seq.Hit_Combat_Death_Seq
+[2023.01.10-19.19.51:227][561]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_126:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.19.51:549][561]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.19.59:543][434]LogSlate: Window 'Hit_Combat_Death_Seq' being destroyed
+[2023.01.10-19.19.59:573][434]LogWorld: UWorld::CleanupWorld for World_126, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.59:573][434]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.59:581][434]LogWorld: UWorld::CleanupWorld for World_128, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.59:581][434]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.19.59:617][434]LogWorld: UWorld::CleanupWorld for World_127, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.19.59:617][434]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.20.05:265][999]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Hit_Combat_Death_Seq.Hit_Combat_Death_Seq
+[2023.01.10-19.20.05:275][999]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_129:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.20.05:599][999]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2023.01.10-19.20.05:913][ 21]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.20.06:097][ 43]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.20.06:331][ 71]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.20.06:506][ 92]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.20.06:681][113]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.20.06:847][133]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.20.12:199][738]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Hit_Combat_Death_Seq5735B89C4448CCD20D72B791A464D376.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/Hit_Combat_Death_Seq.uasset'
+[2023.01.10-19.20.12:207][738]AssetCheck: New page: 에셋 저장:  Hit_Combat_Death_Seq
+[2023.01.10-19.20.12:207][738]LogContentValidation: Display: AnimSequence /Game/Hit_Combat_Death_Seq.Hit_Combat_Death_Seq 유효성 검사 중
+[2023.01.10-19.20.12:687][788]LogSlate: Window 'Hit_Combat_Death_Seq' being destroyed
+[2023.01.10-19.20.12:713][788]LogWorld: UWorld::CleanupWorld for World_129, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.20.12:713][788]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.20.12:721][788]LogWorld: UWorld::CleanupWorld for World_131, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.20.12:721][788]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.20.12:753][788]LogWorld: UWorld::CleanupWorld for World_130, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.20.12:753][788]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.20.23:697][988]LogContentBrowser: Deferred new asset file creation: Hit_Combat_Death_Seq_Montage
+[2023.01.10-19.20.23:714][988]LogContentBrowser: Creating deferred item: Hit_Combat_Death_Seq_Montage
+[2023.01.10-19.20.24:138][ 30]LogContentBrowser: Attempting asset rename: Hit_Combat_Death_Seq_Montage -> Hit_Combat_Death_Seq_Montage
+[2023.01.10-19.20.24:141][ 30]LogContentBrowser: End creating deferred item Hit_Combat_Death_Seq_Montage
+[2023.01.10-19.20.29:349][487]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Hit_Combat_Death_Seq_Montage37116ADD40747792C4D9BA952C36844F.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Death_Seq_Montage.uasset'
+[2023.01.10-19.20.29:362][487]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Hit_Combat_Death_Seq8A58884E40FBED2A01AA4CBA3A098180.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Death_Seq.uasset'
+[2023.01.10-19.20.29:462][487]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2023.01.10-19.20.29:487][487]LogUObjectHash: Compacting FUObjectHashTables data took   1.71ms
+[2023.01.10-19.20.29:509][487]LogUObjectHash: Compacting FUObjectHashTables data took   1.53ms
+[2023.01.10-19.20.29:522][487]LogUObjectHash: Compacting FUObjectHashTables data took   0.47ms
+[2023.01.10-19.20.29:588][487]AssetCheck: New page: 에셋 저장:  다수의 에셋
+[2023.01.10-19.20.29:588][487]LogContentValidation: Display: AnimSequence /Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Death_Seq.Hit_Combat_Death_Seq 유효성 검사 중
+[2023.01.10-19.20.29:588][487]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Death_Seq_Montage.Hit_Combat_Death_Seq_Montage 유효성 검사 중
+[2023.01.10-19.20.42:219][767]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.21.10:346][743]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Death_Seq_Montage.Hit_Combat_Death_Seq_Montage
+[2023.01.10-19.21.10:357][743]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_132:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.21.10:910][766]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.21.11:094][788]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.21.11:269][809]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.21.11:465][830]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.21.11:648][851]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.21.11:887][879]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.21.12:056][899]LogSlate: Window 'Hit_Combat_Death_Seq_Montage' being destroyed
+[2023.01.10-19.21.12:083][899]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.21.12:083][899]LogWorld: UWorld::CleanupWorld for World_132, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.21.12:083][899]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.21.12:117][899]LogWorld: UWorld::CleanupWorld for World_133, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.21.12:117][899]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.21.31:887][195]Candidate modules for hot reload:
+[2023.01.10-19.21.31:887][195]  UE4_Portfolio2_SL
+[2023.01.10-19.21.31:887][195]Launching UnrealBuildTool... [G:/Unreal Engine/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=UE4_Portfolio2_SL,6806 UE4_Portfolio2_SLEditor Win64 Development -Project="G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/UE4_Portfolio2_SL.uproject" "G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/UE4_Portfolio2_SL.uproject"  -IgnoreJunk]
+[2023.01.10-19.21.31:890][195]Warning: Starting HotReload took  0.0s.
+[2023.01.10-19.21.46:313][694]CompilerResultsLog: New page: 컴파일 - 2023. 1. 11. 오후 1:21:46
+[2023.01.10-19.21.46:313][694]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
+[2023.01.10-19.21.46:313][694]CompilerResultsLog: Invalidating makefile for UE4_Portfolio2_SLEditor (working set of source files changed)
+[2023.01.10-19.21.46:313][694]CompilerResultsLog: Parsing headers for UE4_Portfolio2_SLEditor
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:   Running UnrealHeaderTool "G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\UE4_Portfolio2_SL.uproject" "G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4_Portfolio2_SLEditor\Development\UE4_Portfolio2_SLEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\decja\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2023.01.10-19.21.46:313][694]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2023.01.10-19.21.46:313][694]CompilerResultsLog: Reflection code generated for UE4_Portfolio2_SLEditor in 3.2443062 seconds
+[2023.01.10-19.21.46:313][694]CompilerResultsLog: Building UE4_Portfolio2_SLEditor...
+[2023.01.10-19.21.46:313][694]CompilerResultsLog: Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2023.01.10-19.21.46:313][694]CompilerResultsLog: [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: Enemy_DarkKnight_AnimInst.cpp
+[2023.01.10-19.21.46:313][694]CompilerResultsLog: Building 6 actions with 24 processes...
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:   [1/6] Enemy_DarkKnight_AnimInst.cpp
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:   [2/6] Module.UE4_Portfolio2_SL.gen.cpp
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:   [3/6] Module.UE4_Portfolio2_SL.cpp
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(16): warning C5038: ?????? ???? 'APlayerCharacter::CurStamina'??(??) ?????? ???? 'APlayerCharacter::HPRatio' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(18): warning C5038: ?????? ???? 'APlayerCharacter::StaminaRatio'??(??) ?????? ???? 'APlayerCharacter::IsFight' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(22): warning C5038: ?????? ???? 'APlayerCharacter::ComboCnt'??(??) ?????? ???? 'APlayerCharacter::IsFall' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(25): warning C5038: ?????? ???? 'APlayerCharacter::LeftWeapon'??(??) ?????? ???? 'APlayerCharacter::AttackDamage' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(27): warning C5038: ?????? ???? 'APlayerCharacter::DefaultDamage'??(??) ?????? ???? 'APlayerCharacter::IsLockTargetExist' ???Ŀ? ?ʱ?ȭ?˴ϴ?.
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:   G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(696): warning C4996: 'FCollisionQueryParams::FCollisionQueryParams': FCollisionQueryParams, to avoid ambiguity, please use other constructor and explicitly provide an FName parameter (not just a string literal) as the first parameter Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:   [4/6] UE4Editor-UE4_Portfolio2_SL-6806.lib
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:      G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6806.lib ???̺귯?? ?? G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6806.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:   [5/6] UE4Editor-UE4_Portfolio2_SL-6806.dll
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:      G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6806.suppressed.lib ???̺귯?? ?? G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-6806.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2023.01.10-19.21.46:313][694]CompilerResultsLog:   [6/6] UE4_Portfolio2_SLEditor.target
+[2023.01.10-19.21.46:313][694]CompilerResultsLog: Total time in Parallel executor: 9.33 seconds
+[2023.01.10-19.21.46:313][694]CompilerResultsLog: Total execution time: 14.34 seconds
+[2023.01.10-19.21.46:313][694]LogMainFrame: MainFrame: Module compiling took 14.430 seconds
+[2023.01.10-19.21.46:340][694]LogClass: Could not find existing class Enemy_DarkKnight_AnimInst in package /Script/UE4_Portfolio2_SL for HotReload, assuming new class
+[2023.01.10-19.21.46:340][694]LogClass: Function AnimNotify_InitState is new.
+[2023.01.10-19.21.46:340][694]LogClass: Function AnimNotify_InvinsibleEnd is new.
+[2023.01.10-19.21.46:340][694]LogClass: Function AnimNotify_InvinsibleStart is new.
+[2023.01.10-19.21.46:340][694]LogClass: Function AnimNotify_PauseMontage is new.
+[2023.01.10-19.21.46:359][694]LogClass: EEQUIPMENT_STATE HotReload.
+[2023.01.10-19.21.46:359][694]LogClass: EMONSTER_STATE HotReload.
+[2023.01.10-19.21.46:359][694]LogClass: EPLAYER_STATE HotReload.
+[2023.01.10-19.21.46:363][694]LogUObjectGlobals: Warning: AnimBlueprintGeneratedClass /Game/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.ABP_DarkKnight_C 클래스는 Class /Script/UE4_Portfolio2_SL.Enemy_DarkKnight_AnimInst 의 자손 클래스가 아닙니다.
+[2023.01.10-19.21.46:363][694]Error: CDO Constructor (Enemy_DarkKnight): Failed to find /Game/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.ABP_DarkKnight_C
+
+[2023.01.10-19.21.46:364][694]LogHotReload: Re-instancing Enemy_DarkKnight after hot-reload.
+[2023.01.10-19.21.46:366][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:366][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:366][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:367][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:367][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:367][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:367][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:368][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:368][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:368][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:368][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:368][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:368][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:369][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:369][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:369][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:395][694]LogHotReload: Re-instancing Enemy_DarkKnight_AnimInst after hot-reload.
+[2023.01.10-19.21.46:410][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:410][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:410][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:410][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:411][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:411][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:411][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:411][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:411][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:411][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:411][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:411][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:411][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:411][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:411][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:411][694]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.21.46:445][694]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'UE4_Portfolio2_SL' in 0.0003 seconds. Added 44 classes and 2 folders.
+[2023.01.10-19.21.46:451][694]Warning: Some classes could not be reloaded:
+Error: CDO Constructor (Enemy_DarkKnight): Failed to find /Game/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.ABP_DarkKnight_C
+
+
+[2023.01.10-19.21.46:454][694]Display: HotReload successful (26 functions remapped  0 scriptstructs remapped)
+[2023.01.10-19.21.46:520][694]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0083 seconds. Added 3867 classes and 932 folders.
+[2023.01.10-19.21.46:520][694]Display: HotReload took 14.6s.
+[2023.01.10-19.22.07:828][905]BlueprintLog: New page: ABP_DarkKnight 컴파일
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:845][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:846][905]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.07:899][905]LogUObjectHash: Compacting FUObjectHashTables data took   3.46ms
+[2023.01.10-19.22.08:244][934]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/ABP_DarkKnightE0B89FAF4C1D024B4630DB94083E7568.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.uasset'
+[2023.01.10-19.22.08:254][934]AssetCheck: New page: 에셋 저장:  ABP_DarkKnight
+[2023.01.10-19.22.08:254][934]LogContentValidation: Display: AnimBlueprint /Game/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.ABP_DarkKnight 유효성 검사 중
+[2023.01.10-19.22.30:661][114]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.22.52:974][598]BlueprintLog: New page: ABP_DarkKnight 컴파일
+[2023.01.10-19.22.52:990][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:990][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:990][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:990][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:990][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:990][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:990][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:990][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:990][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:991][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:991][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:991][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:991][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:991][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.52:991][598]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.22.53:017][598]LogUObjectHash: Compacting FUObjectHashTables data took   2.92ms
+[2023.01.10-19.22.53:686][657]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/ABP_DarkKnight550AFD154E0B3B3A219C4787863F3CFF.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.uasset'
+[2023.01.10-19.22.53:698][657]AssetCheck: New page: 에셋 저장:  ABP_DarkKnight
+[2023.01.10-19.22.53:698][657]LogContentValidation: Display: AnimBlueprint /Game/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.ABP_DarkKnight 유효성 검사 중
+[2023.01.10-19.22.54:446][743]LogWorld: UWorld::CleanupWorld for World_72, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.22.54:446][743]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.22.54:452][743]LogWorld: UWorld::CleanupWorld for World_71, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.22.54:452][743]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.22.54:513][743]LogWorld: UWorld::CleanupWorld for World_73, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.22.54:513][743]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.25.12:699][685]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/ARPG_Ninja_Anim_UE_Execute_B_Montage.ARPG_Ninja_Anim_UE_Execute_B_Montage
+[2023.01.10-19.25.12:711][685]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_134:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.25.13:211][707]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.25.13:383][728]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.25.13:557][749]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.25.13:732][770]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.25.13:966][798]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.25.14:141][819]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.25.20:495][569]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2023.01.10-19.25.20:511][569]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2023.01.10-19.25.20:511][569]LogEditorClassViewer: Warning: Class /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C has parent /Script/TP_ThirdPerson.TP_ThirdPersonCharacter, but this parent is not found. The Class will not be shown in ClassViewer.
+[2023.01.10-19.25.28:592][383]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/ARPG_Ninja_Anim_UE_Execute_B_Mon489E0EC54F51B080EC8730939A997D80.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/ARPG_Ninja_Anim_UE_Execute_B_Montage.uasset'
+[2023.01.10-19.25.28:604][383]AssetCheck: New page: 에셋 저장:  ARPG_Ninja_Anim_UE_Execute_B_Montage
+[2023.01.10-19.25.28:604][383]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/ARPG_Ninja_Anim_UE_Execute_B_Montage.ARPG_Ninja_Anim_UE_Execute_B_Montage 유효성 검사 중
+[2023.01.10-19.25.30:592][607]LogWorld: UWorld::CleanupWorld for World_134, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.25.30:592][607]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.25.30:645][607]LogWorld: UWorld::CleanupWorld for World_135, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.25.30:645][607]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.25.32:356][747]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/ARPG_Ninja_Anim_UE_Execute_End_Montage.ARPG_Ninja_Anim_UE_Execute_End_Montage
+[2023.01.10-19.25.32:369][747]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_136:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.25.32:909][772]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.25.44:130][979]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/ARPG_Ninja_Anim_UE_Execute_End_M494CAF614518FCFD64B8189CC8C7A1A6.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/ARPG_Ninja_Anim_UE_Execute_End_Montage.uasset'
+[2023.01.10-19.25.44:140][979]AssetCheck: New page: 에셋 저장:  ARPG_Ninja_Anim_UE_Execute_End_Montage
+[2023.01.10-19.25.44:140][979]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/ARPG_Ninja_Anim_UE_Execute_End_Montage.ARPG_Ninja_Anim_UE_Execute_End_Montage 유효성 검사 중
+[2023.01.10-19.25.44:906][ 65]LogWorld: UWorld::CleanupWorld for World_136, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.25.44:906][ 65]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.25.44:943][ 65]LogWorld: UWorld::CleanupWorld for World_137, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.25.44:943][ 65]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.25.46:426][201]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/ARPG_Ninja_Anim_UE_Executed_B_2_Montage.ARPG_Ninja_Anim_UE_Executed_B_2_Montage
+[2023.01.10-19.25.46:439][201]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_138:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.25.46:982][228]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.25.55:534][112]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/ARPG_Ninja_Anim_UE_Executed_B_2_1AB56FFD4C32A05DBC3F4899810DB8B2.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/ARPG_Ninja_Anim_UE_Executed_B_2_Montage.uasset'
+[2023.01.10-19.25.55:544][112]AssetCheck: New page: 에셋 저장:  ARPG_Ninja_Anim_UE_Executed_B_2_Montage
+[2023.01.10-19.25.55:544][112]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/ARPG_Ninja_Anim_UE_Executed_B_2_Montage.ARPG_Ninja_Anim_UE_Executed_B_2_Montage 유효성 검사 중
+[2023.01.10-19.25.56:361][182]LogWorld: UWorld::CleanupWorld for World_138, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.25.56:361][182]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.25.56:393][182]LogWorld: UWorld::CleanupWorld for World_139, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.25.56:393][182]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.25.57:297][264]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/ARPG_Ninja_Anim_UE_Executed_B_Montage.ARPG_Ninja_Anim_UE_Executed_B_Montage
+[2023.01.10-19.25.57:310][264]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_140:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.25.58:282][341]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.26.05:018][ 16]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/ARPG_Ninja_Anim_UE_Executed_B_Mo8A486230479673EB9AD5CD884D08BFD7.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/ARPG_Ninja_Anim_UE_Executed_B_Montage.uasset'
+[2023.01.10-19.26.05:027][ 16]AssetCheck: New page: 에셋 저장:  ARPG_Ninja_Anim_UE_Executed_B_Montage
+[2023.01.10-19.26.05:027][ 16]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/ARPG_Ninja_Anim_UE_Executed_B_Montage.ARPG_Ninja_Anim_UE_Executed_B_Montage 유효성 검사 중
+[2023.01.10-19.26.05:859][ 86]LogWorld: UWorld::CleanupWorld for World_140, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.26.05:859][ 86]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.26.05:912][ 86]LogWorld: UWorld::CleanupWorld for World_141, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.26.05:912][ 86]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.26.07:065][196]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_ChargedComboAttack_RM_Montage.Boss_Attack_ChargedComboAttack_RM_Montage
+[2023.01.10-19.26.07:077][196]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_142:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.26.07:571][223]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.26.21:463][732]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Boss_Attack_ChargedComboAttack_RF395221742260361F09A40AC9CC5E5EE.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_ChargedComboAttack_RM_Montage.uasset'
+[2023.01.10-19.26.21:473][732]AssetCheck: New page: 에셋 저장:  Boss_Attack_ChargedComboAttack_RM_Montage
+[2023.01.10-19.26.21:473][732]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_ChargedComboAttack_RM_Montage.Boss_Attack_ChargedComboAttack_RM_Montage 유효성 검사 중
+[2023.01.10-19.26.28:453][540]LogWorld: UWorld::CleanupWorld for World_142, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.26.28:453][540]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.26.28:488][540]LogWorld: UWorld::CleanupWorld for World_143, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.26.28:488][540]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.26.30:015][691]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_HandAndSwordSwing_RM_Montage.Boss_Attack_HandAndSwordSwing_RM_Montage
+[2023.01.10-19.26.30:028][691]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_144:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.26.30:506][715]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.26.30:680][736]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.26.30:913][764]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.26.31:089][785]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.26.31:264][806]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.26.31:439][827]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.26.38:243][540]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Boss_Attack_HandAndSwordSwing_RM61492C2E4CE28E2FE98817958CE8E786.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_HandAndSwordSwing_RM_Montage.uasset'
+[2023.01.10-19.26.38:252][540]AssetCheck: New page: 에셋 저장:  Boss_Attack_HandAndSwordSwing_RM_Montage
+[2023.01.10-19.26.38:252][540]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_HandAndSwordSwing_RM_Montage.Boss_Attack_HandAndSwordSwing_RM_Montage 유효성 검사 중
+[2023.01.10-19.26.38:951][605]LogWorld: UWorld::CleanupWorld for World_144, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.26.38:951][605]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.26.39:021][605]LogWorld: UWorld::CleanupWorld for World_145, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.26.39:021][605]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.26.40:352][735]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_Running_Simple_RM_Montage.Boss_Attack_Running_Simple_RM_Montage
+[2023.01.10-19.26.40:365][735]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_146:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.26.40:851][758]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.26.51:248][894]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Boss_Attack_Running_Simple_RM_Mo4F8C2D8B43084AEAE6373D8F27CF3D16.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_Running_Simple_RM_Montage.uasset'
+[2023.01.10-19.26.51:258][894]AssetCheck: New page: 에셋 저장:  Boss_Attack_Running_Simple_RM_Montage
+[2023.01.10-19.26.51:258][894]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_Running_Simple_RM_Montage.Boss_Attack_Running_Simple_RM_Montage 유효성 검사 중
+[2023.01.10-19.26.52:302][979]LogWorld: UWorld::CleanupWorld for World_146, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.26.52:302][979]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.26.52:374][979]LogWorld: UWorld::CleanupWorld for World_147, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.26.52:374][979]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.26.53:985][117]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_Running_WithAOEBlow_RM_Montage.Boss_Attack_Running_WithAOEBlow_RM_Montage
+[2023.01.10-19.26.53:998][117]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_148:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.26.54:555][144]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.05:214][304]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Boss_Attack_Running_WithAOEBlow_9466D56949F89736DA773DBDD2FA9E47.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_Running_WithAOEBlow_RM_Montage.uasset'
+[2023.01.10-19.27.05:224][304]AssetCheck: New page: 에셋 저장:  Boss_Attack_Running_WithAOEBlow_RM_Montage
+[2023.01.10-19.27.05:224][304]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_Running_WithAOEBlow_RM_Montage.Boss_Attack_Running_WithAOEBlow_RM_Montage 유효성 검사 중
+[2023.01.10-19.27.05:787][355]LogWorld: UWorld::CleanupWorld for World_148, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.27.05:788][355]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.27.05:856][355]LogWorld: UWorld::CleanupWorld for World_149, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.27.05:857][355]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.27.06:749][430]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_Swing_RM_Montage.Boss_Attack_Swing_RM_Montage
+[2023.01.10-19.27.06:761][430]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_150:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.27.07:289][453]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.07:463][474]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.07:697][502]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.07:872][523]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.08:047][544]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.14:377][200]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Boss_Attack_Swing_RM_MontageB1D0193F4D5AF4DF2CF60598C62346AD.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_Swing_RM_Montage.uasset'
+[2023.01.10-19.27.14:386][200]AssetCheck: New page: 에셋 저장:  Boss_Attack_Swing_RM_Montage
+[2023.01.10-19.27.14:386][200]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_Swing_RM_Montage.Boss_Attack_Swing_RM_Montage 유효성 검사 중
+[2023.01.10-19.27.15:040][276]LogWorld: UWorld::CleanupWorld for World_150, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.27.15:040][276]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.27.15:070][276]LogWorld: UWorld::CleanupWorld for World_151, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.27.15:070][276]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.27.15:753][347]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_SwingAndSlam_RM_Montage.Boss_Attack_SwingAndSlam_RM_Montage
+[2023.01.10-19.27.15:766][347]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_152:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.27.16:267][370]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.22:659][ 21]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Boss_Attack_SwingAndSlam_RM_Mont8B8234E04660AF0865E09D88C35CF6FE.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_SwingAndSlam_RM_Montage.uasset'
+[2023.01.10-19.27.22:668][ 21]AssetCheck: New page: 에셋 저장:  Boss_Attack_SwingAndSlam_RM_Montage
+[2023.01.10-19.27.22:668][ 21]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_SwingAndSlam_RM_Montage.Boss_Attack_SwingAndSlam_RM_Montage 유효성 검사 중
+[2023.01.10-19.27.23:294][ 90]LogWorld: UWorld::CleanupWorld for World_152, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.27.23:294][ 90]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.27.23:356][ 90]LogWorld: UWorld::CleanupWorld for World_153, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.27.23:357][ 90]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.27.24:435][183]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_Uppercut_RM_Montage.Boss_Attack_Uppercut_RM_Montage
+[2023.01.10-19.27.24:447][183]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_154:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.27.24:850][210]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.32:196][940]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Boss_Attack_Uppercut_RM_Montage831792944AA7743819DC3DB0F5B30B43.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_Uppercut_RM_Montage.uasset'
+[2023.01.10-19.27.32:206][940]AssetCheck: New page: 에셋 저장:  Boss_Attack_Uppercut_RM_Montage
+[2023.01.10-19.27.32:206][940]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Attack_Uppercut_RM_Montage.Boss_Attack_Uppercut_RM_Montage 유효성 검사 중
+[2023.01.10-19.27.32:923][ 22]LogWorld: UWorld::CleanupWorld for World_154, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.27.32:923][ 22]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.27.32:955][ 22]LogWorld: UWorld::CleanupWorld for World_155, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.27.32:955][ 22]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.27.33:846][ 98]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_BattleEntrance_RM_Montage.Boss_BattleEntrance_RM_Montage
+[2023.01.10-19.27.33:859][ 98]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_156:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.27.34:356][120]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.34:531][141]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.34:765][169]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.34:941][190]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.35:116][211]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.35:290][232]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.41:947][916]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Boss_BattleEntrance_RM_Montage35116A6044153CF3FBBC97927575DFF2.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Boss_BattleEntrance_RM_Montage.uasset'
+[2023.01.10-19.27.41:956][916]AssetCheck: New page: 에셋 저장:  Boss_BattleEntrance_RM_Montage
+[2023.01.10-19.27.41:956][916]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_BattleEntrance_RM_Montage.Boss_BattleEntrance_RM_Montage 유효성 검사 중
+[2023.01.10-19.27.42:563][986]LogWorld: UWorld::CleanupWorld for World_156, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.27.42:563][986]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.27.42:594][986]LogWorld: UWorld::CleanupWorld for World_157, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.27.42:594][986]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.27.43:575][ 67]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Parried_RM_Montage.Boss_Parried_RM_Montage
+[2023.01.10-19.27.43:588][ 67]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_158:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.27.43:982][ 93]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.27.56:805][513]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Boss_Parried_RM_Montage61A9D7E54257A27E062B84AC72A0E0D8.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Boss_Parried_RM_Montage.uasset'
+[2023.01.10-19.27.56:814][513]AssetCheck: New page: 에셋 저장:  Boss_Parried_RM_Montage
+[2023.01.10-19.27.56:814][513]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Parried_RM_Montage.Boss_Parried_RM_Montage 유효성 검사 중
+[2023.01.10-19.27.57:352][574]LogWorld: UWorld::CleanupWorld for World_158, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.27.57:352][574]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.27.57:387][574]LogWorld: UWorld::CleanupWorld for World_159, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.27.57:387][574]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.27.58:168][650]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_ReactionHit_B_Montage.Boss_ReactionHit_B_Montage
+[2023.01.10-19.27.58:181][650]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_160:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.27.58:704][675]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.28.00:565][896]LogWorld: UWorld::CleanupWorld for World_160, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.28.00:565][896]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.28.00:598][896]LogWorld: UWorld::CleanupWorld for World_161, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.28.00:598][896]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.28.03:597][153]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Staggered_RM_Montage.Boss_Staggered_RM_Montage
+[2023.01.10-19.28.03:610][153]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_162:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.28.04:270][178]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.28.12:210][992]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Boss_Staggered_RM_MontageCBA384DE4BC30FF8CCE172B295B7295B.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Boss_Staggered_RM_Montage.uasset'
+[2023.01.10-19.28.12:220][992]AssetCheck: New page: 에셋 저장:  Boss_Staggered_RM_Montage
+[2023.01.10-19.28.12:220][992]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Boss_Staggered_RM_Montage.Boss_Staggered_RM_Montage 유효성 검사 중
+[2023.01.10-19.28.12:678][ 45]LogSlate: Window 'Boss_Staggered_RM_Montage' being destroyed
+[2023.01.10-19.28.12:712][ 45]LogWorld: UWorld::CleanupWorld for World_162, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.28.12:713][ 45]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.28.12:746][ 45]LogWorld: UWorld::CleanupWorld for World_163, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.28.12:746][ 45]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.28.14:598][206]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Combo_Attack_01_All_Seq_Montage.Combo_Attack_01_All_Seq_Montage
+[2023.01.10-19.28.14:611][206]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_164:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.28.15:013][229]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.28.23:589][145]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Combo_Attack_01_All_Seq_Montage692FD3B94780A90DFDB65088B919E387.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Combo_Attack_01_All_Seq_Montage.uasset'
+[2023.01.10-19.28.23:598][145]AssetCheck: New page: 에셋 저장:  Combo_Attack_01_All_Seq_Montage
+[2023.01.10-19.28.23:598][145]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Combo_Attack_01_All_Seq_Montage.Combo_Attack_01_All_Seq_Montage 유효성 검사 중
+[2023.01.10-19.28.24:121][203]LogWorld: UWorld::CleanupWorld for World_164, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.28.24:121][203]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.28.24:156][203]LogWorld: UWorld::CleanupWorld for World_165, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.28.24:156][203]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.28.25:645][339]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Combo_Attack_02_All_Seq_Montage.Combo_Attack_02_All_Seq_Montage
+[2023.01.10-19.28.25:658][339]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_166:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.28.26:275][362]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.28.34:793][261]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Combo_Attack_02_All_Seq_MontageB095A46A42441744ABCCEAA024C40078.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Combo_Attack_02_All_Seq_Montage.uasset'
+[2023.01.10-19.28.34:803][261]AssetCheck: New page: 에셋 저장:  Combo_Attack_02_All_Seq_Montage
+[2023.01.10-19.28.34:803][261]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Combo_Attack_02_All_Seq_Montage.Combo_Attack_02_All_Seq_Montage 유효성 검사 중
+[2023.01.10-19.28.35:398][325]LogSlate: Window 'Combo_Attack_02_All_Seq_Montage' being destroyed
+[2023.01.10-19.28.35:433][325]LogWorld: UWorld::CleanupWorld for World_166, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.28.35:433][325]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.28.35:469][325]LogWorld: UWorld::CleanupWorld for World_167, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.28.35:470][325]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.28.36:529][411]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Combo_Attack_04_All_Seq_Montage.Combo_Attack_04_All_Seq_Montage
+[2023.01.10-19.28.36:541][411]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_168:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.28.37:141][433]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.28.47:010][467]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Combo_Attack_04_All_Seq_MontageD832CB55485103BA50854EAD4E69A088.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Combo_Attack_04_All_Seq_Montage.uasset'
+[2023.01.10-19.28.47:022][467]AssetCheck: New page: 에셋 저장:  Combo_Attack_04_All_Seq_Montage
+[2023.01.10-19.28.47:022][467]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Combo_Attack_04_All_Seq_Montage.Combo_Attack_04_All_Seq_Montage 유효성 검사 중
+[2023.01.10-19.28.47:690][518]LogSlate: Window 'Combo_Attack_04_All_Seq_Montage' being destroyed
+[2023.01.10-19.28.47:705][518]LogWorld: UWorld::CleanupWorld for World_168, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.28.47:705][518]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.28.47:740][518]LogWorld: UWorld::CleanupWorld for World_169, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.28.47:740][518]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.28.48:697][602]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Death_Seq_Montage.Hit_Combat_Death_Seq_Montage
+[2023.01.10-19.28.48:710][602]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_170:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.28.49:257][618]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.29.18:421][ 10]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Hit_Combat_Death_Seq_MontageAB50132348B242A47F0CFE8DE6976254.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Death_Seq_Montage.uasset'
+[2023.01.10-19.29.18:431][ 10]AssetCheck: New page: 에셋 저장:  Hit_Combat_Death_Seq_Montage
+[2023.01.10-19.29.18:431][ 10]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Death_Seq_Montage.Hit_Combat_Death_Seq_Montage 유효성 검사 중
+[2023.01.10-19.29.20:872][285]LogSlate: Window 'Hit_Combat_Death_Seq_Montage' being destroyed
+[2023.01.10-19.29.20:913][285]LogWorld: UWorld::CleanupWorld for World_170, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.29.20:913][285]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.29.20:949][285]LogWorld: UWorld::CleanupWorld for World_171, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.29.20:950][285]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.29.28:378][630]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Large_B_Seq_Montage.Hit_Combat_Large_B_Seq_Montage
+[2023.01.10-19.29.28:391][630]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_172:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.29.28:999][654]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.29.36:455][373]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Hit_Combat_Large_B_Seq_MontageD58C2FA749C63238505C9BAEFB041966.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Large_B_Seq_Montage.uasset'
+[2023.01.10-19.29.36:467][373]AssetCheck: New page: 에셋 저장:  Hit_Combat_Large_B_Seq_Montage
+[2023.01.10-19.29.36:467][373]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Large_B_Seq_Montage.Hit_Combat_Large_B_Seq_Montage 유효성 검사 중
+[2023.01.10-19.29.36:968][422]LogSlate: Window 'Hit_Combat_Large_B_Seq_Montage' being destroyed
+[2023.01.10-19.29.36:995][422]LogWorld: UWorld::CleanupWorld for World_172, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.29.36:995][422]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.29.37:034][422]LogWorld: UWorld::CleanupWorld for World_173, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.29.37:034][422]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.29.41:178][773]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Combo_Attack_04_All_Seq_Montage.Combo_Attack_04_All_Seq_Montage
+[2023.01.10-19.29.41:191][773]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_174:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.29.41:952][809]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.29.42:510][864]LogSlate: Window 'Combo_Attack_04_All_Seq_Montage' being destroyed
+[2023.01.10-19.29.42:525][864]LogWorld: UWorld::CleanupWorld for World_174, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.29.42:525][864]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.29.42:555][864]LogWorld: UWorld::CleanupWorld for World_175, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.29.42:555][864]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.29.43:645][960]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Large_F_Seq_Montage.Hit_Combat_Large_F_Seq_Montage
+[2023.01.10-19.29.43:658][960]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_176:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.29.44:214][985]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.29.53:328][884]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Hit_Combat_Large_F_Seq_Montage90687FD943C1518D38789D8937B7B4EF.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Large_F_Seq_Montage.uasset'
+[2023.01.10-19.29.53:339][884]AssetCheck: New page: 에셋 저장:  Hit_Combat_Large_F_Seq_Montage
+[2023.01.10-19.29.53:339][884]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Large_F_Seq_Montage.Hit_Combat_Large_F_Seq_Montage 유효성 검사 중
+[2023.01.10-19.29.53:997][958]LogWorld: UWorld::CleanupWorld for World_176, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.29.53:997][958]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.29.54:030][958]LogWorld: UWorld::CleanupWorld for World_177, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.29.54:030][958]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.29.57:562][338]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Large_L_Seq_Montage.Hit_Combat_Large_L_Seq_Montage
+[2023.01.10-19.29.57:575][338]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_178:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.29.58:173][363]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.29.58:348][384]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.29.58:580][412]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.29.58:756][433]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.29.58:931][454]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.29.59:105][475]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.30.06:865][212]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Hit_Combat_Large_L_Seq_Montage0F3491AE45B8EC787E56C98192FB0CE2.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Large_L_Seq_Montage.uasset'
+[2023.01.10-19.30.06:877][212]AssetCheck: New page: 에셋 저장:  Hit_Combat_Large_L_Seq_Montage
+[2023.01.10-19.30.06:877][212]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Large_L_Seq_Montage.Hit_Combat_Large_L_Seq_Montage 유효성 검사 중
+[2023.01.10-19.30.07:346][261]LogSlate: Window 'Hit_Combat_Large_L_Seq_Montage' being destroyed
+[2023.01.10-19.30.07:373][261]LogWorld: UWorld::CleanupWorld for World_178, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.30.07:373][261]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.30.07:407][261]LogWorld: UWorld::CleanupWorld for World_179, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.30.07:407][261]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.30.08:228][339]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Large_R_Seq_Montage.Hit_Combat_Large_R_Seq_Montage
+[2023.01.10-19.30.08:241][339]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_180:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.30.08:875][364]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.30.15:016][973]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Hit_Combat_Large_R_Seq_Montage37D000C64921194E11699BA311942E3F.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Large_R_Seq_Montage.uasset'
+[2023.01.10-19.30.15:026][973]AssetCheck: New page: 에셋 저장:  Hit_Combat_Large_R_Seq_Montage
+[2023.01.10-19.30.15:026][973]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Large_R_Seq_Montage.Hit_Combat_Large_R_Seq_Montage 유효성 검사 중
+[2023.01.10-19.30.15:643][ 25]LogSlate: Window 'Hit_Combat_Large_R_Seq_Montage' being destroyed
+[2023.01.10-19.30.15:672][ 25]LogWorld: UWorld::CleanupWorld for World_180, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.30.15:672][ 25]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.30.15:705][ 25]LogWorld: UWorld::CleanupWorld for World_181, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.30.15:705][ 25]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.30.16:547][101]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Idle_Combat_Seq_Montage.Idle_Combat_Seq_Montage
+[2023.01.10-19.30.16:560][101]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_182:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.30.16:997][128]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.30.24:085][976]LogWorld: UWorld::CleanupWorld for World_182, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.30.24:085][976]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.30.24:115][976]LogWorld: UWorld::CleanupWorld for World_183, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.30.24:115][976]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.30.27:047][263]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Idle_Combat_to_Idle_Seq_Montage.Idle_Combat_to_Idle_Seq_Montage
+[2023.01.10-19.30.27:060][263]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_184:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.30.27:628][290]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.30.40:297][746]LogWorld: UWorld::CleanupWorld for World_184, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.30.40:297][746]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.30.40:332][746]LogWorld: UWorld::CleanupWorld for World_185, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.30.40:332][746]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.30.42:054][927]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Idle_Combat_to_Idle_Seq_Montage.Idle_Combat_to_Idle_Seq_Montage
+[2023.01.10-19.30.42:067][927]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_186:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.30.42:538][949]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.30.42:714][970]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.30.42:947][998]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.30.43:121][ 19]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.30.43:296][ 40]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.30.43:472][ 61]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.30.48:414][537]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Idle_Combat_to_Idle_Seq_MontageF9C28F124AFE994D2DF50E93AABB32A5.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Idle_Combat_to_Idle_Seq_Montage.uasset'
+[2023.01.10-19.30.48:427][537]AssetCheck: New page: 에셋 저장:  Idle_Combat_to_Idle_Seq_Montage
+[2023.01.10-19.30.48:427][537]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Idle_Combat_to_Idle_Seq_Montage.Idle_Combat_to_Idle_Seq_Montage 유효성 검사 중
+[2023.01.10-19.30.49:146][618]LogWorld: UWorld::CleanupWorld for World_186, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.30.49:146][618]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.30.49:181][618]LogWorld: UWorld::CleanupWorld for World_187, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.30.49:181][618]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.30.51:097][796]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Idle_to_Idle_Combat_Seq_Montage.Idle_to_Idle_Combat_Seq_Montage
+[2023.01.10-19.30.51:110][796]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_188:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.30.51:519][824]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.30.57:418][417]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Idle_to_Idle_Combat_Seq_Montage7E73DABF415DD5AC7EF42A8961E8723E.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Idle_to_Idle_Combat_Seq_Montage.uasset'
+[2023.01.10-19.30.57:427][417]AssetCheck: New page: 에셋 저장:  Idle_to_Idle_Combat_Seq_Montage
+[2023.01.10-19.30.57:427][417]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Idle_to_Idle_Combat_Seq_Montage.Idle_to_Idle_Combat_Seq_Montage 유효성 검사 중
+[2023.01.10-19.30.58:100][493]LogWorld: UWorld::CleanupWorld for World_188, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.30.58:100][493]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.30.58:136][493]LogWorld: UWorld::CleanupWorld for World_189, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.30.58:136][493]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.30.59:127][585]LogAssetEditorSubsystem: Opening Asset editor for AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Run_Attack_02_Seq_Montage.Run_Attack_02_Seq_Montage
+[2023.01.10-19.30.59:140][585]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_190:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.30.59:508][608]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.31.09:008][607]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/Run_Attack_02_Seq_Montage3C2D147842E70CEB07C435AE7BAD77BF.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/MyFolder/Enemy_DarkKnight/Animations/Run_Attack_02_Seq_Montage.uasset'
+[2023.01.10-19.31.09:019][607]AssetCheck: New page: 에셋 저장:  Run_Attack_02_Seq_Montage
+[2023.01.10-19.31.09:019][607]LogContentValidation: Display: AnimMontage /Game/MyFolder/Enemy_DarkKnight/Animations/Run_Attack_02_Seq_Montage.Run_Attack_02_Seq_Montage 유효성 검사 중
+[2023.01.10-19.31.09:630][678]LogWorld: UWorld::CleanupWorld for World_190, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.31.09:630][678]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.31.09:664][678]LogWorld: UWorld::CleanupWorld for World_191, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.31.09:664][678]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.31.12:075][943]LogUObjectHash: Compacting FUObjectHashTables data took   3.16ms
+[2023.01.10-19.31.12:960][943]LogSlate: Window '콘텐츠 저장' being destroyed
+[2023.01.10-19.31.13:033][943]LogSavePackage: Moving '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Saved/SK_Mannequin_SkeletonF2196B034DA075DE5A90789DA9EDB75E.tmp' to '../../../../../Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Content/Fallen_Knight/Mesh/SK_Mannequin_Skeleton.uasset'
+[2023.01.10-19.31.13:051][943]AssetCheck: New page: 에셋 저장:  SK_Mannequin_Skeleton
+[2023.01.10-19.31.13:051][943]LogContentValidation: Display: Skeleton /Game/Fallen_Knight/Mesh/SK_Mannequin_Skeleton.SK_Mannequin_Skeleton 유효성 검사 중
+[2023.01.10-19.34.34:912][ 96]LogAssetEditorSubsystem: Opening Asset editor for AnimBlueprint /Game/MyFolder/Enemy_DarkKnight/ABP_DarkKnight.ABP_DarkKnight
+[2023.01.10-19.34.34:927][ 96]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_193:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2023.01.10-19.34.34:927][ 96]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.34.34:928][ 96]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.34.34:928][ 96]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.34.34:928][ 96]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.34.34:928][ 96]AnimBlueprintLog: Warning: 슬롯노드: ABP_DarkKnight_C 애니메이션 인스턴트 클래스의 'DefaultSlot' 는 이미 존재합니다. 이 클래스의 애니메이션 그래프에서 중복을 제거하세요.
+[2023.01.10-19.34.35:668][121]LogD3D11RHI: Display: Temp texture streaming buffer not large enough, needed 16777216 bytes
+[2023.01.10-19.43.55:823][166]LogWorld: UWorld::CleanupWorld for World_193, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.43.55:823][166]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.43.55:829][166]LogWorld: UWorld::CleanupWorld for World_192, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.43.55:829][166]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.43.55:894][166]LogWorld: UWorld::CleanupWorld for World_194, bSessionEnded=true, bCleanupResources=true
+[2023.01.10-19.43.55:894][166]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.10-19.43.56:799][253]LogUObjectHash: Compacting FUObjectHashTables data took   2.76ms

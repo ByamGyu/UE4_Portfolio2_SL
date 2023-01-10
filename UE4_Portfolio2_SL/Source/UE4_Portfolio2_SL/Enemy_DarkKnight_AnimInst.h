@@ -109,9 +109,8 @@ private:
 	class UAnimMontage* Idle_To_Combat;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* Combat_To_Idle;
-
-
-
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* Boss_Death;
 
 
 	// 몽타주 재생 함수들

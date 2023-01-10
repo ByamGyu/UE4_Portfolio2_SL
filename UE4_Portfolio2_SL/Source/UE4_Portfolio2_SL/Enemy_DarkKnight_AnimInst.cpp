@@ -65,6 +65,8 @@ UEnemy_DarkKnight_AnimInst::UEnemy_DarkKnight_AnimInst()
 	if (Idle_to_Combat.Succeeded()) Idle_To_Combat = Idle_to_Combat.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> Combat_to_Idle(TEXT("AnimMontage'/Game/MyFolder/Enemy_DarkKnight/Animations/Idle_Combat_to_Idle_Seq_Montage.Idle_Combat_to_Idle_Seq_Montage'"));
 	if (Combat_to_Idle.Succeeded()) Combat_To_Idle = Combat_to_Idle.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> Death(TEXT("AnimMontage'/Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Death_Seq_Montage.Hit_Combat_Death_Seq_Montage'"));
+	if (Death.Succeeded()) Boss_Death = Death.Object;
 }
 
 void UEnemy_DarkKnight_AnimInst::NativeUpdateAnimation(float DeltaSeconds)

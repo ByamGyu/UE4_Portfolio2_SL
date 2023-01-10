@@ -288,6 +288,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_DarkKnight_AnimInst() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Combat_To_Idle_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Combat_To_Idle;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Boss_Death_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Boss_Death;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -587,6 +591,14 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_DarkKnight_AnimInst() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Combat_To_Idle = { "Combat_To_Idle", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Combat_To_Idle), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Combat_To_Idle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Combat_To_Idle_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Boss_Death_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AnimMontage" },
+		{ "ModuleRelativePath", "Enemy_DarkKnight_AnimInst.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Boss_Death = { "Boss_Death", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Boss_Death), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Boss_Death_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Boss_Death_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_CurrentSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_CurrentDirection,
@@ -621,6 +633,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_DarkKnight_AnimInst() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Boss_Battle_Entrance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Idle_To_Combat,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Combat_To_Idle,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Boss_Death,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UEnemy_DarkKnight_AnimInst>::IsAbstract,
@@ -649,7 +662,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_DarkKnight_AnimInst() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEnemy_DarkKnight_AnimInst, 3526969930);
+	IMPLEMENT_CLASS(UEnemy_DarkKnight_AnimInst, 547956313);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UEnemy_DarkKnight_AnimInst>()
 	{
 		return UEnemy_DarkKnight_AnimInst::StaticClass();
