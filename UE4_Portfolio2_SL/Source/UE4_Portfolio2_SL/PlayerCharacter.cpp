@@ -30,7 +30,8 @@ APlayerCharacter::APlayerCharacter()
 	CurrentSpeed(0.0f),
 	IsParrying(false),
 	IssenAbleTime(0.0f),
-	StaminaUse(1.0f)
+	StaminaUse(1.0f),
+	CanRoll(true)
 {
 	PrimaryActorTick.bCanEverTick = true;
 
@@ -61,7 +62,7 @@ APlayerCharacter::APlayerCharacter()
 
 	m_CameraArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraArm"));
 	m_CameraArm->SetupAttachment(GetCapsuleComponent());
-	m_CameraArm->TargetArmLength = 300.0f;
+	m_CameraArm->TargetArmLength = 350.0f;
 	m_CameraArm->bUsePawnControlRotation = true; // 카메라 봉 회전을 컨트롤러에 기반으로 한다.
 	m_CameraArm->bEnableCameraLag = true; // 카메라 지연 추적 여부
 	m_CameraArm->bEnableCameraRotationLag = false; // 카메라 회전 지연 여부
@@ -162,6 +163,8 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 void APlayerCharacter::MoveForward(float _Value)
 {
+	ForwardBackInputValue = _Value;
+
 	if (Cur_State == EPLAYER_STATE::IDLE || Cur_State == EPLAYER_STATE::MOVE)
 	{
 		if (_Value == 0.0f)
@@ -176,6 +179,7 @@ void APlayerCharacter::MoveForward(float _Value)
 		ChangeState(EPLAYER_STATE::GUARD);
 	}
 	else return;
+
 
 	if ((Controller != nullptr) && (_Value != 0.0f))
 	{
@@ -197,6 +201,15 @@ void APlayerCharacter::MoveForward(float _Value)
 
 void APlayerCharacter::MoveRight(float _Value)
 {
+	// 애님인스턴스에서 Strafe Movement에 사용
+	// 락온 상태에서 앞뒤 입력이 있을 경우 (대각선 이동)
+	if ((ForwardBackInputValue >= 1.0f || ForwardBackInputValue <= -1.0f) && IsLockTargetExist == true)
+	{
+		LeftRightInputValue = _Value * 0.5f;
+	}
+	// 락온 상태가 아닐 경우
+	else LeftRightInputValue = _Value;
+
 	if (Cur_State == EPLAYER_STATE::IDLE || Cur_State == EPLAYER_STATE::MOVE)
 	{
 		if (_Value == 0.0f)
@@ -364,24 +377,32 @@ void APlayerCharacter::Guard(float _Value)
 
 void APlayerCharacter::Roll()
 {
-	if (Cur_State == EPLAYER_STATE::ROLL
-		|| Cur_State == EPLAYER_STATE::FALL
-		|| Cur_State == EPLAYER_STATE::JUMP
-		|| Cur_State == EPLAYER_STATE::SPELL)
+	auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+	if (AnimInst != nullptr)
 	{
-		return;
-	}
-	else if (Cur_State == EPLAYER_STATE::IDLE
-		|| Cur_State == EPLAYER_STATE::MOVE
-		|| Cur_State == EPLAYER_STATE::GUARD)
-	{
-		if (CurStamina >= StaminaUse * 10.0f) // 현재 스테미나가 10 이상 있으면
+		if (Cur_State == EPLAYER_STATE::ROLL && CanRoll == true)
 		{
-			auto AnimInst = Cast<UPlayerCharacterAnimInstance>(GetMesh()->GetAnimInstance());
-			if (AnimInst != nullptr)
+			ChangeState(EPLAYER_STATE::ROLL);
+
+			CanRoll = false;
+			AnimInst->PlayRollIdleMontage();
+			SetCurStamina(StaminaUse * (-25.0f));
+		}
+		else if (Cur_State == EPLAYER_STATE::FALL
+			|| Cur_State == EPLAYER_STATE::JUMP
+			|| Cur_State == EPLAYER_STATE::SPELL)
+		{
+			return;
+		}
+		else if (Cur_State == EPLAYER_STATE::IDLE
+			|| Cur_State == EPLAYER_STATE::MOVE
+			|| Cur_State == EPLAYER_STATE::GUARD)
+		{
+			if (CurStamina >= StaminaUse * 10.0f) // 현재 스테미나가 10 이상 있으면
 			{
 				ChangeState(EPLAYER_STATE::ROLL);
 
+				CanRoll = false;
 				AnimInst->PlayRollIdleMontage();
 				SetCurStamina(StaminaUse * (-25.0f));
 			}
@@ -1144,7 +1165,7 @@ void APlayerCharacter::RecoverTickHPStamina(float _DeltaSecond)
 		|| Cur_State == EPLAYER_STATE::GUARD
 		|| Cur_State == EPLAYER_STATE::MOVE)
 	{
-		SetCurStamina(_DeltaSecond * 30.0f);
+		SetCurStamina(_DeltaSecond * 35000.0f);
 	}
 }
 

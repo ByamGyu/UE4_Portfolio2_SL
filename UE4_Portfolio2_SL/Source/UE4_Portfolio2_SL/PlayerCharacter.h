@@ -65,10 +65,15 @@ protected:
 
 	// 락온과 락온 움직임 관련
 public:
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	bool IsLockTargetExist;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	AActor* LockedOnTarget = nullptr;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	float ForwardBackInputValue;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	float LeftRightInputValue;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	float CurrentSpeed; // GetVelocity().Size()
 
 
@@ -91,6 +96,8 @@ private:
 	bool IsFight;
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	bool IsFall;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	bool CanRoll;
 
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	float MaxHP;
@@ -168,6 +175,8 @@ public:
 	bool GetIsFall() { return IsFall; }
 	void SetIsFall(bool _Value) { IsFall = _Value; }
 	void IsFalling();
+	bool GetCanRoll() { return CanRoll; }
+	void SetCanRoll(bool _Value) { CanRoll = _Value; }
 
 
 	float GetCurHP() { return CurHP; }

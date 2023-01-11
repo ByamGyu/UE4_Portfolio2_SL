@@ -75,6 +75,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__Cur_State() { return STRUCT_OFFSET(APlayerCharacter, Cur_State); } \
 	FORCEINLINE static uint32 __PPO__IsFight() { return STRUCT_OFFSET(APlayerCharacter, IsFight); } \
 	FORCEINLINE static uint32 __PPO__IsFall() { return STRUCT_OFFSET(APlayerCharacter, IsFall); } \
+	FORCEINLINE static uint32 __PPO__CanRoll() { return STRUCT_OFFSET(APlayerCharacter, CanRoll); } \
 	FORCEINLINE static uint32 __PPO__MaxHP() { return STRUCT_OFFSET(APlayerCharacter, MaxHP); } \
 	FORCEINLINE static uint32 __PPO__CurHP() { return STRUCT_OFFSET(APlayerCharacter, CurHP); } \
 	FORCEINLINE static uint32 __PPO__HPRatio() { return STRUCT_OFFSET(APlayerCharacter, HPRatio); } \

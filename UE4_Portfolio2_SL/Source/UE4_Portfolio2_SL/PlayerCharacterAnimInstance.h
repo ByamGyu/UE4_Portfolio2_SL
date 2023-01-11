@@ -176,5 +176,7 @@ private:
 	void AnimNotify_UseStaminaLightAttack();
 	UFUNCTION()
 	void AnimNotify_UseStaminaHeavyAttack();
+	UFUNCTION()
+	void AnimNotify_CanRoll();
 	
 };

@@ -1,6 +1,6 @@
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\Definitions.UE4_Portfolio2_SL.h
-G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/AI_DarkKnight.cpp
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\AI_DarkKnight.h
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/AI_Base.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\AI_Base.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Public\EngineMinimal.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\CoreUObject.h
@@ -195,7 +195,6 @@ G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Di
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
 G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
 G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\AI_Base.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\AIController.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavFilters/NavigationQueryFilter.h
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavAreas/NavArea.h
@@ -230,6 +229,8 @@ G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Public\VisualLogger/Visual
 G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\VisualLoggerDebugSnapshotInterface.generated.h
 G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIController.generated.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\AI_Base.generated.h
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/AI_DarkKnight.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\AI_DarkKnight.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\AI_DarkKnight.generated.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Enemy_DarkKnight.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Enemy_Base.h
@@ -403,45 +404,13 @@ G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Weapon_RustySword.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\Weapon_RustySword.generated.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\Enemy_SkeletonWarrior.generated.h
-G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/BTTask_Attack.cpp
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\BTTask_Attack.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTTaskNode.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTTaskNode.generated.h
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\BTTask_Attack.generated.h
-G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/BTTask_FindPatrolPos.cpp
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\BTTask_FindPatrolPos.h
-G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\BTTask_FindPatrolPos.generated.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationSystem.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationOctree.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationOctreeController.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationDirtyAreasController.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Core\Public\Math/MovingWindowAverageFast.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Public\UnrealEdMisc.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Public\Editor.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Classes\Editor/EditorEngine.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Classes\Editor/Transactor.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Core\Public\Serialization/ArchiveSerializedPropertyChain.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\Transactor.generated.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Classes\Settings/LevelEditorViewportSettings.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Public\Viewports.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Classes\Editor/UnrealEdTypes.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\UnrealEdTypes.generated.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\LevelEditorViewportSettings.generated.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetPlatform.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetDevice.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Developer\TargetPlatform\Public\Interfaces/TargetDeviceId.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetPlatformManagerModule.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Public\PlayInEditorDataTypes.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\PlayInEditorDataTypes.generated.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Editor\EditorSubsystem\Public\EditorSubsystem.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\EditorSubsystem\EditorSubsystem.generated.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\EditorEngine.generated.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Public\Subsystems/ImportSubsystem.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ImportSubsystem.generated.h
-G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationSystem.generated.h
-G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/define.cpp
-G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/Enemy_DarkKnight_AnimInst.cpp
-G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/Enemy_SkeletonArcher.cpp
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/BTDe_HasTargetAndInOffensDist.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\BTDe_HasTargetAndInOffensDist.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTDecorator.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTAuxiliaryNode.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTAuxiliaryNode.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTDecorator.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\BTDe_HasTargetAndInOffensDist.generated.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacterAnimInstance.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\PlayerCharacterAnimInstance.generated.h
@@ -564,6 +533,68 @@ G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\MyPlayerController.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\MyPlayerController.generated.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\PlayerCharacter.generated.h
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/BTDeco_HasTargetAndInDefensDist.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\BTDeco_HasTargetAndInDefensDist.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\BTDeco_HasTargetAndInDefensDist.generated.h
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/BTDecorator_IsInAttackRange.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\BTDecorator_IsInAttackRange.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\BTDecorator_IsInAttackRange.generated.h
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/BTService_DetectPlayer.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\BTService_DetectPlayer.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTService.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTService.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\BTService_DetectPlayer.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/BTService_UpdateBackwardLocation.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\BTService_UpdateBackwardLocation.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\BTService_UpdateBackwardLocation.generated.h
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/BTService_UpdateInfo.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\BTService_UpdateInfo.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\BTService_UpdateInfo.generated.h
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/BTTask_Attack.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\BTTask_Attack.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTTaskNode.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTTaskNode.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\BTTask_Attack.generated.h
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/BTTask_FindPatrolPos.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\BTTask_FindPatrolPos.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\BTTask_FindPatrolPos.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationSystem.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationOctree.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationOctreeController.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationDirtyAreasController.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Core\Public\Math/MovingWindowAverageFast.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Public\UnrealEdMisc.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Public\Editor.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Classes\Editor/EditorEngine.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Classes\Editor/Transactor.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Core\Public\Serialization/ArchiveSerializedPropertyChain.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\Transactor.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Classes\Settings/LevelEditorViewportSettings.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Public\Viewports.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Classes\Editor/UnrealEdTypes.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\UnrealEdTypes.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\LevelEditorViewportSettings.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetPlatform.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetDevice.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Developer\TargetPlatform\Public\Interfaces/TargetDeviceId.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetPlatformManagerModule.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Public\PlayInEditorDataTypes.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\PlayInEditorDataTypes.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Editor\EditorSubsystem\Public\EditorSubsystem.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\EditorSubsystem\EditorSubsystem.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\EditorEngine.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Editor\UnrealEd\Public\Subsystems/ImportSubsystem.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ImportSubsystem.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationSystem.generated.h
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/BTTask_TurntoTarget.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\BTTask_TurntoTarget.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\BTTask_TurntoTarget.generated.h
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/define.cpp
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/Enemy_Base.cpp
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/Enemy_DarkKnight.cpp
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/Enemy_DarkKnight_AnimInst.cpp
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/Enemy_SkeletonArcher.cpp
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/Enemy_SkeletonArcher_AnimInst.cpp
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/Enemy_SkeletonWarrior.cpp
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/Enemy_SkeletonWarrior_AnimInst.cpp
@@ -572,11 +603,16 @@ G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio
 G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Animation/AnimNotifies/AnimNotifyState.h
 G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AnimNotifyState.generated.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\EnemyAttackNotifyState.generated.h
-G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/IssenTimingNotifyState.cpp
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\IssenTimingNotifyState.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\IssenTimingNotifyState.generated.h
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/MyAttackNotifyState.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\MyAttackNotifyState.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\MyAttackNotifyState.generated.h
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/MyGameInstance.cpp
+G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/MyHeavyAttackNotifyState.cpp
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\MyHeavyAttackNotifyState.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\MyHeavyAttackNotifyState.generated.h
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/MyPlayerController.cpp
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/Projectile_Base.cpp
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/Projectile_SkeletonArcherArrow.cpp

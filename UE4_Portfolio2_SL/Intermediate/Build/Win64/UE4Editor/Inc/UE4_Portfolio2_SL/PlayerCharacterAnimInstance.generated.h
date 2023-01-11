@@ -16,6 +16,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_12_SPARSE_DATA
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execAnimNotify_CanRoll); \
 	DECLARE_FUNCTION(execAnimNotify_UseStaminaHeavyAttack); \
 	DECLARE_FUNCTION(execAnimNotify_UseStaminaLightAttack); \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleEnd); \
@@ -34,6 +35,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execAnimNotify_CanRoll); \
 	DECLARE_FUNCTION(execAnimNotify_UseStaminaHeavyAttack); \
 	DECLARE_FUNCTION(execAnimNotify_UseStaminaLightAttack); \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleEnd); \

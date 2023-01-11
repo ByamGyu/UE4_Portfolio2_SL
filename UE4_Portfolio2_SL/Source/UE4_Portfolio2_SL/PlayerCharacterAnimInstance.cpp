@@ -25,7 +25,7 @@ UPlayerCharacterAnimInstance::UPlayerCharacterAnimInstance()
 	if (AM_RollIdle_FR45.Succeeded()) RollIdle_FR45_Montage = AM_RollIdle_FR45.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle_FR90(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_R_90_Seq_Montage.Roll_R_90_Seq_Montage'"));
 	if (AM_RollIdle_FR90.Succeeded()) RollIdle_FR90_Montage = AM_RollIdle_FR90.Object;
-	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle_B180(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_Combat_B_180_Seq_Montage.Roll_Combat_B_180_Seq_Montage'"));
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle_B180(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_B_180_Seq_Montage.Roll_B_180_Seq_Montage'"));
 	if (AM_RollIdle_B180.Succeeded()) RollIdle_B180_Montage = AM_RollIdle_B180.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> AM_RollIdle_BL45(TEXT("AnimMontage'/Game/MyFolder/PlayerCharacter/Roll_B_L_45_Seq_Montage.Roll_B_L_45_Seq_Montage'"));
 	if (AM_RollIdle_BL45.Succeeded()) RollIdle_BL45_Montage = AM_RollIdle_BL45.Object;
@@ -114,7 +114,8 @@ void UPlayerCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		StaminaUse = Pawn->GetStaminaUse();
 		//KnockDown_Time = Pawn->GetKnockDownTime();
 
-		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(CurrentDirection));
+		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(CurrentForwardDirectionInputValue));
+		
 	}
 }
 
@@ -122,19 +123,36 @@ void UPlayerCharacterAnimInstance::PlayRollIdleMontage()
 {
 	auto Pawn = Cast<APlayerCharacter>(TryGetPawnOwner());
 	if (Pawn == nullptr) return;
+		
 
-	// 락온 상태에서 8방향 구르기(CurrentDirection 사용)
+	// 락온 상태에서 8방향 구르기
+	// 락온 상태에서는 캐릭터를 카메라 정방향으로 회전시키고 몽타주를 실행해야 함
 	if (IsLockOn == true)
 	{
-		if (CurrentSpeed == 0.0f && CurrentDirectionInputValue == 0.0f) Montage_Play(BackStep_Montage, 1.0f);
-		else if (CurrentSpeed > 0 && CurrentDirectionInputValue == 0.0f) Montage_Play(RollIdle_F0_Montage, 1.0f);
-		else if (CurrentSpeed > 0 && CurrentDirectionInputValue == 0.5f) Montage_Play(RollIdle_FR45_Montage, 1.0f);
-		else if (CurrentSpeed > 0 && CurrentDirectionInputValue == 1.0f) Montage_Play(RollIdle_FR90_Montage, 1.0f);
-		else if (CurrentSpeed > 0 && CurrentDirectionInputValue == -0.5f) Montage_Play(RollIdle_FL45_Montage, 1.0f);
-		else if (CurrentSpeed > 0 && CurrentDirectionInputValue == -1.0f) Montage_Play(RollIdle_FL90_Montage, 1.0f);
-		else if (CurrentSpeed < 0 && CurrentDirectionInputValue == 0.0f) Montage_Play(RollIdle_B180_Montage, 1.0f);
-		else if (CurrentSpeed < 0 && CurrentDirectionInputValue == 0.5f) Montage_Play(RollIdle_BR45_Montage, 1.0f);
-		else if (CurrentSpeed < 0 && CurrentDirectionInputValue == -0.5f) Montage_Play(RollIdle_BL45_Montage, 1.0f);
+		if (CurrentForwardDirectionInputValue == 0 && CurrentSpeed == 0.0f) Montage_Play(BackStep_Montage, 1.0f);
+		else if (CurrentSpeed != 0.0f)
+		{
+			// 카메라 시점 기준으로 움직여야 함
+			float tmpyaw = Pawn->GetCameraManager()->GetCameraRotation().Yaw;
+			Pawn->SetActorRotation(FRotator(0.0f, tmpyaw, 0.0f));
+
+			// 정방향
+			if (CurrentForwardDirectionInputValue == 1.0f && CurrentDirectionInputValue == 0.0f) Montage_Play(RollCombat_F0_Montage, 1.0f);
+			// 오른쪽 앞 대각선
+			else if (CurrentForwardDirectionInputValue == 1.0f && CurrentDirectionInputValue == 0.5f) Montage_Play(RollCombat_FR45_Montage, 1.0f);
+			// 왼쪽 앞 대각선
+			else if (CurrentForwardDirectionInputValue == 1.0f && CurrentDirectionInputValue == -0.5f) Montage_Play(RollCombat_FL45_Montage, 1.0f);
+			// 오른쪽
+			else if (CurrentForwardDirectionInputValue == 0.0f && CurrentDirectionInputValue == 1.0f) Montage_Play(RollCombat_FR90_Montage, 1.0f);
+			// 왼쪽
+			else if (CurrentForwardDirectionInputValue == 0.0f && CurrentDirectionInputValue == -1.0f) Montage_Play(RollCombat_FL90_Montage, 1.0f);
+			// 뒤
+			else if (CurrentForwardDirectionInputValue == -1.0f && CurrentDirectionInputValue == 0.0f) Montage_Play(RollCombat_B180_Montage, 1.0f);
+			// 오른쪽 뒤 대각선
+			else if (CurrentForwardDirectionInputValue == -1.0f && CurrentDirectionInputValue == 0.5f) Montage_Play(RollCombat_BR45_Montage, 1.0f);
+			// 왼쪽 뒤 대각선
+			else if (CurrentForwardDirectionInputValue == -1.0f && CurrentDirectionInputValue == -0.5f) Montage_Play(RollCombat_BL45_Montage, 1.0f);
+		}
 	}
 	// 일반 상태에서 구르기
 	// 일반 상태에서는 캐릭터를 해당 방향으로 회전시키고 앞으로 구르는 몽타주를 실행해야 함
@@ -279,16 +297,17 @@ void UPlayerCharacterAnimInstance::AnimNotify_InitState()
 			|| Character->GetState() == EPLAYER_STATE::GUARD_IMPACT_WEAK
 			|| Character->GetState() == EPLAYER_STATE::GUARD_IMPACT_STRONG)
 		{
-			Character->ChangeState(EPLAYER_STATE::GUARD);
-			Character->SetIsParrying(false);
-			Character->SetIsAttacking(false);
+			Character->ChangeState(EPLAYER_STATE::GUARD);			
 		}
 		else
 		{
 			Character->ChangeState(EPLAYER_STATE::IDLE);
-			Character->SetIsParrying(false);
-			Character->SetIsAttacking(false);
 		}
+
+		Character->SetIsParrying(false);
+		Character->SetIsAttacking(false);
+		Character->SetCanRoll(true);
+		Character->GetMesh()->SetCollisionProfileName(FName("PlayerPhysicsActor"));
 	}
 }
 
@@ -409,5 +428,14 @@ void UPlayerCharacterAnimInstance::AnimNotify_UseStaminaHeavyAttack()
 	if (Character != nullptr)
 	{
 		Character->SetCurStamina(StaminaUse * (-33.0f));
+	}
+}
+
+void UPlayerCharacterAnimInstance::AnimNotify_CanRoll()
+{
+	auto Character = Cast<APlayerCharacter>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		Character->SetCanRoll(true);
 	}
 }

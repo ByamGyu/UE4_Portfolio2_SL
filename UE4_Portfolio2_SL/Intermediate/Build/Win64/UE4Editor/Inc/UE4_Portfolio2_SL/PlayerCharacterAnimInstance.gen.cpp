@@ -21,6 +21,13 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 	UE4_PORTFOLIO2_SL_API UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EPLAYER_STATE();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UPlayerCharacterAnimInstance::execAnimNotify_CanRoll)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AnimNotify_CanRoll();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UPlayerCharacterAnimInstance::execAnimNotify_UseStaminaHeavyAttack)
 	{
 		P_FINISH;
@@ -125,6 +132,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AnimNotify_AttackEnd", &UPlayerCharacterAnimInstance::execAnimNotify_AttackEnd },
 			{ "AnimNotify_AttackInputCheck", &UPlayerCharacterAnimInstance::execAnimNotify_AttackInputCheck },
+			{ "AnimNotify_CanRoll", &UPlayerCharacterAnimInstance::execAnimNotify_CanRoll },
 			{ "AnimNotify_GuardStart", &UPlayerCharacterAnimInstance::execAnimNotify_GuardStart },
 			{ "AnimNotify_InitState", &UPlayerCharacterAnimInstance::execAnimNotify_InitState },
 			{ "AnimNotify_InvinsibleEnd", &UPlayerCharacterAnimInstance::execAnimNotify_InvinsibleEnd },
@@ -181,6 +189,28 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackInputCheck_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_CanRoll_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_CanRoll_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerCharacterAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_CanRoll_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerCharacterAnimInstance, nullptr, "AnimNotify_CanRoll", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_CanRoll_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_CanRoll_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_CanRoll()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_CanRoll_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -665,6 +695,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UPlayerCharacterAnimInstance_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackEnd, "AnimNotify_AttackEnd" }, // 816944370
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_AttackInputCheck, "AnimNotify_AttackInputCheck" }, // 1040418465
+		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_CanRoll, "AnimNotify_CanRoll" }, // 1154189989
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_GuardStart, "AnimNotify_GuardStart" }, // 625723640
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InitState, "AnimNotify_InitState" }, // 3696852591
 		{ &Z_Construct_UFunction_UPlayerCharacterAnimInstance_AnimNotify_InvinsibleEnd, "AnimNotify_InvinsibleEnd" }, // 474231052
@@ -1182,7 +1213,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacterAnimInstance() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerCharacterAnimInstance, 1496975232);
+	IMPLEMENT_CLASS(UPlayerCharacterAnimInstance, 853265226);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UPlayerCharacterAnimInstance>()
 	{
 		return UPlayerCharacterAnimInstance::StaticClass();
