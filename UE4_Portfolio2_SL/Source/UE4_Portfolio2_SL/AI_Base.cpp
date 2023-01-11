@@ -9,6 +9,7 @@ const FName AAI_Base::TargetKey(TEXT("Target"));
 const FName AAI_Base::PercentKey(TEXT("Percent"));
 const FName AAI_Base::BackwardPosKey(TEXT("BackwardPos"));
 const FName AAI_Base::CurStateKey(TEXT("CurState"));
+const FName AAI_Base::CurEquipmentKey(TEXT("CurEquipmentState"));
 
 
 AAI_Base::AAI_Base()

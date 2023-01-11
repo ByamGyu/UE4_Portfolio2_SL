@@ -61,6 +61,7 @@ public: \
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_Base_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__WidgetComponent() { return STRUCT_OFFSET(AEnemy_Base, WidgetComponent); } \
 	FORCEINLINE static uint32 __PPO__Cur_State() { return STRUCT_OFFSET(AEnemy_Base, Cur_State); } \
+	FORCEINLINE static uint32 __PPO__Cur_EquipmentState() { return STRUCT_OFFSET(AEnemy_Base, Cur_EquipmentState); } \
 	FORCEINLINE static uint32 __PPO__MaxHP() { return STRUCT_OFFSET(AEnemy_Base, MaxHP); } \
 	FORCEINLINE static uint32 __PPO__CurHP() { return STRUCT_OFFSET(AEnemy_Base, CurHP); } \
 	FORCEINLINE static uint32 __PPO__HPRatio() { return STRUCT_OFFSET(AEnemy_Base, HPRatio); } \

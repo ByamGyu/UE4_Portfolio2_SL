@@ -24,5 +24,4 @@ protected:
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	float DetectRadius;
-
 };

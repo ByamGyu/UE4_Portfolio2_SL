@@ -34,7 +34,14 @@ EBTNodeResult::Type UBTTask_TurntoTarget::ExecuteTask(UBehaviorTreeComponent& Ow
 		// 처형당하는 상태일 때는 회전하지 못하게 함
 		// 가드브레이크 상태도 동일
 		if (pEnemyCharacter->GetState() == EMONSTER_STATE::EXECUTED
-			|| pEnemyCharacter->GetState() == EMONSTER_STATE::GUARD_BREAK)
+			|| pEnemyCharacter->GetState() == EMONSTER_STATE::GUARD_BREAK
+			|| pEnemyCharacter->GetState() == EMONSTER_STATE::IMPACT_WEAK
+			|| pEnemyCharacter->GetState() == EMONSTER_STATE::IMPACT_WEAK
+			|| pEnemyCharacter->GetState() == EMONSTER_STATE::JUMP
+			|| pEnemyCharacter->GetState() == EMONSTER_STATE::FALL
+			|| pEnemyCharacter->GetState() == EMONSTER_STATE::SLEEP_SITDOWN
+			|| pEnemyCharacter->GetState() == EMONSTER_STATE::SLEEP_STAND
+			|| pEnemyCharacter->GetState() == EMONSTER_STATE::PARRY)
 		{
 			// 회전하지 않음
 		}

@@ -211,6 +211,7 @@ void APlayerCharacter::MoveRight(float _Value)
 	}
 	else return;
 
+
 	if ((Controller != nullptr) && (_Value != 0.0f))
 	{
 		// 어느 방향이 오른쪽인지 찾는다.
@@ -227,6 +228,7 @@ void APlayerCharacter::MoveRight(float _Value)
 		{
 			LeftRightInputValue = _Value * 0.5f;
 		}
+		// 락온 상태가 아닐 경우
 		else LeftRightInputValue = _Value;
 	}
 	else if ((Controller != nullptr) && (_Value == 0.0f))
@@ -455,164 +457,183 @@ void APlayerCharacter::LightAttack()
 		return;
 	}
 
-	// 처형 판정
-	AActor* tmp_Character = CharacterCheck();
-	if (tmp_Character != nullptr)
+
+	if (IsAttacking == true)
 	{
-		auto pEnemy = Cast<AEnemy_Base>(tmp_Character);
-		if (pEnemy != nullptr)
+
+	}
+	else
+	{
+		// 처형 판정
+		AActor* tmp_Character = CharacterCheck();
+		if (tmp_Character != nullptr)
 		{
-			// 가드브레이크 상태일 경우
-			if (pEnemy->GetState() == EMONSTER_STATE::GUARD_BREAK)
+			auto pEnemy = Cast<AEnemy_Base>(tmp_Character);
+			if (pEnemy != nullptr)
 			{
-				FDamageEvent DamageEvent;
-				pEnemy->TakeDamage(AttackDamage * 5.0f, DamageEvent, this->GetController(), this->GetRightWeapon());
-
-				// 처형 애니메이션 개수가 다를 수 있음!
-				int32 TargetExecutionAnimationNum = pEnemy->GetExecutionAnimationNum();
-				if (TargetExecutionAnimationNum == 0)
+				// 가드브레이크 상태일 경우
+				if (pEnemy->GetState() == EMONSTER_STATE::GUARD_BREAK)
 				{
-					// 대상의 처형 애니메이션이 없으면 패스
-				}
-				else
-				{
-					this->SetActorLocation(pEnemy->GetActorLocation() + pEnemy->GetActorForwardVector() * 125.0f);
-					
-					pEnemy->ChangeState(EMONSTER_STATE::EXECUTION);
+					FDamageEvent DamageEvent;
+					pEnemy->TakeDamage(AttackDamage * 5.0f, DamageEvent, this->GetController(), this->GetRightWeapon());
 
-
-					// 처형 애니메이션 랜덤 재생
-					int32 tmpint = FMath::RandRange(0, TargetExecutionAnimationNum - 1);
-					if (tmpint == 0)
-					{						
-						pEnemy->PlayExecuted1Animation();
-
-						ChangeState(EPLAYER_STATE::EXECUTION);
-						PlayExecutionAnimation1();
-
-						return;
-					}
-					else if (tmpint == 1)
+					// 처형 애니메이션 개수가 다를 수 있음!
+					int32 TargetExecutionAnimationNum = pEnemy->GetExecutionAnimationNum();
+					if (TargetExecutionAnimationNum == 0)
 					{
-						pEnemy->PlayExecuted2Animation();
-
-						ChangeState(EPLAYER_STATE::EXECUTION);
-						PlayExecutionAnimation2();
-
-						return;
-					}
-				}
-				
-			}
-
-			// 뒤돌아 있는 경우
-			if (pEnemy->GetState() != EMONSTER_STATE::DEAD
-				|| pEnemy->GetState() != EMONSTER_STATE::EXECUTED
-				|| pEnemy->GetState() != EMONSTER_STATE::FALL
-				|| pEnemy->GetState() != EMONSTER_STATE::JUMP)
-			{
-				FVector OwnerForward;
-				FVector HittedActorForward;
-				float Dot;
-				float AcosAngle;
-				float AngleDegree;
-
-				OwnerForward = this->GetActorForwardVector();
-				HittedActorForward = pEnemy->GetActorForwardVector();
-				Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
-				AcosAngle = FMath::Acos(Dot);
-				AngleDegree = FMath::RadiansToDegrees(AcosAngle);
-
-
-				// 적이 뒤돌아 있으면
-				if (AngleDegree <= 75.0f)
-				{
-					// 뒤에서 처형 애니메이션 개수가 1개 이상이면
-					if (pEnemy->GetExecutionBackAnimationNum() == 0)
-					{
-
+						// 대상의 처형 애니메이션이 없으면 패스
 					}
 					else
 					{
-						// 이걸 먼저 실행해야 제대로 애니메이션이 나옴.
-						FDamageEvent DamageEvent;
-						pEnemy->TakeDamage(this->GetAttackDamage() * 5.0f, DamageEvent, this->GetController(), this->GetRightWeapon());
+						this->SetActorLocation(pEnemy->GetActorLocation() + pEnemy->GetActorForwardVector() * 125.0f);
 
-						this->SetActorLocation(pEnemy->GetActorLocation() - (pEnemy->GetActorForwardVector() * 200));
-						this->SetActorRotation(pEnemy->GetActorRotation());
-						
-						pEnemy->ChangeState(EMONSTER_STATE::EXECUTED);
-						pEnemy->PlayExecutedBackAnimation();
-						PlayExecutionBackAnimation();
+						pEnemy->ChangeState(EMONSTER_STATE::EXECUTION);
 
-						
 						AAI_Base* AIController_Enemy = Cast <AAI_Base>(pEnemy->GetController());
 						if (AIController_Enemy != nullptr)
 						{
 							AIController_Enemy->GetBlackboardComponent()->SetValueAsObject(AAI_Base::TargetKey, this);
-						}						
-						
+						}
 
-						return;
+						// 처형 애니메이션 랜덤 재생
+						int32 tmpint = FMath::RandRange(0, TargetExecutionAnimationNum - 1);
+						if (tmpint == 0)
+						{
+							pEnemy->PlayExecuted1Animation();
+
+							ChangeState(EPLAYER_STATE::EXECUTION);
+							PlayExecutionAnimation1();
+
+							return;
+						}
+						else if (tmpint == 1)
+						{
+							pEnemy->PlayExecuted2Animation();
+
+							ChangeState(EPLAYER_STATE::EXECUTION);
+							PlayExecutionAnimation2();
+
+							return;
+						}
+					}
+
+				}
+
+				// 뒤돌아 있는 경우
+				if (pEnemy->GetState() != EMONSTER_STATE::DEAD
+					|| pEnemy->GetState() != EMONSTER_STATE::EXECUTED
+					|| pEnemy->GetState() != EMONSTER_STATE::FALL
+					|| pEnemy->GetState() != EMONSTER_STATE::JUMP)
+				{
+					FVector OwnerForward;
+					FVector HittedActorForward;
+					float Dot;
+					float AcosAngle;
+					float AngleDegree;
+
+					OwnerForward = this->GetActorForwardVector();
+					HittedActorForward = pEnemy->GetActorForwardVector();
+					Dot = FVector::DotProduct(OwnerForward, HittedActorForward);
+					AcosAngle = FMath::Acos(Dot);
+					AngleDegree = FMath::RadiansToDegrees(AcosAngle);
+
+
+					// 적이 뒤돌아 있으면
+					if (AngleDegree <= 75.0f)
+					{
+						// 뒤에서 처형 애니메이션 개수가 1개 이상이면
+						if (pEnemy->GetExecutionBackAnimationNum() == 0)
+						{
+
+						}
+						else
+						{
+							// 이걸 먼저 실행해야 제대로 애니메이션이 나옴.
+							FDamageEvent DamageEvent;
+							pEnemy->TakeDamage(this->GetAttackDamage() * 5.0f, DamageEvent, this->GetController(), this->GetRightWeapon());
+
+							this->SetActorLocation(pEnemy->GetActorLocation() - (pEnemy->GetActorForwardVector() * 200));
+							this->SetActorRotation(pEnemy->GetActorRotation());
+
+							pEnemy->ChangeState(EMONSTER_STATE::EXECUTED);
+							pEnemy->PlayExecutedBackAnimation();
+							PlayExecutionBackAnimation();
+
+
+							AAI_Base* AIController_Enemy = Cast <AAI_Base>(pEnemy->GetController());
+							if (AIController_Enemy != nullptr)
+							{
+								AIController_Enemy->GetBlackboardComponent()->SetValueAsObject(AAI_Base::TargetKey, this);
+							}
+
+
+							return;
+						}
 					}
 				}
 			}
 		}
-	}
 
-	// 일섬!
-	if (IssenAbleTime > 0.0f)
-	{
-		ChangeState(EPLAYER_STATE::ISSEN);
-		AnimInst->PlayIssenMontage();
-		SetISsenAbleTime(0.0f);
-
-		// 판정
-		TArray<FHitResult> hit; // 맞은 액터를 저장할 임시 배열
-		FCollisionQueryParams QueryParams(NAME_None, false, this);
-
-		FVector StartLoc = this->GetActorLocation();
-		FVector EndLoc = this->GetActorLocation() + this->GetActorForwardVector() * 400.0f;
-		this->GetWorld()->SweepMultiByChannel(
-			hit,
-			StartLoc,
-			EndLoc,
-			FQuat::Identity,
-			ECollisionChannel::ECC_GameTraceChannel2, // PlayerAttack
-			// 돌진 사거리 절반 만큼
-			FCollisionShape::MakeBox(FVector(225.0f, 75.0f, 75.0f)),
-			QueryParams,
-			FCollisionResponseParams::DefaultResponseParam
-		);
-
-		if (hit.IsValidIndex(0))
+		// 일섬!
+		if (IssenAbleTime > 0.0f)
 		{
-			for (int i = 0; i < hit.Num(); i++)
+			ChangeState(EPLAYER_STATE::ISSEN);
+			AnimInst->PlayIssenMontage();
+			SetISsenAbleTime(0.0f);
+
+			// 판정
+			TArray<FHitResult> hit; // 맞은 액터를 저장할 임시 배열
+			FCollisionQueryParams QueryParams(NAME_None, false, this);
+
+			FVector StartLoc = this->GetActorLocation();
+			FVector EndLoc = this->GetActorLocation() + this->GetActorForwardVector() * 400.0f;
+			this->GetWorld()->SweepMultiByChannel(
+				hit,
+				StartLoc,
+				EndLoc,
+				FQuat::Identity,
+				ECollisionChannel::ECC_GameTraceChannel2, // PlayerAttack
+				// 돌진 사거리 절반 만큼
+				FCollisionShape::MakeBox(FVector(225.0f, 75.0f, 75.0f)),
+				QueryParams,
+				FCollisionResponseParams::DefaultResponseParam
+			);
+
+			if (hit.IsValidIndex(0))
 			{
-				// 적이 Enemy_Base 타입이면
-				AEnemy_Base* hittedCharacter = Cast<AEnemy_Base>(hit[i].GetActor());
-				if (hittedCharacter != nullptr)
+				for (int i = 0; i < hit.Num(); i++)
 				{
-					// 일단 피격 애니메이션 재생(체력이 0이하면 알아서 Dead 애니메이션 재생됨)
-					hittedCharacter->PlayHitAniamtion(0.0f);
-
-					// 이펙트 스폰
-					UMyGameInstance* GI = Cast<UMyGameInstance>(GetGameInstance());
-					if (GI != nullptr)
+					// 적이 Enemy_Base 타입이면
+					AEnemy_Base* hittedCharacter = Cast<AEnemy_Base>(hit[i].GetActor());
+					if (hittedCharacter != nullptr)
 					{
-						GI->SpawnNiagaraSystemAtLocation("NS_Issen", hit[i].GetActor()->GetActorLocation());
+						// 일단 피격 애니메이션 재생(체력이 0이하면 알아서 Dead 애니메이션 재생됨)
+						hittedCharacter->PlayHitAniamtion(0.0f);
+
+						// 이펙트 스폰
+						UMyGameInstance* GI = Cast<UMyGameInstance>(GetGameInstance());
+						if (GI != nullptr)
+						{
+							GI->SpawnNiagaraSystemAtLocation("NS_Issen", hit[i].GetActor()->GetActorLocation());
+						}
+
+						AAI_Base* AIController_Enemy = Cast <AAI_Base>(hittedCharacter->GetController());
+						if (AIController_Enemy != nullptr)
+						{
+							AIController_Enemy->GetBlackboardComponent()->SetValueAsObject(AAI_Base::TargetKey, this);
+						}
+
+						// 데미지 입히기
+						FDamageEvent DamageEvent;
+						hittedCharacter->TakeDamage(this->GetAttackDamage() * 10.0f, DamageEvent, this->GetController(), this->GetRightWeapon());
 					}
-
-					// 데미지 입히기
-					FDamageEvent DamageEvent;
-					hittedCharacter->TakeDamage(this->GetAttackDamage() * 10.0f, DamageEvent, this->GetController(), this->GetRightWeapon());
+					else continue;
 				}
-				else continue;				
 			}
-		}		
 
-		return;
-	}
+			return;
+		}
+	}	
 
 	// 일반 공격(콤보 까지)
 	if (IsAttacking == false)
@@ -665,10 +686,10 @@ void APlayerCharacter::HeavyAttack()
 		ChangeState(EPLAYER_STATE::ATTACK_HEAVY);
 		AnimInst->PlayHeavyAttackMontage();
 	}
-	else if (IsAttacking == true)
-	{
-		IsAttackButtonWhenAttack = true;
-	}
+	//else if (IsAttacking == true)
+	//{
+	//	IsAttackButtonWhenAttack = true;
+	//}
 }
 
 void APlayerCharacter::LockOn()
@@ -898,6 +919,11 @@ void APlayerCharacter::LookLockOnTarget(float DeltaSeconds)
 bool APlayerCharacter::GetIsLockOn()
 {
 	return IsLockTargetExist;
+}
+
+float APlayerCharacter::GetForwardBackInputValue()
+{
+	return ForwardBackInputValue;
 }
 
 float APlayerCharacter::GetLeftRightInputValue()

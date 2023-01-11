@@ -38,6 +38,7 @@ public:
 	static const FName PercentKey;
 	static const FName BackwardPosKey;
 	static const FName CurStateKey;
+	static const FName CurEquipmentKey;
 
 
 

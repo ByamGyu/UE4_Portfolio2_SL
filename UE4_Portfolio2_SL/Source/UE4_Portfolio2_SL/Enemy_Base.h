@@ -47,6 +47,8 @@ public:
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
 	EMONSTER_STATE Cur_State;
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	EEQUIPMENT_STATE Cur_EquipmentState;
 
 
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
@@ -100,7 +102,9 @@ public:
 public:
 	EMONSTER_STATE GetState() { return Cur_State; }
 	void ChangeState(EMONSTER_STATE _NextState);
-
+	EEQUIPMENT_STATE GetEquipmentState() { return Cur_EquipmentState; }
+	void ChangeEquipmentState(EEQUIPMENT_STATE _NextState) { Cur_EquipmentState = _NextState; }
+	
 	float GetCurrentSpeed();
 
 	void SetAttackDamage(float _Value);
@@ -110,9 +114,6 @@ public:
 	void SetIsAttacking(bool _Value) { IsAttacking = _Value; }
 	bool GetIsFight() { return IsFight; }
 	void SetIsFight(bool _Value) { IsFight = _Value; }
-
-	bool GetIsParried() { return IsParried; }
-	void SetIsParried(bool _Value) { IsParried = _Value; }
 
 	// 현재 자식 클래스에 구현되어있음 virtual로 바꿀 필요가???
 	virtual float GetCurHP() { return CurHP; }

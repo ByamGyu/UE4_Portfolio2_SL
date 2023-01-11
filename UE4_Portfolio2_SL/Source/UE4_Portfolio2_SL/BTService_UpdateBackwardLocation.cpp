@@ -10,6 +10,9 @@ UBTService_UpdateBackwardLocation::UBTService_UpdateBackwardLocation()
 	NodeName = TEXT("UpdateBackwardLocation");
 	Interval = 0.5f;
 	RandomDeviation = 0.0f;
+
+	MoveRightDistance = 250.0f;
+	MoveBackDistance = 25.0f;
 }
 
 void UBTService_UpdateBackwardLocation::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
@@ -40,15 +43,15 @@ void UBTService_UpdateBackwardLocation::TickNode(UBehaviorTreeComponent& OwnerCo
 	int32 tmp = FMath::RandRange(0, 2);
 	if (tmp == 0) // 오른쪽
 	{
-		NextLocation = CurLoc + (RightDir) * 250.0f + BackwardDir * 25.0f;
+		NextLocation = CurLoc + (RightDir) *MoveRightDistance + BackwardDir * MoveBackDistance;
 	}
 	else if(tmp == 1) // 왼쪽
 	{
-		NextLocation = CurLoc - (RightDir) * 250.0f + BackwardDir * 25.0f;
+		NextLocation = CurLoc - (RightDir) *MoveRightDistance + BackwardDir * MoveBackDistance;
 	}
 	else if (tmp == 2) // 뒤
 	{
-		NextLocation = CurLoc + (BackwardDir * 250);
+		NextLocation = CurLoc + (BackwardDir * MoveBackDistance * 10);
 	}
 
 	// BB에 다음 위치 저장하기

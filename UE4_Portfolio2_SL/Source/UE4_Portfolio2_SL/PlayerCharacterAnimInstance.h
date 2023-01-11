@@ -24,7 +24,9 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	float CurrentSpeedAndDirection; // 블렌드 스페이스(움직임)에 사용
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
-	float CurrentDirection; // -1 ~ 1 수치 // 블렌드 스페이스(움직임)에 사용 // PlayerCharacter에서 받아옴
+	float CurrentForwardDirectionInputValue; // -1 ~ 1 수치 // 락온 상태가 아닐 경우의 구르기 방향에 사용
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
+	float CurrentDirectionInputValue; // -1 ~ 1 수치 // 블렌드 스페이스(움직임)에 사용 // PlayerCharacter에서 받아옴
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))
 	bool IsGround; // 땅에 떠있는지 여부 (IsFall은 추락!)
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Character, Meta = (AllowPrivateAccess = true))

@@ -95,7 +95,8 @@ public: \
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_PlayerCharacterAnimInstance_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CurrentSpeed() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurrentSpeed); } \
 	FORCEINLINE static uint32 __PPO__CurrentSpeedAndDirection() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurrentSpeedAndDirection); } \
-	FORCEINLINE static uint32 __PPO__CurrentDirection() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurrentDirection); } \
+	FORCEINLINE static uint32 __PPO__CurrentForwardDirectionInputValue() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurrentForwardDirectionInputValue); } \
+	FORCEINLINE static uint32 __PPO__CurrentDirectionInputValue() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, CurrentDirectionInputValue); } \
 	FORCEINLINE static uint32 __PPO__IsGround() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, IsGround); } \
 	FORCEINLINE static uint32 __PPO__IsFalling() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, IsFalling); } \
 	FORCEINLINE static uint32 __PPO__IsFight() { return STRUCT_OFFSET(UPlayerCharacterAnimInstance, IsFight); } \

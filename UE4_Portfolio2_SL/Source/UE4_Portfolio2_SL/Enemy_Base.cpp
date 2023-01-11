@@ -8,6 +8,8 @@ AEnemy_Base::AEnemy_Base()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
+	Cur_EquipmentState = EEQUIPMENT_STATE::NONE;
+
 	AttackDamage = 5.0f;
 }
 

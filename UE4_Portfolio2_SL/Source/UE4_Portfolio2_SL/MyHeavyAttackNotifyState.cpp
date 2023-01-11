@@ -2,6 +2,10 @@
 #include "PlayerCharacter.h"
 #include "Weapon_Default.h"
 #include "Shield_Default.h"
+#include "AI_Base.h"
+#include "BehaviorTree/BehaviorTreeComponent.h"
+#include "BehaviorTree/BehaviorTree.h"
+#include "BehaviorTree/BlackboardComponent.h"
 #include "DrawDebugHelpers.h"
 
 
@@ -78,6 +82,11 @@ void UMyHeavyAttackNotifyState::NotifyTick(USkeletalMeshComponent* MeshComp, UAn
 
 							GiveDamage(Character, hittedCharacter);
 							
+							AAI_Base* AIController_Enemy = Cast <AAI_Base>(hittedCharacter->GetController());
+							if (AIController_Enemy != nullptr)
+							{
+								AIController_Enemy->GetBlackboardComponent()->SetValueAsObject(AAI_Base::TargetKey, Character);
+							}
 						}
 					}
 				}

@@ -20,6 +20,7 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 
 
+	// 사용하는 캐릭터 가져오기
 	auto ControllingPawn = Cast<ACharacter>(OwnerComp.GetAIOwner()->GetPawn());
 	if (ControllingPawn == nullptr)
 	{
@@ -27,6 +28,7 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 		return;
 	}
 
+	// World 가져오기
 	UWorld* World = ControllingPawn->GetWorld();
 	if (World == nullptr)
 	{
@@ -61,8 +63,8 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 
 	bool IsTargetFind = false;
 
-
-	if (bResult == true) // 감지된 것이 있는지
+	// 감지된 것이 있는지
+	if (bResult == true) 
 	{
 		for (int i = 0; i < OverlapResults.Num(); i++) // 감지된 목록들 순회
 		{
@@ -99,11 +101,16 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 		// 플레이어가 기록되어 있으면! (ex. 뒤잡으로 플레이어 감지)
 		if (OwnerComp.GetBlackboardComponent()->GetValueAsObject("Target") != nullptr)
 		{
-			//ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = false;
-			//ControllingPawn->GetCharacterMovement()->MaxWalkSpeed = 75.0f;
+			// IsTargetFind 변수를 true(어쨌든 찾았으니까)
+			IsTargetFind = true;
+			ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = false;
+			ControllingPawn->GetCharacterMovement()->MaxWalkSpeed = 75.0f;
+
+			// BB의 Target 값을 초기화하지 않고 넘어간다.
 		}
 		else
 		{
+			// BB의 Target 값을 초기화
 			OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_Base::TargetKey, nullptr);
 
 			ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = true;

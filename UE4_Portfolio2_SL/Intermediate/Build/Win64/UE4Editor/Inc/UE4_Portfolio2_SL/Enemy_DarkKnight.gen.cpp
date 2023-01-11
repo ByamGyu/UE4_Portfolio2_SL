@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_DarkKnight() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_DarkKnight, 4171108878);
+	IMPLEMENT_CLASS(AEnemy_DarkKnight, 3056625747);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<AEnemy_DarkKnight>()
 	{
 		return AEnemy_DarkKnight::StaticClass();

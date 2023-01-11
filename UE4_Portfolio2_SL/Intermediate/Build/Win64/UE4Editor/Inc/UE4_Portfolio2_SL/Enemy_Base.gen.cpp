@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 	UPackage* Z_Construct_UPackage__Script_UE4_Portfolio2_SL();
 	UMG_API UClass* Z_Construct_UClass_UWidgetComponent_NoRegister();
 	UE4_PORTFOLIO2_SL_API UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE();
+	UE4_PORTFOLIO2_SL_API UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EEQUIPMENT_STATE();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UE4_PORTFOLIO2_SL_API UClass* Z_Construct_UClass_AWeapon_Common_NoRegister();
 	UE4_PORTFOLIO2_SL_API UClass* Z_Construct_UClass_AShield_Common_NoRegister();
@@ -45,6 +46,11 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Cur_State_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_Cur_State;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_Cur_EquipmentState_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Cur_EquipmentState_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_Cur_EquipmentState;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxHP_MetaData[];
 #endif
@@ -128,6 +134,15 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Cur_State = { "Cur_State", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, Cur_State), Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Cur_State_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Cur_State_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Cur_EquipmentState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Cur_EquipmentState_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Info" },
+		{ "ModuleRelativePath", "Enemy_Base.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Cur_EquipmentState = { "Cur_EquipmentState", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, Cur_EquipmentState), Z_Construct_UEnum_UE4_Portfolio2_SL_EEQUIPMENT_STATE, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Cur_EquipmentState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Cur_EquipmentState_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_MaxHP_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -237,6 +252,8 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_WidgetComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Cur_State_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Cur_State,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Cur_EquipmentState_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Cur_EquipmentState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_MaxHP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_CurHP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_HPRatio,
@@ -277,7 +294,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_Base, 4061877004);
+	IMPLEMENT_CLASS(AEnemy_Base, 2364366814);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<AEnemy_Base>()
 	{
 		return AEnemy_Base::StaticClass();

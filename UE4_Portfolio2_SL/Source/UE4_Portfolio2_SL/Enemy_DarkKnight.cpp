@@ -124,18 +124,6 @@ void AEnemy_DarkKnight::PossessedBy(AController* NewController)
 	}
 }
 
-void AEnemy_DarkKnight::ChangeState(EMONSTER_STATE _NextState)
-{
-	if (Cur_State == _NextState) return;
-	else if (Cur_State == EMONSTER_STATE::DEAD) return;
-	else Cur_State = _NextState;
-}
-
-float AEnemy_DarkKnight::GetCurrentSpeed()
-{
-	return GetVelocity().Size();
-}
-
 float AEnemy_DarkKnight::GetCurHP()
 {
 	return CurHP;

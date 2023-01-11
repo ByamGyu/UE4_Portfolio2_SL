@@ -17,6 +17,7 @@ void UBTService_UpdateInfo::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* N
 {
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 
+
 	auto ControllingPawn = Cast<AEnemy_Base>(OwnerComp.GetAIOwner()->GetPawn());
 	if (ControllingPawn == nullptr)
 	{
@@ -32,12 +33,21 @@ void UBTService_UpdateInfo::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* N
 		
 		// 조종중인 캐릭터의 State 정보 가져오기
 		EMONSTER_STATE tmpstate = ControllingPawn->GetState();
+		EEQUIPMENT_STATE tmpequipmentstate = ControllingPawn->GetEquipmentState();
 
-		// BB에 있는 변수중 "CurState"가 있나 확인하기
+		// BB에 있는 변수 중 "CurState"가 있나 확인하고 반영하기
 		FBlackboard::FKey BBKey_CurState = BB->GetKeyID("CurState");
 		if (BB->IsValidKey(BBKey_CurState))
 		{
 			OwnerComp.GetBlackboardComponent()->SetValueAsEnum(AAI_Base::CurStateKey, (uint8)tmpstate);
 		}
+
+		// BB에 있는 변수 중 "EquipmentState"가 있나 확인하고 반영하기
+		FBlackboard::FKey BBKey_CurEquipmentState = BB->GetKeyID("CurEquipmentState");
+		if (BB->IsValidKey(BBKey_CurEquipmentState))
+		{
+			OwnerComp.GetBlackboardComponent()->SetValueAsEnum(AAI_Base::CurEquipmentKey, (uint8)tmpequipmentstate);
+		}
 	}
+	else GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("AI's BB is Missing"));
 }

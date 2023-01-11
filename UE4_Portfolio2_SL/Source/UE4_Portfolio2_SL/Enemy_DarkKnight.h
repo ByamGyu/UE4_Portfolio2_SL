@@ -33,23 +33,7 @@ public:
 public:
 	virtual void PossessedBy(AController* NewController) override;
 
-
-	// ¿Â∫Ò ENUM
-private:
-	EEQUIPMENT_STATE Cur_EquipmentState;
-
 public:
-	EEQUIPMENT_STATE GetEquipmentState() { return Cur_EquipmentState; }
-	void ChangeEquipmentState(EEQUIPMENT_STATE _NextState) { Cur_EquipmentState = _NextState; }
-
-	EMONSTER_STATE GetState() { return Cur_State; }
-	void ChangeState(EMONSTER_STATE _NextState);
-
-	float GetCurrentSpeed();
-
-	bool GetIsFight() { return IsFight; }
-	void SetIsFight(bool _Value) { IsFight = _Value; }
-
 	float GetCurHP() override;
 	void SetCurHP(float _Value) override;
 

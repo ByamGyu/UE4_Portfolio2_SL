@@ -76,6 +76,7 @@ public:
 	void LookLockOnTarget(float DeltaSeconds); // Tick에서 실행
 
 	bool GetIsLockOn();
+	float GetForwardBackInputValue();
 	float GetLeftRightInputValue();
 	float GetCurrentSpeed();
 
@@ -231,4 +232,5 @@ private:
 public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return m_CameraArm; }
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return m_Camera; }
+	APlayerCameraManager* GetCameraManager() { return CameraManager; }
 };
