@@ -137,26 +137,33 @@ void UPlayerCharacterAnimInstance::PlayRollIdleMontage()
 		else if (CurrentSpeed < 0 && CurrentDirectionInputValue == -0.5f) Montage_Play(RollIdle_BL45_Montage, 1.0f);
 	}
 	// 일반 상태에서 구르기
+	// 일반 상태에서는 캐릭터를 해당 방향으로 회전시키고 앞으로 구르는 몽타주를 실행해야 함
 	else if (IsLockOn == false)
 	{
 		if (CurrentForwardDirectionInputValue == 0 && CurrentSpeed == 0.0f) Montage_Play(BackStep_Montage, 1.0f);
 		else if (CurrentSpeed > 0)
 		{
-			//if(CurrentForwardDirectionInputValue == 1.0f && CurrentDirectionInputValue == 0.0f) Pawn->AddActorWorldRotation(FRotator(0.0f, 0.0f, 0.0f)); // o
-			//else if (CurrentForwardDirectionInputValue == 1.0f && CurrentDirectionInputValue == 0.5f) Pawn->AddActorWorldRotation(FRotator(0.0f, 45.0f, 0.0f));
-			//else if (CurrentForwardDirectionInputValue == 1.0f && CurrentDirectionInputValue == 1.0f) Pawn->AddActorWorldRotation(FRotator(0.0f, 90.0f, 0.0f)); // o
-			//else if (CurrentForwardDirectionInputValue == 1.0f && CurrentDirectionInputValue == -0.5f) Pawn->AddActorWorldRotation(FRotator(0.0f, -45.0f, 0.0f));
-			//else if (CurrentForwardDirectionInputValue == 1.0f && CurrentDirectionInputValue == -1.0f) Pawn->AddActorWorldRotation(FRotator(0.0f, -90.0f, 0.0f)); // o
-			//else if (CurrentForwardDirectionInputValue == -1.0f && CurrentDirectionInputValue == 0.0f) Pawn->AddActorWorldRotation(FRotator(0.0f, -180.0f, 0.0f));
-			
-			
-			//FRotator tmp = Pawn->GetFollowCamera()->GetForwardVector();
-			//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Cyan, tmp.ToString());
+			// 카메라 시점 기준으로 움직여야 함
+			float tmpyaw = Pawn->GetCameraManager()->GetCameraRotation().Yaw;
 
-			//Pawn->setroation
+			// 정방향
+			if (CurrentForwardDirectionInputValue == 1.0f && CurrentDirectionInputValue == 0.0f) Pawn->SetActorRotation(FRotator(0.0f, tmpyaw, 0.0f));
+			// 오른쪽 앞 대각선
+			else if (CurrentForwardDirectionInputValue == 1.0f && CurrentDirectionInputValue == 1.0f) Pawn->SetActorRotation(FRotator(0.0f, tmpyaw + 45.0f, 0.0f));
+			// 왼쪽 앞 대각선
+			else if (CurrentForwardDirectionInputValue == 1.0f && CurrentDirectionInputValue == -1.0f) Pawn->SetActorRotation(FRotator(0.0f, tmpyaw - 45.0f, 0.0f));
+			// 오른쪽
+			else if (CurrentForwardDirectionInputValue == 0.0f && CurrentDirectionInputValue == 1.0f) Pawn->SetActorRotation(FRotator(0.0f, tmpyaw + 90.0f, 0.0f));
+			// 왼쪽
+			else if (CurrentForwardDirectionInputValue == 0.0f && CurrentDirectionInputValue == -1.0f) Pawn->SetActorRotation(FRotator(0.0f, tmpyaw - 90.0f, 0.0f));
+			// 뒤
+			else if (CurrentForwardDirectionInputValue == -1.0f && CurrentDirectionInputValue == 0.0f) Pawn->SetActorRotation(FRotator(0.0f, tmpyaw - 180.0f, 0.0f));
+			// 오른쪽 뒤 대각선
+			else if (CurrentForwardDirectionInputValue == -1.0f && CurrentDirectionInputValue == 1.0f) Pawn->SetActorRotation(FRotator(0.0f, tmpyaw + 135.0f, 0.0f));
+			// 왼쪽 뒤 대각선
+			else if (CurrentForwardDirectionInputValue == -1.0f && CurrentDirectionInputValue == -1.0f) Pawn->SetActorRotation(FRotator(0.0f, tmpyaw - 135.0f, 0.0f));
 
 			Montage_Play(RollIdle_F0_Montage, 1.0f);
-
 		}
 	}
 }
