@@ -26,6 +26,7 @@
 #include "G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/MyGameInstance.cpp"
 #include "G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/MyHeavyAttackNotifyState.cpp"
 #include "G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/MyPlayerController.cpp"
+#include "G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp"
 #include "G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacterAnimInstance.cpp"
 #include "G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/Projectile_Base.cpp"
 #include "G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/Projectile_SkeletonArcherArrow.cpp"

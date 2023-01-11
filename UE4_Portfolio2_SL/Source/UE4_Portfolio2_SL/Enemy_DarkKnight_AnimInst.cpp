@@ -59,6 +59,13 @@ UEnemy_DarkKnight_AnimInst::UEnemy_DarkKnight_AnimInst()
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> Hit_SS_Backward(TEXT("AnimMontage'/Game/MyFolder/Enemy_DarkKnight/Animations/Hit_Combat_Large_B_Seq_Montage.Hit_Combat_Large_B_Seq_Montage'"));
 	if (Hit_SS_Backward.Succeeded()) Hit_SS_B = Hit_SS_Backward.Object;
 
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> Dodge_Back_180(TEXT("AnimMontage'/Game/MyFolder/Enemy_DarkKnight/Animations/Dodge_Combat_B_180_Seq_Montage.Dodge_Combat_B_180_Seq_Montage'"));
+	if (Dodge_Back_180.Succeeded()) Dodge_B180 = Dodge_Back_180.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> Dodge_BL_45(TEXT("AnimMontage'/Game/MyFolder/Enemy_DarkKnight/Animations/Dodge_Combat_B_L_45_Seq_Montage.Dodge_Combat_B_L_45_Seq_Montage'"));
+	if (Dodge_BL_45.Succeeded()) Dodge_BL45 = Dodge_BL_45.Object;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> Dodge_BR_45(TEXT("AnimMontage'/Game/MyFolder/Enemy_DarkKnight/Animations/Dodge_Combat_B_R_45_Seq_Montage.Dodge_Combat_B_R_45_Seq_Montage'"));
+	if (Dodge_BR_45.Succeeded()) Dodge_BR45 = Dodge_BR_45.Object;
+
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> Battle_Entrance(TEXT("AnimMontage'/Game/MyFolder/Enemy_DarkKnight/Animations/Boss_BattleEntrance_RM_Montage.Boss_BattleEntrance_RM_Montage'"));
 	if (Battle_Entrance.Succeeded()) Boss_Battle_Entrance = Battle_Entrance.Object;
 	static ConstructorHelpers::FObjectFinder<UAnimMontage> Idle_to_Combat(TEXT("AnimMontage'/Game/MyFolder/Enemy_DarkKnight/Animations/Idle_to_Idle_Combat_Seq_Montage.Idle_to_Idle_Combat_Seq_Montage'"));
@@ -129,4 +136,152 @@ void UEnemy_DarkKnight_AnimInst::AnimNotify_InvinsibleEnd()
 	{
 		Character->GetMesh()->SetCollisionProfileName(FName("EnemyPhysicsActor"));
 	}
+}
+
+void UEnemy_DarkKnight_AnimInst::PlaySwordCombo01Montage()
+{
+	Montage_Play(Attack_SS_Combo1, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlaySwordCombo02Montage()
+{
+	Montage_Play(Attack_SS_Combo2, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlaySwordCombo03Montage()
+{
+	Montage_Play(Attack_SS_Combo3, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlaySwordJumpAttackMontage()
+{
+	Montage_Play(Attack_SS_JumpAttack, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayGreatSwordCombo01Montage()
+{
+	Montage_Play(Attack_GS_ChargedCombo, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayGreatSwordCombo02Montage()
+{
+	Montage_Play(Attack_GS_HandAndSwordSwing, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayGreatSwordCombo03Montage()
+{
+	Montage_Play(Attack_GS_SwingAndSlam, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayGreatSwordUppercutMontage()
+{
+	Montage_Play(Attack_GS_Uppercut, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayGreatSwordRunningAttackMontage()
+{
+	Montage_Play(Attack_GS_RunningAttackSimple, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayGreatSwordRunningAOEAttackMontage()
+{
+	Montage_Play(Attack_GS_RunningAttackWithAOE, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayGuardBreakMontage()
+{
+	auto Character = Cast<AEnemy_DarkKnight>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		if (Character->GetEquipmentState() == EEQUIPMENT_STATE::SWORD)
+		{
+			Montage_Play(GuardBreak_SS, 1.0f);
+		}
+		else if (Character->GetEquipmentState() == EEQUIPMENT_STATE::GREATSWORD)
+		{
+			Montage_Play(GuardBreak_GS, 1.0f);
+		}
+	}
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayExecutionMontage()
+{
+	Montage_Play(Execute2, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayExecutedMontage()
+{
+	Montage_Play(Executed_FalldownBack, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayExecutedBack()
+{
+	Montage_Play(Executed_FalldownFront, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayDeadMontage()
+{
+	Montage_Play(Boss_Death, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayImpactMontage()
+{
+	auto Character = Cast<AEnemy_DarkKnight>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		if (Character->GetEquipmentState() == EEQUIPMENT_STATE::SWORD)
+		{
+			Montage_Play(Hit_SS_F, 1.0f);
+		}
+		else if (Character->GetEquipmentState() == EEQUIPMENT_STATE::GREATSWORD)
+		{
+			Montage_Play(Hit_GS_F, 1.0f);
+		}
+	}
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayHitBackMontage()
+{
+	auto Character = Cast<AEnemy_DarkKnight>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		if (Character->GetEquipmentState() == EEQUIPMENT_STATE::SWORD)
+		{
+			Montage_Play(Hit_SS_B, 1.0f);
+		}
+		else if (Character->GetEquipmentState() == EEQUIPMENT_STATE::GREATSWORD)
+		{
+			Montage_Play(Hit_GS_B, 1.0f);
+		}
+	}
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayDodgeB180Montage()
+{
+	Montage_Play(Dodge_B180, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayDodgeBL45Montage()
+{
+	Montage_Play(Dodge_BL45, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayDodgeBR45Montage()
+{
+	Montage_Play(Dodge_BR45, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayBossBattleEntranceMontage()
+{
+	Montage_Play(Boss_Battle_Entrance, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayIdleToCombatMontage()
+{
+	Montage_Play(Idle_To_Combat, 1.0f);
+}
+
+void UEnemy_DarkKnight_AnimInst::PlayCombatToIdleMontage()
+{
+	Montage_Play(Combat_To_Idle, 1.0f);
 }

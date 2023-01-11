@@ -101,6 +101,15 @@ private:
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
 	class UAnimMontage* Hit_SS_B;
 
+
+	// 회피 애니메이션
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* Dodge_B180;
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* Dodge_BL45;
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
+	class UAnimMontage* Dodge_BR45;
+
 	
 	// 기타 애니메이션
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = AnimMontage, Meta = (AllowPrivateAccess = true))
@@ -115,27 +124,34 @@ private:
 
 	// 몽타주 재생 함수들
 public:
-	//void PlayCombo01StandMontage();
-	//void PlayCombo02MoveMontage();
-	//void PlayCombo03MixMontage();
-	//void PlayAttackSlashStandMontage();
-	//void PlayAttackStrikeStandMontage();
-	//void PlayAttackThrustStandMontage();
-	//void PlayAttackSlashMoveMontage();
-	//void PlayAttackStrikeMoveMontage();
-	//void PlayAttackThrustMoveMontage();
+	void PlaySwordCombo01Montage();
+	void PlaySwordCombo02Montage();
+	void PlaySwordCombo03Montage();
+	void PlaySwordJumpAttackMontage();
 
-	//void PlayGuardBreakMontage();
-	//void PlayExecuted1Montage();
-	//void PlayExecuted2Montage();
-	//void PlayExecutedBack();
+	void PlayGreatSwordCombo01Montage();
+	void PlayGreatSwordCombo02Montage();
+	void PlayGreatSwordCombo03Montage();
+	void PlayGreatSwordUppercutMontage();
+	void PlayGreatSwordRunningAttackMontage();
+	void PlayGreatSwordRunningAOEAttackMontage();
 
-	//void PlayDeadMontage();
-	//void PlayImpactMontage();
-	//void PlayHitBackMontage();
-	//void PlaySleepStandMontage();
-	//void PlaySleepSitdownMontage();
-	//void PlayStandupMontage();
+	void PlayGuardBreakMontage();
+	void PlayExecutionMontage();
+	void PlayExecutedMontage();
+	void PlayExecutedBack();
+
+	void PlayDeadMontage();
+	void PlayImpactMontage();
+	void PlayHitBackMontage();
+
+	void PlayDodgeB180Montage();
+	void PlayDodgeBL45Montage();
+	void PlayDodgeBR45Montage();
+
+	void PlayBossBattleEntranceMontage();
+	void PlayIdleToCombatMontage();
+	void PlayCombatToIdleMontage();
 
 
 	// 노티파이들

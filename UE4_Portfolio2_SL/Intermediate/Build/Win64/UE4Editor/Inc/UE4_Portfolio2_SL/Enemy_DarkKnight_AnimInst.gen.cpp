@@ -277,6 +277,18 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_DarkKnight_AnimInst() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Hit_SS_B;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Dodge_B180_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Dodge_B180;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Dodge_BL45_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Dodge_BL45;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Dodge_BR45_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Dodge_BR45;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Boss_Battle_Entrance_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Boss_Battle_Entrance;
@@ -566,6 +578,32 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_DarkKnight_AnimInst() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Hit_SS_B = { "Hit_SS_B", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Hit_SS_B), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Hit_SS_B_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Hit_SS_B_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_B180_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AnimMontage" },
+		{ "Comment", "// \xc8\xb8?? ?\xd6\xb4\xcf\xb8??\xcc\xbc?\n" },
+		{ "ModuleRelativePath", "Enemy_DarkKnight_AnimInst.h" },
+		{ "ToolTip", "\xc8\xb8?? ?\xd6\xb4\xcf\xb8??\xcc\xbc?" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_B180 = { "Dodge_B180", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Dodge_B180), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_B180_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_B180_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_BL45_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AnimMontage" },
+		{ "ModuleRelativePath", "Enemy_DarkKnight_AnimInst.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_BL45 = { "Dodge_BL45", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Dodge_BL45), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_BL45_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_BL45_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_BR45_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AnimMontage" },
+		{ "ModuleRelativePath", "Enemy_DarkKnight_AnimInst.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_BR45 = { "Dodge_BR45", nullptr, (EPropertyFlags)0x0040000000030015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Dodge_BR45), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_BR45_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_BR45_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Boss_Battle_Entrance_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "AnimMontage" },
@@ -630,6 +668,9 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_DarkKnight_AnimInst() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Hit_GS_B,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Hit_SS_F,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Hit_SS_B,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_B180,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_BL45,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Dodge_BR45,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Boss_Battle_Entrance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Idle_To_Combat,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::NewProp_Combat_To_Idle,
@@ -662,7 +703,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_DarkKnight_AnimInst() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEnemy_DarkKnight_AnimInst, 547956313);
+	IMPLEMENT_CLASS(UEnemy_DarkKnight_AnimInst, 3917420957);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UEnemy_DarkKnight_AnimInst>()
 	{
 		return UEnemy_DarkKnight_AnimInst::StaticClass();

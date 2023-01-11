@@ -29,8 +29,8 @@ AEnemy_DarkKnight::AEnemy_DarkKnight()
 	RightWeaponClass = AWeapon_DarkKnightSword::StaticClass();
 	//LeftWeaponClass = AShield_DarkKnightShield::StaticClass();
 
-	//ExecutionAnimationNum = 2;
-	//ExecutionBackAnimationNum = 1;
+	ExecutionAnimationNum = 1;
+	ExecutionBackAnimationNum = 1;
 
 	Cur_EquipmentState = EEQUIPMENT_STATE::SWORD;
 
@@ -144,100 +144,378 @@ void AEnemy_DarkKnight::SetLeftWeapon(AShield_Common* _NewShield)
 {
 }
 
-void AEnemy_DarkKnight::PlayHitAniamtion(float _Degree)
+void AEnemy_DarkKnight::DedicatedAnim_PlaySwordRandomAttackAll()
 {
-	Super::PlayHitAniamtion(_Degree);
-
-
-}
-
-void AEnemy_DarkKnight::PlayGuardBreakAnimation()
-{
-	Super::PlayGuardBreakAnimation();
-
-
-}
-
-void AEnemy_DarkKnight::PlayExecuted1Animation()
-{
-	Super::PlayExecuted1Animation();
-
-
-}
-
-void AEnemy_DarkKnight::PlayExecuted2Animation()
-{
-	Super::PlayExecuted2Animation();
-}
-
-void AEnemy_DarkKnight::PlayExecutedBackAnimation()
-{
-	Super::PlayExecutedBackAnimation();
-
-
-}
-
-void AEnemy_DarkKnight::Dead()
-{
-	Super::Dead();
-
-
-	// 피직스 애셋과 캡슐 콜리전 변경
-	GetMesh()->SetCollisionProfileName("NoCollision");
-	GetCapsuleComponent()->SetCollisionProfileName("OverlapAllObjectsIgnoreAllTrace");
-
-	// 빙의 해제
-	auto AIController = Cast<AAI_Base>(GetController());
-	if (AIController != nullptr)
+	if (Cur_State == EMONSTER_STATE::IDLE
+		|| Cur_State == EMONSTER_STATE::MOVE)
 	{
-		AIController->OnUnPossess();
+		auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+		if (pAnimInst != nullptr)
+		{
+			IsAttacking = true;
+
+			int32 tmp = FMath::RandRange(0, 2);
+			if (tmp == 0) DedicatedAnim_PlaySwordCombo01Montage();
+			else if (tmp == 1) DedicatedAnim_PlaySwordCombo02Montage();
+			else if (tmp == 2) DedicatedAnim_PlaySwordCombo03Montage();
+		}
+		else return;
 	}
 }
 
-void AEnemy_DarkKnight::RandomAttackAll()
+void AEnemy_DarkKnight::DedicatedAnim_PlaySwordCombo01Montage()
 {
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		IsAttacking = true;
+		ChangeState(EMONSTER_STATE::ATTACK);
+		pAnimInst->PlaySwordCombo01Montage();
+
+		// TODO (효과음?)
+	}
+	else return;
 }
 
-void AEnemy_DarkKnight::ComboAttack01()
+void AEnemy_DarkKnight::DedicatedAnim_PlaySwordCombo02Montage()
 {
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		IsAttacking = true;
+		ChangeState(EMONSTER_STATE::ATTACK);
+		pAnimInst->PlaySwordCombo02Montage();
+
+		// TODO (효과음?)
+	}
+	else return;
 }
 
-void AEnemy_DarkKnight::ComboAttack02()
+void AEnemy_DarkKnight::DedicatedAnim_PlaySwordCombo03Montage()
 {
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		IsAttacking = true;
+		ChangeState(EMONSTER_STATE::ATTACK);
+		pAnimInst->PlaySwordCombo03Montage();
+
+		// TODO (효과음?)
+	}
+	else return;
 }
 
-void AEnemy_DarkKnight::ComboAttack03()
+void AEnemy_DarkKnight::DedicatedAnim_PlaySwordJumpAttackMontage()
 {
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		IsAttacking = true;
+		ChangeState(EMONSTER_STATE::ATTACK);
+		pAnimInst->PlaySwordJumpAttackMontage();
+
+		// TODO (효과음?)
+	}
+	else return;
 }
 
-void AEnemy_DarkKnight::ComboAttackRandom()
+void AEnemy_DarkKnight::DedicatedAnim_PlayGreatSwordRandomAttackAll()
 {
+	if (Cur_State == EMONSTER_STATE::IDLE
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::IMPACT_WEAK
+		|| Cur_State == EMONSTER_STATE::IMPACT_STRONG)
+	{
+		auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+		if (pAnimInst != nullptr)
+		{
+			IsAttacking = true;
+
+			int32 tmp = FMath::RandRange(0, 3);
+			if (tmp == 0) DedicatedAnim_PlayGreatSwordCombo01AttackMontage();
+			else if (tmp == 1) DedicatedAnim_PlayGreatSwordCombo02AttackMontage();
+			else if (tmp == 2) DedicatedAnim_PlayGreatSwordCombo03AttackMontage();
+			else if (tmp == 3) DedicatedAnim_PlayGreatSwordUppercutMontage();
+		}
+		else return;
+	}
 }
 
-void AEnemy_DarkKnight::SingleAttackStand01()
+void AEnemy_DarkKnight::DedicatedAnim_PlayGreatSwordRandomRunningAttackAll()
 {
+	if (Cur_State == EMONSTER_STATE::IDLE
+		|| Cur_State == EMONSTER_STATE::MOVE
+		|| Cur_State == EMONSTER_STATE::IMPACT_WEAK
+		|| Cur_State == EMONSTER_STATE::IMPACT_STRONG)
+	{
+		auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+		if (pAnimInst != nullptr)
+		{
+			IsAttacking = true;
+
+			int32 tmp = FMath::RandRange(0, 1);
+			if (tmp == 0) DedicatedAnim_PlayGreatSwordRunningAttackMontage();
+			else if (tmp == 1) DedicatedAnim_PlayGreatSwordRunningAOEAttackMontage();
+		}
+		else return;
+	}
 }
 
-void AEnemy_DarkKnight::SingleAttackStand02()
+void AEnemy_DarkKnight::DedicatedAnim_PlayGreatSwordCombo01AttackMontage()
 {
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		IsAttacking = true;
+		ChangeState(EMONSTER_STATE::ATTACK);
+		pAnimInst->PlayGreatSwordCombo01Montage();
+
+		// TODO (효과음?)
+	}
+	else return;
 }
 
-void AEnemy_DarkKnight::SingleAttackStand03()
+void AEnemy_DarkKnight::DedicatedAnim_PlayGreatSwordCombo02AttackMontage()
 {
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		IsAttacking = true;
+		ChangeState(EMONSTER_STATE::ATTACK);
+		pAnimInst->PlayGreatSwordCombo02Montage();
+
+		// TODO (효과음?)
+	}
+	else return;
 }
 
-void AEnemy_DarkKnight::SingleAttackMove01()
+void AEnemy_DarkKnight::DedicatedAnim_PlayGreatSwordCombo03AttackMontage()
 {
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		IsAttacking = true;
+		ChangeState(EMONSTER_STATE::ATTACK);
+		pAnimInst->PlayGreatSwordCombo03Montage();
+
+		// TODO (효과음?)
+	}
+	else return;
 }
 
-void AEnemy_DarkKnight::SingleAttackMove02()
+void AEnemy_DarkKnight::DedicatedAnim_PlayGreatSwordUppercutMontage()
 {
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		IsAttacking = true;
+		ChangeState(EMONSTER_STATE::ATTACK);
+		pAnimInst->PlayGreatSwordUppercutMontage();
+
+		// TODO (효과음?)
+	}
+	else return;
 }
 
-void AEnemy_DarkKnight::SingleAttackMove03()
+void AEnemy_DarkKnight::DedicatedAnim_PlayGreatSwordRunningAttackMontage()
 {
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		IsAttacking = true;
+		ChangeState(EMONSTER_STATE::ATTACK);
+		pAnimInst->PlayGreatSwordRunningAttackMontage();
+
+		// TODO (효과음?)
+	}
+	else return;
 }
 
-void AEnemy_DarkKnight::SingleAttackRandom()
+void AEnemy_DarkKnight::DedicatedAnim_PlayGreatSwordRunningAOEAttackMontage()
 {
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		IsAttacking = true;
+		ChangeState(EMONSTER_STATE::ATTACK);
+		pAnimInst->PlayGreatSwordRunningAOEAttackMontage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_DarkKnight::DedicatedAnim_PlayGuardBreakMontage()
+{
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::GUARD_BREAK);
+		pAnimInst->PlayGuardBreakMontage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_DarkKnight::DedicatedAnim_PlayExecutionMontage()
+{
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::EXECUTION);
+		pAnimInst->PlayExecutionMontage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_DarkKnight::DedicatedAnim_PlayExecutedMontage()
+{
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::EXECUTED);
+		pAnimInst->PlayExecutedMontage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_DarkKnight::DedicatedAnim_PlayExecutedBackMontage()
+{
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::EXECUTED);
+		pAnimInst->PlayExecutedBack();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_DarkKnight::DedicatedAnim_PlayDodgeB180Montage()
+{
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		// 전용 State 필요
+		//ChangeState(EMONSTER_STATE::EXECUTED);
+		pAnimInst->PlayDodgeB180Montage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_DarkKnight::DedicatedAnim_PlayDodgeBL45Montage()
+{
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		// 전용 State 필요
+		//ChangeState(EMONSTER_STATE::EXECUTED);
+		pAnimInst->PlayDodgeBL45Montage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_DarkKnight::DedicatedAnim_PlayDodgeBR45Montage()
+{
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		// 전용 State 필요
+		//ChangeState(EMONSTER_STATE::EXECUTED);
+		pAnimInst->PlayDodgeBR45Montage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_DarkKnight::DedicatedAnim_PlayDeadMontage()
+{
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::DEAD);
+		pAnimInst->PlayDeadMontage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_DarkKnight::DedicatedAnim_PlayImpactMontage()
+{
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::IMPACT_WEAK);
+		pAnimInst->PlayImpactMontage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_DarkKnight::DedicatedAnim_PlayHitBackMontage()
+{
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		ChangeState(EMONSTER_STATE::IMPACT_WEAK);
+		pAnimInst->PlayHitBackMontage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_DarkKnight::DedicatedAnim_PlayBossBattleEntranceMontage()
+{
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		// 전용 State 필요함
+		//ChangeState(EMONSTER_STATE::IMPACT_WEAK);
+		pAnimInst->PlayBossBattleEntranceMontage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_DarkKnight::DedicatedAnim_PlayIdleToCombateMontage()
+{
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		// 전용 State 필요함
+		//ChangeState(EMONSTER_STATE::IMPACT_WEAK);
+		pAnimInst->PlayIdleToCombatMontage();
+
+		// TODO (효과음?)
+	}
+	else return;
+}
+
+void AEnemy_DarkKnight::DedicatedAnim_PlayCombateToIdleMontage()
+{
+	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+	if (pAnimInst != nullptr)
+	{
+		// 전용 State 필요함
+		//ChangeState(EMONSTER_STATE::IMPACT_WEAK);
+		pAnimInst->PlayCombatToIdleMontage();
+
+		// TODO (효과음?)
+	}
+	else return;
 }

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{1D09F43D-EB38-47CC-A17A-8C47B9C3353F}</UniqueIdentifier>
+      <UniqueIdentifier>{C843D196-C273-4913-8A10-D7E0638BA98B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{582FBD4E-96E5-49D3-8B61-8515F43416EB}</UniqueIdentifier>
+      <UniqueIdentifier>{CBE25291-EB2C-43FC-A81D-B570EFBC835E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{0D9FED87-97E0-4236-924D-F0BFA4EEBCEC}</UniqueIdentifier>
+      <UniqueIdentifier>{0BDEC066-B0E7-4CF2-AEFF-FCA4AD8A2433}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\AI_Base.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
@@ -96,6 +96,18 @@
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTTask_Attack.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTTask_DarkKnightAttack.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTTask_DarkKnightAttack.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTTask_DarkKnightJumpAttack.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTTask_DarkKnightJumpAttack.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTTask_FindPatrolPos.cpp">

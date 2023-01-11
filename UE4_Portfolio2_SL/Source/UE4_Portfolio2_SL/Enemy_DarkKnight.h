@@ -46,24 +46,35 @@ public:
 
 	// 공격 및 처형 애니메이션
 public:
-	void RandomAttackAll() override;
-	void ComboAttack01() override;
-	void ComboAttack02() override;
-	void ComboAttack03() override;
-	void ComboAttackRandom() override;
-	void SingleAttackStand01() override;
-	void SingleAttackStand02() override;
-	void SingleAttackStand03() override;
-	void SingleAttackMove01() override;
-	void SingleAttackMove02() override;
-	void SingleAttackMove03() override;
-	void SingleAttackRandom() override;
+	void DedicatedAnim_PlaySwordRandomAttackAll();
+	void DedicatedAnim_PlaySwordCombo01Montage();
+	void DedicatedAnim_PlaySwordCombo02Montage();
+	void DedicatedAnim_PlaySwordCombo03Montage();
+	void DedicatedAnim_PlaySwordJumpAttackMontage();
 
-	void PlayHitAniamtion(float _Degree) override;
-	void PlayGuardBreakAnimation() override;
-	void PlayExecuted1Animation() override;
-	void PlayExecuted2Animation() override;
-	void PlayExecutedBackAnimation() override;
+	void DedicatedAnim_PlayGreatSwordRandomAttackAll();
+	void DedicatedAnim_PlayGreatSwordRandomRunningAttackAll();
+	void DedicatedAnim_PlayGreatSwordCombo01AttackMontage();
+	void DedicatedAnim_PlayGreatSwordCombo02AttackMontage();
+	void DedicatedAnim_PlayGreatSwordCombo03AttackMontage();
+	void DedicatedAnim_PlayGreatSwordUppercutMontage();
+	void DedicatedAnim_PlayGreatSwordRunningAttackMontage();
+	void DedicatedAnim_PlayGreatSwordRunningAOEAttackMontage();
 
-	void Dead() override;
+	void DedicatedAnim_PlayGuardBreakMontage();
+	void DedicatedAnim_PlayExecutionMontage();
+	void DedicatedAnim_PlayExecutedMontage();
+	void DedicatedAnim_PlayExecutedBackMontage();
+
+	void DedicatedAnim_PlayDodgeB180Montage();
+	void DedicatedAnim_PlayDodgeBL45Montage();
+	void DedicatedAnim_PlayDodgeBR45Montage();
+
+	void DedicatedAnim_PlayDeadMontage();
+	void DedicatedAnim_PlayImpactMontage();
+	void DedicatedAnim_PlayHitBackMontage();
+
+	void DedicatedAnim_PlayBossBattleEntranceMontage();
+	void DedicatedAnim_PlayIdleToCombateMontage();
+	void DedicatedAnim_PlayCombateToIdleMontage();
 };

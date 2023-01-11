@@ -101,6 +101,9 @@ public: \
 	FORCEINLINE static uint32 __PPO__Hit_GS_B() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Hit_GS_B); } \
 	FORCEINLINE static uint32 __PPO__Hit_SS_F() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Hit_SS_F); } \
 	FORCEINLINE static uint32 __PPO__Hit_SS_B() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Hit_SS_B); } \
+	FORCEINLINE static uint32 __PPO__Dodge_B180() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Dodge_B180); } \
+	FORCEINLINE static uint32 __PPO__Dodge_BL45() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Dodge_BL45); } \
+	FORCEINLINE static uint32 __PPO__Dodge_BR45() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Dodge_BR45); } \
 	FORCEINLINE static uint32 __PPO__Boss_Battle_Entrance() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Boss_Battle_Entrance); } \
 	FORCEINLINE static uint32 __PPO__Idle_To_Combat() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Idle_To_Combat); } \
 	FORCEINLINE static uint32 __PPO__Combat_To_Idle() { return STRUCT_OFFSET(UEnemy_DarkKnight_AnimInst, Combat_To_Idle); } \
