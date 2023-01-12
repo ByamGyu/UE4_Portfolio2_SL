@@ -1,21 +1,12 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL).
   Invalidating makefile for UE4_Portfolio2_SLEditor (working set of source files changed)
-  Parsing headers for UE4_Portfolio2_SLEditor
-    Running UnrealHeaderTool "G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\UE4_Portfolio2_SL.uproject" "G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4_Portfolio2_SLEditor\Development\UE4_Portfolio2_SLEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\decja\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for UE4_Portfolio2_SLEditor in 3.0871438 seconds
   Building UE4_Portfolio2_SLEditor...
   Using Visual Studio 2019 14.29.30147 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: BTTask_DarkKnightAttack.cpp, BTTask_DarkKnightJumpAttack.cpp, Enemy_DarkKnight.cpp, Enemy_DarkKnight_AnimInst.cpp
-  [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: BTTask_DarkKnightAttack.gen.cpp, BTTask_DarkKnightJumpAttack.gen.cpp, Enemy_DarkKnight_AnimInst.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp
-  Building 10 actions with 24 processes...
-    [1/10] Enemy_DarkKnight_AnimInst.gen.cpp
-    [2/10] Enemy_DarkKnight_AnimInst.cpp
-    [3/10] Enemy_DarkKnight.cpp
-    [4/10] BTTask_DarkKnightAttack.cpp
-    [5/10] BTTask_DarkKnightJumpAttack.cpp
-    [6/10] Module.UE4_Portfolio2_SL.gen.cpp
-    [7/10] Module.UE4_Portfolio2_SL.cpp
+  [Adaptive unity build] Excluded from UE4_Portfolio2_SL unity file: BTService_BossDetectPlayer.cpp, BTService_DetectPlayer.cpp, BTService_UpdateInfo.cpp, BTService_UpdatePercent.cpp, BTTask_BossTurntoTarget.cpp, BTTask_DarkKnightAttack.cpp, BTTask_DarkKnightJumpAttack.cpp
+  [Adaptive unity build] Excluded from UE4_Portfolio2_SL.gen unity file: BTService_BossDetectPlayer.gen.cpp, BTService_DetectPlayer.gen.cpp, BTService_UpdatePercent.gen.cpp, BTTask_BossTurntoTarget.gen.cpp, UE4_Portfolio2_SL.init.gen.cpp
+  Building 5 actions with 24 processes...
+    [1/5] BTTask_DarkKnightJumpAttack.cpp
+    [2/5] Module.UE4_Portfolio2_SL.cpp
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(16): warning C5038: 데이터 멤버 'APlayerCharacter::CurStamina'은(는) 데이터 멤버 'APlayerCharacter::HPRatio' 이후에 초기화됩니다.
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(18): warning C5038: 데이터 멤버 'APlayerCharacter::StaminaRatio'은(는) 데이터 멤버 'APlayerCharacter::IsFight' 이후에 초기화됩니다.
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(22): warning C5038: 데이터 멤버 'APlayerCharacter::ComboCnt'은(는) 데이터 멤버 'APlayerCharacter::IsFall' 이후에 초기화됩니다.
@@ -23,10 +14,10 @@ G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(27): warning C5038: 데이터 멤버 'APlayerCharacter::DefaultDamage'은(는) 데이터 멤버 'APlayerCharacter::IsLockTargetExist' 이후에 초기화됩니다.
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(33): warning C5038: 데이터 멤버 'APlayerCharacter::StaminaUse'은(는) 데이터 멤버 'APlayerCharacter::CanRoll' 이후에 초기화됩니다.
 G:/Git_Horizontally Scrolling Shooter Repository/UE4_Portfolio2_SL/UE4_Portfolio2_SL/Source/UE4_Portfolio2_SL/PlayerCharacter.cpp(738): warning C4996: 'FCollisionQueryParams::FCollisionQueryParams': FCollisionQueryParams, to avoid ambiguity, please use other constructor and explicitly provide an FName parameter (not just a string literal) as the first parameter Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-    [8/10] UE4Editor-UE4_Portfolio2_SL-0190.lib
-       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0190.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0190.exp 개체를 생성하고 있습니다.
-    [9/10] UE4Editor-UE4_Portfolio2_SL-0190.dll
-       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0190.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0190.suppressed.exp 개체를 생성하고 있습니다.
-    [10/10] UE4_Portfolio2_SLEditor.target
-  Total time in Parallel executor: 9.52 seconds
-  Total execution time: 14.37 seconds
+    [3/5] UE4Editor-UE4_Portfolio2_SL-0205.lib
+       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0205.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0205.exp 개체를 생성하고 있습니다.
+    [4/5] UE4Editor-UE4_Portfolio2_SL-0205.dll
+       G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0205.suppressed.lib 라이브러리 및 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Development\UE4_Portfolio2_SL\UE4Editor-UE4_Portfolio2_SL-0205.suppressed.exp 개체를 생성하고 있습니다.
+    [5/5] UE4_Portfolio2_SLEditor.target
+  Total time in Parallel executor: 8.18 seconds
+  Total execution time: 9.87 seconds

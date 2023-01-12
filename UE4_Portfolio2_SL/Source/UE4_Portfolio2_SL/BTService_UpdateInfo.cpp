@@ -35,6 +35,7 @@ void UBTService_UpdateInfo::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* N
 		EMONSTER_STATE tmpstate = ControllingPawn->GetState();
 		EEQUIPMENT_STATE tmpequipmentstate = ControllingPawn->GetEquipmentState();
 
+		
 		// BB에 있는 변수 중 "CurState"가 있나 확인하고 반영하기
 		FBlackboard::FKey BBKey_CurState = BB->GetKeyID("CurState");
 		if (BB->IsValidKey(BBKey_CurState))

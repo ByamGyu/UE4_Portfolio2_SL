@@ -13,6 +13,8 @@ UBTService_DetectPlayer::UBTService_DetectPlayer()
 	NodeName = TEXT("DetectPlayer");
 	Interval = 0.5f;
 	RandomDeviation = 0.0f;
+
+	ViewingAngle = 140.0f;
 }
 
 void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
@@ -35,11 +37,6 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 		GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("World is Missing"));
 		return;
 	}
-
-	// 앞으로의 행동을 결정할 확률값을 지정한다.
-	float tmp = FMath::FRandRange(0.0f, 1.0f);
-	OwnerComp.GetBlackboardComponent()->SetValueAsFloat(AAI_Base::PercentKey, tmp);
-
 
 	// 탐지 중심부
 	FVector Center = ControllingPawn->GetActorLocation();
@@ -81,7 +78,7 @@ void UBTService_DetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, uint8*
 				//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Dot: ") + FString::SanitizeFloat(AngleDegree));
 
 				// 시야각 140도에 있으면 감지
-				if (AngleDegree >= 140.0f)
+				if (AngleDegree >= ViewingAngle)
 				{
 					OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_Base::TargetKey, pPlayerCharacter);
 

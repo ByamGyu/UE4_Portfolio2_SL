@@ -58,7 +58,10 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UBTTask_TurntoTarget)
 
 
-#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTTask_TurntoTarget_h_11_PRIVATE_PROPERTY_OFFSET
+#define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTTask_TurntoTarget_h_11_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__TurnRate() { return STRUCT_OFFSET(UBTTask_TurntoTarget, TurnRate); }
+
+
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTTask_TurntoTarget_h_8_PROLOG
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTTask_TurntoTarget_h_11_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

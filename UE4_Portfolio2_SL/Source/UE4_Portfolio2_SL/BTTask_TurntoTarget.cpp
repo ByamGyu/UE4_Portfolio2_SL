@@ -8,6 +8,8 @@
 UBTTask_TurntoTarget::UBTTask_TurntoTarget()
 {
 	NodeName = TEXT("TurntoTarget");
+
+	TurnRate = 1.5f;
 }
 
 EBTNodeResult::Type UBTTask_TurntoTarget::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
@@ -49,7 +51,7 @@ EBTNodeResult::Type UBTTask_TurntoTarget::ExecuteTask(UBehaviorTreeComponent& Ow
 		{
 			// 서서히 회전함
 			// 처음 수치는 3.0f이었음
-			pCharacter->SetActorRotation(FMath::RInterpTo(pCharacter->GetActorRotation(), TargetRot, GetWorld()->GetDeltaSeconds(), 1.5f));
+			pCharacter->SetActorRotation(FMath::RInterpTo(pCharacter->GetActorRotation(), TargetRot, GetWorld()->GetDeltaSeconds(), TurnRate));
 		}
 	}
 

@@ -34,9 +34,15 @@ EBTNodeResult::Type UBTTask_DarkKnightJumpAttack::ExecuteTask(UBehaviorTreeCompo
 	}
 
 
-
 	// 공격 실행
-	// pCharacter->RandomAttackAll();
+	if (pCharacter->GetEquipmentState() == EEQUIPMENT_STATE::SWORD)
+	{
+		pCharacter->DedicatedAnim_PlaySwordJumpAttackMontage();
+	}
+	else if (pCharacter->GetEquipmentState() == EEQUIPMENT_STATE::GREATSWORD)
+	{
+		pCharacter->DedicatedAnim_PlayGreatSwordRandomRunningAttackAll();
+	}
 
 	// Task가 실행되면
 	// 일단 현재 작업이 진행중임을 알림

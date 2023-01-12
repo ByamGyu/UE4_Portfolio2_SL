@@ -14,6 +14,12 @@ class UE4_PORTFOLIO2_SL_API UBTTask_TurntoTarget : public UBTTaskNode
 public:
 	UBTTask_TurntoTarget();
 
+
+protected:
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
+
+private:
+	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
+	float TurnRate;
 };

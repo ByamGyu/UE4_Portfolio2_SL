@@ -35,6 +35,10 @@ void EmptyLinkFunctionForGeneratedCodeBTService_DetectPlayer() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DetectRadius_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DetectRadius;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ViewingAngle_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ViewingAngle;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -57,8 +61,17 @@ void EmptyLinkFunctionForGeneratedCodeBTService_DetectPlayer() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBTService_DetectPlayer_Statics::NewProp_DetectRadius = { "DetectRadius", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UBTService_DetectPlayer, DetectRadius), METADATA_PARAMS(Z_Construct_UClass_UBTService_DetectPlayer_Statics::NewProp_DetectRadius_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UBTService_DetectPlayer_Statics::NewProp_DetectRadius_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBTService_DetectPlayer_Statics::NewProp_ViewingAngle_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Info" },
+		{ "ModuleRelativePath", "BTService_DetectPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBTService_DetectPlayer_Statics::NewProp_ViewingAngle = { "ViewingAngle", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UBTService_DetectPlayer, ViewingAngle), METADATA_PARAMS(Z_Construct_UClass_UBTService_DetectPlayer_Statics::NewProp_ViewingAngle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UBTService_DetectPlayer_Statics::NewProp_ViewingAngle_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBTService_DetectPlayer_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBTService_DetectPlayer_Statics::NewProp_DetectRadius,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBTService_DetectPlayer_Statics::NewProp_ViewingAngle,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UBTService_DetectPlayer_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UBTService_DetectPlayer>::IsAbstract,
@@ -87,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeBTService_DetectPlayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UBTService_DetectPlayer, 376259656);
+	IMPLEMENT_CLASS(UBTService_DetectPlayer, 1069938717);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UBTService_DetectPlayer>()
 	{
 		return UBTService_DetectPlayer::StaticClass();

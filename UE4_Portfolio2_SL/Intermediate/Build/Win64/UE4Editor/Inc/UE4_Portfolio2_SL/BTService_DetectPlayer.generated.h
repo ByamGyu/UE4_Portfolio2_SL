@@ -59,7 +59,8 @@ public: \
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTService_DetectPlayer_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__DetectRadius() { return STRUCT_OFFSET(UBTService_DetectPlayer, DetectRadius); }
+	FORCEINLINE static uint32 __PPO__DetectRadius() { return STRUCT_OFFSET(UBTService_DetectPlayer, DetectRadius); } \
+	FORCEINLINE static uint32 __PPO__ViewingAngle() { return STRUCT_OFFSET(UBTService_DetectPlayer, ViewingAngle); }
 
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_BTService_DetectPlayer_h_9_PROLOG
