@@ -69,6 +69,12 @@ void UBTService_BossDetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, ui
 			// 감지된 목록이 플레이어 클래스고, 플레이어가 조종하고 있다면
 			if (pPlayerCharacter != nullptr && pPlayerCharacter->GetController()->IsPlayerController() == true)
 			{
+				// 게걸음 활성화 하는 코드
+				ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = true;
+
+				float Dist = ControllingPawn->GetDistanceTo(pPlayerCharacter);
+				GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::SanitizeFloat(Dist));
+
 				OwnerComp.GetBlackboardComponent()->SetValueAsObject(AAI_Base::TargetKey, pPlayerCharacter);
 
 				DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Red, false, 0.2f);
@@ -102,14 +108,14 @@ void UBTService_BossDetectPlayer::TickNode(UBehaviorTreeComponent& OwnerComp, ui
 
 		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Target Is Not Exist"));
 	}
-	// 플레이어가 감지됐다면
-	else if (IsTargetFind == true)
-	{
-		// 게걸음 활성화 하는 코드
-		ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = true;		
+	//// 플레이어가 감지됐다면
+	//else if (IsTargetFind == true)
+	//{
+	//	// 게걸음 활성화 하는 코드
+	//	ControllingPawn->GetCharacterMovement()->bOrientRotationToMovement = true;		
 
-		//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Target Is Exist"));
-	}
+	//	//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, TEXT("Target Is Exist"));
+	//}
 
 	DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Green, false, 0.2f);
 }

@@ -19,7 +19,7 @@ AEnemy_DarkKnight::AEnemy_DarkKnight()
 	if (ABP_DarkKnight.Succeeded()) GetMesh()->SetAnimInstanceClass(ABP_DarkKnight.Class);
 
 	GetCharacterMovement()->bOrientRotationToMovement = true;
-	GetCharacterMovement()->MaxWalkSpeed = 350.0f;
+	GetCharacterMovement()->MaxWalkSpeed = 300.0f;
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 270.0f, 0.0f);
 	//GetCharacterMovement()->JumpZVelocity = 300.0f; // 기본값(420)
 	GetCharacterMovement()->AirControl = 0.1f;
@@ -33,7 +33,6 @@ AEnemy_DarkKnight::AEnemy_DarkKnight()
 	ExecutionBackAnimationNum = 1;
 
 	Cur_EquipmentState = EEQUIPMENT_STATE::SWORD;
-
 
 	//// UI관련 체력바
 	//WidgetComponent = CreateDefaultSubobject<UWidgetComponent>(TEXT("WidgetComponent"));
@@ -92,6 +91,7 @@ void AEnemy_DarkKnight::Tick(float DeltaTime)
 			|| Cur_State == EMONSTER_STATE::GUARD_IMPACT_STRONG
 			|| Cur_State == EMONSTER_STATE::EXECUTED
 			|| Cur_State == EMONSTER_STATE::EXECUTION
+			|| Cur_State == EMONSTER_STATE::DODGE
 			)
 		{
 			// 아무것도 하지 않음
@@ -210,7 +210,7 @@ void AEnemy_DarkKnight::DedicatedAnim_PlaySwordJumpAttackMontage()
 	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
 	if (pAnimInst != nullptr)
 	{
-		IsAttacking = true;
+		IsAttacking = true;		
 		ChangeState(EMONSTER_STATE::ATTACK);
 		pAnimInst->PlaySwordJumpAttackMontage();
 
@@ -397,13 +397,31 @@ void AEnemy_DarkKnight::DedicatedAnim_PlayExecutedBackMontage()
 	else return;
 }
 
+void AEnemy_DarkKnight::DedicatedAnim_PlayDodgeRandomAll()
+{
+	if (Cur_State == EMONSTER_STATE::IDLE
+		|| Cur_State == EMONSTER_STATE::MOVE)
+	{
+		auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
+		if (pAnimInst != nullptr)
+		{
+			ChangeState(EMONSTER_STATE::DODGE);
+
+			int32 tmp = FMath::RandRange(0, 2);
+			if (tmp == 0) DedicatedAnim_PlayDodgeB180Montage();
+			else if (tmp == 1) DedicatedAnim_PlayDodgeBL45Montage();
+			else if (tmp == 2) DedicatedAnim_PlayDodgeBR45Montage();
+		}
+		else return;
+	}
+}
+
 void AEnemy_DarkKnight::DedicatedAnim_PlayDodgeB180Montage()
 {
 	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
 	if (pAnimInst != nullptr)
 	{
-		// 전용 State 필요
-		//ChangeState(EMONSTER_STATE::EXECUTED);
+		ChangeState(EMONSTER_STATE::DODGE);
 		pAnimInst->PlayDodgeB180Montage();
 
 		// TODO (효과음?)
@@ -416,8 +434,7 @@ void AEnemy_DarkKnight::DedicatedAnim_PlayDodgeBL45Montage()
 	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
 	if (pAnimInst != nullptr)
 	{
-		// 전용 State 필요
-		//ChangeState(EMONSTER_STATE::EXECUTED);
+		ChangeState(EMONSTER_STATE::DODGE);
 		pAnimInst->PlayDodgeBL45Montage();
 
 		// TODO (효과음?)
@@ -430,8 +447,7 @@ void AEnemy_DarkKnight::DedicatedAnim_PlayDodgeBR45Montage()
 	auto pAnimInst = Cast<UEnemy_DarkKnight_AnimInst>(GetMesh()->GetAnimInstance());
 	if (pAnimInst != nullptr)
 	{
-		// 전용 State 필요
-		//ChangeState(EMONSTER_STATE::EXECUTED);
+		ChangeState(EMONSTER_STATE::DODGE);
 		pAnimInst->PlayDodgeBR45Montage();
 
 		// TODO (효과음?)

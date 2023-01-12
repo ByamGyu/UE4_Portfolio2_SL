@@ -313,3 +313,177 @@ G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Weapon_DarkKnightSword.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\Weapon_DarkKnightSword.generated.h
 G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\Enemy_DarkKnight.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\KismetMathLibrary.inl
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\AI_DarkKnight.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\AI_Base.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\AIController.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavFilters/NavigationQueryFilter.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavAreas/NavArea.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavAreaBase.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavAreaBase.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavArea.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationQueryFilter.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\AITypes.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationSystemTypes.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\AI/NavigationSystemConfig.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationSystemConfig.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AITypes.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\GameplayTasks\Classes\GameplayTaskOwnerInterface.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\GameplayTasks\Public\GameplayTaskTypes.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTasks\GameplayTaskOwnerInterface.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\GameplayTasks\Classes\GameplayTask.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/WeakInterfacePtr.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTasks\GameplayTask.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\Navigation/PathFollowingComponent.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavigationData.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavigationDataInterface.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationDataInterface.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationData.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\AIResourceInterface.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIResourceInterface.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\PathFollowingComponent.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\Perception/AIPerceptionListenerInterface.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIPerceptionListenerInterface.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\GenericTeamAgentInterface.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\GenericTeamAgentInterface.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Public\VisualLogger/VisualLoggerDebugSnapshotInterface.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\VisualLoggerDebugSnapshotInterface.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIController.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\AI_Base.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\AI_DarkKnight.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacter.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\PlayerCharacterAnimInstance.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\PlayerCharacterAnimInstance.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Weapon_Default.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\Weapon_Default.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\Shield_Default.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\Shield_Default.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\MyGameInstance.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara/Public/NiagaraComponent.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraCommon.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/TextureRenderTarget2D.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/TextureRenderTarget.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TextureRenderTarget.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TextureRenderTarget2D.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraTypes.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/UserDefinedStruct.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\UserDefinedStruct.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraTypes.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\NiagaraCore\Public\NiagaraCore.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/WeakFieldPtr.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraCommon.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraComponentPool.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraComponentPool.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraSystemInstance.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraEmitterInstance.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraDataSet.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\VectorVM\Public\VectorVM.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraDataSet.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraEmitterHandle.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraModule.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraPerfBaseline.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Particles/ParticlePerfStatsManager.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraPerfBaseline.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraDebuggerCommon.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraDebuggerCommon.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Core\Public\Templates/PimplPtr.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraEmitterHandle.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraEmitter.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraScript.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\NiagaraShader\Public\NiagaraScriptBase.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\NiagaraShader\NiagaraScriptBase.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\NiagaraShader\Public\NiagaraShared.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\NiagaraCore\Public\NiagaraCompileHash.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\NiagaraCore\NiagaraCompileHash.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\NiagaraCore\Public\NiagaraDataInterfaceBase.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\NiagaraCore\Public\NiagaraMergeable.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\NiagaraCore\NiagaraMergeable.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\NiagaraCore\NiagaraDataInterfaceBase.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\NiagaraShader\NiagaraShared.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\NiagaraShader\Public\NiagaraShader.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\NiagaraShader\Public\NiagaraShaderType.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Renderer\Public\SceneRenderTargetParameters.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraph.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraphResources.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraphParameter.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraphTextureSubresource.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraphResources.inl
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraphPass.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraphEvent.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraphEvent.inl
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraphParameters.inl
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraphBuilder.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraphValidation.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraphBlackboard.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraphBuilder.inl
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\RenderGraphUtils.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\ShaderParameterStruct.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraParameters.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraParameters.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraScriptExecutionParameterStore.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraDataInterface.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraDataInterface.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraParameterStore.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraParameterStore.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraScriptExecutionParameterStore.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraScriptHighlight.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraScriptHighlight.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraParameterDefinitionsSubscriber.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraParameterDefinitionsDelegates.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraParameterDefinitionsSubscriber.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraScript.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraMessageDataBase.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraMessageDataBase.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\INiagaraMergeManager.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraEffectType.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Public\InGamePerformanceTracker.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraPlatformSet.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraPlatformSet.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraEffectType.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraDataSetAccessor.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraBoundsCalculator.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraRendererProperties.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraGPUSortInfo.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Public\GPUSortManager.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraGPUSortInfo.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraRendererProperties.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraParameterDefinitionsBase.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraParameterDefinitionsBase.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraEmitter.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraScriptExecutionContext.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraSystem.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraBakerSettings.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraBakerSettings.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Classes\NiagaraParameterCollection.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraParameterCollection.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraUserRedirectionParameterStore.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraUserRedirectionParameterStore.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraSystem.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraDataInterfaceBindingInstance.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara\Public\NiagaraVariant.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraVariant.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraComponent.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Source\Niagara/Public/NiagaraFunctionLibrary.h
+G:\Unreal Engine\UE_4.27\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara\NiagaraFunctionLibrary.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\MyGameInstance.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\UserWidget_StaminaBar.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\UserWidget_StaminaBar.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\UserWidget_HUD.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\UserWidget_HUD.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Source\UE4_Portfolio2_SL\MyPlayerController.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\MyPlayerController.generated.h
+G:\Git_Horizontally Scrolling Shooter Repository\UE4_Portfolio2_SL\UE4_Portfolio2_SL\Intermediate\Build\Win64\UE4Editor\Inc\UE4_Portfolio2_SL\PlayerCharacter.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BlackboardComponent.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/Blackboard/BlackboardKeyType.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BehaviorTreeTypes.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BehaviorTreeTypes.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardKeyType.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\AISystem.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\AI/AISystemBase.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AISystemBase.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AISystem.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BlackboardData.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardData.generated.h
+G:\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardComponent.generated.h

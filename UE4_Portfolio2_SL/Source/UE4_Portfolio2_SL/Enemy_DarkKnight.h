@@ -37,7 +37,6 @@ public:
 	float GetCurHP() override;
 	void SetCurHP(float _Value) override;
 
-
 	// 장비 액터 관련 함수
 public:
 	void SetRightWeapon(class AWeapon_Common* _NewWeapon);
@@ -66,6 +65,7 @@ public:
 	void DedicatedAnim_PlayExecutedMontage();
 	void DedicatedAnim_PlayExecutedBackMontage();
 
+	void DedicatedAnim_PlayDodgeRandomAll();
 	void DedicatedAnim_PlayDodgeB180Montage();
 	void DedicatedAnim_PlayDodgeBL45Montage();
 	void DedicatedAnim_PlayDodgeBR45Montage();

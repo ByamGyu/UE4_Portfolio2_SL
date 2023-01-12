@@ -22,6 +22,13 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_DarkKnight_AnimInst() {}
 	UE4_PORTFOLIO2_SL_API UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EEQUIPMENT_STATE();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UEnemy_DarkKnight_AnimInst::execAnimNotify_DodgeEnd)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AnimNotify_DodgeEnd();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UEnemy_DarkKnight_AnimInst::execAnimNotify_InvinsibleEnd)
 	{
 		P_FINISH;
@@ -54,12 +61,35 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_DarkKnight_AnimInst() {}
 	{
 		UClass* Class = UEnemy_DarkKnight_AnimInst::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "AnimNotify_DodgeEnd", &UEnemy_DarkKnight_AnimInst::execAnimNotify_DodgeEnd },
 			{ "AnimNotify_InitState", &UEnemy_DarkKnight_AnimInst::execAnimNotify_InitState },
 			{ "AnimNotify_InvinsibleEnd", &UEnemy_DarkKnight_AnimInst::execAnimNotify_InvinsibleEnd },
 			{ "AnimNotify_InvinsibleStart", &UEnemy_DarkKnight_AnimInst::execAnimNotify_InvinsibleStart },
 			{ "AnimNotify_PauseMontage", &UEnemy_DarkKnight_AnimInst::execAnimNotify_PauseMontage },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UEnemy_DarkKnight_AnimInst_AnimNotify_DodgeEnd_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UEnemy_DarkKnight_AnimInst_AnimNotify_DodgeEnd_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Enemy_DarkKnight_AnimInst.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEnemy_DarkKnight_AnimInst_AnimNotify_DodgeEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEnemy_DarkKnight_AnimInst, nullptr, "AnimNotify_DodgeEnd", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEnemy_DarkKnight_AnimInst_AnimNotify_DodgeEnd_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemy_DarkKnight_AnimInst_AnimNotify_DodgeEnd_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UEnemy_DarkKnight_AnimInst_AnimNotify_DodgeEnd()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UEnemy_DarkKnight_AnimInst_AnimNotify_DodgeEnd_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UEnemy_DarkKnight_AnimInst_AnimNotify_InitState_Statics
 	{
@@ -313,6 +343,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_DarkKnight_AnimInst() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_UE4_Portfolio2_SL,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UEnemy_DarkKnight_AnimInst_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UEnemy_DarkKnight_AnimInst_AnimNotify_DodgeEnd, "AnimNotify_DodgeEnd" }, // 1021216358
 		{ &Z_Construct_UFunction_UEnemy_DarkKnight_AnimInst_AnimNotify_InitState, "AnimNotify_InitState" }, // 4113540051
 		{ &Z_Construct_UFunction_UEnemy_DarkKnight_AnimInst_AnimNotify_InvinsibleEnd, "AnimNotify_InvinsibleEnd" }, // 2135661077
 		{ &Z_Construct_UFunction_UEnemy_DarkKnight_AnimInst_AnimNotify_InvinsibleStart, "AnimNotify_InvinsibleStart" }, // 657960130
@@ -703,7 +734,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_DarkKnight_AnimInst() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEnemy_DarkKnight_AnimInst, 3917420957);
+	IMPLEMENT_CLASS(UEnemy_DarkKnight_AnimInst, 2424917212);
 	template<> UE4_PORTFOLIO2_SL_API UClass* StaticClass<UEnemy_DarkKnight_AnimInst>()
 	{
 		return UEnemy_DarkKnight_AnimInst::StaticClass();

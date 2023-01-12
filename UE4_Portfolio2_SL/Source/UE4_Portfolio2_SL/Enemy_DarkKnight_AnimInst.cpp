@@ -1,5 +1,10 @@
 #include "Enemy_DarkKnight_AnimInst.h"
 #include "Enemy_DarkKnight.h"
+#include "Kismet/KismetMathLibrary.h"
+#include "AI_DarkKnight.h"
+#include "AI_Base.h"
+#include "PlayerCharacter.h"
+#include "BehaviorTree/BlackboardComponent.h"
 
 
 
@@ -102,6 +107,13 @@ void UEnemy_DarkKnight_AnimInst::AnimNotify_InitState()
 	{
 		Character->ChangeState(EMONSTER_STATE::IDLE);
 		Character->SetIsAttacking(false);
+
+		/*Character->SetActorRotation(FRotator(
+			Character->GetActorRotation().Pitch,
+			0.0f,
+			Character->GetActorRotation().Roll)
+		);*/
+		//SetActorRotation(FRotator(0, GetControlRotation().Yaw, 0));
 	}
 }
 
@@ -135,6 +147,26 @@ void UEnemy_DarkKnight_AnimInst::AnimNotify_InvinsibleEnd()
 	if (Character != nullptr)
 	{
 		Character->GetMesh()->SetCollisionProfileName(FName("EnemyPhysicsActor"));
+	}
+}
+
+void UEnemy_DarkKnight_AnimInst::AnimNotify_DodgeEnd()
+{
+	auto Character = Cast<AEnemy_DarkKnight>(TryGetPawnOwner());
+	if (Character != nullptr)
+	{
+		// 목표물을 향해서 캐릭터를 즉시 회전시킴		
+		auto tmpai = Cast<AAI_Base>(Character->GetController());
+		if (tmpai == nullptr) return;
+		auto tmpbb = tmpai->GetBlackboardComponent();
+		if (tmpbb == nullptr) return;
+
+		auto Target = Cast<APlayerCharacter>(tmpbb->GetValueAsObject(AAI_Base::TargetKey));
+		if (Target == nullptr) return;
+		FVector thisLocation = Character->GetActorLocation();
+		FVector TargetLocation = Target->GetActorLocation();
+		FRotator tmpRot = UKismetMathLibrary::FindLookAtRotation(thisLocation, TargetLocation);
+		Character->SetActorRotation(tmpRot);
 	}
 }
 

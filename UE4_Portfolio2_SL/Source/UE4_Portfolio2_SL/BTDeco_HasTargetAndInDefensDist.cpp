@@ -34,5 +34,5 @@ bool UBTDeco_HasTargetAndInDefensDist::CalculateRawConditionValue(UBehaviorTreeC
 	
 	// 최소거리, 최대거리 사이면 true
 	if (Dist < Max && Dist >= Min) return true;
-	else return true;
+	else return false;
 }

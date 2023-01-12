@@ -21,5 +21,5 @@ protected:
 
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadwrite, Category = Info, meta = (AllowPrivateAccess = "true"))
-	float TurnRate;
+	float TurnRate; // 3.0f이 초기값
 };

@@ -164,4 +164,6 @@ public:
 	void AnimNotify_InvinsibleStart();
 	UFUNCTION()
 	void AnimNotify_InvinsibleEnd();
+	UFUNCTION()
+	void AnimNotify_DodgeEnd();
 };

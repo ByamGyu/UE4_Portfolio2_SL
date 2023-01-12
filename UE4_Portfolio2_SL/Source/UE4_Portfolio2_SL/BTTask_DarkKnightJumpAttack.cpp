@@ -1,6 +1,9 @@
 #include "BTTask_DarkKnightJumpAttack.h"
 #include "Enemy_Base.h"
 #include "Enemy_DarkKnight.h"
+#include "Kismet/KismetMathLibrary.h"
+#include "PlayerCharacter.h"
+#include "BehaviorTree/BlackboardComponent.h"
 #include "AI_Base.h"
 
 
@@ -15,7 +18,7 @@ UBTTask_DarkKnightJumpAttack::UBTTask_DarkKnightJumpAttack()
 EBTNodeResult::Type UBTTask_DarkKnightJumpAttack::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
 	EBTNodeResult::Type Result = Super::ExecuteTask(OwnerComp, NodeMemory);
-
+	
 
 	// AI의 주인이 있는지 확인
 	auto pCharacter = Cast<AEnemy_DarkKnight>(OwnerComp.GetAIOwner()->GetPawn());
@@ -32,7 +35,14 @@ EBTNodeResult::Type UBTTask_DarkKnightJumpAttack::ExecuteTask(UBehaviorTreeCompo
 		}
 		else return EBTNodeResult::Failed;
 	}
+	
 
+	// 목표물을 향해서 캐릭터를 즉시 회전시킴
+	auto Target = Cast<APlayerCharacter>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(AAI_Base::TargetKey));
+	FVector thisLocation = pCharacter->GetActorLocation();
+	FVector TargetLocation = Target->GetActorLocation();
+	FRotator tmpRot = UKismetMathLibrary::FindLookAtRotation(thisLocation, TargetLocation);
+	pCharacter->SetActorRotation(tmpRot);
 
 	// 공격 실행
 	if (pCharacter->GetEquipmentState() == EEQUIPMENT_STATE::SWORD)

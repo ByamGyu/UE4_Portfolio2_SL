@@ -16,6 +16,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_DarkKnight_AnimInst_h_13_SPARSE_DATA
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_DarkKnight_AnimInst_h_13_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execAnimNotify_DodgeEnd); \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleEnd); \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleStart); \
 	DECLARE_FUNCTION(execAnimNotify_PauseMontage); \
@@ -24,6 +25,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define UE4_Portfolio2_SL_Source_UE4_Portfolio2_SL_Enemy_DarkKnight_AnimInst_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execAnimNotify_DodgeEnd); \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleEnd); \
 	DECLARE_FUNCTION(execAnimNotify_InvinsibleStart); \
 	DECLARE_FUNCTION(execAnimNotify_PauseMontage); \

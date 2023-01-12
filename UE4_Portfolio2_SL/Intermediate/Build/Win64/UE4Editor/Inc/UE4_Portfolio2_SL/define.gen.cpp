@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 		return EMONSTER_STATE_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EMONSTER_STATE(EMONSTER_STATE_StaticEnum, TEXT("/Script/UE4_Portfolio2_SL"), TEXT("EMONSTER_STATE"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE_Hash() { return 833975873U; }
+	uint32 Get_Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE_Hash() { return 1357305258U; }
 	UEnum* Z_Construct_UEnum_UE4_Portfolio2_SL_EMONSTER_STATE()
 	{
 #if WITH_HOT_RELOAD
@@ -122,6 +122,7 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 				{ "EMONSTER_STATE::KNOCK_DOWN", (int64)EMONSTER_STATE::KNOCK_DOWN },
 				{ "EMONSTER_STATE::DEAD", (int64)EMONSTER_STATE::DEAD },
 				{ "EMONSTER_STATE::PARRY", (int64)EMONSTER_STATE::PARRY },
+				{ "EMONSTER_STATE::DODGE", (int64)EMONSTER_STATE::DODGE },
 				{ "EMONSTER_STATE::EXECUTION", (int64)EMONSTER_STATE::EXECUTION },
 				{ "EMONSTER_STATE::EXECUTED", (int64)EMONSTER_STATE::EXECUTED },
 			};
@@ -130,6 +131,7 @@ void EmptyLinkFunctionForGeneratedCodedefine() {}
 				{ "ATTACK.Name", "EMONSTER_STATE::ATTACK" },
 				{ "BlueprintType", "true" },
 				{ "DEAD.Name", "EMONSTER_STATE::DEAD" },
+				{ "DODGE.Name", "EMONSTER_STATE::DODGE" },
 				{ "EXECUTED.Name", "EMONSTER_STATE::EXECUTED" },
 				{ "EXECUTION.Name", "EMONSTER_STATE::EXECUTION" },
 				{ "FALL.Name", "EMONSTER_STATE::FALL" },

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UE4_Portfolio2_SL.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{51EAE0A5-BDCC-47C7-92DB-9574DA7E6BD4}</UniqueIdentifier>
+      <UniqueIdentifier>{FAECFFE5-B252-409A-B864-F2702E0FFADD}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UE4_Portfolio2_SL.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{4CED33A3-0B27-4A59-918A-F6FB8B1D4478}</UniqueIdentifier>
+      <UniqueIdentifier>{1C0D1B74-5437-403D-B8E8-5025655A6A8C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UE4_Portfolio2_SL">
-      <UniqueIdentifier>{B2DCBF3D-6CAB-484C-9A05-C528296B6F4C}</UniqueIdentifier>
+      <UniqueIdentifier>{48B3D99C-7717-448E-B673-C7F200014F99}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\AI_Base.cpp">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
@@ -120,6 +120,12 @@
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTTask_DarkKnightAttack.h">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTTask_DarkKnightDodge.cpp">
+      <Filter>Source\UE4_Portfolio2_SL</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UE4_Portfolio2_SL\BTTask_DarkKnightDodge.h">
       <Filter>Source\UE4_Portfolio2_SL</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UE4_Portfolio2_SL\BTTask_DarkKnightJumpAttack.cpp">

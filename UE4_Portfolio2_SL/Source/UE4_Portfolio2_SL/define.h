@@ -52,6 +52,7 @@ enum class EMONSTER_STATE : uint8
 	KNOCK_DOWN,
 	DEAD,
 	PARRY,
+	DODGE,
 	EXECUTION,
 	EXECUTED
 };
